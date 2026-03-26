@@ -1,0 +1,54 @@
+name: Kalshi Scan
+
+# Runs every 30 minutes — no Mac needed.
+# Kalshi markets run 24/7 but the best US markets are active during the day.
+# We scan 7am–midnight ET (11:00–04:00 UTC) every 30 minutes.
+
+on:
+  schedule:
+    - cron: "*/30 11-23 * * *"   # 7am–7pm ET
+    - cron: "*/30 0-4 * * *"     # 7pm–midnight ET
+  workflow_dispatch:               # Manual trigger from GitHub Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run scan
+        env:
+          KALSHI_EMAIL:              ${{ secrets.KALSHI_EMAIL }}
+          KALSHI_PASSWORD:           ${{ secrets.KALSHI_PASSWORD }}
+          DISCORD_SIGNALS_WEBHOOK:   ${{ secrets.DISCORD_SIGNALS_WEBHOOK }}
+          DISCORD_HEALTH_WEBHOOK:    ${{ secrets.DISCORD_HEALTH_WEBHOOK }}
+          ANTHROPIC_API_KEY:         ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python run_scan.py
+
+      - name: Regenerate dashboard data
+        run: python generate_data.py
+
+      - name: Commit updated files
+        run: |
+          git config user.name  "kalshi-bot[actions]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add outcomes.csv bot.log data/ docs/data.json 2>/dev/null || true
+          git diff --staged --quiet \
+            || git commit -m "📊 scan $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push

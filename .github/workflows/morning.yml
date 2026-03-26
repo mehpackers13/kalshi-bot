@@ -1,0 +1,54 @@
+name: Morning Report & Self-Improvement
+
+# Runs at 8am ET every weekday.
+# 8am EDT (Apr–Oct, UTC-4) = 12:00 UTC
+# 8am EST (Nov–Mar, UTC-5) = 13:00 UTC
+
+on:
+  schedule:
+    - cron: "0 12 * * 1-5"   # 8am EDT (summer)
+    - cron: "0 13 * * 1-5"   # 8am EST (winter)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  morning:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run morning report and self-improvement
+        env:
+          KALSHI_EMAIL:              ${{ secrets.KALSHI_EMAIL }}
+          KALSHI_PASSWORD:           ${{ secrets.KALSHI_PASSWORD }}
+          DISCORD_SIGNALS_WEBHOOK:   ${{ secrets.DISCORD_SIGNALS_WEBHOOK }}
+          DISCORD_HEALTH_WEBHOOK:    ${{ secrets.DISCORD_HEALTH_WEBHOOK }}
+          ANTHROPIC_API_KEY:         ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python run_morning.py
+
+      - name: Regenerate dashboard data
+        run: python generate_data.py
+
+      - name: Commit updated files
+        run: |
+          git config user.name  "kalshi-bot[actions]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/ model_changes.log docs/data.json bot.log 2>/dev/null || true
+          git diff --staged --quiet \
+            || git commit -m "🧠 morning $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push

@@ -1,0 +1,54 @@
+name: Weekly Review
+
+# Runs Sunday at 6pm ET.
+# 6pm EDT (UTC-4) = 22:00 UTC
+# 6pm EST (UTC-5) = 23:00 UTC
+
+on:
+  schedule:
+    - cron: "0 22 * * 0"   # Sunday 6pm EDT
+    - cron: "0 23 * * 0"   # Sunday 6pm EST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  weekly:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run weekly review
+        env:
+          KALSHI_EMAIL:              ${{ secrets.KALSHI_EMAIL }}
+          KALSHI_PASSWORD:           ${{ secrets.KALSHI_PASSWORD }}
+          DISCORD_SIGNALS_WEBHOOK:   ${{ secrets.DISCORD_SIGNALS_WEBHOOK }}
+          DISCORD_HEALTH_WEBHOOK:    ${{ secrets.DISCORD_HEALTH_WEBHOOK }}
+          ANTHROPIC_API_KEY:         ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python run_weekly.py
+
+      - name: Regenerate dashboard data
+        run: python generate_data.py
+
+      - name: Commit
+        run: |
+          git config user.name  "kalshi-bot[actions]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/ docs/data.json bot.log 2>/dev/null || true
+          git diff --staged --quiet \
+            || git commit -m "📅 weekly-review $(date -u '+%Y-%m-%d UTC')"
+          git push

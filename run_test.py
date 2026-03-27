@@ -13,6 +13,25 @@ from discord_alerts import _signals, _health
 from kalshi_api import KalshiAPI, parse_market
 from probability_models import estimate_true_probability
 from edge_calculator import _gate_check
+
+
+def _discovery_gate_check(market: dict):
+    """
+    Relaxed gate for diagnostic discovery — uses $500 volume floor instead
+    of $5,000 so we can see markets approaching liquidity.
+    Alert threshold (MIN_VOLUME_DOLLARS) is unchanged.
+    """
+    if market["dollar_volume"] < config.DISCOVERY_VOLUME_DOLLARS:
+        return f"volume ${market['dollar_volume']:.0f} < ${config.DISCOVERY_VOLUME_DOLLARS} (discovery floor)"
+    if market["implied_prob"] < config.MIN_IMPLIED_PROB:
+        return f"implied prob {market['implied_prob']:.1%} < {config.MIN_IMPLIED_PROB:.0%}"
+    if market["implied_prob"] > config.MAX_IMPLIED_PROB:
+        return f"implied prob {market['implied_prob']:.1%} > {config.MAX_IMPLIED_PROB:.0%}"
+    if market["hours_to_close"] < config.MIN_HOURS_TO_CLOSE:
+        return f"closes in {market['hours_to_close']:.1f}h"
+    if market["status"] != "open":
+        return f"status={market['status']}"
+    return None
 from logger import log
 
 
@@ -76,61 +95,58 @@ def diagnostic_scan(api: KalshiAPI):
         marker = " ← modelable" if cat in config.MODELABLE_CATEGORIES else ""
         log(f"  {cat:<20} {n:>4}{marker}")
 
-    # Gate failure breakdown — shows exactly why markets don't qualify
-    gate_reasons = {}
-    for m in parsed:
-        reason = _gate_check(m)
-        if reason:
-            # Bucket by first two words of reason
-            words  = reason.split()
-            bucket = " ".join(words[:2]) if len(words) >= 2 else reason
-            gate_reasons[bucket] = gate_reasons.get(bucket, 0) + 1
-    if gate_reasons:
-        log("Gate filter breakdown (of parsed markets):")
-        for reason, n in sorted(gate_reasons.items(), key=lambda x: -x[1]):
-            log(f"  {n:>4}x  {reason}")
+    # Show markets passing the $500 discovery floor (not the $5k alert floor)
+    # so we can see what real liquidity exists on Kalshi right now
+    discoverable = [m for m in parsed if _discovery_gate_check(m) is None]
+    log(f"\nMarkets passing $500 discovery floor: {len(discoverable)}")
+    for m in sorted(discoverable, key=lambda x: -x["dollar_volume"])[:20]:
+        log(f"  vol=${m['dollar_volume']:>8,.0f}  implied={m['implied_prob']:.0%}  "
+            f"h={m['hours_to_close']:.0f}h  [{m.get('category','')}]  {m['title'][:55]}")
 
-    # Show a sample of the parsed markets so we can see what we're working with
-    log("Sample of parsed markets (first 5):")
-    for m in parsed[:5]:
-        log(f"  [{m.get('category','')}] {m['ticker']} implied={m['implied_prob']:.1%} vol=${m['dollar_volume']:,.0f} h={m['hours_to_close']:.1f}h  title: {m['title'][:50]}")
-
-    # Run models on every parsed market — category is no longer a gate.
-    # estimate_true_probability() routes by title keywords, not category.
+    # Run probability models on every parsed market using DISCOVERY gate
+    # estimate_true_probability() routes by title keywords, not category
     results = []
     for m in parsed:
-        gate_fail = _gate_check(m)
-        true_prob = estimate_true_probability(m)
+        discovery_fail = _discovery_gate_check(m)
+        alert_fail     = _gate_check(m)          # real $5k gate for Discord alerts
+        true_prob      = estimate_true_probability(m)
 
         if true_prob is not None:
             implied = m["implied_prob"]
             edge = (true_prob - implied) * 100
             results.append({
-                "ticker":     m["ticker"],
-                "title":      m["title"][:60],
-                "category":   m["category"],
-                "implied":    implied,
-                "true_prob":  true_prob,
-                "edge_pct":   edge,
-                "gate_fail":  gate_fail,
-                "vol":        m["dollar_volume"],
-                "hours":      m["hours_to_close"],
+                "ticker":        m["ticker"],
+                "title":         m["title"][:65],
+                "category":      m.get("category", ""),
+                "implied":       implied,
+                "true_prob":     true_prob,
+                "edge_pct":      edge,
+                "gate_fail":     alert_fail,       # None = would trigger real alert
+                "discovery_fail": discovery_fail,  # None = visible in discovery
+                "vol":           m["dollar_volume"],
+                "hours":         m["hours_to_close"],
             })
 
-    # Sort by absolute edge
     results.sort(key=lambda x: -abs(x["edge_pct"]))
 
-    qualifying = [r for r in results if r["gate_fail"] is None and abs(r["edge_pct"]) >= config.MIN_EDGE_PCT]
-    near_miss  = [r for r in results if r["gate_fail"] is None and abs(r["edge_pct"]) >= 4 and abs(r["edge_pct"]) < config.MIN_EDGE_PCT]
-    filtered   = [r for r in results if r["gate_fail"] is not None]
+    qualifying    = [r for r in results if r["gate_fail"] is None and abs(r["edge_pct"]) >= config.MIN_EDGE_PCT]
+    near_miss     = [r for r in results if r["gate_fail"] is None and 4 <= abs(r["edge_pct"]) < config.MIN_EDGE_PCT]
+    discovery_hit = [r for r in results if r["gate_fail"] is not None
+                     and r["discovery_fail"] is None and abs(r["edge_pct"]) >= config.MIN_EDGE_PCT]
+    filtered      = [r for r in results if r["gate_fail"] is not None and r["discovery_fail"] is not None]
 
     log(f"\n{'='*60}")
-    log(f"QUALIFYING EDGES (≥{config.MIN_EDGE_PCT}%): {len(qualifying)}")
+    log(f"QUALIFYING EDGES ≥{config.MIN_EDGE_PCT}% — would send Discord alert: {len(qualifying)}")
     for r in qualifying[:20]:
         direction = "BUY YES" if r["edge_pct"] > 0 else "BUY NO"
         log(f"  [{r['category']}] {r['ticker']}")
         log(f"    {r['title']}")
         log(f"    implied={r['implied']:.1%}  model={r['true_prob']:.1%}  edge={r['edge_pct']:+.1f}%  vol=${r['vol']:,.0f}  {direction}")
+
+    log(f"\nDISCOVERY EDGES ($500-$5k vol, ≥{config.MIN_EDGE_PCT}% edge — not yet alerting): {len(discovery_hit)}")
+    for r in discovery_hit[:10]:
+        direction = "BUY YES" if r["edge_pct"] > 0 else "BUY NO"
+        log(f"  {r['ticker']}  edge={r['edge_pct']:+.1f}%  vol=${r['vol']:,.0f}  {direction}  {r['title'][:50]}")
 
     log(f"\nNEAR MISSES (4–{config.MIN_EDGE_PCT}% edge, passed filters): {len(near_miss)}")
     for r in near_miss[:10]:

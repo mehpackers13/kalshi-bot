@@ -23,7 +23,8 @@ PAPER_BANKROLL_START  = 1000.0   # dollars — simulated parallel portfolio
 
 # ── Edge & Filters ──────────────────────────────────────────────────────────────
 MIN_EDGE_PCT          = 8.0      # minimum edge % to alert (below = silence)
-MIN_VOLUME_DOLLARS    = 5000     # skip markets under this total volume ($)
+MIN_VOLUME_DOLLARS    = 5000     # Discord alert threshold — only alert on liquid markets
+DISCOVERY_VOLUME_DOLLARS = 500   # diagnostic scan floor — surfaces markets approaching liquidity
 MIN_IMPLIED_PROB      = 0.15     # skip YES probability below 15%
 MAX_IMPLIED_PROB      = 0.85     # skip YES probability above 85%
 MIN_HOURS_TO_CLOSE    = 2.0      # skip markets closing in under 2 hours

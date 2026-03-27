@@ -50,8 +50,12 @@ class KalshiAPI:
             from cryptography.hazmat.primitives import hashes, serialization
             from cryptography.hazmat.primitives.asymmetric import padding
 
-            ts_ms     = str(int(time.time() * 1000))
-            sign_path = path.split("?")[0]   # sign path only, not query string
+            ts_ms = str(int(time.time() * 1000))
+            # Kalshi requires the FULL path in the signature, including the
+            # /trade-api/v2 prefix — NOT just the endpoint path fragment.
+            # e.g. sign "/trade-api/v2/portfolio/balance", not "/portfolio/balance"
+            endpoint  = path.split("?")[0]
+            sign_path = "/trade-api/v2" + endpoint
             message   = (ts_ms + method.upper() + sign_path).encode("utf-8")
 
             # Normalise PEM key stored as a single-line string in env vars.

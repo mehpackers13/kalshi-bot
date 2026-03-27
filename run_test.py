@@ -76,11 +76,29 @@ def diagnostic_scan(api: KalshiAPI):
         marker = " ← modelable" if cat in config.MODELABLE_CATEGORIES else ""
         log(f"  {cat:<20} {n:>4}{marker}")
 
-    # Run models on every modelable market
+    # Gate failure breakdown — shows exactly why markets don't qualify
+    gate_reasons = {}
+    for m in parsed:
+        reason = _gate_check(m)
+        if reason:
+            # Bucket by first two words of reason
+            words  = reason.split()
+            bucket = " ".join(words[:2]) if len(words) >= 2 else reason
+            gate_reasons[bucket] = gate_reasons.get(bucket, 0) + 1
+    if gate_reasons:
+        log("Gate filter breakdown (of parsed markets):")
+        for reason, n in sorted(gate_reasons.items(), key=lambda x: -x[1]):
+            log(f"  {n:>4}x  {reason}")
+
+    # Show a sample of the parsed markets so we can see what we're working with
+    log("Sample of parsed markets (first 5):")
+    for m in parsed[:5]:
+        log(f"  [{m.get('category','')}] {m['ticker']} implied={m['implied_prob']:.1%} vol=${m['dollar_volume']:,.0f} h={m['hours_to_close']:.1f}h  title: {m['title'][:50]}")
+
+    # Run models on every parsed market — category is no longer a gate.
+    # estimate_true_probability() routes by title keywords, not category.
     results = []
     for m in parsed:
-        if m.get("category") not in config.MODELABLE_CATEGORIES:
-            continue
         gate_fail = _gate_check(m)
         true_prob = estimate_true_probability(m)
 

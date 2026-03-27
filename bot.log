@@ -110,3 +110,31 @@ Please check our docs on how to migrate.
 [2026-03-27 13:06:11 ET] [INFO] Starting market scan
 [2026-03-27 13:06:11 ET] [WARN] Drawdown stop active — scan aborted
 [2026-03-27 13:06:11 ET] [INFO] Scan job complete
+[2026-03-27 13:57:49 ET] [INFO] === KALSHI BOT TEST RUN ===
+[2026-03-27 13:57:49 ET] [INFO] Testing Discord webhooks...
+[2026-03-27 13:57:50 ET] [INFO]   #kalshi-signals : ✅ OK
+[2026-03-27 13:57:50 ET] [INFO]   #bot-health     : ✅ OK
+[2026-03-27 13:57:50 ET] [INFO] Kalshi API key auth OK ✅  balance: $10.00
+[2026-03-27 13:57:50 ET] [INFO] ============================================================
+[2026-03-27 13:57:50 ET] [INFO] DIAGNOSTIC SCAN — showing full detail
+[2026-03-27 13:57:54 ET] [INFO] Event category cache built: 3000 events from 3000 fetched
+[2026-03-27 13:58:12 ET] [INFO] Fetched 10000 open markets across 50 pages
+[2026-03-27 13:58:12 ET] [INFO] Total open markets fetched: 10000
+[2026-03-27 13:58:12 ET] [INFO] Successfully parsed: 781
+[2026-03-27 13:58:12 ET] [INFO] Markets by category:
+[2026-03-27 13:58:12 ET] [INFO]                         781
+[2026-03-27 13:58:12 ET] [INFO] 
+Markets passing $500 discovery floor: 0
+[2026-03-27 13:58:12 ET] [INFO] 
+============================================================
+[2026-03-27 13:58:12 ET] [INFO] QUALIFYING EDGES ≥8.0% — would send Discord alert: 0
+[2026-03-27 13:58:12 ET] [INFO] 
+DISCOVERY EDGES ($500-$5k vol, ≥8.0% edge — not yet alerting): 0
+[2026-03-27 13:58:12 ET] [INFO] 
+NEAR MISSES (4–8.0% edge, passed filters): 0
+[2026-03-27 13:58:12 ET] [INFO] 
+FILTERED OUT (had a model but failed a gate): 0
+[2026-03-27 13:58:12 ET] [INFO] 
+Total modelable markets evaluated: 0
+[2026-03-27 13:58:12 ET] [INFO] ============================================================
+[2026-03-27 13:58:12 ET] [INFO] Test run complete

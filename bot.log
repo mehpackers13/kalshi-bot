@@ -931,3 +931,28 @@ Total modelable markets evaluated: 0
 [2026-03-30 01:32:25 ET] [INFO] Scan complete — 4 alerts sent
 [2026-03-30 01:32:25 ET] [INFO] ============================================================
 [2026-03-30 01:32:25 ET] [INFO] Scan job complete
+[2026-03-30 08:00:28 ET] [INFO] Scan job starting
+[2026-03-30 08:00:28 ET] [INFO] Kalshi API key auth OK ✅  balance: $10.00
+[2026-03-30 08:00:28 ET] [INFO] ============================================================
+[2026-03-30 08:00:28 ET] [INFO] Starting market scan
+[2026-03-30 08:00:28 ET] [INFO] Live balance: $10.00  |  Peak ever: $10.00
+[2026-03-30 08:00:28 ET] [WARN] API GET /markets → HTTP 400
+[2026-03-30 08:00:38 ET] [INFO] Fetched 36589 open markets via events endpoint across 24 pages
+[2026-03-30 08:00:38 ET] [INFO] Fetched 36589 open markets
+[2026-03-30 08:00:38 ET] [INFO] Parsed 32982 valid markets
+[2026-03-30 08:00:38 ET] [INFO] Categories: {'Sports': 17570, 'Elections': 3848, 'Entertainment': 3085, 'Economics': 2498, 'Crypto': 1964, 'Politics': 1408, 'Financials': 905, 'Mentions': 532}
+[2026-03-30 08:00:40 ET] [INFO]   price model: BTC-USD spot=67598.78 target=100000.00 vol=42.7% T=6641.0h → P=0.146
+[2026-03-30 08:00:40 ET] [INFO]   price model: BTC-USD spot=67598.78 target=100000.00 vol=42.7% T=6641.0h → P=0.146
+[2026-03-30 08:00:40 ET] [INFO]   price model: BTC-USD spot=67598.78 target=200000.00 vol=42.7% T=6641.0h → P=0.002
+[2026-03-30 08:00:41 ET] [INFO]   price model: BTC-USD spot=67598.78 target=199999.00 vol=42.7% T=6641.0h → P=0.002
+[2026-03-30 08:00:41 ET] [INFO]   fed model: implied_rate=3.655% current≈3.607% diff=4.8bps → P=0.404
+[2026-03-30 08:00:43 ET] [INFO]   weather model: 'hurricane' base_rate=0.15
+[2026-03-30 08:00:44 ET] [INFO]   CPI model: threshold=0.2% TNX=4.44% → P=0.800
+[2026-03-30 08:00:46 ET] [INFO]   weather model: 'rain' base_rate=0.35
+[2026-03-30 08:00:46 ET] [INFO]   EDGE FOUND: KXRAINMIAM-26MAR-4 | implied=89.5% true=35.0% edge=-54.5% dir=NO conf=90
+[2026-03-30 08:00:49 ET] [INFO]   fed model: implied_rate=3.655% current≈3.607% diff=4.8bps → P=0.596
+[2026-03-30 08:00:49 ET] [INFO] Checked 32920 markets | Modelable: 32920 | Edges found: 1
+[2026-03-30 08:00:49 ET] [INFO] [Discord] Trade alert sent: KXRAINMIAM-26MAR-4
+[2026-03-30 08:00:49 ET] [INFO] Scan complete — 1 alerts sent
+[2026-03-30 08:00:49 ET] [INFO] ============================================================
+[2026-03-30 08:00:49 ET] [INFO] Scan job complete

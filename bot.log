@@ -956,3 +956,28 @@ Total modelable markets evaluated: 0
 [2026-03-30 08:00:49 ET] [INFO] Scan complete — 1 alerts sent
 [2026-03-30 08:00:49 ET] [INFO] ============================================================
 [2026-03-30 08:00:49 ET] [INFO] Scan job complete
+[2026-03-30 10:07:29 ET] [INFO] Scan job starting
+[2026-03-30 10:07:29 ET] [INFO] Kalshi API key auth OK ✅  balance: $10.00
+[2026-03-30 10:07:29 ET] [INFO] ============================================================
+[2026-03-30 10:07:29 ET] [INFO] Starting market scan
+[2026-03-30 10:07:29 ET] [INFO] Live balance: $10.00  |  Peak ever: $10.00
+[2026-03-30 10:07:29 ET] [WARN] API GET /markets → HTTP 400
+[2026-03-30 10:07:39 ET] [INFO] Fetched 37554 open markets via events endpoint across 24 pages
+[2026-03-30 10:07:39 ET] [INFO] Fetched 37554 open markets
+[2026-03-30 10:07:39 ET] [INFO] Parsed 34146 valid markets
+[2026-03-30 10:07:39 ET] [INFO] Categories: {'Sports': 17550, 'Elections': 3851, 'Entertainment': 3062, 'Economics': 2554, 'Crypto': 2386, 'Financials': 1428, 'Politics': 1406, 'Mentions': 573}
+[2026-03-30 10:07:42 ET] [INFO]   price model: SOL-USD spot=84.06 target=200.00 vol=48.9% T=6638.9h → P=0.021
+[2026-03-30 10:07:42 ET] [INFO]   EDGE FOUND: KXSOLMAXY-27JAN01-200 | implied=18.5% true=2.1% edge=-16.4% dir=NO conf=70
+[2026-03-30 10:07:42 ET] [INFO]   price model: BTC-USD spot=67549.29 target=100000.00 vol=42.7% T=6638.9h → P=0.146
+[2026-03-30 10:07:42 ET] [INFO]   price model: BTC-USD spot=67549.29 target=100000.00 vol=42.7% T=6638.9h → P=0.146
+[2026-03-30 10:07:42 ET] [INFO]   price model: BTC-USD spot=67549.29 target=200000.00 vol=42.7% T=6638.9h → P=0.002
+[2026-03-30 10:07:42 ET] [INFO]   price model: BTC-USD spot=67549.29 target=199999.00 vol=42.7% T=6638.9h → P=0.002
+[2026-03-30 10:07:42 ET] [INFO]   fed model: implied_rate=3.645% current≈3.588% diff=5.7bps → P=0.386
+[2026-03-30 10:07:44 ET] [INFO]   weather model: 'hurricane' base_rate=0.15
+[2026-03-30 10:07:45 ET] [INFO]   CPI model: threshold=0.2% TNX=4.36% → P=0.800
+[2026-03-30 10:07:49 ET] [INFO]   fed model: implied_rate=3.645% current≈3.588% diff=5.7bps → P=0.614
+[2026-03-30 10:07:49 ET] [INFO] Checked 34083 markets | Modelable: 34083 | Edges found: 1
+[2026-03-30 10:07:49 ET] [INFO] [Discord] Trade alert sent: KXSOLMAXY-27JAN01-200
+[2026-03-30 10:07:49 ET] [INFO] Scan complete — 1 alerts sent
+[2026-03-30 10:07:49 ET] [INFO] ============================================================
+[2026-03-30 10:07:49 ET] [INFO] Scan job complete

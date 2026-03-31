@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-03-31T05:16:01.386489Z",
+  "generated_at": "2026-03-31T11:56:12.545444Z",
   "stats": {
-    "total_alerts": 139,
+    "total_alerts": 141,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -12,7 +12,7 @@
         "hit_rate": null
       },
       "Economics": {
-        "total": 42,
+        "total": 43,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -24,7 +24,7 @@
         "hit_rate": null
       },
       "Crypto": {
-        "total": 67,
+        "total": 68,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -44,13 +44,13 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 35,
+        "total": 36,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "medium (15-25%)": {
-        "total": 42,
+        "total": 43,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -73,11 +73,47 @@
       "peak": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-03-31T05:15:26.250670Z"
+    "updated_at": "2026-03-31T11:55:37.739445Z"
   },
   "live_pnl": 0.0,
   "paper_pnl": 0.0,
   "recent_alerts": [
+    {
+      "timestamp": "2026-03-31T11:56:12.340131Z",
+      "ticker": "KXBTCMINMON-BTC-26MAR31-6500000",
+      "title": "Will BTC trimmed mean be below $65000.00 by 11:59 PM ET on Mar 31, 2026?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-20.98",
+      "implied_prob": "0.29",
+      "true_prob": "0.0802",
+      "confidence": "75",
+      "suggested_live_dollars": "0.74",
+      "suggested_paper_dollars": "39.96",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "74",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": ""
+    },
+    {
+      "timestamp": "2026-03-31T11:56:12.023491Z",
+      "ticker": "KXRATECUTCOUNT-26DEC31-T0",
+      "title": "Will the Fed cut rates 0 times?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "11.6",
+      "implied_prob": "0.35",
+      "true_prob": "0.466",
+      "confidence": "78",
+      "suggested_live_dollars": "0.36",
+      "suggested_paper_dollars": "19.8",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "36",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": ""
+    },
     {
       "timestamp": "2026-03-31T02:51:43.418768Z",
       "ticker": "FEDHIKE-26DEC31",
@@ -938,42 +974,6 @@
       "suggested_paper_dollars": "49.98",
       "is_paper_bet": "1",
       "paper_entry_price_cents": "51",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-03-31T02:51:17.149079Z",
-      "ticker": "KXETHMINY-27JAN01-1500",
-      "title": "Will Ethereum reach below $1500.00 by Jan 1, 2027 at 12:00AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-41.08",
-      "implied_prob": "0.655",
-      "true_prob": "0.2442",
-      "confidence": "85",
-      "suggested_live_dollars": "0.35",
-      "suggested_paper_dollars": "49.7",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "35",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-03-31T02:51:16.916122Z",
-      "ticker": "KXETHMINY-27JAN01-1750",
-      "title": "Will Ethereum reach below $1750.00 by Jan 1, 2027 at 12:00AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-41.67",
-      "implied_prob": "0.775",
-      "true_prob": "0.3583",
-      "confidence": "85",
-      "suggested_live_dollars": "0.5",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "25",
       "outcome": "",
       "resolved_at": "",
       "notes": ""

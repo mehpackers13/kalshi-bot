@@ -126,17 +126,19 @@ def _extract_price_target(title: str) -> Optional[tuple]:
     if direction is None:
         return None
 
-    # Price — match $70,000 / $70k / 70000 / 70K
+    # Price — match $70,000 / $70k / 70000 / 70K / bare numbers after above/below
     price = None
     patterns = [
-        r"\$[\d,]+[kKmM]?",    # $70,000 or $70k
-        r"[\d,]+[kKmM]\b",     # 70k or 70K (no $)
-        r"\$[\d,]+(?:\.\d+)?", # $3,500.50
+        r"\$[\d,]+[kKmM]?",                                 # $70,000 or $70k
+        r"[\d,]+[kKmM]\b",                                  # 70k or 70K (no $)
+        r"\$[\d,]+(?:\.\d+)?",                              # $3,500.50
+        r"(?:above|below|over|under|exceed|higher than|lower than|at or above|at or below)\s+([\d,]+(?:\.\d+)?)",  # bare number after direction keyword
     ]
     for pat in patterns:
-        m = re.search(pat, title)
+        m = re.search(pat, title, re.IGNORECASE)
         if m:
-            raw = m.group().replace("$", "").replace(",", "").strip()
+            # Last pattern captures group 1; others capture full match
+            raw = (m.group(1) if m.lastindex else m.group()).replace("$", "").replace(",", "").strip()
             multiplier = 1
             if raw.lower().endswith("k"):
                 multiplier = 1_000
@@ -303,31 +305,289 @@ def model_cpi(market: dict) -> Optional[float]:
         return None
 
 
-# ── Weather ──────────────────────────────────────────────────────────────────────
+# ── Weather (wttr.in real forecasts) ─────────────────────────────────────────────
+#
+# Uses https://wttr.in/{city}?format=j1 — free, no API key, 3-day forecast.
+# Temperature probability uses a Gaussian error model:
+#   NWS 1-day forecast MAE ≈ 3.5°F, grows ~1.5°F per additional day.
+# Precipitation probability uses wttr.in's hourly chanceofrain/chanceofsnow,
+#   averaged across the day.
 
-# Very rough climatological base rates — better than nothing, honest about uncertainty
-_WEATHER_BASE_RATES = {
-    # P(above avg temp) by season in major US cities ≈ 0.50 (by definition, roughly)
-    # P(rain/snow on a given day) varies by city/season
-    # We use 0.45–0.55 range — only flag if Kalshi is far outside this
-    "temperature": 0.50,
-    "rain":        0.35,
-    "snow":        0.20,
-    "hurricane":   0.15,
-    "tornado":     0.10,
+import requests as _req
+
+# Major US cities and their wttr.in query strings (longest match first matters)
+_WEATHER_CITIES = {
+    "san francisco":  "San+Francisco",
+    "oklahoma city":  "Oklahoma+City",
+    "salt lake city": "Salt+Lake+City",
+    "new york city":  "New+York",
+    "new orleans":    "New+Orleans",
+    "kansas city":    "Kansas+City",
+    "los angeles":    "Los+Angeles",
+    "las vegas":      "Las+Vegas",
+    "el paso":        "El+Paso",
+    "st. louis":      "St+Louis",
+    "st louis":       "St+Louis",
+    "minneapolis":    "Minneapolis",
+    "indianapolis":   "Indianapolis",
+    "philadelphia":   "Philadelphia",
+    "albuquerque":    "Albuquerque",
+    "louisville":     "Louisville",
+    "cincinnati":     "Cincinnati",
+    "pittsburgh":     "Pittsburgh",
+    "sacramento":     "Sacramento",
+    "jacksonville":   "Jacksonville",
+    "charlotte":      "Charlotte",
+    "nashville":      "Nashville",
+    "baltimore":      "Baltimore",
+    "cleveland":      "Cleveland",
+    "milwaukee":      "Milwaukee",
+    "memphis":        "Memphis",
+    "columbus":       "Columbus",
+    "richmond":       "Richmond",
+    "hartford":       "Hartford",
+    "portland":       "Portland",
+    "raleigh":        "Raleigh",
+    "atlanta":        "Atlanta",
+    "chicago":        "Chicago",
+    "seattle":        "Seattle",
+    "houston":        "Houston",
+    "phoenix":        "Phoenix",
+    "orlando":        "Orlando",
+    "detroit":        "Detroit",
+    "buffalo":        "Buffalo",
+    "denver":         "Denver",
+    "boston":         "Boston",
+    "dallas":         "Dallas",
+    "austin":         "Austin",
+    "miami":          "Miami",
+    "tucson":         "Tucson",
+    "albany":         "Albany",
+    "boise":          "Boise",
+    "nyc":            "New+York",
 }
+
+# In-memory cache: city_query → {fetched_at, days}
+_wttr_cache: dict = {}
+_WTTR_CACHE_TTL = 3600   # re-fetch at most once per hour
+
+
+def _get_wttr_forecast(city_query: str) -> Optional[list]:
+    """
+    Fetch 3-day forecast from wttr.in.
+    Returns list of dicts: [{date, maxtempF, mintempF, rain_pct, snow_pct}, ...] or None.
+    """
+    import time as _time
+    cached = _wttr_cache.get(city_query)
+    if cached and (_time.time() - cached["fetched_at"]) < _WTTR_CACHE_TTL:
+        return cached["days"]
+
+    url = f"https://wttr.in/{city_query}?format=j1"
+    try:
+        resp = _req.get(url, timeout=10, headers={"User-Agent": "Mozilla/5.0"})
+        if resp.status_code != 200:
+            log(f"  wttr.in {city_query}: HTTP {resp.status_code}", "WARN")
+            return None
+        data  = resp.json()
+        days  = []
+        for day in data.get("weather", []):
+            hourly   = day.get("hourly", [])
+            n        = max(len(hourly), 1)
+            avg_rain = sum(int(h.get("chanceofrain", 0)) for h in hourly) / n
+            avg_snow = sum(int(h.get("chanceofsnow", 0)) for h in hourly) / n
+            days.append({
+                "date":     day["date"],
+                "maxtempF": int(day["maxtempF"]),
+                "mintempF": int(day["mintempF"]),
+                "rain_pct": round(avg_rain),
+                "snow_pct": round(avg_snow),
+            })
+        _wttr_cache[city_query] = {"fetched_at": _time.time(), "days": days}
+        return days or None
+    except Exception as exc:
+        log(f"  wttr.in fetch error ({city_query}): {exc}", "WARN")
+        return None
+
+
+def _parse_temp_range(title_lower: str) -> Optional[tuple]:
+    """
+    Parse temperature condition from title.
+    Returns (lo, hi, condition) where condition is "range", "above", or "below".
+    Examples:
+      "83-84 degrees"         → (83, 84, "range")
+      "above 85°F"            → (85, 85, "above")
+      "below 60 degrees"      → (60, 60, "below")
+      "be in the 83 to 84 range" → (83, 84, "range")
+    """
+    # Range: "83-84" or "83 to 84" or "83–84"
+    m = re.search(r"(\d{1,3})\s*(?:-|–|to)\s*(\d{1,3})\s*(?:degrees?|°[FfCc]?)?", title_lower)
+    if m:
+        lo, hi = int(m.group(1)), int(m.group(2))
+        if 0 <= lo <= 130 and 0 <= hi <= 130 and 0 < (hi - lo) <= 10:
+            return (lo, hi, "range")
+
+    # Threshold above
+    m = re.search(
+        r"(?:above|over|exceed|at or above|more than)\s+(\d{2,3})\s*(?:degrees?|°[FfCc]?)?",
+        title_lower,
+    )
+    if m:
+        return (int(m.group(1)), int(m.group(1)), "above")
+
+    # Threshold below
+    m = re.search(
+        r"(?:below|under|less than|at or below)\s+(\d{2,3})\s*(?:degrees?|°[FfCc]?)?",
+        title_lower,
+    )
+    if m:
+        return (int(m.group(1)), int(m.group(1)), "below")
+
+    return None
+
+
+def _parse_target_date(title_lower: str) -> Optional[datetime.date]:
+    """Parse target date from market title. Returns date or None."""
+    today = datetime.date.today()
+    if "today" in title_lower:
+        return today
+    if "tomorrow" in title_lower:
+        return today + datetime.timedelta(days=1)
+
+    _MONTHS = {
+        "january": 1, "jan": 1, "february": 2, "feb": 2,
+        "march": 3,   "mar": 3, "april": 4,    "apr": 4,
+        "may": 5,     "june": 6, "jun": 6,
+        "july": 7,    "jul": 7, "august": 8,   "aug": 8,
+        "september": 9, "sep": 9, "sept": 9,
+        "october": 10, "oct": 10, "november": 11, "nov": 11,
+        "december": 12, "dec": 12,
+    }
+    for mname, mnum in _MONTHS.items():
+        m = re.search(rf"\b{mname}\s+(\d{{1,2}})\b", title_lower)
+        if m:
+            try:
+                d = datetime.date(today.year, mnum, int(m.group(1)))
+                if d < today:
+                    d = datetime.date(today.year + 1, mnum, int(m.group(1)))
+                return d
+            except ValueError:
+                continue
+
+    # Numeric mm/dd
+    m = re.search(r"\b(\d{1,2})/(\d{1,2})\b", title_lower)
+    if m:
+        try:
+            d = datetime.date(today.year, int(m.group(1)), int(m.group(2)))
+            if d < today:
+                d = datetime.date(today.year + 1, int(m.group(1)), int(m.group(2)))
+            return d
+        except ValueError:
+            pass
+    return None
+
+
+def _temp_range_prob(forecast_f: float, lo: float, hi: float, days_out: int) -> float:
+    """
+    P(actual max temp ∈ [lo, hi]) given a forecast of forecast_f.
+    Uses Gaussian error: σ = 3.5°F for 1-day forecast + 1.5°F per additional day.
+    We add ±0.5°F to the range boundaries to account for rounding in market titles.
+    """
+    sigma = 3.5 + max(0, days_out - 1) * 1.5
+    prob  = (_norm_cdf((hi + 0.5 - forecast_f) / sigma)
+             - _norm_cdf((lo - 0.5 - forecast_f) / sigma))
+    return max(0.01, min(0.99, prob))
+
+
+def _temp_threshold_prob(forecast_f: float, threshold: float,
+                         direction: str, days_out: int) -> float:
+    """P(max temp above/below threshold) given forecast."""
+    sigma = 3.5 + max(0, days_out - 1) * 1.5
+    z     = (threshold - forecast_f) / sigma
+    if direction == "above":
+        return max(0.01, min(0.99, 1.0 - _norm_cdf(z)))
+    return max(0.01, min(0.99, _norm_cdf(z)))
+
 
 def model_weather(market: dict) -> Optional[float]:
     """
-    Returns a rough climatological base rate for weather markets.
-    Only useful if Kalshi's implied probability is very far from the base rate.
+    Returns real weather probability using wttr.in 3-day forecasts.
+    Parses city, date, and condition type from market title.
+    Falls back to None (silent skip) if city or condition can't be parsed.
     """
     title_lower = market["title"].lower()
-    for keyword, base_rate in _WEATHER_BASE_RATES.items():
+
+    # ── Find city (longest match wins) ───────────────────────────────────────
+    city_query = None
+    for keyword in sorted(_WEATHER_CITIES, key=len, reverse=True):
         if keyword in title_lower:
-            log(f"  weather model: '{keyword}' base_rate={base_rate:.2f}")
-            return base_rate
-    return None
+            city_query = _WEATHER_CITIES[keyword]
+            city_label = keyword
+            break
+    if city_query is None:
+        return None   # no known city — stay silent
+
+    # ── Fetch forecast ────────────────────────────────────────────────────────
+    days = _get_wttr_forecast(city_query)
+    if not days:
+        return None
+
+    # ── Target date ───────────────────────────────────────────────────────────
+    today       = datetime.date.today()
+    target_date = _parse_target_date(title_lower) or today
+    days_out    = max(0, (target_date - today).days)
+
+    # Match forecast day by date string, fallback to index
+    forecast_day = next(
+        (d for d in days if d["date"] == target_date.strftime("%Y-%m-%d")),
+        days[min(days_out, len(days) - 1)] if days_out < len(days) else None,
+    )
+    if forecast_day is None:
+        log(f"  weather model: {city_label} no forecast for {target_date}", "WARN")
+        return None
+
+    # ── Rain / Snow ───────────────────────────────────────────────────────────
+    is_rain = any(w in title_lower for w in ("rain", "precipitation", "shower", "wet day"))
+    is_snow = any(w in title_lower for w in ("snow", "blizzard", "snowfall", "flurr"))
+
+    if is_rain and not any(w in title_lower for w in ("temp", "degree", "°", "high", "low")):
+        prob = round(max(0.02, min(0.98, forecast_day["rain_pct"] / 100.0)), 4)
+        log(f"  weather model: {city_label} rain {target_date} forecast={forecast_day['rain_pct']}% → P={prob:.3f}")
+        return prob
+
+    if is_snow and not any(w in title_lower for w in ("temp", "degree", "°", "high", "low")):
+        prob = round(max(0.02, min(0.98, forecast_day["snow_pct"] / 100.0)), 4)
+        log(f"  weather model: {city_label} snow {target_date} forecast={forecast_day['snow_pct']}% → P={prob:.3f}")
+        return prob
+
+    # ── Temperature ───────────────────────────────────────────────────────────
+    is_temp = any(w in title_lower for w in (
+        "temp", "temperature", "high", "low", "degree", "°f", "°c",
+        "heat", "cold", "warm", "cool", "hot",
+    ))
+    if is_temp:
+        forecast_max = float(forecast_day["maxtempF"])
+        parsed = _parse_temp_range(title_lower)
+        if parsed is None:
+            log(f"  weather model: {city_label} can't parse temp condition from title")
+            return None
+
+        lo, hi, condition = parsed
+        effective_days = max(1, days_out)
+
+        if condition == "range":
+            prob = _temp_range_prob(forecast_max, lo, hi, effective_days)
+            log(f"  weather model: {city_label} max={forecast_max}°F target=[{lo},{hi}]°F "
+                f"days_out={days_out} σ={3.5+max(0,effective_days-1)*1.5:.1f}°F → P={prob:.3f}")
+        elif condition == "above":
+            prob = _temp_threshold_prob(forecast_max, lo, "above", effective_days)
+            log(f"  weather model: {city_label} max={forecast_max}°F above {lo}°F → P={prob:.3f}")
+        else:
+            prob = _temp_threshold_prob(forecast_max, lo, "below", effective_days)
+            log(f"  weather model: {city_label} max={forecast_max}°F below {lo}°F → P={prob:.3f}")
+
+        return round(prob, 4)
+
+    return None   # hurricane/tornado/generic — no wttr.in signal, stay silent
 
 
 # ── Dispatcher ───────────────────────────────────────────────────────────────────
@@ -356,8 +616,11 @@ def estimate_true_probability(market: dict) -> Optional[float]:
             return prob
 
     # ── Weather ───────────────────────────────────────────────────────────────
-    if any(w in title_lower for w in ("temperature", "rain", "snow", "hurricane",
-                                       "tornado", "weather", "precipitation")):
+    if any(w in title_lower for w in (
+        "temperature", "temp", "rain", "snow", "hurricane", "tornado",
+        "weather", "precipitation", "degrees", "°f", "°c", "rainfall",
+        "snowfall", "shower", "blizzard",
+    )):
         prob = model_weather(market)
         if prob is not None:
             return prob

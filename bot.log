@@ -2190,3 +2190,27 @@ Total modelable markets evaluated: 0
 [2026-04-01 15:17:07 ET] [INFO] Scan complete — 2 alerts sent
 [2026-04-01 15:17:07 ET] [INFO] ============================================================
 [2026-04-01 15:17:08 ET] [INFO] Scan job complete
+[2026-04-01 16:09:28 ET] [INFO] Scan job starting
+[2026-04-01 16:09:29 ET] [INFO] Kalshi API key auth OK ✅  balance: $10.00
+[2026-04-01 16:09:29 ET] [INFO] ============================================================
+[2026-04-01 16:09:29 ET] [INFO] Starting market scan
+[2026-04-01 16:09:29 ET] [INFO] Live balance: $10.00  |  Peak ever: $10.00
+[2026-04-01 16:09:29 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-01 16:09:40 ET] [INFO] Fetched 40359 open markets via events endpoint across 24 pages
+[2026-04-01 16:09:40 ET] [INFO] Fetched 40359 open markets
+[2026-04-01 16:09:41 ET] [INFO] Parsed 35596 valid markets
+[2026-04-01 16:09:41 ET] [INFO] Categories: {'Sports': 20173, 'Elections': 3888, 'Entertainment': 3208, 'Economics': 2557, 'Crypto': 1578, 'Politics': 1398, 'Financials': 901, 'Mentions': 716}
+[2026-04-01 16:09:47 ET] [INFO]   price model: SOL-USD spot=83.25 target=500.00 vol=46.9% T=6584.8h → P=0.000
+[2026-04-01 16:09:48 ET] [INFO]   price model: ETH-USD spot=2135.47 target=6000.00 vol=52.3% T=6584.8h → P=0.011
+[2026-04-01 16:09:48 ET] [INFO]   EDGE FOUND: KXETHMAXY-27JAN01-6000.00 | implied=9.5% true=1.1% edge=-8.4% dir=NO conf=68
+[2026-04-01 16:09:48 ET] [INFO]   price model: BTC-USD spot=68106.42 target=100000.00 vol=40.5% T=6584.8h → P=0.137
+[2026-04-01 16:09:48 ET] [INFO]   price model: BTC-USD spot=68106.42 target=200000.00 vol=40.5% T=6584.8h → P=0.001
+[2026-04-01 16:09:48 ET] [INFO]   price model: BTC-USD spot=68106.42 target=199999.00 vol=40.5% T=6584.8h → P=0.001
+[2026-04-01 16:09:58 ET] [INFO]   CPI model: threshold=0.2% TNX=4.32% → P=0.800
+[2026-04-01 16:10:11 ET] [INFO]   weather model: nyc can't parse temp condition from title
+[2026-04-01 16:10:12 ET] [INFO]   weather model: denver can't parse temp condition from title
+[2026-04-01 16:10:17 ET] [INFO] Checked 35524 markets | Modelable: 35524 | Edges found: 1
+[2026-04-01 16:10:18 ET] [INFO] [Discord] Trade alert sent: KXETHMAXY-27JAN01-6000.00
+[2026-04-01 16:10:18 ET] [INFO] Scan complete — 1 alerts sent
+[2026-04-01 16:10:18 ET] [INFO] ============================================================
+[2026-04-01 16:10:18 ET] [INFO] Scan job complete

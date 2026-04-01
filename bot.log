@@ -2106,3 +2106,36 @@ Total modelable markets evaluated: 0
 [2026-04-01 11:22:33 ET] [INFO] Scan complete — 4 alerts sent
 [2026-04-01 11:22:33 ET] [INFO] ============================================================
 [2026-04-01 11:22:33 ET] [INFO] Scan job complete
+[2026-04-01 12:33:26 ET] [INFO] Scan job starting
+[2026-04-01 12:33:27 ET] [INFO] Kalshi API key auth OK ✅  balance: $10.00
+[2026-04-01 12:33:27 ET] [INFO] ============================================================
+[2026-04-01 12:33:27 ET] [INFO] Starting market scan
+[2026-04-01 12:33:27 ET] [INFO] Live balance: $10.00  |  Peak ever: $10.00
+[2026-04-01 12:33:27 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-01 12:33:40 ET] [INFO] Fetched 41591 open markets via events endpoint across 25 pages
+[2026-04-01 12:33:40 ET] [INFO] Fetched 41591 open markets
+[2026-04-01 12:33:41 ET] [INFO] Parsed 37623 valid markets
+[2026-04-01 12:33:41 ET] [INFO] Categories: {'Sports': 21508, 'Elections': 3880, 'Entertainment': 3204, 'Economics': 2570, 'Crypto': 2261, 'Politics': 1396, 'Financials': 950, 'Mentions': 672}
+[2026-04-01 12:33:47 ET] [INFO]   price model: SOL-USD spot=84.36 target=500.00 vol=47.1% T=6588.4h → P=0.000
+[2026-04-01 12:33:48 ET] [INFO]   price model: ETH-USD spot=2137.57 target=6000.00 vol=52.3% T=6588.4h → P=0.011
+[2026-04-01 12:33:48 ET] [INFO]   price model: BTC-USD spot=68892.51 target=100000.00 vol=40.6% T=6588.4h → P=0.145
+[2026-04-01 12:33:48 ET] [INFO]   EDGE FOUND: KXBTCMAX100-26-MAY | implied=5.5% true=14.5% edge=+9.0% dir=YES conf=68
+[2026-04-01 12:33:48 ET] [INFO]   price model: BTC-USD spot=68892.51 target=100000.00 vol=40.6% T=6588.4h → P=0.145
+[2026-04-01 12:33:48 ET] [INFO]   price model: BTC-USD spot=68892.51 target=200000.00 vol=40.6% T=6588.4h → P=0.001
+[2026-04-01 12:33:48 ET] [INFO]   price model: BTC-USD spot=68892.51 target=199999.00 vol=40.6% T=6588.4h → P=0.001
+[2026-04-01 12:33:58 ET] [INFO]   CPI model: threshold=0.2% TNX=4.31% → P=0.800
+[2026-04-01 12:34:10 ET] [INFO]   weather model: nyc max=80.0°F target=[78,79]°F days_out=0 σ=3.5°F → P=0.206
+[2026-04-01 12:34:10 ET] [INFO]   EDGE FOUND: KXHIGHNY-26APR01-B78.5 | implied=54.5% true=20.6% edge=-33.9% dir=NO conf=80
+[2026-04-01 12:34:11 ET] [INFO]   weather model: miami max=86.0°F target=[79,80]°F days_out=0 σ=3.5°F → P=0.042
+[2026-04-01 12:34:11 ET] [INFO]   EDGE FOUND: KXHIGHMIA-26APR01-B79.5 | implied=54.5% true=4.2% edge=-50.3% dir=NO conf=80
+[2026-04-01 12:34:12 ET] [INFO]   weather model: denver can't parse temp condition from title
+[2026-04-01 12:34:12 ET] [INFO]   weather model: austin max=94.0°F target=[90,91]°F days_out=0 σ=3.5°F → P=0.138
+[2026-04-01 12:34:12 ET] [INFO]   EDGE FOUND: KXHIGHAUS-26APR01-B90.5 | implied=52.5% true=13.8% edge=-38.7% dir=NO conf=80
+[2026-04-01 12:34:21 ET] [INFO] Checked 37552 markets | Modelable: 37552 | Edges found: 4
+[2026-04-01 12:34:21 ET] [INFO] [Discord] Trade alert sent: KXBTCMAX100-26-MAY
+[2026-04-01 12:34:21 ET] [INFO] [Discord] Trade alert sent: KXHIGHNY-26APR01-B78.5
+[2026-04-01 12:34:21 ET] [INFO] [Discord] Trade alert sent: KXHIGHMIA-26APR01-B79.5
+[2026-04-01 12:34:22 ET] [INFO] [Discord] Trade alert sent: KXHIGHAUS-26APR01-B90.5
+[2026-04-01 12:34:22 ET] [INFO] Scan complete — 4 alerts sent
+[2026-04-01 12:34:22 ET] [INFO] ============================================================
+[2026-04-01 12:34:22 ET] [INFO] Scan job complete

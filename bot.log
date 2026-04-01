@@ -2018,3 +2018,27 @@ Total modelable markets evaluated: 0
 [2026-04-01 01:36:15 ET] [INFO] Scan complete — 1 alerts sent
 [2026-04-01 01:36:15 ET] [INFO] ============================================================
 [2026-04-01 01:36:15 ET] [INFO] Scan job complete
+[2026-04-01 07:57:20 ET] [INFO] Scan job starting
+[2026-04-01 07:57:20 ET] [INFO] Kalshi API key auth OK ✅  balance: $10.00
+[2026-04-01 07:57:20 ET] [INFO] ============================================================
+[2026-04-01 07:57:20 ET] [INFO] Starting market scan
+[2026-04-01 07:57:20 ET] [INFO] Live balance: $10.00  |  Peak ever: $10.00
+[2026-04-01 07:57:20 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-01 07:57:30 ET] [INFO] Fetched 38910 open markets via events endpoint across 25 pages
+[2026-04-01 07:57:30 ET] [INFO] Fetched 38910 open markets
+[2026-04-01 07:57:30 ET] [INFO] Parsed 35894 valid markets
+[2026-04-01 07:57:30 ET] [INFO] Categories: {'Sports': 20578, 'Elections': 3858, 'Entertainment': 3112, 'Economics': 2499, 'Crypto': 2113, 'Politics': 1377, 'Financials': 755, 'Mentions': 687}
+[2026-04-01 07:57:36 ET] [INFO]   price model: SOL-USD spot=83.32 target=500.00 vol=46.9% T=6593.0h → P=0.000
+[2026-04-01 07:57:37 ET] [INFO]   price model: ETH-USD spot=2134.98 target=6000.00 vol=52.3% T=6593.0h → P=0.011
+[2026-04-01 07:57:37 ET] [INFO]   price model: BTC-USD spot=68696.35 target=100000.00 vol=40.5% T=6593.0h → P=0.143
+[2026-04-01 07:57:37 ET] [INFO]   price model: BTC-USD spot=68696.35 target=100000.00 vol=40.5% T=6593.0h → P=0.143
+[2026-04-01 07:57:37 ET] [INFO]   price model: BTC-USD spot=68696.35 target=200000.00 vol=40.5% T=6593.0h → P=0.001
+[2026-04-01 07:57:37 ET] [INFO]   price model: BTC-USD spot=68696.35 target=199999.00 vol=40.5% T=6593.0h → P=0.001
+[2026-04-01 07:57:46 ET] [INFO]   CPI model: threshold=0.2% TNX=4.31% → P=0.800
+[2026-04-01 07:58:04 ET] [INFO]   fed model: implied_rate=3.600% current≈3.600% diff=-0.0bps → P=0.500
+[2026-04-01 07:58:04 ET] [INFO]   EDGE FOUND: FEDHIKE-27DEC31 | implied=60.0% true=50.0% edge=-10.0% dir=NO conf=68
+[2026-04-01 07:58:04 ET] [INFO] Checked 35831 markets | Modelable: 35831 | Edges found: 1
+[2026-04-01 07:58:04 ET] [INFO] [Discord] Trade alert sent: FEDHIKE-27DEC31
+[2026-04-01 07:58:04 ET] [INFO] Scan complete — 1 alerts sent
+[2026-04-01 07:58:04 ET] [INFO] ============================================================
+[2026-04-01 07:58:04 ET] [INFO] Scan job complete

@@ -2072,3 +2072,37 @@ Total modelable markets evaluated: 0
 [2026-04-01 09:59:49 ET] [INFO] Scan complete — 3 alerts sent
 [2026-04-01 09:59:49 ET] [INFO] ============================================================
 [2026-04-01 09:59:49 ET] [INFO] Scan job complete
+[2026-04-01 11:21:47 ET] [INFO] Scan job starting
+[2026-04-01 11:21:47 ET] [INFO] Kalshi API key auth OK ✅  balance: $10.00
+[2026-04-01 11:21:47 ET] [INFO] ============================================================
+[2026-04-01 11:21:47 ET] [INFO] Starting market scan
+[2026-04-01 11:21:48 ET] [INFO] Live balance: $10.00  |  Peak ever: $10.00
+[2026-04-01 11:21:48 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-01 11:21:57 ET] [INFO] Fetched 41109 open markets via events endpoint across 25 pages
+[2026-04-01 11:21:57 ET] [INFO] Fetched 41109 open markets
+[2026-04-01 11:21:57 ET] [INFO] Parsed 37433 valid markets
+[2026-04-01 11:21:57 ET] [INFO] Categories: {'Sports': 21494, 'Elections': 3880, 'Entertainment': 3164, 'Economics': 2575, 'Crypto': 2142, 'Politics': 1396, 'Financials': 998, 'Mentions': 665}
+[2026-04-01 11:22:03 ET] [INFO]   price model: SOL-USD spot=83.19 target=500.00 vol=46.8% T=6589.6h → P=0.000
+[2026-04-01 11:22:04 ET] [INFO]   price model: ETH-USD spot=2127.32 target=6000.00 vol=52.2% T=6589.6h → P=0.011
+[2026-04-01 11:22:04 ET] [INFO]   price model: BTC-USD spot=68566.20 target=100000.00 vol=40.5% T=6589.6h → P=0.141
+[2026-04-01 11:22:04 ET] [INFO]   price model: BTC-USD spot=68566.20 target=100000.00 vol=40.5% T=6589.6h → P=0.141
+[2026-04-01 11:22:04 ET] [INFO]   price model: BTC-USD spot=68566.20 target=200000.00 vol=40.5% T=6589.6h → P=0.001
+[2026-04-01 11:22:04 ET] [INFO]   price model: BTC-USD spot=68566.20 target=199999.00 vol=40.5% T=6589.6h → P=0.001
+[2026-04-01 11:22:13 ET] [INFO]   CPI model: threshold=0.2% TNX=4.30% → P=0.800
+[2026-04-01 11:22:23 ET] [INFO]   weather model: denver can't parse temp condition from title
+[2026-04-01 11:22:24 ET] [INFO]   weather model: chicago max=40.0°F target=[40,41]°F days_out=0 σ=3.5°F → P=0.223
+[2026-04-01 11:22:24 ET] [INFO]   EDGE FOUND: KXHIGHCHI-26APR01-B40.5 | implied=34.5% true=22.3% edge=-12.2% dir=NO conf=63
+[2026-04-01 11:22:27 ET] [INFO]   price model: QQQ spot=585.88 target=23899.99 vol=21.4% T=4.6h → P=0.000
+[2026-04-01 11:22:27 ET] [INFO]   EDGE FOUND: KXNASDAQ100U-26APR01H1600-T23899.99 | implied=88.5% true=0.0% edge=-88.5% dir=NO conf=70
+[2026-04-01 11:22:27 ET] [INFO]   price model: SPY spot=656.80 target=6575.00 vol=17.0% T=4.6h → P=0.000
+[2026-04-01 11:22:27 ET] [INFO]   EDGE FOUND: KXINXU-26APR01H1600-T6574.9999 | implied=73.0% true=0.0% edge=-73.0% dir=NO conf=70
+[2026-04-01 11:22:28 ET] [INFO]   price model: SPY spot=656.80 target=6600.00 vol=17.0% T=4.6h → P=0.000
+[2026-04-01 11:22:28 ET] [INFO]   EDGE FOUND: KXINXU-26APR01H1600-T6599.9999 | implied=45.0% true=0.0% edge=-45.0% dir=NO conf=70
+[2026-04-01 11:22:32 ET] [INFO] Checked 37366 markets | Modelable: 37366 | Edges found: 4
+[2026-04-01 11:22:32 ET] [INFO] [Discord] Trade alert sent: KXHIGHCHI-26APR01-B40.5
+[2026-04-01 11:22:33 ET] [INFO] [Discord] Trade alert sent: KXNASDAQ100U-26APR01H1600-T23899.99
+[2026-04-01 11:22:33 ET] [INFO] [Discord] Trade alert sent: KXINXU-26APR01H1600-T6574.9999
+[2026-04-01 11:22:33 ET] [INFO] [Discord] Trade alert sent: KXINXU-26APR01H1600-T6599.9999
+[2026-04-01 11:22:33 ET] [INFO] Scan complete — 4 alerts sent
+[2026-04-01 11:22:33 ET] [INFO] ============================================================
+[2026-04-01 11:22:33 ET] [INFO] Scan job complete

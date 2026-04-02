@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-02T16:33:43.312215Z",
+  "generated_at": "2026-04-02T17:55:39.980100Z",
   "stats": {
-    "total_alerts": 318,
+    "total_alerts": 321,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -36,7 +36,7 @@
         "hit_rate": null
       },
       "Climate and Weather": {
-        "total": 52,
+        "total": 54,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -48,7 +48,7 @@
         "hit_rate": null
       },
       "Financials": {
-        "total": 21,
+        "total": 22,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -56,19 +56,19 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 72,
+        "total": 73,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "medium (15-25%)": {
-        "total": 86,
+        "total": 87,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 160,
+        "total": 161,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -85,11 +85,65 @@
       "peak": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-04-02T16:32:44.892481Z"
+    "updated_at": "2026-04-02T17:54:41.776806Z"
   },
   "live_pnl": 0.0,
   "paper_pnl": 0.0,
   "recent_alerts": [
+    {
+      "timestamp": "2026-04-02T17:55:39.744548Z",
+      "ticker": "KXNASDAQ100U-26APR02H1600-T23999.99",
+      "title": "Will the Nasdaq-100 be above 23999.99 at the end of Apr 2, 2026 at 4pm EDT?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-24.5",
+      "implied_prob": "0.245",
+      "true_prob": "0.0",
+      "confidence": "60",
+      "suggested_live_dollars": "0.78",
+      "suggested_paper_dollars": "39.78",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "78",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": ""
+    },
+    {
+      "timestamp": "2026-04-02T17:55:39.435576Z",
+      "ticker": "KXHIGHAUS-26APR02-B88.5",
+      "title": "Will the **high temp in Austin** be 88-89\u00b0 on Apr 2, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-11.93",
+      "implied_prob": "0.325",
+      "true_prob": "0.2057",
+      "confidence": "63",
+      "suggested_live_dollars": "0.68",
+      "suggested_paper_dollars": "19.72",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "68",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": ""
+    },
+    {
+      "timestamp": "2026-04-02T17:55:39.212770Z",
+      "ticker": "KXHIGHCHI-26APR02-B70.5",
+      "title": "Will the high temp in Chicago be 70-71\u00b0 on Apr 2, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-45.5",
+      "implied_prob": "0.465",
+      "true_prob": "0.01",
+      "confidence": "80",
+      "suggested_live_dollars": "0.55",
+      "suggested_paper_dollars": "49.5",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "55",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": ""
+    },
     {
       "timestamp": "2026-04-02T16:33:43.092327Z",
       "ticker": "KXINXU-26APR02H1600-T6574.9999",
@@ -932,60 +986,6 @@
       "suggested_paper_dollars": "39.6",
       "is_paper_bet": "1",
       "paper_entry_price_cents": "66",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-04-02T02:47:49.111821Z",
-      "ticker": "KXETHMINY-27JAN01-750",
-      "title": "Will Ethereum reach below $750.00 by Jan 1, 2027 at 12:00AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-19.68",
-      "implied_prob": "0.205",
-      "true_prob": "0.0082",
-      "confidence": "70",
-      "suggested_live_dollars": "0.8",
-      "suggested_paper_dollars": "40.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "80",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-04-02T02:47:48.834961Z",
-      "ticker": "KXETHMINY-27JAN01-1000",
-      "title": "Will Ethereum reach below $1000.00 by Jan 1, 2027 at 12:00AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-28.21",
-      "implied_prob": "0.325",
-      "true_prob": "0.0429",
-      "confidence": "85",
-      "suggested_live_dollars": "0.69",
-      "suggested_paper_dollars": "49.68",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "69",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-04-02T02:47:48.552758Z",
-      "ticker": "KXETHMINY-27JAN01-1250",
-      "title": "Will Ethereum reach below $1250.00 by Jan 1, 2027 at 12:00AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-35.31",
-      "implied_prob": "0.47",
-      "true_prob": "0.1169",
-      "confidence": "85",
-      "suggested_live_dollars": "0.55",
-      "suggested_paper_dollars": "49.5",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "55",
       "outcome": "",
       "resolved_at": "",
       "notes": ""

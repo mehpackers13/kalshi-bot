@@ -2671,3 +2671,33 @@ Total modelable markets evaluated: 0
 [2026-04-02 12:33:43 ET] [INFO] Scan complete — 5 alerts sent
 [2026-04-02 12:33:43 ET] [INFO] ============================================================
 [2026-04-02 12:33:43 ET] [INFO] Scan job complete
+[2026-04-02 13:54:41 ET] [INFO] Scan job starting
+[2026-04-02 13:54:41 ET] [INFO] Kalshi API key auth OK ✅  balance: $10.00
+[2026-04-02 13:54:41 ET] [INFO] ============================================================
+[2026-04-02 13:54:41 ET] [INFO] Starting market scan
+[2026-04-02 13:54:41 ET] [INFO] Live balance: $10.00  |  Peak ever: $10.00
+[2026-04-02 13:54:41 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-02 13:54:50 ET] [INFO] Fetched 39666 open markets via events endpoint across 26 pages
+[2026-04-02 13:54:50 ET] [INFO] Fetched 39666 open markets
+[2026-04-02 13:54:50 ET] [INFO] Parsed 35486 valid markets
+[2026-04-02 13:54:50 ET] [INFO] Categories: {'Sports': 18329, 'Elections': 3896, 'Entertainment': 3532, 'Economics': 2531, 'Crypto': 2245, 'Politics': 1401, 'Financials': 1380, 'Mentions': 735}
+[2026-04-02 13:54:59 ET] [INFO]   price model: SOL-USD spot=78.87 target=500.00 vol=45.8% T=6563.1h → P=0.000
+[2026-04-02 13:55:00 ET] [INFO]   price model: BTC-USD spot=66755.48 target=100000.00 vol=35.7% T=6563.1h → P=0.096
+[2026-04-02 13:55:00 ET] [INFO]   price model: BTC-USD spot=66755.48 target=200000.00 vol=35.7% T=6563.1h → P=0.000
+[2026-04-02 13:55:00 ET] [INFO]   price model: BTC-USD spot=66755.48 target=199999.00 vol=35.7% T=6563.1h → P=0.000
+[2026-04-02 13:55:13 ET] [INFO]   CPI model: threshold=0.2% TNX=4.31% → P=0.800
+[2026-04-02 13:55:29 ET] [INFO]   weather model: chicago max=61.0°F target=[70,71]°F days_out=0 σ=3.5°F → P=0.010
+[2026-04-02 13:55:29 ET] [INFO]   EDGE FOUND: KXHIGHCHI-26APR02-B70.5 | implied=46.5% true=1.0% edge=-45.5% dir=NO conf=80
+[2026-04-02 13:55:30 ET] [INFO]   weather model: austin max=87.0°F target=[88,89]°F days_out=0 σ=3.5°F → P=0.206
+[2026-04-02 13:55:30 ET] [INFO]   EDGE FOUND: KXHIGHAUS-26APR02-B88.5 | implied=32.5% true=20.6% edge=-11.9% dir=NO conf=63
+[2026-04-02 13:55:34 ET] [INFO]   price model: QQQ spot=581.84 target=23999.99 vol=21.0% T=2.1h → P=0.000
+[2026-04-02 13:55:34 ET] [INFO]   EDGE FOUND: KXNASDAQ100U-26APR02H1600-T23999.99 | implied=24.5% true=0.0% edge=-24.5% dir=NO conf=60
+[2026-04-02 13:55:34 ET] [INFO]   price model: QQQ spot=581.84 target=24099.99 vol=21.0% T=2.1h → P=0.000
+[2026-04-02 13:55:38 ET] [INFO]   fed model: implied_rate=3.640% current≈3.605% diff=3.5bps → P=0.570
+[2026-04-02 13:55:38 ET] [INFO] Checked 35408 markets | Modelable: 35408 | Edges found: 3
+[2026-04-02 13:55:39 ET] [INFO] [Discord] Trade alert sent: KXHIGHCHI-26APR02-B70.5
+[2026-04-02 13:55:39 ET] [INFO] [Discord] Trade alert sent: KXHIGHAUS-26APR02-B88.5
+[2026-04-02 13:55:39 ET] [INFO] [Discord] Trade alert sent: KXNASDAQ100U-26APR02H1600-T23999.99
+[2026-04-02 13:55:39 ET] [INFO] Scan complete — 3 alerts sent
+[2026-04-02 13:55:39 ET] [INFO] ============================================================
+[2026-04-02 13:55:39 ET] [INFO] Scan job complete

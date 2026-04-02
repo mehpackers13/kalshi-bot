@@ -2566,3 +2566,26 @@ Total modelable markets evaluated: 0
 [2026-04-02 07:53:15 ET] [INFO] Scan complete — 3 alerts sent
 [2026-04-02 07:53:15 ET] [INFO] ============================================================
 [2026-04-02 07:53:15 ET] [INFO] Scan job complete
+[2026-04-02 09:47:02 ET] [INFO] Scan job starting
+[2026-04-02 09:47:02 ET] [INFO] Kalshi API key auth OK ✅  balance: $10.00
+[2026-04-02 09:47:02 ET] [INFO] ============================================================
+[2026-04-02 09:47:02 ET] [INFO] Starting market scan
+[2026-04-02 09:47:02 ET] [INFO] Live balance: $10.00  |  Peak ever: $10.00
+[2026-04-02 09:47:02 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-02 09:47:11 ET] [INFO] Fetched 38747 open markets via events endpoint across 25 pages
+[2026-04-02 09:47:11 ET] [INFO] Fetched 38747 open markets
+[2026-04-02 09:47:11 ET] [INFO] Parsed 35122 valid markets
+[2026-04-02 09:47:11 ET] [INFO] Categories: {'Sports': 18383, 'Elections': 3888, 'Entertainment': 3230, 'Economics': 2528, 'Crypto': 2379, 'Financials': 1434, 'Politics': 1400, 'Mentions': 681}
+[2026-04-02 09:47:20 ET] [INFO]   price model: SOL-USD spot=76.96 target=500.00 vol=47.4% T=6567.2h → P=0.000
+[2026-04-02 09:47:20 ET] [INFO]   price model: BTC-USD spot=65802.60 target=100000.00 vol=36.6% T=6567.2h → P=0.093
+[2026-04-02 09:47:20 ET] [INFO]   price model: BTC-USD spot=65802.60 target=200000.00 vol=36.6% T=6567.2h → P=0.000
+[2026-04-02 09:47:20 ET] [INFO]   price model: BTC-USD spot=65802.60 target=199999.00 vol=36.6% T=6567.2h → P=0.000
+[2026-04-02 09:47:33 ET] [INFO]   CPI model: threshold=0.2% TNX=4.34% → P=0.800
+[2026-04-02 09:47:55 ET] [INFO]   fed model: implied_rate=3.645% current≈3.610% diff=3.5bps → P=0.570
+[2026-04-02 09:47:55 ET] [INFO]   EDGE FOUND: FEDHIKE-26JUN30 | implied=5.5% true=57.0% edge=+51.5% dir=YES conf=85
+[2026-04-02 09:47:55 ET] [INFO]   fed model: implied_rate=3.645% current≈3.610% diff=3.5bps → P=0.570
+[2026-04-02 09:47:56 ET] [INFO] Checked 35057 markets | Modelable: 35057 | Edges found: 1
+[2026-04-02 09:47:56 ET] [INFO] [Discord] Trade alert sent: FEDHIKE-26JUN30
+[2026-04-02 09:47:56 ET] [INFO] Scan complete — 1 alerts sent
+[2026-04-02 09:47:56 ET] [INFO] ============================================================
+[2026-04-02 09:47:56 ET] [INFO] Scan job complete

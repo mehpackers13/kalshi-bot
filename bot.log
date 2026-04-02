@@ -2508,3 +2508,31 @@ Total modelable markets evaluated: 0
 [2026-04-01 22:47:56 ET] [INFO] Scan complete — 42 alerts sent
 [2026-04-01 22:47:56 ET] [INFO] ============================================================
 [2026-04-01 22:47:56 ET] [INFO] Scan job complete
+[2026-04-02 01:07:53 ET] [INFO] Scan job starting
+[2026-04-02 01:07:54 ET] [INFO] Kalshi API key auth OK ✅  balance: $10.00
+[2026-04-02 01:07:54 ET] [INFO] ============================================================
+[2026-04-02 01:07:54 ET] [INFO] Starting market scan
+[2026-04-02 01:07:54 ET] [INFO] Live balance: $10.00  |  Peak ever: $10.00
+[2026-04-02 01:07:54 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-02 01:08:05 ET] [INFO] Fetched 36199 open markets via events endpoint across 25 pages
+[2026-04-02 01:08:05 ET] [INFO] Fetched 36199 open markets
+[2026-04-02 01:08:05 ET] [INFO] Parsed 33506 valid markets
+[2026-04-02 01:08:05 ET] [INFO] Categories: {'Sports': 18020, 'Elections': 3887, 'Entertainment': 3236, 'Economics': 2541, 'Politics': 1401, 'Crypto': 1398, 'Financials': 1064, 'Mentions': 651}
+[2026-04-02 01:08:13 ET] [INFO]   price model: SOL-USD spot=79.01 target=500.00 vol=47.7% T=6575.9h → P=0.000
+[2026-04-02 01:08:14 ET] [INFO]   price model: BTC-USD spot=66419.81 target=100000.00 vol=36.8% T=6575.9h → P=0.100
+[2026-04-02 01:08:14 ET] [INFO]   price model: BTC-USD spot=66419.81 target=100000.00 vol=36.8% T=6575.9h → P=0.100
+[2026-04-02 01:08:14 ET] [INFO]   price model: BTC-USD spot=66419.81 target=200000.00 vol=36.8% T=6575.9h → P=0.000
+[2026-04-02 01:08:14 ET] [INFO]   price model: BTC-USD spot=66419.81 target=199999.00 vol=36.8% T=6575.8h → P=0.000
+[2026-04-02 01:08:16 ET] [INFO]   fed model: implied_rate=3.650% current≈3.605% diff=4.5bps → P=0.410
+[2026-04-02 01:08:16 ET] [INFO]   EDGE FOUND: KXEMERCUTS-26-T1 | implied=10.0% true=41.0% edge=+31.0% dir=YES conf=85
+[2026-04-02 01:08:23 ET] [INFO]   price model: META spot=579.23 target=76000.00 vol=42.3% T=2888.9h → P=0.000
+[2026-04-02 01:08:23 ET] [INFO]   EDGE FOUND: KXMETAHEADCOUNT-26JUL-76000 | implied=91.5% true=0.0% edge=-91.5% dir=NO conf=85
+[2026-04-02 01:08:27 ET] [INFO]   CPI model: threshold=0.2% TNX=4.32% → P=0.800
+[2026-04-02 01:08:43 ET] [INFO]   weather model: philadelphia can't parse temp condition from title
+[2026-04-02 01:08:48 ET] [INFO]   fed model: implied_rate=3.650% current≈3.605% diff=4.5bps → P=0.590
+[2026-04-02 01:08:48 ET] [INFO] Checked 33446 markets | Modelable: 33446 | Edges found: 2
+[2026-04-02 01:08:48 ET] [INFO] [Discord] Trade alert sent: KXEMERCUTS-26-T1
+[2026-04-02 01:08:48 ET] [INFO] [Discord] Trade alert sent: KXMETAHEADCOUNT-26JUL-76000
+[2026-04-02 01:08:48 ET] [INFO] Scan complete — 2 alerts sent
+[2026-04-02 01:08:48 ET] [INFO] ============================================================
+[2026-04-02 01:08:48 ET] [INFO] Scan job complete

@@ -3251,3 +3251,26 @@ Total modelable markets evaluated: 0
 [2026-04-03 12:05:19 ET] [INFO] Scan complete — 1 alerts sent
 [2026-04-03 12:05:19 ET] [INFO] ============================================================
 [2026-04-03 12:05:19 ET] [INFO] Scan job complete
+[2026-04-03 13:05:17 ET] [INFO] Scan job starting
+[2026-04-03 13:05:18 ET] [INFO] Kalshi API key auth OK ✅  balance: $10.00
+[2026-04-03 13:05:18 ET] [INFO] ============================================================
+[2026-04-03 13:05:18 ET] [INFO] Starting market scan
+[2026-04-03 13:05:18 ET] [INFO] Live balance: $10.00  |  Peak ever: $10.00
+[2026-04-03 13:05:18 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-03 13:05:28 ET] [INFO] Fetched 41169 open markets via events endpoint across 26 pages
+[2026-04-03 13:05:28 ET] [INFO] Fetched 41169 open markets
+[2026-04-03 13:05:28 ET] [INFO] Parsed 37636 valid markets
+[2026-04-03 13:05:28 ET] [INFO] Categories: {'Sports': 21252, 'Elections': 3927, 'Entertainment': 3679, 'Economics': 2471, 'Crypto': 1588, 'Politics': 1428, 'Financials': 993, 'Mentions': 855}
+[2026-04-03 13:05:39 ET] [INFO]   price model: SOL-USD spot=80.54 target=500.00 vol=45.9% T=6539.9h → P=0.000
+[2026-04-03 13:05:40 ET] [INFO]   price model: ETH-USD spot=2052.92 target=6000.00 vol=48.6% T=6539.9h → P=0.005
+[2026-04-03 13:05:40 ET] [INFO]   price model: BTC-USD spot=66968.71 target=100000.00 vol=35.0% T=6539.9h → P=0.092
+[2026-04-03 13:05:40 ET] [INFO]   price model: BTC-USD spot=66968.71 target=200000.00 vol=35.0% T=6539.9h → P=0.000
+[2026-04-03 13:05:40 ET] [INFO]   price model: BTC-USD spot=66968.71 target=199999.00 vol=35.0% T=6539.9h → P=0.000
+[2026-04-03 13:05:57 ET] [INFO]   CPI model: threshold=0.2% TNX=4.31% → P=0.800
+[2026-04-03 13:06:09 ET] [INFO]   CPI model: threshold=2.6% TNX=4.31% → P=0.671
+[2026-04-03 13:06:18 ET] [INFO]   weather model: philadelphia can't parse temp condition from title
+[2026-04-03 13:06:18 ET] [INFO]   weather model: nyc can't parse temp condition from title
+[2026-04-03 13:06:31 ET] [INFO] Checked 37559 markets | Modelable: 37559 | Edges found: 0
+[2026-04-03 13:06:31 ET] [INFO] Scan complete — no qualifying edges found (this is fine)
+[2026-04-03 13:06:31 ET] [INFO] ============================================================
+[2026-04-03 13:06:31 ET] [INFO] Scan job complete

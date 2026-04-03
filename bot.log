@@ -3202,3 +3202,27 @@ Total modelable markets evaluated: 0
 [2026-04-03 10:26:01 ET] [INFO] Scan complete — 2 alerts sent
 [2026-04-03 10:26:01 ET] [INFO] ============================================================
 [2026-04-03 10:26:01 ET] [INFO] Scan job complete
+[2026-04-03 11:11:38 ET] [INFO] Scan job starting
+[2026-04-03 11:11:38 ET] [INFO] Kalshi API key auth OK ✅  balance: $10.00
+[2026-04-03 11:11:38 ET] [INFO] ============================================================
+[2026-04-03 11:11:38 ET] [INFO] Starting market scan
+[2026-04-03 11:11:38 ET] [INFO] Live balance: $10.00  |  Peak ever: $10.00
+[2026-04-03 11:11:38 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-03 11:11:47 ET] [INFO] Fetched 40516 open markets via events endpoint across 26 pages
+[2026-04-03 11:11:47 ET] [INFO] Fetched 40516 open markets
+[2026-04-03 11:11:47 ET] [INFO] Parsed 37086 valid markets
+[2026-04-03 11:11:47 ET] [INFO] Categories: {'Sports': 20803, 'Elections': 3926, 'Entertainment': 3521, 'Economics': 2468, 'Crypto': 1672, 'Politics': 1419, 'Financials': 1005, 'Mentions': 808}
+[2026-04-03 11:11:58 ET] [INFO]   price model: SOL-USD spot=80.42 target=500.00 vol=45.8% T=6541.8h → P=0.000
+[2026-04-03 11:11:58 ET] [INFO]   price model: ETH-USD spot=2055.22 target=6000.00 vol=48.6% T=6541.8h → P=0.005
+[2026-04-03 11:11:58 ET] [INFO]   price model: BTC-USD spot=66935.07 target=100000.00 vol=35.0% T=6541.8h → P=0.092
+[2026-04-03 11:11:58 ET] [INFO]   price model: BTC-USD spot=66935.07 target=200000.00 vol=35.0% T=6541.8h → P=0.000
+[2026-04-03 11:11:59 ET] [INFO]   price model: BTC-USD spot=66935.07 target=199999.00 vol=35.0% T=6541.8h → P=0.000
+[2026-04-03 11:12:15 ET] [INFO]   CPI model: threshold=0.2% TNX=4.31% → P=0.800
+[2026-04-03 11:12:27 ET] [INFO]   CPI model: threshold=2.6% TNX=4.31% → P=0.671
+[2026-04-03 11:12:35 ET] [INFO]   weather model: austin max=89.0°F target=[87,88]°F days_out=0 σ=3.5°F → P=0.206
+[2026-04-03 11:12:35 ET] [INFO]   EDGE FOUND: KXHIGHAUS-26APR03-B87.5 | implied=55.0% true=20.6% edge=-34.4% dir=NO conf=80
+[2026-04-03 11:12:47 ET] [INFO] Checked 37011 markets | Modelable: 37011 | Edges found: 1
+[2026-04-03 11:12:48 ET] [INFO] [Discord] Trade alert sent: KXHIGHAUS-26APR03-B87.5
+[2026-04-03 11:12:48 ET] [INFO] Scan complete — 1 alerts sent
+[2026-04-03 11:12:48 ET] [INFO] ============================================================
+[2026-04-03 11:12:48 ET] [INFO] Scan job complete

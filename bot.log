@@ -3323,3 +3323,27 @@ Total modelable markets evaluated: 0
 [2026-04-03 15:24:28 ET] [INFO] Scan complete — 1 alerts sent
 [2026-04-03 15:24:28 ET] [INFO] ============================================================
 [2026-04-03 15:24:28 ET] [INFO] Scan job complete
+[2026-04-03 16:02:05 ET] [INFO] Scan job starting
+[2026-04-03 16:02:05 ET] [INFO] Kalshi API key auth OK ✅  balance: $10.00
+[2026-04-03 16:02:05 ET] [INFO] ============================================================
+[2026-04-03 16:02:05 ET] [INFO] Starting market scan
+[2026-04-03 16:02:05 ET] [INFO] Live balance: $10.00  |  Peak ever: $10.00
+[2026-04-03 16:02:05 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-03 16:02:17 ET] [INFO] Fetched 42502 open markets via events endpoint across 28 pages
+[2026-04-03 16:02:17 ET] [INFO] Fetched 42502 open markets
+[2026-04-03 16:02:17 ET] [INFO] Parsed 37811 valid markets
+[2026-04-03 16:02:17 ET] [INFO] Categories: {'Sports': 21569, 'Elections': 3926, 'Entertainment': 3805, 'Economics': 2481, 'Politics': 1426, 'Crypto': 1124, 'Financials': 1116, 'Mentions': 874}
+[2026-04-03 16:02:29 ET] [INFO]   price model: SOL-USD spot=80.22 target=500.00 vol=45.7% T=6537.0h → P=0.000
+[2026-04-03 16:02:30 ET] [INFO]   price model: ETH-USD spot=2052.68 target=6000.00 vol=48.6% T=6537.0h → P=0.005
+[2026-04-03 16:02:30 ET] [INFO]   price model: BTC-USD spot=66861.78 target=100000.00 vol=35.0% T=6537.0h → P=0.091
+[2026-04-03 16:02:30 ET] [INFO]   price model: BTC-USD spot=66861.78 target=200000.00 vol=35.0% T=6537.0h → P=0.000
+[2026-04-03 16:02:30 ET] [INFO]   price model: BTC-USD spot=66861.78 target=199999.00 vol=35.0% T=6536.9h → P=0.000
+[2026-04-03 16:02:48 ET] [INFO]   CPI model: threshold=0.2% TNX=4.31% → P=0.800
+[2026-04-03 16:03:00 ET] [INFO]   CPI model: threshold=2.6% TNX=4.31% → P=0.671
+[2026-04-03 16:03:11 ET] [INFO]   weather model: philadelphia can't parse temp condition from title
+[2026-04-03 16:03:13 ET] [INFO]   weather model: nyc can't parse temp condition from title
+[2026-04-03 16:03:13 ET] [INFO]   weather model: austin can't parse temp condition from title
+[2026-04-03 16:03:25 ET] [INFO] Checked 37734 markets | Modelable: 37734 | Edges found: 0
+[2026-04-03 16:03:25 ET] [INFO] Scan complete — no qualifying edges found (this is fine)
+[2026-04-03 16:03:25 ET] [INFO] ============================================================
+[2026-04-03 16:03:25 ET] [INFO] Scan job complete

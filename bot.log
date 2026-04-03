@@ -3083,3 +3083,31 @@ Total modelable markets evaluated: 0
 [2026-04-02 22:50:45 ET] [INFO] Scan complete — 1 alerts sent
 [2026-04-02 22:50:45 ET] [INFO] ============================================================
 [2026-04-02 22:50:45 ET] [INFO] Scan job complete
+[2026-04-03 01:10:33 ET] [INFO] Scan job starting
+[2026-04-03 01:10:34 ET] [INFO] Kalshi API key auth OK ✅  balance: $10.00
+[2026-04-03 01:10:34 ET] [INFO] ============================================================
+[2026-04-03 01:10:34 ET] [INFO] Starting market scan
+[2026-04-03 01:10:34 ET] [INFO] Live balance: $10.00  |  Peak ever: $10.00
+[2026-04-03 01:10:34 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-03 01:10:44 ET] [INFO] Fetched 38425 open markets via events endpoint across 26 pages
+[2026-04-03 01:10:44 ET] [INFO] Fetched 38425 open markets
+[2026-04-03 01:10:44 ET] [INFO] Parsed 34401 valid markets
+[2026-04-03 01:10:44 ET] [INFO] Categories: {'Sports': 18753, 'Elections': 3925, 'Entertainment': 3518, 'Economics': 2513, 'Crypto': 1639, 'Politics': 1408, 'Mentions': 783, 'Financials': 562}
+[2026-04-03 01:10:55 ET] [INFO]   price model: SOL-USD spot=79.36 target=500.00 vol=46.0% T=6551.8h → P=0.000
+[2026-04-03 01:10:56 ET] [INFO]   price model: ETH-USD spot=2054.58 target=6000.00 vol=49.6% T=6551.8h → P=0.006
+[2026-04-03 01:10:56 ET] [INFO]   price model: BTC-USD spot=66623.48 target=100000.00 vol=35.8% T=6551.8h → P=0.095
+[2026-04-03 01:10:56 ET] [INFO]   price model: BTC-USD spot=66623.48 target=200000.00 vol=35.8% T=6551.8h → P=0.000
+[2026-04-03 01:10:57 ET] [INFO]   price model: BTC-USD spot=66623.48 target=199999.00 vol=35.8% T=6551.8h → P=0.000
+[2026-04-03 01:11:13 ET] [INFO]   CPI model: threshold=0.2% TNX=4.31% → P=0.800
+[2026-04-03 01:11:22 ET] [INFO]   price model: SOL-USD spot=79.36 target=320.00 vol=46.0% T=175.3h → P=0.000
+[2026-04-03 01:11:22 ET] [INFO]   EDGE FOUND: KXUSGASCPI-26APR10-T320 | implied=95.0% true=0.0% edge=-95.0% dir=NO conf=85
+[2026-04-03 01:11:24 ET] [INFO]   CPI model: threshold=2.6% TNX=4.31% → P=0.671
+[2026-04-03 01:11:36 ET] [INFO]   price model: CL=F spot=111.54 target=109.00 vol=94.3% T=15.8h → P=0.717
+[2026-04-03 01:11:36 ET] [INFO]   EDGE FOUND: KXBRENTW-26APR0317-T109.99 | implied=11.0% true=71.7% edge=+60.7% dir=YES conf=80
+[2026-04-03 01:11:41 ET] [INFO]   fed model: implied_rate=3.640% current≈3.607% diff=3.3bps → P=0.566
+[2026-04-03 01:11:41 ET] [INFO] Checked 34336 markets | Modelable: 34336 | Edges found: 2
+[2026-04-03 01:11:41 ET] [INFO] [Discord] Trade alert sent: KXUSGASCPI-26APR10-T320
+[2026-04-03 01:11:42 ET] [INFO] [Discord] Trade alert sent: KXBRENTW-26APR0317-T109.99
+[2026-04-03 01:11:42 ET] [INFO] Scan complete — 2 alerts sent
+[2026-04-03 01:11:42 ET] [INFO] ============================================================
+[2026-04-03 01:11:42 ET] [INFO] Scan job complete

@@ -3111,3 +3111,40 @@ Total modelable markets evaluated: 0
 [2026-04-03 01:11:42 ET] [INFO] Scan complete — 2 alerts sent
 [2026-04-03 01:11:42 ET] [INFO] ============================================================
 [2026-04-03 01:11:42 ET] [INFO] Scan job complete
+[2026-04-03 07:44:17 ET] [INFO] Scan job starting
+[2026-04-03 07:44:17 ET] [INFO] Kalshi API key auth OK ✅  balance: $10.00
+[2026-04-03 07:44:17 ET] [INFO] ============================================================
+[2026-04-03 07:44:17 ET] [INFO] Starting market scan
+[2026-04-03 07:44:17 ET] [INFO] Live balance: $10.00  |  Peak ever: $10.00
+[2026-04-03 07:44:18 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-03 07:44:27 ET] [INFO] Fetched 39993 open markets via events endpoint across 26 pages
+[2026-04-03 07:44:27 ET] [INFO] Fetched 39993 open markets
+[2026-04-03 07:44:28 ET] [INFO] Parsed 36509 valid markets
+[2026-04-03 07:44:28 ET] [INFO] Categories: {'Sports': 20444, 'Elections': 3926, 'Entertainment': 3514, 'Economics': 2519, 'Crypto': 1695, 'Politics': 1408, 'Financials': 995, 'Mentions': 780}
+[2026-04-03 07:44:38 ET] [INFO]   price model: SOL-USD spot=80.04 target=500.00 vol=45.6% T=6545.3h → P=0.000
+[2026-04-03 07:44:39 ET] [INFO]   price model: ETH-USD spot=2063.10 target=6000.00 vol=48.6% T=6545.3h → P=0.006
+[2026-04-03 07:44:39 ET] [INFO]   price model: BTC-USD spot=66980.18 target=100000.00 vol=35.0% T=6545.3h → P=0.092
+[2026-04-03 07:44:39 ET] [INFO]   price model: BTC-USD spot=66980.18 target=200000.00 vol=35.0% T=6545.3h → P=0.000
+[2026-04-03 07:44:39 ET] [INFO]   price model: BTC-USD spot=66980.18 target=199999.00 vol=35.0% T=6545.2h → P=0.000
+[2026-04-03 07:44:55 ET] [INFO]   CPI model: threshold=0.2% TNX=4.31% → P=0.800
+[2026-04-03 07:44:59 ET] [INFO]   price model: BTC-USD spot=66980.18 target=60000.00 vol=35.0% T=664.3h → P=0.127
+[2026-04-03 07:44:59 ET] [INFO]   EDGE FOUND: KXBTCMINMON-BTC-26APR30-6000000 | implied=37.5% true=12.7% edge=-24.8% dir=NO conf=70
+[2026-04-03 07:44:59 ET] [INFO]   price model: BTC-USD spot=66980.18 target=72500.00 vol=35.0% T=664.3h → P=0.205
+[2026-04-03 07:44:59 ET] [INFO]   EDGE FOUND: KXBTCMAXMON-BTC-26APR30-7250000 | implied=50.5% true=20.5% edge=-29.9% dir=NO conf=80
+[2026-04-03 07:44:59 ET] [INFO]   price model: BTC-USD spot=66980.18 target=75000.00 vol=35.0% T=664.3h → P=0.120
+[2026-04-03 07:44:59 ET] [INFO]   EDGE FOUND: KXBTCMAXMON-BTC-26APR30-7500000 | implied=30.5% true=12.0% edge=-18.5% dir=NO conf=70
+[2026-04-03 07:45:07 ET] [INFO]   CPI model: threshold=2.6% TNX=4.31% → P=0.671
+[2026-04-03 07:45:14 ET] [INFO]   weather model: miami max=82.0°F target=[82,83]°F days_out=0 σ=3.5°F → P=0.223
+[2026-04-03 07:45:14 ET] [INFO]   EDGE FOUND: KXHIGHMIA-26APR03-B82.5 | implied=58.5% true=22.3% edge=-36.2% dir=NO conf=80
+[2026-04-03 07:45:22 ET] [INFO]   price model: CL=F spot=111.54 target=107.00 vol=94.3% T=9.3h → P=0.912
+[2026-04-03 07:45:26 ET] [INFO]   fed model: implied_rate=3.615% current≈3.607% diff=0.8bps → P=0.516
+[2026-04-03 07:45:26 ET] [INFO]   EDGE FOUND: FEDHIKE-27DEC31 | implied=61.0% true=51.6% edge=-9.4% dir=NO conf=68
+[2026-04-03 07:45:26 ET] [INFO] Checked 36443 markets | Modelable: 36443 | Edges found: 5
+[2026-04-03 07:45:27 ET] [INFO] [Discord] Trade alert sent: KXBTCMINMON-BTC-26APR30-6000000
+[2026-04-03 07:45:27 ET] [INFO] [Discord] Trade alert sent: KXBTCMAXMON-BTC-26APR30-7250000
+[2026-04-03 07:45:27 ET] [INFO] [Discord] Trade alert sent: KXBTCMAXMON-BTC-26APR30-7500000
+[2026-04-03 07:45:27 ET] [INFO] [Discord] Trade alert sent: KXHIGHMIA-26APR03-B82.5
+[2026-04-03 07:45:28 ET] [INFO] [Discord] Trade alert sent: FEDHIKE-27DEC31
+[2026-04-03 07:45:28 ET] [INFO] Scan complete — 5 alerts sent
+[2026-04-03 07:45:28 ET] [INFO] ============================================================
+[2026-04-03 07:45:28 ET] [INFO] Scan job complete

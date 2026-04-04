@@ -3753,3 +3753,27 @@ Total modelable markets evaluated: 0
 [2026-04-04 07:37:50 ET] [INFO] Scan complete — 1 alerts sent
 [2026-04-04 07:37:50 ET] [INFO] ============================================================
 [2026-04-04 07:37:50 ET] [INFO] Scan job complete
+[2026-04-04 09:14:59 ET] [INFO] Scan job starting
+[2026-04-04 09:14:59 ET] [INFO] Kalshi API key auth OK ✅  balance: $10.00
+[2026-04-04 09:14:59 ET] [INFO] ============================================================
+[2026-04-04 09:14:59 ET] [INFO] Starting market scan
+[2026-04-04 09:14:59 ET] [INFO] Live balance: $10.00  |  Peak ever: $10.00
+[2026-04-04 09:14:59 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-04 09:15:10 ET] [INFO] Fetched 41535 open markets via events endpoint across 28 pages
+[2026-04-04 09:15:10 ET] [INFO] Fetched 41535 open markets
+[2026-04-04 09:15:10 ET] [INFO] Parsed 38226 valid markets
+[2026-04-04 09:15:10 ET] [INFO] Categories: {'Sports': 20303, 'Elections': 3991, 'Entertainment': 3878, 'Economics': 2625, 'Crypto': 2139, 'Financials': 1690, 'Politics': 1424, 'Mentions': 891}
+[2026-04-04 09:15:22 ET] [INFO]   price model: SOL-USD spot=80.07 target=500.00 vol=43.9% T=6519.7h → P=0.000
+[2026-04-04 09:15:22 ET] [INFO]   price model: BTC-USD spot=67079.34 target=100000.00 vol=33.2% T=6519.7h → P=0.081
+[2026-04-04 09:15:22 ET] [INFO]   price model: BTC-USD spot=67079.34 target=200000.00 vol=33.2% T=6519.7h → P=0.000
+[2026-04-04 09:15:23 ET] [INFO]   price model: BTC-USD spot=67079.34 target=199999.00 vol=33.2% T=6519.7h → P=0.000
+[2026-04-04 09:15:24 ET] [INFO]   fed model: implied_rate=3.645% current≈3.607% diff=3.8bps → P=0.424
+[2026-04-04 09:15:41 ET] [INFO]   CPI model: threshold=0.2% TNX=4.31% → P=0.800
+[2026-04-04 09:16:02 ET] [INFO]   weather model: miami max=83.0°F target=[84,85]°F days_out=0 σ=3.5°F → P=0.206
+[2026-04-04 09:16:02 ET] [INFO]   EDGE FOUND: KXHIGHMIA-26APR04-B84.5 | implied=29.5% true=20.6% edge=-8.9% dir=NO conf=63
+[2026-04-04 09:16:16 ET] [INFO]   fed model: implied_rate=3.645% current≈3.607% diff=3.8bps → P=0.576
+[2026-04-04 09:16:16 ET] [INFO] Checked 38156 markets | Modelable: 38156 | Edges found: 1
+[2026-04-04 09:16:16 ET] [INFO] [Discord] Trade alert sent: KXHIGHMIA-26APR04-B84.5
+[2026-04-04 09:16:16 ET] [INFO] Scan complete — 1 alerts sent
+[2026-04-04 09:16:16 ET] [INFO] ============================================================
+[2026-04-04 09:16:16 ET] [INFO] Scan job complete

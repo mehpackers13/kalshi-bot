@@ -3897,3 +3897,28 @@ Total modelable markets evaluated: 0
 [2026-04-04 13:41:11 ET] [INFO] Scan complete — no qualifying edges found (this is fine)
 [2026-04-04 13:41:11 ET] [INFO] ============================================================
 [2026-04-04 13:41:11 ET] [INFO] Scan job complete
+[2026-04-04 14:56:05 ET] [INFO] Scan job starting
+[2026-04-04 14:56:05 ET] [INFO] Kalshi API key auth OK ✅  balance: $10.00
+[2026-04-04 14:56:05 ET] [INFO] ============================================================
+[2026-04-04 14:56:05 ET] [INFO] Starting market scan
+[2026-04-04 14:56:05 ET] [INFO] Live balance: $10.00  |  Peak ever: $10.00
+[2026-04-04 14:56:05 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-04 14:56:19 ET] [INFO] Fetched 43786 open markets via events endpoint across 27 pages
+[2026-04-04 14:56:19 ET] [INFO] Fetched 43786 open markets
+[2026-04-04 14:56:19 ET] [INFO] Parsed 39648 valid markets
+[2026-04-04 14:56:19 ET] [INFO] Categories: {'Sports': 21445, 'Elections': 3998, 'Entertainment': 3915, 'Economics': 2622, 'Crypto': 2171, 'Financials': 1687, 'Politics': 1441, 'Mentions': 860}
+[2026-04-04 14:56:32 ET] [INFO]   price model: SOL-USD spot=80.87 target=500.00 vol=44.0% T=6514.1h → P=0.000
+[2026-04-04 14:56:33 ET] [INFO]   price model: BTC-USD spot=67280.42 target=100000.00 vol=33.2% T=6514.1h → P=0.083
+[2026-04-04 14:56:33 ET] [INFO]   price model: BTC-USD spot=67280.42 target=200000.00 vol=33.2% T=6514.1h → P=0.000
+[2026-04-04 14:56:33 ET] [INFO]   price model: BTC-USD spot=67280.42 target=199999.00 vol=33.2% T=6514.0h → P=0.000
+[2026-04-04 14:56:34 ET] [INFO]   fed model: implied_rate=3.645% current≈3.607% diff=3.8bps → P=0.424
+[2026-04-04 14:56:53 ET] [INFO]   CPI model: threshold=0.2% TNX=4.31% → P=0.800
+[2026-04-04 14:57:18 ET] [INFO]   weather model: nyc max=78.0°F target=[72,73]°F days_out=0 σ=3.5°F → P=0.068
+[2026-04-04 14:57:18 ET] [INFO]   EDGE FOUND: KXHIGHNY-26APR04-B72.5 | implied=90.5% true=6.8% edge=-83.7% dir=NO conf=85
+[2026-04-04 14:57:19 ET] [INFO]   weather model: denver can't parse temp condition from title
+[2026-04-04 14:57:37 ET] [INFO]   fed model: implied_rate=3.645% current≈3.607% diff=3.8bps → P=0.576
+[2026-04-04 14:57:37 ET] [INFO] Checked 39574 markets | Modelable: 39574 | Edges found: 1
+[2026-04-04 14:57:38 ET] [INFO] [Discord] Trade alert sent: KXHIGHNY-26APR04-B72.5
+[2026-04-04 14:57:38 ET] [INFO] Scan complete — 1 alerts sent
+[2026-04-04 14:57:38 ET] [INFO] ============================================================
+[2026-04-04 14:57:38 ET] [INFO] Scan job complete

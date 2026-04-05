@@ -4283,3 +4283,27 @@ Total modelable markets evaluated: 0
 [2026-04-04 22:59:19 ET] [INFO] Scan complete — 66 alerts sent
 [2026-04-04 22:59:19 ET] [INFO] ============================================================
 [2026-04-04 22:59:19 ET] [INFO] Scan job complete
+[2026-04-05 01:20:19 ET] [INFO] Scan job starting
+[2026-04-05 01:20:20 ET] [INFO] Kalshi API key auth OK ✅  balance: $10.00
+[2026-04-05 01:20:20 ET] [INFO] ============================================================
+[2026-04-05 01:20:20 ET] [INFO] Starting market scan
+[2026-04-05 01:20:20 ET] [INFO] Live balance: $10.00  |  Peak ever: $10.00
+[2026-04-05 01:20:20 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-05 01:20:30 ET] [INFO] Fetched 40371 open markets via events endpoint across 26 pages
+[2026-04-05 01:20:30 ET] [INFO] Fetched 40371 open markets
+[2026-04-05 01:20:31 ET] [INFO] Parsed 37398 valid markets
+[2026-04-05 01:20:31 ET] [INFO] Categories: {'Sports': 19415, 'Elections': 3995, 'Entertainment': 3888, 'Economics': 2619, 'Crypto': 2167, 'Financials': 1686, 'Politics': 1438, 'Mentions': 758}
+[2026-04-05 01:20:45 ET] [INFO]   price model: SOL-USD spot=80.35 target=500.00 vol=44.5% T=6503.7h → P=0.000
+[2026-04-05 01:20:46 ET] [INFO]   price model: BTC-USD spot=67100.43 target=100000.00 vol=33.6% T=6503.7h → P=0.084
+[2026-04-05 01:20:46 ET] [INFO]   price model: BTC-USD spot=67100.43 target=200000.00 vol=33.6% T=6503.7h → P=0.000
+[2026-04-05 01:20:46 ET] [INFO]   price model: BTC-USD spot=67100.43 target=199999.00 vol=33.6% T=6503.6h → P=0.000
+[2026-04-05 01:20:48 ET] [INFO]   fed model: implied_rate=3.645% current≈3.607% diff=3.8bps → P=0.424
+[2026-04-05 01:21:10 ET] [INFO]   CPI model: threshold=0.2% TNX=4.31% → P=0.800
+[2026-04-05 01:21:30 ET] [INFO]   CPI model: threshold=3.1% TNX=4.31% → P=0.621
+[2026-04-05 01:21:30 ET] [INFO]   EDGE FOUND: KXCPIYOY-26MAR-T3.1 | implied=93.5% true=62.1% edge=-31.4% dir=NO conf=95
+[2026-04-05 01:21:52 ET] [INFO]   fed model: implied_rate=3.645% current≈3.607% diff=3.8bps → P=0.576
+[2026-04-05 01:21:53 ET] [INFO] Checked 37332 markets | Modelable: 37332 | Edges found: 1
+[2026-04-05 01:21:53 ET] [INFO] [Discord] Trade alert sent: KXCPIYOY-26MAR-T3.1
+[2026-04-05 01:21:53 ET] [INFO] Scan complete — 1 alerts sent
+[2026-04-05 01:21:53 ET] [INFO] ============================================================
+[2026-04-05 01:21:53 ET] [INFO] Scan job complete

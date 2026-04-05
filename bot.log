@@ -4397,3 +4397,28 @@ Total modelable markets evaluated: 0
 [2026-04-05 11:05:31 ET] [INFO] Scan complete — no qualifying edges found (this is fine)
 [2026-04-05 11:05:31 ET] [INFO] ============================================================
 [2026-04-05 11:05:31 ET] [INFO] Scan job complete
+[2026-04-05 11:58:13 ET] [INFO] Scan job starting
+[2026-04-05 11:58:13 ET] [INFO] Kalshi API key auth OK ✅  balance: $10.00
+[2026-04-05 11:58:13 ET] [INFO] ============================================================
+[2026-04-05 11:58:13 ET] [INFO] Starting market scan
+[2026-04-05 11:58:13 ET] [INFO] Live balance: $10.00  |  Peak ever: $10.00
+[2026-04-05 11:58:13 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-05 11:58:28 ET] [INFO] Fetched 42565 open markets via events endpoint across 26 pages
+[2026-04-05 11:58:28 ET] [INFO] Fetched 42565 open markets
+[2026-04-05 11:58:28 ET] [INFO] Parsed 38999 valid markets
+[2026-04-05 11:58:28 ET] [INFO] Categories: {'Sports': 20943, 'Elections': 3995, 'Entertainment': 3913, 'Economics': 2636, 'Crypto': 2178, 'Financials': 1675, 'Politics': 1430, 'Mentions': 709}
+[2026-04-05 11:58:42 ET] [INFO]   price model: SOL-USD spot=79.79 target=500.00 vol=43.8% T=6493.0h → P=0.000
+[2026-04-05 11:58:42 ET] [INFO]   price model: BTC-USD spot=67312.44 target=100000.00 vol=33.0% T=6493.0h → P=0.082
+[2026-04-05 11:58:43 ET] [INFO]   price model: BTC-USD spot=67312.44 target=200000.00 vol=33.0% T=6493.0h → P=0.000
+[2026-04-05 11:58:43 ET] [INFO]   price model: BTC-USD spot=67312.44 target=199999.00 vol=33.0% T=6493.0h → P=0.000
+[2026-04-05 11:58:44 ET] [INFO]   fed model: implied_rate=3.645% current≈3.607% diff=3.8bps → P=0.424
+[2026-04-05 11:58:46 ET] [INFO]   fed model: implied_rate=3.645% current≈3.607% diff=3.8bps → P=0.424
+[2026-04-05 11:58:46 ET] [INFO]   EDGE FOUND: KXEMERCUTS-26-T1 | implied=9.5% true=42.4% edge=+32.9% dir=YES conf=85
+[2026-04-05 11:59:04 ET] [INFO]   CPI model: threshold=0.2% TNX=4.31% → P=0.800
+[2026-04-05 11:59:27 ET] [INFO]   weather model: nyc can't parse temp condition from title
+[2026-04-05 11:59:46 ET] [INFO]   fed model: implied_rate=3.645% current≈3.607% diff=3.8bps → P=0.576
+[2026-04-05 11:59:46 ET] [INFO] Checked 38931 markets | Modelable: 38931 | Edges found: 1
+[2026-04-05 11:59:46 ET] [INFO] [Discord] Trade alert sent: KXEMERCUTS-26-T1
+[2026-04-05 11:59:46 ET] [INFO] Scan complete — 1 alerts sent
+[2026-04-05 11:59:46 ET] [INFO] ============================================================
+[2026-04-05 11:59:46 ET] [INFO] Scan job complete

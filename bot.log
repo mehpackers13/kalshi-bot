@@ -4566,3 +4566,27 @@ Total modelable markets evaluated: 0
 [2026-04-05 18:28:51 ET] [INFO] [Discord] Weekly report sent
 [2026-04-05 18:28:51 ET] [INFO] Weekly review sent
 [2026-04-05 18:28:51 ET] [INFO] Weekly review job complete
+[2026-04-05 18:41:01 ET] [INFO] Scan job starting
+[2026-04-05 18:41:01 ET] [INFO] Kalshi API key auth OK ✅  balance: $10.00
+[2026-04-05 18:41:01 ET] [INFO] ============================================================
+[2026-04-05 18:41:01 ET] [INFO] Starting market scan
+[2026-04-05 18:41:01 ET] [INFO] Live balance: $10.00  |  Peak ever: $10.00
+[2026-04-05 18:41:01 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-05 18:41:10 ET] [INFO] Fetched 40001 open markets via events endpoint across 24 pages
+[2026-04-05 18:41:10 ET] [INFO] Fetched 40001 open markets
+[2026-04-05 18:41:10 ET] [INFO] Parsed 36730 valid markets
+[2026-04-05 18:41:10 ET] [INFO] Categories: {'Sports': 18832, 'Elections': 3995, 'Entertainment': 3965, 'Economics': 2633, 'Crypto': 2213, 'Financials': 1455, 'Politics': 1440, 'Mentions': 692}
+[2026-04-05 18:41:26 ET] [INFO]   price model: BTC-USD spot=67495.07 target=100000.00 vol=33.0% T=6486.3h → P=0.083
+[2026-04-05 18:41:26 ET] [INFO]   price model: BTC-USD spot=67495.07 target=200000.00 vol=33.0% T=6486.3h → P=0.000
+[2026-04-05 18:41:26 ET] [INFO]   price model: BTC-USD spot=67495.07 target=199999.00 vol=33.0% T=6486.3h → P=0.000
+[2026-04-05 18:41:28 ET] [INFO]   fed model: implied_rate=3.645% current≈3.607% diff=3.8bps → P=0.424
+[2026-04-05 18:41:50 ET] [INFO]   CPI model: threshold=0.2% TNX=4.31% → P=0.800
+[2026-04-05 18:42:19 ET] [INFO]   weather model: austin max=68.0°F target=[64,65]°F days_out=0 σ=3.5°F → P=0.138
+[2026-04-05 18:42:19 ET] [INFO]   EDGE FOUND: KXHIGHAUS-26APR05-B64.5 | implied=69.5% true=13.8% edge=-55.7% dir=NO conf=80
+[2026-04-05 18:42:19 ET] [INFO]   weather model: austin max=68.0°F target=[66,67]°F days_out=0 σ=3.5°F → P=0.206
+[2026-04-05 18:42:32 ET] [INFO]   fed model: implied_rate=3.645% current≈3.607% diff=3.8bps → P=0.576
+[2026-04-05 18:42:32 ET] [INFO] Checked 36660 markets | Modelable: 36660 | Edges found: 1
+[2026-04-05 18:42:32 ET] [INFO] [Discord] Trade alert sent: KXHIGHAUS-26APR05-B64.5
+[2026-04-05 18:42:32 ET] [INFO] Scan complete — 1 alerts sent
+[2026-04-05 18:42:32 ET] [INFO] ============================================================
+[2026-04-05 18:42:32 ET] [INFO] Scan job complete

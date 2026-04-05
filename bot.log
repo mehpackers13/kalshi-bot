@@ -4307,3 +4307,27 @@ Total modelable markets evaluated: 0
 [2026-04-05 01:21:53 ET] [INFO] Scan complete — 1 alerts sent
 [2026-04-05 01:21:53 ET] [INFO] ============================================================
 [2026-04-05 01:21:53 ET] [INFO] Scan job complete
+[2026-04-05 07:38:10 ET] [INFO] Scan job starting
+[2026-04-05 07:38:10 ET] [INFO] Kalshi API key auth OK ✅  balance: $10.00
+[2026-04-05 07:38:10 ET] [INFO] ============================================================
+[2026-04-05 07:38:10 ET] [INFO] Starting market scan
+[2026-04-05 07:38:10 ET] [INFO] Live balance: $10.00  |  Peak ever: $10.00
+[2026-04-05 07:38:10 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-05 07:38:21 ET] [INFO] Fetched 41141 open markets via events endpoint across 26 pages
+[2026-04-05 07:38:21 ET] [INFO] Fetched 41141 open markets
+[2026-04-05 07:38:21 ET] [INFO] Parsed 38007 valid markets
+[2026-04-05 07:38:21 ET] [INFO] Categories: {'Sports': 20211, 'Elections': 3996, 'Entertainment': 3887, 'Economics': 2620, 'Crypto': 2149, 'Financials': 1686, 'Politics': 1438, 'Mentions': 738}
+[2026-04-05 07:38:35 ET] [INFO]   price model: SOL-USD spot=79.81 target=500.00 vol=43.8% T=6497.4h → P=0.000
+[2026-04-05 07:38:36 ET] [INFO]   price model: BTC-USD spot=66967.13 target=100000.00 vol=33.0% T=6497.4h → P=0.079
+[2026-04-05 07:38:36 ET] [INFO]   price model: BTC-USD spot=66967.13 target=200000.00 vol=33.0% T=6497.4h → P=0.000
+[2026-04-05 07:38:36 ET] [INFO]   price model: BTC-USD spot=66967.13 target=199999.00 vol=33.0% T=6497.3h → P=0.000
+[2026-04-05 07:38:38 ET] [INFO]   fed model: implied_rate=3.645% current≈3.607% diff=3.8bps → P=0.424
+[2026-04-05 07:38:58 ET] [INFO]   CPI model: threshold=0.2% TNX=4.31% → P=0.800
+[2026-04-05 07:39:10 ET] [INFO]   price model: SOL-USD spot=79.80 target=320.00 vol=43.8% T=120.8h → P=0.000
+[2026-04-05 07:39:10 ET] [INFO]   EDGE FOUND: KXUSGASCPI-26APR10-T320 | implied=94.5% true=0.0% edge=-94.5% dir=NO conf=85
+[2026-04-05 07:39:37 ET] [INFO]   fed model: implied_rate=3.645% current≈3.607% diff=3.8bps → P=0.576
+[2026-04-05 07:39:37 ET] [INFO] Checked 37940 markets | Modelable: 37940 | Edges found: 1
+[2026-04-05 07:39:38 ET] [INFO] [Discord] Trade alert sent: KXUSGASCPI-26APR10-T320
+[2026-04-05 07:39:38 ET] [INFO] Scan complete — 1 alerts sent
+[2026-04-05 07:39:38 ET] [INFO] ============================================================
+[2026-04-05 07:39:38 ET] [INFO] Scan job complete

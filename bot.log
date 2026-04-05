@@ -4516,3 +4516,26 @@ Total modelable markets evaluated: 0
 [2026-04-05 15:43:43 ET] [INFO] Scan complete — 1 alerts sent
 [2026-04-05 15:43:43 ET] [INFO] ============================================================
 [2026-04-05 15:43:44 ET] [INFO] Scan job complete
+[2026-04-05 16:43:58 ET] [INFO] Scan job starting
+[2026-04-05 16:43:59 ET] [INFO] Kalshi API key auth OK ✅  balance: $10.00
+[2026-04-05 16:43:59 ET] [INFO] ============================================================
+[2026-04-05 16:43:59 ET] [INFO] Starting market scan
+[2026-04-05 16:43:59 ET] [INFO] Live balance: $10.00  |  Peak ever: $10.00
+[2026-04-05 16:43:59 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-05 16:44:07 ET] [INFO] Fetched 42047 open markets via events endpoint across 25 pages
+[2026-04-05 16:44:07 ET] [INFO] Fetched 42047 open markets
+[2026-04-05 16:44:07 ET] [INFO] Parsed 38816 valid markets
+[2026-04-05 16:44:07 ET] [INFO] Categories: {'Sports': 21172, 'Elections': 3998, 'Entertainment': 3923, 'Economics': 2635, 'Crypto': 1746, 'Financials': 1670, 'Politics': 1430, 'Mentions': 733}
+[2026-04-05 16:44:23 ET] [INFO]   price model: BTC-USD spot=67633.77 target=100000.00 vol=33.0% T=6488.3h → P=0.084
+[2026-04-05 16:44:23 ET] [INFO]   price model: BTC-USD spot=67633.77 target=200000.00 vol=33.0% T=6488.3h → P=0.000
+[2026-04-05 16:44:23 ET] [INFO]   price model: BTC-USD spot=67633.77 target=199999.00 vol=33.0% T=6488.2h → P=0.000
+[2026-04-05 16:44:24 ET] [INFO]   fed model: implied_rate=3.645% current≈3.607% diff=3.8bps → P=0.424
+[2026-04-05 16:44:46 ET] [INFO]   CPI model: threshold=0.2% TNX=4.31% → P=0.800
+[2026-04-05 16:45:15 ET] [INFO]   weather model: denver max=68.0°F target=[66,67]°F days_out=0 σ=3.5°F → P=0.206
+[2026-04-05 16:45:15 ET] [INFO]   EDGE FOUND: KXHIGHDEN-26APR05-B66.5 | implied=78.5% true=20.6% edge=-57.9% dir=NO conf=80
+[2026-04-05 16:45:33 ET] [INFO]   fed model: implied_rate=3.645% current≈3.607% diff=3.8bps → P=0.576
+[2026-04-05 16:45:33 ET] [INFO] Checked 38746 markets | Modelable: 38746 | Edges found: 1
+[2026-04-05 16:45:33 ET] [INFO] [Discord] Trade alert sent: KXHIGHDEN-26APR05-B66.5
+[2026-04-05 16:45:33 ET] [INFO] Scan complete — 1 alerts sent
+[2026-04-05 16:45:33 ET] [INFO] ============================================================
+[2026-04-05 16:45:33 ET] [INFO] Scan job complete

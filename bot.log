@@ -5138,3 +5138,23 @@ Total modelable markets evaluated: 0
 [2026-04-06 17:48:12 ET] [INFO] Scan complete — 1 alerts sent
 [2026-04-06 17:48:12 ET] [INFO] ============================================================
 [2026-04-06 17:48:12 ET] [INFO] Scan job complete
+[2026-04-06 18:48:27 ET] [INFO] Scan job starting
+[2026-04-06 18:48:27 ET] [INFO] Kalshi API key auth OK ✅  balance: $10.00
+[2026-04-06 18:48:27 ET] [INFO] ============================================================
+[2026-04-06 18:48:27 ET] [INFO] Starting market scan
+[2026-04-06 18:48:27 ET] [INFO] Live balance: $10.00  |  Peak ever: $10.00
+[2026-04-06 18:48:27 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-06 18:48:36 ET] [INFO] Fetched 41645 open markets via events endpoint across 25 pages
+[2026-04-06 18:48:36 ET] [INFO] Fetched 41645 open markets
+[2026-04-06 18:48:36 ET] [INFO] Parsed 39219 valid markets
+[2026-04-06 18:48:36 ET] [INFO] Categories: {'Sports': 21477, 'Elections': 3986, 'Entertainment': 3898, 'Economics': 2632, 'Crypto': 2172, 'Politics': 1433, 'Financials': 1420, 'Mentions': 641}
+[2026-04-06 18:49:12 ET] [INFO]   price model: BTC-USD spot=69195.23 target=100000.00 vol=33.2% T=6462.2h → P=0.098
+[2026-04-06 18:49:19 ET] [INFO]   price model: BTC-USD spot=69195.23 target=200000.00 vol=33.2% T=6462.2h → P=0.000
+[2026-04-06 18:49:26 ET] [INFO]   price model: BTC-USD spot=69195.23 target=199999.00 vol=33.2% T=6462.2h → P=0.000
+[2026-04-06 18:49:41 ET] [INFO]   fed model: implied_rate=3.645% current≈3.623% diff=2.2bps → P=0.456
+[2026-04-06 18:50:07 ET] [INFO]   CPI model: threshold=0.2% TNX=4.34% → P=0.800
+[2026-04-06 18:51:01 ET] [INFO]   fed model: implied_rate=3.645% current≈3.623% diff=2.2bps → P=0.544
+[2026-04-06 18:51:01 ET] [INFO] Checked 39143 markets | Modelable: 39143 | Edges found: 0
+[2026-04-06 18:51:01 ET] [INFO] Scan complete — no qualifying edges found (this is fine)
+[2026-04-06 18:51:01 ET] [INFO] ============================================================
+[2026-04-06 18:51:01 ET] [INFO] Scan job complete

@@ -4968,3 +4968,24 @@ Total modelable markets evaluated: 0
 [2026-04-06 09:41:18 ET] [INFO] Scan complete — 2 alerts sent
 [2026-04-06 09:41:18 ET] [INFO] ============================================================
 [2026-04-06 09:41:18 ET] [INFO] Scan job complete
+[2026-04-06 10:58:23 ET] [INFO] Scan job starting
+[2026-04-06 10:58:23 ET] [INFO] Kalshi API key auth OK ✅  balance: $10.00
+[2026-04-06 10:58:23 ET] [INFO] ============================================================
+[2026-04-06 10:58:23 ET] [INFO] Starting market scan
+[2026-04-06 10:58:23 ET] [INFO] Live balance: $10.00  |  Peak ever: $10.00
+[2026-04-06 10:58:23 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-06 10:58:33 ET] [INFO] Fetched 39105 open markets via events endpoint across 24 pages
+[2026-04-06 10:58:33 ET] [INFO] Fetched 39105 open markets
+[2026-04-06 10:58:33 ET] [INFO] Parsed 36512 valid markets
+[2026-04-06 10:58:33 ET] [INFO] Categories: {'Sports': 17916, 'Elections': 3975, 'Entertainment': 3835, 'Economics': 2630, 'Financials': 2408, 'Crypto': 2125, 'Politics': 1437, 'Mentions': 679}
+[2026-04-06 10:58:51 ET] [INFO]   price model: BTC-USD spot=69574.09 target=100000.00 vol=33.3% T=6470.0h → P=0.102
+[2026-04-06 10:58:51 ET] [INFO]   price model: BTC-USD spot=69574.09 target=200000.00 vol=33.3% T=6470.0h → P=0.000
+[2026-04-06 10:58:51 ET] [INFO]   price model: BTC-USD spot=69574.09 target=199999.00 vol=33.3% T=6470.0h → P=0.000
+[2026-04-06 10:58:53 ET] [INFO]   fed model: implied_rate=3.645% current≈3.612% diff=3.3bps → P=0.434
+[2026-04-06 10:59:18 ET] [INFO]   CPI model: threshold=0.2% TNX=4.33% → P=0.800
+[2026-04-06 10:59:41 ET] [INFO]   CPI model: threshold=3.3% TNX=4.33% → P=0.603
+[2026-04-06 11:00:05 ET] [INFO]   fed model: implied_rate=3.645% current≈3.612% diff=3.3bps → P=0.566
+[2026-04-06 11:00:05 ET] [INFO] Checked 36439 markets | Modelable: 36439 | Edges found: 0
+[2026-04-06 11:00:05 ET] [INFO] Scan complete — no qualifying edges found (this is fine)
+[2026-04-06 11:00:05 ET] [INFO] ============================================================
+[2026-04-06 11:00:05 ET] [INFO] Scan job complete

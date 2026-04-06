@@ -5037,3 +5037,29 @@ Total modelable markets evaluated: 0
 [2026-04-06 13:02:59 ET] [INFO] Scan complete — no qualifying edges found (this is fine)
 [2026-04-06 13:02:59 ET] [INFO] ============================================================
 [2026-04-06 13:02:59 ET] [INFO] Scan job complete
+[2026-04-06 14:31:49 ET] [INFO] Scan job starting
+[2026-04-06 14:31:49 ET] [INFO] Kalshi API key auth OK ✅  balance: $10.00
+[2026-04-06 14:31:49 ET] [INFO] ============================================================
+[2026-04-06 14:31:49 ET] [INFO] Starting market scan
+[2026-04-06 14:31:49 ET] [INFO] Live balance: $10.00  |  Peak ever: $10.00
+[2026-04-06 14:31:49 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-06 14:31:57 ET] [INFO] Fetched 39399 open markets via events endpoint across 24 pages
+[2026-04-06 14:31:57 ET] [INFO] Fetched 39399 open markets
+[2026-04-06 14:31:58 ET] [INFO] Parsed 36637 valid markets
+[2026-04-06 14:31:58 ET] [INFO] Categories: {'Sports': 18076, 'Elections': 3972, 'Entertainment': 3805, 'Economics': 2629, 'Financials': 2410, 'Crypto': 2157, 'Politics': 1434, 'Mentions': 638}
+[2026-04-06 14:32:15 ET] [INFO]   price model: BTC-USD spot=69888.28 target=100000.00 vol=33.4% T=6466.5h → P=0.106
+[2026-04-06 14:32:15 ET] [INFO]   price model: BTC-USD spot=69888.28 target=200000.00 vol=33.4% T=6466.5h → P=0.000
+[2026-04-06 14:32:16 ET] [INFO]   price model: BTC-USD spot=69888.28 target=199999.00 vol=33.4% T=6466.5h → P=0.000
+[2026-04-06 14:32:17 ET] [INFO]   fed model: implied_rate=3.645% current≈3.623% diff=2.2bps → P=0.456
+[2026-04-06 14:32:43 ET] [INFO]   CPI model: threshold=0.2% TNX=4.32% → P=0.800
+[2026-04-06 14:33:06 ET] [INFO]   CPI model: threshold=3.3% TNX=4.32% → P=0.602
+[2026-04-06 14:33:06 ET] [INFO]   EDGE FOUND: KXCPIYOY-26MAR-T3.3 | implied=51.5% true=60.2% edge=+8.7% dir=YES conf=73
+[2026-04-06 14:33:13 ET] [INFO]   weather model: austin max=75.0°F target=[74,75]°F days_out=0 σ=3.5°F → P=0.223
+[2026-04-06 14:33:13 ET] [INFO]   EDGE FOUND: KXHIGHAUS-26APR06-B74.5 | implied=54.0% true=22.3% edge=-31.7% dir=NO conf=80
+[2026-04-06 14:33:30 ET] [INFO]   fed model: implied_rate=3.645% current≈3.623% diff=2.2bps → P=0.544
+[2026-04-06 14:33:31 ET] [INFO] Checked 36563 markets | Modelable: 36563 | Edges found: 2
+[2026-04-06 14:33:31 ET] [INFO] [Discord] Trade alert sent: KXCPIYOY-26MAR-T3.3
+[2026-04-06 14:33:31 ET] [INFO] [Discord] Trade alert sent: KXHIGHAUS-26APR06-B74.5
+[2026-04-06 14:33:31 ET] [INFO] Scan complete — 2 alerts sent
+[2026-04-06 14:33:31 ET] [INFO] ============================================================
+[2026-04-06 14:33:32 ET] [INFO] Scan job complete

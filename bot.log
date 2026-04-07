@@ -5533,3 +5533,34 @@ Total modelable markets evaluated: 0
 [2026-04-07 09:57:25 ET] [INFO] Scan complete — 3 alerts sent
 [2026-04-07 09:57:25 ET] [INFO] ============================================================
 [2026-04-07 09:57:25 ET] [INFO] Scan job complete
+[2026-04-07 11:19:55 ET] [INFO] Scan job starting
+[2026-04-07 11:19:55 ET] [INFO] Kalshi API key auth OK ✅  balance: $10.00
+[2026-04-07 11:19:55 ET] [INFO] ============================================================
+[2026-04-07 11:19:55 ET] [INFO] Starting market scan
+[2026-04-07 11:19:55 ET] [INFO] Live balance: $10.00  |  Peak ever: $10.00
+[2026-04-07 11:19:55 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-07 11:20:04 ET] [INFO] Fetched 41634 open markets via events endpoint across 25 pages
+[2026-04-07 11:20:04 ET] [INFO] Fetched 41634 open markets
+[2026-04-07 11:20:04 ET] [INFO] Parsed 39408 valid markets
+[2026-04-07 11:20:04 ET] [INFO] Categories: {'Sports': 19812, 'Elections': 4255, 'Entertainment': 3990, 'Economics': 2883, 'Financials': 2488, 'Crypto': 2301, 'Politics': 1436, 'Mentions': 671}
+[2026-04-07 11:20:24 ET] [INFO]   price model: BTC-USD spot=68005.02 target=100000.00 vol=31.7% T=6445.7h → P=0.078
+[2026-04-07 11:20:24 ET] [INFO]   price model: BTC-USD spot=68005.02 target=200000.00 vol=31.7% T=6445.7h → P=0.000
+[2026-04-07 11:20:25 ET] [INFO]   price model: BTC-USD spot=68005.02 target=199999.00 vol=31.7% T=6445.6h → P=0.000
+[2026-04-07 11:20:27 ET] [INFO]   fed model: implied_rate=3.650% current≈3.628% diff=2.2bps → P=0.456
+[2026-04-07 11:20:57 ET] [INFO]   CPI model: threshold=0.2% TNX=4.38% → P=0.800
+[2026-04-07 11:21:27 ET] [INFO]   CPI model: threshold=2.6% TNX=4.38% → P=0.678
+[2026-04-07 11:21:34 ET] [INFO]   weather model: miami can't parse temp condition from title
+[2026-04-07 11:21:57 ET] [INFO]   CPI model: threshold=0.2% TNX=4.38% → P=0.800
+[2026-04-07 11:21:57 ET] [INFO]   EDGE FOUND: KXPCECORE-26FEB-T0.2 | implied=93.5% true=80.0% edge=-13.5% dir=NO conf=68
+[2026-04-07 11:21:57 ET] [INFO]   CPI model: threshold=0.3% TNX=4.38% → P=0.800
+[2026-04-07 11:21:57 ET] [INFO]   EDGE FOUND: KXPCECORE-26FEB-T0.3 | implied=61.0% true=80.0% edge=+19.0% dir=YES conf=75
+[2026-04-07 11:21:57 ET] [INFO]   CPI model: threshold=0.4% TNX=4.38% → P=0.800
+[2026-04-07 11:21:57 ET] [INFO]   EDGE FOUND: KXPCECORE-26FEB-T0.4 | implied=37.0% true=80.0% edge=+43.0% dir=YES conf=85
+[2026-04-07 11:21:57 ET] [INFO]   fed model: implied_rate=3.645% current≈3.628% diff=1.7bps → P=0.534
+[2026-04-07 11:21:58 ET] [INFO] Checked 39336 markets | Modelable: 39336 | Edges found: 3
+[2026-04-07 11:21:58 ET] [INFO] [Discord] Trade alert sent: KXPCECORE-26FEB-T0.2
+[2026-04-07 11:21:58 ET] [INFO]   Skipping KXPCECORE-26FEB-T0.3 — suggested bet too small to be meaningful
+[2026-04-07 11:21:58 ET] [INFO] [Discord] Trade alert sent: KXPCECORE-26FEB-T0.4
+[2026-04-07 11:21:58 ET] [INFO] Scan complete — 2 alerts sent
+[2026-04-07 11:21:58 ET] [INFO] ============================================================
+[2026-04-07 11:21:58 ET] [INFO] Scan job complete

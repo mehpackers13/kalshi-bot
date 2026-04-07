@@ -5564,3 +5564,44 @@ Total modelable markets evaluated: 0
 [2026-04-07 11:21:58 ET] [INFO] Scan complete — 2 alerts sent
 [2026-04-07 11:21:58 ET] [INFO] ============================================================
 [2026-04-07 11:21:58 ET] [INFO] Scan job complete
+[2026-04-07 12:36:13 ET] [INFO] Scan job starting
+[2026-04-07 12:36:13 ET] [INFO] Kalshi API key auth OK ✅  balance: $10.00
+[2026-04-07 12:36:13 ET] [INFO] ============================================================
+[2026-04-07 12:36:13 ET] [INFO] Starting market scan
+[2026-04-07 12:36:13 ET] [INFO] Live balance: $10.00  |  Peak ever: $10.00
+[2026-04-07 12:36:13 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-07 12:36:23 ET] [INFO] Fetched 41713 open markets via events endpoint across 25 pages
+[2026-04-07 12:36:23 ET] [INFO] Fetched 41713 open markets
+[2026-04-07 12:36:23 ET] [INFO] Parsed 39414 valid markets
+[2026-04-07 12:36:23 ET] [INFO] Categories: {'Sports': 19883, 'Elections': 4259, 'Entertainment': 3982, 'Economics': 2884, 'Financials': 2469, 'Crypto': 2284, 'Politics': 1433, 'Mentions': 653}
+[2026-04-07 12:36:44 ET] [INFO]   price model: BTC-USD spot=68331.52 target=100000.00 vol=31.5% T=6444.4h → P=0.080
+[2026-04-07 12:36:44 ET] [INFO]   price model: BTC-USD spot=68331.52 target=200000.00 vol=31.5% T=6444.4h → P=0.000
+[2026-04-07 12:36:44 ET] [INFO]   price model: BTC-USD spot=68331.52 target=199999.00 vol=31.5% T=6444.4h → P=0.000
+[2026-04-07 12:36:47 ET] [INFO]   fed model: implied_rate=3.645% current≈3.620% diff=2.5bps → P=0.450
+[2026-04-07 12:37:17 ET] [INFO]   CPI model: threshold=0.1% TNX=4.35% → P=0.800
+[2026-04-07 12:37:17 ET] [INFO]   EDGE FOUND: KXPCECORE-26APR-T0.1 | implied=93.5% true=80.0% edge=-13.5% dir=NO conf=73
+[2026-04-07 12:37:17 ET] [INFO]   CPI model: threshold=0.2% TNX=4.35% → P=0.800
+[2026-04-07 12:37:49 ET] [INFO]   CPI model: threshold=2.6% TNX=4.35% → P=0.675
+[2026-04-07 12:37:56 ET] [INFO]   weather model: nyc max=55.0°F target=[54,55]°F days_out=0 σ=3.5°F → P=0.223
+[2026-04-07 12:37:56 ET] [INFO]   EDGE FOUND: KXHIGHNY-26APR07-B54.5 | implied=50.5% true=22.3% edge=-28.2% dir=NO conf=80
+[2026-04-07 12:37:57 ET] [INFO]   weather model: miami max=78.0°F target=[80,81]°F days_out=0 σ=3.5°F → P=0.175
+[2026-04-07 12:37:57 ET] [INFO]   EDGE FOUND: KXHIGHMIA-26APR07-B80.5 | implied=48.5% true=17.5% edge=-30.9% dir=NO conf=80
+[2026-04-07 12:37:57 ET] [INFO]   weather model: miami can't parse temp condition from title
+[2026-04-07 12:37:57 ET] [INFO]   weather model: chicago can't parse temp condition from title
+[2026-04-07 12:38:11 ET] [INFO]   price model: SPY spot=655.88 target=6550.00 vol=16.4% T=3.4h → P=0.000
+[2026-04-07 12:38:11 ET] [INFO]   EDGE FOUND: KXINXU-26APR07H1600-T6549.9999 | implied=82.0% true=0.0% edge=-82.0% dir=NO conf=70
+[2026-04-07 12:38:11 ET] [INFO]   price model: SPY spot=655.88 target=6600.00 vol=16.4% T=3.4h → P=0.000
+[2026-04-07 12:38:11 ET] [INFO]   EDGE FOUND: KXINXU-26APR07H1600-T6599.9999 | implied=33.5% true=0.0% edge=-33.5% dir=NO conf=70
+[2026-04-07 12:38:21 ET] [INFO]   CPI model: threshold=0.3% TNX=4.35% → P=0.800
+[2026-04-07 12:38:21 ET] [INFO]   EDGE FOUND: KXPCECORE-26FEB-T0.3 | implied=89.0% true=80.0% edge=-9.0% dir=NO conf=68
+[2026-04-07 12:38:21 ET] [INFO]   fed model: implied_rate=3.645% current≈3.620% diff=2.5bps → P=0.550
+[2026-04-07 12:38:22 ET] [INFO] Checked 39340 markets | Modelable: 39340 | Edges found: 6
+[2026-04-07 12:38:22 ET] [INFO] [Discord] Trade alert sent: KXPCECORE-26APR-T0.1
+[2026-04-07 12:38:22 ET] [INFO] [Discord] Trade alert sent: KXHIGHNY-26APR07-B54.5
+[2026-04-07 12:38:23 ET] [INFO] [Discord] Trade alert sent: KXHIGHMIA-26APR07-B80.5
+[2026-04-07 12:38:23 ET] [INFO] [Discord] Trade alert sent: KXINXU-26APR07H1600-T6549.9999
+[2026-04-07 12:38:23 ET] [INFO] [Discord] Trade alert sent: KXINXU-26APR07H1600-T6599.9999
+[2026-04-07 12:38:25 ET] [INFO] [Discord] Trade alert sent: KXPCECORE-26FEB-T0.3
+[2026-04-07 12:38:25 ET] [INFO] Scan complete — 6 alerts sent
+[2026-04-07 12:38:25 ET] [INFO] ============================================================
+[2026-04-07 12:38:25 ET] [INFO] Scan job complete

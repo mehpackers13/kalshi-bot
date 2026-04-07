@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-07T16:38:25.517480Z",
+  "generated_at": "2026-04-07T18:04:29.190622Z",
   "stats": {
-    "total_alerts": 725,
+    "total_alerts": 727,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -36,7 +36,7 @@
         "hit_rate": null
       },
       "Climate and Weather": {
-        "total": 95,
+        "total": 96,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -48,7 +48,7 @@
         "hit_rate": null
       },
       "Financials": {
-        "total": 49,
+        "total": 50,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -56,7 +56,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 155,
+        "total": 156,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -68,7 +68,7 @@
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 389,
+        "total": 390,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -85,11 +85,47 @@
       "peak": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-04-07T16:36:13.901462Z"
+    "updated_at": "2026-04-07T18:02:21.786870Z"
   },
   "live_pnl": 0.0,
   "paper_pnl": 0.0,
   "recent_alerts": [
+    {
+      "timestamp": "2026-04-07T18:04:28.989799Z",
+      "ticker": "KXGOLDD-26APR0717-T4647",
+      "title": "Will the gold close price be above 4647  USD/t.oz on Apr 7, 2026 at 5pm EDT?",
+      "category": "Financials",
+      "direction": "YES",
+      "edge_pct": "9.62",
+      "implied_prob": "0.865",
+      "true_prob": "0.9612",
+      "confidence": "53",
+      "suggested_live_dollars": "0.87",
+      "suggested_paper_dollars": "19.14",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "87",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": ""
+    },
+    {
+      "timestamp": "2026-04-07T18:04:28.819751Z",
+      "ticker": "KXHIGHCHI-26APR07-B38.5",
+      "title": "Will the high temp in Chicago be 38-39\u00b0 on Apr 7, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-29.23",
+      "implied_prob": "0.515",
+      "true_prob": "0.2227",
+      "confidence": "80",
+      "suggested_live_dollars": "0.49",
+      "suggested_paper_dollars": "49.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "49",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": ""
+    },
     {
       "timestamp": "2026-04-07T16:38:25.316018Z",
       "ticker": "KXPCECORE-26FEB-T0.3",
@@ -950,42 +986,6 @@
       "suggested_paper_dollars": "19.8",
       "is_paper_bet": "1",
       "paper_entry_price_cents": "90",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-04-07T02:54:11.364415Z",
-      "ticker": "KXBTCMAXY-26DEC31-129999.99",
-      "title": "Will Bitcoin be above $129,999.99 by Dec 31, 2026 at 11:59 PM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-11.49",
-      "implied_prob": "0.125",
-      "true_prob": "0.0101",
-      "confidence": "68",
-      "suggested_live_dollars": "0.88",
-      "suggested_paper_dollars": "19.36",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "88",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-04-07T02:54:11.233878Z",
-      "ticker": "KXBTCMAXY-26DEC31-119999.99",
-      "title": "Will Bitcoin be above $119,999.99 by Dec 31, 2026 at 11:59 PM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-13.38",
-      "implied_prob": "0.155",
-      "true_prob": "0.0212",
-      "confidence": "68",
-      "suggested_live_dollars": "0.85",
-      "suggested_paper_dollars": "19.55",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "85",
       "outcome": "",
       "resolved_at": "",
       "notes": ""

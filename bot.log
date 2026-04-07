@@ -5605,3 +5605,32 @@ Total modelable markets evaluated: 0
 [2026-04-07 12:38:25 ET] [INFO] Scan complete — 6 alerts sent
 [2026-04-07 12:38:25 ET] [INFO] ============================================================
 [2026-04-07 12:38:25 ET] [INFO] Scan job complete
+[2026-04-07 14:02:21 ET] [INFO] Scan job starting
+[2026-04-07 14:02:21 ET] [INFO] Kalshi API key auth OK ✅  balance: $10.00
+[2026-04-07 14:02:21 ET] [INFO] ============================================================
+[2026-04-07 14:02:21 ET] [INFO] Starting market scan
+[2026-04-07 14:02:21 ET] [INFO] Live balance: $10.00  |  Peak ever: $10.00
+[2026-04-07 14:02:21 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-07 14:02:31 ET] [INFO] Fetched 42040 open markets via events endpoint across 25 pages
+[2026-04-07 14:02:31 ET] [INFO] Fetched 42040 open markets
+[2026-04-07 14:02:31 ET] [INFO] Parsed 39298 valid markets
+[2026-04-07 14:02:31 ET] [INFO] Categories: {'Sports': 20213, 'Elections': 4271, 'Entertainment': 4004, 'Economics': 2885, 'Crypto': 2194, 'Financials': 2142, 'Politics': 1430, 'Mentions': 608}
+[2026-04-07 14:02:51 ET] [INFO]   price model: SOL-USD spot=80.04 target=500.00 vol=42.2% T=6443.0h → P=0.000
+[2026-04-07 14:02:52 ET] [INFO]   price model: BTC-USD spot=68692.16 target=100000.00 vol=31.4% T=6443.0h → P=0.082
+[2026-04-07 14:02:52 ET] [INFO]   price model: BTC-USD spot=68692.16 target=200000.00 vol=31.4% T=6443.0h → P=0.000
+[2026-04-07 14:02:52 ET] [INFO]   price model: BTC-USD spot=68692.16 target=199999.00 vol=31.4% T=6442.9h → P=0.000
+[2026-04-07 14:02:54 ET] [INFO]   fed model: implied_rate=3.645% current≈3.618% diff=2.7bps → P=0.446
+[2026-04-07 14:03:25 ET] [INFO]   CPI model: threshold=0.2% TNX=4.35% → P=0.800
+[2026-04-07 14:03:57 ET] [INFO]   CPI model: threshold=2.6% TNX=4.35% → P=0.675
+[2026-04-07 14:04:04 ET] [INFO]   weather model: chicago can't parse temp condition from title
+[2026-04-07 14:04:04 ET] [INFO]   weather model: chicago max=38.0°F target=[38,39]°F days_out=0 σ=3.5°F → P=0.223
+[2026-04-07 14:04:04 ET] [INFO]   EDGE FOUND: KXHIGHCHI-26APR07-B38.5 | implied=51.5% true=22.3% edge=-29.2% dir=NO conf=80
+[2026-04-07 14:04:21 ET] [INFO]   price model: GC=F spot=4703.60 target=4647.00 vol=37.3% T=3.0h → P=0.961
+[2026-04-07 14:04:21 ET] [INFO]   EDGE FOUND: KXGOLDD-26APR0717-T4647 | implied=86.5% true=96.1% edge=+9.6% dir=YES conf=53
+[2026-04-07 14:04:27 ET] [INFO]   fed model: implied_rate=3.645% current≈3.618% diff=2.7bps → P=0.554
+[2026-04-07 14:04:28 ET] [INFO] Checked 39218 markets | Modelable: 39218 | Edges found: 2
+[2026-04-07 14:04:28 ET] [INFO] [Discord] Trade alert sent: KXHIGHCHI-26APR07-B38.5
+[2026-04-07 14:04:28 ET] [INFO] [Discord] Trade alert sent: KXGOLDD-26APR0717-T4647
+[2026-04-07 14:04:28 ET] [INFO] Scan complete — 2 alerts sent
+[2026-04-07 14:04:28 ET] [INFO] ============================================================
+[2026-04-07 14:04:29 ET] [INFO] Scan job complete

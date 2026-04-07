@@ -5689,3 +5689,31 @@ Total modelable markets evaluated: 0
 [2026-04-07 17:00:29 ET] [INFO] Scan complete — 1 alerts sent
 [2026-04-07 17:00:29 ET] [INFO] ============================================================
 [2026-04-07 17:00:29 ET] [INFO] Scan job complete
+[2026-04-07 17:53:44 ET] [INFO] Scan job starting
+[2026-04-07 17:53:44 ET] [INFO] Kalshi API key auth OK ✅  balance: $10.00
+[2026-04-07 17:53:44 ET] [INFO] ============================================================
+[2026-04-07 17:53:44 ET] [INFO] Starting market scan
+[2026-04-07 17:53:45 ET] [INFO] Live balance: $10.00  |  Peak ever: $10.00
+[2026-04-07 17:53:45 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-07 17:53:55 ET] [INFO] Fetched 44354 open markets via events endpoint across 26 pages
+[2026-04-07 17:53:55 ET] [INFO] Fetched 44354 open markets
+[2026-04-07 17:53:55 ET] [INFO] Parsed 41760 valid markets
+[2026-04-07 17:53:55 ET] [INFO] Categories: {'Sports': 23075, 'Elections': 4270, 'Entertainment': 4220, 'Economics': 2908, 'Crypto': 2207, 'Financials': 1447, 'Politics': 1426, 'Mentions': 657}
+[2026-04-07 17:54:16 ET] [INFO]   price model: SOL-USD spot=82.84 target=500.00 vol=43.4% T=6439.1h → P=0.000
+[2026-04-07 17:54:17 ET] [INFO]   price model: BTC-USD spot=69839.34 target=100000.00 vol=31.7% T=6439.1h → P=0.093
+[2026-04-07 17:54:17 ET] [INFO]   price model: BTC-USD spot=69839.34 target=200000.00 vol=31.7% T=6439.1h → P=0.000
+[2026-04-07 17:54:17 ET] [INFO]   price model: BTC-USD spot=69839.34 target=199999.00 vol=31.7% T=6439.1h → P=0.000
+[2026-04-07 17:54:19 ET] [INFO]   fed model: implied_rate=3.645% current≈3.615% diff=3.0bps → P=0.440
+[2026-04-07 17:54:50 ET] [INFO]   CPI model: threshold=0.2% TNX=4.34% → P=0.800
+[2026-04-07 17:55:22 ET] [INFO]   CPI model: threshold=2.6% TNX=4.34% → P=0.674
+[2026-04-07 17:55:22 ET] [INFO]   CPI model: threshold=2.7% TNX=4.34% → P=0.664
+[2026-04-07 17:55:22 ET] [INFO]   EDGE FOUND: KXCPICOREYOY-26MAR-T2.7 | implied=17.5% true=66.4% edge=+48.9% dir=YES conf=85
+[2026-04-07 17:55:33 ET] [INFO]   weather model: denver max=74.0°F target=[70,71]°F days_out=0 σ=3.5°F → P=0.138
+[2026-04-07 17:55:33 ET] [INFO]   EDGE FOUND: KXHIGHDEN-26APR07-B70.5 | implied=74.0% true=13.8% edge=-60.2% dir=NO conf=80
+[2026-04-07 17:56:00 ET] [INFO]   fed model: implied_rate=3.645% current≈3.615% diff=3.0bps → P=0.560
+[2026-04-07 17:56:01 ET] [INFO] Checked 41679 markets | Modelable: 41679 | Edges found: 2
+[2026-04-07 17:56:01 ET] [INFO] [Discord] Trade alert sent: KXCPICOREYOY-26MAR-T2.7
+[2026-04-07 17:56:01 ET] [INFO] [Discord] Trade alert sent: KXHIGHDEN-26APR07-B70.5
+[2026-04-07 17:56:01 ET] [INFO] Scan complete — 2 alerts sent
+[2026-04-07 17:56:01 ET] [INFO] ============================================================
+[2026-04-07 17:56:01 ET] [INFO] Scan job complete

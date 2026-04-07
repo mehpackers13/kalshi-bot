@@ -5431,3 +5431,44 @@ Total modelable markets evaluated: 0
 [2026-04-06 22:54:18 ET] [INFO] Scan complete — 65 alerts sent
 [2026-04-06 22:54:18 ET] [INFO] ============================================================
 [2026-04-06 22:54:18 ET] [INFO] Scan job complete
+[2026-04-07 01:15:32 ET] [INFO] Scan job starting
+[2026-04-07 01:15:33 ET] [INFO] Kalshi API key auth OK ✅  balance: $10.00
+[2026-04-07 01:15:33 ET] [INFO] ============================================================
+[2026-04-07 01:15:33 ET] [INFO] Starting market scan
+[2026-04-07 01:15:33 ET] [INFO] Live balance: $10.00  |  Peak ever: $10.00
+[2026-04-07 01:15:33 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-07 01:15:45 ET] [INFO] Fetched 39580 open markets via events endpoint across 25 pages
+[2026-04-07 01:15:45 ET] [INFO] Fetched 39580 open markets
+[2026-04-07 01:15:45 ET] [INFO] Parsed 37332 valid markets
+[2026-04-07 01:15:45 ET] [INFO] Categories: {'Sports': 19370, 'Elections': 3985, 'Entertainment': 3734, 'Economics': 2908, 'Crypto': 2232, 'Financials': 1529, 'Politics': 1442, 'Mentions': 644}
+[2026-04-07 01:16:05 ET] [INFO]   price model: SOL-USD spot=79.89 target=500.00 vol=43.1% T=6455.7h → P=0.000
+[2026-04-07 01:16:05 ET] [INFO]   price model: SOL-USD spot=79.89 target=150.00 vol=43.1% T=6455.7h → P=0.044
+[2026-04-07 01:16:05 ET] [INFO]   EDGE FOUND: KXSOLMAXY-27JAN01-150 | implied=33.5% true=4.4% edge=-29.1% dir=NO conf=80
+[2026-04-07 01:16:05 ET] [INFO]   price model: BTC-USD spot=68802.34 target=100000.00 vol=32.0% T=6455.7h → P=0.087
+[2026-04-07 01:16:05 ET] [INFO]   price model: BTC-USD spot=68802.34 target=200000.00 vol=32.0% T=6455.7h → P=0.000
+[2026-04-07 01:16:06 ET] [INFO]   price model: BTC-USD spot=68802.34 target=199999.00 vol=32.0% T=6455.7h → P=0.000
+[2026-04-07 01:16:08 ET] [INFO]   fed model: implied_rate=3.643% current≈3.623% diff=2.0bps → P=0.461
+[2026-04-07 01:16:36 ET] [INFO]   CPI model: threshold=0.2% TNX=4.34% → P=0.800
+[2026-04-07 01:16:42 ET] [INFO]   weather model: san francisco rain 2026-04-07 forecast=11% → P=0.110
+[2026-04-07 01:16:42 ET] [INFO]   EDGE FOUND: KXRAINSFOM-26APR-1 | implied=31.5% true=11.0% edge=-20.5% dir=NO conf=75
+[2026-04-07 01:16:43 ET] [INFO]   weather model: los angeles rain 2026-04-07 forecast=0% → P=0.020
+[2026-04-07 01:16:43 ET] [INFO]   EDGE FOUND: KXRAINLAXM-26APR-1 | implied=52.5% true=2.0% edge=-50.5% dir=NO conf=85
+[2026-04-07 01:16:45 ET] [INFO]   weather model: houston rain 2026-04-07 forecast=0% → P=0.020
+[2026-04-07 01:16:45 ET] [INFO]   EDGE FOUND: KXRAINHOUM-26APR-3 | implied=71.5% true=2.0% edge=-69.5% dir=NO conf=85
+[2026-04-07 01:17:09 ET] [INFO]   CPI model: threshold=2.6% TNX=4.34% → P=0.674
+[2026-04-07 01:17:15 ET] [INFO]   weather model: miami can't parse temp condition from title
+[2026-04-07 01:17:34 ET] [INFO]   CPI model: threshold=0.3% TNX=4.34% → P=0.800
+[2026-04-07 01:17:34 ET] [INFO]   EDGE FOUND: KXPCECORE-26FEB-T0.3 | implied=61.5% true=80.0% edge=+18.5% dir=YES conf=75
+[2026-04-07 01:17:34 ET] [INFO]   CPI model: threshold=0.4% TNX=4.34% → P=0.800
+[2026-04-07 01:17:34 ET] [INFO]   EDGE FOUND: KXPCECORE-26FEB-T0.4 | implied=58.0% true=80.0% edge=+22.0% dir=YES conf=75
+[2026-04-07 01:17:34 ET] [INFO]   fed model: implied_rate=3.643% current≈3.623% diff=2.0bps → P=0.539
+[2026-04-07 01:17:35 ET] [INFO] Checked 37267 markets | Modelable: 37267 | Edges found: 6
+[2026-04-07 01:17:35 ET] [INFO] [Discord] Trade alert sent: KXSOLMAXY-27JAN01-150
+[2026-04-07 01:17:35 ET] [INFO] [Discord] Trade alert sent: KXRAINSFOM-26APR-1
+[2026-04-07 01:17:35 ET] [INFO] [Discord] Trade alert sent: KXRAINLAXM-26APR-1
+[2026-04-07 01:17:36 ET] [INFO] [Discord] Trade alert sent: KXRAINHOUM-26APR-3
+[2026-04-07 01:17:36 ET] [INFO]   Skipping KXPCECORE-26FEB-T0.3 — suggested bet too small to be meaningful
+[2026-04-07 01:17:36 ET] [INFO]   Skipping KXPCECORE-26FEB-T0.4 — suggested bet too small to be meaningful
+[2026-04-07 01:17:36 ET] [INFO] Scan complete — 4 alerts sent
+[2026-04-07 01:17:36 ET] [INFO] ============================================================
+[2026-04-07 01:17:36 ET] [INFO] Scan job complete

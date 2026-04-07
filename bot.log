@@ -5663,3 +5663,29 @@ Total modelable markets evaluated: 0
 [2026-04-07 15:40:52 ET] [INFO] Scan complete — 2 alerts sent
 [2026-04-07 15:40:52 ET] [INFO] ============================================================
 [2026-04-07 15:40:52 ET] [INFO] Scan job complete
+[2026-04-07 16:58:13 ET] [INFO] Scan job starting
+[2026-04-07 16:58:13 ET] [INFO] Kalshi API key auth OK ✅  balance: $10.00
+[2026-04-07 16:58:13 ET] [INFO] ============================================================
+[2026-04-07 16:58:13 ET] [INFO] Starting market scan
+[2026-04-07 16:58:14 ET] [INFO] Live balance: $10.00  |  Peak ever: $10.00
+[2026-04-07 16:58:14 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-07 16:58:25 ET] [INFO] Fetched 43066 open markets via events endpoint across 26 pages
+[2026-04-07 16:58:25 ET] [INFO] Fetched 43066 open markets
+[2026-04-07 16:58:25 ET] [INFO] Parsed 40573 valid markets
+[2026-04-07 16:58:25 ET] [INFO] Categories: {'Sports': 22194, 'Elections': 4274, 'Entertainment': 4145, 'Economics': 2897, 'Crypto': 1759, 'Financials': 1657, 'Politics': 1424, 'Mentions': 666}
+[2026-04-07 16:58:46 ET] [INFO]   price model: SOL-USD spot=82.00 target=500.00 vol=42.8% T=6440.0h → P=0.000
+[2026-04-07 16:58:47 ET] [INFO]   price model: BTC-USD spot=69215.44 target=100000.00 vol=31.5% T=6440.0h → P=0.086
+[2026-04-07 16:58:47 ET] [INFO]   price model: BTC-USD spot=69215.44 target=200000.00 vol=31.5% T=6440.0h → P=0.000
+[2026-04-07 16:58:48 ET] [INFO]   price model: BTC-USD spot=69215.44 target=199999.00 vol=31.5% T=6440.0h → P=0.000
+[2026-04-07 16:58:50 ET] [INFO]   fed model: implied_rate=3.645% current≈3.615% diff=3.0bps → P=0.440
+[2026-04-07 16:59:21 ET] [INFO]   CPI model: threshold=0.2% TNX=4.34% → P=0.800
+[2026-04-07 16:59:53 ET] [INFO]   CPI model: threshold=2.6% TNX=4.34% → P=0.674
+[2026-04-07 17:00:02 ET] [WARN]   wttr.in Denver: HTTP 500
+[2026-04-07 17:00:05 ET] [INFO]   price model: GC=F spot=4738.20 target=13.50 vol=37.7% T=341.0h → P=1.000
+[2026-04-07 17:00:05 ET] [INFO]   EDGE FOUND: KXNBASPREAD-26APR07SACGSW-GSW13 | implied=54.5% true=100.0% edge=+45.5% dir=YES conf=85
+[2026-04-07 17:00:28 ET] [INFO]   fed model: implied_rate=3.645% current≈3.615% diff=3.0bps → P=0.560
+[2026-04-07 17:00:28 ET] [INFO] Checked 40493 markets | Modelable: 40493 | Edges found: 1
+[2026-04-07 17:00:29 ET] [INFO] [Discord] Trade alert sent: KXNBASPREAD-26APR07SACGSW-GSW13
+[2026-04-07 17:00:29 ET] [INFO] Scan complete — 1 alerts sent
+[2026-04-07 17:00:29 ET] [INFO] ============================================================
+[2026-04-07 17:00:29 ET] [INFO] Scan job complete

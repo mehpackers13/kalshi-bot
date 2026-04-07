@@ -5634,3 +5634,32 @@ Total modelable markets evaluated: 0
 [2026-04-07 14:04:28 ET] [INFO] Scan complete — 2 alerts sent
 [2026-04-07 14:04:28 ET] [INFO] ============================================================
 [2026-04-07 14:04:29 ET] [INFO] Scan job complete
+[2026-04-07 15:38:40 ET] [INFO] Scan job starting
+[2026-04-07 15:38:40 ET] [INFO] Kalshi API key auth OK ✅  balance: $10.00
+[2026-04-07 15:38:40 ET] [INFO] ============================================================
+[2026-04-07 15:38:40 ET] [INFO] Starting market scan
+[2026-04-07 15:38:40 ET] [INFO] Live balance: $10.00  |  Peak ever: $10.00
+[2026-04-07 15:38:40 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-07 15:38:49 ET] [INFO] Fetched 42760 open markets via events endpoint across 26 pages
+[2026-04-07 15:38:49 ET] [INFO] Fetched 42760 open markets
+[2026-04-07 15:38:49 ET] [INFO] Parsed 40256 valid markets
+[2026-04-07 15:38:49 ET] [INFO] Categories: {'Sports': 21532, 'Elections': 4288, 'Entertainment': 4001, 'Economics': 2885, 'Crypto': 2249, 'Financials': 1679, 'Politics': 1424, 'Mentions': 634}
+[2026-04-07 15:39:10 ET] [INFO]   price model: SOL-USD spot=80.62 target=500.00 vol=42.2% T=6441.4h → P=0.000
+[2026-04-07 15:39:11 ET] [INFO]   price model: BTC-USD spot=68449.41 target=100000.00 vol=31.5% T=6441.4h → P=0.080
+[2026-04-07 15:39:12 ET] [INFO]   price model: BTC-USD spot=68449.41 target=200000.00 vol=31.5% T=6441.4h → P=0.000
+[2026-04-07 15:39:12 ET] [INFO]   price model: BTC-USD spot=68449.41 target=199999.00 vol=31.5% T=6441.3h → P=0.000
+[2026-04-07 15:39:14 ET] [INFO]   fed model: implied_rate=3.645% current≈3.615% diff=3.0bps → P=0.440
+[2026-04-07 15:39:45 ET] [INFO]   CPI model: threshold=0.2% TNX=4.34% → P=0.800
+[2026-04-07 15:39:52 ET] [INFO]   price model: SOL-USD spot=80.52 target=90.00 vol=42.2% T=560.4h → P=0.148
+[2026-04-07 15:39:52 ET] [INFO]   EDGE FOUND: KXSOLMAXMON-SOL-26APR30-9000 | implied=42.5% true=14.8% edge=-27.7% dir=NO conf=80
+[2026-04-07 15:40:17 ET] [INFO]   CPI model: threshold=2.6% TNX=4.34% → P=0.674
+[2026-04-07 15:40:25 ET] [INFO]   weather model: chicago can't parse temp condition from title
+[2026-04-07 15:40:25 ET] [INFO]   weather model: austin max=79.0°F target=[75,76]°F days_out=0 σ=3.5°F → P=0.138
+[2026-04-07 15:40:25 ET] [INFO]   EDGE FOUND: KXHIGHAUS-26APR07-B75.5 | implied=61.0% true=13.8% edge=-47.2% dir=NO conf=80
+[2026-04-07 15:40:51 ET] [INFO]   fed model: implied_rate=3.645% current≈3.615% diff=3.0bps → P=0.560
+[2026-04-07 15:40:51 ET] [INFO] Checked 40174 markets | Modelable: 40174 | Edges found: 2
+[2026-04-07 15:40:52 ET] [INFO] [Discord] Trade alert sent: KXSOLMAXMON-SOL-26APR30-9000
+[2026-04-07 15:40:52 ET] [INFO] [Discord] Trade alert sent: KXHIGHAUS-26APR07-B75.5
+[2026-04-07 15:40:52 ET] [INFO] Scan complete — 2 alerts sent
+[2026-04-07 15:40:52 ET] [INFO] ============================================================
+[2026-04-07 15:40:52 ET] [INFO] Scan job complete

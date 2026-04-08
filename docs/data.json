@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-08T18:14:52.591127Z",
+  "generated_at": "2026-04-08T19:50:28.352129Z",
   "stats": {
-    "total_alerts": 829,
+    "total_alerts": 830,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -36,7 +36,7 @@
         "hit_rate": null
       },
       "Climate and Weather": {
-        "total": 108,
+        "total": 109,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -62,7 +62,7 @@
         "hit_rate": null
       },
       "medium (15-25%)": {
-        "total": 206,
+        "total": 207,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -85,11 +85,29 @@
       "peak": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-04-08T18:12:26.038597Z"
+    "updated_at": "2026-04-08T19:47:59.214932Z"
   },
   "live_pnl": 0.0,
   "paper_pnl": 0.0,
   "recent_alerts": [
+    {
+      "timestamp": "2026-04-08T19:50:27.800969Z",
+      "ticker": "KXHIGHNY-26APR08-B52.5",
+      "title": "Will the **high temp in NYC** be 52-53\u00b0 on Apr 8, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-18.67",
+      "implied_prob": "0.325",
+      "true_prob": "0.1383",
+      "confidence": "70",
+      "suggested_live_dollars": "0.69",
+      "suggested_paper_dollars": "39.33",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "69",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": ""
+    },
     {
       "timestamp": "2026-04-08T18:14:52.102116Z",
       "ticker": "KXHIGHCHI-26APR08-B69.5",
@@ -971,24 +989,6 @@
       "outcome": "",
       "resolved_at": "",
       "notes": ""
-    },
-    {
-      "timestamp": "2026-04-08T02:56:20.018928Z",
-      "ticker": "KXPCECORE-26APR-T0.1",
-      "title": "Will the rate of core PCE inflation be above 0.1% in April 2026?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-14.5",
-      "implied_prob": "0.945",
-      "true_prob": "0.8",
-      "confidence": "73",
-      "suggested_live_dollars": "0.14",
-      "suggested_paper_dollars": "19.95",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "7",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": ""
     }
   ],
   "model_changes": [],
@@ -996,36 +996,18 @@
   "model_confidence": {},
   "bets_placed": [
     {
-      "timestamp": "2026-04-08T18:14:52.102371",
-      "ticker": "KXHIGHCHI-26APR08-B69.5",
-      "title": "Will the high temp in Chicago be 69-70\u00b0 on Apr 8, 2026?",
+      "timestamp": "2026-04-08T19:50:27.801278",
+      "ticker": "KXHIGHNY-26APR08-B52.5",
+      "title": "Will the **high temp in NYC** be 52-53\u00b0 on Apr 8, 2026?",
       "category": "Climate and Weather",
       "direction": "NO",
       "contracts": "1",
-      "price_cents": "50",
-      "dollars_risked": "0.5",
-      "edge_pct": "-47.8",
-      "true_prob": "0.042",
-      "implied_prob": "0.52",
-      "confidence": "80",
-      "kelly_fraction": "0.5",
-      "dry_run": "True",
-      "order_id": "",
-      "status": "dry_run"
-    },
-    {
-      "timestamp": "2026-04-08T18:14:51.588725",
-      "ticker": "KXHIGHMIA-26APR08-B82.5",
-      "title": "Will the **high temp in Miami** be 82-83\u00b0 on Apr 8, 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "contracts": "1",
-      "price_cents": "66",
-      "dollars_risked": "0.66",
-      "edge_pct": "-32.8",
-      "true_prob": "0.042",
-      "implied_prob": "0.37",
-      "confidence": "80",
+      "price_cents": "69",
+      "dollars_risked": "0.69",
+      "edge_pct": "-18.67",
+      "true_prob": "0.1383",
+      "implied_prob": "0.325",
+      "confidence": "70",
       "kelly_fraction": "0.5",
       "dry_run": "True",
       "order_id": "",

@@ -783,3 +783,31 @@ Total modelable markets evaluated: 0
 [2026-04-08 14:14:52 ET] [INFO] Scan complete — 3 alerts sent
 [2026-04-08 14:14:52 ET] [INFO] ============================================================
 [2026-04-08 14:14:52 ET] [INFO] Scan job complete
+[2026-04-08 15:47:58 ET] [INFO] Scan job starting
+[2026-04-08 15:47:59 ET] [INFO] Kalshi API key auth OK ✅  balance: $10.00
+[2026-04-08 15:47:59 ET] [INFO] ============================================================
+[2026-04-08 15:47:59 ET] [INFO] Starting market scan
+[2026-04-08 15:47:59 ET] [INFO] Live balance: $10.00  |  Peak ever: $10.00
+[2026-04-08 15:47:59 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-08 15:48:09 ET] [INFO] Fetched 43682 open markets via events endpoint across 26 pages
+[2026-04-08 15:48:09 ET] [INFO] Fetched 43682 open markets
+[2026-04-08 15:48:09 ET] [INFO] Parsed 40763 valid markets
+[2026-04-08 15:48:09 ET] [INFO] Categories: {'Sports': 21413, 'Entertainment': 4778, 'Elections': 4226, 'Economics': 2820, 'Crypto': 2183, 'Financials': 1510, 'Politics': 1419, 'Mentions': 840}
+[2026-04-08 15:48:13 ET] [INFO]   CPI model: threshold=10.0% TNX=4.29% → P=0.200
+[2026-04-08 15:48:33 ET] [INFO]   price model: BTC-USD spot=71297.36 target=100000.00 vol=33.6% T=6417.2h → P=0.120
+[2026-04-08 15:48:33 ET] [INFO]   price model: BTC-USD spot=71297.36 target=100000.00 vol=33.6% T=6417.2h → P=0.120
+[2026-04-08 15:48:33 ET] [INFO]   price model: BTC-USD spot=71297.36 target=200000.00 vol=33.6% T=6417.2h → P=0.000
+[2026-04-08 15:48:33 ET] [INFO]   price model: BTC-USD spot=71297.36 target=199999.00 vol=33.6% T=6417.2h → P=0.000
+[2026-04-08 15:49:10 ET] [INFO]   CPI model: threshold=0.2% TNX=4.29% → P=0.800
+[2026-04-08 15:49:58 ET] [INFO]   weather model: nyc max=56.0°F target=[52,53]°F days_out=0 σ=3.5°F → P=0.138
+[2026-04-08 15:49:58 ET] [INFO]   EDGE FOUND: KXHIGHNY-26APR08-B52.5 | implied=32.5% true=13.8% edge=-18.7% dir=NO conf=70
+[2026-04-08 15:49:59 ET] [INFO]   weather model: miami can't parse temp condition from title
+[2026-04-08 15:50:00 ET] [INFO]   weather model: denver can't parse temp condition from title
+[2026-04-08 15:50:26 ET] [INFO]   CPI model: threshold=0.3% TNX=4.29% → P=0.800
+[2026-04-08 15:50:27 ET] [INFO]   fed model: implied_rate=3.645% current≈3.600% diff=4.5bps → P=0.590
+[2026-04-08 15:50:27 ET] [INFO] Checked 40677 markets | Modelable: 40677 | Edges found: 1
+[2026-04-08 15:50:27 ET] [INFO] [Discord] Trade alert sent: KXHIGHNY-26APR08-B52.5
+[2026-04-08 15:50:27 ET] [INFO] DRY RUN 🔵 KXHIGHNY-26APR08-B52.5 NO 1ct @ 69¢ = $0.69 | edge=-18.7% conf=70 | would_use 50%Kelly
+[2026-04-08 15:50:28 ET] [INFO] Scan complete — 1 alerts sent
+[2026-04-08 15:50:28 ET] [INFO] ============================================================
+[2026-04-08 15:50:28 ET] [INFO] Scan job complete

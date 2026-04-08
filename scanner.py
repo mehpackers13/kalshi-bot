@@ -16,6 +16,7 @@ from kelly import size_bet
 from bankroll import check_drawdown_stop, sync_live_balance
 from outcomes import log_alert, auto_resolve_outcomes, read_all
 from discord_alerts import send_trade_alert, send_drawdown_stop, send_health_ping
+import auto_bettor
 from logger import log
 
 
@@ -103,6 +104,7 @@ def run_scan(api: KalshiAPI) -> list:
 
         send_trade_alert(edge, sizing)
         log_alert(edge, sizing)
+        auto_bettor.place_auto_bet(api, edge)
         alerted.append(edge)
 
     if not alerted:

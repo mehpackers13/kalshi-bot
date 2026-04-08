@@ -33,7 +33,9 @@ MIN_HOURS_TO_CLOSE    = 2.0      # skip markets closing in under 2 hours
 
 # ── Kelly Bet Sizing ────────────────────────────────────────────────────────────
 # Fractional Kelly — keeps sizing conservative. Never bet the full Kelly amount.
-KELLY_FRACTION        = 0.25     # use 25% of Kelly recommendation
+KELLY_FRACTION        = 0.25     # 25% Kelly for Discord alert sizing (unchanged)
+AUTO_BET_KELLY_FRACTION = 0.50   # 50% Kelly for auto-placed bets
+AUTO_BET_MAX_PCT      = 0.05     # hard cap — never >5% of live balance per auto-bet
 
 # Hard caps by edge bucket (% of LIVE bankroll per bet)
 BET_SIZE_SMALL_MAX    = 0.02     # edge  8–15%  → max 2% of bankroll
@@ -41,7 +43,13 @@ BET_SIZE_MEDIUM_MAX   = 0.04     # edge 15–25%  → max 4% of bankroll
 BET_SIZE_STRONG_MAX   = 0.05     # edge 25%+    → max 5% of bankroll
 
 # ── Risk Brakes ─────────────────────────────────────────────────────────────────
-DRAWDOWN_STOP_PCT     = 0.50     # stop if balance drops 50% below peak ever seen
+DRAWDOWN_STOP_PCT     = 0.40     # pause auto-betting if balance drops 40% below peak
+
+# ── Auto-Betting Engine ─────────────────────────────────────────────────────────
+# Set DRY_RUN = True to log what the bot WOULD bet without placing real orders.
+# Flip to False to go live.  Default: True (safe first-run mode).
+DRY_RUN               = True
+MAX_AUTO_BETS_PER_HOUR = 3        # rate limit — prevents runaway loops
 
 # ── Scanning ────────────────────────────────────────────────────────────────────
 SCAN_INTERVAL_MINUTES = 30
@@ -70,6 +78,7 @@ BASE_DIR          = Path(__file__).parent
 DATA_DIR          = BASE_DIR / "data"
 DOCS_DIR          = BASE_DIR / "docs"
 OUTCOMES_CSV      = BASE_DIR / "outcomes.csv"
+BETS_PLACED_CSV   = BASE_DIR / "bets_placed.csv"
 BANKROLL_JSON     = DATA_DIR / "bankroll.json"
 MODELS_JSON       = DATA_DIR / "models.json"
 BOT_LOG           = BASE_DIR / "bot.log"

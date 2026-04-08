@@ -126,6 +126,15 @@ def calculate_stats(outcomes):
     }
 
 
+def read_bets_placed():
+    path = BASE / "bets_placed.csv"
+    if not path.exists():
+        return []
+    with open(path, newline="") as f:
+        rows = list(csv.DictReader(f))
+    return list(reversed(rows[-50:]))   # last 50, newest first
+
+
 def main():
     outcomes   = read_outcomes()
     bankroll   = read_bankroll()
@@ -133,6 +142,7 @@ def main():
     ai         = read_ai_suggestions()
     models     = read_models()
     stats      = calculate_stats(outcomes)
+    bets_placed = read_bets_placed()
 
     # Live and paper P&L
     # P&L = current balance vs peak ever seen (negative = drawdown from peak)
@@ -151,6 +161,8 @@ def main():
         "model_changes":  changes,
         "ai_suggestions": ai,
         "model_confidence": models.get("category_confidence", {}),
+        "bets_placed":    bets_placed,
+        "dry_run":        True,   # updated by config at runtime if needed
     }
 
     out = DOCS / "data.json"

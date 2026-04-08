@@ -114,6 +114,7 @@ def check_drawdown_stop() -> bool:
     stop_at = round(peak * (1.0 - config.DRAWDOWN_STOP_PCT), 2)
 
     if current < stop_at:
+        already_stopped = br.get("live_stopped", False)
         br["live_stopped"] = True
         save_bankroll(br)
         log(
@@ -122,6 +123,12 @@ def check_drawdown_stop() -> bool:
             f"(peak was ${peak:.2f})",
             "WARN",
         )
+        if not already_stopped:
+            try:
+                import auto_bettor
+                auto_bettor._send_drawdown_alert(br)
+            except Exception:
+                pass
         return True
 
     return False

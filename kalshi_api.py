@@ -96,6 +96,44 @@ class KalshiAPI:
 
     # ── HTTP helpers ──────────────────────────────────────────────────────────────
 
+    def _post(self, path: str, payload: dict, timeout: int = 15) -> dict:
+        """Authenticated POST — used for order placement."""
+        import json as _json
+        headers = self._sign_request("POST", path)
+        headers["Content-Type"] = "application/json"
+        resp = self._session.post(
+            f"{self.BASE}{path}",
+            headers=headers,
+            data=_json.dumps(payload),
+            timeout=timeout,
+        )
+        if resp.status_code not in (200, 201):
+            raise Exception(
+                f"Kalshi POST {path} → HTTP {resp.status_code}: {resp.text[:300]}"
+            )
+        return resp.json()
+
+    def place_order(self, ticker: str, side: str, count: int,
+                    yes_price: int) -> dict:
+        """
+        Place a limit order on Kalshi.
+          side:      "yes" or "no"
+          yes_price: price of the YES side in cents (1–99)
+          count:     number of contracts to buy
+        Returns the full API response dict including order_id.
+        """
+        import uuid
+        payload = {
+            "ticker":          ticker,
+            "side":            side,
+            "action":          "buy",
+            "count":           count,
+            "type":            "limit",
+            "yes_price":       yes_price,
+            "client_order_id": str(uuid.uuid4()),
+        }
+        return self._post("/portfolio/orders", payload)
+
     def _get(self, path: str, params: dict = None, timeout: int = 15) -> Optional[dict]:
         qs = ""
         if params:

@@ -6123,3 +6123,32 @@ Total modelable markets evaluated: 0
 [2026-04-08 08:00:44 ET] [INFO] Scan complete — 1 alerts sent
 [2026-04-08 08:00:44 ET] [INFO] ============================================================
 [2026-04-08 08:00:44 ET] [INFO] Scan job complete
+[2026-04-08 09:58:21 ET] [INFO] Scan job starting
+[2026-04-08 09:58:22 ET] [INFO] Kalshi API key auth OK ✅  balance: $10.00
+[2026-04-08 09:58:22 ET] [INFO] ============================================================
+[2026-04-08 09:58:22 ET] [INFO] Starting market scan
+[2026-04-08 09:58:22 ET] [INFO] Live balance: $10.00  |  Peak ever: $10.00
+[2026-04-08 09:58:22 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-08 09:58:32 ET] [INFO] Fetched 41756 open markets via events endpoint across 26 pages
+[2026-04-08 09:58:32 ET] [INFO] Fetched 41756 open markets
+[2026-04-08 09:58:32 ET] [INFO] Parsed 39111 valid markets
+[2026-04-08 09:58:32 ET] [INFO] Categories: {'Sports': 19618, 'Entertainment': 4420, 'Elections': 4213, 'Economics': 2841, 'Financials': 2276, 'Crypto': 2146, 'Politics': 1428, 'Mentions': 837}
+[2026-04-08 09:58:36 ET] [INFO]   CPI model: threshold=10.0% TNX=4.26% → P=0.200
+[2026-04-08 09:58:55 ET] [INFO]   price model: BTC-USD spot=71661.13 target=100000.00 vol=33.5% T=6423.0h → P=0.123
+[2026-04-08 09:58:55 ET] [INFO]   price model: BTC-USD spot=71661.13 target=100000.00 vol=33.5% T=6423.0h → P=0.123
+[2026-04-08 09:58:55 ET] [INFO]   price model: BTC-USD spot=71661.13 target=200000.00 vol=33.5% T=6423.0h → P=0.000
+[2026-04-08 09:58:55 ET] [INFO]   price model: BTC-USD spot=71661.13 target=199999.00 vol=33.5% T=6423.0h → P=0.000
+[2026-04-08 09:58:56 ET] [INFO]   price model: SPY spot=674.43 target=4000.00 vol=17.6% T=6415.0h → P=1.000
+[2026-04-08 09:58:56 ET] [INFO]   EDGE FOUND: KXINXY-26DEC31H1600-T4000 | implied=5.0% true=100.0% edge=+95.0% dir=YES conf=85
+[2026-04-08 09:59:31 ET] [INFO]   CPI model: threshold=0.2% TNX=4.26% → P=0.800
+[2026-04-08 10:00:10 ET] [INFO]   CPI model: threshold=2.6% TNX=4.26% → P=0.666
+[2026-04-08 10:00:15 ET] [INFO]   weather model: nyc max=54.0°F target=[50,51]°F days_out=0 σ=3.5°F → P=0.138
+[2026-04-08 10:00:15 ET] [INFO]   EDGE FOUND: KXHIGHNY-26APR08-B50.5 | implied=38.5% true=13.8% edge=-24.7% dir=NO conf=70
+[2026-04-08 10:00:38 ET] [INFO]   CPI model: threshold=0.3% TNX=4.26% → P=0.800
+[2026-04-08 10:00:38 ET] [INFO]   fed model: implied_rate=3.640% current≈3.598% diff=4.2bps → P=0.584
+[2026-04-08 10:00:39 ET] [INFO] Checked 39038 markets | Modelable: 39038 | Edges found: 2
+[2026-04-08 10:00:40 ET] [INFO] [Discord] Trade alert sent: KXINXY-26DEC31H1600-T4000
+[2026-04-08 10:00:40 ET] [INFO] [Discord] Trade alert sent: KXHIGHNY-26APR08-B50.5
+[2026-04-08 10:00:40 ET] [INFO] Scan complete — 2 alerts sent
+[2026-04-08 10:00:40 ET] [INFO] ============================================================
+[2026-04-08 10:00:40 ET] [INFO] Scan job complete

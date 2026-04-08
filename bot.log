@@ -704,3 +704,47 @@ Total modelable markets evaluated: 0
 [2026-03-31 19:16:25 ET] [INFO]   price model: ETH-USD spot=2096.40 target=2000.00 vol=52.4% T=96.0h → P=0.195
 [2026-03-31 19:16:26 ET] [INFO]   price model: SPY spot=650.34 target=560.00 vol=16.6% T=8.0h → P=1.000
 [2026-03-31 19:16:27 ET] [INFO]   price model: QQQ spot=577.18 target=450.00 vol=20.8% T=72.0h → P=1.000
+[2026-04-08 12:42:43 ET] [INFO] Scan job starting
+[2026-04-08 12:42:43 ET] [INFO] Kalshi API key auth OK ✅  balance: $10.00
+[2026-04-08 12:42:43 ET] [INFO] ============================================================
+[2026-04-08 12:42:43 ET] [INFO] Starting market scan
+[2026-04-08 12:42:43 ET] [INFO] Live balance: $10.00  |  Peak ever: $10.00
+[2026-04-08 12:42:43 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-08 12:42:53 ET] [INFO] Fetched 43317 open markets via events endpoint across 26 pages
+[2026-04-08 12:42:53 ET] [INFO] Fetched 43317 open markets
+[2026-04-08 12:42:53 ET] [INFO] Parsed 40675 valid markets
+[2026-04-08 12:42:53 ET] [INFO] Categories: {'Sports': 20693, 'Entertainment': 4606, 'Elections': 4225, 'Economics': 2821, 'Financials': 2308, 'Crypto': 2161, 'Politics': 1426, 'Mentions': 855}
+[2026-04-08 12:42:57 ET] [INFO]   CPI model: threshold=10.0% TNX=4.27% → P=0.200
+[2026-04-08 12:43:14 ET] [INFO]   price model: BTC-USD spot=71380.19 target=100000.00 vol=33.6% T=6420.3h → P=0.120
+[2026-04-08 12:43:14 ET] [INFO]   price model: BTC-USD spot=71380.19 target=100000.00 vol=33.6% T=6420.3h → P=0.120
+[2026-04-08 12:43:15 ET] [INFO]   price model: BTC-USD spot=71380.19 target=200000.00 vol=33.6% T=6420.3h → P=0.000
+[2026-04-08 12:43:15 ET] [INFO]   price model: BTC-USD spot=71380.19 target=199999.00 vol=33.6% T=6420.3h → P=0.000
+[2026-04-08 12:43:48 ET] [INFO]   CPI model: threshold=0.2% TNX=4.27% → P=0.800
+[2026-04-08 12:44:27 ET] [INFO]   CPI model: threshold=2.5% TNX=4.27% → P=0.677
+[2026-04-08 12:44:27 ET] [INFO]   EDGE FOUND: KXCPICOREYOY-26MAR-T2.5 | implied=95.0% true=67.7% edge=-27.3% dir=NO conf=85
+[2026-04-08 12:44:27 ET] [INFO]   CPI model: threshold=2.6% TNX=4.27% → P=0.667
+[2026-04-08 12:44:27 ET] [INFO]   EDGE FOUND: KXCPICOREYOY-26MAR-T2.6 | implied=58.0% true=66.7% edge=+8.7% dir=YES conf=68
+[2026-04-08 12:44:31 ET] [INFO]   weather model: miami can't parse temp condition from title
+[2026-04-08 12:44:32 ET] [INFO]   weather model: denver can't parse temp condition from title
+[2026-04-08 12:44:41 ET] [INFO]   price model: SPY spot=675.84 target=6750.00 vol=17.9% T=3.3h → P=0.000
+[2026-04-08 12:44:41 ET] [INFO]   EDGE FOUND: KXINXU-26APR08H1600-T6749.9999 | implied=87.5% true=0.0% edge=-87.5% dir=NO conf=70
+[2026-04-08 12:44:42 ET] [INFO]   price model: SPY spot=675.84 target=6775.00 vol=17.9% T=3.3h → P=0.000
+[2026-04-08 12:44:42 ET] [INFO]   EDGE FOUND: KXINXU-26APR08H1600-T6774.9999 | implied=65.0% true=0.0% edge=-65.0% dir=NO conf=70
+[2026-04-08 12:44:42 ET] [INFO]   price model: SPY spot=675.84 target=6800.00 vol=17.9% T=3.3h → P=0.000
+[2026-04-08 12:44:42 ET] [INFO]   EDGE FOUND: KXINXU-26APR08H1600-T6799.9999 | implied=22.0% true=0.0% edge=-22.0% dir=NO conf=60
+[2026-04-08 12:44:57 ET] [INFO]   CPI model: threshold=0.3% TNX=4.27% → P=0.800
+[2026-04-08 12:44:57 ET] [INFO]   fed model: implied_rate=3.645% current≈3.600% diff=4.5bps → P=0.590
+[2026-04-08 12:44:58 ET] [INFO] Checked 40597 markets | Modelable: 40597 | Edges found: 5
+[2026-04-08 12:44:58 ET] [INFO] [Discord] Trade alert sent: KXCPICOREYOY-26MAR-T2.5
+[2026-04-08 12:44:58 ET] [DEBUG] AUTO-BET SKIP KXCPICOREYOY-26MAR-T2.5: bet too small (<$0.50)
+[2026-04-08 12:44:58 ET] [INFO] [Discord] Trade alert sent: KXCPICOREYOY-26MAR-T2.6
+[2026-04-08 12:44:58 ET] [INFO] DRY RUN 🔵 KXCPICOREYOY-26MAR-T2.6 YES 1ct @ 60¢ = $0.60 | edge=+8.7% conf=68 | would_use 50%Kelly
+[2026-04-08 12:44:59 ET] [INFO] [Discord] Trade alert sent: KXINXU-26APR08H1600-T6749.9999
+[2026-04-08 12:44:59 ET] [DEBUG] AUTO-BET SKIP KXINXU-26APR08H1600-T6749.9999: bet too small (<$0.50)
+[2026-04-08 12:44:59 ET] [INFO] [Discord] Trade alert sent: KXINXU-26APR08H1600-T6774.9999
+[2026-04-08 12:44:59 ET] [DEBUG] AUTO-BET SKIP KXINXU-26APR08H1600-T6774.9999: bet too small (<$0.50)
+[2026-04-08 12:44:59 ET] [INFO] [Discord] Trade alert sent: KXINXU-26APR08H1600-T6799.9999
+[2026-04-08 12:44:59 ET] [INFO] DRY RUN 🔵 KXINXU-26APR08H1600-T6799.9999 NO 1ct @ 79¢ = $0.79 | edge=-22.0% conf=60 | would_use 50%Kelly
+[2026-04-08 12:44:59 ET] [INFO] Scan complete — 5 alerts sent
+[2026-04-08 12:44:59 ET] [INFO] ============================================================
+[2026-04-08 12:45:00 ET] [INFO] Scan job complete

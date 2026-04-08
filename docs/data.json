@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-08T19:50:28.352129Z",
+  "generated_at": "2026-04-08T20:58:19.376009Z",
   "stats": {
-    "total_alerts": 830,
+    "total_alerts": 832,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -36,7 +36,7 @@
         "hit_rate": null
       },
       "Climate and Weather": {
-        "total": 109,
+        "total": 111,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -68,7 +68,7 @@
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 450,
+        "total": 452,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -85,11 +85,47 @@
       "peak": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-04-08T19:47:59.214932Z"
+    "updated_at": "2026-04-08T20:56:01.254643Z"
   },
   "live_pnl": 0.0,
   "paper_pnl": 0.0,
   "recent_alerts": [
+    {
+      "timestamp": "2026-04-08T20:58:18.917188Z",
+      "ticker": "KXHIGHAUS-26APR08-B80.5",
+      "title": "Will the **high temp in Austin** be 80-81\u00b0 on Apr 8, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-34.67",
+      "implied_prob": "0.485",
+      "true_prob": "0.1383",
+      "confidence": "80",
+      "suggested_live_dollars": "0.54",
+      "suggested_paper_dollars": "49.68",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "54",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": ""
+    },
+    {
+      "timestamp": "2026-04-08T20:58:17.961803Z",
+      "ticker": "KXHIGHPHIL-26APR08-B55.5",
+      "title": "Will the **high temp in Philadelphia** be 55-56\u00b0 on Apr 8, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-83.94",
+      "implied_prob": "0.94",
+      "true_prob": "0.1006",
+      "confidence": "80",
+      "suggested_live_dollars": "0.5",
+      "suggested_paper_dollars": "50.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "10",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": ""
+    },
     {
       "timestamp": "2026-04-08T19:50:27.800969Z",
       "ticker": "KXHIGHNY-26APR08-B52.5",
@@ -953,42 +989,6 @@
       "outcome": "",
       "resolved_at": "",
       "notes": ""
-    },
-    {
-      "timestamp": "2026-04-08T02:56:20.429458Z",
-      "ticker": "KXSOLMAXMON-SOL-26APR30-9000",
-      "title": "Will SOL trimmed mean be above $90.00 by 11:59 PM ET on Apr 30, 2026?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-38.52",
-      "implied_prob": "0.685",
-      "true_prob": "0.2998",
-      "confidence": "80",
-      "suggested_live_dollars": "0.32",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "32",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-04-08T02:56:20.191108Z",
-      "ticker": "KXXRPMAXMON-XRP-26APR30-140",
-      "title": "Will XRP trimmed mean be above $1.40 by 11:59 PM ET on Apr 30, 2026?",
-      "category": "Crypto",
-      "direction": "YES",
-      "edge_pct": "14.48",
-      "implied_prob": "0.855",
-      "true_prob": "0.9998",
-      "confidence": "63",
-      "suggested_live_dollars": "0.88",
-      "suggested_paper_dollars": "19.36",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "88",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": ""
     }
   ],
   "model_changes": [],
@@ -996,18 +996,36 @@
   "model_confidence": {},
   "bets_placed": [
     {
-      "timestamp": "2026-04-08T19:50:27.801278",
-      "ticker": "KXHIGHNY-26APR08-B52.5",
-      "title": "Will the **high temp in NYC** be 52-53\u00b0 on Apr 8, 2026?",
+      "timestamp": "2026-04-08T20:58:18.917453",
+      "ticker": "KXHIGHAUS-26APR08-B80.5",
+      "title": "Will the **high temp in Austin** be 80-81\u00b0 on Apr 8, 2026?",
       "category": "Climate and Weather",
       "direction": "NO",
       "contracts": "1",
-      "price_cents": "69",
-      "dollars_risked": "0.69",
-      "edge_pct": "-18.67",
+      "price_cents": "54",
+      "dollars_risked": "0.54",
+      "edge_pct": "-34.67",
       "true_prob": "0.1383",
-      "implied_prob": "0.325",
-      "confidence": "70",
+      "implied_prob": "0.485",
+      "confidence": "80",
+      "kelly_fraction": "0.5",
+      "dry_run": "True",
+      "order_id": "",
+      "status": "dry_run"
+    },
+    {
+      "timestamp": "2026-04-08T20:58:17.962081",
+      "ticker": "KXHIGHPHIL-26APR08-B55.5",
+      "title": "Will the **high temp in Philadelphia** be 55-56\u00b0 on Apr 8, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "contracts": "5",
+      "price_cents": "10",
+      "dollars_risked": "0.5",
+      "edge_pct": "-83.94",
+      "true_prob": "0.1006",
+      "implied_prob": "0.94",
+      "confidence": "80",
       "kelly_fraction": "0.5",
       "dry_run": "True",
       "order_id": "",

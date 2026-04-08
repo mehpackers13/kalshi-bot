@@ -6052,3 +6052,48 @@ Total modelable markets evaluated: 0
 [2026-04-07 22:56:27 ET] [INFO] Scan complete — 75 alerts sent
 [2026-04-07 22:56:27 ET] [INFO] ============================================================
 [2026-04-07 22:56:28 ET] [INFO] Scan job complete
+[2026-04-08 01:17:39 ET] [INFO] Scan job starting
+[2026-04-08 01:17:39 ET] [INFO] Kalshi API key auth OK ✅  balance: $10.00
+[2026-04-08 01:17:39 ET] [INFO] ============================================================
+[2026-04-08 01:17:39 ET] [INFO] Starting market scan
+[2026-04-08 01:17:39 ET] [INFO] Live balance: $10.00  |  Peak ever: $10.00
+[2026-04-08 01:17:39 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-08 01:17:51 ET] [INFO] Fetched 40454 open markets via events endpoint across 26 pages
+[2026-04-08 01:17:51 ET] [INFO] Fetched 40454 open markets
+[2026-04-08 01:17:51 ET] [INFO] Parsed 37773 valid markets
+[2026-04-08 01:17:51 ET] [INFO] Categories: {'Sports': 18959, 'Entertainment': 4386, 'Elections': 4218, 'Economics': 2812, 'Crypto': 2119, 'Financials': 1533, 'Politics': 1426, 'Mentions': 836}
+[2026-04-08 01:17:54 ET] [INFO]   CPI model: threshold=10.0% TNX=4.34% → P=0.200
+[2026-04-08 01:18:11 ET] [INFO]   price model: SOL-USD spot=84.54 target=500.00 vol=46.0% T=6431.7h → P=0.000
+[2026-04-08 01:18:11 ET] [INFO]   price model: BTC-USD spot=71659.39 target=100000.00 vol=33.6% T=6431.7h → P=0.124
+[2026-04-08 01:18:11 ET] [INFO]   price model: BTC-USD spot=71659.39 target=100000.00 vol=33.6% T=6431.7h → P=0.124
+[2026-04-08 01:18:12 ET] [INFO]   price model: BTC-USD spot=71659.39 target=200000.00 vol=33.6% T=6431.7h → P=0.000
+[2026-04-08 01:18:12 ET] [INFO]   price model: BTC-USD spot=71659.39 target=199999.00 vol=33.6% T=6431.7h → P=0.000
+[2026-04-08 01:18:14 ET] [INFO]   fed model: implied_rate=3.640% current≈3.623% diff=1.7bps → P=0.466
+[2026-04-08 01:18:14 ET] [INFO]   EDGE FOUND: KXRATECUTCOUNT-26DEC31-T0 | implied=36.0% true=46.6% edge=+10.6% dir=YES conf=78
+[2026-04-08 01:18:43 ET] [INFO]   CPI model: threshold=0.2% TNX=4.34% → P=0.800
+[2026-04-08 01:18:50 ET] [INFO]   weather model: san francisco rain 2026-04-08 forecast=0% → P=0.020
+[2026-04-08 01:18:50 ET] [INFO]   EDGE FOUND: KXRAINSFOM-26APR-1 | implied=46.5% true=2.0% edge=-44.5% dir=NO conf=85
+[2026-04-08 01:18:51 ET] [INFO]   weather model: los angeles rain 2026-04-08 forecast=0% → P=0.020
+[2026-04-08 01:18:51 ET] [INFO]   EDGE FOUND: KXRAINLAXM-26APR-1 | implied=43.0% true=2.0% edge=-41.0% dir=NO conf=85
+[2026-04-08 01:18:52 ET] [INFO]   weather model: houston rain 2026-04-08 forecast=0% → P=0.020
+[2026-04-08 01:18:52 ET] [INFO]   EDGE FOUND: KXRAINHOUM-26APR-3 | implied=72.5% true=2.0% edge=-70.5% dir=NO conf=85
+[2026-04-08 01:18:53 ET] [INFO]   weather model: nyc rain 2026-04-08 forecast=0% → P=0.020
+[2026-04-08 01:18:53 ET] [INFO]   EDGE FOUND: KXRAINNYCM-26APR-1 | implied=87.5% true=2.0% edge=-85.5% dir=NO conf=85
+[2026-04-08 01:18:55 ET] [INFO]   price model: BTC-USD spot=71664.19 target=82500.00 vol=33.6% T=550.7h → P=0.047
+[2026-04-08 01:18:55 ET] [INFO]   EDGE FOUND: KXBTCMAXMON-BTC-26APR30-8250000 | implied=13.5% true=4.8% edge=-8.8% dir=NO conf=63
+[2026-04-08 01:19:21 ET] [INFO]   CPI model: threshold=2.6% TNX=4.34% → P=0.674
+[2026-04-08 01:19:22 ET] [INFO]   CPI model: threshold=2.7% TNX=4.34% → P=0.664
+[2026-04-08 01:19:22 ET] [INFO]   EDGE FOUND: KXCPICOREYOY-26MAR-T2.7 | implied=17.5% true=66.3% edge=+48.9% dir=YES conf=85
+[2026-04-08 01:19:41 ET] [INFO]   CPI model: threshold=0.3% TNX=4.34% → P=0.800
+[2026-04-08 01:19:42 ET] [INFO]   fed model: implied_rate=3.640% current≈3.623% diff=1.7bps → P=0.534
+[2026-04-08 01:19:42 ET] [INFO] Checked 37707 markets | Modelable: 37707 | Edges found: 7
+[2026-04-08 01:19:43 ET] [INFO] [Discord] Trade alert sent: KXRATECUTCOUNT-26DEC31-T0
+[2026-04-08 01:19:43 ET] [INFO] [Discord] Trade alert sent: KXRAINSFOM-26APR-1
+[2026-04-08 01:19:43 ET] [INFO] [Discord] Trade alert sent: KXRAINLAXM-26APR-1
+[2026-04-08 01:19:44 ET] [INFO] [Discord] Trade alert sent: KXRAINHOUM-26APR-3
+[2026-04-08 01:19:44 ET] [INFO] [Discord] Trade alert sent: KXRAINNYCM-26APR-1
+[2026-04-08 01:19:44 ET] [INFO] [Discord] Trade alert sent: KXBTCMAXMON-BTC-26APR30-8250000
+[2026-04-08 01:19:44 ET] [INFO] [Discord] Trade alert sent: KXCPICOREYOY-26MAR-T2.7
+[2026-04-08 01:19:44 ET] [INFO] Scan complete — 7 alerts sent
+[2026-04-08 01:19:44 ET] [INFO] ============================================================
+[2026-04-08 01:19:44 ET] [INFO] Scan job complete

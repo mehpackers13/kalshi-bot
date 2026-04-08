@@ -842,3 +842,25 @@ Total modelable markets evaluated: 0
 [2026-04-08 16:58:19 ET] [INFO] Scan complete — 2 alerts sent
 [2026-04-08 16:58:19 ET] [INFO] ============================================================
 [2026-04-08 16:58:19 ET] [INFO] Scan job complete
+[2026-04-08 17:54:03 ET] [INFO] Scan job starting
+[2026-04-08 17:54:03 ET] [INFO] Kalshi API key auth OK ✅  balance: $10.00
+[2026-04-08 17:54:03 ET] [INFO] ============================================================
+[2026-04-08 17:54:03 ET] [INFO] Starting market scan
+[2026-04-08 17:54:04 ET] [INFO] Live balance: $10.00  |  Peak ever: $10.00
+[2026-04-08 17:54:04 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-08 17:54:13 ET] [INFO] Fetched 42692 open markets via events endpoint across 26 pages
+[2026-04-08 17:54:13 ET] [INFO] Fetched 42692 open markets
+[2026-04-08 17:54:14 ET] [INFO] Parsed 39819 valid markets
+[2026-04-08 17:54:14 ET] [INFO] Categories: {'Sports': 20642, 'Entertainment': 4838, 'Elections': 4225, 'Economics': 2839, 'Crypto': 2220, 'Politics': 1427, 'Financials': 1242, 'Mentions': 831}
+[2026-04-08 17:54:17 ET] [INFO]   CPI model: threshold=10.0% TNX=4.29% → P=0.200
+[2026-04-08 17:54:36 ET] [INFO]   price model: BTC-USD spot=71574.72 target=100000.00 vol=33.5% T=6415.1h → P=0.122
+[2026-04-08 17:54:37 ET] [INFO]   price model: BTC-USD spot=71574.72 target=100000.00 vol=33.5% T=6415.1h → P=0.122
+[2026-04-08 17:54:37 ET] [INFO]   price model: BTC-USD spot=71574.72 target=200000.00 vol=33.5% T=6415.1h → P=0.000
+[2026-04-08 17:54:37 ET] [INFO]   price model: BTC-USD spot=71574.72 target=199999.00 vol=33.5% T=6415.1h → P=0.000
+[2026-04-08 17:55:13 ET] [INFO]   CPI model: threshold=0.2% TNX=4.29% → P=0.800
+[2026-04-08 17:56:21 ET] [INFO]   CPI model: threshold=0.3% TNX=4.29% → P=0.800
+[2026-04-08 17:56:22 ET] [INFO]   fed model: implied_rate=3.640% current≈3.600% diff=4.0bps → P=0.580
+[2026-04-08 17:56:22 ET] [INFO] Checked 39736 markets | Modelable: 39736 | Edges found: 0
+[2026-04-08 17:56:22 ET] [INFO] Scan complete — no qualifying edges found (this is fine)
+[2026-04-08 17:56:22 ET] [INFO] ============================================================
+[2026-04-08 17:56:22 ET] [INFO] Scan job complete

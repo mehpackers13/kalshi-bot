@@ -48,7 +48,7 @@ DRAWDOWN_STOP_PCT     = 0.40     # pause auto-betting if balance drops 40% below
 # ── Auto-Betting Engine ─────────────────────────────────────────────────────────
 # Set DRY_RUN = True to log what the bot WOULD bet without placing real orders.
 # Flip to False to go live.  Default: True (safe first-run mode).
-DRY_RUN               = True
+DRY_RUN               = False
 MAX_AUTO_BETS_PER_HOUR = 3        # rate limit — prevents runaway loops
 
 # ── Scanning ────────────────────────────────────────────────────────────────────

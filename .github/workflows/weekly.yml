@@ -51,4 +51,4 @@ jobs:
           git add data/ docs/data.json bot.log 2>/dev/null || true
           git diff --staged --quiet \
             || git commit -m "📅 weekly-review $(date -u '+%Y-%m-%d UTC')"
-          git push
+          git pull --rebase origin main && git push

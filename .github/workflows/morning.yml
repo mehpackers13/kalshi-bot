@@ -51,4 +51,4 @@ jobs:
           git add data/ model_changes.log docs/data.json bot.log 2>/dev/null || true
           git diff --staged --quiet \
             || git commit -m "🧠 morning $(date -u '+%Y-%m-%d %H:%M UTC')"
-          git push
+          git pull --rebase origin main && git push

@@ -1237,3 +1237,46 @@ Total modelable markets evaluated: 0
 [2026-04-08 22:50:55 ET] [INFO] Scan complete — 67 alerts sent
 [2026-04-08 22:50:55 ET] [INFO] ============================================================
 [2026-04-08 22:50:55 ET] [INFO] Scan job complete
+[2026-04-09 01:16:09 ET] [INFO] Scan job starting
+[2026-04-09 01:16:09 ET] [INFO] Kalshi API key auth OK ✅  balance: $7.71
+[2026-04-09 01:16:09 ET] [INFO] ============================================================
+[2026-04-09 01:16:09 ET] [INFO] Starting market scan
+[2026-04-09 01:16:09 ET] [INFO] Live balance: $7.71  |  Peak ever: $10.00
+[2026-04-09 01:16:09 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-09 01:16:18 ET] [INFO] Fetched 38238 open markets via events endpoint across 27 pages
+[2026-04-09 01:16:18 ET] [INFO] Fetched 38238 open markets
+[2026-04-09 01:16:19 ET] [INFO] Parsed 36101 valid markets
+[2026-04-09 01:16:19 ET] [INFO] Categories: {'Sports': 17868, 'Entertainment': 4789, 'Elections': 4224, 'Economics': 2848, 'Politics': 1439, 'Crypto': 1346, 'Financials': 1287, 'Mentions': 780}
+[2026-04-09 01:16:23 ET] [INFO]   CPI model: threshold=10.0% TNX=4.34% → P=0.200
+[2026-04-09 01:16:44 ET] [INFO]   price model: BTC-USD spot=70846.38 target=100000.00 vol=34.4% T=6407.7h → P=0.121
+[2026-04-09 01:16:44 ET] [INFO]   price model: BTC-USD spot=70846.38 target=100000.00 vol=34.4% T=6407.7h → P=0.121
+[2026-04-09 01:16:44 ET] [INFO]   price model: BTC-USD spot=70846.38 target=200000.00 vol=34.4% T=6407.7h → P=0.000
+[2026-04-09 01:16:44 ET] [INFO]   price model: BTC-USD spot=70846.38 target=149999.00 vol=34.4% T=6407.7h → P=0.005
+[2026-04-09 01:16:44 ET] [INFO]   price model: BTC-USD spot=70846.38 target=199999.00 vol=34.4% T=6407.7h → P=0.000
+[2026-04-09 01:16:47 ET] [INFO]   fed model: implied_rate=3.645% current≈3.615% diff=3.0bps → P=0.440
+[2026-04-09 01:16:47 ET] [INFO]   EDGE FOUND: KXRATECUTCOUNT-26DEC31-T0 | implied=34.5% true=44.0% edge=+9.5% dir=YES conf=78
+[2026-04-09 01:17:23 ET] [INFO]   CPI model: threshold=0.2% TNX=4.34% → P=0.800
+[2026-04-09 01:17:31 ET] [INFO]   weather model: san francisco rain 2026-04-09 forecast=0% → P=0.020
+[2026-04-09 01:17:31 ET] [INFO]   EDGE FOUND: KXRAINSFOM-26APR-1 | implied=65.5% true=2.0% edge=-63.5% dir=NO conf=85
+[2026-04-09 01:17:32 ET] [INFO]   weather model: houston rain 2026-04-09 forecast=0% → P=0.020
+[2026-04-09 01:17:32 ET] [INFO]   EDGE FOUND: KXRAINHOUM-26APR-3 | implied=71.5% true=2.0% edge=-69.5% dir=NO conf=85
+[2026-04-09 01:17:33 ET] [INFO]   weather model: nyc rain 2026-04-09 forecast=0% → P=0.020
+[2026-04-09 01:17:33 ET] [INFO]   EDGE FOUND: KXRAINNYCM-26APR-1 | implied=88.5% true=2.0% edge=-86.5% dir=NO conf=85
+[2026-04-09 01:18:14 ET] [INFO]   CPI model: threshold=2.7% TNX=4.34% → P=0.664
+[2026-04-09 01:18:14 ET] [INFO]   EDGE FOUND: KXCPICOREYOY-26MAR-T2.7 | implied=20.0% true=66.4% edge=+46.4% dir=YES conf=85
+[2026-04-09 01:18:26 ET] [INFO]   CPI model: threshold=0.3% TNX=4.34% → P=0.800
+[2026-04-09 01:18:27 ET] [INFO]   fed model: implied_rate=3.645% current≈3.615% diff=3.0bps → P=0.560
+[2026-04-09 01:18:27 ET] [INFO] Checked 36034 markets | Modelable: 36034 | Edges found: 5
+[2026-04-09 01:18:28 ET] [INFO] [Discord] Trade alert sent: KXRATECUTCOUNT-26DEC31-T0
+[2026-04-09 01:18:28 ET] [DEBUG] AUTO-BET SKIP KXRATECUTCOUNT-26DEC31-T0: bet too small (<$0.50)
+[2026-04-09 01:18:28 ET] [INFO] [Discord] Trade alert sent: KXRAINSFOM-26APR-1
+[2026-04-09 01:18:28 ET] [DEBUG] AUTO-BET SKIP KXRAINSFOM-26APR-1: bet too small (<$0.50)
+[2026-04-09 01:18:28 ET] [INFO] [Discord] Trade alert sent: KXRAINHOUM-26APR-3
+[2026-04-09 01:18:28 ET] [DEBUG] AUTO-BET SKIP KXRAINHOUM-26APR-3: bet too small (<$0.50)
+[2026-04-09 01:18:28 ET] [INFO] [Discord] Trade alert sent: KXRAINNYCM-26APR-1
+[2026-04-09 01:18:28 ET] [DEBUG] AUTO-BET SKIP KXRAINNYCM-26APR-1: bet too small (<$0.50)
+[2026-04-09 01:18:28 ET] [INFO] [Discord] Trade alert sent: KXCPICOREYOY-26MAR-T2.7
+[2026-04-09 01:18:28 ET] [DEBUG] AUTO-BET SKIP KXCPICOREYOY-26MAR-T2.7: bet too small (<$0.50)
+[2026-04-09 01:18:28 ET] [INFO] Scan complete — 5 alerts sent
+[2026-04-09 01:18:28 ET] [INFO] ============================================================
+[2026-04-09 01:18:29 ET] [INFO] Scan job complete

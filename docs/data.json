@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-10T05:40:42.228032Z",
+  "generated_at": "2026-04-10T11:57:37.376320Z",
   "stats": {
-    "total_alerts": 979,
+    "total_alerts": 982,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -24,7 +24,7 @@
         "hit_rate": null
       },
       "Crypto": {
-        "total": 450,
+        "total": 452,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -36,7 +36,7 @@
         "hit_rate": null
       },
       "Climate and Weather": {
-        "total": 118,
+        "total": 119,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -56,7 +56,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 203,
+        "total": 205,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -68,7 +68,7 @@
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 525,
+        "total": 526,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -77,20 +77,74 @@
   },
   "bankroll": {
     "live": {
-      "balance": 4.13,
+      "balance": 3.35,
       "peak": 6.33
     },
     "paper": {
       "balance": 1000.0,
       "peak": 1000.0
     },
-    "live_stopped": false,
-    "updated_at": "2026-04-10T05:38:08.710772Z",
+    "live_stopped": true,
+    "updated_at": "2026-04-10T11:57:36.412461Z",
     "_note": "Peak reset to current balance after pre-existing-position losses triggered stop. Bot placed 0 bets. Reset 2026-04-09."
   },
-  "live_pnl": -2.2,
+  "live_pnl": -2.98,
   "paper_pnl": 0.0,
   "recent_alerts": [
+    {
+      "timestamp": "2026-04-10T11:57:37.105709Z",
+      "ticker": "KXHIGHMIA-26APR10-B80.5",
+      "title": "Will the **high temp in Miami** be 80-81\u00b0 on Apr 10, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-31.93",
+      "implied_prob": "0.525",
+      "true_prob": "0.2057",
+      "confidence": "80",
+      "suggested_live_dollars": "0.48",
+      "suggested_paper_dollars": "49.92",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "48",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": ""
+    },
+    {
+      "timestamp": "2026-04-10T11:57:36.861791Z",
+      "ticker": "KXBTCMAXMON-BTC-26APR30-8250000",
+      "title": "Will BTC trimmed mean be above $82500.00 by 11:59 PM ET on Apr 30, 2026?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-8.72",
+      "implied_prob": "0.135",
+      "true_prob": "0.0478",
+      "confidence": "63",
+      "suggested_live_dollars": "0.87",
+      "suggested_paper_dollars": "19.14",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "87",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": ""
+    },
+    {
+      "timestamp": "2026-04-10T11:57:36.412106Z",
+      "ticker": "KXBTCMAXMON-BTC-26APR30-8000000",
+      "title": "Will BTC trimmed mean be above $80000.00 by 11:59 PM ET on Apr 30, 2026?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-11.54",
+      "implied_prob": "0.215",
+      "true_prob": "0.0996",
+      "confidence": "68",
+      "suggested_live_dollars": "0.79",
+      "suggested_paper_dollars": "19.75",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "79",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": ""
+    },
     {
       "timestamp": "2026-04-10T05:40:42.019075Z",
       "ticker": "KXCPICOREYOY-26MAR-T2.7",
@@ -933,60 +987,6 @@
       "suggested_paper_dollars": "39.27",
       "is_paper_bet": "1",
       "paper_entry_price_cents": "77",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-04-10T03:22:36.794369Z",
-      "ticker": "KXBTCMINY-27JAN01-40000.00",
-      "title": "Will Bitcoin be below $40000.00 by Jan 1, 2027 at 12:00am ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-30.21",
-      "implied_prob": "0.325",
-      "true_prob": "0.0229",
-      "confidence": "90",
-      "suggested_live_dollars": "0.68",
-      "suggested_paper_dollars": "49.64",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "68",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-04-10T03:22:36.664215Z",
-      "ticker": "KXBTCMINY-27JAN01-45000.00",
-      "title": "Will Bitcoin be below $45000.00 by Jan 1, 2027 at 12:00am ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-32.97",
-      "implied_prob": "0.385",
-      "true_prob": "0.0553",
-      "confidence": "90",
-      "suggested_live_dollars": "0.62",
-      "suggested_paper_dollars": "49.6",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "62",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-04-10T03:22:36.538860Z",
-      "ticker": "KXBTCMINY-27JAN01-50000.00",
-      "title": "Will Bitcoin be below $50000.00 by Jan 1, 2027 at 12:00am ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-41.7",
-      "implied_prob": "0.525",
-      "true_prob": "0.108",
-      "confidence": "90",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "48",
       "outcome": "",
       "resolved_at": "",
       "notes": ""

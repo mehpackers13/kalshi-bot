@@ -1,0 +1,110 @@
+name: Account Audit
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run account audit
+        env:
+          KALSHI_API_KEY_ID:   ${{ secrets.KALSHI_API_KEY_ID }}
+          KALSHI_PRIVATE_KEY:  ${{ secrets.KALSHI_PRIVATE_KEY }}
+        run: |
+          python - << 'PYEOF'
+          import os, sys, json, datetime
+          sys.path.insert(0, '.')
+          from kalshi_api import KalshiAPI
+
+          api = KalshiAPI()
+          if not api.login():
+              print("AUTH FAILED")
+              sys.exit(1)
+
+          BASE = "https://api.elections.kalshi.com/trade-api/v2"
+
+          # ── Balance ──────────────────────────────────────────────────
+          bal = api.get_account_balance()
+          print(f"\n{'='*60}")
+          print(f"LIVE BALANCE: ${bal:.2f}")
+          print(f"{'='*60}\n")
+
+          # ── Open positions ───────────────────────────────────────────
+          print("=== OPEN POSITIONS ===")
+          pos_resp = api._get("/portfolio/positions", params={"limit": 100})
+          positions = (pos_resp or {}).get("market_positions", [])
+          if not positions:
+              print("  (no open positions)")
+          for p in positions:
+              ticker   = p.get("ticker", "?")
+              side     = "YES" if p.get("position", 0) > 0 else "NO"
+              qty      = abs(p.get("position", 0))
+              avg_px   = p.get("market_exposure", 0) / max(qty, 1) if qty else 0
+              pnl      = p.get("realized_pnl", 0) + p.get("unrealized_pnl", 0)
+              resting  = p.get("resting_orders_count", 0)
+              print(f"  {ticker}")
+              print(f"    side={side}  qty={qty}  avg_px≈{avg_px:.1f}¢  total_pnl={pnl/100:.2f}  resting_orders={resting}")
+
+          print(f"\nTotal open positions: {len(positions)}")
+
+          # ── All orders (placed/filled/cancelled) ─────────────────────
+          print("\n=== ALL ORDERS (last 50) ===")
+          ord_resp = api._get("/portfolio/orders", params={"limit": 50, "status": "resting,filled,cancelled"})
+          orders = (ord_resp or {}).get("orders", [])
+          # Also try without status filter
+          if not orders:
+              ord_resp2 = api._get("/portfolio/orders", params={"limit": 50})
+              orders = (ord_resp2 or {}).get("orders", [])
+
+          if not orders:
+              print("  (no orders found)")
+          for o in orders:
+              created = o.get("created_time", "?")[:19]
+              ticker  = o.get("ticker", "?")
+              side    = o.get("side", "?")
+              action  = o.get("action", "?")
+              qty     = o.get("count", 0)
+              filled  = o.get("contracts_filled", 0)
+              px      = o.get("yes_price", 0)
+              status  = o.get("status", "?")
+              oid     = o.get("order_id", "?")[:12]
+              cost    = filled * px / 100
+              print(f"  [{created}] {ticker}")
+              print(f"    {action} {side} | qty={qty} filled={filled} @ {px}¢ = ${cost:.2f} | status={status} | id={oid}")
+
+          print(f"\nTotal orders found: {len(orders)}")
+
+          # ── Settled positions / fills ─────────────────────────────────
+          print("\n=== SETTLED / FILLS (last 20) ===")
+          fills_resp = api._get("/portfolio/fills", params={"limit": 20})
+          fills = (fills_resp or {}).get("fills", [])
+          if not fills:
+              print("  (no fills found)")
+          for f in fills:
+              created  = f.get("created_time", "?")[:19]
+              ticker   = f.get("ticker", "?")
+              side     = f.get("side", "?")
+              action   = f.get("action", "?")
+              count    = f.get("count", 0)
+              px       = f.get("yes_price", 0)
+              cost     = count * px / 100
+              print(f"  [{created}] {ticker}")
+              print(f"    {action} {side} {count}ct @ {px}¢ = ${cost:.2f}")
+
+          print(f"\nTotal fills: {len(fills)}")
+          print("\n=== AUDIT COMPLETE ===")
+          PYEOF

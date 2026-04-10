@@ -1725,3 +1725,42 @@ Total modelable markets evaluated: 0
 [2026-04-09 23:22:44 ET] [INFO] Scan complete — 68 alerts sent
 [2026-04-09 23:22:44 ET] [INFO] ============================================================
 [2026-04-09 23:22:44 ET] [INFO] Scan job complete
+[2026-04-10 01:38:08 ET] [INFO] Scan job starting
+[2026-04-10 01:38:08 ET] [INFO] Kalshi API key auth OK ✅  balance: $4.13
+[2026-04-10 01:38:08 ET] [INFO] ============================================================
+[2026-04-10 01:38:08 ET] [INFO] Starting market scan
+[2026-04-10 01:38:08 ET] [INFO] Live balance: $4.13  |  Peak ever: $6.33
+[2026-04-10 01:38:08 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-10 01:38:17 ET] [INFO] Fetched 39723 open markets via events endpoint across 27 pages
+[2026-04-10 01:38:17 ET] [INFO] Fetched 39723 open markets
+[2026-04-10 01:38:17 ET] [INFO] Parsed 37054 valid markets
+[2026-04-10 01:38:17 ET] [INFO] Categories: {'Sports': 18682, 'Entertainment': 4674, 'Elections': 4333, 'Economics': 2767, 'Crypto': 1695, 'Politics': 1432, 'Financials': 1177, 'Mentions': 778}
+[2026-04-10 01:38:22 ET] [INFO]   CPI model: threshold=10.0% TNX=4.29% → P=0.200
+[2026-04-10 01:38:44 ET] [INFO]   price model: SOL-USD spot=83.51 target=500.00 vol=49.0% T=6383.4h → P=0.000
+[2026-04-10 01:38:44 ET] [INFO]   price model: BTC-USD spot=72184.64 target=100000.00 vol=34.5% T=6383.4h → P=0.134
+[2026-04-10 01:38:44 ET] [INFO]   price model: BTC-USD spot=72184.64 target=100000.00 vol=34.5% T=6383.4h → P=0.134
+[2026-04-10 01:38:44 ET] [INFO]   price model: BTC-USD spot=72184.64 target=200000.00 vol=34.5% T=6383.4h → P=0.000
+[2026-04-10 01:38:45 ET] [INFO]   price model: BTC-USD spot=72184.64 target=149999.00 vol=34.5% T=6383.3h → P=0.007
+[2026-04-10 01:38:45 ET] [INFO]   price model: BTC-USD spot=72184.64 target=199999.00 vol=34.5% T=6383.3h → P=0.000
+[2026-04-10 01:38:45 ET] [INFO]   price model: QQQ spot=610.19 target=23000.01 vol=21.8% T=6375.4h → P=1.000
+[2026-04-10 01:38:48 ET] [INFO]   fed model: implied_rate=3.640% current≈3.588% diff=5.2bps → P=0.396
+[2026-04-10 01:39:27 ET] [INFO]   CPI model: threshold=0.2% TNX=4.29% → P=0.800
+[2026-04-10 01:39:35 ET] [INFO]   weather model: los angeles rain 2026-04-10 forecast=0% → P=0.020
+[2026-04-10 01:39:35 ET] [INFO]   EDGE FOUND: KXRAINLAXM-26APR-1 | implied=25.5% true=2.0% edge=-23.5% dir=NO conf=75
+[2026-04-10 01:39:36 ET] [INFO]   weather model: houston rain 2026-04-10 forecast=0% → P=0.020
+[2026-04-10 01:39:36 ET] [INFO]   EDGE FOUND: KXRAINHOUM-26APR-3 | implied=63.0% true=2.0% edge=-61.0% dir=NO conf=85
+[2026-04-10 01:39:38 ET] [INFO]   price model: BTC-USD spot=72184.64 target=80000.00 vol=34.5% T=502.4h → P=0.107
+[2026-04-10 01:39:38 ET] [INFO]   price model: BTC-USD spot=72184.64 target=82500.00 vol=34.5% T=502.4h → P=0.053
+[2026-04-10 01:40:33 ET] [INFO]   CPI model: threshold=2.7% TNX=4.29% → P=0.659
+[2026-04-10 01:40:33 ET] [INFO]   EDGE FOUND: KXCPICOREYOY-26MAR-T2.7 | implied=13.0% true=65.9% edge=+52.9% dir=YES conf=80
+[2026-04-10 01:40:39 ET] [INFO]   fed model: implied_rate=3.640% current≈3.588% diff=5.2bps → P=0.604
+[2026-04-10 01:40:40 ET] [INFO] Checked 36989 markets | Modelable: 36989 | Edges found: 3
+[2026-04-10 01:40:41 ET] [INFO] [Discord] Trade alert sent: KXRAINLAXM-26APR-1
+[2026-04-10 01:40:41 ET] [INFO] AUTO-BET ✅ KXRAINLAXM-26APR-1 NO 1ct @ 76¢ = $0.76 | order=9c453a1e-173c-440b-a5a3-ba35e89b271e | edge=-23.5% conf=75
+[2026-04-10 01:40:41 ET] [INFO] [Discord] Trade alert sent: KXRAINHOUM-26APR-3
+[2026-04-10 01:40:41 ET] [DEBUG] AUTO-BET SKIP KXRAINHOUM-26APR-3: bet too small (<$0.50)
+[2026-04-10 01:40:42 ET] [INFO] [Discord] Trade alert sent: KXCPICOREYOY-26MAR-T2.7
+[2026-04-10 01:40:42 ET] [DEBUG] AUTO-BET SKIP KXCPICOREYOY-26MAR-T2.7: bet too small (<$0.50)
+[2026-04-10 01:40:42 ET] [INFO] Scan complete — 3 alerts sent
+[2026-04-10 01:40:42 ET] [INFO] ============================================================
+[2026-04-10 01:40:42 ET] [INFO] Scan job complete

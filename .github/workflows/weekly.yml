@@ -10,13 +10,19 @@ on:
     - cron: "0 23 * * 0"   # Sunday 6pm EST
   workflow_dispatch:
 
+# Shared lock across ALL kalshi-bot workflows — only one runs at a time.
+concurrency:
+  group: kalshi-git
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
 jobs:
+
+  # ── Job 1: Run weekly review. No git operations here. ─────────────────────
   weekly:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -34,8 +40,8 @@ jobs:
 
       - name: Run weekly review
         env:
-          KALSHI_API_KEY_ID:          ${{ secrets.KALSHI_API_KEY_ID }}
-          KALSHI_PRIVATE_KEY:         ${{ secrets.KALSHI_PRIVATE_KEY }}
+          KALSHI_API_KEY_ID:         ${{ secrets.KALSHI_API_KEY_ID }}
+          KALSHI_PRIVATE_KEY:        ${{ secrets.KALSHI_PRIVATE_KEY }}
           DISCORD_SIGNALS_WEBHOOK:   ${{ secrets.DISCORD_SIGNALS_WEBHOOK }}
           DISCORD_HEALTH_WEBHOOK:    ${{ secrets.DISCORD_HEALTH_WEBHOOK }}
           ANTHROPIC_API_KEY:         ${{ secrets.ANTHROPIC_API_KEY }}
@@ -44,12 +50,51 @@ jobs:
       - name: Regenerate dashboard data
         run: python generate_data.py
 
-      - name: Commit
+      - name: Upload outputs for commit job
+        uses: actions/upload-artifact@v4
+        with:
+          name: weekly-data-${{ github.run_id }}
+          path: |
+            bot.log
+            data/
+            docs/data.json
+          if-no-files-found: ignore
+          retention-days: 1
+
+  # ── Job 2: Fresh checkout → apply outputs → single atomic commit. ─────────
+  commit:
+    needs: weekly
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Self-heal git state
+        run: |
+          rm -f .git/index.lock .git/MERGE_HEAD .git/rebase-merge/head-name 2>/dev/null || true
+          git rebase --abort 2>/dev/null || true
+          git checkout -- . 2>/dev/null || true
+
+      - name: Download weekly outputs
+        uses: actions/download-artifact@v4
+        with:
+          name: weekly-data-${{ github.run_id }}
+          path: .
+
+      - name: Commit and push
         run: |
           git config user.name  "kalshi-bot[actions]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/ docs/data.json bot.log 2>/dev/null || true
-          git diff --staged --quiet \
-            || git commit -m "📅 weekly-review $(date -u '+%Y-%m-%d UTC')"
-          git checkout -- . 2>/dev/null || true
-          git pull --rebase -X ours origin main && git push
+          git add bot.log data/ docs/data.json 2>/dev/null || true
+          git diff --staged --quiet && echo "Nothing to commit." && exit 0
+          git commit -m "📅 weekly-review $(date -u '+%Y-%m-%d')"
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git rebase -X ours origin/main && git push && break
+            echo "Push attempt $attempt failed — retrying in 15s..."
+            git rebase --abort 2>/dev/null || true
+            git checkout -- . 2>/dev/null || true
+            sleep 15
+          done

@@ -43,7 +43,10 @@ BET_SIZE_MEDIUM_MAX   = 0.04     # edge 15–25%  → max 4% of bankroll
 BET_SIZE_STRONG_MAX   = 0.05     # edge 25%+    → max 5% of bankroll
 
 # ── Risk Brakes ─────────────────────────────────────────────────────────────────
-DRAWDOWN_STOP_PCT     = 0.40     # pause auto-betting if balance drops 40% below peak
+DRAWDOWN_STOP_PCT     = 0.40     # pause auto-betting if portfolio drops 40% below peak
+MAX_EXPOSURE_PCT      = 0.25     # never >25% of total portfolio value in open positions
+CUT_LOSS_PCT          = 0.60     # sell a position if it loses 60%+ of entry value
+CUT_LOSS_MIN_HOURS    = 48.0     # only cut losses when >48h remain (let near-expiry ride)
 
 # ── Auto-Betting Engine ─────────────────────────────────────────────────────────
 # Set DRY_RUN = True to log what the bot WOULD bet without placing real orders.

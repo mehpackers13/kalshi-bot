@@ -45,8 +45,13 @@ def run_scan(api: KalshiAPI) -> list:
         log("Drawdown stop active — scan aborted", "WARN")
         return []
 
-    # Sync live balance from Kalshi
+    # Sync live balance from Kalshi (total portfolio value = cash + positions)
     sync_live_balance(api)
+
+    # Cut any positions that have lost ≥60% AND have >48h until expiry
+    cut = auto_bettor.cut_losing_positions(api)
+    if cut:
+        log(f"Cut {len(cut)} losing position(s): {cut}")
 
     # Auto-resolve any pending outcomes
     resolved = auto_resolve_outcomes(api)

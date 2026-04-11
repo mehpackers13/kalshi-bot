@@ -286,6 +286,87 @@ class KalshiAPI:
         data = self._get("/portfolio/positions", params={"limit": 200})
         return (data or {}).get("market_positions", [])
 
+    def get_market(self, ticker: str) -> Optional[dict]:
+        """Fetch a single market's current state (prices, close_time, etc.)."""
+        data = self._get(f"/markets/{ticker}")
+        return (data or {}).get("market") or data
+
+    def get_portfolio_total_value(self) -> Optional[float]:
+        """
+        Returns total account value: cash balance + open position market value.
+        Position value is estimated at current YES/NO bid prices (conservative).
+        Used for drawdown calculation — cash alone understates account health
+        when bets are locked in open positions.
+        """
+        cash = self.get_account_balance()
+        if cash is None:
+            return None
+
+        positions = self.get_portfolio_positions()
+        if not positions:
+            return cash
+
+        pos_value = 0.0
+        for pos in positions:
+            ticker    = pos.get("ticker", "")
+            count_raw = pos.get("position_fp") or pos.get("position") or 0
+            count_fp  = float(count_raw)
+            if not ticker or count_fp == 0:
+                continue
+
+            # Try market_exposure fields returned directly by positions endpoint
+            for key in ("market_exposure_fp", "market_exposure"):
+                raw = pos.get(key)
+                if raw is not None:
+                    val = float(raw)
+                    # Kalshi may return cents (>10) or dollars (<= 1) — normalise
+                    if abs(val) > 10:
+                        val /= 100
+                    pos_value += abs(val)
+                    break
+            else:
+                # Fallback: fetch current market price for this ticker
+                market = self.get_market(ticker)
+                if not market:
+                    continue
+                if count_fp > 0:   # YES contracts — value at YES bid
+                    bid = float(market.get("yes_bid_dollars") or
+                                market.get("yes_bid", 0) or 0)
+                    if bid > 1:
+                        bid /= 100
+                    pos_value += count_fp * bid
+                else:              # NO contracts — value at NO bid = 1 - YES ask
+                    ask = float(market.get("yes_ask_dollars") or
+                                market.get("yes_ask", 0) or 0)
+                    if ask > 1:
+                        ask /= 100
+                    pos_value += abs(count_fp) * max(0.0, 1.0 - ask)
+                time.sleep(0.1)
+
+        total = round(cash + pos_value, 2)
+        log(f"Portfolio value: ${cash:.2f} cash + ${pos_value:.2f} positions = ${total:.2f}")
+        return total
+
+    def sell_position(self, ticker: str, side: str, count: int,
+                      yes_price: int) -> dict:
+        """
+        Sell an open position via a limit order.
+          side:      "yes" or "no" (the side you hold)
+          yes_price: limit price expressed as the YES side price (1–99 cents)
+          count:     number of contracts to sell
+        """
+        import uuid
+        payload = {
+            "ticker":          ticker,
+            "side":            side,
+            "action":          "sell",
+            "count":           count,
+            "type":            "limit",
+            "yes_price":       yes_price,
+            "client_order_id": str(uuid.uuid4()),
+        }
+        return self._post("/portfolio/orders", payload)
+
 
 # ── Market parser ─────────────────────────────────────────────────────────────────
 

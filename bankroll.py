@@ -64,30 +64,34 @@ def save_bankroll(data: dict) -> None:
 
 def sync_live_balance(api) -> Optional[float]:
     """
-    Fetch live balance from Kalshi API and update bankroll.json.
-    On first call (peak == 0), the API balance becomes the peak baseline.
-    Deposits are picked up automatically — no config changes needed.
-    Returns the current balance, or None if the API call failed.
+    Fetch total portfolio value (cash + open positions) from Kalshi API.
+    Using total value — not cash alone — prevents false drawdown triggers
+    when money is locked in open positions.
+    On first call (peak == 0) the value becomes the peak baseline.
+    Returns total portfolio value, or None if API calls failed.
     """
-    balance = api.get_account_balance()
-    if balance is None:
-        log("Could not read Kalshi balance — using cached value", "WARN")
+    # Total value includes open position market value at current bid prices
+    total = api.get_portfolio_total_value()
+    if total is None:
+        # Fallback to cash-only if portfolio call fails
+        total = api.get_account_balance()
+    if total is None:
+        log("Could not read Kalshi portfolio value — using cached value", "WARN")
         return None
 
     br = load_bankroll()
 
     if br["live"]["peak"] == 0.0:
-        # First real reading — use it as the peak baseline
-        br["live"]["peak"] = balance
-        log(f"Live bankroll initialised: ${balance:.2f}  (peak baseline set)")
-    elif balance > br["live"]["peak"]:
-        log(f"New peak balance: ${balance:.2f}  (was ${br['live']['peak']:.2f})")
+        br["live"]["peak"] = total
+        log(f"Live bankroll initialised: ${total:.2f}  (peak baseline set, total portfolio)")
+    elif total > br["live"]["peak"]:
+        log(f"New peak portfolio value: ${total:.2f}  (was ${br['live']['peak']:.2f})")
 
-    br["live"]["balance"] = round(balance, 2)
-    br["live"]["peak"]    = round(max(br["live"]["peak"], balance), 2)
+    br["live"]["balance"] = round(total, 2)
+    br["live"]["peak"]    = round(max(br["live"]["peak"], total), 2)
     save_bankroll(br)
-    log(f"Live balance: ${balance:.2f}  |  Peak ever: ${br['live']['peak']:.2f}")
-    return balance
+    log(f"Portfolio value: ${total:.2f}  |  Peak ever: ${br['live']['peak']:.2f}")
+    return total
 
 
 # ── Drawdown stop ────────────────────────────────────────────────────────────────

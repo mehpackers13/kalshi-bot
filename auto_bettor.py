@@ -145,6 +145,191 @@ def _send_drawdown_alert(br: dict) -> None:
         log(f"Drawdown alert failed: {exc}", "WARN")
 
 
+# ── Open position value ───────────────────────────────────────────────────────
+
+def _get_open_position_value(api) -> float:
+    """
+    Estimate current market value of all open positions at bid prices.
+    Used for exposure limit enforcement.
+    """
+    try:
+        positions = api.get_portfolio_positions()
+        total = 0.0
+        for pos in positions:
+            count_fp = float(pos.get("position_fp") or pos.get("position") or 0)
+            if count_fp == 0:
+                continue
+            # Try market_exposure first
+            for key in ("market_exposure_fp", "market_exposure"):
+                raw = pos.get(key)
+                if raw is not None:
+                    val = float(raw)
+                    if abs(val) > 10:
+                        val /= 100
+                    total += abs(val)
+                    break
+            else:
+                # Fallback using prices stored on the position
+                if count_fp > 0:
+                    bid = float(pos.get("yes_bid_dollars") or 0)
+                    if bid > 1:
+                        bid /= 100
+                    total += count_fp * bid
+                else:
+                    ask = float(pos.get("yes_ask_dollars") or 0)
+                    if ask > 1:
+                        ask /= 100
+                    total += abs(count_fp) * max(0.0, 1.0 - ask)
+        return round(total, 2)
+    except Exception as exc:
+        log(f"Could not calculate open position value: {exc}", "WARN")
+        return 0.0
+
+
+# ── Cut-loss logic ────────────────────────────────────────────────────────────
+
+def _send_cut_loss_notification(ticker: str, side: str, count: int,
+                                 entry_cents: int, current_cents: int,
+                                 loss_pct: float, order_id: str) -> None:
+    webhook = config.DISCORD_SIGNALS_WEBHOOK
+    if not webhook:
+        return
+    embed = {
+        "title":       f"✂️ CUT LOSS — {ticker}",
+        "description": "Position sold to prevent further losses.",
+        "color":       0xFEE75C,
+        "fields": [
+            {"name": "Side",        "value": side.upper(),      "inline": True},
+            {"name": "Contracts",   "value": str(count),         "inline": True},
+            {"name": "Entry Price", "value": f"{entry_cents}¢",  "inline": True},
+            {"name": "Exit Price",  "value": f"{current_cents}¢","inline": True},
+            {"name": "Loss",        "value": f"{loss_pct:.0%}",  "inline": True},
+            {"name": "Order ID",    "value": f"`{order_id}`",    "inline": False},
+        ],
+        "timestamp": datetime.datetime.utcnow().isoformat() + "Z",
+    }
+    try:
+        requests.post(webhook, json={"embeds": [embed]}, timeout=10)
+    except Exception as exc:
+        log(f"Cut loss notification failed: {exc}", "WARN")
+
+
+def cut_losing_positions(api) -> list:
+    """
+    Scan open positions for ones that have lost ≥60% of entry value AND
+    have more than 48 hours until expiry.  Sell those positions to cut losses.
+
+    Near-expiry positions (<48h) are left alone — they'll either recover or
+    resolve, and selling into thin end-of-life markets locks in max loss.
+
+    Returns list of tickers that were sold (or attempted).
+    """
+    if config.DRY_RUN:
+        return []
+
+    # Build lookup: ticker → {price_cents, direction} from bets_placed.csv
+    entry_info: dict = {}
+    if config.BETS_PLACED_CSV.exists():
+        try:
+            with open(config.BETS_PLACED_CSV, newline="") as f:
+                for row in csv.DictReader(f):
+                    ticker = row.get("ticker", "")
+                    if ticker and ticker not in entry_info:
+                        try:
+                            entry_info[ticker] = {
+                                "price_cents": int(row.get("price_cents") or 0),
+                                "direction":   row.get("direction", "YES").upper(),
+                            }
+                        except Exception:
+                            pass
+        except Exception:
+            pass
+
+    positions = api.get_portfolio_positions()
+    cut: list = []
+
+    for pos in positions:
+        ticker   = pos.get("ticker", "")
+        count_fp = float(pos.get("position_fp") or pos.get("position") or 0)
+        if not ticker or count_fp == 0:
+            continue
+
+        info = entry_info.get(ticker)
+        if not info or not info["price_cents"]:
+            continue   # no entry record — can't calculate loss
+
+        entry_cents = info["price_cents"]
+        direction   = info["direction"]   # "YES" or "NO"
+
+        # Fetch current market to get price + close time
+        market = api.get_market(ticker)
+        if not market:
+            continue
+
+        # Current sell price (bid side — what we'd actually receive)
+        if direction == "YES":
+            bid_raw     = float(market.get("yes_bid_dollars") or
+                                market.get("yes_bid", 0) or 0)
+            current_cents = int(round(bid_raw * 100 if bid_raw <= 1 else bid_raw))
+            sell_side     = "yes"
+            sell_yes_price = current_cents
+        else:
+            ask_raw    = float(market.get("yes_ask_dollars") or
+                               market.get("yes_ask", 0) or 0)
+            yes_ask_cents = int(round(ask_raw * 100 if ask_raw <= 1 else ask_raw))
+            current_cents  = max(0, 100 - yes_ask_cents)   # current NO bid
+            sell_side      = "no"
+            sell_yes_price = yes_ask_cents   # sell NO → yes_price = YES ask
+
+        if current_cents <= 0 or entry_cents <= 0:
+            continue
+
+        loss_pct = (entry_cents - current_cents) / entry_cents
+        if loss_pct < config.CUT_LOSS_PCT:
+            continue   # loss not large enough
+
+        # Check hours remaining until expiry
+        close_str = market.get("close_time") or market.get("expiration_time", "")
+        hours_left = 9999.0
+        if close_str:
+            try:
+                import datetime as _dt
+                close_dt   = _dt.datetime.fromisoformat(close_str.replace("Z", "+00:00"))
+                hours_left = (close_dt - _dt.datetime.now(_dt.timezone.utc)).total_seconds() / 3600
+            except Exception:
+                pass
+
+        if hours_left <= config.CUT_LOSS_MIN_HOURS:
+            log(
+                f"CUT LOSS SKIP {ticker}: {loss_pct:.0%} loss but only "
+                f"{hours_left:.0f}h left — letting it ride",
+                "DEBUG",
+            )
+            continue
+
+        # Sell
+        n = max(1, int(abs(count_fp)))
+        log(
+            f"CUT LOSS: {ticker} {direction} {n}ct — entry {entry_cents}¢ → "
+            f"current {current_cents}¢ = {loss_pct:.0%} loss, {hours_left:.0f}h to expiry",
+            "WARN",
+        )
+        try:
+            result   = api.sell_position(
+                ticker=ticker, side=sell_side, count=n, yes_price=sell_yes_price
+            )
+            order_id = result.get("order", {}).get("order_id", "?")
+            log(f"CUT LOSS ✅ {ticker}: sold {n}ct @ {current_cents}¢ | order={order_id}")
+            _send_cut_loss_notification(
+                ticker, direction, n, entry_cents, current_cents, loss_pct, order_id
+            )
+            cut.append(ticker)
+        except Exception as exc:
+            log(f"CUT LOSS ERROR {ticker}: {exc}", "ERROR")
+
+    return cut
+
+
 # ── Bet sizing (50% Kelly, 5% hard cap) ──────────────────────────────────────
 
 def _size_auto_bet(edge: EdgeResult, live_balance: float) -> dict:
@@ -230,6 +415,21 @@ def place_auto_bet(api, edge: EdgeResult) -> dict:
                 "WARN",
             )
             return {"placed": False, "reason": "rate_limit"}
+
+    # ── Safety check 3: maximum exposure (25% of total account) ────────────
+    if not dry_run:
+        position_value = _get_open_position_value(api)
+        total_value    = live_balance + position_value
+        if total_value > 0:
+            exposure_pct = position_value / total_value
+            if exposure_pct >= config.MAX_EXPOSURE_PCT:
+                log(
+                    f"AUTO-BET SKIP {edge.ticker}: exposure {exposure_pct:.1%} ≥ "
+                    f"{config.MAX_EXPOSURE_PCT:.0%} limit "
+                    f"(${position_value:.2f} of ${total_value:.2f} in open positions)",
+                    "WARN",
+                )
+                return {"placed": False, "reason": "max_exposure"}
 
     # ── Sizing ──────────────────────────────────────────────────────────────
     sizing = _size_auto_bet(edge, live_balance if live_balance > 0 else 10.0)

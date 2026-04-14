@@ -7,6 +7,7 @@ Silent by design — no alerts = good discipline.
 """
 
 import datetime
+import json
 from typing import Optional
 
 import config
@@ -18,6 +19,84 @@ from outcomes import log_alert, auto_resolve_outcomes, read_all
 from discord_alerts import send_trade_alert, send_drawdown_stop, send_health_ping
 import auto_bettor
 from logger import log
+
+
+def _write_positions_snapshot(api: KalshiAPI) -> None:
+    """Write current open positions + entry info to data/positions.json for the dashboard."""
+    try:
+        import csv as _csv
+        # Load entry info from bets_placed.csv
+        entry_info = {}
+        if config.BETS_PLACED_CSV.exists():
+            with open(config.BETS_PLACED_CSV, newline="") as f:
+                for row in _csv.DictReader(f):
+                    t = row.get("ticker", "")
+                    if t and t not in entry_info:
+                        try:
+                            entry_info[t] = {
+                                "direction":     row.get("direction", ""),
+                                "price_cents":   int(row.get("price_cents") or 0),
+                                "dollars_risked":float(row.get("dollars_risked") or 0),
+                                "title":         row.get("title", ""),
+                                "timestamp":     row.get("timestamp", ""),
+                            }
+                        except Exception:
+                            pass
+
+        positions = api.get_portfolio_positions()
+        snapshot = []
+        for pos in positions:
+            ticker   = pos.get("ticker", "")
+            count_fp = float(pos.get("position_fp") or pos.get("position") or 0)
+            if not ticker or count_fp == 0:
+                continue
+
+            entry = entry_info.get(ticker, {})
+            direction    = entry.get("direction", "YES" if count_fp > 0 else "NO")
+            entry_cents  = entry.get("price_cents", 0)
+            dollars_risk = entry.get("dollars_risked", 0)
+
+            # Get current market price
+            current_cents = 0
+            current_value = 0.0
+            try:
+                market = api.get_market(ticker)
+                if market:
+                    if direction == "YES":
+                        bid_raw = float(market.get("yes_bid_dollars") or market.get("yes_bid", 0) or 0)
+                        current_cents = int(round(bid_raw * 100 if bid_raw <= 1 else bid_raw))
+                    else:
+                        ask_raw = float(market.get("yes_ask_dollars") or market.get("yes_ask", 0) or 0)
+                        yes_ask = int(round(ask_raw * 100 if ask_raw <= 1 else ask_raw))
+                        current_cents = max(0, 100 - yes_ask)
+                    current_value = round(abs(count_fp) * current_cents / 100, 2)
+            except Exception:
+                pass
+
+            pl_dollars = 0.0
+            if entry_cents > 0 and current_cents > 0:
+                pl_dollars = round((current_cents - entry_cents) / 100 * abs(count_fp), 2)
+            elif dollars_risk > 0 and current_value > 0:
+                pl_dollars = round(current_value - dollars_risk, 2)
+
+            snapshot.append({
+                "ticker":        ticker,
+                "title":         entry.get("title", ticker),
+                "direction":     direction,
+                "contracts":     int(abs(count_fp)),
+                "entry_cents":   entry_cents,
+                "current_cents": current_cents,
+                "dollars_risked":dollars_risk,
+                "current_value": current_value,
+                "pl_dollars":    pl_dollars,
+                "timestamp":     entry.get("timestamp", ""),
+            })
+
+        config.DATA_DIR.mkdir(exist_ok=True)
+        (config.DATA_DIR / "positions.json").write_text(json.dumps(snapshot, indent=2))
+        log(f"Positions snapshot: {len(snapshot)} open position(s)")
+    except Exception as exc:
+        log(f"Positions snapshot failed: {exc}", "WARN")
 
 
 def _already_alerted_today(ticker: str) -> bool:
@@ -47,6 +126,9 @@ def run_scan(api: KalshiAPI) -> list:
 
     # Sync live balance from Kalshi (total portfolio value = cash + positions)
     sync_live_balance(api)
+
+    # Snapshot open positions for the dashboard
+    _write_positions_snapshot(api)
 
     # Cut any positions that have lost ≥60% AND have >48h until expiry
     cut = auto_bettor.cut_losing_positions(api)

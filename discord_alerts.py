@@ -163,13 +163,36 @@ def send_morning_report(report: dict) -> None:
         lines = [f"• [{m['ticker']}] {m['title']} — edge {m['edge_pct']:+.1f}%" for m in premarket[:5]]
         premarket_str = "\n".join(lines)
 
+    # Unit P&L
+    unit_total = report.get("unit_total", None)
+    if unit_total is not None:
+        u_sign = "+" if unit_total >= 0 else ""
+        unit_str = f"{u_sign}{unit_total:.2f}u"
+        unit_color = "🟢" if unit_total > 0 else "🔴" if unit_total < 0 else "⚪"
+    else:
+        unit_str = "—"
+        unit_color = "⚪"
+
+    # Resolved overnight
+    overnight = report.get("resolved_overnight", [])
+    if overnight:
+        o_lines = []
+        for r in overnight[:5]:
+            outcome_icon = "✅" if r.get("outcome") == "1" else "❌"
+            o_lines.append(f"{outcome_icon} [{r.get('ticker','')}] {r.get('title','')[:60]}")
+        overnight_str = "\n".join(o_lines)
+    else:
+        overnight_str = "No markets resolved overnight."
+
     fields = [
-        {"name": "Overall Hit Rate",  "value": hit_str,                            "inline": True},
-        {"name": "Total Alerts",      "value": str(stats.get("total_alerts", 0)), "inline": True},
-        {"name": "Rated",             "value": str(stats.get("rated", 0)),         "inline": True},
-        {"name": "Live Bankroll",     "value": f"${live_bal:.2f}",                 "inline": True},
-        {"name": "Paper Bankroll",    "value": f"${paper_bal:.2f}",                "inline": True},
-        {"name": "Performance by Category", "value": cat_str or "—",              "inline": False},
+        {"name": f"{unit_color} Kalshi Units",  "value": unit_str,                            "inline": True},
+        {"name": "Overall Hit Rate",            "value": hit_str,                             "inline": True},
+        {"name": "Live Bankroll",               "value": f"${live_bal:.2f}",                  "inline": True},
+        {"name": "Total Alerts",                "value": str(stats.get("total_alerts", 0)),   "inline": True},
+        {"name": "Rated",                       "value": str(stats.get("rated", 0)),          "inline": True},
+        {"name": "Paper Bankroll",              "value": f"${paper_bal:.2f}",                 "inline": True},
+        {"name": "🌙 Resolved Overnight",       "value": overnight_str,                       "inline": False},
+        {"name": "Performance by Category",     "value": cat_str or "—",                      "inline": False},
     ]
 
     if ai:

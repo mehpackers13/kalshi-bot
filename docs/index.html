@@ -3,164 +3,192 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kalshi Bot — Command Center</title>
+<title>Kalshi Bot — Dashboard</title>
 <style>
   :root {
-    --bg:      #0d1117;
-    --surface: #161b22;
-    --border:  #30363d;
-    --text:    #e6edf3;
-    --muted:   #8b949e;
-    --green:   #3fb950;
-    --yellow:  #d29922;
-    --red:     #f85149;
-    --blue:    #388bfd;
-    --purple:  #bc8cff;
+    --bg:#0d1117; --surface:#161b22; --border:#30363d;
+    --text:#e6edf3; --muted:#8b949e;
+    --green:#3fb950; --yellow:#d29922; --red:#f85149;
+    --blue:#388bfd; --purple:#bc8cff; --accent:#58a6ff;
   }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 14px; line-height: 1.5; }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:14px;line-height:1.5;}
 
-  header { background: var(--surface); border-bottom: 1px solid var(--border); padding: 16px 24px; display: flex; align-items: center; gap: 12px; }
-  header h1 { font-size: 18px; font-weight: 600; }
-  .badge { background: var(--green); color: #000; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 12px; }
-  .badge.warn { background: var(--yellow); }
-  .last-update { margin-left: auto; color: var(--muted); font-size: 12px; }
+  header{background:var(--surface);border-bottom:1px solid var(--border);padding:14px 24px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+  header h1{font-size:17px;font-weight:600;flex:1;}
+  .status-pill{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--muted);}
+  .dot{width:8px;height:8px;border-radius:50%;background:var(--muted);flex-shrink:0;}
+  .dot.green{background:var(--green);} .dot.yellow{background:var(--yellow);} .dot.red{background:var(--red);}
+  .last-update{margin-left:auto;color:var(--muted);font-size:12px;}
 
-  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; padding: 20px 24px 0; }
-  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 16px; }
-  .card h3 { font-size: 11px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 8px; }
-  .card .val { font-size: 28px; font-weight: 700; }
-  .card .sub { font-size: 12px; color: var(--muted); margin-top: 4px; }
-  .green { color: var(--green); }
-  .red   { color: var(--red); }
-  .yellow { color: var(--yellow); }
-  .blue  { color: var(--blue); }
+  main{max-width:1400px;margin:0 auto;padding:20px 16px 40px;}
+  #refresh-note{font-size:11px;color:var(--muted);text-align:right;margin-bottom:12px;}
 
-  section { padding: 20px 24px; }
-  section h2 { font-size: 15px; font-weight: 600; margin-bottom: 12px; border-bottom: 1px solid var(--border); padding-bottom: 8px; }
+  /* Hero */
+  .hero{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:18px 24px;margin-bottom:18px;display:flex;align-items:center;gap:24px;flex-wrap:wrap;}
+  .hero-unit{font-size:48px;font-weight:800;line-height:1;}
+  .hu-pos{color:var(--green);} .hu-neg{color:var(--red);} .hu-neu{color:var(--muted);}
+  .hero-label{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.8px;margin-top:4px;}
+  .hero-divider{width:1px;height:60px;background:var(--border);}
+  .hero-sub{font-size:13px;color:var(--muted);}
 
-  table { width: 100%; border-collapse: collapse; background: var(--surface); border-radius: 8px; overflow: hidden; border: 1px solid var(--border); }
-  th { background: #1c2128; font-size: 11px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; padding: 10px 12px; text-align: left; }
-  td { padding: 10px 12px; border-top: 1px solid var(--border); font-size: 13px; }
-  tr:hover td { background: #1c2128; }
-  .outcome-win  { color: var(--green); font-weight: 700; }
-  .outcome-loss { color: var(--red);   font-weight: 700; }
-  .outcome-pend { color: var(--muted); }
-  .dir-yes  { background: rgba(63,185,80,.15); color: var(--green); padding: 1px 7px; border-radius: 4px; font-size: 11px; font-weight: 700; }
-  .dir-no   { background: rgba(248,81,73,.15);  color: var(--red);   padding: 1px 7px; border-radius: 4px; font-size: 11px; font-weight: 700; }
+  /* Cards */
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-bottom:18px;}
+  .card{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:14px;}
+  .card h3{font-size:11px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:7px;}
+  .card .val{font-size:26px;font-weight:700;}
+  .card .sub{font-size:12px;color:var(--muted);margin-top:3px;}
+  .green{color:var(--green);} .red{color:var(--red);} .yellow{color:var(--yellow);} .blue{color:var(--blue);}
 
-  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-  @media(max-width:700px){ .two-col { grid-template-columns: 1fr; } }
+  /* Today strip */
+  .today-strip{background:rgba(88,166,255,.06);border:1px solid rgba(88,166,255,.2);border-radius:8px;padding:12px 16px;margin-bottom:18px;}
+  .today-strip h3{font-size:11px;text-transform:uppercase;letter-spacing:.8px;color:var(--accent);margin-bottom:7px;}
+  .today-row{display:flex;align-items:center;gap:10px;padding:4px 0;border-bottom:1px solid rgba(255,255,255,.04);font-size:13px;}
+  .today-row:last-child{border-bottom:none;}
 
-  .conf-bar { display: flex; gap: 6px; align-items: center; }
-  .conf-fill { height: 6px; background: var(--green); border-radius: 3px; }
-  .conf-bg   { height: 6px; background: var(--border); border-radius: 3px; flex:1; overflow: hidden; }
+  section{padding:16px 0;}
+  section h2{font-size:14px;font-weight:600;margin-bottom:10px;border-bottom:1px solid var(--border);padding-bottom:6px;}
 
-  .ai-box { background: var(--surface); border: 1px solid var(--purple); border-radius: 8px; padding: 16px; white-space: pre-wrap; font-size: 13px; color: var(--text); line-height: 1.7; }
-  .ai-label { color: var(--purple); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; margin-bottom: 8px; }
+  /* Open positions */
+  .pos-card{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:14px;margin-bottom:8px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;}
+  .pos-title{font-size:13px;font-weight:500;max-width:400px;}
+  .pos-meta{font-size:11px;color:var(--muted);margin-top:3px;}
+  .pos-stats{display:flex;gap:16px;align-items:center;}
+  .pos-stat{text-align:right;}
+  .pos-stat .ps-label{font-size:10px;color:var(--muted);text-transform:uppercase;}
+  .pos-stat .ps-val{font-size:16px;font-weight:700;}
 
-  .change-log { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px 16px; font-family: 'SF Mono', Consolas, monospace; font-size: 12px; color: var(--muted); max-height: 200px; overflow-y: auto; }
-  .change-log div { padding: 2px 0; }
+  table{width:100%;border-collapse:collapse;background:var(--surface);border-radius:8px;overflow:hidden;border:1px solid var(--border);}
+  th{background:#1c2128;font-size:11px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;padding:9px 12px;text-align:left;}
+  td{padding:9px 12px;border-top:1px solid var(--border);font-size:13px;}
+  tr:hover td{background:#1c2128;}
 
-  .no-data { color: var(--muted); text-align: center; padding: 32px; }
-  .pnl-pos { color: var(--green); }
-  .pnl-neg { color: var(--red); }
+  .dir-yes{background:rgba(63,185,80,.15);color:var(--green);padding:1px 7px;border-radius:4px;font-size:11px;font-weight:700;}
+  .dir-no{background:rgba(248,81,73,.15);color:var(--red);padding:1px 7px;border-radius:4px;font-size:11px;font-weight:700;}
+  .outcome-win{color:var(--green);font-weight:700;} .outcome-loss{color:var(--red);font-weight:700;} .outcome-pend{color:var(--muted);}
+  .pnl-pos{color:var(--green);} .pnl-neg{color:var(--red);}
+
+  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media(max-width:700px){.two-col{grid-template-columns:1fr;}}
+
+  .conf-bg{height:5px;background:var(--border);border-radius:3px;flex:1;overflow:hidden;}
+  .conf-fill{height:100%;background:var(--green);border-radius:3px;}
+  .conf-bar{display:flex;gap:5px;align-items:center;}
+
+  .ai-box{background:var(--surface);border:1px solid var(--purple);border-radius:8px;padding:14px;white-space:pre-wrap;font-size:13px;line-height:1.7;}
+  .ai-label{color:var(--purple);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:7px;}
+
+  .change-log{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:10px 14px;font-family:'SF Mono',Consolas,monospace;font-size:12px;color:var(--muted);max-height:180px;overflow-y:auto;}
+  .change-log div{padding:2px 0;}
+
+  .no-data{color:var(--muted);text-align:center;padding:28px;}
+  footer{text-align:center;color:var(--muted);font-size:11px;padding:16px 0 6px;border-top:1px solid var(--border);margin-top:16px;}
 </style>
 </head>
 <body>
 
 <header>
-  <span style="font-size:22px">🎯</span>
-  <h1>Kalshi Bot — Command Center</h1>
-  <span class="badge" id="status-badge">LIVE</span>
-  <span class="last-update" id="last-update">Loading…</span>
+  <span style="font-size:20px">🎯</span>
+  <h1>Kalshi Bot — Dashboard</h1>
+  <div class="status-pill"><div class="dot" id="sdot"></div><span id="stxt">Loading…</span></div>
+  <span class="last-update" id="last-update">—</span>
 </header>
 
-<!-- KPI Cards -->
-<div class="grid">
-  <div class="card">
-    <h3>Overall Hit Rate</h3>
-    <div class="val" id="hit-rate">—</div>
-    <div class="sub" id="rated-count">Loading…</div>
-  </div>
-  <div class="card">
-    <h3>Live Bankroll</h3>
-    <div class="val" id="live-bal">—</div>
-    <div class="sub" id="live-pnl">—</div>
-  </div>
-  <div class="card">
-    <h3>Paper Bankroll</h3>
-    <div class="val" id="paper-bal">—</div>
-    <div class="sub" id="paper-pnl">—</div>
-  </div>
-  <div class="card">
-    <h3>Total Alerts</h3>
-    <div class="val blue" id="total-alerts">—</div>
-    <div class="sub">since bot started</div>
-  </div>
-</div>
+<main>
+  <div id="refresh-note">Generated: <span id="gen-at">—</span></div>
 
-<!-- Category performance + Model confidence -->
-<section>
-  <div class="two-col">
+  <!-- Hero unit number -->
+  <div class="hero">
     <div>
+      <div class="hero-unit hu-neu" id="hero-units">—</div>
+      <div class="hero-label">Total Units (Kalshi)</div>
+    </div>
+    <div class="hero-divider"></div>
+    <div>
+      <div class="hero-sub">Live account: <strong id="live-bal">—</strong></div>
+      <div class="hero-sub" style="margin-top:4px">Hit rate: <strong id="hit-rate-h">—</strong> · <span id="rated-h">—</span> rated</div>
+    </div>
+  </div>
+
+  <!-- KPI cards -->
+  <div class="grid">
+    <div class="card"><h3>Live P&L</h3><div class="val" id="live-pnl">—</div><div class="sub">vs $10 starting</div></div>
+    <div class="card"><h3>Hit Rate</h3><div class="val" id="hit-rate">—</div><div class="sub" id="rated-count">—</div></div>
+    <div class="card"><h3>Total Alerts</h3><div class="val blue" id="total-alerts">—</div><div class="sub">since start</div></div>
+    <div class="card"><h3>Paper Bankroll</h3><div class="val" id="paper-bal">—</div><div class="sub" id="paper-pnl">—</div></div>
+  </div>
+
+  <!-- Today strip -->
+  <div class="today-strip" id="today-section" style="display:none">
+    <h3>Resolved Today (last 24h)</h3>
+    <div id="today-rows"></div>
+  </div>
+
+  <!-- Open positions -->
+  <section id="positions-section" style="display:none">
+    <h2>Open Positions</h2>
+    <div id="positions-list"></div>
+  </section>
+
+  <!-- Recent alerts -->
+  <section>
+    <h2>Recent Alerts</h2>
+    <table id="alerts-table">
+      <thead><tr><th>Time</th><th>Ticker</th><th>Category</th><th>Direction</th><th>Edge</th><th>Model Prob</th><th>Confidence</th><th>Live $</th><th>Outcome</th><th>Units</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <!-- Two-col: category + model -->
+  <div class="two-col">
+    <section>
       <h2>Performance by Category</h2>
       <table id="cat-table">
         <thead><tr><th>Category</th><th>Alerts</th><th>Rated</th><th>Hit Rate</th></tr></thead>
         <tbody></tbody>
       </table>
-    </div>
-    <div>
-      <h2>Model Confidence Multipliers</h2>
+    </section>
+    <section>
+      <h2>Model Confidence</h2>
       <table id="conf-table">
         <thead><tr><th>Category</th><th>Confidence</th><th></th></tr></thead>
         <tbody></tbody>
       </table>
-    </div>
+    </section>
   </div>
-</section>
 
-<!-- Recent alerts -->
-<section>
-  <h2>Recent Alerts</h2>
-  <table id="alerts-table">
-    <thead>
-      <tr>
-        <th>Time</th><th>Ticker</th><th>Category</th><th>Direction</th>
-        <th>Edge</th><th>Implied</th><th>Model</th><th>Confidence</th>
-        <th>Live $</th><th>Outcome</th>
-      </tr>
-    </thead>
-    <tbody></tbody>
-  </table>
-</section>
+  <!-- AI brain -->
+  <section id="ai-section" style="display:none">
+    <h2>🧠 AI Brain</h2>
+    <div class="ai-label" id="ai-date"></div>
+    <div class="ai-box" id="ai-text"></div>
+  </section>
 
-<!-- Edge bucket breakdown -->
-<section>
-  <h2>Performance by Edge Size</h2>
-  <table id="bucket-table">
-    <thead><tr><th>Edge Bucket</th><th>Alerts</th><th>Rated</th><th>Hit Rate</th></tr></thead>
-  <tbody></tbody>
-  </table>
-</section>
+  <!-- Model change log -->
+  <section>
+    <h2>Model Change Log</h2>
+    <div class="change-log" id="change-log"><div class="no-data">No changes yet.</div></div>
+  </section>
+</main>
 
-<!-- AI brain -->
-<section id="ai-section" style="display:none">
-  <h2>🧠 AI Brain — Latest Insight</h2>
-  <div class="ai-label" id="ai-date"></div>
-  <div class="ai-box" id="ai-text"></div>
-</section>
-
-<!-- Model change log -->
-<section>
-  <h2>Model Change Log</h2>
-  <div class="change-log" id="change-log"><div class="no-data">No changes yet — models adjust after enough data accumulates.</div></div>
-</section>
+<footer>kalshi-bot · disciplined & selective · auto-refreshes every 5 min</footer>
 
 <script>
-const fmt = (n, dec=1) => n != null ? n.toFixed(dec) : '—';
-const fmtPct = n => n != null ? n.toFixed(1)+'%' : '—';
-const fmtDollar = n => n != null ? '$'+Math.abs(n).toFixed(2) : '—';
+const fmt = (n,d=1) => n!=null ? n.toFixed(d) : '—';
+const fmtPct = n => n!=null ? n.toFixed(1)+'%' : '—';
+const fmtDollar = n => n!=null ? '$'+Math.abs(n).toFixed(2) : '—';
+
+function setStatus(ts) {
+  const dot = document.getElementById('sdot');
+  const txt = document.getElementById('stxt');
+  try {
+    const gen = new Date(ts);
+    const ageMin = (Date.now() - gen.getTime()) / 60000;
+    if (ageMin < 90) { dot.className='dot green'; txt.textContent='Live — '+Math.round(ageMin)+'m ago'; }
+    else if (ageMin < 480) { dot.className='dot yellow'; txt.textContent='Idle — '+Math.round(ageMin/60)+'h ago'; }
+    else { dot.className='dot red'; txt.textContent='Stale'; }
+  } catch { dot.className='dot red'; txt.textContent='Unknown'; }
+}
 
 async function load() {
   let data;
@@ -168,143 +196,165 @@ async function load() {
     const resp = await fetch('data.json?t=' + Date.now());
     data = await resp.json();
   } catch(e) {
-    document.getElementById('last-update').textContent = 'Error loading data';
+    document.getElementById('stxt').textContent='Error loading data';
     return;
   }
 
   const gen = new Date(data.generated_at);
-  document.getElementById('last-update').textContent =
-    'Updated: ' + gen.toLocaleString();
+  document.getElementById('gen-at').textContent = gen.toLocaleString();
+  document.getElementById('last-update').textContent = 'Updated: ' + gen.toLocaleString();
+  setStatus(data.last_scan_ts || data.generated_at);
 
-  const stats = data.stats || {};
-  const br    = data.bankroll || {};
-  const liveB = br.live  || {};
-  const papB  = br.paper || {};
+  const stats  = data.stats || {};
+  const br     = data.bankroll || {};
+  const liveB  = br.live  || {};
+  const papB   = br.paper || {};
+  const units  = data.unit_total;
+
+  // Hero
+  const hu = document.getElementById('hero-units');
+  if (units !== undefined && units !== null) {
+    const sign = units >= 0 ? '+' : '';
+    hu.textContent = sign + units.toFixed(2) + 'u';
+    hu.className = 'hero-unit ' + (units > 0 ? 'hu-pos' : units < 0 ? 'hu-neg' : 'hu-neu');
+  }
+  const liveBal = liveB.balance ?? 0;
+  document.getElementById('live-bal').textContent = '$' + liveBal.toFixed(2);
+  const hr = stats.hit_rate;
+  document.getElementById('hit-rate-h').textContent = hr != null ? hr + '%' : '—';
+  document.getElementById('rated-h').textContent = (stats.rated || 0);
 
   // KPI cards
-  const hr = stats.hit_rate;
-  document.getElementById('hit-rate').textContent = hr != null ? hr + '%' : '—';
-  document.getElementById('hit-rate').className = 'val ' + (hr >= 55 ? 'green' : hr != null ? 'red' : '');
-  document.getElementById('rated-count').textContent =
-    (stats.rated || 0) + ' rated / ' + (stats.total_alerts || 0) + ' total';
-
-  const liveBal = liveB.balance ?? 100;
-  const papBal  = papB.balance  ?? 1000;
-  document.getElementById('live-bal').textContent  = '$' + liveBal.toFixed(2);
-  document.getElementById('paper-bal').textContent = '$' + papBal.toFixed(2);
-
   const lpnl = data.live_pnl ?? 0;
-  const ppnl = data.paper_pnl ?? 0;
-  const pnlEl  = document.getElementById('live-pnl');
-  const ppnlEl = document.getElementById('paper-pnl');
-  pnlEl.textContent  = (lpnl >= 0 ? '+' : '') + '$' + lpnl.toFixed(2) + ' P&L';
-  ppnlEl.textContent = (ppnl >= 0 ? '+' : '') + '$' + ppnl.toFixed(2) + ' P&L';
-  pnlEl.className    = 'sub ' + (lpnl >= 0 ? 'pnl-pos' : 'pnl-neg');
-  ppnlEl.className   = 'sub ' + (ppnl >= 0 ? 'pnl-pos' : 'pnl-neg');
+  const pnlEl = document.getElementById('live-pnl');
+  pnlEl.textContent = (lpnl >= 0 ? '+$' : '-$') + Math.abs(lpnl).toFixed(2);
+  pnlEl.className = 'val ' + (lpnl > 0 ? 'green' : lpnl < 0 ? 'red' : '');
 
+  const hrEl = document.getElementById('hit-rate');
+  hrEl.textContent = hr != null ? hr + '%' : '—';
+  hrEl.className = 'val ' + (hr >= 55 ? 'green' : hr != null ? 'red' : '');
+  document.getElementById('rated-count').textContent = (stats.rated||0) + ' rated / ' + (stats.total_alerts||0) + ' total';
   document.getElementById('total-alerts').textContent = stats.total_alerts ?? 0;
+  const papBal = papB.balance ?? 1000;
+  document.getElementById('paper-bal').textContent = '$' + papBal.toFixed(2);
+  const ppnl = data.paper_pnl ?? 0;
+  const ppnlEl = document.getElementById('paper-pnl');
+  ppnlEl.textContent = (ppnl >= 0 ? '+$' : '-$') + Math.abs(ppnl).toFixed(2) + ' P&L';
+  ppnlEl.className = 'sub ' + (ppnl >= 0 ? 'pnl-pos' : 'pnl-neg');
+
+  // Today strip
+  const todayOuts = data.today_outcomes || [];
+  const todaySec  = document.getElementById('today-section');
+  if (todayOuts.length) {
+    todaySec.style.display = '';
+    document.getElementById('today-rows').innerHTML = todayOuts.map(r => {
+      const icon = r.outcome === '1' ? '✅' : r.outcome === '0' ? '❌' : '⏳';
+      const ticker = r.ticker || '?';
+      const title  = (r.title || ticker).substring(0, 60);
+      const uStr   = r.units_pl ? (parseFloat(r.units_pl) >= 0 ? '+' : '') + parseFloat(r.units_pl).toFixed(2) + 'u' : '—';
+      return `<div class="today-row">${icon} <code style="font-size:11px">${ticker}</code> <span style="color:var(--text)">${title}</span> <span style="margin-left:auto;font-weight:700;color:${r.outcome==='1'?'var(--green)':'var(--red)'}">${uStr}</span></div>`;
+    }).join('');
+  } else {
+    todaySec.style.display = 'none';
+  }
+
+  // Open positions
+  const positions = data.open_positions || [];
+  const posSec    = document.getElementById('positions-section');
+  const posList   = document.getElementById('positions-list');
+  if (positions.length) {
+    posSec.style.display = '';
+    posList.innerHTML = positions.map(p => {
+      const pl = p.pl_dollars ?? 0;
+      const plCls  = pl > 0 ? 'pnl-pos' : pl < 0 ? 'pnl-neg' : '';
+      const plStr  = (pl >= 0 ? '+$' : '-$') + Math.abs(pl).toFixed(2);
+      const entryStr = p.entry_cents ? p.entry_cents + '¢' : '—';
+      const currStr  = p.current_cents ? p.current_cents + '¢' : '—';
+      const dir = p.direction === 'YES'
+        ? '<span class="dir-yes">YES</span>'
+        : '<span class="dir-no">NO</span>';
+      return `<div class="pos-card">
+        <div><div class="pos-title"><code>${p.ticker}</code> ${dir} · ${p.contracts} contracts</div><div class="pos-meta">${(p.title||'').substring(0,80)}</div></div>
+        <div class="pos-stats">
+          <div class="pos-stat"><div class="ps-label">Entry</div><div class="ps-val">${entryStr}</div></div>
+          <div class="pos-stat"><div class="ps-label">Current</div><div class="ps-val">${currStr}</div></div>
+          <div class="pos-stat"><div class="ps-label">Value</div><div class="ps-val">$${(p.current_value||0).toFixed(2)}</div></div>
+          <div class="pos-stat"><div class="ps-label">P&L</div><div class="ps-val ${plCls}">${plStr}</div></div>
+        </div>
+      </div>`;
+    }).join('');
+  } else {
+    posSec.style.display = 'none';
+  }
+
+  // Recent alerts table
+  const alertTbody = document.querySelector('#alerts-table tbody');
+  alertTbody.innerHTML = '';
+  const alerts = data.recent_alerts || [];
+  if (!alerts.length) {
+    alertTbody.innerHTML = '<tr><td colspan="10" class="no-data">No alerts yet.</td></tr>';
+  } else {
+    alerts.forEach(a => {
+      const ts  = new Date(a.timestamp).toLocaleString();
+      const dir = a.direction === 'YES' ? '<span class="dir-yes">YES</span>' : '<span class="dir-no">NO</span>';
+      const out = a.outcome === '1' ? '<span class="outcome-win">✅ Win</span>'
+                : a.outcome === '0' ? '<span class="outcome-loss">❌ Loss</span>'
+                : '<span class="outcome-pend">Pending</span>';
+      const ep = Math.abs(parseFloat(a.edge_pct||0));
+      const epCls = ep >= 25 ? 'green' : ep >= 15 ? 'yellow' : '';
+      const uStr = a.units_pl !== undefined && a.units_pl !== '' ? (parseFloat(a.units_pl) >= 0 ? '+' : '') + parseFloat(a.units_pl||0).toFixed(2) + 'u' : '—';
+      alertTbody.innerHTML += `<tr>
+        <td style="font-size:11px;color:var(--muted)">${ts}</td>
+        <td><code>${a.ticker}</code></td>
+        <td>${a.category}</td>
+        <td>${dir}</td>
+        <td class="${epCls}">${ep>=0?'+':''}${parseFloat(a.edge_pct||0).toFixed(1)}%</td>
+        <td>${(parseFloat(a.true_prob||0)*100).toFixed(1)}%</td>
+        <td>${a.confidence}/100</td>
+        <td>$${parseFloat(a.suggested_live_dollars||0).toFixed(2)}</td>
+        <td>${out}</td>
+        <td style="font-weight:700;color:${parseFloat(a.units_pl||0)>0?'var(--green)':parseFloat(a.units_pl||0)<0?'var(--red)':'var(--muted)'}">${uStr}</td>
+      </tr>`;
+    });
+  }
 
   // Category table
   const catTbody = document.querySelector('#cat-table tbody');
   catTbody.innerHTML = '';
   const byCat = stats.by_category || {};
   const cats = Object.entries(byCat).sort((a,b) => (b[1].hit_rate??-1) - (a[1].hit_rate??-1));
-  if (cats.length === 0) {
-    catTbody.innerHTML = '<tr><td colspan="4" class="no-data">No data yet</td></tr>';
-  } else {
-    cats.forEach(([cat, d]) => {
-      const hr = d.hit_rate;
-      catTbody.innerHTML += `<tr>
-        <td>${cat}</td><td>${d.total}</td><td>${d.rated}</td>
-        <td class="${hr>=55?'green':hr!=null?'red':''}">${fmtPct(hr)}</td>
-      </tr>`;
-    });
-  }
+  catTbody.innerHTML = cats.length
+    ? cats.map(([cat, d]) => `<tr><td>${cat}</td><td>${d.total}</td><td>${d.rated}</td><td class="${d.hit_rate>=55?'green':d.hit_rate!=null?'red':''}">${fmtPct(d.hit_rate)}</td></tr>`).join('')
+    : '<tr><td colspan="4" class="no-data">No data yet</td></tr>';
 
   // Model confidence table
   const confTbody = document.querySelector('#conf-table tbody');
   confTbody.innerHTML = '';
   const conf = data.model_confidence || {};
-  Object.entries(conf).forEach(([cat, val]) => {
-    const pct = Math.round(val * 100);
-    confTbody.innerHTML += `<tr>
-      <td>${cat}</td>
-      <td>${(val*100).toFixed(0)}%</td>
-      <td><div class="conf-bg"><div class="conf-fill" style="width:${pct}%"></div></div></td>
-    </tr>`;
-  });
-  if (!Object.keys(conf).length) {
-    confTbody.innerHTML = '<tr><td colspan="3" class="no-data">Loading…</td></tr>';
-  }
-
-  // Alerts table
-  const alertTbody = document.querySelector('#alerts-table tbody');
-  alertTbody.innerHTML = '';
-  const alerts = data.recent_alerts || [];
-  if (!alerts.length) {
-    alertTbody.innerHTML = '<tr><td colspan="10" class="no-data">No alerts yet — discipline pays off.</td></tr>';
-  } else {
-    alerts.forEach(a => {
-      const ts = new Date(a.timestamp).toLocaleString();
-      const dir = a.direction === 'YES'
-        ? '<span class="dir-yes">YES</span>'
-        : '<span class="dir-no">NO</span>';
-      const out = a.outcome === '1' ? '<span class="outcome-win">✅ Win</span>'
-                : a.outcome === '0' ? '<span class="outcome-loss">❌ Loss</span>'
-                : '<span class="outcome-pend">Pending</span>';
-      const edgePct = parseFloat(a.edge_pct || 0);
-      const edgeCol = Math.abs(edgePct) >= 25 ? 'green' : Math.abs(edgePct) >= 15 ? 'yellow' : '';
-      alertTbody.innerHTML += `<tr>
-        <td style="font-size:11px;color:var(--muted)">${ts}</td>
-        <td><code>${a.ticker}</code></td>
-        <td>${a.category}</td>
-        <td>${dir}</td>
-        <td class="${edgeCol}">${edgePct >= 0 ? '+' : ''}${edgePct}%</td>
-        <td>${(parseFloat(a.implied_prob||0)*100).toFixed(1)}%</td>
-        <td>${(parseFloat(a.true_prob||0)*100).toFixed(1)}%</td>
-        <td>${a.confidence}/100</td>
-        <td>$${parseFloat(a.suggested_live_dollars||0).toFixed(2)}</td>
-        <td>${out}</td>
-      </tr>`;
-    });
-  }
-
-  // Edge bucket table
-  const bucTbody = document.querySelector('#bucket-table tbody');
-  bucTbody.innerHTML = '';
-  const byBuc = stats.by_edge_bucket || {};
-  Object.entries(byBuc).forEach(([b, d]) => {
-    const hr = d.hit_rate;
-    bucTbody.innerHTML += `<tr>
-      <td>${b}</td><td>${d.total}</td><td>${d.rated}</td>
-      <td class="${hr>=55?'green':hr!=null?'red':''}">${fmtPct(hr)}</td>
-    </tr>`;
-  });
-  if (!Object.keys(byBuc).length) {
-    bucTbody.innerHTML = '<tr><td colspan="4" class="no-data">No data yet</td></tr>';
-  }
+  const confEntries = Object.entries(conf);
+  confTbody.innerHTML = confEntries.length
+    ? confEntries.map(([cat, val]) => `<tr><td>${cat}</td><td>${(val*100).toFixed(0)}%</td><td><div class="conf-bar"><div class="conf-bg"><div class="conf-fill" style="width:${Math.round(val*100)}%"></div></div></div></td></tr>`).join('')
+    : '<tr><td colspan="3" class="no-data">Loading…</td></tr>';
 
   // AI suggestions
   const ai = data.ai_suggestions || {};
   if (ai.text) {
     document.getElementById('ai-section').style.display = '';
     document.getElementById('ai-text').textContent = ai.text;
-    document.getElementById('ai-date').textContent =
-      'Generated: ' + new Date(ai.generated_at).toLocaleString() +
-      ' | Based on ' + ai.n_outcomes + ' outcomes';
+    document.getElementById('ai-date').textContent = 'Generated: ' + new Date(ai.generated_at).toLocaleString() + ' · ' + ai.n_outcomes + ' outcomes';
   }
 
-  // Model change log
-  const logEl = document.getElementById('change-log');
-  const changes = data.model_changes || [];
-  if (changes.length) {
-    logEl.innerHTML = changes.map(l => `<div>${l}</div>`).join('');
-    logEl.scrollTop = logEl.scrollHeight;
-  }
+  // Change log
+  const logEl   = document.getElementById('change-log');
+  const changes  = data.model_changes || [];
+  logEl.innerHTML = changes.length
+    ? changes.map(l => `<div>${l}</div>`).join('')
+    : '<div class="no-data">No changes yet.</div>';
+  if (changes.length) logEl.scrollTop = logEl.scrollHeight;
 }
 
 load();
-setInterval(load, 5 * 60 * 1000);   // refresh every 5 minutes
+setInterval(load, 5 * 60 * 1000);
 </script>
 </body>
 </html>

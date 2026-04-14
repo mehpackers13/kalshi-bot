@@ -21,6 +21,7 @@ DISCORD_HEALTH_WEBHOOK  = os.environ.get("DISCORD_HEALTH_WEBHOOK", "")
 # Live bankroll start is no longer hardcoded — the bot reads your actual
 # Kalshi balance via the API on every scan and adjusts automatically.
 # Deposits are picked up with no config changes needed.
+STARTING_BANKROLL     = 10.0     # initial deposit — used to define 1 unit (1% = $0.10)
 PAPER_BANKROLL_START  = 1000.0   # simulated paper-trading starting balance
 
 # ── Edge & Filters ──────────────────────────────────────────────────────────────

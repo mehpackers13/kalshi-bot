@@ -20,6 +20,7 @@ FIELDNAMES = [
     "suggested_live_dollars", "suggested_paper_dollars",
     "is_paper_bet", "paper_entry_price_cents",
     "outcome",       # 1 = correct, 0 = wrong, "" = pending
+    "units_pl",      # unit P&L at resolve time (1u = STARTING_BANKROLL * 0.01)
     "resolved_at",
     "notes",
 ]
@@ -83,6 +84,7 @@ def auto_resolve_outcomes(api) -> int:
         if ticker and result:
             finalized_map[ticker] = result.lower()
 
+    unit_size = config.STARTING_BANKROLL * 0.01  # 1u = 1% of starting bankroll
     resolved_count = 0
     updated_rows = []
     for row in rows:
@@ -95,9 +97,22 @@ def auto_resolve_outcomes(api) -> int:
                         (direction == "NO"  and result == "no")
             row["outcome"]     = "1" if correct else "0"
             row["resolved_at"] = datetime.datetime.utcnow().isoformat() + "Z"
+            # Calculate unit P&L
+            try:
+                dollars = float(row.get("suggested_live_dollars") or 0)
+                imp_prob = float(row.get("implied_prob") or 0)
+                if correct and dollars > 0 and imp_prob > 0:
+                    payout = dollars * (1.0 / imp_prob - 1.0)
+                    row["units_pl"] = round(payout / unit_size, 3)
+                elif not correct and dollars > 0:
+                    row["units_pl"] = round(-dollars / unit_size, 3)
+                else:
+                    row["units_pl"] = 0
+            except Exception:
+                row["units_pl"] = ""
             resolved_count += 1
             log(f"  Resolved {ticker}: result={result} direction={direction} "
-                f"→ {'✅ correct' if correct else '❌ wrong'}")
+                f"→ {'✅ correct' if correct else '❌ wrong'} ({row.get('units_pl', '?')}u)")
         updated_rows.append(row)
 
     if resolved_count > 0:

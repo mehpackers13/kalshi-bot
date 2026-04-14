@@ -34,13 +34,36 @@ def run(api) -> None:
     # Bankroll
     bankroll = load_bankroll()
 
+    # Calculate unit total
+    from outcomes import read_all as _read_all
+    all_outcomes = _read_all()
+    unit_size = config.STARTING_BANKROLL * 0.01
+    unit_total = sum(
+        float(r.get("units_pl") or 0)
+        for r in all_outcomes if r.get("outcome") in ("0", "1")
+    )
+    unit_total = round(unit_total, 3)
+
+    # Count what resolved overnight (last 8h)
+    from datetime import timezone as _tz
+    cutoff_8h = datetime.datetime.utcnow() - datetime.timedelta(hours=8)
+    resolved_overnight = [
+        r for r in all_outcomes
+        if r.get("resolved_at") and r.get("outcome") in ("0", "1")
+        and (lambda ts: datetime.datetime.fromisoformat(
+            ts.replace("Z", "+00:00")).replace(tzinfo=None) >= cutoff_8h
+        )(r["resolved_at"])
+    ]
+
     # Compose and send
     report = {
-        "hit_rate_summary": analysis["hit_rate_summary"],
-        "ai_summary":       analysis["ai_summary"],
-        "stat_changes":     analysis["stat_changes"],
-        "premarket_watch":  premarket,
-        "bankroll":         bankroll,
+        "hit_rate_summary":   analysis["hit_rate_summary"],
+        "ai_summary":         analysis["ai_summary"],
+        "stat_changes":       analysis["stat_changes"],
+        "premarket_watch":    premarket,
+        "bankroll":           bankroll,
+        "unit_total":         unit_total,
+        "resolved_overnight": resolved_overnight,
     }
 
     send_morning_report(report)

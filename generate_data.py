@@ -13,6 +13,8 @@ import datetime
 from pathlib import Path
 from collections import defaultdict
 
+STARTING_BANKROLL = 10.0   # must match config.py
+
 BASE = Path(__file__).parent
 DOCS = BASE / "docs"
 DATA = BASE / "data"
@@ -135,44 +137,92 @@ def read_bets_placed():
     return list(reversed(rows[-50:]))   # last 50, newest first
 
 
-def main():
-    outcomes   = read_outcomes()
-    bankroll   = read_bankroll()
-    changes    = read_model_changes()
-    ai         = read_ai_suggestions()
-    models     = read_models()
-    stats      = calculate_stats(outcomes)
-    bets_placed = read_bets_placed()
+def read_open_positions():
+    """Load current open positions snapshot written by scanner during scan."""
+    path = DATA / "positions.json"
+    if not path.exists():
+        return []
+    try:
+        return json.loads(path.read_text())
+    except Exception:
+        return []
 
-    # Live and paper P&L
-    # P&L = current balance vs peak ever seen (negative = drawdown from peak)
-    live_pnl  = round(bankroll.get("live",  {}).get("balance", 0)    - bankroll.get("live",  {}).get("peak", 0),    2)
-    paper_pnl = round(bankroll.get("paper", {}).get("balance", 1000) - bankroll.get("paper", {}).get("peak", 1000), 2)
+
+def calc_unit_total(outcomes):
+    """Sum units_pl column from all resolved outcomes."""
+    total = 0.0
+    for r in outcomes:
+        if r.get("outcome") in ("0", "1"):
+            try:
+                total += float(r.get("units_pl") or 0)
+            except Exception:
+                pass
+    return round(total, 3)
+
+
+def read_today_outcomes(outcomes):
+    """Return outcomes logged in the last 24 hours."""
+    cutoff = datetime.datetime.utcnow() - datetime.timedelta(hours=24)
+    today = []
+    for r in outcomes:
+        ts_str = r.get("timestamp", "")
+        try:
+            ts = datetime.datetime.fromisoformat(ts_str.replace("Z", "+00:00"))
+            if ts.replace(tzinfo=None) >= cutoff:
+                today.append(r)
+        except Exception:
+            pass
+    return list(reversed(today))
+
+
+def main():
+    outcomes      = read_outcomes()
+    bankroll      = read_bankroll()
+    changes       = read_model_changes()
+    ai            = read_ai_suggestions()
+    models        = read_models()
+    stats         = calculate_stats(outcomes)
+    bets_placed   = read_bets_placed()
+    open_positions = read_open_positions()
+    unit_total    = calc_unit_total(outcomes)
+    today_outcomes = read_today_outcomes(outcomes)
+    generated     = datetime.datetime.utcnow().isoformat() + "Z"
+
+    # Live P&L = current balance vs starting bankroll
+    live_bal  = bankroll.get("live",  {}).get("balance", 0)
+    live_peak = bankroll.get("live",  {}).get("peak", 0)
+    live_pnl  = round(live_bal - STARTING_BANKROLL, 2)
+    paper_pnl = round(bankroll.get("paper", {}).get("balance", 1000) - STARTING_BANKROLL * 100, 2)
 
     recent = list(reversed(outcomes[-50:]))
 
     data = {
-        "generated_at":   datetime.datetime.utcnow().isoformat() + "Z",
-        "stats":          stats,
-        "bankroll":       bankroll,
-        "live_pnl":       live_pnl,
-        "paper_pnl":      paper_pnl,
-        "recent_alerts":  recent,
-        "model_changes":  changes,
-        "ai_suggestions": ai,
+        "generated_at":    generated,
+        "last_scan_ts":    generated,
+        "stats":           stats,
+        "bankroll":        bankroll,
+        "live_pnl":        live_pnl,
+        "paper_pnl":       paper_pnl,
+        "unit_total":      unit_total,
+        "today_outcomes":  today_outcomes,
+        "recent_alerts":   recent,
+        "model_changes":   changes,
+        "ai_suggestions":  ai,
         "model_confidence": models.get("category_confidence", {}),
-        "bets_placed":    bets_placed,
-        "dry_run":        True,   # updated by config at runtime if needed
+        "bets_placed":     bets_placed,
+        "open_positions":  open_positions,
+        "dry_run":         True,
     }
 
     out = DOCS / "data.json"
     with open(out, "w") as f:
         json.dump(data, f, indent=2)
 
+    u_sign = "+" if unit_total >= 0 else ""
     print(
         f"✓ docs/data.json written — {len(recent)} alerts | "
         f"hit rate: {stats['hit_rate']}% | "
-        f"live P&L: ${live_pnl:+.2f} | paper P&L: ${paper_pnl:+.2f}"
+        f"live: ${live_bal:.2f} (P&L {live_pnl:+.2f}) | units: {u_sign}{unit_total}u"
     )
 
 

@@ -149,14 +149,29 @@ def read_open_positions():
 
 
 def calc_unit_total(outcomes):
-    """Sum units_pl column from all resolved outcomes."""
+    """Sum units from resolved outcomes. Uses units_pl if present, otherwise calculates on-the-fly."""
+    unit_size = STARTING_BANKROLL * 0.01  # $0.10 per unit
     total = 0.0
     for r in outcomes:
-        if r.get("outcome") in ("0", "1"):
-            try:
-                total += float(r.get("units_pl") or 0)
-            except Exception:
-                pass
+        if r.get("outcome") not in ("0", "1"):
+            continue
+        try:
+            stored = r.get("units_pl", "")
+            if stored not in (None, ""):
+                total += float(stored)
+            else:
+                # Fall back: calculate from dollars and implied_prob
+                dollars  = float(r.get("suggested_live_dollars") or 0)
+                imp_prob = float(r.get("implied_prob") or 0)
+                if dollars <= 0 or imp_prob <= 0:
+                    continue
+                if r["outcome"] == "1":
+                    payout = dollars * (1.0 / imp_prob - 1.0)
+                    total += payout / unit_size
+                else:
+                    total -= dollars / unit_size
+        except Exception:
+            pass
     return round(total, 3)
 
 
@@ -191,7 +206,9 @@ def main():
     # Live P&L = current balance vs starting bankroll
     live_bal  = bankroll.get("live",  {}).get("balance", 0)
     live_peak = bankroll.get("live",  {}).get("peak", 0)
-    live_pnl  = round(live_bal - STARTING_BANKROLL, 2)
+    position_value = round(sum(float(p.get("current_value", 0) or 0) for p in open_positions), 2)
+    account_value  = round(live_bal + position_value, 2)
+    live_pnl  = round(account_value - STARTING_BANKROLL, 2)
     paper_pnl = round(bankroll.get("paper", {}).get("balance", 1000) - STARTING_BANKROLL * 100, 2)
 
     recent = list(reversed(outcomes[-50:]))
@@ -201,6 +218,9 @@ def main():
         "last_scan_ts":    generated,
         "stats":           stats,
         "bankroll":        bankroll,
+        "live_bal":        live_bal,
+        "position_value":  position_value,
+        "account_value":   account_value,
         "live_pnl":        live_pnl,
         "paper_pnl":       paper_pnl,
         "unit_total":      unit_total,
@@ -211,7 +231,7 @@ def main():
         "model_confidence": models.get("category_confidence", {}),
         "bets_placed":     bets_placed,
         "open_positions":  open_positions,
-        "dry_run":         True,
+        "dry_run":         False,
     }
 
     out = DOCS / "data.json"

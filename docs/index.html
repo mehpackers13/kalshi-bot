@@ -184,7 +184,7 @@ function setStatus(ts) {
   try {
     const gen = new Date(ts);
     const ageMin = (Date.now() - gen.getTime()) / 60000;
-    if (ageMin < 90) { dot.className='dot green'; txt.textContent='Live — '+Math.round(ageMin)+'m ago'; }
+    if (ageMin < 120) { dot.className='dot green'; txt.textContent='Live — '+Math.round(ageMin)+'m ago'; }
     else if (ageMin < 480) { dot.className='dot yellow'; txt.textContent='Idle — '+Math.round(ageMin/60)+'h ago'; }
     else { dot.className='dot red'; txt.textContent='Stale'; }
   } catch { dot.className='dot red'; txt.textContent='Unknown'; }
@@ -218,7 +218,7 @@ async function load() {
     hu.textContent = sign + units.toFixed(2) + 'u';
     hu.className = 'hero-unit ' + (units > 0 ? 'hu-pos' : units < 0 ? 'hu-neg' : 'hu-neu');
   }
-  const liveBal = liveB.balance ?? 0;
+  const liveBal = data.account_value ?? (liveB.balance ?? 0);
   document.getElementById('live-bal').textContent = '$' + liveBal.toFixed(2);
   const hr = stats.hit_rate;
   document.getElementById('hit-rate-h').textContent = hr != null ? hr + '%' : '—';

@@ -55,6 +55,25 @@ def run(api) -> None:
         )(r["resolved_at"])
     ]
 
+    # Today's bets placed (last 24h)
+    bets_today = []
+    try:
+        if config.BETS_PLACED_CSV.exists():
+            _cutoff = datetime.datetime.utcnow() - datetime.timedelta(hours=24)
+            with open(config.BETS_PLACED_CSV, newline="") as _f:
+                for _row in __import__("csv").DictReader(_f):
+                    _ts = _row.get("timestamp", "")
+                    try:
+                        _bet_ts = datetime.datetime.fromisoformat(
+                            _ts.replace("Z", "+00:00")
+                        ).replace(tzinfo=None)
+                        if _bet_ts >= _cutoff:
+                            bets_today.append(_row)
+                    except Exception:
+                        pass
+    except Exception:
+        pass
+
     # Compose and send
     report = {
         "hit_rate_summary":   analysis["hit_rate_summary"],
@@ -64,6 +83,7 @@ def run(api) -> None:
         "bankroll":           bankroll,
         "unit_total":         unit_total,
         "resolved_overnight": resolved_overnight,
+        "bets_today":         bets_today,
     }
 
     send_morning_report(report)

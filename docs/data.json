@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-15T00:07:34.594639Z",
-  "last_scan_ts": "2026-04-15T00:07:34.594639Z",
+  "generated_at": "2026-04-15T23:47:00.423333Z",
+  "last_scan_ts": "2026-04-15T23:47:00.423333Z",
   "stats": {
     "total_alerts": 908,
     "rated": 0,
@@ -79,7 +79,8 @@
   "bankroll": {
     "live": {
       "balance": 5.33,
-      "peak": 5.33
+      "cash": 5.33,
+      "peak": 10.0
     },
     "paper": {
       "balance": 1000.0,
@@ -87,9 +88,9 @@
     },
     "live_stopped": false,
     "updated_at": "2026-04-09T16:04:52.194389Z",
-    "_note": "Peak reset to current balance after pre-existing-position losses triggered stop. Bot placed 0 bets. Reset 2026-04-09."
+    "_note": "Peak reset to 10.0 reflecting actual account value. Cash field added; will be updated by next scan."
   },
-  "live_bal": 5.33,
+  "cash_bal": 5.33,
   "position_value": 0,
   "account_value": 5.33,
   "live_pnl": -4.67,

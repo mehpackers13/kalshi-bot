@@ -203,11 +203,18 @@ def main():
     today_outcomes = read_today_outcomes(outcomes)
     generated     = datetime.datetime.utcnow().isoformat() + "Z"
 
-    # Live P&L = current balance vs starting bankroll
-    live_bal  = bankroll.get("live",  {}).get("balance", 0)
-    live_peak = bankroll.get("live",  {}).get("peak", 0)
+    # Live balance breakdown: cash (spendable) + open position market value = total
+    live_info  = bankroll.get("live", {})
+    live_total = live_info.get("balance", 0)          # total = cash + positions (from drawdown tracker)
+    cash_bal   = live_info.get("cash", live_total)    # cash-only (stored since bankroll.py update)
+    live_peak  = live_info.get("peak", 0)
+    # Position value: sum of current_value from fresh positions.json snapshot
     position_value = round(sum(float(p.get("current_value", 0) or 0) for p in open_positions), 2)
-    account_value  = round(live_bal + position_value, 2)
+    # Account value: prefer cash + positions (positions.json is freshest), fall back to stored total
+    if cash_bal > 0 or position_value > 0:
+        account_value = round(cash_bal + position_value, 2)
+    else:
+        account_value = round(live_total, 2)
     live_pnl  = round(account_value - STARTING_BANKROLL, 2)
     paper_pnl = round(bankroll.get("paper", {}).get("balance", 1000) - STARTING_BANKROLL * 100, 2)
 
@@ -218,7 +225,7 @@ def main():
         "last_scan_ts":    generated,
         "stats":           stats,
         "bankroll":        bankroll,
-        "live_bal":        live_bal,
+        "cash_bal":        cash_bal,
         "position_value":  position_value,
         "account_value":   account_value,
         "live_pnl":        live_pnl,
@@ -242,7 +249,7 @@ def main():
     print(
         f"✓ docs/data.json written — {len(recent)} alerts | "
         f"hit rate: {stats['hit_rate']}% | "
-        f"live: ${live_bal:.2f} (P&L {live_pnl:+.2f}) | units: {u_sign}{unit_total}u"
+        f"cash: ${cash_bal:.2f} | positions: ${position_value:.2f} | total: ${account_value:.2f} (P&L {live_pnl:+.2f}) | units: {u_sign}{unit_total}u"
     )
 
 

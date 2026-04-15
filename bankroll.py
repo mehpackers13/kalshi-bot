@@ -69,12 +69,14 @@ def sync_live_balance(api) -> Optional[float]:
     when money is locked in open positions.
     On first call (peak == 0) the value becomes the peak baseline.
     Returns total portfolio value, or None if API calls failed.
+    Stores cash balance separately so the dashboard can show the breakdown.
     """
+    # Cash-only balance (spendable wallet)
+    cash = api.get_account_balance()
     # Total value includes open position market value at current bid prices
     total = api.get_portfolio_total_value()
     if total is None:
-        # Fallback to cash-only if portfolio call fails
-        total = api.get_account_balance()
+        total = cash
     if total is None:
         log("Could not read Kalshi portfolio value — using cached value", "WARN")
         return None
@@ -87,10 +89,12 @@ def sync_live_balance(api) -> Optional[float]:
     elif total > br["live"]["peak"]:
         log(f"New peak portfolio value: ${total:.2f}  (was ${br['live']['peak']:.2f})")
 
-    br["live"]["balance"] = round(total, 2)
+    br["live"]["balance"] = round(total, 2)           # total for drawdown logic
+    br["live"]["cash"]    = round(cash or 0, 2)       # cash-only for display
     br["live"]["peak"]    = round(max(br["live"]["peak"], total), 2)
     save_bankroll(br)
-    log(f"Portfolio value: ${total:.2f}  |  Peak ever: ${br['live']['peak']:.2f}")
+    pos_val = round((total or 0) - (cash or 0), 2)
+    log(f"Cash: ${cash:.2f}  |  Positions: ${pos_val:.2f}  |  Total: ${total:.2f}  |  Peak: ${br['live']['peak']:.2f}")
     return total
 
 

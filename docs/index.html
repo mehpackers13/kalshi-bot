@@ -105,14 +105,19 @@
     </div>
     <div class="hero-divider"></div>
     <div>
-      <div class="hero-sub">Live account: <strong id="live-bal">—</strong></div>
+      <div class="hero-sub">Account total: <strong id="live-bal">—</strong> <span style="color:var(--muted);font-size:11px" id="pnl-vs-start"></span></div>
+      <div class="hero-sub" style="margin-top:5px;display:flex;gap:18px;flex-wrap:wrap;">
+        <span>💵 Cash: <strong id="cash-bal">—</strong></span>
+        <span>📊 Positions: <strong id="pos-val-hero">—</strong></span>
+      </div>
       <div class="hero-sub" style="margin-top:4px">Hit rate: <strong id="hit-rate-h">—</strong> · <span id="rated-h">—</span> rated</div>
     </div>
   </div>
 
   <!-- KPI cards -->
   <div class="grid">
-    <div class="card"><h3>Live P&L</h3><div class="val" id="live-pnl">—</div><div class="sub">vs $10 starting</div></div>
+    <div class="card"><h3>Account Total</h3><div class="val" id="live-pnl">—</div><div class="sub" id="live-pnl-sub">—</div></div>
+    <div class="card"><h3>Cash Balance</h3><div class="val" id="cash-bal-card">—</div><div class="sub" id="pos-val-sub">—</div></div>
     <div class="card"><h3>Hit Rate</h3><div class="val" id="hit-rate">—</div><div class="sub" id="rated-count">—</div></div>
     <div class="card"><h3>Total Alerts</h3><div class="val blue" id="total-alerts">—</div><div class="sub">since start</div></div>
     <div class="card"><h3>Paper Bankroll</h3><div class="val" id="paper-bal">—</div><div class="sub" id="paper-pnl">—</div></div>
@@ -218,17 +223,30 @@ async function load() {
     hu.textContent = sign + units.toFixed(2) + 'u';
     hu.className = 'hero-unit ' + (units > 0 ? 'hu-pos' : units < 0 ? 'hu-neg' : 'hu-neu');
   }
-  const liveBal = data.account_value ?? (liveB.balance ?? 0);
-  document.getElementById('live-bal').textContent = '$' + liveBal.toFixed(2);
+  const acctVal   = data.account_value ?? (liveB.balance ?? 0);
+  const cashBal   = data.cash_bal      ?? acctVal;
+  const posVal    = data.position_value ?? 0;
+  const lpnl      = data.live_pnl ?? 0;
+  document.getElementById('live-bal').textContent = '$' + acctVal.toFixed(2);
+  const pnlVsStart = document.getElementById('pnl-vs-start');
+  pnlVsStart.textContent = (lpnl >= 0 ? '(+$' : '(-$') + Math.abs(lpnl).toFixed(2) + ' P&L)';
+  pnlVsStart.style.color = lpnl >= 0 ? 'var(--green)' : 'var(--red)';
+  document.getElementById('cash-bal').textContent = '$' + cashBal.toFixed(2);
+  document.getElementById('pos-val-hero').textContent = '$' + posVal.toFixed(2);
   const hr = stats.hit_rate;
   document.getElementById('hit-rate-h').textContent = hr != null ? hr + '%' : '—';
   document.getElementById('rated-h').textContent = (stats.rated || 0);
 
   // KPI cards
-  const lpnl = data.live_pnl ?? 0;
   const pnlEl = document.getElementById('live-pnl');
-  pnlEl.textContent = (lpnl >= 0 ? '+$' : '-$') + Math.abs(lpnl).toFixed(2);
+  pnlEl.textContent = '$' + acctVal.toFixed(2);
   pnlEl.className = 'val ' + (lpnl > 0 ? 'green' : lpnl < 0 ? 'red' : '');
+  const pnlSubEl = document.getElementById('live-pnl-sub');
+  pnlSubEl.textContent = (lpnl >= 0 ? '+$' : '-$') + Math.abs(lpnl).toFixed(2) + ' vs $10 start';
+  pnlSubEl.className = 'sub ' + (lpnl >= 0 ? 'pnl-pos' : 'pnl-neg');
+  document.getElementById('cash-bal-card').textContent = '$' + cashBal.toFixed(2);
+  const posSubEl = document.getElementById('pos-val-sub');
+  posSubEl.textContent = '$' + posVal.toFixed(2) + ' in open positions';
 
   const hrEl = document.getElementById('hit-rate');
   hrEl.textContent = hr != null ? hr + '%' : '—';

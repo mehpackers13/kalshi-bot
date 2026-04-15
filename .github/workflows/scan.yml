@@ -39,6 +39,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run scan
+        continue-on-error: true
         env:
           KALSHI_API_KEY_ID:         ${{ secrets.KALSHI_API_KEY_ID }}
           KALSHI_PRIVATE_KEY:        ${{ secrets.KALSHI_PRIVATE_KEY }}
@@ -48,6 +49,7 @@ jobs:
         run: python run_scan.py
 
       - name: Regenerate dashboard data
+        if: always()
         run: python generate_data.py
 
       - name: Upload outputs for commit job

@@ -116,19 +116,20 @@ def run_scan(api: KalshiAPI) -> list:
     log("=" * 60)
     log("Starting market scan")
 
-    # Safety: check drawdown stop before doing anything
+    # Sync live balance first so drawdown check uses current portfolio total,
+    # not a potentially stale cached value.
+    sync_live_balance(api)
+
+    # Snapshot open positions for the dashboard
+    _write_positions_snapshot(api)
+
+    # Safety: check drawdown stop using fresh balance just fetched above
     if check_drawdown_stop():
         from bankroll import load_bankroll
         br = load_bankroll()
         send_drawdown_stop(br["live"]["balance"], br["live"]["peak"])
         log("Drawdown stop active — scan aborted", "WARN")
         return []
-
-    # Sync live balance from Kalshi (total portfolio value = cash + positions)
-    sync_live_balance(api)
-
-    # Snapshot open positions for the dashboard
-    _write_positions_snapshot(api)
 
     # Cut any positions that have lost ≥60% AND have >48h until expiry
     cut = auto_bettor.cut_losing_positions(api)

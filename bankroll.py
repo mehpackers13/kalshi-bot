@@ -103,9 +103,15 @@ def sync_live_balance(api) -> Optional[float]:
 def check_drawdown_stop() -> bool:
     """
     Returns True if trading should halt.
-    Rule: stop when live balance < peak * (1 - DRAWDOWN_STOP_PCT)
-    With DRAWDOWN_STOP_PCT = 0.50:  peak $100 -> stop below $50
-    The threshold rises automatically as the account grows.
+    Rule: stop when portfolio total < peak * (1 - DRAWDOWN_STOP_PCT)
+    With DRAWDOWN_STOP_PCT = 0.40:  peak $100 -> stop below $60
+
+    IMPORTANT: 'balance' is always the full portfolio total (cash + open position
+    market value) as written by sync_live_balance() — never cash alone.
+
+    Hard floor: never trigger if current total >= STARTING_BANKROLL.
+    This prevents false triggers while the account is at or above the
+    initial deposit, regardless of what the peak says.
     """
     br = load_bankroll()
 
@@ -113,10 +119,14 @@ def check_drawdown_stop() -> bool:
         return True
 
     peak    = br["live"]["peak"]
-    current = br["live"]["balance"]
+    current = br["live"]["balance"]   # always portfolio total, not cash-only
 
     # Wait for at least one real balance reading before enforcing
     if peak == 0.0 or current == 0.0:
+        return False
+
+    # Hard floor: never halt trading while the account is at or above starting deposit
+    if current >= config.STARTING_BANKROLL:
         return False
 
     stop_at = round(peak * (1.0 - config.DRAWDOWN_STOP_PCT), 2)

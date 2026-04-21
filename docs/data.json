@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-04-21T21:26:16.860390Z",
-  "last_scan_ts": "2026-04-21T21:26:16.860390Z",
+  "generated_at": "2026-04-21T22:14:47.077389Z",
+  "last_scan_ts": "2026-04-21T22:14:47.077389Z",
   "stats": {
-    "total_alerts": 1013,
+    "total_alerts": 1014,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -55,7 +55,7 @@
         "hit_rate": null
       },
       "Commodities": {
-        "total": 2,
+        "total": 3,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -75,7 +75,7 @@
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 536,
+        "total": 537,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -84,7 +84,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 9.91,
+      "balance": 9.9,
       "cash": 3.35,
       "peak": 10.0
     },
@@ -93,16 +93,37 @@
       "peak": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-04-21T21:23:19.262305Z",
+    "updated_at": "2026-04-21T22:11:19.999774Z",
     "_note": "Peak reset to stale balance (5.33). Next scan will update all values from Kalshi API."
   },
   "cash_bal": 3.35,
-  "position_value": 6.56,
-  "account_value": 9.91,
-  "live_pnl": -0.09,
+  "position_value": 6.55,
+  "account_value": 9.9,
+  "live_pnl": -0.1,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-04-21T22:14:46.757880Z",
+      "ticker": "KXBRENTW-26APR2417-T89.99",
+      "title": "Will the brent crude oil close price be above 89.99  USD/Bbl on Apr 24, 2026 at 5pm EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-30.7",
+      "implied_prob": "0.82",
+      "true_prob": "0.513",
+      "confidence": "85",
+      "suggested_live_dollars": "0.5",
+      "suggested_paper_dollars": "50.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "25",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-04-21T21:26:16.593190Z",
       "ticker": "KXHIGHDEN-26APR21-B83.5",
@@ -2311,6 +2332,27 @@
   ],
   "recent_alerts": [
     {
+      "timestamp": "2026-04-21T22:14:46.757880Z",
+      "ticker": "KXBRENTW-26APR2417-T89.99",
+      "title": "Will the brent crude oil close price be above 89.99  USD/Bbl on Apr 24, 2026 at 5pm EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-30.7",
+      "implied_prob": "0.82",
+      "true_prob": "0.513",
+      "confidence": "85",
+      "suggested_live_dollars": "0.5",
+      "suggested_paper_dollars": "50.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "25",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
       "timestamp": "2026-04-21T21:26:16.593190Z",
       "ticker": "KXHIGHDEN-26APR21-B83.5",
       "title": "Will the **high temp in Denver** be 83-84\u00b0 on Apr 21, 2026?",
@@ -3338,27 +3380,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-04-21T02:24:40.977924Z",
-      "ticker": "KXHOOD-26APRGOLDSUBS-4600000",
-      "title": "Will Robinhood Markets Inc. report above 4.6 million gold subs in Q1 2026?",
-      "category": "Companies",
-      "direction": "YES",
-      "edge_pct": "82.5",
-      "implied_prob": "0.175",
-      "true_prob": "1.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.36",
-      "suggested_paper_dollars": "49.86",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "18",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -3420,9 +3441,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 87,
+      "current_cents": 86,
       "dollars_risked": 0,
-      "current_value": 0.87,
+      "current_value": 0.86,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

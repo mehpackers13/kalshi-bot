@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-04-21T22:14:47.077389Z",
-  "last_scan_ts": "2026-04-21T22:14:47.077389Z",
+  "generated_at": "2026-04-21T23:12:45.389113Z",
+  "last_scan_ts": "2026-04-21T23:12:45.389113Z",
   "stats": {
-    "total_alerts": 1014,
+    "total_alerts": 1016,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -37,7 +37,7 @@
         "hit_rate": null
       },
       "Climate and Weather": {
-        "total": 130,
+        "total": 131,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -49,7 +49,7 @@
         "hit_rate": null
       },
       "Financials": {
-        "total": 73,
+        "total": 74,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -75,7 +75,7 @@
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 537,
+        "total": 539,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -84,7 +84,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 9.9,
+      "balance": 9.91,
       "cash": 3.35,
       "peak": 10.0
     },
@@ -93,16 +93,58 @@
       "peak": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-04-21T22:11:19.999774Z",
+    "updated_at": "2026-04-21T23:09:42.586881Z",
     "_note": "Peak reset to stale balance (5.33). Next scan will update all values from Kalshi API."
   },
   "cash_bal": 3.35,
-  "position_value": 6.55,
-  "account_value": 9.9,
-  "live_pnl": -0.1,
+  "position_value": 6.56,
+  "account_value": 9.91,
+  "live_pnl": -0.09,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-04-21T23:12:45.110851Z",
+      "ticker": "KXHIGHPHIL-26APR21-B56.5",
+      "title": "Will the **high temp in Philadelphia** be 56-57\u00b0 on Apr 21, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-64.8",
+      "implied_prob": "0.69",
+      "true_prob": "0.042",
+      "confidence": "70",
+      "suggested_live_dollars": "0.35",
+      "suggested_paper_dollars": "49.7",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "35",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-04-21T23:12:44.705694Z",
+      "ticker": "KXINXU-26APR22H1600-T6999.9999",
+      "title": "Will the S&P 500 be above 6999.9999 on Apr 22, 2026 at 4pm EDT?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-88.5",
+      "implied_prob": "0.885",
+      "true_prob": "0.0",
+      "confidence": "80",
+      "suggested_live_dollars": "0.48",
+      "suggested_paper_dollars": "49.92",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "16",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-04-21T22:14:46.757880Z",
       "ticker": "KXBRENTW-26APR2417-T89.99",
@@ -2332,6 +2374,48 @@
   ],
   "recent_alerts": [
     {
+      "timestamp": "2026-04-21T23:12:45.110851Z",
+      "ticker": "KXHIGHPHIL-26APR21-B56.5",
+      "title": "Will the **high temp in Philadelphia** be 56-57\u00b0 on Apr 21, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-64.8",
+      "implied_prob": "0.69",
+      "true_prob": "0.042",
+      "confidence": "70",
+      "suggested_live_dollars": "0.35",
+      "suggested_paper_dollars": "49.7",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "35",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-04-21T23:12:44.705694Z",
+      "ticker": "KXINXU-26APR22H1600-T6999.9999",
+      "title": "Will the S&P 500 be above 6999.9999 on Apr 22, 2026 at 4pm EDT?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-88.5",
+      "implied_prob": "0.885",
+      "true_prob": "0.0",
+      "confidence": "80",
+      "suggested_live_dollars": "0.48",
+      "suggested_paper_dollars": "49.92",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "16",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
       "timestamp": "2026-04-21T22:14:46.757880Z",
       "ticker": "KXBRENTW-26APR2417-T89.99",
       "title": "Will the brent crude oil close price be above 89.99  USD/Bbl on Apr 24, 2026 at 5pm EDT?",
@@ -3338,48 +3422,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-04-21T02:24:41.363931Z",
-      "ticker": "KXCPIYOY-26APR-T3.4",
-      "title": "Will the rate of CPI inflation be above 3.4% for the year ending in April 2026?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-34.5",
-      "implied_prob": "0.93",
-      "true_prob": "0.585",
-      "confidence": "85",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "8",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-04-21T02:24:41.138861Z",
-      "ticker": "KXPCECORE-26APR-T0.1",
-      "title": "Will the rate of core PCE inflation be above 0.1% in April 2026?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-13.0",
-      "implied_prob": "0.93",
-      "true_prob": "0.8",
-      "confidence": "73",
-      "suggested_live_dollars": "0.16",
-      "suggested_paper_dollars": "20.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "8",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -3441,9 +3483,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 86,
+      "current_cents": 87,
       "dollars_risked": 0,
-      "current_value": 0.86,
+      "current_value": 0.87,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

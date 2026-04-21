@@ -1915,3 +1915,40 @@ Total modelable markets evaluated: 0
 [2026-04-21 01:42:41 ET] [INFO] Scan complete — 2 alerts sent
 [2026-04-21 01:42:41 ET] [INFO] ============================================================
 [2026-04-21 01:42:41 ET] [INFO] Scan job complete
+[2026-04-21 08:05:13 ET] [INFO] Scan job starting
+[2026-04-21 08:05:13 ET] [INFO] Kalshi API key auth OK ✅  balance: $3.35
+[2026-04-21 08:05:13 ET] [INFO] ============================================================
+[2026-04-21 08:05:13 ET] [INFO] Starting market scan
+[2026-04-21 08:05:14 ET] [INFO] Portfolio value: $3.35 cash + $6.58 positions = $9.93
+[2026-04-21 08:05:14 ET] [INFO] Cash: $3.35  |  Positions: $6.58  |  Total: $9.93  |  Peak: $10.00
+[2026-04-21 08:05:15 ET] [INFO] Positions snapshot: 7 open position(s)
+[2026-04-21 08:05:15 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-21 08:05:25 ET] [INFO] Fetched 44013 open markets via events endpoint across 27 pages
+[2026-04-21 08:05:25 ET] [INFO] Fetched 44013 open markets
+[2026-04-21 08:05:26 ET] [INFO] Parsed 41568 valid markets
+[2026-04-21 08:05:26 ET] [INFO] Categories: {'Sports': 20130, 'Entertainment': 4969, 'Elections': 4776, 'Economics': 2798, 'Crypto': 2485, 'Politics': 1481, 'Mentions': 1467, 'Commodities': 985}
+[2026-04-21 08:05:31 ET] [INFO]   CPI model: threshold=10.0% TNX=4.25% → P=0.200
+[2026-04-21 08:05:57 ET] [INFO]   price model: BTC-USD spot=76420.00 target=100000.00 vol=34.1% T=6112.9h → P=0.173
+[2026-04-21 08:05:57 ET] [INFO]   price model: BTC-USD spot=76420.00 target=250000.00 vol=34.1% T=6112.9h → P=0.000
+[2026-04-21 08:05:57 ET] [INFO]   price model: BTC-USD spot=76420.00 target=200000.00 vol=34.1% T=6112.9h → P=0.000
+[2026-04-21 08:05:57 ET] [INFO]   price model: BTC-USD spot=76420.00 target=199999.00 vol=34.1% T=6112.9h → P=0.000
+[2026-04-21 08:06:42 ET] [INFO]   CPI model: threshold=3.7% TNX=4.25% → P=0.555
+[2026-04-21 08:06:47 ET] [INFO]   price model: BNB-USD spot=634.13 target=145.00 vol=31.3% T=943.9h → P=1.000
+[2026-04-21 08:06:47 ET] [INFO]   CPI model: threshold=0.2% TNX=4.25% → P=0.800
+[2026-04-21 08:07:09 ET] [INFO]   price model: BTC-USD spot=76440.48 target=65000.00 vol=34.1% T=231.9h → P=0.002
+[2026-04-21 08:07:09 ET] [INFO]   price model: BTC-USD spot=76440.48 target=62500.00 vol=34.1% T=231.9h → P=0.000
+[2026-04-21 08:07:10 ET] [INFO]   price model: BTC-USD spot=76440.48 target=85000.00 vol=34.1% T=231.9h → P=0.028
+[2026-04-21 08:07:10 ET] [INFO]   price model: BTC-USD spot=76440.48 target=87500.00 vol=34.1% T=231.9h → P=0.007
+[2026-04-21 08:07:36 ET] [INFO]   CPI model: threshold=0.3% TNX=4.25% → P=0.800
+[2026-04-21 08:07:36 ET] [INFO]   CPI model: threshold=0.1% TNX=4.25% → P=0.800
+[2026-04-21 08:07:36 ET] [INFO]   EDGE FOUND: KXJPMOMINF-26APR17-T-0.1 | implied=94.0% true=80.0% edge=-14.0% dir=NO conf=68
+[2026-04-21 08:07:49 ET] [INFO]   weather model: nyc max=59.0°F target=[53,54]°F days_out=0 σ=3.5°F → P=0.068
+[2026-04-21 08:07:49 ET] [INFO]   EDGE FOUND: KXHIGHNY-26APR21-B53.5 | implied=60.5% true=6.8% edge=-53.7% dir=NO conf=80
+[2026-04-21 08:08:12 ET] [INFO] Checked 41478 markets | Modelable: 41478 | Edges found: 2
+[2026-04-21 08:08:12 ET] [INFO] [Discord] Trade alert sent: KXJPMOMINF-26APR17-T-0.1
+[2026-04-21 08:08:12 ET] [WARN] AUTO-BET SKIP KXJPMOMINF-26APR17-T-0.1: exposure 47.5% ≥ 25% limit ($9.00 of $18.93 in open positions)
+[2026-04-21 08:08:13 ET] [INFO] [Discord] Trade alert sent: KXHIGHNY-26APR21-B53.5
+[2026-04-21 08:08:13 ET] [WARN] AUTO-BET SKIP KXHIGHNY-26APR21-B53.5: exposure 47.5% ≥ 25% limit ($9.00 of $18.93 in open positions)
+[2026-04-21 08:08:13 ET] [INFO] Scan complete — 2 alerts sent
+[2026-04-21 08:08:13 ET] [INFO] ============================================================
+[2026-04-21 08:08:13 ET] [INFO] Scan job complete

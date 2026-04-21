@@ -13,7 +13,6 @@ import datetime
 from pathlib import Path
 from collections import defaultdict
 
-STARTING_BANKROLL = 110.0  # updated after $100 deposit (April 2026); must match config.py
 
 BASE = Path(__file__).parent
 DOCS = BASE / "docs"
@@ -149,8 +148,11 @@ def read_open_positions():
 
 
 def calc_unit_total(outcomes):
-    """Sum units from resolved outcomes. Uses units_pl if present, otherwise calculates on-the-fly."""
-    unit_size = STARTING_BANKROLL * 0.01  # $0.10 per unit
+    """Sum units from resolved outcomes. Uses units_pl if present, otherwise calculates on-the-fly.
+    Unit size = 1% of peak balance (auto-scales as account grows; no hardcoded constant)."""
+    br = read_bankroll()
+    live_peak = br.get("live", {}).get("peak", 0) or 1.0
+    unit_size = live_peak * 0.01
     total = 0.0
     for r in outcomes:
         if r.get("outcome") not in ("0", "1"):
@@ -215,8 +217,11 @@ def main():
         account_value = round(cash_bal + position_value, 2)
     else:
         account_value = round(live_total, 2)
-    live_pnl  = round(account_value - STARTING_BANKROLL, 2)
-    paper_pnl = round(bankroll.get("paper", {}).get("balance", 1000) - STARTING_BANKROLL * 100, 2)
+    # P&L vs initial_balance (set on first API sync, never changes after that)
+    initial_balance = live_info.get("initial_balance") or live_peak or account_value
+    live_pnl  = round(account_value - initial_balance, 2)
+    paper_info = bankroll.get("paper", {})
+    paper_pnl = round(paper_info.get("balance", 1000) - paper_info.get("initial_balance", 1000.0), 2)
 
     recent = list(reversed(outcomes[-50:]))
 

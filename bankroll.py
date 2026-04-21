@@ -30,12 +30,14 @@ from logger import log
 def _fresh_bankroll() -> dict:
     return {
         "live": {
-            "balance": 0.0,   # updated from Kalshi API every scan
-            "peak":    0.0,   # highest balance ever seen — never decreases
+            "balance":         0.0,   # updated from Kalshi API every scan
+            "peak":            0.0,   # highest balance ever seen — never decreases
+            "initial_balance": 0.0,   # set once on first API sync, never changes
         },
         "paper": {
-            "balance": config.PAPER_BANKROLL_START,
-            "peak":    config.PAPER_BANKROLL_START,
+            "balance":         config.PAPER_BANKROLL_START,
+            "peak":            config.PAPER_BANKROLL_START,
+            "initial_balance": config.PAPER_BANKROLL_START,
         },
         "live_stopped": False,
         "updated_at":   "",
@@ -83,11 +85,17 @@ def sync_live_balance(api) -> Optional[float]:
 
     br = load_bankroll()
 
-    if br["live"]["peak"] == 0.0:
-        br["live"]["peak"] = total
-        log(f"Live bankroll initialised: ${total:.2f}  (peak baseline set, total portfolio)")
-    elif total > br["live"]["peak"]:
-        log(f"New peak portfolio value: ${total:.2f}  (was ${br['live']['peak']:.2f})")
+    first_run = br["live"]["peak"] == 0.0
+    if first_run:
+        br["live"]["peak"]            = total
+        br["live"]["initial_balance"] = total
+        log(f"Live bankroll initialised: ${total:.2f}  (peak + initial_balance set)")
+    else:
+        # Set initial_balance if missing from older bankroll.json
+        if not br["live"].get("initial_balance"):
+            br["live"]["initial_balance"] = br["live"]["peak"]
+        if total > br["live"]["peak"]:
+            log(f"New peak portfolio value: ${total:.2f}  (was ${br['live']['peak']:.2f})")
 
     br["live"]["balance"] = round(total, 2)           # total for drawdown logic
     br["live"]["cash"]    = round(cash or 0, 2)       # cash-only for display
@@ -108,10 +116,8 @@ def check_drawdown_stop() -> bool:
 
     IMPORTANT: 'balance' is always the full portfolio total (cash + open position
     market value) as written by sync_live_balance() — never cash alone.
-
-    Hard floor: never trigger if current total >= STARTING_BANKROLL.
-    This prevents false triggers while the account is at or above the
-    initial deposit, regardless of what the peak says.
+    Pure peak-based logic: no hardcoded floor. Deposits auto-raise the peak
+    on the next scan, which raises the stop threshold proportionally.
     """
     br = load_bankroll()
 
@@ -123,10 +129,6 @@ def check_drawdown_stop() -> bool:
 
     # Wait for at least one real balance reading before enforcing
     if peak == 0.0 or current == 0.0:
-        return False
-
-    # Hard floor: never halt trading while the account is at or above starting deposit
-    if current >= config.STARTING_BANKROLL:
         return False
 
     stop_at = round(peak * (1.0 - config.DRAWDOWN_STOP_PCT), 2)

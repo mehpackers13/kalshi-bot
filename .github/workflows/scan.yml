@@ -57,7 +57,11 @@ jobs:
         run: |
           git config user.name  "kalshi-bot[actions]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add outcomes.csv bets_placed.csv bot.log data/ docs/data.json 2>/dev/null || true
+          # Clear assume-unchanged flags so git sees file modifications
+          git update-index --no-assume-unchanged docs/data.json data/bankroll.json 2>/dev/null || true
+          git add --force outcomes.csv bets_placed.csv bot.log data/ docs/data.json 2>/dev/null || true
+          echo "--- git status ---"
+          git status --short
           git diff --staged --quiet && echo "Nothing to commit." && exit 0
           git commit -m "📊 scan $(date -u '+%Y-%m-%d %H:%M UTC')"
           for attempt in 1 2 3; do

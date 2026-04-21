@@ -20,7 +20,6 @@ permissions:
 
 jobs:
 
-  # ── Job 1: Run the scan. No git operations here. ─────────────────────────
   scan:
     runs-on: ubuntu-latest
     steps:
@@ -28,6 +27,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
 
       - name: Set up Python 3.11
         uses: actions/setup-python@v5
@@ -52,42 +52,8 @@ jobs:
         if: always()
         run: python generate_data.py
 
-      - name: Upload outputs for commit job
-        uses: actions/upload-artifact@v4
-        with:
-          name: scan-data-${{ github.run_id }}
-          path: |
-            outcomes.csv
-            bets_placed.csv
-            bot.log
-            data/
-            docs/data.json
-          if-no-files-found: ignore
-          retention-days: 1
-
-  # ── Job 2: Fresh checkout → apply outputs → single atomic commit. ─────────
-  commit:
-    needs: scan
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Self-heal git state
-        run: |
-          rm -f .git/index.lock .git/MERGE_HEAD .git/rebase-merge/head-name 2>/dev/null || true
-          git rebase --abort 2>/dev/null || true
-          git checkout -- . 2>/dev/null || true
-
-      - name: Download scan outputs
-        uses: actions/download-artifact@v4
-        with:
-          name: scan-data-${{ github.run_id }}
-          path: .
-
       - name: Commit and push
+        if: always()
         run: |
           git config user.name  "kalshi-bot[actions]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -96,9 +62,8 @@ jobs:
           git commit -m "📊 scan $(date -u '+%Y-%m-%d %H:%M UTC')"
           for attempt in 1 2 3; do
             git fetch origin main
-            git rebase -X ours origin/main && git push && break
+            git rebase -X ours origin/main && git push && echo "Push succeeded on attempt $attempt." && break
             echo "Push attempt $attempt failed — retrying in 15s..."
             git rebase --abort 2>/dev/null || true
-            git checkout -- . 2>/dev/null || true
             sleep 15
           done

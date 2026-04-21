@@ -1994,3 +1994,48 @@ Total modelable markets evaluated: 0
 [2026-04-21 10:19:53 ET] [INFO] Scan complete — 3 alerts sent
 [2026-04-21 10:19:53 ET] [INFO] ============================================================
 [2026-04-21 10:19:53 ET] [INFO] Scan job complete
+[2026-04-21 11:53:37 ET] [INFO] Scan job starting
+[2026-04-21 11:53:37 ET] [INFO] Kalshi API key auth OK ✅  balance: $3.35
+[2026-04-21 11:53:37 ET] [INFO] ============================================================
+[2026-04-21 11:53:37 ET] [INFO] Starting market scan
+[2026-04-21 11:53:39 ET] [INFO] Portfolio value: $3.35 cash + $6.55 positions = $9.90
+[2026-04-21 11:53:39 ET] [INFO] Cash: $3.35  |  Positions: $6.55  |  Total: $9.90  |  Peak: $10.00
+[2026-04-21 11:53:39 ET] [INFO] Positions snapshot: 7 open position(s)
+[2026-04-21 11:53:40 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-21 11:53:49 ET] [INFO] Fetched 45434 open markets via events endpoint across 27 pages
+[2026-04-21 11:53:49 ET] [INFO] Fetched 45434 open markets
+[2026-04-21 11:53:49 ET] [INFO] Parsed 42096 valid markets
+[2026-04-21 11:53:49 ET] [INFO] Categories: {'Sports': 20079, 'Entertainment': 4972, 'Elections': 4770, 'Economics': 2756, 'Crypto': 2471, 'Politics': 1479, 'Mentions': 1379, 'Financials': 1293}
+[2026-04-21 11:53:55 ET] [INFO]   CPI model: threshold=10.0% TNX=4.30% → P=0.200
+[2026-04-21 11:54:22 ET] [INFO]   price model: BTC-USD spot=75726.07 target=100000.00 vol=34.1% T=6109.1h → P=0.164
+[2026-04-21 11:54:22 ET] [INFO]   price model: BTC-USD spot=75726.07 target=250000.00 vol=34.1% T=6109.1h → P=0.000
+[2026-04-21 11:54:22 ET] [INFO]   price model: BTC-USD spot=75726.07 target=200000.00 vol=34.1% T=6109.1h → P=0.000
+[2026-04-21 11:54:22 ET] [INFO]   price model: BTC-USD spot=75726.07 target=199999.00 vol=34.1% T=6109.1h → P=0.000
+[2026-04-21 11:55:15 ET] [INFO]   price model: BNB-USD spot=631.40 target=145.00 vol=31.3% T=940.1h → P=1.000
+[2026-04-21 11:55:15 ET] [INFO]   CPI model: threshold=0.2% TNX=4.30% → P=0.800
+[2026-04-21 11:55:40 ET] [INFO]   price model: BTC-USD spot=75657.98 target=65000.00 vol=34.1% T=228.1h → P=0.003
+[2026-04-21 11:55:40 ET] [INFO]   price model: BTC-USD spot=75657.98 target=62500.00 vol=34.1% T=228.1h → P=0.000
+[2026-04-21 11:55:40 ET] [INFO]   price model: BTC-USD spot=75657.98 target=85000.00 vol=34.1% T=228.1h → P=0.017
+[2026-04-21 11:56:06 ET] [INFO]   CPI model: threshold=0.3% TNX=4.30% → P=0.800
+[2026-04-21 11:56:06 ET] [INFO]   EDGE FOUND: KXJPMOMINF-26APR17-T-0.3 | implied=90.0% true=80.0% edge=-10.0% dir=NO conf=68
+[2026-04-21 11:56:21 ET] [INFO]   weather model: nyc max=59.0°F target=[51,52]°F days_out=0 σ=3.5°F → P=0.024
+[2026-04-21 11:56:21 ET] [INFO]   EDGE FOUND: KXHIGHNY-26APR21-B51.5 | implied=26.5% true=2.4% edge=-24.1% dir=NO conf=70
+[2026-04-21 11:56:22 ET] [INFO]   weather model: chicago max=73.0°F target=[75,76]°F days_out=0 σ=3.5°F → P=0.175
+[2026-04-21 11:56:22 ET] [INFO]   EDGE FOUND: KXHIGHCHI-26APR21-B75.5 | implied=33.5% true=17.5% edge=-16.0% dir=NO conf=70
+[2026-04-21 11:56:35 ET] [INFO]   price model: QQQ spot=646.68 target=26399.99 vol=21.7% T=4.1h → P=0.000
+[2026-04-21 11:56:35 ET] [INFO]   EDGE FOUND: KXNASDAQ100U-26APR21H1600-T26399.99 | implied=89.5% true=0.0% edge=-89.5% dir=NO conf=70
+[2026-04-21 11:56:35 ET] [INFO]   price model: QQQ spot=646.68 target=26499.99 vol=21.7% T=4.1h → P=0.000
+[2026-04-21 11:56:35 ET] [INFO]   EDGE FOUND: KXNASDAQ100U-26APR21H1600-T26499.99 | implied=74.0% true=0.0% edge=-74.0% dir=NO conf=70
+[2026-04-21 11:56:48 ET] [INFO] Checked 42001 markets | Modelable: 42001 | Edges found: 5
+[2026-04-21 11:56:48 ET] [INFO]   Skipping KXJPMOMINF-26APR17-T-0.3 — suggested bet too small to be meaningful
+[2026-04-21 11:56:49 ET] [INFO] [Discord] Trade alert sent: KXHIGHNY-26APR21-B51.5
+[2026-04-21 11:56:49 ET] [WARN] AUTO-BET SKIP KXHIGHNY-26APR21-B51.5: exposure 47.6% ≥ 25% limit ($9.00 of $18.90 in open positions)
+[2026-04-21 11:56:49 ET] [INFO] [Discord] Trade alert sent: KXHIGHCHI-26APR21-B75.5
+[2026-04-21 11:56:49 ET] [WARN] AUTO-BET SKIP KXHIGHCHI-26APR21-B75.5: exposure 47.6% ≥ 25% limit ($9.00 of $18.90 in open positions)
+[2026-04-21 11:56:49 ET] [INFO] [Discord] Trade alert sent: KXNASDAQ100U-26APR21H1600-T26399.99
+[2026-04-21 11:56:49 ET] [WARN] AUTO-BET SKIP KXNASDAQ100U-26APR21H1600-T26399.99: exposure 47.6% ≥ 25% limit ($9.00 of $18.90 in open positions)
+[2026-04-21 11:56:49 ET] [INFO] [Discord] Trade alert sent: KXNASDAQ100U-26APR21H1600-T26499.99
+[2026-04-21 11:56:50 ET] [WARN] AUTO-BET SKIP KXNASDAQ100U-26APR21H1600-T26499.99: exposure 47.6% ≥ 25% limit ($9.00 of $18.90 in open positions)
+[2026-04-21 11:56:50 ET] [INFO] Scan complete — 4 alerts sent
+[2026-04-21 11:56:50 ET] [INFO] ============================================================
+[2026-04-21 11:56:50 ET] [INFO] Scan job complete

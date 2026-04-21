@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-04-21T18:44:23.208176Z",
-  "last_scan_ts": "2026-04-21T18:44:23.208176Z",
+  "generated_at": "2026-04-21T20:13:34.540148Z",
+  "last_scan_ts": "2026-04-21T20:13:34.540148Z",
   "stats": {
-    "total_alerts": 1010,
+    "total_alerts": 1012,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -25,7 +25,7 @@
         "hit_rate": null
       },
       "Crypto": {
-        "total": 454,
+        "total": 455,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -55,7 +55,7 @@
         "hit_rate": null
       },
       "Commodities": {
-        "total": 1,
+        "total": 2,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -63,13 +63,13 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 213,
+        "total": 214,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "medium (15-25%)": {
-        "total": 262,
+        "total": 263,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -84,7 +84,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 9.9,
+      "balance": 9.99,
       "cash": 3.35,
       "peak": 10.0
     },
@@ -93,16 +93,58 @@
       "peak": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-04-21T18:41:10.994484Z",
+    "updated_at": "2026-04-21T20:10:20.119148Z",
     "_note": "Peak reset to stale balance (5.33). Next scan will update all values from Kalshi API."
   },
   "cash_bal": 3.35,
-  "position_value": 6.55,
-  "account_value": 9.9,
-  "live_pnl": -0.1,
+  "position_value": 6.64,
+  "account_value": 9.99,
+  "live_pnl": -0.01,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-04-21T20:13:34.271504Z",
+      "ticker": "KXBRENTW-26APR2417-T93.99",
+      "title": "Will the brent crude oil close price be above 93.99  USD/Bbl on Apr 24, 2026 at 5pm EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-20.1",
+      "implied_prob": "0.6",
+      "true_prob": "0.399",
+      "confidence": "75",
+      "suggested_live_dollars": "0.43",
+      "suggested_paper_dollars": "39.99",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "43",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-04-21T20:13:33.871063Z",
+      "ticker": "KXBTCMINMON-BTC-26APR30-6500000",
+      "title": "Will BTC trimmed mean be below $65000.00 by 11:59 PM ET on Apr 30, 2026?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-8.19",
+      "implied_prob": "0.085",
+      "true_prob": "0.0031",
+      "confidence": "63",
+      "suggested_live_dollars": "0.92",
+      "suggested_paper_dollars": "19.32",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "92",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-04-21T18:44:22.865534Z",
       "ticker": "FEDHIKE-26JUN30",
@@ -2248,6 +2290,48 @@
   ],
   "recent_alerts": [
     {
+      "timestamp": "2026-04-21T20:13:34.271504Z",
+      "ticker": "KXBRENTW-26APR2417-T93.99",
+      "title": "Will the brent crude oil close price be above 93.99  USD/Bbl on Apr 24, 2026 at 5pm EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-20.1",
+      "implied_prob": "0.6",
+      "true_prob": "0.399",
+      "confidence": "75",
+      "suggested_live_dollars": "0.43",
+      "suggested_paper_dollars": "39.99",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "43",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-04-21T20:13:33.871063Z",
+      "ticker": "KXBTCMINMON-BTC-26APR30-6500000",
+      "title": "Will BTC trimmed mean be below $65000.00 by 11:59 PM ET on Apr 30, 2026?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-8.19",
+      "implied_prob": "0.085",
+      "true_prob": "0.0031",
+      "confidence": "63",
+      "suggested_live_dollars": "0.92",
+      "suggested_paper_dollars": "19.32",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "92",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
       "timestamp": "2026-04-21T18:44:22.865534Z",
       "ticker": "FEDHIKE-26JUN30",
       "title": "Will the Federal Reserve hike rates by June 30, 2026?",
@@ -3254,48 +3338,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-04-21T02:24:40.617100Z",
-      "ticker": "KXABNB-26APRNEB-155000000",
-      "title": "Will Airbnb Inc. report above 155 million nights & experiences booked in Q1 2026?",
-      "category": "Companies",
-      "direction": "YES",
-      "edge_pct": "55.0",
-      "implied_prob": "0.45",
-      "true_prob": "1.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.46",
-      "suggested_paper_dollars": "49.68",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "46",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-04-21T02:24:40.328369Z",
-      "ticker": "KXABNB-26APRNEB-150000000",
-      "title": "Will Airbnb Inc. report above 150 million nights & experiences booked in Q1 2026?",
-      "category": "Companies",
-      "direction": "YES",
-      "edge_pct": "15.5",
-      "implied_prob": "0.845",
-      "true_prob": "1.0",
-      "confidence": "75",
-      "suggested_live_dollars": "0.85",
-      "suggested_paper_dollars": "39.95",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "85",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -3309,9 +3351,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 96,
+      "current_cents": 95,
       "dollars_risked": 0,
-      "current_value": 0.96,
+      "current_value": 0.95,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -3321,9 +3363,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 65,
+      "current_cents": 67,
       "dollars_risked": 0,
-      "current_value": 0.65,
+      "current_value": 0.67,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -3333,9 +3375,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 60,
+      "current_cents": 62,
       "dollars_risked": 0,
-      "current_value": 1.2,
+      "current_value": 1.24,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -3357,9 +3399,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 85,
+      "current_cents": 89,
       "dollars_risked": 0,
-      "current_value": 0.85,
+      "current_value": 0.89,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

@@ -13,7 +13,7 @@ import datetime
 from pathlib import Path
 from collections import defaultdict
 
-STARTING_BANKROLL = 10.0   # must match config.py
+STARTING_BANKROLL = 110.0  # updated after $100 deposit (April 2026); must match config.py
 
 BASE = Path(__file__).parent
 DOCS = BASE / "docs"

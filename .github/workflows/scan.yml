@@ -57,13 +57,12 @@ jobs:
         run: |
           git config user.name  "kalshi-bot[actions]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          # Clear assume-unchanged flags so git sees file modifications
-          git update-index --no-assume-unchanged docs/data.json data/bankroll.json 2>/dev/null || true
-          git add --force outcomes.csv bets_placed.csv bot.log data/ docs/data.json 2>/dev/null || true
-          echo "--- git status ---"
+          # Stage any newly created untracked files (positions.json, etc.)
+          git add data/positions.json 2>/dev/null || true
           git status --short
-          git diff --staged --quiet && echo "Nothing to commit." && exit 0
-          git commit -m "📊 scan $(date -u '+%Y-%m-%d %H:%M UTC')"
+          # -a commits ALL tracked modified files without needing git add
+          git diff --quiet HEAD && echo "Nothing to commit." && exit 0
+          git commit -a -m "📊 scan $(date -u '+%Y-%m-%d %H:%M UTC')"
           for attempt in 1 2 3; do
             git fetch origin main
             git rebase -X ours origin/main && git push && echo "Push succeeded on attempt $attempt." && break

@@ -1876,3 +1876,42 @@ Total modelable markets evaluated: 0
 [2026-04-20 23:24:41 ET] [INFO] Scan complete — 1 alerts sent
 [2026-04-20 23:24:41 ET] [INFO] ============================================================
 [2026-04-20 23:24:41 ET] [INFO] Scan job complete
+[2026-04-21 01:39:44 ET] [INFO] Scan job starting
+[2026-04-21 01:39:44 ET] [INFO] Kalshi API key auth OK ✅  balance: $3.35
+[2026-04-21 01:39:44 ET] [INFO] ============================================================
+[2026-04-21 01:39:44 ET] [INFO] Starting market scan
+[2026-04-21 01:39:45 ET] [INFO] Portfolio value: $3.35 cash + $6.61 positions = $9.96
+[2026-04-21 01:39:45 ET] [INFO] Cash: $3.35  |  Positions: $6.61  |  Total: $9.96  |  Peak: $10.00
+[2026-04-21 01:39:46 ET] [INFO] Positions snapshot: 7 open position(s)
+[2026-04-21 01:39:46 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-21 01:39:56 ET] [INFO] Fetched 43417 open markets via events endpoint across 27 pages
+[2026-04-21 01:39:56 ET] [INFO] Fetched 43417 open markets
+[2026-04-21 01:39:56 ET] [INFO] Parsed 40836 valid markets
+[2026-04-21 01:39:56 ET] [INFO] Categories: {'Sports': 19502, 'Entertainment': 4954, 'Elections': 4778, 'Economics': 2794, 'Crypto': 2497, 'Politics': 1482, 'Mentions': 1409, 'Financials': 813}
+[2026-04-21 01:40:01 ET] [INFO]   CPI model: threshold=10.0% TNX=4.25% → P=0.200
+[2026-04-21 01:40:26 ET] [INFO]   price model: SOL-USD spot=85.71 target=200.00 vol=48.9% T=6119.3h → P=0.019
+[2026-04-21 01:40:26 ET] [INFO]   EDGE FOUND: KXSOLMAXY-27JAN01-200 | implied=17.5% true=1.9% edge=-15.6% dir=NO conf=70
+[2026-04-21 01:40:27 ET] [INFO]   price model: BTC-USD spot=75883.16 target=100000.00 vol=34.7% T=6119.3h → P=0.171
+[2026-04-21 01:40:27 ET] [INFO]   price model: BTC-USD spot=75883.16 target=250000.00 vol=34.7% T=6119.3h → P=0.000
+[2026-04-21 01:40:27 ET] [INFO]   price model: BTC-USD spot=75883.16 target=200000.00 vol=34.7% T=6119.3h → P=0.000
+[2026-04-21 01:40:27 ET] [INFO]   price model: BTC-USD spot=75883.16 target=199999.00 vol=34.7% T=6119.3h → P=0.000
+[2026-04-21 01:41:17 ET] [INFO]   price model: BNB-USD spot=631.61 target=145.00 vol=32.1% T=950.3h → P=1.000
+[2026-04-21 01:41:18 ET] [INFO]   CPI model: threshold=0.2% TNX=4.25% → P=0.800
+[2026-04-21 01:41:40 ET] [INFO]   price model: BTC-USD spot=75883.58 target=65000.00 vol=34.7% T=238.3h → P=0.003
+[2026-04-21 01:41:40 ET] [INFO]   price model: BTC-USD spot=75883.58 target=62500.00 vol=34.7% T=238.3h → P=0.000
+[2026-04-21 01:41:40 ET] [INFO]   price model: BTC-USD spot=75883.58 target=85000.00 vol=34.7% T=238.3h → P=0.024
+[2026-04-21 01:41:40 ET] [INFO]   price model: BTC-USD spot=75883.58 target=87500.00 vol=34.7% T=238.3h → P=0.006
+[2026-04-21 01:41:42 ET] [INFO]   price model: CL=F spot=85.80 target=94.00 vol=99.2% T=231.3h → P=0.286
+[2026-04-21 01:41:42 ET] [INFO]   EDGE FOUND: KXBRENTMON-26APR3017-T94.99 | implied=46.0% true=28.6% edge=-17.4% dir=NO conf=75
+[2026-04-21 01:42:06 ET] [INFO]   CPI model: threshold=0.3% TNX=4.25% → P=0.800
+[2026-04-21 01:42:06 ET] [INFO]   CPI model: threshold=0.1% TNX=4.25% → P=0.800
+[2026-04-21 01:42:06 ET] [INFO]   EDGE FOUND: KXJPMOMINF-26APR17-T-0.1 | implied=90.5% true=80.0% edge=-10.5% dir=NO conf=68
+[2026-04-21 01:42:40 ET] [INFO] Checked 40748 markets | Modelable: 40748 | Edges found: 3
+[2026-04-21 01:42:40 ET] [INFO] [Discord] Trade alert sent: KXSOLMAXY-27JAN01-200
+[2026-04-21 01:42:40 ET] [WARN] AUTO-BET SKIP KXSOLMAXY-27JAN01-200: exposure 47.5% ≥ 25% limit ($9.00 of $18.96 in open positions)
+[2026-04-21 01:42:41 ET] [INFO] [Discord] Trade alert sent: KXBRENTMON-26APR3017-T94.99
+[2026-04-21 01:42:41 ET] [WARN] AUTO-BET SKIP KXBRENTMON-26APR3017-T94.99: exposure 47.5% ≥ 25% limit ($9.00 of $18.96 in open positions)
+[2026-04-21 01:42:41 ET] [INFO]   Skipping KXJPMOMINF-26APR17-T-0.1 — suggested bet too small to be meaningful
+[2026-04-21 01:42:41 ET] [INFO] Scan complete — 2 alerts sent
+[2026-04-21 01:42:41 ET] [INFO] ============================================================
+[2026-04-21 01:42:41 ET] [INFO] Scan job complete

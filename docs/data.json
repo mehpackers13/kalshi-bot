@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-04-21T03:24:42.109902Z",
-  "last_scan_ts": "2026-04-21T03:24:42.109902Z",
+  "generated_at": "2026-04-21T05:42:41.427303Z",
+  "last_scan_ts": "2026-04-21T05:42:41.427303Z",
   "stats": {
-    "total_alerts": 996,
+    "total_alerts": 998,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -25,7 +25,7 @@
         "hit_rate": null
       },
       "Crypto": {
-        "total": 453,
+        "total": 454,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -49,7 +49,7 @@
         "hit_rate": null
       },
       "Financials": {
-        "total": 68,
+        "total": 69,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,7 +69,7 @@
         "hit_rate": null
       },
       "medium (15-25%)": {
-        "total": 258,
+        "total": 260,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -84,7 +84,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 10.0,
+      "balance": 9.96,
       "cash": 3.35,
       "peak": 10.0
     },
@@ -93,16 +93,58 @@
       "peak": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-04-21T03:21:42.553499Z",
+    "updated_at": "2026-04-21T05:39:45.837487Z",
     "_note": "Peak reset to stale balance (5.33). Next scan will update all values from Kalshi API."
   },
   "cash_bal": 3.35,
-  "position_value": 6.65,
-  "account_value": 10.0,
-  "live_pnl": 0.0,
+  "position_value": 6.61,
+  "account_value": 9.96,
+  "live_pnl": -0.04,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-04-21T05:42:41.145723Z",
+      "ticker": "KXBRENTMON-26APR3017-T94.99",
+      "title": "Will the brent crude oil close price be above $94.99 on Apr 30, 2026 at 5pm EDT?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-17.44",
+      "implied_prob": "0.46",
+      "true_prob": "0.2856",
+      "confidence": "75",
+      "suggested_live_dollars": "0.58",
+      "suggested_paper_dollars": "39.44",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "58",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-04-21T05:42:40.733861Z",
+      "ticker": "KXSOLMAXY-27JAN01-200",
+      "title": "Will the spot price of Solana be above $200.00 before Jan 1, 2027 at 12:00 AM ET?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-15.6",
+      "implied_prob": "0.175",
+      "true_prob": "0.019",
+      "confidence": "70",
+      "suggested_live_dollars": "0.85",
+      "suggested_paper_dollars": "39.95",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "85",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-04-21T03:24:41.835797Z",
       "ticker": "KXEMERCUTS-26-T1",
@@ -1954,6 +1996,48 @@
   ],
   "recent_alerts": [
     {
+      "timestamp": "2026-04-21T05:42:41.145723Z",
+      "ticker": "KXBRENTMON-26APR3017-T94.99",
+      "title": "Will the brent crude oil close price be above $94.99 on Apr 30, 2026 at 5pm EDT?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-17.44",
+      "implied_prob": "0.46",
+      "true_prob": "0.2856",
+      "confidence": "75",
+      "suggested_live_dollars": "0.58",
+      "suggested_paper_dollars": "39.44",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "58",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-04-21T05:42:40.733861Z",
+      "ticker": "KXSOLMAXY-27JAN01-200",
+      "title": "Will the spot price of Solana be above $200.00 before Jan 1, 2027 at 12:00 AM ET?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-15.6",
+      "implied_prob": "0.175",
+      "true_prob": "0.019",
+      "confidence": "70",
+      "suggested_live_dollars": "0.85",
+      "suggested_paper_dollars": "39.95",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "85",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
       "timestamp": "2026-04-21T03:24:41.835797Z",
       "ticker": "KXEMERCUTS-26-T1",
       "title": "Will the Fed cut rates 1 times at emergency meetings?",
@@ -2960,48 +3044,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-04-21T02:24:36.915273Z",
-      "ticker": "KXRATECUTCOUNT-26DEC31-T0",
-      "title": "Will the Fed cut rates 0 times?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "14.6",
-      "implied_prob": "0.32",
-      "true_prob": "0.466",
-      "confidence": "78",
-      "suggested_live_dollars": "0.33",
-      "suggested_paper_dollars": "19.8",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "33",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-04-21T02:24:36.631849Z",
-      "ticker": "KXNASDAQ100Y-26DEC31H1600-T33000",
-      "title": "Will the Nasdaq-100 be above 33000 at the end of Dec 31, 2026 at 4pm EST?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-11.5",
-      "implied_prob": "0.115",
-      "true_prob": "0.0",
-      "confidence": "68",
-      "suggested_live_dollars": "0.9",
-      "suggested_paper_dollars": "19.8",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "90",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -3015,9 +3057,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 95,
+      "current_cents": 93,
       "dollars_risked": 0,
-      "current_value": 0.95,
+      "current_value": 0.93,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -3027,9 +3069,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 66,
+      "current_cents": 65,
       "dollars_risked": 0,
-      "current_value": 0.66,
+      "current_value": 0.65,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -3063,9 +3105,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 83,
+      "current_cents": 82,
       "dollars_risked": 0,
-      "current_value": 0.83,
+      "current_value": 0.82,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

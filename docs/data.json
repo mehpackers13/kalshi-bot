@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-04-21T02:24:49.564383Z",
-  "last_scan_ts": "2026-04-21T02:24:49.564383Z",
+  "generated_at": "2026-04-21T03:24:42.109902Z",
+  "last_scan_ts": "2026-04-21T03:24:42.109902Z",
   "stats": {
-    "total_alerts": 995,
+    "total_alerts": 996,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -13,7 +13,7 @@
         "hit_rate": null
       },
       "Economics": {
-        "total": 278,
+        "total": 279,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -75,7 +75,7 @@
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 525,
+        "total": 526,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -84,25 +84,46 @@
   },
   "bankroll": {
     "live": {
-      "balance": 9.98,
+      "balance": 10.0,
       "cash": 3.35,
-      "peak": 9.98
+      "peak": 10.0
     },
     "paper": {
       "balance": 1000.0,
       "peak": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-04-21T02:21:30.344662Z",
+    "updated_at": "2026-04-21T03:21:42.553499Z",
     "_note": "Peak reset to stale balance (5.33). Next scan will update all values from Kalshi API."
   },
   "cash_bal": 3.35,
-  "position_value": 6.63,
-  "account_value": 9.98,
-  "live_pnl": -0.02,
+  "position_value": 6.65,
+  "account_value": 10.0,
+  "live_pnl": 0.0,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-04-21T03:24:41.835797Z",
+      "ticker": "KXEMERCUTS-26-T1",
+      "title": "Will the Fed cut rates 1 times at emergency meetings?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "36.6",
+      "implied_prob": "0.1",
+      "true_prob": "0.466",
+      "confidence": "85",
+      "suggested_live_dollars": "0.39",
+      "suggested_paper_dollars": "49.92",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "13",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-04-21T02:24:49.267363Z",
       "ticker": "KXBTCMAX150-25-26DEC31-149999.99",
@@ -1933,6 +1954,27 @@
   ],
   "recent_alerts": [
     {
+      "timestamp": "2026-04-21T03:24:41.835797Z",
+      "ticker": "KXEMERCUTS-26-T1",
+      "title": "Will the Fed cut rates 1 times at emergency meetings?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "36.6",
+      "implied_prob": "0.1",
+      "true_prob": "0.466",
+      "confidence": "85",
+      "suggested_live_dollars": "0.39",
+      "suggested_paper_dollars": "49.92",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "13",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
       "timestamp": "2026-04-21T02:24:49.267363Z",
       "ticker": "KXBTCMAX150-25-26DEC31-149999.99",
       "title": "Will Bitcoin be above $149999.99 by Dec 31, 2026 at 11:59PM ET?",
@@ -2960,27 +3002,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-04-21T02:24:36.352627Z",
-      "ticker": "KXNASDAQ100Y-26DEC31H1600-T19000",
-      "title": "Will the Nasdaq-100 be below 19000 at the end of Dec 31, 2026 at 4pm EST?",
-      "category": "Financials",
-      "direction": "YES",
-      "edge_pct": "86.0",
-      "implied_prob": "0.14",
-      "true_prob": "1.0",
-      "confidence": "95",
-      "suggested_live_dollars": "0.45",
-      "suggested_paper_dollars": "49.95",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "15",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -3006,9 +3027,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 65,
+      "current_cents": 66,
       "dollars_risked": 0,
-      "current_value": 0.65,
+      "current_value": 0.66,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -3042,9 +3063,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 82,
+      "current_cents": 83,
       "dollars_risked": 0,
-      "current_value": 0.82,
+      "current_value": 0.83,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

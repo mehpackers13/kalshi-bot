@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-04-21T15:56:50.223954Z",
-  "last_scan_ts": "2026-04-21T15:56:50.223954Z",
+  "generated_at": "2026-04-21T17:16:02.326902Z",
+  "last_scan_ts": "2026-04-21T17:16:02.326902Z",
   "stats": {
-    "total_alerts": 1007,
+    "total_alerts": 1009,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -37,7 +37,7 @@
         "hit_rate": null
       },
       "Climate and Weather": {
-        "total": 127,
+        "total": 129,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -75,7 +75,7 @@
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 532,
+        "total": 534,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -84,7 +84,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 9.9,
+      "balance": 9.92,
       "cash": 3.35,
       "peak": 10.0
     },
@@ -93,16 +93,58 @@
       "peak": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-04-21T15:53:39.308109Z",
+    "updated_at": "2026-04-21T17:12:55.841164Z",
     "_note": "Peak reset to stale balance (5.33). Next scan will update all values from Kalshi API."
   },
   "cash_bal": 3.35,
-  "position_value": 6.55,
-  "account_value": 9.9,
-  "live_pnl": -0.1,
+  "position_value": 6.57,
+  "account_value": 9.92,
+  "live_pnl": -0.08,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-04-21T17:16:02.043711Z",
+      "ticker": "KXHIGHCHI-26APR21-B77.5",
+      "title": "Will the high temp in Chicago be 77-78\u00b0 on Apr 21, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-31.44",
+      "implied_prob": "0.415",
+      "true_prob": "0.1006",
+      "confidence": "80",
+      "suggested_live_dollars": "0.6",
+      "suggested_paper_dollars": "49.8",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "60",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-04-21T17:16:01.592085Z",
+      "ticker": "KXHIGHMIA-26APR21-B81.5",
+      "title": "Will the **high temp in Miami** be 81-82\u00b0 on Apr 21, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-38.95",
+      "implied_prob": "0.565",
+      "true_prob": "0.1755",
+      "confidence": "80",
+      "suggested_live_dollars": "0.48",
+      "suggested_paper_dollars": "49.92",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "48",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-04-21T15:56:49.921844Z",
       "ticker": "KXNASDAQ100U-26APR21H1600-T26499.99",
@@ -2185,6 +2227,48 @@
   ],
   "recent_alerts": [
     {
+      "timestamp": "2026-04-21T17:16:02.043711Z",
+      "ticker": "KXHIGHCHI-26APR21-B77.5",
+      "title": "Will the high temp in Chicago be 77-78\u00b0 on Apr 21, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-31.44",
+      "implied_prob": "0.415",
+      "true_prob": "0.1006",
+      "confidence": "80",
+      "suggested_live_dollars": "0.6",
+      "suggested_paper_dollars": "49.8",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "60",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-04-21T17:16:01.592085Z",
+      "ticker": "KXHIGHMIA-26APR21-B81.5",
+      "title": "Will the **high temp in Miami** be 81-82\u00b0 on Apr 21, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-38.95",
+      "implied_prob": "0.565",
+      "true_prob": "0.1755",
+      "confidence": "80",
+      "suggested_live_dollars": "0.48",
+      "suggested_paper_dollars": "49.92",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "48",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
       "timestamp": "2026-04-21T15:56:49.921844Z",
       "ticker": "KXNASDAQ100U-26APR21H1600-T26499.99",
       "title": "Will the Nasdaq-100 be above 26499.99 at the end of Apr 21, 2026 at 4pm EDT?",
@@ -3191,48 +3275,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-04-21T02:24:39.880556Z",
-      "ticker": "KXFEDDECISION-26JUN-C25",
-      "title": "Will the Federal Reserve Cut rates by 25bps at their June 2026 meeting?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "39.1",
-      "implied_prob": "0.075",
-      "true_prob": "0.466",
-      "confidence": "90",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "8",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-04-21T02:24:39.684103Z",
-      "ticker": "KXFEDDECISION-26JUL-H0",
-      "title": "Will the Federal Reserve Hike rates by 0bps at their July 2026 meeting?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-26.1",
-      "implied_prob": "0.795",
-      "true_prob": "0.534",
-      "confidence": "90",
-      "suggested_live_dollars": "0.42",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "21",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -3246,9 +3288,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 95,
+      "current_cents": 96,
       "dollars_risked": 0,
-      "current_value": 0.95,
+      "current_value": 0.96,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -3294,9 +3336,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 84,
+      "current_cents": 85,
       "dollars_risked": 0,
-      "current_value": 0.84,
+      "current_value": 0.85,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

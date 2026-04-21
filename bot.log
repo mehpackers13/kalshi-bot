@@ -1952,3 +1952,45 @@ Total modelable markets evaluated: 0
 [2026-04-21 08:08:13 ET] [INFO] Scan complete — 2 alerts sent
 [2026-04-21 08:08:13 ET] [INFO] ============================================================
 [2026-04-21 08:08:13 ET] [INFO] Scan job complete
+[2026-04-21 10:16:47 ET] [INFO] Scan job starting
+[2026-04-21 10:16:47 ET] [INFO] Kalshi API key auth OK ✅  balance: $3.35
+[2026-04-21 10:16:47 ET] [INFO] ============================================================
+[2026-04-21 10:16:47 ET] [INFO] Starting market scan
+[2026-04-21 10:16:49 ET] [INFO] Portfolio value: $3.35 cash + $6.58 positions = $9.93
+[2026-04-21 10:16:49 ET] [INFO] Cash: $3.35  |  Positions: $6.58  |  Total: $9.93  |  Peak: $10.00
+[2026-04-21 10:16:50 ET] [INFO] Positions snapshot: 7 open position(s)
+[2026-04-21 10:16:50 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-21 10:17:04 ET] [INFO] Fetched 45361 open markets via events endpoint across 27 pages
+[2026-04-21 10:17:04 ET] [INFO] Fetched 45361 open markets
+[2026-04-21 10:17:05 ET] [INFO] Parsed 42349 valid markets
+[2026-04-21 10:17:05 ET] [INFO] Categories: {'Sports': 20016, 'Entertainment': 5233, 'Elections': 4771, 'Economics': 2750, 'Crypto': 2491, 'Politics': 1472, 'Mentions': 1436, 'Financials': 1284}
+[2026-04-21 10:17:10 ET] [INFO]   CPI model: threshold=10.0% TNX=4.27% → P=0.200
+[2026-04-21 10:17:35 ET] [INFO]   price model: BTC-USD spot=76204.26 target=100000.00 vol=34.1% T=6110.7h → P=0.170
+[2026-04-21 10:17:35 ET] [INFO]   price model: BTC-USD spot=76204.26 target=250000.00 vol=34.1% T=6110.7h → P=0.000
+[2026-04-21 10:17:35 ET] [INFO]   price model: BTC-USD spot=76204.26 target=200000.00 vol=34.1% T=6110.7h → P=0.000
+[2026-04-21 10:17:35 ET] [INFO]   price model: BTC-USD spot=76204.26 target=199999.00 vol=34.1% T=6110.7h → P=0.000
+[2026-04-21 10:18:24 ET] [INFO]   price model: BNB-USD spot=633.00 target=145.00 vol=31.3% T=941.7h → P=1.000
+[2026-04-21 10:18:24 ET] [INFO]   CPI model: threshold=0.2% TNX=4.27% → P=0.800
+[2026-04-21 10:18:47 ET] [INFO]   price model: BTC-USD spot=76275.54 target=65000.00 vol=34.1% T=229.7h → P=0.002
+[2026-04-21 10:18:47 ET] [INFO]   price model: BTC-USD spot=76275.54 target=62500.00 vol=34.1% T=229.7h → P=0.000
+[2026-04-21 10:18:47 ET] [INFO]   price model: BTC-USD spot=76275.54 target=85000.00 vol=34.1% T=229.7h → P=0.025
+[2026-04-21 10:18:47 ET] [INFO]   price model: BTC-USD spot=76275.54 target=87500.00 vol=34.1% T=229.7h → P=0.006
+[2026-04-21 10:19:13 ET] [INFO]   CPI model: threshold=0.3% TNX=4.27% → P=0.800
+[2026-04-21 10:19:13 ET] [INFO]   EDGE FOUND: KXJPMOMINF-26APR17-T-0.3 | implied=88.5% true=80.0% edge=-8.5% dir=NO conf=68
+[2026-04-21 10:19:27 ET] [INFO]   weather model: miami max=82.0°F target=[79,80]°F days_out=0 σ=3.5°F → P=0.175
+[2026-04-21 10:19:27 ET] [INFO]   EDGE FOUND: KXHIGHMIA-26APR21-B79.5 | implied=66.5% true=17.5% edge=-49.0% dir=NO conf=80
+[2026-04-21 10:19:39 ET] [INFO]   price model: SPY spot=710.91 target=7100.00 vol=17.8% T=5.7h → P=0.000
+[2026-04-21 10:19:39 ET] [INFO]   EDGE FOUND: KXINXU-26APR21H1600-T7099.9999 | implied=85.5% true=0.0% edge=-85.5% dir=NO conf=70
+[2026-04-21 10:19:39 ET] [INFO]   price model: SPY spot=710.91 target=7125.00 vol=17.8% T=5.7h → P=0.000
+[2026-04-21 10:19:39 ET] [INFO]   EDGE FOUND: KXINXU-26APR21H1600-T7124.9999 | implied=66.0% true=0.0% edge=-66.0% dir=NO conf=70
+[2026-04-21 10:19:51 ET] [INFO] Checked 42257 markets | Modelable: 42257 | Edges found: 4
+[2026-04-21 10:19:52 ET] [INFO]   Skipping KXJPMOMINF-26APR17-T-0.3 — suggested bet too small to be meaningful
+[2026-04-21 10:19:52 ET] [INFO] [Discord] Trade alert sent: KXHIGHMIA-26APR21-B79.5
+[2026-04-21 10:19:52 ET] [WARN] AUTO-BET SKIP KXHIGHMIA-26APR21-B79.5: exposure 47.5% ≥ 25% limit ($9.00 of $18.93 in open positions)
+[2026-04-21 10:19:52 ET] [INFO] [Discord] Trade alert sent: KXINXU-26APR21H1600-T7099.9999
+[2026-04-21 10:19:52 ET] [WARN] AUTO-BET SKIP KXINXU-26APR21H1600-T7099.9999: exposure 47.5% ≥ 25% limit ($9.00 of $18.93 in open positions)
+[2026-04-21 10:19:52 ET] [INFO] [Discord] Trade alert sent: KXINXU-26APR21H1600-T7124.9999
+[2026-04-21 10:19:53 ET] [WARN] AUTO-BET SKIP KXINXU-26APR21H1600-T7124.9999: exposure 47.5% ≥ 25% limit ($9.00 of $18.93 in open positions)
+[2026-04-21 10:19:53 ET] [INFO] Scan complete — 3 alerts sent
+[2026-04-21 10:19:53 ET] [INFO] ============================================================
+[2026-04-21 10:19:53 ET] [INFO] Scan job complete

@@ -12,6 +12,7 @@ from pathlib import Path
 from typing import Optional
 
 import config
+import bankroll
 from logger import log
 
 FIELDNAMES = [
@@ -84,7 +85,7 @@ def auto_resolve_outcomes(api) -> int:
         if ticker and result:
             finalized_map[ticker] = result.lower()
 
-    unit_size = config.STARTING_BANKROLL * 0.01  # 1u = 1% of starting bankroll
+    unit_size = bankroll.live_peak() * 0.01  # 1u = 1% of peak balance (auto-scales with deposits)
     resolved_count = 0
     updated_rows = []
     for row in rows:

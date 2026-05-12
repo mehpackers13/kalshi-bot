@@ -39,7 +39,6 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run scan
-        continue-on-error: true
         env:
           KALSHI_API_KEY_ID:         ${{ secrets.KALSHI_API_KEY_ID }}
           KALSHI_PRIVATE_KEY:        ${{ secrets.KALSHI_PRIVATE_KEY }}

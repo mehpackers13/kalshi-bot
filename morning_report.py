@@ -37,7 +37,7 @@ def run(api) -> None:
     # Calculate unit total
     from outcomes import read_all as _read_all
     all_outcomes = _read_all()
-    unit_size = config.STARTING_BANKROLL * 0.01
+    unit_size = load_bankroll()["live"].get("peak", 10.0) * 0.01
     unit_total = sum(
         float(r.get("units_pl") or 0)
         for r in all_outcomes if r.get("outcome") in ("0", "1")

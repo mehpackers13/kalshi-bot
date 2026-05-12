@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-12T18:27:21.048347Z",
-  "last_scan_ts": "2026-05-12T18:27:21.048347Z",
+  "generated_at": "2026-05-12T20:20:39.716938Z",
+  "last_scan_ts": "2026-05-12T20:20:39.716938Z",
   "stats": {
-    "total_alerts": 1111,
+    "total_alerts": 1113,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -37,7 +37,7 @@
         "hit_rate": null
       },
       "Climate and Weather": {
-        "total": 141,
+        "total": 142,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -55,7 +55,7 @@
         "hit_rate": null
       },
       "Commodities": {
-        "total": 11,
+        "total": 12,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -63,7 +63,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 228,
+        "total": 229,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -75,7 +75,7 @@
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 603,
+        "total": 604,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -84,7 +84,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 10.25,
+      "balance": 10.21,
       "cash": 5.35,
       "peak": 10.81,
       "initial_balance": 10.0
@@ -95,15 +95,57 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-05-12T18:23:16.512549Z"
+    "updated_at": "2026-05-12T20:16:44.776432Z"
   },
   "cash_bal": 5.35,
-  "position_value": 4.9,
-  "account_value": 10.25,
-  "live_pnl": 0.25,
+  "position_value": 4.86,
+  "account_value": 10.21,
+  "live_pnl": 0.21,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-05-12T20:20:39.421552Z",
+      "ticker": "KXHIGHCHI-26MAY12-B73.5",
+      "title": "Will the high temp in Chicago be 73-74\u00b0 on May 12, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-59.93",
+      "implied_prob": "0.805",
+      "true_prob": "0.2057",
+      "confidence": "80",
+      "suggested_live_dollars": "0.4",
+      "suggested_paper_dollars": "50.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "20",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-12T20:20:39.162510Z",
+      "ticker": "KXBRENTMON-26MAY2917-T110.99",
+      "title": "Will the brent crude oil close price be above 110.99  USD/Bbl on May 29, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-8.64",
+      "implied_prob": "0.39",
+      "true_prob": "0.3036",
+      "confidence": "68",
+      "suggested_live_dollars": "0.64",
+      "suggested_paper_dollars": "19.84",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "64",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-05-12T18:27:20.741365Z",
       "ticker": "KXBRENTD-26MAY1217-T107",
@@ -2102,6 +2144,48 @@
   ],
   "recent_alerts": [
     {
+      "timestamp": "2026-05-12T20:20:39.421552Z",
+      "ticker": "KXHIGHCHI-26MAY12-B73.5",
+      "title": "Will the high temp in Chicago be 73-74\u00b0 on May 12, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-59.93",
+      "implied_prob": "0.805",
+      "true_prob": "0.2057",
+      "confidence": "80",
+      "suggested_live_dollars": "0.4",
+      "suggested_paper_dollars": "50.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "20",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-12T20:20:39.162510Z",
+      "ticker": "KXBRENTMON-26MAY2917-T110.99",
+      "title": "Will the brent crude oil close price be above 110.99  USD/Bbl on May 29, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-8.64",
+      "implied_prob": "0.39",
+      "true_prob": "0.3036",
+      "confidence": "68",
+      "suggested_live_dollars": "0.64",
+      "suggested_paper_dollars": "19.84",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "64",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
       "timestamp": "2026-05-12T18:27:20.741365Z",
       "ticker": "KXBRENTD-26MAY1217-T107",
       "title": "Will the brent crude oil close price be above 107  USD/Bbl on May 12, 2026 at 5:00 PM EDT?",
@@ -3108,48 +3192,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-05-12T17:48:06.312350Z",
-      "ticker": "KXTSLA-26JULPROD-420000.0",
-      "title": "Will Tesla Inc. report above 420000 total production in Q2 2026?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-60.0",
-      "implied_prob": "0.6",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.43",
-      "suggested_paper_dollars": "49.88",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "43",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-12T17:48:05.767465Z",
-      "ticker": "KXTSLA-26JULPROD-400000.0",
-      "title": "Will Tesla Inc. report above 400000 total production in Q2 2026?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-69.0",
-      "implied_prob": "0.69",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.33",
-      "suggested_paper_dollars": "49.83",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "33",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -3163,9 +3205,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 67,
+      "current_cents": 66,
       "dollars_risked": 0,
-      "current_value": 0.67,
+      "current_value": 0.66,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -3175,9 +3217,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 67,
+      "current_cents": 66,
       "dollars_risked": 0,
-      "current_value": 1.34,
+      "current_value": 1.32,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -3187,9 +3229,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 58,
+      "current_cents": 57,
       "dollars_risked": 0,
-      "current_value": 1.16,
+      "current_value": 1.14,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -3211,9 +3253,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 84,
+      "current_cents": 85,
       "dollars_risked": 0,
-      "current_value": 0.84,
+      "current_value": 0.85,
       "pl_dollars": 0.0,
       "timestamp": ""
     }

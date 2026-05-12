@@ -4598,3 +4598,39 @@ Total modelable markets evaluated: 0
 [2026-05-12 14:27:20 ET] [INFO] Scan complete — 3 alerts sent
 [2026-05-12 14:27:20 ET] [INFO] ============================================================
 [2026-05-12 14:27:20 ET] [INFO] Scan job complete
+[2026-05-12 16:16:43 ET] [INFO] Scan job starting
+[2026-05-12 16:16:43 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-05-12 16:16:43 ET] [INFO] ============================================================
+[2026-05-12 16:16:43 ET] [INFO] Starting market scan
+[2026-05-12 16:16:44 ET] [INFO] Portfolio value: $5.35 cash + $4.86 positions = $10.21
+[2026-05-12 16:16:44 ET] [INFO] Cash: $5.35  |  Positions: $4.86  |  Total: $10.21  |  Peak: $10.81
+[2026-05-12 16:16:45 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-05-12 16:16:45 ET] [WARN] API GET /markets → HTTP 400
+[2026-05-12 16:16:58 ET] [INFO] Fetched 55016 open markets via events endpoint across 36 pages
+[2026-05-12 16:16:58 ET] [INFO] Fetched 55016 open markets
+[2026-05-12 16:16:59 ET] [INFO] Parsed 49895 valid markets
+[2026-05-12 16:16:59 ET] [INFO] Categories: {'Sports': 22855, 'Elections': 11428, 'Entertainment': 6766, 'Economics': 2635, 'Crypto': 1635, 'Politics': 1502, 'Commodities': 708, 'Climate and Weather': 626}
+[2026-05-12 16:17:05 ET] [INFO]   CPI model: threshold=10.0% TNX=4.46% → P=0.200
+[2026-05-12 16:18:07 ET] [INFO]   fed model: implied_rate=3.620% current≈3.603% diff=1.7bps → P=0.466
+[2026-05-12 16:18:07 ET] [INFO]   fed model: implied_rate=3.620% current≈3.603% diff=1.7bps → P=0.466
+[2026-05-12 16:18:08 ET] [INFO]   fed model: implied_rate=3.620% current≈3.603% diff=1.7bps → P=0.466
+[2026-05-12 16:18:12 ET] [INFO]   price model: ETH-USD spot=2285.24 target=6000.00 vol=28.5% T=5600.7h → P=0.000
+[2026-05-12 16:18:12 ET] [INFO]   price model: BTC-USD spot=80777.52 target=100000.00 vol=22.6% T=5600.7h → P=0.119
+[2026-05-12 16:18:13 ET] [INFO]   price model: BTC-USD spot=80777.52 target=250000.00 vol=22.6% T=5600.7h → P=0.000
+[2026-05-12 16:18:13 ET] [INFO]   price model: BTC-USD spot=80777.52 target=200000.00 vol=22.6% T=5600.7h → P=0.000
+[2026-05-12 16:18:13 ET] [INFO]   price model: BTC-USD spot=80777.52 target=199999.00 vol=22.6% T=5600.7h → P=0.000
+[2026-05-12 16:19:29 ET] [INFO]   price model: CL=F spot=102.39 target=110.99 vol=72.6% T=408.7h → P=0.304
+[2026-05-12 16:19:29 ET] [INFO]   EDGE FOUND: KXBRENTMON-26MAY2917-T110.99 | implied=39.0% true=30.4% edge=-8.6% dir=NO conf=68
+[2026-05-12 16:19:30 ET] [INFO]   CPI model: threshold=0.2% TNX=4.46% → P=0.800
+[2026-05-12 16:20:12 ET] [INFO]   weather model: nyc can't parse temp condition from title
+[2026-05-12 16:20:13 ET] [INFO]   weather model: chicago max=75.0°F target=[73,74]°F days_out=0 σ=3.5°F → P=0.206
+[2026-05-12 16:20:13 ET] [INFO]   EDGE FOUND: KXHIGHCHI-26MAY12-B73.5 | implied=80.5% true=20.6% edge=-59.9% dir=NO conf=80
+[2026-05-12 16:20:38 ET] [INFO]   fed model: implied_rate=3.620% current≈3.603% diff=1.7bps → P=0.534
+[2026-05-12 16:20:38 ET] [INFO] Checked 49804 markets | Modelable: 49804 | Edges found: 2
+[2026-05-12 16:20:39 ET] [INFO] [Discord] Trade alert sent: KXBRENTMON-26MAY2917-T110.99
+[2026-05-12 16:20:39 ET] [WARN] AUTO-BET SKIP KXBRENTMON-26MAY2917-T110.99: exposure 40.7% ≥ 25% limit ($7.00 of $17.21 in open positions)
+[2026-05-12 16:20:39 ET] [INFO] [Discord] Trade alert sent: KXHIGHCHI-26MAY12-B73.5
+[2026-05-12 16:20:39 ET] [WARN] AUTO-BET SKIP KXHIGHCHI-26MAY12-B73.5: exposure 40.7% ≥ 25% limit ($7.00 of $17.21 in open positions)
+[2026-05-12 16:20:39 ET] [INFO] Scan complete — 2 alerts sent
+[2026-05-12 16:20:39 ET] [INFO] ============================================================
+[2026-05-12 16:20:39 ET] [INFO] Scan job complete

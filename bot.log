@@ -4634,3 +4634,37 @@ Total modelable markets evaluated: 0
 [2026-05-12 16:20:39 ET] [INFO] Scan complete — 2 alerts sent
 [2026-05-12 16:20:39 ET] [INFO] ============================================================
 [2026-05-12 16:20:39 ET] [INFO] Scan job complete
+[2026-05-12 17:51:38 ET] [INFO] Scan job starting
+[2026-05-12 17:51:38 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-05-12 17:51:38 ET] [INFO] ============================================================
+[2026-05-12 17:51:38 ET] [INFO] Starting market scan
+[2026-05-12 17:51:39 ET] [INFO] Portfolio value: $5.35 cash + $4.86 positions = $10.21
+[2026-05-12 17:51:39 ET] [INFO] Cash: $5.35  |  Positions: $4.86  |  Total: $10.21  |  Peak: $10.81
+[2026-05-12 17:51:39 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-05-12 17:51:39 ET] [WARN] API GET /markets → HTTP 400
+[2026-05-12 17:51:53 ET] [INFO] Fetched 57337 open markets via events endpoint across 37 pages
+[2026-05-12 17:51:53 ET] [INFO] Fetched 57337 open markets
+[2026-05-12 17:51:53 ET] [INFO] Parsed 52100 valid markets
+[2026-05-12 17:51:53 ET] [INFO] Categories: {'Sports': 24546, 'Elections': 11428, 'Entertainment': 6816, 'Economics': 2636, 'Crypto': 2167, 'Politics': 1511, 'Climate and Weather': 613, 'Commodities': 585}
+[2026-05-12 17:51:59 ET] [INFO]   CPI model: threshold=10.0% TNX=4.46% → P=0.200
+[2026-05-12 17:53:03 ET] [INFO]   fed model: implied_rate=3.625% current≈3.603% diff=2.2bps → P=0.456
+[2026-05-12 17:53:03 ET] [INFO]   EDGE FOUND: KXSUSPENDGASTAX-26MAY-JUL01 | implied=33.5% true=45.6% edge=+12.1% dir=YES conf=68
+[2026-05-12 17:53:03 ET] [INFO]   fed model: implied_rate=3.625% current≈3.603% diff=2.2bps → P=0.456
+[2026-05-12 17:53:03 ET] [INFO]   fed model: implied_rate=3.625% current≈3.603% diff=2.2bps → P=0.456
+[2026-05-12 17:53:08 ET] [INFO]   price model: ETH-USD spot=2283.33 target=6000.00 vol=28.5% T=5599.1h → P=0.000
+[2026-05-12 17:53:08 ET] [INFO]   price model: BTC-USD spot=80511.90 target=100000.00 vol=22.8% T=5599.1h → P=0.118
+[2026-05-12 17:53:08 ET] [INFO]   price model: BTC-USD spot=80511.90 target=250000.00 vol=22.8% T=5599.1h → P=0.000
+[2026-05-12 17:53:08 ET] [INFO]   price model: BTC-USD spot=80511.90 target=200000.00 vol=22.8% T=5599.1h → P=0.000
+[2026-05-12 17:53:09 ET] [INFO]   price model: BTC-USD spot=80511.90 target=199999.00 vol=22.8% T=5599.1h → P=0.000
+[2026-05-12 17:54:26 ET] [INFO]   CPI model: threshold=0.2% TNX=4.46% → P=0.800
+[2026-05-12 17:55:14 ET] [INFO]   weather model: philadelphia max=74.0°F target=[70,71]°F days_out=0 σ=3.5°F → P=0.138
+[2026-05-12 17:55:14 ET] [INFO]   EDGE FOUND: KXHIGHPHIL-26MAY12-B70.5 | implied=90.0% true=13.8% edge=-76.2% dir=NO conf=80
+[2026-05-12 17:55:44 ET] [INFO]   fed model: implied_rate=3.625% current≈3.603% diff=2.2bps → P=0.544
+[2026-05-12 17:55:45 ET] [INFO] Checked 52011 markets | Modelable: 52011 | Edges found: 2
+[2026-05-12 17:55:45 ET] [INFO] [Discord] Trade alert sent: KXSUSPENDGASTAX-26MAY-JUL01
+[2026-05-12 17:55:45 ET] [WARN] AUTO-BET SKIP KXSUSPENDGASTAX-26MAY-JUL01: exposure 40.7% ≥ 25% limit ($7.00 of $17.21 in open positions)
+[2026-05-12 17:55:45 ET] [INFO] [Discord] Trade alert sent: KXHIGHPHIL-26MAY12-B70.5
+[2026-05-12 17:55:45 ET] [WARN] AUTO-BET SKIP KXHIGHPHIL-26MAY12-B70.5: exposure 40.7% ≥ 25% limit ($7.00 of $17.21 in open positions)
+[2026-05-12 17:55:45 ET] [INFO] Scan complete — 2 alerts sent
+[2026-05-12 17:55:45 ET] [INFO] ============================================================
+[2026-05-12 17:55:45 ET] [INFO] Scan job complete

@@ -5377,3 +5377,31 @@ Total modelable markets evaluated: 0
 [2026-05-13 18:00:23 ET] [INFO] Scan complete — 2 alerts sent
 [2026-05-13 18:00:23 ET] [INFO] ============================================================
 [2026-05-13 18:00:24 ET] [INFO] Scan job complete
+[2026-05-13 19:13:26 ET] [INFO] Scan job starting
+[2026-05-13 19:13:26 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-05-13 19:13:26 ET] [INFO] ============================================================
+[2026-05-13 19:13:26 ET] [INFO] Starting market scan
+[2026-05-13 19:13:27 ET] [INFO] Portfolio value: $5.35 cash + $5.01 positions = $10.36
+[2026-05-13 19:13:27 ET] [INFO] Cash: $5.35  |  Positions: $5.01  |  Total: $10.36  |  Peak: $10.81
+[2026-05-13 19:13:28 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-05-13 19:13:28 ET] [WARN] API GET /markets → HTTP 400
+[2026-05-13 19:13:43 ET] [INFO] Fetched 59369 open markets via events endpoint across 36 pages
+[2026-05-13 19:13:43 ET] [INFO] Fetched 59369 open markets
+[2026-05-13 19:13:43 ET] [INFO] Parsed 54248 valid markets
+[2026-05-13 19:13:43 ET] [INFO] Categories: {'Sports': 26187, 'Elections': 11373, 'Entertainment': 7287, 'Economics': 2636, 'Crypto': 2208, 'Politics': 1495, 'Mentions': 609, 'Climate and Weather': 608}
+[2026-05-13 19:13:50 ET] [INFO]   CPI model: threshold=10.0% TNX=4.48% → P=0.200
+[2026-05-13 19:14:54 ET] [INFO]   fed model: implied_rate=3.630% current≈3.600% diff=3.0bps → P=0.440
+[2026-05-13 19:14:59 ET] [INFO]   price model: ETH-USD spot=2258.99 target=6000.00 vol=28.3% T=5573.8h → P=0.000
+[2026-05-13 19:14:59 ET] [INFO]   price model: BTC-USD spot=79342.41 target=100000.00 vol=23.3% T=5573.8h → P=0.107
+[2026-05-13 19:14:59 ET] [INFO]   price model: BTC-USD spot=79342.41 target=250000.00 vol=23.3% T=5573.8h → P=0.000
+[2026-05-13 19:15:00 ET] [INFO]   price model: BTC-USD spot=79342.41 target=200000.00 vol=23.3% T=5573.8h → P=0.000
+[2026-05-13 19:15:00 ET] [INFO]   price model: BTC-USD spot=79342.41 target=199999.00 vol=23.3% T=5573.8h → P=0.000
+[2026-05-13 19:16:05 ET] [INFO]   CPI model: threshold=2.8% TNX=4.48% → P=0.668
+[2026-05-13 19:16:05 ET] [INFO]   CPI model: threshold=2.9% TNX=4.48% → P=0.658
+[2026-05-13 19:16:05 ET] [INFO]   EDGE FOUND: KXCPICOREYOY-26MAY-T2.9 | implied=32.5% true=65.8% edge=+33.3% dir=YES conf=85
+[2026-05-13 19:17:44 ET] [INFO] Checked 54148 markets | Modelable: 54148 | Edges found: 1
+[2026-05-13 19:17:45 ET] [INFO] [Discord] Trade alert sent: KXCPICOREYOY-26MAY-T2.9
+[2026-05-13 19:17:45 ET] [WARN] AUTO-BET SKIP KXCPICOREYOY-26MAY-T2.9: exposure 40.3% ≥ 25% limit ($7.00 of $17.36 in open positions)
+[2026-05-13 19:17:45 ET] [INFO] Scan complete — 1 alerts sent
+[2026-05-13 19:17:45 ET] [INFO] ============================================================
+[2026-05-13 19:17:45 ET] [INFO] Scan job complete

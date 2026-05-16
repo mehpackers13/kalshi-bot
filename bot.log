@@ -7671,3 +7671,36 @@ Total modelable markets evaluated: 0
 [2026-05-16 17:33:15 ET] [INFO] Scan complete — 1 alerts sent
 [2026-05-16 17:33:15 ET] [INFO] ============================================================
 [2026-05-16 17:33:15 ET] [INFO] Scan job complete
+[2026-05-16 18:25:49 ET] [INFO] Scan job starting
+[2026-05-16 18:25:49 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-05-16 18:25:49 ET] [INFO] ============================================================
+[2026-05-16 18:25:49 ET] [INFO] Starting market scan
+[2026-05-16 18:25:50 ET] [INFO] Portfolio value: $5.35 cash + $5.15 positions = $10.50
+[2026-05-16 18:25:50 ET] [INFO] Cash: $5.35  |  Positions: $5.15  |  Total: $10.50  |  Peak: $10.81
+[2026-05-16 18:25:50 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-05-16 18:25:51 ET] [WARN] API GET /markets → HTTP 400
+[2026-05-16 18:26:05 ET] [INFO] Fetched 58973 open markets via events endpoint across 38 pages
+[2026-05-16 18:26:05 ET] [INFO] Fetched 58973 open markets
+[2026-05-16 18:26:06 ET] [INFO] Parsed 53132 valid markets
+[2026-05-16 18:26:06 ET] [INFO] Categories: {'Sports': 24146, 'Elections': 11409, 'Entertainment': 7552, 'Economics': 2709, 'Crypto': 2247, 'Politics': 1560, 'Climate and Weather': 763, 'Commodities': 617}
+[2026-05-16 18:26:15 ET] [INFO]   CPI model: threshold=10.0% TNX=4.59% → P=0.200
+[2026-05-16 18:27:56 ET] [INFO]   price model: ETH-USD spot=2180.96 target=6000.00 vol=27.6% T=5502.6h → P=0.000
+[2026-05-16 18:27:57 ET] [INFO]   price model: BTC-USD spot=78229.12 target=100000.00 vol=24.5% T=5502.6h → P=0.103
+[2026-05-16 18:27:57 ET] [INFO]   price model: BTC-USD spot=78229.12 target=200000.00 vol=24.5% T=5502.6h → P=0.000
+[2026-05-16 18:27:58 ET] [INFO]   price model: BTC-USD spot=78229.12 target=199999.00 vol=24.5% T=5502.5h → P=0.000
+[2026-05-16 18:29:04 ET] [INFO]   price model: TSLA spot=422.24 target=460000.00 vol=41.5% T=2325.6h → P=0.000
+[2026-05-16 18:29:04 ET] [INFO]   EDGE FOUND: KXTSLA-26JULDELIV-460000.0 | implied=33.0% true=0.0% edge=-33.0% dir=NO conf=85
+[2026-05-16 18:29:36 ET] [INFO]   CPI model: threshold=2.8% TNX=4.59% → P=0.679
+[2026-05-16 18:29:48 ET] [INFO]   price model: BTC-USD spot=78238.55 target=87500.00 vol=24.5% T=365.6h → P=0.013
+[2026-05-16 18:30:01 ET] [INFO]   CPI model: threshold=0.2% TNX=4.59% → P=0.800
+[2026-05-16 18:31:00 ET] [INFO]   weather model: denver max=79.0°F target=[77,78]°F days_out=0 σ=3.5°F → P=0.206
+[2026-05-16 18:31:00 ET] [INFO]   EDGE FOUND: KXHIGHDEN-26MAY16-B77.5 | implied=93.0% true=20.6% edge=-72.4% dir=NO conf=80
+[2026-05-16 18:31:50 ET] [INFO]   fed model: implied_rate=3.628% current≈3.588% diff=4.0bps → P=0.579
+[2026-05-16 18:31:51 ET] [INFO] Checked 53026 markets | Modelable: 53026 | Edges found: 2
+[2026-05-16 18:31:51 ET] [INFO] [Discord] Trade alert sent: KXTSLA-26JULDELIV-460000.0
+[2026-05-16 18:31:52 ET] [WARN] AUTO-BET SKIP KXTSLA-26JULDELIV-460000.0: exposure 40.0% ≥ 25% limit ($7.00 of $17.50 in open positions)
+[2026-05-16 18:31:52 ET] [INFO] [Discord] Trade alert sent: KXHIGHDEN-26MAY16-B77.5
+[2026-05-16 18:31:52 ET] [WARN] AUTO-BET SKIP KXHIGHDEN-26MAY16-B77.5: exposure 40.0% ≥ 25% limit ($7.00 of $17.50 in open positions)
+[2026-05-16 18:31:52 ET] [INFO] Scan complete — 2 alerts sent
+[2026-05-16 18:31:52 ET] [INFO] ============================================================
+[2026-05-16 18:31:52 ET] [INFO] Scan job complete

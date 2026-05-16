@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-16T06:32:13.936156Z",
-  "last_scan_ts": "2026-05-16T06:32:13.936156Z",
+  "generated_at": "2026-05-16T12:04:21.603250Z",
+  "last_scan_ts": "2026-05-16T12:04:21.603250Z",
   "stats": {
-    "total_alerts": 1553,
+    "total_alerts": 1556,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -13,7 +13,7 @@
         "hit_rate": null
       },
       "Economics": {
-        "total": 388,
+        "total": 390,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -25,7 +25,7 @@
         "hit_rate": null
       },
       "Crypto": {
-        "total": 659,
+        "total": 660,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -75,7 +75,7 @@
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 887,
+        "total": 890,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -84,7 +84,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 10.46,
+      "balance": 10.45,
       "cash": 5.35,
       "peak": 10.81,
       "initial_balance": 10.0
@@ -95,15 +95,78 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-05-16T06:26:24.563837Z"
+    "updated_at": "2026-05-16T11:58:33.982795Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.11,
-  "account_value": 10.46,
-  "live_pnl": 0.46,
+  "position_value": 5.1,
+  "account_value": 10.45,
+  "live_pnl": 0.45,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-05-16T12:04:21.174429Z",
+      "ticker": "KXETHMINMON-ETH-26MAY31-200000",
+      "title": "Will ETH trimmed mean be below $2000.00 by 11:59 PM ET on May 31, 2026?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-29.29",
+      "implied_prob": "0.365",
+      "true_prob": "0.0721",
+      "confidence": "80",
+      "suggested_live_dollars": "0.64",
+      "suggested_paper_dollars": "49.92",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "64",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-16T12:04:20.582980Z",
+      "ticker": "KXCPIYOY-26JUL-T4.1",
+      "title": "Will the rate of CPI inflation be above 4.1% for the year ending in July 2026?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-33.55",
+      "implied_prob": "0.885",
+      "true_prob": "0.5495",
+      "confidence": "85",
+      "suggested_live_dollars": "0.52",
+      "suggested_paper_dollars": "49.92",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "13",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-16T12:04:20.084634Z",
+      "ticker": "KXEMERCUTS-26-T1",
+      "title": "Will the Fed cut rates 1 times at emergency meetings?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "35.6",
+      "implied_prob": "0.065",
+      "true_prob": "0.421",
+      "confidence": "85",
+      "suggested_live_dollars": "0.49",
+      "suggested_paper_dollars": "49.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "7",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-05-16T06:32:13.588397Z",
       "ticker": "KXCPIYOY-26JUL-T4.3",
@@ -2539,51 +2602,72 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-05-15T07:35:17.141253Z",
-      "ticker": "KXBTCMINMON-BTC-26MAY31-7250000",
-      "title": "Will BTC trimmed mean be below $72500.00 by 11:59 PM ET on May 31, 2026?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-20.68",
-      "implied_prob": "0.225",
-      "true_prob": "0.0182",
-      "confidence": "70",
-      "suggested_live_dollars": "0.78",
-      "suggested_paper_dollars": "39.78",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "78",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-15T07:35:16.661836Z",
-      "ticker": "KXRAINDENM-26MAY-2",
-      "title": "Rain in Denver in May 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-37.5",
-      "implied_prob": "0.395",
-      "true_prob": "0.02",
-      "confidence": "85",
-      "suggested_live_dollars": "0.61",
-      "suggested_paper_dollars": "49.41",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "61",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "recent_alerts": [
+    {
+      "timestamp": "2026-05-16T12:04:21.174429Z",
+      "ticker": "KXETHMINMON-ETH-26MAY31-200000",
+      "title": "Will ETH trimmed mean be below $2000.00 by 11:59 PM ET on May 31, 2026?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-29.29",
+      "implied_prob": "0.365",
+      "true_prob": "0.0721",
+      "confidence": "80",
+      "suggested_live_dollars": "0.64",
+      "suggested_paper_dollars": "49.92",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "64",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-16T12:04:20.582980Z",
+      "ticker": "KXCPIYOY-26JUL-T4.1",
+      "title": "Will the rate of CPI inflation be above 4.1% for the year ending in July 2026?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-33.55",
+      "implied_prob": "0.885",
+      "true_prob": "0.5495",
+      "confidence": "85",
+      "suggested_live_dollars": "0.52",
+      "suggested_paper_dollars": "49.92",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "13",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-16T12:04:20.084634Z",
+      "ticker": "KXEMERCUTS-26-T1",
+      "title": "Will the Fed cut rates 1 times at emergency meetings?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "35.6",
+      "implied_prob": "0.065",
+      "true_prob": "0.421",
+      "confidence": "85",
+      "suggested_live_dollars": "0.49",
+      "suggested_paper_dollars": "49.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "7",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-05-16T06:32:13.588397Z",
       "ticker": "KXCPIYOY-26JUL-T4.3",
@@ -3570,69 +3654,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-05-16T01:26:45.258457Z",
-      "ticker": "KXTSLA-26JULPROD-380000.0",
-      "title": "Will Tesla Inc. report above 380000 total production in Q2 2026?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-80.5",
-      "implied_prob": "0.805",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.44",
-      "suggested_paper_dollars": "49.94",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "22",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-16T01:26:44.898134Z",
-      "ticker": "KXFEDDECISION-26OCT-H0",
-      "title": "Will the Federal Reserve Hike rates by 0bps at their October 2026 meeting?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-24.1",
-      "implied_prob": "0.815",
-      "true_prob": "0.574",
-      "confidence": "75",
-      "suggested_live_dollars": "0.38",
-      "suggested_paper_dollars": "39.9",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "19",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-16T01:26:44.757979Z",
-      "ticker": "KXCOREUND-26DEC10-T2.2",
-      "title": "Will year-over-year Core CPI inflation for 2026 fall below 2.2%?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "52.45",
-      "implied_prob": "0.215",
-      "true_prob": "0.7395",
-      "confidence": "85",
-      "suggested_live_dollars": "0.46",
-      "suggested_paper_dollars": "49.91",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "23",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -3646,9 +3667,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 74,
+      "current_cents": 75,
       "dollars_risked": 0,
-      "current_value": 0.74,
+      "current_value": 0.75,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -3670,9 +3691,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 64,
+      "current_cents": 63,
       "dollars_risked": 0,
-      "current_value": 1.28,
+      "current_value": 1.26,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

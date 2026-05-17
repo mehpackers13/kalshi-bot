@@ -8214,3 +8214,45 @@ Total modelable markets evaluated: 0
 [2026-05-17 02:55:14 ET] [INFO] Scan complete — 3 alerts sent
 [2026-05-17 02:55:14 ET] [INFO] ============================================================
 [2026-05-17 02:55:15 ET] [INFO] Scan job complete
+[2026-05-17 08:03:11 ET] [INFO] Scan job starting
+[2026-05-17 08:03:11 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-05-17 08:03:11 ET] [INFO] ============================================================
+[2026-05-17 08:03:11 ET] [INFO] Starting market scan
+[2026-05-17 08:03:12 ET] [INFO] Portfolio value: $5.35 cash + $5.18 positions = $10.53
+[2026-05-17 08:03:12 ET] [INFO] Cash: $5.35  |  Positions: $5.18  |  Total: $10.53  |  Peak: $10.81
+[2026-05-17 08:03:12 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-05-17 08:03:13 ET] [WARN] API GET /markets → HTTP 400
+[2026-05-17 08:03:26 ET] [INFO] Fetched 54851 open markets via events endpoint across 38 pages
+[2026-05-17 08:03:26 ET] [INFO] Fetched 54851 open markets
+[2026-05-17 08:03:27 ET] [INFO] Parsed 50005 valid markets
+[2026-05-17 08:03:27 ET] [INFO] Categories: {'Sports': 21818, 'Elections': 11395, 'Entertainment': 7174, 'Economics': 2670, 'Crypto': 2178, 'Politics': 1550, 'Commodities': 615, 'Science and Technology': 573}
+[2026-05-17 08:03:37 ET] [INFO]   CPI model: threshold=10.0% TNX=4.59% → P=0.200
+[2026-05-17 08:05:31 ET] [INFO]   price model: SOL-USD spot=86.86 target=500.00 vol=32.7% T=5488.9h → P=0.000
+[2026-05-17 08:05:32 ET] [INFO]   price model: ETH-USD spot=2191.36 target=6000.00 vol=26.7% T=5488.9h → P=0.000
+[2026-05-17 08:05:33 ET] [INFO]   price model: BTC-USD spot=78382.13 target=100000.00 vol=23.9% T=5488.9h → P=0.099
+[2026-05-17 08:05:33 ET] [INFO]   price model: BTC-USD spot=78382.13 target=200000.00 vol=23.9% T=5488.9h → P=0.000
+[2026-05-17 08:05:34 ET] [INFO]   price model: BTC-USD spot=78382.13 target=199999.00 vol=23.9% T=5488.9h → P=0.000
+[2026-05-17 08:06:47 ET] [INFO]   CPI model: threshold=4.3% TNX=4.59% → P=0.529
+[2026-05-17 08:06:47 ET] [INFO]   EDGE FOUND: KXCPIYOY-26JUL-T4.3 | implied=74.0% true=52.9% edge=-21.1% dir=NO conf=75
+[2026-05-17 08:07:21 ET] [INFO]   CPI model: threshold=2.8% TNX=4.59% → P=0.679
+[2026-05-17 08:07:32 ET] [INFO]   weather model: austin rain 2026-05-17 forecast=12% → P=0.120
+[2026-05-17 08:07:32 ET] [INFO]   EDGE FOUND: KXRAINAUSM-26MAY-7 | implied=83.5% true=12.0% edge=-71.5% dir=NO conf=85
+[2026-05-17 08:07:36 ET] [INFO]   price model: BTC-USD spot=78369.93 target=87500.00 vol=23.9% T=351.9h → P=0.011
+[2026-05-17 08:07:46 ET] [INFO]   price model: CL=F spot=101.02 target=88.99 vol=71.2% T=296.9h → P=0.833
+[2026-05-17 08:07:47 ET] [INFO]   CPI model: threshold=0.2% TNX=4.59% → P=0.800
+[2026-05-17 08:08:18 ET] [INFO]   price model: CL=F spot=101.02 target=95.99 vol=71.2% T=54.4h → P=0.818
+[2026-05-17 08:08:29 ET] [INFO]   weather model: nyc max=94.0°F target=[89,90]°F days_out=0 σ=3.5°F → P=0.101
+[2026-05-17 08:08:29 ET] [INFO]   EDGE FOUND: KXHIGHNY-26MAY17-B89.5 | implied=49.5% true=10.1% edge=-39.4% dir=NO conf=80
+[2026-05-17 08:09:27 ET] [INFO]   fed model: implied_rate=3.628% current≈3.588% diff=4.0bps → P=0.579
+[2026-05-17 08:09:27 ET] [INFO]   EDGE FOUND: FEDHIKE-27JUN30 | implied=49.5% true=57.9% edge=+8.4% dir=YES conf=73
+[2026-05-17 08:09:28 ET] [INFO] Checked 49910 markets | Modelable: 49910 | Edges found: 4
+[2026-05-17 08:09:28 ET] [INFO]   Skipping KXCPIYOY-26JUL-T4.3 — suggested bet too small to be meaningful
+[2026-05-17 08:09:29 ET] [INFO] [Discord] Trade alert sent: KXRAINAUSM-26MAY-7
+[2026-05-17 08:09:29 ET] [WARN] AUTO-BET SKIP KXRAINAUSM-26MAY-7: exposure 39.9% ≥ 25% limit ($7.00 of $17.53 in open positions)
+[2026-05-17 08:09:29 ET] [INFO] [Discord] Trade alert sent: KXHIGHNY-26MAY17-B89.5
+[2026-05-17 08:09:29 ET] [WARN] AUTO-BET SKIP KXHIGHNY-26MAY17-B89.5: exposure 39.9% ≥ 25% limit ($7.00 of $17.53 in open positions)
+[2026-05-17 08:09:29 ET] [INFO] [Discord] Trade alert sent: FEDHIKE-27JUN30
+[2026-05-17 08:09:29 ET] [WARN] AUTO-BET SKIP FEDHIKE-27JUN30: exposure 39.9% ≥ 25% limit ($7.00 of $17.53 in open positions)
+[2026-05-17 08:09:29 ET] [INFO] Scan complete — 3 alerts sent
+[2026-05-17 08:09:29 ET] [INFO] ============================================================
+[2026-05-17 08:09:29 ET] [INFO] Scan job complete

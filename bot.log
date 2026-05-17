@@ -8171,3 +8171,46 @@ Total modelable markets evaluated: 0
 [2026-05-17 00:03:40 ET] [INFO] Scan complete — 92 alerts sent
 [2026-05-17 00:03:40 ET] [INFO] ============================================================
 [2026-05-17 00:03:40 ET] [INFO] Scan job complete
+[2026-05-17 02:49:40 ET] [INFO] Scan job starting
+[2026-05-17 02:49:40 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-05-17 02:49:40 ET] [INFO] ============================================================
+[2026-05-17 02:49:40 ET] [INFO] Starting market scan
+[2026-05-17 02:49:41 ET] [INFO] Portfolio value: $5.35 cash + $5.15 positions = $10.50
+[2026-05-17 02:49:41 ET] [INFO] Cash: $5.35  |  Positions: $5.15  |  Total: $10.50  |  Peak: $10.81
+[2026-05-17 02:49:42 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-05-17 02:49:43 ET] [WARN] API GET /markets → HTTP 400
+[2026-05-17 02:50:02 ET] [INFO] Fetched 55204 open markets via events endpoint across 39 pages
+[2026-05-17 02:50:02 ET] [INFO] Fetched 55204 open markets
+[2026-05-17 02:50:02 ET] [INFO] Parsed 50473 valid markets
+[2026-05-17 02:50:02 ET] [INFO] Categories: {'Sports': 22160, 'Elections': 11395, 'Entertainment': 7195, 'Economics': 2681, 'Crypto': 2200, 'Politics': 1551, 'Commodities': 612, 'Climate and Weather': 603}
+[2026-05-17 02:50:12 ET] [INFO]   CPI model: threshold=10.0% TNX=4.59% → P=0.200
+[2026-05-17 02:51:48 ET] [INFO]   price model: SOL-USD spot=86.76 target=500.00 vol=32.6% T=5494.2h → P=0.000
+[2026-05-17 02:51:49 ET] [INFO]   price model: ETH-USD spot=2183.42 target=6000.00 vol=26.6% T=5494.2h → P=0.000
+[2026-05-17 02:51:49 ET] [INFO]   price model: BTC-USD spot=78045.45 target=100000.00 vol=23.9% T=5494.2h → P=0.095
+[2026-05-17 02:51:49 ET] [INFO]   price model: BTC-USD spot=78045.45 target=200000.00 vol=23.9% T=5494.2h → P=0.000
+[2026-05-17 02:51:50 ET] [INFO]   price model: BTC-USD spot=78045.45 target=199999.00 vol=23.9% T=5494.1h → P=0.000
+[2026-05-17 02:52:52 ET] [INFO]   price model: TSLA spot=422.24 target=460000.00 vol=41.5% T=2317.2h → P=0.000
+[2026-05-17 02:52:52 ET] [INFO]   EDGE FOUND: KXTSLA-26JULDELIV-460000.0 | implied=33.5% true=0.0% edge=-33.5% dir=NO conf=85
+[2026-05-17 02:52:53 ET] [INFO]   CPI model: threshold=4.1% TNX=4.59% → P=0.549
+[2026-05-17 02:52:53 ET] [INFO]   EDGE FOUND: KXCPIYOY-26JUL-T4.1 | implied=87.0% true=54.9% edge=-32.0% dir=NO conf=85
+[2026-05-17 02:52:53 ET] [INFO]   CPI model: threshold=4.3% TNX=4.59% → P=0.529
+[2026-05-17 02:52:53 ET] [INFO]   EDGE FOUND: KXCPIYOY-26JUL-T4.3 | implied=74.0% true=52.9% edge=-21.1% dir=NO conf=75
+[2026-05-17 02:53:19 ET] [INFO]   price model: SOL-USD spot=86.75 target=360.00 vol=32.6% T=581.6h → P=0.000
+[2026-05-17 02:53:19 ET] [INFO]   EDGE FOUND: KXUSGASCPI-26JUN10-T360 | implied=93.0% true=0.0% edge=-93.0% dir=NO conf=85
+[2026-05-17 02:53:23 ET] [INFO]   CPI model: threshold=2.8% TNX=4.59% → P=0.679
+[2026-05-17 02:53:35 ET] [INFO]   price model: BTC-USD spot=78045.34 target=87500.00 vol=23.9% T=357.2h → P=0.009
+[2026-05-17 02:53:43 ET] [INFO]   price model: CL=F spot=101.02 target=88.99 vol=71.2% T=302.2h → P=0.831
+[2026-05-17 02:53:44 ET] [INFO]   CPI model: threshold=0.2% TNX=4.59% → P=0.800
+[2026-05-17 02:54:11 ET] [INFO]   price model: CL=F spot=101.02 target=95.99 vol=71.2% T=59.7h → P=0.808
+[2026-05-17 02:55:12 ET] [INFO]   fed model: implied_rate=3.628% current≈3.588% diff=4.0bps → P=0.579
+[2026-05-17 02:55:13 ET] [INFO] Checked 50381 markets | Modelable: 50381 | Edges found: 4
+[2026-05-17 02:55:13 ET] [INFO] [Discord] Trade alert sent: KXTSLA-26JULDELIV-460000.0
+[2026-05-17 02:55:14 ET] [WARN] AUTO-BET SKIP KXTSLA-26JULDELIV-460000.0: exposure 40.0% ≥ 25% limit ($7.00 of $17.50 in open positions)
+[2026-05-17 02:55:14 ET] [INFO] [Discord] Trade alert sent: KXCPIYOY-26JUL-T4.1
+[2026-05-17 02:55:14 ET] [WARN] AUTO-BET SKIP KXCPIYOY-26JUL-T4.1: exposure 40.0% ≥ 25% limit ($7.00 of $17.50 in open positions)
+[2026-05-17 02:55:14 ET] [INFO]   Skipping KXCPIYOY-26JUL-T4.3 — suggested bet too small to be meaningful
+[2026-05-17 02:55:14 ET] [INFO] [Discord] Trade alert sent: KXUSGASCPI-26JUN10-T360
+[2026-05-17 02:55:14 ET] [WARN] AUTO-BET SKIP KXUSGASCPI-26JUN10-T360: exposure 40.0% ≥ 25% limit ($7.00 of $17.50 in open positions)
+[2026-05-17 02:55:14 ET] [INFO] Scan complete — 3 alerts sent
+[2026-05-17 02:55:14 ET] [INFO] ============================================================
+[2026-05-17 02:55:15 ET] [INFO] Scan job complete

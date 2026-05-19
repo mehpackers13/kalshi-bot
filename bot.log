@@ -9990,3 +9990,54 @@ Total modelable markets evaluated: 0
 [2026-05-19 00:10:29 ET] [INFO] Scan complete — 1 alerts sent
 [2026-05-19 00:10:29 ET] [INFO] ============================================================
 [2026-05-19 00:10:29 ET] [INFO] Scan job complete
+[2026-05-19 04:02:05 ET] [INFO] Scan job starting
+[2026-05-19 04:02:05 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-05-19 04:02:05 ET] [INFO] ============================================================
+[2026-05-19 04:02:05 ET] [INFO] Starting market scan
+[2026-05-19 04:02:06 ET] [INFO] Portfolio value: $5.35 cash + $5.42 positions = $10.77
+[2026-05-19 04:02:06 ET] [INFO] Cash: $5.35  |  Positions: $5.42  |  Total: $10.77  |  Peak: $10.81
+[2026-05-19 04:02:06 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-05-19 04:02:06 ET] [WARN] API GET /markets → HTTP 400
+[2026-05-19 04:02:20 ET] [INFO] Fetched 56092 open markets via events endpoint across 37 pages
+[2026-05-19 04:02:20 ET] [INFO] Fetched 56092 open markets
+[2026-05-19 04:02:20 ET] [INFO] Parsed 51898 valid markets
+[2026-05-19 04:02:20 ET] [INFO] Categories: {'Sports': 23963, 'Elections': 11611, 'Entertainment': 6585, 'Economics': 2636, 'Crypto': 2247, 'Politics': 1555, 'Mentions': 669, 'Science and Technology': 598}
+[2026-05-19 04:02:31 ET] [INFO]   CPI model: threshold=10.0% TNX=4.62% → P=0.200
+[2026-05-19 04:04:24 ET] [INFO]   fed model: implied_rate=3.645% current≈3.568% diff=7.7bps → P=0.346
+[2026-05-19 04:04:32 ET] [INFO]   price model: ETH-USD spot=2138.39 target=6000.00 vol=24.3% T=5445.0h → P=0.000
+[2026-05-19 04:04:33 ET] [INFO]   price model: BTC-USD spot=77125.49 target=100000.00 vol=21.5% T=5445.0h → P=0.062
+[2026-05-19 04:04:33 ET] [INFO]   price model: BTC-USD spot=77125.49 target=200000.00 vol=21.5% T=5445.0h → P=0.000
+[2026-05-19 04:04:34 ET] [INFO]   price model: BTC-USD spot=77125.49 target=199999.00 vol=21.5% T=5444.9h → P=0.000
+[2026-05-19 04:05:50 ET] [INFO]   CPI model: threshold=4.3% TNX=4.62% → P=0.532
+[2026-05-19 04:05:50 ET] [INFO]   EDGE FOUND: KXCPIYOY-26JUL-T4.3 | implied=70.5% true=53.2% edge=-17.3% dir=NO conf=75
+[2026-05-19 04:06:34 ET] [INFO]   CPI model: threshold=2.8% TNX=4.62% → P=0.682
+[2026-05-19 04:06:54 ET] [INFO]   weather model: seattle rain 2026-05-19 forecast=18% → P=0.180
+[2026-05-19 04:06:54 ET] [INFO]   EDGE FOUND: KXRAINSEAM-26MAY-1 | implied=28.0% true=18.0% edge=-10.0% dir=NO conf=68
+[2026-05-19 04:07:04 ET] [INFO]   price model: CL=F spot=103.07 target=88.99 vol=70.0% T=253.0h → P=0.892
+[2026-05-19 04:07:05 ET] [INFO]   price model: CL=F spot=103.07 target=108.99 vol=70.0% T=253.0h → P=0.319
+[2026-05-19 04:07:05 ET] [INFO]   EDGE FOUND: KXBRENTMON-26MAY2917-T108.99 | implied=45.5% true=31.9% edge=-13.6% dir=NO conf=68
+[2026-05-19 04:07:06 ET] [INFO]   CPI model: threshold=0.2% TNX=4.62% → P=0.800
+[2026-05-19 04:07:40 ET] [INFO]   price model: CL=F spot=103.17 target=95.00 vol=69.9% T=82.5h → P=0.112
+[2026-05-19 04:07:40 ET] [INFO]   price model: CL=F spot=103.17 target=107.99 vol=69.9% T=82.5h → P=0.250
+[2026-05-19 04:08:11 ET] [INFO]   price model: SPY spot=738.65 target=7400.00 vol=12.1% T=12.0h → P=0.000
+[2026-05-19 04:08:11 ET] [INFO]   EDGE FOUND: KXINXU-26MAY19H1600-T7399.9999 | implied=58.5% true=0.0% edge=-58.5% dir=NO conf=80
+[2026-05-19 04:08:18 ET] [INFO]   price model: CL=F spot=103.21 target=99.99 vol=69.9% T=10.5h → P=0.905
+[2026-05-19 04:08:18 ET] [INFO]   price model: CL=F spot=103.21 target=100.99 vol=69.9% T=10.5h → P=0.816
+[2026-05-19 04:08:18 ET] [INFO]   price model: CL=F spot=103.21 target=101.99 vol=69.9% T=10.5h → P=0.689
+[2026-05-19 04:08:19 ET] [INFO]   price model: CL=F spot=103.21 target=102.99 vol=69.9% T=10.5h → P=0.535
+[2026-05-19 04:08:19 ET] [INFO]   price model: CL=F spot=103.21 target=103.99 vol=69.9% T=10.5h → P=0.378
+[2026-05-19 04:08:19 ET] [INFO]   price model: CL=F spot=103.21 target=104.99 vol=69.9% T=10.5h → P=0.239
+[2026-05-19 04:08:19 ET] [INFO]   price model: CL=F spot=103.21 target=106.99 vol=69.9% T=10.5h → P=0.068
+[2026-05-19 04:08:46 ET] [INFO]   fed model: implied_rate=3.645% current≈3.568% diff=7.7bps → P=0.654
+[2026-05-19 04:08:46 ET] [INFO]   fed model: implied_rate=3.645% current≈3.568% diff=7.7bps → P=0.654
+[2026-05-19 04:08:46 ET] [INFO] Checked 51802 markets | Modelable: 51802 | Edges found: 4
+[2026-05-19 04:08:46 ET] [INFO]   Skipping KXCPIYOY-26JUL-T4.3 — suggested bet too small to be meaningful
+[2026-05-19 04:08:47 ET] [INFO] [Discord] Trade alert sent: KXRAINSEAM-26MAY-1
+[2026-05-19 04:08:47 ET] [WARN] AUTO-BET SKIP KXRAINSEAM-26MAY-1: exposure 39.4% ≥ 25% limit ($7.00 of $17.77 in open positions)
+[2026-05-19 04:08:47 ET] [INFO] [Discord] Trade alert sent: KXBRENTMON-26MAY2917-T108.99
+[2026-05-19 04:08:47 ET] [WARN] AUTO-BET SKIP KXBRENTMON-26MAY2917-T108.99: exposure 39.4% ≥ 25% limit ($7.00 of $17.77 in open positions)
+[2026-05-19 04:08:48 ET] [INFO] [Discord] Trade alert sent: KXINXU-26MAY19H1600-T7399.9999
+[2026-05-19 04:08:48 ET] [WARN] AUTO-BET SKIP KXINXU-26MAY19H1600-T7399.9999: exposure 39.4% ≥ 25% limit ($7.00 of $17.77 in open positions)
+[2026-05-19 04:08:48 ET] [INFO] Scan complete — 3 alerts sent
+[2026-05-19 04:08:48 ET] [INFO] ============================================================
+[2026-05-19 04:08:48 ET] [INFO] Scan job complete

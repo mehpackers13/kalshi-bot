@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-20T22:09:22.881950Z",
-  "last_scan_ts": "2026-05-20T22:09:22.881950Z",
+  "generated_at": "2026-05-20T23:58:44.437246Z",
+  "last_scan_ts": "2026-05-20T23:58:44.437246Z",
   "stats": {
-    "total_alerts": 2059,
+    "total_alerts": 2061,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -25,13 +25,13 @@
         "hit_rate": null
       },
       "Crypto": {
-        "total": 810,
+        "total": 811,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "Sports": {
-        "total": 28,
+        "total": 29,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -63,7 +63,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 400,
+        "total": 401,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -75,7 +75,7 @@
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 1194,
+        "total": 1195,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -84,7 +84,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 10.5,
+      "balance": 10.54,
       "cash": 5.35,
       "peak": 10.81,
       "initial_balance": 10.0
@@ -95,15 +95,57 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-05-20T22:02:26.547906Z"
+    "updated_at": "2026-05-20T23:50:04.672291Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.15,
-  "account_value": 10.5,
-  "live_pnl": 0.5,
+  "position_value": 5.19,
+  "account_value": 10.54,
+  "live_pnl": 0.54,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-05-20T23:58:44.126588Z",
+      "ticker": "KXWNBA1HSPREAD-26MAY20PDXIND-IND8",
+      "title": "Will Indiana win the 1H by over 7.5 points?",
+      "category": "Sports",
+      "direction": "YES",
+      "edge_pct": "34.5",
+      "implied_prob": "0.655",
+      "true_prob": "1.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.72",
+      "suggested_paper_dollars": "49.68",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "72",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-20T23:58:43.797865Z",
+      "ticker": "KXSOLMAXMON-SOL-26MAY31-10000",
+      "title": "Will SOL trimmed mean be above $100.00 by 11:59 PM ET on May 31, 2026?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-11.65",
+      "implied_prob": "0.12",
+      "true_prob": "0.0035",
+      "confidence": "63",
+      "suggested_live_dollars": "0.9",
+      "suggested_paper_dollars": "19.8",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "90",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-05-20T22:09:22.574641Z",
       "ticker": "KXWNBASPREAD-26MAY20PDXIND-IND13",
@@ -2539,72 +2581,51 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-05-19T22:54:27.199801Z",
-      "ticker": "KXHIGHDEN-26MAY19-B51.5",
-      "title": "Will the **high temp in Denver** be 51-52\u00b0 on May 19, 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-79.94",
-      "implied_prob": "0.9",
-      "true_prob": "0.1006",
-      "confidence": "80",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "16",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-19T22:54:26.912348Z",
-      "ticker": "KXWTI-26MAY2014-T103.99",
-      "title": "Will the WTI crude oil settlement price be above 103.99 USD/Bbl on May 20, 2026?",
-      "category": "Commodities",
-      "direction": "NO",
-      "edge_pct": "-14.63",
-      "implied_prob": "0.665",
-      "true_prob": "0.5187",
-      "confidence": "63",
-      "suggested_live_dollars": "0.36",
-      "suggested_paper_dollars": "19.8",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "36",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-19T22:54:26.527139Z",
-      "ticker": "KXWTI-26MAY2014-T101.99",
-      "title": "Will the WTI crude oil settlement price be above 101.99 USD/Bbl on May 20, 2026?",
-      "category": "Commodities",
-      "direction": "NO",
-      "edge_pct": "-9.65",
-      "implied_prob": "0.835",
-      "true_prob": "0.7385",
-      "confidence": "63",
-      "suggested_live_dollars": "0.17",
-      "suggested_paper_dollars": "16.66",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "17",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "recent_alerts": [
+    {
+      "timestamp": "2026-05-20T23:58:44.126588Z",
+      "ticker": "KXWNBA1HSPREAD-26MAY20PDXIND-IND8",
+      "title": "Will Indiana win the 1H by over 7.5 points?",
+      "category": "Sports",
+      "direction": "YES",
+      "edge_pct": "34.5",
+      "implied_prob": "0.655",
+      "true_prob": "1.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.72",
+      "suggested_paper_dollars": "49.68",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "72",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-20T23:58:43.797865Z",
+      "ticker": "KXSOLMAXMON-SOL-26MAY31-10000",
+      "title": "Will SOL trimmed mean be above $100.00 by 11:59 PM ET on May 31, 2026?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-11.65",
+      "implied_prob": "0.12",
+      "true_prob": "0.0035",
+      "confidence": "63",
+      "suggested_live_dollars": "0.9",
+      "suggested_paper_dollars": "19.8",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "90",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-05-20T22:09:22.574641Z",
       "ticker": "KXWNBASPREAD-26MAY20PDXIND-IND13",
@@ -3612,48 +3633,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-05-20T00:23:03.820457Z",
-      "ticker": "KXRAINHOUM-26MAY-6",
-      "title": "Rain in Houston in May 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-21.5",
-      "implied_prob": "0.895",
-      "true_prob": "0.68",
-      "confidence": "75",
-      "suggested_live_dollars": "0.33",
-      "suggested_paper_dollars": "39.93",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "11",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-20T00:23:03.678173Z",
-      "ticker": "KXRAINSEAM-26MAY-1",
-      "title": "Rain in Seattle in May 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-29.5",
-      "implied_prob": "0.375",
-      "true_prob": "0.08",
-      "confidence": "85",
-      "suggested_live_dollars": "0.63",
-      "suggested_paper_dollars": "49.77",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "63",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -3667,9 +3646,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 74,
+      "current_cents": 76,
       "dollars_risked": 0,
-      "current_value": 0.74,
+      "current_value": 0.76,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -3679,9 +3658,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 69,
+      "current_cents": 70,
       "dollars_risked": 0,
-      "current_value": 1.38,
+      "current_value": 1.4,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

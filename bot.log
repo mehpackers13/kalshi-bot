@@ -10849,3 +10849,63 @@ Total modelable markets evaluated: 0
 [2026-05-20 04:09:30 ET] [INFO] Scan complete — 3 alerts sent
 [2026-05-20 04:09:30 ET] [INFO] ============================================================
 [2026-05-20 04:09:30 ET] [INFO] Scan job complete
+[2026-05-20 09:44:02 ET] [INFO] Scan job starting
+[2026-05-20 09:44:02 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-05-20 09:44:02 ET] [INFO] ============================================================
+[2026-05-20 09:44:02 ET] [INFO] Starting market scan
+[2026-05-20 09:44:03 ET] [INFO] Portfolio value: $5.35 cash + $5.29 positions = $10.64
+[2026-05-20 09:44:03 ET] [INFO] Cash: $5.35  |  Positions: $5.29  |  Total: $10.64  |  Peak: $10.81
+[2026-05-20 09:44:04 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-05-20 09:44:04 ET] [WARN] API GET /markets → HTTP 400
+[2026-05-20 09:44:17 ET] [INFO] Fetched 58414 open markets via events endpoint across 37 pages
+[2026-05-20 09:44:17 ET] [INFO] Fetched 58414 open markets
+[2026-05-20 09:44:18 ET] [INFO] Parsed 53091 valid markets
+[2026-05-20 09:44:18 ET] [INFO] Categories: {'Sports': 24174, 'Elections': 12004, 'Entertainment': 6766, 'Economics': 2690, 'Crypto': 2192, 'Politics': 1565, 'Financials': 799, 'Commodities': 670}
+[2026-05-20 09:44:31 ET] [INFO]   CPI model: threshold=10.0% TNX=4.66% → P=0.200
+[2026-05-20 09:46:47 ET] [INFO]   fed model: implied_rate=3.628% current≈3.570% diff=5.8bps → P=0.385
+[2026-05-20 09:46:55 ET] [INFO]   price model: SOL-USD spot=84.57 target=500.00 vol=31.2% T=5415.3h → P=0.000
+[2026-05-20 09:46:57 ET] [INFO]   price model: ETH-USD spot=2123.40 target=6000.00 vol=24.3% T=5415.3h → P=0.000
+[2026-05-20 09:46:58 ET] [INFO]   price model: BTC-USD spot=77140.76 target=100000.00 vol=21.5% T=5415.3h → P=0.062
+[2026-05-20 09:46:58 ET] [INFO]   price model: BTC-USD spot=77140.76 target=200000.00 vol=21.5% T=5415.3h → P=0.000
+[2026-05-20 09:46:59 ET] [INFO]   price model: BTC-USD spot=77140.76 target=199999.00 vol=21.5% T=5415.2h → P=0.000
+[2026-05-20 09:48:36 ET] [INFO]   CPI model: threshold=4.3% TNX=4.65% → P=0.535
+[2026-05-20 09:48:36 ET] [INFO]   EDGE FOUND: KXCPIYOY-26JUL-T4.3 | implied=70.0% true=53.5% edge=-16.5% dir=NO conf=75
+[2026-05-20 09:49:31 ET] [INFO]   CPI model: threshold=2.8% TNX=4.65% → P=0.685
+[2026-05-20 09:49:59 ET] [INFO]   weather model: houston rain 2026-05-20 forecast=68% → P=0.680
+[2026-05-20 09:49:59 ET] [INFO]   EDGE FOUND: KXRAINHOUM-26MAY-7 | implied=86.0% true=68.0% edge=-18.0% dir=NO conf=75
+[2026-05-20 09:49:59 ET] [INFO]   weather model: dallas rain 2026-05-20 forecast=75% → P=0.750
+[2026-05-20 09:50:12 ET] [INFO]   price model: CL=F spot=101.98 target=88.99 vol=69.5% T=223.3h → P=0.890
+[2026-05-20 09:50:13 ET] [INFO]   CPI model: threshold=0.2% TNX=4.65% → P=0.800
+[2026-05-20 09:51:03 ET] [INFO]   price model: CL=F spot=101.88 target=95.00 vol=69.6% T=52.8h → P=0.098
+[2026-05-20 09:51:03 ET] [INFO]   price model: CL=F spot=101.88 target=107.99 vol=69.6% T=52.8h → P=0.140
+[2026-05-20 09:51:18 ET] [INFO]   weather model: nyc max=92.0°F target=[91,92]°F days_out=0 σ=3.5°F → P=0.223
+[2026-05-20 09:51:18 ET] [INFO]   EDGE FOUND: KXHIGHNY-26MAY20-B91.5 | implied=52.0% true=22.3% edge=-29.7% dir=NO conf=80
+[2026-05-20 09:51:18 ET] [INFO]   weather model: nyc max=92.0°F target=[93,94]°F days_out=0 σ=3.5°F → P=0.206
+[2026-05-20 09:51:18 ET] [INFO]   EDGE FOUND: KXHIGHNY-26MAY20-B93.5 | implied=39.5% true=20.6% edge=-18.9% dir=NO conf=70
+[2026-05-20 09:51:18 ET] [INFO]   weather model: miami max=84.0°F target=[88,89]°F days_out=0 σ=3.5°F → P=0.101
+[2026-05-20 09:51:18 ET] [INFO]   EDGE FOUND: KXHIGHMIA-26MAY20-B88.5 | implied=59.5% true=10.1% edge=-49.4% dir=NO conf=80
+[2026-05-20 09:51:39 ET] [INFO]   price model: SPY spot=735.75 target=7350.00 vol=10.6% T=6.3h → P=0.000
+[2026-05-20 09:51:39 ET] [INFO]   EDGE FOUND: KXINXU-26MAY20H1600-T7349.9999 | implied=74.0% true=0.0% edge=-74.0% dir=NO conf=80
+[2026-05-20 09:51:50 ET] [INFO]   price model: CL=F spot=101.94 target=107.00 vol=69.5% T=7.3h → P=0.008
+[2026-05-20 09:51:50 ET] [INFO]   EDGE FOUND: KXBRENTD-26MAY2017-T107 | implied=82.0% true=0.8% edge=-81.2% dir=NO conf=80
+[2026-05-20 09:51:55 ET] [INFO]   price model: CL=F spot=101.94 target=98.99 vol=69.5% T=4.8h → P=0.965
+[2026-05-20 09:51:55 ET] [INFO]   price model: CL=F spot=101.94 target=99.99 vol=69.5% T=4.8h → P=0.883
+[2026-05-20 09:51:55 ET] [INFO]   price model: CL=F spot=101.94 target=100.99 vol=69.5% T=4.8h → P=0.718
+[2026-05-20 09:52:23 ET] [INFO]   fed model: implied_rate=3.628% current≈3.570% diff=5.8bps → P=0.615
+[2026-05-20 09:52:24 ET] [INFO] Checked 52992 markets | Modelable: 52992 | Edges found: 7
+[2026-05-20 09:52:24 ET] [INFO]   Skipping KXCPIYOY-26JUL-T4.3 — suggested bet too small to be meaningful
+[2026-05-20 09:52:25 ET] [INFO] [Discord] Trade alert sent: KXRAINHOUM-26MAY-7
+[2026-05-20 09:52:25 ET] [WARN] AUTO-BET SKIP KXRAINHOUM-26MAY-7: exposure 39.7% ≥ 25% limit ($7.00 of $17.64 in open positions)
+[2026-05-20 09:52:25 ET] [INFO] [Discord] Trade alert sent: KXHIGHNY-26MAY20-B91.5
+[2026-05-20 09:52:25 ET] [WARN] AUTO-BET SKIP KXHIGHNY-26MAY20-B91.5: exposure 39.7% ≥ 25% limit ($7.00 of $17.64 in open positions)
+[2026-05-20 09:52:25 ET] [INFO] [Discord] Trade alert sent: KXHIGHNY-26MAY20-B93.5
+[2026-05-20 09:52:25 ET] [WARN] AUTO-BET SKIP KXHIGHNY-26MAY20-B93.5: exposure 39.7% ≥ 25% limit ($7.00 of $17.64 in open positions)
+[2026-05-20 09:52:26 ET] [INFO] [Discord] Trade alert sent: KXHIGHMIA-26MAY20-B88.5
+[2026-05-20 09:52:26 ET] [WARN] AUTO-BET SKIP KXHIGHMIA-26MAY20-B88.5: exposure 39.7% ≥ 25% limit ($7.00 of $17.64 in open positions)
+[2026-05-20 09:52:26 ET] [INFO] [Discord] Trade alert sent: KXINXU-26MAY20H1600-T7349.9999
+[2026-05-20 09:52:26 ET] [WARN] AUTO-BET SKIP KXINXU-26MAY20H1600-T7349.9999: exposure 39.7% ≥ 25% limit ($7.00 of $17.64 in open positions)
+[2026-05-20 09:52:26 ET] [INFO] [Discord] Trade alert sent: KXBRENTD-26MAY2017-T107
+[2026-05-20 09:52:26 ET] [WARN] AUTO-BET SKIP KXBRENTD-26MAY2017-T107: exposure 39.7% ≥ 25% limit ($7.00 of $17.64 in open positions)
+[2026-05-20 09:52:26 ET] [INFO] Scan complete — 6 alerts sent
+[2026-05-20 09:52:26 ET] [INFO] ============================================================
+[2026-05-20 09:52:27 ET] [INFO] Scan job complete

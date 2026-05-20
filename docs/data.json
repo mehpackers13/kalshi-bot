@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-20T13:52:27.217561Z",
-  "last_scan_ts": "2026-05-20T13:52:27.217561Z",
+  "generated_at": "2026-05-20T17:27:30.656580Z",
+  "last_scan_ts": "2026-05-20T17:27:30.656580Z",
   "stats": {
-    "total_alerts": 2048,
+    "total_alerts": 2054,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -49,13 +49,13 @@
         "hit_rate": null
       },
       "Financials": {
-        "total": 148,
+        "total": 151,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "Commodities": {
-        "total": 120,
+        "total": 123,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -63,19 +63,19 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 398,
+        "total": 399,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "medium (15-25%)": {
-        "total": 464,
+        "total": 465,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 1186,
+        "total": 1190,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -84,7 +84,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 10.64,
+      "balance": 10.62,
       "cash": 5.35,
       "peak": 10.81,
       "initial_balance": 10.0
@@ -95,15 +95,141 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-05-20T13:44:03.743104Z"
+    "updated_at": "2026-05-20T17:19:16.078835Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.29,
-  "account_value": 10.64,
-  "live_pnl": 0.64,
+  "position_value": 5.27,
+  "account_value": 10.62,
+  "live_pnl": 0.62,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-05-20T17:27:30.301424Z",
+      "ticker": "KXBRENTD-26MAY2017-T105",
+      "title": "Will the brent crude oil close price be above 105  USD/Bbl on May 20, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-31.0",
+      "implied_prob": "0.31",
+      "true_prob": "0.0",
+      "confidence": "70",
+      "suggested_live_dollars": "0.71",
+      "suggested_paper_dollars": "49.7",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "71",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-20T17:27:29.964133Z",
+      "ticker": "KXINXU-26MAY20H1600-T7399.9999",
+      "title": "Will the S&P 500 be above 7399.9999 on May 20, 2026 at 4pm EDT?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-79.0",
+      "implied_prob": "0.79",
+      "true_prob": "0.0",
+      "confidence": "70",
+      "suggested_live_dollars": "0.46",
+      "suggested_paper_dollars": "49.91",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "23",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-20T17:27:29.609774Z",
+      "ticker": "KXINXU-26MAY20H1600-T7374.9999",
+      "title": "Will the S&P 500 be above 7374.9999 on May 20, 2026 at 4pm EDT?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-91.5",
+      "implied_prob": "0.915",
+      "true_prob": "0.0",
+      "confidence": "70",
+      "suggested_live_dollars": "0.45",
+      "suggested_paper_dollars": "49.95",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "9",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-20T17:27:29.248411Z",
+      "ticker": "KXNASDAQ100U-26MAY20H1600-T29199.99",
+      "title": "Will the Nasdaq-100 be above 29199.99 at the end of May 20, 2026 at 4pm EDT?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-49.0",
+      "implied_prob": "0.49",
+      "true_prob": "0.0",
+      "confidence": "70",
+      "suggested_live_dollars": "0.53",
+      "suggested_paper_dollars": "49.82",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "53",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-20T17:27:28.825533Z",
+      "ticker": "KXBRENTMON-26MAY2917-T92.99",
+      "title": "Will the brent crude oil close price be above 92.99  USD/Bbl on May 29, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-18.46",
+      "implied_prob": "0.84",
+      "true_prob": "0.6554",
+      "confidence": "75",
+      "suggested_live_dollars": "0.34",
+      "suggested_paper_dollars": "38.59",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "17",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-20T17:27:28.113708Z",
+      "ticker": "KXBRENTMON-26MAY2917-T88.99",
+      "title": "Will the brent crude oil close price be above 88.99  USD/Bbl on May 29, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-13.98",
+      "implied_prob": "0.92",
+      "true_prob": "0.7802",
+      "confidence": "68",
+      "suggested_live_dollars": "0.18",
+      "suggested_paper_dollars": "19.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "9",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-05-20T13:52:26.909890Z",
       "ticker": "KXBRENTD-26MAY2017-T107",
@@ -2455,324 +2581,135 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-05-19T17:01:38.413656Z",
-      "ticker": "KXBRENTD-26MAY1917-T110.50",
-      "title": "Will the brent crude oil close price be above 110.50  USD/Bbl on May 19, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "NO",
-      "edge_pct": "-57.5",
-      "implied_prob": "0.575",
-      "true_prob": "0.0",
-      "confidence": "70",
-      "suggested_live_dollars": "0.46",
-      "suggested_paper_dollars": "49.68",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "46",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-19T17:01:38.065055Z",
-      "ticker": "KXBRENTD-26MAY1917-T109",
-      "title": "Will the brent crude oil close price be above 109  USD/Bbl on May 19, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "NO",
-      "edge_pct": "-84.96",
-      "implied_prob": "0.85",
-      "true_prob": "0.0004",
-      "confidence": "70",
-      "suggested_live_dollars": "0.38",
-      "suggested_paper_dollars": "49.97",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "19",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-19T17:01:37.744455Z",
-      "ticker": "KXBRENTD-26MAY1917-T108.50",
-      "title": "Will the brent crude oil close price be above 108.50  USD/Bbl on May 19, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "NO",
-      "edge_pct": "-89.37",
-      "implied_prob": "0.895",
-      "true_prob": "0.0013",
-      "confidence": "70",
-      "suggested_live_dollars": "0.44",
-      "suggested_paper_dollars": "49.94",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "11",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-19T17:01:37.491060Z",
-      "ticker": "KXBRENTD-26MAY1917-T108",
-      "title": "Will the brent crude oil close price be above 108  USD/Bbl on May 19, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "NO",
-      "edge_pct": "-94.17",
-      "implied_prob": "0.945",
-      "true_prob": "0.0033",
-      "confidence": "70",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "8",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-19T17:01:37.021693Z",
-      "ticker": "KXINXU-26MAY19H1600-T7349.9999",
-      "title": "Will the S&P 500 be above 7349.9999 on May 19, 2026 at 4pm EDT?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-85.5",
-      "implied_prob": "0.855",
-      "true_prob": "0.0",
-      "confidence": "70",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "16",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-19T17:01:36.539100Z",
-      "ticker": "KXNASDAQ100U-26MAY19H1600-T28799.99",
-      "title": "Will the Nasdaq-100 be above 28799.99 at the end of May 19, 2026 at 4pm EDT?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-78.5",
-      "implied_prob": "0.785",
-      "true_prob": "0.0",
-      "confidence": "70",
-      "suggested_live_dollars": "0.44",
-      "suggested_paper_dollars": "49.94",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "22",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-19T17:01:36.206757Z",
-      "ticker": "KXHIGHCHI-26MAY19-B78.5",
-      "title": "Will the high temp in Chicago be 78-79\u00b0 on May 19, 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-50.67",
-      "implied_prob": "0.645",
-      "true_prob": "0.1383",
-      "confidence": "80",
-      "suggested_live_dollars": "0.36",
-      "suggested_paper_dollars": "49.68",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "36",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-19T17:01:35.711880Z",
-      "ticker": "KXHIGHMIA-26MAY19-B86.5",
-      "title": "Will the **high temp in Miami** be 86-87\u00b0 on May 19, 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-50.45",
-      "implied_prob": "0.68",
-      "true_prob": "0.1755",
-      "confidence": "80",
-      "suggested_live_dollars": "0.33",
-      "suggested_paper_dollars": "49.83",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "33",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-19T14:03:39.632056Z",
-      "ticker": "FEDHIKE-27DEC31",
-      "title": "Will the Federal Reserve hike rates by December 31, 2027?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-16.0",
-      "implied_prob": "0.74",
-      "true_prob": "0.58",
-      "confidence": "75",
-      "suggested_live_dollars": "0.28",
-      "suggested_paper_dollars": "34.44",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "28",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-19T14:03:39.357266Z",
-      "ticker": "KXBRENTD-26MAY1917-T110",
-      "title": "Will the brent crude oil close price be above 110  USD/Bbl on May 19, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "NO",
-      "edge_pct": "-59.37",
-      "implied_prob": "0.595",
-      "true_prob": "0.0013",
-      "confidence": "80",
-      "suggested_live_dollars": "0.42",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "42",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-19T14:03:39.091311Z",
-      "ticker": "KXBRENTD-26MAY1917-T107.50",
-      "title": "Will the brent crude oil close price be above 107.50  USD/Bbl on May 19, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "NO",
-      "edge_pct": "-87.68",
-      "implied_prob": "0.91",
-      "true_prob": "0.0332",
-      "confidence": "80",
-      "suggested_live_dollars": "0.5",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "10",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-19T14:03:38.685658Z",
-      "ticker": "KXINXU-26MAY19H1600-T7374.9999",
-      "title": "Will the S&P 500 be above 7374.9999 on May 19, 2026 at 4pm EDT?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-51.5",
-      "implied_prob": "0.515",
-      "true_prob": "0.0",
-      "confidence": "80",
-      "suggested_live_dollars": "0.5",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "50",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-19T14:03:38.408642Z",
-      "ticker": "KXNASDAQ100U-26MAY19H1600-T28699.99",
-      "title": "Will the Nasdaq-100 be above 28699.99 at the end of May 19, 2026 at 4pm EDT?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-71.5",
-      "implied_prob": "0.715",
-      "true_prob": "0.0",
-      "confidence": "80",
-      "suggested_live_dollars": "0.31",
-      "suggested_paper_dollars": "49.91",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "31",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-19T14:03:37.861725Z",
-      "ticker": "KXHIGHNY-26MAY19-B95.5",
-      "title": "Will the **high temp in NYC** be 95-96\u00b0 on May 19, 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-48.3",
-      "implied_prob": "0.525",
-      "true_prob": "0.042",
-      "confidence": "80",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "48",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-19T14:03:37.470251Z",
-      "ticker": "KXHIGHNY-26MAY19-B93.5",
-      "title": "Will the **high temp in NYC** be 93-94\u00b0 on May 19, 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-43.23",
-      "implied_prob": "0.445",
-      "true_prob": "0.0127",
-      "confidence": "80",
-      "suggested_live_dollars": "0.57",
-      "suggested_paper_dollars": "49.59",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "57",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "recent_alerts": [
+    {
+      "timestamp": "2026-05-20T17:27:30.301424Z",
+      "ticker": "KXBRENTD-26MAY2017-T105",
+      "title": "Will the brent crude oil close price be above 105  USD/Bbl on May 20, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-31.0",
+      "implied_prob": "0.31",
+      "true_prob": "0.0",
+      "confidence": "70",
+      "suggested_live_dollars": "0.71",
+      "suggested_paper_dollars": "49.7",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "71",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-20T17:27:29.964133Z",
+      "ticker": "KXINXU-26MAY20H1600-T7399.9999",
+      "title": "Will the S&P 500 be above 7399.9999 on May 20, 2026 at 4pm EDT?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-79.0",
+      "implied_prob": "0.79",
+      "true_prob": "0.0",
+      "confidence": "70",
+      "suggested_live_dollars": "0.46",
+      "suggested_paper_dollars": "49.91",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "23",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-20T17:27:29.609774Z",
+      "ticker": "KXINXU-26MAY20H1600-T7374.9999",
+      "title": "Will the S&P 500 be above 7374.9999 on May 20, 2026 at 4pm EDT?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-91.5",
+      "implied_prob": "0.915",
+      "true_prob": "0.0",
+      "confidence": "70",
+      "suggested_live_dollars": "0.45",
+      "suggested_paper_dollars": "49.95",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "9",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-20T17:27:29.248411Z",
+      "ticker": "KXNASDAQ100U-26MAY20H1600-T29199.99",
+      "title": "Will the Nasdaq-100 be above 29199.99 at the end of May 20, 2026 at 4pm EDT?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-49.0",
+      "implied_prob": "0.49",
+      "true_prob": "0.0",
+      "confidence": "70",
+      "suggested_live_dollars": "0.53",
+      "suggested_paper_dollars": "49.82",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "53",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-20T17:27:28.825533Z",
+      "ticker": "KXBRENTMON-26MAY2917-T92.99",
+      "title": "Will the brent crude oil close price be above 92.99  USD/Bbl on May 29, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-18.46",
+      "implied_prob": "0.84",
+      "true_prob": "0.6554",
+      "confidence": "75",
+      "suggested_live_dollars": "0.34",
+      "suggested_paper_dollars": "38.59",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "17",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-20T17:27:28.113708Z",
+      "ticker": "KXBRENTMON-26MAY2917-T88.99",
+      "title": "Will the brent crude oil close price be above 88.99  USD/Bbl on May 29, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-13.98",
+      "implied_prob": "0.92",
+      "true_prob": "0.7802",
+      "confidence": "68",
+      "suggested_live_dollars": "0.18",
+      "suggested_paper_dollars": "19.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "9",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-05-20T13:52:26.909890Z",
       "ticker": "KXBRENTD-26MAY2017-T107",
@@ -3696,132 +3633,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-05-20T00:23:02.727309Z",
-      "ticker": "KXCPIYOY-26JUN-T4.0",
-      "title": "Will the rate of CPI inflation be above 4.0% for the year ending in June 2026?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-37.83",
-      "implied_prob": "0.945",
-      "true_prob": "0.5667",
-      "confidence": "85",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "6",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-20T00:23:02.534289Z",
-      "ticker": "KXCPIYOY-26JUN-T3.8",
-      "title": "Will the rate of CPI inflation be above 3.8% for the year ending in June 2026?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-35.33",
-      "implied_prob": "0.94",
-      "true_prob": "0.5867",
-      "confidence": "85",
-      "suggested_live_dollars": "0.45",
-      "suggested_paper_dollars": "49.95",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "9",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-20T00:23:02.386368Z",
-      "ticker": "KXFEDDECISION-26JUL-H0",
-      "title": "Will the Federal Reserve Hike rates by 0bps at their July 2026 meeting?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-33.5",
-      "implied_prob": "0.915",
-      "true_prob": "0.58",
-      "confidence": "90",
-      "suggested_live_dollars": "0.45",
-      "suggested_paper_dollars": "49.95",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "9",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-20T00:23:02.145275Z",
-      "ticker": "KXCPIYOY-26JUL-T4.2",
-      "title": "Will the rate of CPI inflation be above 4.2% for the year ending in July 2026?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-26.33",
-      "implied_prob": "0.81",
-      "true_prob": "0.5467",
-      "confidence": "85",
-      "suggested_live_dollars": "0.35",
-      "suggested_paper_dollars": "24.5",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "35",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-20T00:23:02.000570Z",
-      "ticker": "KXCPIYOY-26JUL-T4.1",
-      "title": "Will the rate of CPI inflation be above 4.1% for the year ending in July 2026?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-27.33",
-      "implied_prob": "0.83",
-      "true_prob": "0.5567",
-      "confidence": "85",
-      "suggested_live_dollars": "0.32",
-      "suggested_paper_dollars": "30.08",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "32",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-20T00:23:01.794513Z",
-      "ticker": "KXTSLA-26JULDELIV-460000.0",
-      "title": "Will Tesla Inc. report above 460000 total deliveries in Q2 2026?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-30.5",
-      "implied_prob": "0.305",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.71",
-      "suggested_paper_dollars": "49.7",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "71",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -3859,9 +3670,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 67,
+      "current_cents": 66,
       "dollars_risked": 0,
-      "current_value": 1.34,
+      "current_value": 1.32,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

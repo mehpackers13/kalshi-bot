@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-21T14:24:59.219787Z",
-  "last_scan_ts": "2026-05-21T14:24:59.219787Z",
+  "generated_at": "2026-05-21T17:25:42.226495Z",
+  "last_scan_ts": "2026-05-21T17:25:42.226495Z",
   "stats": {
-    "total_alerts": 2174,
+    "total_alerts": 2185,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -13,13 +13,13 @@
         "hit_rate": null
       },
       "Economics": {
-        "total": 505,
+        "total": 507,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "Politics": {
-        "total": 33,
+        "total": 34,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -31,13 +31,13 @@
         "hit_rate": null
       },
       "Sports": {
-        "total": 29,
+        "total": 30,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "Climate and Weather": {
-        "total": 288,
+        "total": 290,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -49,13 +49,13 @@
         "hit_rate": null
       },
       "Financials": {
-        "total": 158,
+        "total": 161,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "Commodities": {
-        "total": 144,
+        "total": 146,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -63,19 +63,19 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 427,
+        "total": 429,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "medium (15-25%)": {
-        "total": 487,
+        "total": 488,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 1260,
+        "total": 1268,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -84,7 +84,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 10.51,
+      "balance": 10.55,
       "cash": 5.35,
       "peak": 10.81,
       "initial_balance": 10.0
@@ -95,15 +95,246 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-05-21T14:16:11.875485Z"
+    "updated_at": "2026-05-21T17:16:42.695509Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.16,
-  "account_value": 10.51,
-  "live_pnl": 0.51,
+  "position_value": 5.2,
+  "account_value": 10.55,
+  "live_pnl": 0.55,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-05-21T17:25:41.913993Z",
+      "ticker": "FEDHIKE-27DEC31",
+      "title": "Will the Federal Reserve hike rates by December 31, 2027?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "9.9",
+      "implied_prob": "0.705",
+      "true_prob": "0.804",
+      "confidence": "68",
+      "suggested_live_dollars": "0.75",
+      "suggested_paper_dollars": "19.5",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "75",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-21T17:25:41.649789Z",
+      "ticker": "KXBRENTD-26MAY2117-T100.00",
+      "title": "Will the brent crude oil close price be above 100.00  USD/Bbl on May 21, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-47.8",
+      "implied_prob": "0.75",
+      "true_prob": "0.272",
+      "confidence": "70",
+      "suggested_live_dollars": "0.28",
+      "suggested_paper_dollars": "49.84",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "28",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-21T17:25:41.303572Z",
+      "ticker": "KXBRENTD-26MAY2117-T99.50",
+      "title": "Will the brent crude oil close price be above 99.50  USD/Bbl on May 21, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-41.94",
+      "implied_prob": "0.835",
+      "true_prob": "0.4156",
+      "confidence": "70",
+      "suggested_live_dollars": "0.36",
+      "suggested_paper_dollars": "49.86",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "18",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-21T17:25:40.828137Z",
+      "ticker": "KXINXU-26MAY21H1600-T7424.9999",
+      "title": "Will the S&P 500 be above 7424.9999 on May 21, 2026 at 4pm EDT?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-65.5",
+      "implied_prob": "0.655",
+      "true_prob": "0.0",
+      "confidence": "70",
+      "suggested_live_dollars": "0.36",
+      "suggested_paper_dollars": "49.68",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "36",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-21T17:25:40.567089Z",
+      "ticker": "KXINXU-26MAY21H1600-T7399.9999",
+      "title": "Will the S&P 500 be above 7399.9999 on May 21, 2026 at 4pm EDT?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-89.0",
+      "implied_prob": "0.89",
+      "true_prob": "0.0",
+      "confidence": "70",
+      "suggested_live_dollars": "0.48",
+      "suggested_paper_dollars": "49.92",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "12",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-21T17:25:40.130995Z",
+      "ticker": "KXNASDAQ100U-26MAY21H1600-T29199.99",
+      "title": "Will the Nasdaq-100 be above 29199.99 at the end of May 21, 2026 at 4pm EDT?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-78.5",
+      "implied_prob": "0.785",
+      "true_prob": "0.0",
+      "confidence": "70",
+      "suggested_live_dollars": "0.44",
+      "suggested_paper_dollars": "49.94",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "22",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-21T17:25:39.861718Z",
+      "ticker": "KXPGAROUNDSCORE-THCCBN26R1-JSPI68",
+      "title": "Will Jordan Spieth shoot under 68.5 in Round 1?",
+      "category": "Sports",
+      "direction": "NO",
+      "edge_pct": "-68.5",
+      "implied_prob": "0.685",
+      "true_prob": "0.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.34",
+      "suggested_paper_dollars": "49.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "34",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-21T17:25:39.507466Z",
+      "ticker": "KXHIGHAUS-26MAY21-B81.5",
+      "title": "Will the **high temp in Austin** be 81-82\u00b0 on May 21, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-27.43",
+      "implied_prob": "0.48",
+      "true_prob": "0.2057",
+      "confidence": "80",
+      "suggested_live_dollars": "0.53",
+      "suggested_paper_dollars": "49.82",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "53",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-21T17:25:39.238085Z",
+      "ticker": "KXHIGHCHI-26MAY21-B60.5",
+      "title": "Will the high temp in Chicago be 60-61\u00b0 on May 21, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-58.44",
+      "implied_prob": "0.685",
+      "true_prob": "0.1006",
+      "confidence": "80",
+      "suggested_live_dollars": "0.32",
+      "suggested_paper_dollars": "49.92",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "32",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-21T17:25:38.963363Z",
+      "ticker": "KXRATECUT-26DEC31",
+      "title": "Will the Federal Reserve cut rates before 2027?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-14.9",
+      "implied_prob": "0.335",
+      "true_prob": "0.186",
+      "confidence": "73",
+      "suggested_live_dollars": "0.68",
+      "suggested_paper_dollars": "19.72",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "68",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-21T17:25:38.412247Z",
+      "ticker": "KXSUSPENDGASTAX-26MAY-JAN01",
+      "title": "Will legislation that would temporarily suspend or reduce the federal excise tax on gasoline become law before Jan 1, 2027?",
+      "category": "Politics",
+      "direction": "NO",
+      "edge_pct": "-15.4",
+      "implied_prob": "0.34",
+      "true_prob": "0.186",
+      "confidence": "75",
+      "suggested_live_dollars": "0.68",
+      "suggested_paper_dollars": "39.44",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "68",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-05-21T14:24:58.879990Z",
       "ticker": "KXWTI-26MAY2114-T101.99",
@@ -2753,6 +2984,237 @@
   ],
   "recent_alerts": [
     {
+      "timestamp": "2026-05-21T17:25:41.913993Z",
+      "ticker": "FEDHIKE-27DEC31",
+      "title": "Will the Federal Reserve hike rates by December 31, 2027?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "9.9",
+      "implied_prob": "0.705",
+      "true_prob": "0.804",
+      "confidence": "68",
+      "suggested_live_dollars": "0.75",
+      "suggested_paper_dollars": "19.5",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "75",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-21T17:25:41.649789Z",
+      "ticker": "KXBRENTD-26MAY2117-T100.00",
+      "title": "Will the brent crude oil close price be above 100.00  USD/Bbl on May 21, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-47.8",
+      "implied_prob": "0.75",
+      "true_prob": "0.272",
+      "confidence": "70",
+      "suggested_live_dollars": "0.28",
+      "suggested_paper_dollars": "49.84",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "28",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-21T17:25:41.303572Z",
+      "ticker": "KXBRENTD-26MAY2117-T99.50",
+      "title": "Will the brent crude oil close price be above 99.50  USD/Bbl on May 21, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-41.94",
+      "implied_prob": "0.835",
+      "true_prob": "0.4156",
+      "confidence": "70",
+      "suggested_live_dollars": "0.36",
+      "suggested_paper_dollars": "49.86",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "18",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-21T17:25:40.828137Z",
+      "ticker": "KXINXU-26MAY21H1600-T7424.9999",
+      "title": "Will the S&P 500 be above 7424.9999 on May 21, 2026 at 4pm EDT?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-65.5",
+      "implied_prob": "0.655",
+      "true_prob": "0.0",
+      "confidence": "70",
+      "suggested_live_dollars": "0.36",
+      "suggested_paper_dollars": "49.68",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "36",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-21T17:25:40.567089Z",
+      "ticker": "KXINXU-26MAY21H1600-T7399.9999",
+      "title": "Will the S&P 500 be above 7399.9999 on May 21, 2026 at 4pm EDT?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-89.0",
+      "implied_prob": "0.89",
+      "true_prob": "0.0",
+      "confidence": "70",
+      "suggested_live_dollars": "0.48",
+      "suggested_paper_dollars": "49.92",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "12",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-21T17:25:40.130995Z",
+      "ticker": "KXNASDAQ100U-26MAY21H1600-T29199.99",
+      "title": "Will the Nasdaq-100 be above 29199.99 at the end of May 21, 2026 at 4pm EDT?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-78.5",
+      "implied_prob": "0.785",
+      "true_prob": "0.0",
+      "confidence": "70",
+      "suggested_live_dollars": "0.44",
+      "suggested_paper_dollars": "49.94",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "22",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-21T17:25:39.861718Z",
+      "ticker": "KXPGAROUNDSCORE-THCCBN26R1-JSPI68",
+      "title": "Will Jordan Spieth shoot under 68.5 in Round 1?",
+      "category": "Sports",
+      "direction": "NO",
+      "edge_pct": "-68.5",
+      "implied_prob": "0.685",
+      "true_prob": "0.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.34",
+      "suggested_paper_dollars": "49.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "34",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-21T17:25:39.507466Z",
+      "ticker": "KXHIGHAUS-26MAY21-B81.5",
+      "title": "Will the **high temp in Austin** be 81-82\u00b0 on May 21, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-27.43",
+      "implied_prob": "0.48",
+      "true_prob": "0.2057",
+      "confidence": "80",
+      "suggested_live_dollars": "0.53",
+      "suggested_paper_dollars": "49.82",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "53",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-21T17:25:39.238085Z",
+      "ticker": "KXHIGHCHI-26MAY21-B60.5",
+      "title": "Will the high temp in Chicago be 60-61\u00b0 on May 21, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-58.44",
+      "implied_prob": "0.685",
+      "true_prob": "0.1006",
+      "confidence": "80",
+      "suggested_live_dollars": "0.32",
+      "suggested_paper_dollars": "49.92",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "32",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-21T17:25:38.963363Z",
+      "ticker": "KXRATECUT-26DEC31",
+      "title": "Will the Federal Reserve cut rates before 2027?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-14.9",
+      "implied_prob": "0.335",
+      "true_prob": "0.186",
+      "confidence": "73",
+      "suggested_live_dollars": "0.68",
+      "suggested_paper_dollars": "19.72",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "68",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-21T17:25:38.412247Z",
+      "ticker": "KXSUSPENDGASTAX-26MAY-JAN01",
+      "title": "Will legislation that would temporarily suspend or reduce the federal excise tax on gasoline become law before Jan 1, 2027?",
+      "category": "Politics",
+      "direction": "NO",
+      "edge_pct": "-15.4",
+      "implied_prob": "0.34",
+      "true_prob": "0.186",
+      "confidence": "75",
+      "suggested_live_dollars": "0.68",
+      "suggested_paper_dollars": "39.44",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "68",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
       "timestamp": "2026-05-21T14:24:58.879990Z",
       "ticker": "KXWTI-26MAY2114-T101.99",
       "title": "Will the WTI crude oil settlement price be above 101.99 USD/Bbl on May 21, 2026?",
@@ -3570,237 +4032,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-05-21T04:22:24.073691Z",
-      "ticker": "KXRAINNYCM-26MAY-2",
-      "title": "Rain in NYC in May 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-66.0",
-      "implied_prob": "0.74",
-      "true_prob": "0.08",
-      "confidence": "85",
-      "suggested_live_dollars": "0.28",
-      "suggested_paper_dollars": "49.84",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "28",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-21T04:22:23.917562Z",
-      "ticker": "KXRAINCHIM-26MAY-2",
-      "title": "Rain in Chicago in May 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-29.5",
-      "implied_prob": "0.315",
-      "true_prob": "0.02",
-      "confidence": "85",
-      "suggested_live_dollars": "0.69",
-      "suggested_paper_dollars": "49.68",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "69",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-21T04:22:23.776088Z",
-      "ticker": "KXRAINDALM-26MAY-4",
-      "title": "Rain in Dallas in May 2026?",
-      "category": "Climate and Weather",
-      "direction": "YES",
-      "edge_pct": "13.5",
-      "implied_prob": "0.695",
-      "true_prob": "0.83",
-      "confidence": "68",
-      "suggested_live_dollars": "0.71",
-      "suggested_paper_dollars": "19.88",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "71",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-21T04:22:23.614821Z",
-      "ticker": "KXRAINDALM-26MAY-3",
-      "title": "Rain in Dallas in May 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-8.5",
-      "implied_prob": "0.915",
-      "true_prob": "0.83",
-      "confidence": "68",
-      "suggested_live_dollars": "0.1",
-      "suggested_paper_dollars": "11.8",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "10",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-21T04:22:23.266461Z",
-      "ticker": "KXRAINDENM-26MAY-2",
-      "title": "Rain in Denver in May 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-35.5",
-      "implied_prob": "0.605",
-      "true_prob": "0.25",
-      "confidence": "85",
-      "suggested_live_dollars": "0.4",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "40",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-21T04:22:23.118373Z",
-      "ticker": "KXRAINHOUM-26MAY-7",
-      "title": "Rain in Houston in May 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-55.5",
-      "implied_prob": "0.865",
-      "true_prob": "0.31",
-      "confidence": "85",
-      "suggested_live_dollars": "0.45",
-      "suggested_paper_dollars": "49.95",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "15",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-21T04:22:22.983587Z",
-      "ticker": "KXRAINHOUM-26MAY-6",
-      "title": "Rain in Houston in May 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-60.5",
-      "implied_prob": "0.915",
-      "true_prob": "0.31",
-      "confidence": "85",
-      "suggested_live_dollars": "0.44",
-      "suggested_paper_dollars": "49.94",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "11",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-21T04:22:22.807507Z",
-      "ticker": "KXRAINSEAM-26MAY-1",
-      "title": "Rain in Seattle in May 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-30.5",
-      "implied_prob": "0.325",
-      "true_prob": "0.02",
-      "confidence": "85",
-      "suggested_live_dollars": "0.68",
-      "suggested_paper_dollars": "49.64",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "68",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-21T04:22:22.653784Z",
-      "ticker": "KXCPICOREYOY-26MAY-T2.9",
-      "title": "Will the rate of core CPI inflation be above 2.9% for the year ending in May 2026?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "32.72",
-      "implied_prob": "0.34",
-      "true_prob": "0.6672",
-      "confidence": "85",
-      "suggested_live_dollars": "0.36",
-      "suggested_paper_dollars": "49.68",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "36",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-21T04:22:22.457882Z",
-      "ticker": "KXCPIYOY-26MAY-T4.3",
-      "title": "Will the rate of CPI inflation be above 4.3% for the year ending in May 2026?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "14.22",
-      "implied_prob": "0.385",
-      "true_prob": "0.5272",
-      "confidence": "68",
-      "suggested_live_dollars": "0.4",
-      "suggested_paper_dollars": "20.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "40",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-21T04:22:22.283421Z",
-      "ticker": "KXCPIYOY-26MAY-T4.2",
-      "title": "Will the rate of CPI inflation be above 4.2% for the year ending in May 2026?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-21.28",
-      "implied_prob": "0.75",
-      "true_prob": "0.5372",
-      "confidence": "75",
-      "suggested_live_dollars": "0.27",
-      "suggested_paper_dollars": "39.96",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "27",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -3814,9 +4045,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 76,
+      "current_cents": 78,
       "dollars_risked": 0,
-      "current_value": 0.76,
+      "current_value": 0.78,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -3826,9 +4057,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 69,
+      "current_cents": 70,
       "dollars_risked": 0,
-      "current_value": 1.38,
+      "current_value": 1.4,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

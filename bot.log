@@ -11788,3 +11788,35 @@ Total modelable markets evaluated: 0
 [2026-05-21 15:36:39 ET] [INFO] Scan complete — 2 alerts sent
 [2026-05-21 15:36:39 ET] [INFO] ============================================================
 [2026-05-21 15:36:40 ET] [INFO] Scan job complete
+[2026-05-21 17:14:54 ET] [INFO] Scan job starting
+[2026-05-21 17:14:54 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-05-21 17:14:54 ET] [INFO] ============================================================
+[2026-05-21 17:14:54 ET] [INFO] Starting market scan
+[2026-05-21 17:14:55 ET] [INFO] Portfolio value: $5.35 cash + $5.21 positions = $10.56
+[2026-05-21 17:14:55 ET] [INFO] Cash: $5.35  |  Positions: $5.21  |  Total: $10.56  |  Peak: $10.81
+[2026-05-21 17:14:56 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-05-21 17:14:56 ET] [WARN] API GET /markets → HTTP 400
+[2026-05-21 17:15:10 ET] [INFO] Fetched 57836 open markets via events endpoint across 37 pages
+[2026-05-21 17:15:10 ET] [INFO] Fetched 57836 open markets
+[2026-05-21 17:15:11 ET] [INFO] Parsed 52537 valid markets
+[2026-05-21 17:15:11 ET] [INFO] Categories: {'Sports': 23864, 'Elections': 12096, 'Entertainment': 7386, 'Economics': 2721, 'Crypto': 1652, 'Politics': 1558, 'Climate and Weather': 773, 'Science and Technology': 646}
+[2026-05-21 17:15:25 ET] [INFO]   CPI model: threshold=10.0% TNX=4.59% → P=0.200
+[2026-05-21 17:17:55 ET] [INFO]   price model: BTC-USD spot=77699.86 target=100000.00 vol=20.4% T=5383.7h → P=0.057
+[2026-05-21 17:17:55 ET] [INFO]   price model: BTC-USD spot=77699.86 target=200000.00 vol=20.4% T=5383.7h → P=0.000
+[2026-05-21 17:17:56 ET] [INFO]   price model: BTC-USD spot=77699.86 target=199999.00 vol=20.4% T=5383.7h → P=0.000
+[2026-05-21 17:20:38 ET] [INFO]   CPI model: threshold=2.8% TNX=4.59% → P=0.679
+[2026-05-21 17:21:09 ET] [INFO]   weather model: miami rain 2026-05-21 forecast=0% → P=0.020
+[2026-05-21 17:21:09 ET] [INFO]   EDGE FOUND: KXRAINMIAM-26MAY-4 | implied=76.0% true=2.0% edge=-74.0% dir=NO conf=85
+[2026-05-21 17:21:22 ET] [INFO]   price model: CL=F spot=98.00 target=88.99 vol=61.9% T=191.7h → P=0.854
+[2026-05-21 17:21:23 ET] [INFO]   CPI model: threshold=0.2% TNX=4.59% → P=0.800
+[2026-05-21 17:22:36 ET] [INFO]   price model: CL=F spot=98.00 target=95.99 vol=61.9% T=21.2h → P=0.752
+[2026-05-21 17:22:40 ET] [INFO]   weather model: austin max=80.0°F target=[83,84]°F days_out=0 σ=3.5°F → P=0.138
+[2026-05-21 17:22:40 ET] [INFO]   EDGE FOUND: KXHIGHAUS-26MAY21-B83.5 | implied=56.5% true=13.8% edge=-42.7% dir=NO conf=80
+[2026-05-21 17:23:26 ET] [INFO] Checked 52427 markets | Modelable: 52427 | Edges found: 2
+[2026-05-21 17:23:26 ET] [INFO] [Discord] Trade alert sent: KXRAINMIAM-26MAY-4
+[2026-05-21 17:23:26 ET] [WARN] AUTO-BET SKIP KXRAINMIAM-26MAY-4: exposure 39.9% ≥ 25% limit ($7.00 of $17.56 in open positions)
+[2026-05-21 17:23:26 ET] [INFO] [Discord] Trade alert sent: KXHIGHAUS-26MAY21-B83.5
+[2026-05-21 17:23:26 ET] [WARN] AUTO-BET SKIP KXHIGHAUS-26MAY21-B83.5: exposure 39.9% ≥ 25% limit ($7.00 of $17.56 in open positions)
+[2026-05-21 17:23:26 ET] [INFO] Scan complete — 2 alerts sent
+[2026-05-21 17:23:26 ET] [INFO] ============================================================
+[2026-05-21 17:23:27 ET] [INFO] Scan job complete

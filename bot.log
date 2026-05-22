@@ -12392,3 +12392,45 @@ Total modelable markets evaluated: 0
 [2026-05-22 04:09:24 ET] [INFO] Scan complete — 5 alerts sent
 [2026-05-22 04:09:24 ET] [INFO] ============================================================
 [2026-05-22 04:09:25 ET] [INFO] Scan job complete
+[2026-05-22 09:34:35 ET] [INFO] Scan job starting
+[2026-05-22 09:34:35 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-05-22 09:34:35 ET] [INFO] ============================================================
+[2026-05-22 09:34:35 ET] [INFO] Starting market scan
+[2026-05-22 09:34:37 ET] [INFO] Portfolio value: $5.35 cash + $4.98 positions = $10.33
+[2026-05-22 09:34:37 ET] [INFO] Cash: $5.35  |  Positions: $4.98  |  Total: $10.33  |  Peak: $10.81
+[2026-05-22 09:34:37 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-05-22 09:34:38 ET] [WARN] API GET /markets → HTTP 400
+[2026-05-22 09:34:56 ET] [INFO] Fetched 58187 open markets via events endpoint across 38 pages
+[2026-05-22 09:34:56 ET] [INFO] Fetched 58187 open markets
+[2026-05-22 09:34:56 ET] [INFO] Parsed 51739 valid markets
+[2026-05-22 09:34:56 ET] [INFO] Categories: {'Sports': 23970, 'Elections': 11391, 'Entertainment': 7107, 'Economics': 2585, 'Crypto': 1705, 'Politics': 1566, 'Financials': 915, 'Science and Technology': 601}
+[2026-05-22 09:35:13 ET] [INFO]   CPI model: threshold=10.0% TNX=4.53% → P=0.200
+[2026-05-22 09:38:03 ET] [INFO]   price model: BTC-USD spot=77130.51 target=100000.00 vol=20.4% T=5367.4h → P=0.052
+[2026-05-22 09:38:03 ET] [INFO]   price model: BTC-USD spot=77130.51 target=200000.00 vol=20.4% T=5367.4h → P=0.000
+[2026-05-22 09:38:04 ET] [INFO]   price model: BTC-USD spot=77130.51 target=199999.00 vol=20.4% T=5367.4h → P=0.000
+[2026-05-22 09:41:09 ET] [INFO]   CPI model: threshold=2.8% TNX=4.54% → P=0.674
+[2026-05-22 09:41:46 ET] [INFO]   weather model: austin rain 2026-05-22 forecast=0% → P=0.020
+[2026-05-22 09:41:46 ET] [INFO]   EDGE FOUND: KXRAINAUSM-26MAY-7 | implied=93.5% true=2.0% edge=-91.5% dir=NO conf=85
+[2026-05-22 09:41:52 ET] [INFO]   price model: BTC-USD spot=77176.84 target=85000.00 vol=20.4% T=230.4h → P=0.002
+[2026-05-22 09:42:00 ET] [INFO]   price model: CL=F spot=96.44 target=88.99 vol=58.8% T=175.4h → P=0.833
+[2026-05-22 09:42:01 ET] [INFO]   CPI model: threshold=0.2% TNX=4.54% → P=0.800
+[2026-05-22 09:43:07 ET] [INFO]   weather model: nyc max=76.0°F target=[67,68]°F days_out=0 σ=3.5°F → P=0.013
+[2026-05-22 09:43:07 ET] [INFO]   EDGE FOUND: KXHIGHNY-26MAY22-B67.5 | implied=54.5% true=1.3% edge=-53.2% dir=NO conf=80
+[2026-05-22 09:43:08 ET] [INFO]   weather model: miami max=88.0°F target=[89,90]°F days_out=0 σ=3.5°F → P=0.206
+[2026-05-22 09:43:08 ET] [INFO]   EDGE FOUND: KXHIGHMIA-26MAY22-B89.5 | implied=80.5% true=20.6% edge=-59.9% dir=NO conf=80
+[2026-05-22 09:43:48 ET] [INFO]   price model: CL=F spot=96.82 target=97.99 vol=58.8% T=7.4h → P=0.241
+[2026-05-22 09:43:48 ET] [INFO]   EDGE FOUND: KXBRENTW-26MAY2217-T97.99 | implied=82.5% true=24.1% edge=-58.4% dir=NO conf=80
+[2026-05-22 09:43:49 ET] [INFO]   price model: CL=F spot=96.82 target=95.99 vol=58.8% T=4.9h → P=0.732
+[2026-05-22 09:43:49 ET] [INFO]   price model: CL=F spot=96.82 target=96.99 vol=58.8% T=4.9h → P=0.450
+[2026-05-22 09:44:21 ET] [INFO] Checked 51638 markets | Modelable: 51638 | Edges found: 4
+[2026-05-22 09:44:22 ET] [INFO] [Discord] Trade alert sent: KXRAINAUSM-26MAY-7
+[2026-05-22 09:44:22 ET] [WARN] AUTO-BET SKIP KXRAINAUSM-26MAY-7: exposure 40.4% ≥ 25% limit ($7.00 of $17.33 in open positions)
+[2026-05-22 09:44:22 ET] [INFO] [Discord] Trade alert sent: KXHIGHNY-26MAY22-B67.5
+[2026-05-22 09:44:23 ET] [WARN] AUTO-BET SKIP KXHIGHNY-26MAY22-B67.5: exposure 40.4% ≥ 25% limit ($7.00 of $17.33 in open positions)
+[2026-05-22 09:44:23 ET] [INFO] [Discord] Trade alert sent: KXHIGHMIA-26MAY22-B89.5
+[2026-05-22 09:44:23 ET] [WARN] AUTO-BET SKIP KXHIGHMIA-26MAY22-B89.5: exposure 40.4% ≥ 25% limit ($7.00 of $17.33 in open positions)
+[2026-05-22 09:44:23 ET] [INFO] [Discord] Trade alert sent: KXBRENTW-26MAY2217-T97.99
+[2026-05-22 09:44:23 ET] [WARN] AUTO-BET SKIP KXBRENTW-26MAY2217-T97.99: exposure 40.4% ≥ 25% limit ($7.00 of $17.33 in open positions)
+[2026-05-22 09:44:23 ET] [INFO] Scan complete — 4 alerts sent
+[2026-05-22 09:44:23 ET] [INFO] ============================================================
+[2026-05-22 09:44:24 ET] [INFO] Scan job complete

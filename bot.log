@@ -13346,3 +13346,32 @@ Total modelable markets evaluated: 0
 [2026-05-23 17:39:43 ET] [INFO] Scan complete — 2 alerts sent
 [2026-05-23 17:39:43 ET] [INFO] ============================================================
 [2026-05-23 17:39:43 ET] [INFO] Scan job complete
+[2026-05-23 18:30:20 ET] [INFO] Scan job starting
+[2026-05-23 18:30:21 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-05-23 18:30:21 ET] [INFO] ============================================================
+[2026-05-23 18:30:21 ET] [INFO] Starting market scan
+[2026-05-23 18:30:22 ET] [INFO] Portfolio value: $5.35 cash + $5.40 positions = $10.75
+[2026-05-23 18:30:22 ET] [INFO] Cash: $5.35  |  Positions: $5.40  |  Total: $10.75  |  Peak: $10.83
+[2026-05-23 18:30:23 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-05-23 18:30:23 ET] [WARN] API GET /markets → HTTP 400
+[2026-05-23 18:30:43 ET] [INFO] Fetched 59404 open markets via events endpoint across 39 pages
+[2026-05-23 18:30:43 ET] [INFO] Fetched 59404 open markets
+[2026-05-23 18:30:43 ET] [INFO] Parsed 54084 valid markets
+[2026-05-23 18:30:43 ET] [INFO] Categories: {'Sports': 25359, 'Elections': 12178, 'Entertainment': 6922, 'Economics': 2562, 'Crypto': 2274, 'Politics': 1600, 'Climate and Weather': 785, 'Science and Technology': 653}
+[2026-05-23 18:31:00 ET] [INFO]   CPI model: threshold=10.0% TNX=4.56% → P=0.200
+[2026-05-23 18:33:41 ET] [INFO]   fed model: implied_rate=3.628% current≈3.585% diff=4.3bps → P=0.415
+[2026-05-23 18:33:53 ET] [INFO]   price model: BTC-USD spot=76485.21 target=100000.00 vol=22.0% T=5334.5h → P=0.059
+[2026-05-23 18:33:53 ET] [INFO]   price model: BTC-USD spot=76485.21 target=200000.00 vol=22.0% T=5334.5h → P=0.000
+[2026-05-23 18:33:54 ET] [INFO]   price model: BTC-USD spot=76485.21 target=199999.00 vol=22.0% T=5334.5h → P=0.000
+[2026-05-23 18:35:49 ET] [INFO]   price model: TSLA spot=426.01 target=430000.00 vol=43.3% T=2157.5h → P=0.000
+[2026-05-23 18:35:49 ET] [INFO]   EDGE FOUND: KXTSLA-26JULDELIV-430000.0 | implied=36.5% true=0.0% edge=-36.5% dir=NO conf=85
+[2026-05-23 18:36:59 ET] [INFO]   CPI model: threshold=2.8% TNX=4.56% → P=0.676
+[2026-05-23 18:37:39 ET] [INFO]   price model: BTC-USD spot=76332.90 target=85000.00 vol=21.8% T=197.5h → P=0.001
+[2026-05-23 18:37:59 ET] [INFO]   CPI model: threshold=0.2% TNX=4.56% → P=0.800
+[2026-05-23 18:40:09 ET] [INFO]   fed model: implied_rate=3.628% current≈3.585% diff=4.3bps → P=0.585
+[2026-05-23 18:40:10 ET] [INFO] Checked 53980 markets | Modelable: 53980 | Edges found: 1
+[2026-05-23 18:40:11 ET] [INFO] [Discord] Trade alert sent: KXTSLA-26JULDELIV-430000.0
+[2026-05-23 18:40:11 ET] [WARN] AUTO-BET SKIP KXTSLA-26JULDELIV-430000.0: exposure 39.4% ≥ 25% limit ($7.00 of $17.75 in open positions)
+[2026-05-23 18:40:11 ET] [INFO] Scan complete — 1 alerts sent
+[2026-05-23 18:40:11 ET] [INFO] ============================================================
+[2026-05-23 18:40:11 ET] [INFO] Scan job complete

@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-23T20:20:54.094273Z",
-  "last_scan_ts": "2026-05-23T20:20:54.094273Z",
+  "generated_at": "2026-05-23T21:39:43.653938Z",
+  "last_scan_ts": "2026-05-23T21:39:43.653938Z",
   "stats": {
-    "total_alerts": 2419,
+    "total_alerts": 2421,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -19,7 +19,7 @@
         "hit_rate": null
       },
       "Politics": {
-        "total": 39,
+        "total": 40,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -55,7 +55,7 @@
         "hit_rate": null
       },
       "Commodities": {
-        "total": 184,
+        "total": 185,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -63,7 +63,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 470,
+        "total": 471,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -75,7 +75,7 @@
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 1398,
+        "total": 1399,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -84,7 +84,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 10.76,
+      "balance": 10.66,
       "cash": 5.35,
       "peak": 10.83,
       "initial_balance": 10.0
@@ -95,15 +95,57 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-05-23T20:09:51.967541Z"
+    "updated_at": "2026-05-23T21:28:37.832278Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.41,
-  "account_value": 10.76,
-  "live_pnl": 0.76,
+  "position_value": 5.31,
+  "account_value": 10.66,
+  "live_pnl": 0.66,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-05-23T21:39:43.316288Z",
+      "ticker": "KXBRENTMON-26MAY2917-T88.99",
+      "title": "Will the brent crude oil close price be above 88.99  USD/Bbl on May 29, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "YES",
+      "edge_pct": "12.71",
+      "implied_prob": "0.735",
+      "true_prob": "0.8621",
+      "confidence": "68",
+      "suggested_live_dollars": "0.74",
+      "suggested_paper_dollars": "19.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "74",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-23T21:39:42.893960Z",
+      "ticker": "KXAIREVIEW-26MAY-JUN01",
+      "title": "Will Donald Trump issue any executive action on establishing or directing a federal review process for artificial intelligence models before their public release before Jun 1, 2026?",
+      "category": "Politics",
+      "direction": "YES",
+      "edge_pct": "30.0",
+      "implied_prob": "0.115",
+      "true_prob": "0.415",
+      "confidence": "85",
+      "suggested_live_dollars": "0.52",
+      "suggested_paper_dollars": "49.92",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "13",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-05-23T20:20:53.791685Z",
       "ticker": "KXHIGHAUS-26MAY23-B83.5",
@@ -2413,72 +2455,51 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-05-22T20:53:46.543417Z",
-      "ticker": "KXWNBASPREAD-26MAY22GSIND-IND7",
-      "title": "Indiana wins by over 6.5 points?",
-      "category": "Sports",
-      "direction": "YES",
-      "edge_pct": "54.5",
-      "implied_prob": "0.455",
-      "true_prob": "1.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.46",
-      "suggested_paper_dollars": "49.68",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "46",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-22T20:53:46.102457Z",
-      "ticker": "KXHIGHAUS-26MAY22-B87.5",
-      "title": "Will the **high temp in Austin** be 87-88\u00b0 on May 22, 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-65.74",
-      "implied_prob": "0.725",
-      "true_prob": "0.0676",
-      "confidence": "80",
-      "suggested_live_dollars": "0.31",
-      "suggested_paper_dollars": "49.91",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "31",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-22T20:53:45.580815Z",
-      "ticker": "KXHIGHCHI-26MAY22-B66.5",
-      "title": "Will the high temp in Chicago be 66-67\u00b0 on May 22, 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-64.09",
-      "implied_prob": "0.665",
-      "true_prob": "0.0241",
-      "confidence": "80",
-      "suggested_live_dollars": "0.34",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "34",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "recent_alerts": [
+    {
+      "timestamp": "2026-05-23T21:39:43.316288Z",
+      "ticker": "KXBRENTMON-26MAY2917-T88.99",
+      "title": "Will the brent crude oil close price be above 88.99  USD/Bbl on May 29, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "YES",
+      "edge_pct": "12.71",
+      "implied_prob": "0.735",
+      "true_prob": "0.8621",
+      "confidence": "68",
+      "suggested_live_dollars": "0.74",
+      "suggested_paper_dollars": "19.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "74",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-23T21:39:42.893960Z",
+      "ticker": "KXAIREVIEW-26MAY-JUN01",
+      "title": "Will Donald Trump issue any executive action on establishing or directing a federal review process for artificial intelligence models before their public release before Jun 1, 2026?",
+      "category": "Politics",
+      "direction": "YES",
+      "edge_pct": "30.0",
+      "implied_prob": "0.115",
+      "true_prob": "0.415",
+      "confidence": "85",
+      "suggested_live_dollars": "0.52",
+      "suggested_paper_dollars": "49.92",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "13",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-05-23T20:20:53.791685Z",
       "ticker": "KXHIGHAUS-26MAY23-B83.5",
@@ -3486,48 +3507,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-05-23T03:57:54.291579Z",
-      "ticker": "KXCPIYOY-26MAY-T4.1",
-      "title": "Will the rate of CPI inflation be above 4.1% for the year ending in May 2026?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-36.92",
-      "implied_prob": "0.915",
-      "true_prob": "0.5458",
-      "confidence": "85",
-      "suggested_live_dollars": "0.5",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "10",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-23T03:57:54.077138Z",
-      "ticker": "KXUSGASCPI-26JUN10-T360",
-      "title": "Will Gasoline (All Types) in U.S. City Average for May 2026 be above 360\u3164?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-86.5",
-      "implied_prob": "0.865",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.52",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "26",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -3541,9 +3520,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 77,
+      "current_cents": 75,
       "dollars_risked": 0,
-      "current_value": 0.77,
+      "current_value": 0.75,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -3565,9 +3544,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 70,
+      "current_cents": 66,
       "dollars_risked": 0,
-      "current_value": 1.4,
+      "current_value": 1.32,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

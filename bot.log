@@ -14048,3 +14048,43 @@ Total modelable markets evaluated: 0
 [2026-05-24 13:22:02 ET] [INFO] Scan complete — 1 alerts sent
 [2026-05-24 13:22:02 ET] [INFO] ============================================================
 [2026-05-24 13:22:02 ET] [INFO] Scan job complete
+[2026-05-24 14:41:22 ET] [INFO] Scan job starting
+[2026-05-24 14:41:23 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-05-24 14:41:23 ET] [INFO] ============================================================
+[2026-05-24 14:41:23 ET] [INFO] Starting market scan
+[2026-05-24 14:41:24 ET] [INFO] Portfolio value: $5.35 cash + $5.36 positions = $10.71
+[2026-05-24 14:41:24 ET] [INFO] Cash: $5.35  |  Positions: $5.36  |  Total: $10.71  |  Peak: $10.83
+[2026-05-24 14:41:25 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-05-24 14:41:25 ET] [WARN] API GET /markets → HTTP 400
+[2026-05-24 14:41:41 ET] [INFO] Fetched 57709 open markets via events endpoint across 35 pages
+[2026-05-24 14:41:41 ET] [INFO] Fetched 57709 open markets
+[2026-05-24 14:41:41 ET] [INFO] Parsed 52734 valid markets
+[2026-05-24 14:41:41 ET] [INFO] Categories: {'Sports': 24518, 'Elections': 12168, 'Entertainment': 6617, 'Economics': 2554, 'Crypto': 2161, 'Politics': 1604, 'Climate and Weather': 795, 'Science and Technology': 626}
+[2026-05-24 14:42:02 ET] [INFO]   CPI model: threshold=10.0% TNX=4.56% → P=0.200
+[2026-05-24 14:45:32 ET] [INFO]   fed model: implied_rate=3.675% current≈3.585% diff=9.0bps → P=0.320
+[2026-05-24 14:45:45 ET] [INFO]   price model: ETH-USD spot=2097.25 target=5000.00 vol=25.8% T=5314.3h → P=0.000
+[2026-05-24 14:45:46 ET] [INFO]   price model: BTC-USD spot=76559.58 target=100000.00 vol=22.1% T=5314.3h → P=0.060
+[2026-05-24 14:45:46 ET] [INFO]   price model: BTC-USD spot=76559.58 target=200000.00 vol=22.1% T=5314.3h → P=0.000
+[2026-05-24 14:45:47 ET] [INFO]   price model: BTC-USD spot=76559.58 target=199999.00 vol=22.1% T=5314.3h → P=0.000
+[2026-05-24 14:49:40 ET] [INFO]   CPI model: threshold=2.8% TNX=4.56% → P=0.676
+[2026-05-24 14:50:49 ET] [INFO]   price model: CL=F spot=96.60 target=90.99 vol=58.8% T=122.3h → P=0.805
+[2026-05-24 14:50:50 ET] [INFO]   CPI model: threshold=0.2% TNX=4.56% → P=0.800
+[2026-05-24 14:51:01 ET] [INFO]   price model: CL=F spot=96.60 target=96.99 vol=58.8% T=47.8h → P=0.463
+[2026-05-24 14:51:01 ET] [INFO]   EDGE FOUND: KXWTI-26MAY2614-T96.99 | implied=32.0% true=46.3% edge=+14.3% dir=YES conf=68
+[2026-05-24 14:51:01 ET] [INFO]   price model: CL=F spot=96.60 target=99.99 vol=58.8% T=47.8h → P=0.214
+[2026-05-24 14:51:19 ET] [INFO]   weather model: philadelphia can't parse temp condition from title
+[2026-05-24 14:51:20 ET] [INFO]   weather model: miami max=88.0°F target=[87,88]°F days_out=0 σ=3.5°F → P=0.223
+[2026-05-24 14:51:20 ET] [INFO]   EDGE FOUND: KXHIGHMIA-26MAY24-B87.5 | implied=70.5% true=22.3% edge=-48.2% dir=NO conf=80
+[2026-05-24 14:51:21 ET] [INFO]   weather model: chicago max=62.0°F target=[72,73]°F days_out=0 σ=3.5°F → P=0.010
+[2026-05-24 14:51:21 ET] [INFO]   EDGE FOUND: KXHIGHCHI-26MAY24-B72.5 | implied=44.5% true=1.0% edge=-43.5% dir=NO conf=80
+[2026-05-24 14:53:30 ET] [INFO]   fed model: implied_rate=3.675% current≈3.585% diff=9.0bps → P=0.680
+[2026-05-24 14:53:31 ET] [INFO] Checked 52630 markets | Modelable: 52630 | Edges found: 3
+[2026-05-24 14:53:32 ET] [INFO] [Discord] Trade alert sent: KXWTI-26MAY2614-T96.99
+[2026-05-24 14:53:32 ET] [WARN] AUTO-BET SKIP KXWTI-26MAY2614-T96.99: exposure 39.5% ≥ 25% limit ($7.00 of $17.71 in open positions)
+[2026-05-24 14:53:33 ET] [INFO] [Discord] Trade alert sent: KXHIGHMIA-26MAY24-B87.5
+[2026-05-24 14:53:33 ET] [WARN] AUTO-BET SKIP KXHIGHMIA-26MAY24-B87.5: exposure 39.5% ≥ 25% limit ($7.00 of $17.71 in open positions)
+[2026-05-24 14:53:33 ET] [INFO] [Discord] Trade alert sent: KXHIGHCHI-26MAY24-B72.5
+[2026-05-24 14:53:33 ET] [WARN] AUTO-BET SKIP KXHIGHCHI-26MAY24-B72.5: exposure 39.5% ≥ 25% limit ($7.00 of $17.71 in open positions)
+[2026-05-24 14:53:33 ET] [INFO] Scan complete — 3 alerts sent
+[2026-05-24 14:53:33 ET] [INFO] ============================================================
+[2026-05-24 14:53:33 ET] [INFO] Scan job complete

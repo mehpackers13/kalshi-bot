@@ -14164,3 +14164,30 @@ Total modelable markets evaluated: 0
 [2026-05-24 18:56:04 ET] [INFO] [Discord] Weekly report sent
 [2026-05-24 18:56:04 ET] [INFO] Weekly review sent
 [2026-05-24 18:56:04 ET] [INFO] Weekly review job complete
+[2026-05-24 19:03:53 ET] [INFO] Scan job starting
+[2026-05-24 19:03:53 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-05-24 19:03:53 ET] [INFO] ============================================================
+[2026-05-24 19:03:53 ET] [INFO] Starting market scan
+[2026-05-24 19:03:54 ET] [INFO] Portfolio value: $5.35 cash + $5.35 positions = $10.70
+[2026-05-24 19:03:54 ET] [INFO] Cash: $5.35  |  Positions: $5.35  |  Total: $10.70  |  Peak: $10.83
+[2026-05-24 19:03:55 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-05-24 19:03:55 ET] [WARN] API GET /markets → HTTP 400
+[2026-05-24 19:04:10 ET] [INFO] Fetched 54772 open markets via events endpoint across 35 pages
+[2026-05-24 19:04:10 ET] [INFO] Fetched 54772 open markets
+[2026-05-24 19:04:10 ET] [INFO] Parsed 50001 valid markets
+[2026-05-24 19:04:10 ET] [INFO] Categories: {'Sports': 21661, 'Elections': 12164, 'Entertainment': 6626, 'Economics': 2557, 'Crypto': 2225, 'Politics': 1607, 'Climate and Weather': 773, 'Science and Technology': 651}
+[2026-05-24 19:04:32 ET] [INFO]   CPI model: threshold=10.0% TNX=4.56% → P=0.200
+[2026-05-24 19:08:10 ET] [INFO]   fed model: implied_rate=3.675% current≈3.585% diff=9.0bps → P=0.320
+[2026-05-24 19:08:24 ET] [INFO]   price model: ETH-USD spot=2090.75 target=5000.00 vol=25.9% T=5309.9h → P=0.000
+[2026-05-24 19:08:24 ET] [INFO]   price model: BTC-USD spot=76785.14 target=100000.00 vol=22.1% T=5309.9h → P=0.062
+[2026-05-24 19:08:24 ET] [INFO]   price model: BTC-USD spot=76785.14 target=200000.00 vol=22.1% T=5309.9h → P=0.000
+[2026-05-24 19:08:26 ET] [INFO]   price model: BTC-USD spot=76785.14 target=199999.00 vol=22.1% T=5309.9h → P=0.000
+[2026-05-24 19:12:31 ET] [INFO]   CPI model: threshold=2.8% TNX=4.56% → P=0.676
+[2026-05-24 19:13:41 ET] [INFO]   price model: CL=F spot=96.60 target=90.99 vol=57.6% T=117.9h → P=0.815
+[2026-05-24 19:13:43 ET] [INFO]   CPI model: threshold=0.2% TNX=4.56% → P=0.800
+[2026-05-24 19:14:35 ET] [INFO]   weather model: philadelphia can't parse temp condition from title
+[2026-05-24 19:15:51 ET] [INFO]   fed model: implied_rate=3.675% current≈3.585% diff=9.0bps → P=0.680
+[2026-05-24 19:15:52 ET] [INFO] Checked 49895 markets | Modelable: 49895 | Edges found: 0
+[2026-05-24 19:15:52 ET] [INFO] Scan complete — no qualifying edges found (this is fine)
+[2026-05-24 19:15:52 ET] [INFO] ============================================================
+[2026-05-24 19:15:52 ET] [INFO] Scan job complete

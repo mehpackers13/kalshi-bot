@@ -14869,3 +14869,33 @@ Total modelable markets evaluated: 0
 [2026-05-25 16:35:21 ET] [INFO] Scan complete — 3 alerts sent
 [2026-05-25 16:35:21 ET] [INFO] ============================================================
 [2026-05-25 16:35:21 ET] [INFO] Scan job complete
+[2026-05-25 17:47:10 ET] [INFO] Scan job starting
+[2026-05-25 17:47:10 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-05-25 17:47:10 ET] [INFO] ============================================================
+[2026-05-25 17:47:10 ET] [INFO] Starting market scan
+[2026-05-25 17:47:11 ET] [INFO] Portfolio value: $5.35 cash + $5.28 positions = $10.63
+[2026-05-25 17:47:11 ET] [INFO] Cash: $5.35  |  Positions: $5.28  |  Total: $10.63  |  Peak: $10.86
+[2026-05-25 17:47:12 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-05-25 17:47:12 ET] [WARN] API GET /markets → HTTP 400
+[2026-05-25 17:47:32 ET] [INFO] Fetched 57042 open markets via events endpoint across 35 pages
+[2026-05-25 17:47:32 ET] [INFO] Fetched 57042 open markets
+[2026-05-25 17:47:32 ET] [INFO] Parsed 52706 valid markets
+[2026-05-25 17:47:32 ET] [INFO] Categories: {'Sports': 24290, 'Elections': 12166, 'Entertainment': 6358, 'Economics': 2653, 'Crypto': 2195, 'Politics': 1603, 'Climate and Weather': 778, 'Science and Technology': 628}
+[2026-05-25 17:47:47 ET] [INFO]   CPI model: threshold=10.0% TNX=4.56% → P=0.200
+[2026-05-25 17:50:11 ET] [INFO]   fed model: implied_rate=3.675% current≈3.585% diff=9.0bps → P=0.320
+[2026-05-25 17:50:21 ET] [INFO]   price model: ETH-USD spot=2108.77 target=5000.00 vol=24.8% T=5287.2h → P=0.000
+[2026-05-25 17:50:21 ET] [INFO]   price model: BTC-USD spot=77256.80 target=100000.00 vol=21.8% T=5287.2h → P=0.064
+[2026-05-25 17:50:21 ET] [INFO]   price model: BTC-USD spot=77256.80 target=200000.00 vol=21.8% T=5287.2h → P=0.000
+[2026-05-25 17:50:22 ET] [INFO]   price model: BTC-USD spot=77256.80 target=199999.00 vol=21.8% T=5287.2h → P=0.000
+[2026-05-25 17:53:17 ET] [INFO]   CPI model: threshold=2.8% TNX=4.56% → P=0.676
+[2026-05-25 17:53:41 ET] [WARN]   wttr.in fetch error (Miami): HTTPSConnectionPool(host='wttr.in', port=443): Max retries exceeded with url: /Miami?format=j1 (Caused by NameResolutionError("HTTPSConnection(host='wttr.in', port=443): Failed to resolve 'wttr.in' ([Errno -3] Temporary failure in name resolution)"))
+[2026-05-25 17:54:17 ET] [INFO]   price model: CL=F spot=96.60 target=92.99 vol=57.6% T=95.2h → P=0.737
+[2026-05-25 17:54:17 ET] [INFO]   price model: CL=F spot=96.60 target=94.99 vol=57.6% T=95.2h → P=0.610
+[2026-05-25 17:54:17 ET] [INFO]   price model: CL=F spot=96.60 target=96.99 vol=57.6% T=95.2h → P=0.473
+[2026-05-25 17:54:20 ET] [INFO]   CPI model: threshold=0.2% TNX=4.56% → P=0.800
+[2026-05-25 17:55:53 ET] [INFO]   fed model: implied_rate=3.675% current≈3.585% diff=9.0bps → P=0.680
+[2026-05-25 17:55:53 ET] [INFO]   fed model: implied_rate=3.675% current≈3.585% diff=9.0bps → P=0.680
+[2026-05-25 17:55:54 ET] [INFO] Checked 52607 markets | Modelable: 52607 | Edges found: 0
+[2026-05-25 17:55:54 ET] [INFO] Scan complete — no qualifying edges found (this is fine)
+[2026-05-25 17:55:54 ET] [INFO] ============================================================
+[2026-05-25 17:55:54 ET] [INFO] Scan job complete

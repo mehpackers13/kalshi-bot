@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-26T14:19:14.953651Z",
-  "last_scan_ts": "2026-05-26T14:19:14.953651Z",
+  "generated_at": "2026-05-26T17:56:11.819754Z",
+  "last_scan_ts": "2026-05-26T17:56:11.819754Z",
   "stats": {
-    "total_alerts": 2741,
+    "total_alerts": 2744,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -37,7 +37,7 @@
         "hit_rate": null
       },
       "Climate and Weather": {
-        "total": 369,
+        "total": 370,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -55,7 +55,7 @@
         "hit_rate": null
       },
       "Commodities": {
-        "total": 243,
+        "total": 245,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,7 +69,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 533,
+        "total": 534,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -81,7 +81,7 @@
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 1586,
+        "total": 1588,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 10.68,
+      "balance": 10.85,
       "cash": 5.35,
       "peak": 10.86,
       "initial_balance": 10.0
@@ -101,15 +101,78 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-05-26T14:08:36.098988Z"
+    "updated_at": "2026-05-26T17:45:07.069888Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.33,
-  "account_value": 10.68,
-  "live_pnl": 0.68,
+  "position_value": 5.5,
+  "account_value": 10.85,
+  "live_pnl": 0.85,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-05-26T17:56:11.406618Z",
+      "ticker": "KXBRENTD-26MAY2617-T94.50",
+      "title": "Will the brent crude oil close price be above 94.50  USD/Bbl on May 26, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-72.87",
+      "implied_prob": "0.94",
+      "true_prob": "0.2113",
+      "confidence": "70",
+      "suggested_live_dollars": "0.49",
+      "suggested_paper_dollars": "49.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "7",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-26T17:56:11.092380Z",
+      "ticker": "KXHIGHCHI-26MAY26-B85.5",
+      "title": "Will the high temp in Chicago be 85-86\u00b0 on May 26, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-58.5",
+      "implied_prob": "0.595",
+      "true_prob": "0.01",
+      "confidence": "80",
+      "suggested_live_dollars": "0.43",
+      "suggested_paper_dollars": "49.88",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "43",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-26T17:56:10.568201Z",
+      "ticker": "KXWTI-26MAY2714-T93.99",
+      "title": "Will the WTI crude oil settlement price be above 93.99 USD/Bbl on May 27, 2026?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-13.52",
+      "implied_prob": "0.58",
+      "true_prob": "0.4448",
+      "confidence": "68",
+      "suggested_live_dollars": "0.43",
+      "suggested_paper_dollars": "19.78",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "43",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-05-26T14:19:14.653775Z",
       "ticker": "KXWTI-26MAY2614-T90.99",
@@ -2419,38 +2482,19 @@
       "null": [
         ""
       ]
-    },
+    }
+  ],
+  "recent_alerts": [
     {
-      "timestamp": "2026-05-25T16:49:30.503330Z",
-      "ticker": "KXHIGHCHI-26MAY25-B84.5",
-      "title": "Will the high temp in Chicago be 84-85\u00b0 on May 25, 2026?",
-      "category": "Climate and Weather",
+      "timestamp": "2026-05-26T17:56:11.406618Z",
+      "ticker": "KXBRENTD-26MAY2617-T94.50",
+      "title": "Will the brent crude oil close price be above 94.50  USD/Bbl on May 26, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
       "direction": "NO",
-      "edge_pct": "-63.0",
-      "implied_prob": "0.64",
-      "true_prob": "0.01",
-      "confidence": "80",
-      "suggested_live_dollars": "0.37",
-      "suggested_paper_dollars": "49.95",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "37",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-25T16:49:30.108572Z",
-      "ticker": "KXEMERCUTS-26-T1",
-      "title": "Will the Fed cut rates 1 times at emergency meetings?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "26.0",
-      "implied_prob": "0.06",
-      "true_prob": "0.32",
-      "confidence": "85",
+      "edge_pct": "-72.87",
+      "implied_prob": "0.94",
+      "true_prob": "0.2113",
+      "confidence": "70",
       "suggested_live_dollars": "0.49",
       "suggested_paper_dollars": "49.98",
       "is_paper_bet": "1",
@@ -2463,28 +2507,47 @@
       ]
     },
     {
-      "timestamp": "2026-05-25T14:24:54.463384Z",
-      "ticker": "KXHIGHNY-26MAY25-B72.5",
-      "title": "Will the **high temp in NYC** be 72-73\u00b0 on May 25, 2026?",
+      "timestamp": "2026-05-26T17:56:11.092380Z",
+      "ticker": "KXHIGHCHI-26MAY26-B85.5",
+      "title": "Will the high temp in Chicago be 85-86\u00b0 on May 26, 2026?",
       "category": "Climate and Weather",
       "direction": "NO",
-      "edge_pct": "-32.73",
-      "implied_prob": "0.55",
-      "true_prob": "0.2227",
+      "edge_pct": "-58.5",
+      "implied_prob": "0.595",
+      "true_prob": "0.01",
       "confidence": "80",
-      "suggested_live_dollars": "0.46",
-      "suggested_paper_dollars": "49.68",
+      "suggested_live_dollars": "0.43",
+      "suggested_paper_dollars": "49.88",
       "is_paper_bet": "1",
-      "paper_entry_price_cents": "46",
+      "paper_entry_price_cents": "43",
       "outcome": "",
       "resolved_at": "",
       "notes": "",
       "null": [
         ""
       ]
-    }
-  ],
-  "recent_alerts": [
+    },
+    {
+      "timestamp": "2026-05-26T17:56:10.568201Z",
+      "ticker": "KXWTI-26MAY2714-T93.99",
+      "title": "Will the WTI crude oil settlement price be above 93.99 USD/Bbl on May 27, 2026?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-13.52",
+      "implied_prob": "0.58",
+      "true_prob": "0.4448",
+      "confidence": "68",
+      "suggested_live_dollars": "0.43",
+      "suggested_paper_dollars": "19.78",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "43",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-05-26T14:19:14.653775Z",
       "ticker": "KXWTI-26MAY2614-T90.99",
@@ -3471,69 +3534,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-05-26T01:38:13.738085Z",
-      "ticker": "KXFEDDECISION-26JUL-H25",
-      "title": "Will the Federal Reserve Hike rates by 25bps at their July 2026 meeting?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "57.0",
-      "implied_prob": "0.07",
-      "true_prob": "0.64",
-      "confidence": "85",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "8",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-26T01:38:13.425554Z",
-      "ticker": "KXFEDDECISION-26JUL-H0",
-      "title": "Will the Federal Reserve Hike rates by 0bps at their July 2026 meeting?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-26.0",
-      "implied_prob": "0.9",
-      "true_prob": "0.64",
-      "confidence": "90",
-      "suggested_live_dollars": "0.44",
-      "suggested_paper_dollars": "49.94",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "11",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-26T01:38:13.257439Z",
-      "ticker": "KXCPIYOY-26JUL-T4.2",
-      "title": "Will the rate of CPI inflation be above 4.2% for the year ending in July 2026?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-23.92",
-      "implied_prob": "0.775",
-      "true_prob": "0.5358",
-      "confidence": "75",
-      "suggested_live_dollars": "0.39",
-      "suggested_paper_dollars": "5.85",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "39",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -3547,9 +3547,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 79,
+      "current_cents": 80,
       "dollars_risked": 0,
-      "current_value": 0.79,
+      "current_value": 0.8,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -3559,9 +3559,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 72,
+      "current_cents": 74,
       "dollars_risked": 0,
-      "current_value": 1.44,
+      "current_value": 1.48,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -3571,9 +3571,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 68,
+      "current_cents": 74,
       "dollars_risked": 0,
-      "current_value": 1.36,
+      "current_value": 1.48,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

@@ -15378,3 +15378,39 @@ Total modelable markets evaluated: 0
 [2026-05-25 21:38:21 ET] [INFO] Scan complete — 87 alerts sent
 [2026-05-25 21:38:21 ET] [INFO] ============================================================
 [2026-05-25 21:38:21 ET] [INFO] Scan job complete
+[2026-05-26 00:03:26 ET] [INFO] Scan job starting
+[2026-05-26 00:03:26 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-05-26 00:03:26 ET] [INFO] ============================================================
+[2026-05-26 00:03:26 ET] [INFO] Starting market scan
+[2026-05-26 00:03:27 ET] [INFO] Portfolio value: $5.35 cash + $5.35 positions = $10.70
+[2026-05-26 00:03:27 ET] [INFO] Cash: $5.35  |  Positions: $5.35  |  Total: $10.70  |  Peak: $10.86
+[2026-05-26 00:03:28 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-05-26 00:03:28 ET] [WARN] API GET /markets → HTTP 400
+[2026-05-26 00:03:43 ET] [INFO] Fetched 55306 open markets via events endpoint across 36 pages
+[2026-05-26 00:03:43 ET] [INFO] Fetched 55306 open markets
+[2026-05-26 00:03:43 ET] [INFO] Parsed 51264 valid markets
+[2026-05-26 00:03:43 ET] [INFO] Categories: {'Sports': 22948, 'Elections': 12168, 'Entertainment': 6170, 'Economics': 2643, 'Crypto': 2305, 'Politics': 1602, 'Climate and Weather': 757, 'Science and Technology': 652}
+[2026-05-26 00:04:00 ET] [INFO]   CPI model: threshold=10.0% TNX=4.56% → P=0.200
+[2026-05-26 00:06:43 ET] [INFO]   fed model: implied_rate=3.628% current≈3.585% diff=4.3bps → P=0.415
+[2026-05-26 00:06:45 ET] [INFO]   fed model: implied_rate=3.628% current≈3.585% diff=4.3bps → P=0.415
+[2026-05-26 00:06:56 ET] [INFO]   price model: ETH-USD spot=2088.84 target=5000.00 vol=23.9% T=5280.9h → P=0.000
+[2026-05-26 00:06:56 ET] [INFO]   price model: BTC-USD spot=76556.34 target=100000.00 vol=21.6% T=5280.9h → P=0.056
+[2026-05-26 00:06:57 ET] [INFO]   price model: BTC-USD spot=76556.34 target=200000.00 vol=21.6% T=5280.9h → P=0.000
+[2026-05-26 00:06:58 ET] [INFO]   price model: BTC-USD spot=76556.34 target=199999.00 vol=21.6% T=5280.9h → P=0.000
+[2026-05-26 00:09:12 ET] [INFO]   CPI model: threshold=3.8% TNX=4.56% → P=0.576
+[2026-05-26 00:10:14 ET] [INFO]   CPI model: threshold=2.8% TNX=4.56% → P=0.676
+[2026-05-26 00:10:41 ET] [INFO]   price model: BTC-USD spot=76541.86 target=70000.00 vol=21.6% T=143.9h → P=0.001
+[2026-05-26 00:11:16 ET] [INFO]   CPI model: threshold=0.2% TNX=4.56% → P=0.800
+[2026-05-26 00:12:06 ET] [INFO]   price model: CL=F spot=91.62 target=88.99 vol=60.8% T=14.4h → P=0.881
+[2026-05-26 00:12:06 ET] [INFO]   price model: CL=F spot=91.62 target=90.99 vol=60.8% T=14.4h → P=0.610
+[2026-05-26 00:12:06 ET] [INFO]   price model: CL=F spot=91.62 target=91.99 vol=60.8% T=14.4h → P=0.435
+[2026-05-26 00:12:28 ET] [INFO]   price model: GC=F spot=4543.40 target=20.50 vol=18.8% T=333.9h → P=1.000
+[2026-05-26 00:12:45 ET] [INFO]   fed model: implied_rate=3.628% current≈3.585% diff=4.3bps → P=0.585
+[2026-05-26 00:12:45 ET] [INFO]   fed model: implied_rate=3.628% current≈3.585% diff=4.3bps → P=0.585
+[2026-05-26 00:12:45 ET] [INFO]   EDGE FOUND: FEDHIKE-27DEC31 | implied=72.0% true=58.5% edge=-13.5% dir=NO conf=68
+[2026-05-26 00:12:46 ET] [INFO] Checked 51178 markets | Modelable: 51178 | Edges found: 1
+[2026-05-26 00:12:46 ET] [INFO] [Discord] Trade alert sent: FEDHIKE-27DEC31
+[2026-05-26 00:12:46 ET] [WARN] AUTO-BET SKIP FEDHIKE-27DEC31: exposure 39.5% ≥ 25% limit ($7.00 of $17.70 in open positions)
+[2026-05-26 00:12:46 ET] [INFO] Scan complete — 1 alerts sent
+[2026-05-26 00:12:46 ET] [INFO] ============================================================
+[2026-05-26 00:12:47 ET] [INFO] Scan job complete

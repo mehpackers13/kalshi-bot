@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-26T04:12:47.163469Z",
-  "last_scan_ts": "2026-05-26T04:12:47.163469Z",
+  "generated_at": "2026-05-26T08:18:44.361601Z",
+  "last_scan_ts": "2026-05-26T08:18:44.361601Z",
   "stats": {
-    "total_alerts": 2730,
+    "total_alerts": 2736,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -13,7 +13,7 @@
         "hit_rate": null
       },
       "Economics": {
-        "total": 622,
+        "total": 624,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -37,7 +37,7 @@
         "hit_rate": null
       },
       "Climate and Weather": {
-        "total": 367,
+        "total": 368,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -55,7 +55,13 @@
         "hit_rate": null
       },
       "Commodities": {
-        "total": 238,
+        "total": 240,
+        "rated": 0,
+        "hits": 0,
+        "hit_rate": null
+      },
+      "Entertainment": {
+        "total": 1,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -63,7 +69,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 530,
+        "total": 532,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -75,7 +81,7 @@
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 1578,
+        "total": 1582,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -84,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 10.7,
+      "balance": 10.68,
       "cash": 5.35,
       "peak": 10.86,
       "initial_balance": 10.0
@@ -95,15 +101,141 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-05-26T04:03:27.672338Z"
+    "updated_at": "2026-05-26T08:06:55.502363Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.35,
-  "account_value": 10.7,
-  "live_pnl": 0.7,
+  "position_value": 5.33,
+  "account_value": 10.68,
+  "live_pnl": 0.68,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-05-26T08:18:43.999392Z",
+      "ticker": "FEDHIKE-27JUN30",
+      "title": "Will the Federal Reserve hike rates by June 30, 2027?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "8.5",
+      "implied_prob": "0.545",
+      "true_prob": "0.63",
+      "confidence": "73",
+      "suggested_live_dollars": "0.6",
+      "suggested_paper_dollars": "4.2",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "60",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-26T08:18:43.713300Z",
+      "ticker": "KXWTI-26MAY2614-T88.99",
+      "title": "Will the WTI crude oil settlement price be above 88.99 USD/Bbl on May 26, 2026?",
+      "category": "Commodities",
+      "direction": "YES",
+      "edge_pct": "12.32",
+      "implied_prob": "0.845",
+      "true_prob": "0.9682",
+      "confidence": "73",
+      "suggested_live_dollars": "0.85",
+      "suggested_paper_dollars": "19.55",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "85",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-26T08:18:43.407685Z",
+      "ticker": "KXHIGHMIA-26MAY26-B88.5",
+      "title": "Will the **high temp in Miami** be 88-89\u00b0 on May 26, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-53.23",
+      "implied_prob": "0.755",
+      "true_prob": "0.2227",
+      "confidence": "80",
+      "suggested_live_dollars": "0.5",
+      "suggested_paper_dollars": "50.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "25",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-26T08:18:43.145720Z",
+      "ticker": "KXBRENTMON-26MAY2917-T102.99",
+      "title": "Will the brent crude oil close price be above 102.99  USD/Bbl on May 29, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-26.03",
+      "implied_prob": "0.295",
+      "true_prob": "0.0347",
+      "confidence": "85",
+      "suggested_live_dollars": "0.71",
+      "suggested_paper_dollars": "49.7",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "71",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-26T08:18:42.836535Z",
+      "ticker": "KXART-HOM26-20000000",
+      "title": "Will the lot sold price of the Homme \u00e0 la pipe (Le Notaire de Nice) by Amedeo Modigliani on Sotheby's be above $20000000 during the live auction beginning June 24, 2026, 01:00 PM EDT?",
+      "category": "Entertainment",
+      "direction": "NO",
+      "edge_pct": "-66.5",
+      "implied_prob": "0.665",
+      "true_prob": "0.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.34",
+      "suggested_paper_dollars": "49.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "34",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-26T08:18:42.483007Z",
+      "ticker": "KXEMERCUTS-26-T1",
+      "title": "Will the Fed cut rates 1 times at emergency meetings?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "31.0",
+      "implied_prob": "0.06",
+      "true_prob": "0.37",
+      "confidence": "85",
+      "suggested_live_dollars": "0.49",
+      "suggested_paper_dollars": "49.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "7",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-05-26T04:12:46.706832Z",
       "ticker": "FEDHIKE-27DEC31",
@@ -2245,21 +2377,23 @@
       "null": [
         ""
       ]
-    },
+    }
+  ],
+  "recent_alerts": [
     {
-      "timestamp": "2026-05-25T04:28:30.051655Z",
-      "ticker": "KXHIGHMIA-26MAY25-B89.5",
-      "title": "Will the **high temp in Miami** be 89-90\u00b0 on May 25, 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-44.93",
-      "implied_prob": "0.655",
-      "true_prob": "0.2057",
-      "confidence": "85",
-      "suggested_live_dollars": "0.35",
-      "suggested_paper_dollars": "49.7",
+      "timestamp": "2026-05-26T08:18:43.999392Z",
+      "ticker": "FEDHIKE-27JUN30",
+      "title": "Will the Federal Reserve hike rates by June 30, 2027?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "8.5",
+      "implied_prob": "0.545",
+      "true_prob": "0.63",
+      "confidence": "73",
+      "suggested_live_dollars": "0.6",
+      "suggested_paper_dollars": "4.2",
       "is_paper_bet": "1",
-      "paper_entry_price_cents": "35",
+      "paper_entry_price_cents": "60",
       "outcome": "",
       "resolved_at": "",
       "notes": "",
@@ -2268,19 +2402,19 @@
       ]
     },
     {
-      "timestamp": "2026-05-25T04:28:29.715772Z",
-      "ticker": "KXBRENTMON-26MAY2917-T88.99",
-      "title": "Will the brent crude oil close price be above 88.99  USD/Bbl on May 29, 2026 at 5:00 PM EDT?",
+      "timestamp": "2026-05-26T08:18:43.713300Z",
+      "ticker": "KXWTI-26MAY2614-T88.99",
+      "title": "Will the WTI crude oil settlement price be above 88.99 USD/Bbl on May 26, 2026?",
       "category": "Commodities",
       "direction": "YES",
-      "edge_pct": "11.05",
-      "implied_prob": "0.785",
-      "true_prob": "0.8955",
-      "confidence": "68",
-      "suggested_live_dollars": "0.81",
-      "suggested_paper_dollars": "19.44",
+      "edge_pct": "12.32",
+      "implied_prob": "0.845",
+      "true_prob": "0.9682",
+      "confidence": "73",
+      "suggested_live_dollars": "0.85",
+      "suggested_paper_dollars": "19.55",
       "is_paper_bet": "1",
-      "paper_entry_price_cents": "81",
+      "paper_entry_price_cents": "85",
       "outcome": "",
       "resolved_at": "",
       "notes": "",
@@ -2289,14 +2423,77 @@
       ]
     },
     {
-      "timestamp": "2026-05-25T04:28:29.312851Z",
-      "ticker": "KXCPIYOY-26MAY-T4.0",
-      "title": "Will the rate of CPI inflation be above 4.0% for the year ending in May 2026?",
-      "category": "Economics",
+      "timestamp": "2026-05-26T08:18:43.407685Z",
+      "ticker": "KXHIGHMIA-26MAY26-B88.5",
+      "title": "Will the **high temp in Miami** be 88-89\u00b0 on May 26, 2026?",
+      "category": "Climate and Weather",
       "direction": "NO",
-      "edge_pct": "-39.42",
-      "implied_prob": "0.95",
-      "true_prob": "0.5558",
+      "edge_pct": "-53.23",
+      "implied_prob": "0.755",
+      "true_prob": "0.2227",
+      "confidence": "80",
+      "suggested_live_dollars": "0.5",
+      "suggested_paper_dollars": "50.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "25",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-26T08:18:43.145720Z",
+      "ticker": "KXBRENTMON-26MAY2917-T102.99",
+      "title": "Will the brent crude oil close price be above 102.99  USD/Bbl on May 29, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-26.03",
+      "implied_prob": "0.295",
+      "true_prob": "0.0347",
+      "confidence": "85",
+      "suggested_live_dollars": "0.71",
+      "suggested_paper_dollars": "49.7",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "71",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-26T08:18:42.836535Z",
+      "ticker": "KXART-HOM26-20000000",
+      "title": "Will the lot sold price of the Homme \u00e0 la pipe (Le Notaire de Nice) by Amedeo Modigliani on Sotheby's be above $20000000 during the live auction beginning June 24, 2026, 01:00 PM EDT?",
+      "category": "Entertainment",
+      "direction": "NO",
+      "edge_pct": "-66.5",
+      "implied_prob": "0.665",
+      "true_prob": "0.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.34",
+      "suggested_paper_dollars": "49.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "34",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-26T08:18:42.483007Z",
+      "ticker": "KXEMERCUTS-26-T1",
+      "title": "Will the Fed cut rates 1 times at emergency meetings?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "31.0",
+      "implied_prob": "0.06",
+      "true_prob": "0.37",
       "confidence": "85",
       "suggested_live_dollars": "0.49",
       "suggested_paper_dollars": "49.98",
@@ -2308,9 +2505,7 @@
       "null": [
         ""
       ]
-    }
-  ],
-  "recent_alerts": [
+    },
     {
       "timestamp": "2026-05-26T04:12:46.706832Z",
       "ticker": "FEDHIKE-27DEC31",
@@ -3234,132 +3429,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-05-26T01:38:12.137069Z",
-      "ticker": "KXTSLA-26JULPROD-380000.0",
-      "title": "Will Tesla Inc. report above 380000 total production in Q2 2026?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-87.5",
-      "implied_prob": "0.875",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.45",
-      "suggested_paper_dollars": "49.95",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "15",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-26T01:38:11.935681Z",
-      "ticker": "KXFEDDECISION-26OCT-H0",
-      "title": "Will the Federal Reserve Hike rates by 0bps at their October 2026 meeting?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-17.5",
-      "implied_prob": "0.815",
-      "true_prob": "0.64",
-      "confidence": "75",
-      "suggested_live_dollars": "0.38",
-      "suggested_paper_dollars": "38.95",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "19",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-26T01:38:11.470287Z",
-      "ticker": "KXCOREUND-26DEC10-T2.2",
-      "title": "Will year-over-year Core CPI inflation for 2026 fall below 2.2%?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "51.08",
-      "implied_prob": "0.225",
-      "true_prob": "0.7358",
-      "confidence": "85",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "24",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-26T01:38:11.255480Z",
-      "ticker": "KXEMERCUTS-26-T0",
-      "title": "Will the Fed cut rates 0 times at emergency meetings?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-54.5",
-      "implied_prob": "0.905",
-      "true_prob": "0.36",
-      "confidence": "95",
-      "suggested_live_dollars": "0.5",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "10",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-26T01:38:11.045879Z",
-      "ticker": "KXRATECUTCOUNT-26DEC31-T2",
-      "title": "Will the Fed cut rates 2 times?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "28.0",
-      "implied_prob": "0.08",
-      "true_prob": "0.36",
-      "confidence": "90",
-      "suggested_live_dollars": "0.54",
-      "suggested_paper_dollars": "49.95",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "9",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-26T01:38:10.761064Z",
-      "ticker": "KXRATECUTCOUNT-26DEC31-T1",
-      "title": "Will the Fed cut rates 1 times?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "18.5",
-      "implied_prob": "0.175",
-      "true_prob": "0.36",
-      "confidence": "80",
-      "suggested_live_dollars": "0.36",
-      "suggested_paper_dollars": "39.96",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "18",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -3373,9 +3442,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 81,
+      "current_cents": 79,
       "dollars_risked": 0,
-      "current_value": 0.81,
+      "current_value": 0.79,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

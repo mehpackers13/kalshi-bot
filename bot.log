@@ -16238,3 +16238,29 @@ Total modelable markets evaluated: 0
 [2026-05-27 16:46:34 ET] [INFO] Scan complete — 3 alerts sent
 [2026-05-27 16:46:34 ET] [INFO] ============================================================
 [2026-05-27 16:46:35 ET] [INFO] Scan job complete
+[2026-05-27 18:48:07 ET] [INFO] Scan job starting
+[2026-05-27 18:48:07 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-05-27 18:48:07 ET] [INFO] ============================================================
+[2026-05-27 18:48:07 ET] [INFO] Starting market scan
+[2026-05-27 18:48:08 ET] [INFO] Portfolio value: $5.35 cash + $5.51 positions = $10.86
+[2026-05-27 18:48:08 ET] [INFO] Cash: $5.35  |  Positions: $5.51  |  Total: $10.86  |  Peak: $10.86
+[2026-05-27 18:48:09 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-05-27 18:48:09 ET] [WARN] API GET /markets → HTTP 400
+[2026-05-27 18:48:23 ET] [INFO] Fetched 59006 open markets via events endpoint across 36 pages
+[2026-05-27 18:48:23 ET] [INFO] Fetched 59006 open markets
+[2026-05-27 18:48:23 ET] [INFO] Parsed 55096 valid markets
+[2026-05-27 18:48:23 ET] [INFO] Categories: {'Sports': 25895, 'Elections': 12142, 'Entertainment': 6468, 'Economics': 2738, 'Crypto': 2323, 'Politics': 1636, 'Science and Technology': 860, 'Climate and Weather': 790}
+[2026-05-27 18:48:41 ET] [INFO]   CPI model: threshold=10.0% TNX=4.48% → P=0.200
+[2026-05-27 18:50:16 ET] [INFO]   fed model: implied_rate=3.630% current≈3.585% diff=4.5bps → P=0.590
+[2026-05-27 18:51:54 ET] [INFO]   price model: BTC-USD spot=74390.40 target=200000.00 vol=22.3% T=5238.2h → P=0.000
+[2026-05-27 18:51:56 ET] [INFO]   price model: BTC-USD spot=74390.40 target=199999.00 vol=22.3% T=5238.2h → P=0.000
+[2026-05-27 18:54:22 ET] [INFO]   CPI model: threshold=3.8% TNX=4.48% → P=0.568
+[2026-05-27 18:55:44 ET] [INFO]   CPI model: threshold=2.8% TNX=4.48% → P=0.668
+[2026-05-27 18:56:08 ET] [INFO]   weather model: dallas rain 2026-05-27 forecast=50% → P=0.500
+[2026-05-27 18:56:08 ET] [INFO]   EDGE FOUND: KXRAINDALM-26MAY-3 | implied=75.5% true=50.0% edge=-25.5% dir=NO conf=90
+[2026-05-27 18:58:42 ET] [INFO] Checked 55005 markets | Modelable: 55005 | Edges found: 1
+[2026-05-27 18:58:42 ET] [INFO] [Discord] Trade alert sent: KXRAINDALM-26MAY-3
+[2026-05-27 18:58:42 ET] [WARN] AUTO-BET SKIP KXRAINDALM-26MAY-3: exposure 39.2% ≥ 25% limit ($7.00 of $17.86 in open positions)
+[2026-05-27 18:58:42 ET] [INFO] Scan complete — 1 alerts sent
+[2026-05-27 18:58:42 ET] [INFO] ============================================================
+[2026-05-27 18:58:42 ET] [INFO] Scan job complete

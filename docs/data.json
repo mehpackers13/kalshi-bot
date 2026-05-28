@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-28T04:23:20.053720Z",
-  "last_scan_ts": "2026-05-28T04:23:20.053720Z",
+  "generated_at": "2026-05-28T08:41:30.371270Z",
+  "last_scan_ts": "2026-05-28T08:41:30.371270Z",
   "stats": {
-    "total_alerts": 2936,
+    "total_alerts": 2940,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -13,7 +13,7 @@
         "hit_rate": null
       },
       "Economics": {
-        "total": 665,
+        "total": 666,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -25,7 +25,7 @@
         "hit_rate": null
       },
       "Crypto": {
-        "total": 1088,
+        "total": 1089,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -55,7 +55,7 @@
         "hit_rate": null
       },
       "Commodities": {
-        "total": 268,
+        "total": 270,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,19 +69,19 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 573,
+        "total": 574,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "medium (15-25%)": {
-        "total": 661,
+        "total": 662,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 1702,
+        "total": 1704,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,9 +90,9 @@
   },
   "bankroll": {
     "live": {
-      "balance": 10.93,
+      "balance": 11.05,
       "cash": 5.35,
-      "peak": 10.93,
+      "peak": 11.05,
       "initial_balance": 10.0
     },
     "paper": {
@@ -101,15 +101,99 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-05-28T04:06:00.188110Z"
+    "updated_at": "2026-05-28T08:27:36.601660Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.58,
-  "account_value": 10.93,
-  "live_pnl": 0.93,
+  "position_value": 5.7,
+  "account_value": 11.05,
+  "live_pnl": 1.05,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-05-28T08:41:30.082490Z",
+      "ticker": "KXPCECORE-26APR-T0.3",
+      "title": "Will the rate of core PCE inflation be above 0.3% in April 2026?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "47.0",
+      "implied_prob": "0.33",
+      "true_prob": "0.8",
+      "confidence": "70",
+      "suggested_live_dollars": "0.46",
+      "suggested_paper_dollars": "49.68",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "46",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-28T08:41:29.802158Z",
+      "ticker": "KXWTI-26MAY2814-T90.99",
+      "title": "Will the WTI crude oil settlement price be above 90.99 USD/Bbl on May 28, 2026?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-19.4",
+      "implied_prob": "0.675",
+      "true_prob": "0.481",
+      "confidence": "70",
+      "suggested_live_dollars": "0.44",
+      "suggested_paper_dollars": "9.24",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "44",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-28T08:41:29.335142Z",
+      "ticker": "KXBRENTW-26MAY2917-T86.99",
+      "title": "Will the brent crude oil close price be above 86.99  USD/Bbl on May 29, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-8.83",
+      "implied_prob": "0.95",
+      "true_prob": "0.8617",
+      "confidence": "68",
+      "suggested_live_dollars": "0.07",
+      "suggested_paper_dollars": "10.71",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "7",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-28T08:41:29.013270Z",
+      "ticker": "KXXRPMAXMON-XRP-26MAY31-180",
+      "title": "Will XRP trimmed mean be above $1.80 by 11:59 PM ET on May 31, 2026?",
+      "category": "Crypto",
+      "direction": "YES",
+      "edge_pct": "71.0",
+      "implied_prob": "0.29",
+      "true_prob": "1.0",
+      "confidence": "80",
+      "suggested_live_dollars": "0.58",
+      "suggested_paper_dollars": "49.88",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "58",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-05-28T04:23:19.739289Z",
       "ticker": "KXPCECORE-26APR-T0.2",
@@ -2251,1718 +2335,19 @@
       "null": [
         ""
       ]
-    },
+    }
+  ],
+  "recent_alerts": [
     {
-      "timestamp": "2026-05-27T08:38:14.505326Z",
-      "ticker": "KXWTIW-26MAY2914-T91.00",
-      "title": "Will the WTI crude oil settlement price be below 91.00 USD/Bbl on May 29, 2026?",
-      "category": "Commodities",
-      "direction": "YES",
-      "edge_pct": "10.15",
-      "implied_prob": "0.445",
-      "true_prob": "0.5465",
-      "confidence": "73",
-      "suggested_live_dollars": "0.45",
-      "suggested_paper_dollars": "19.8",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "45",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:29:11.176310Z",
-      "ticker": "KXBTCMAX150-25-26DEC31-149999.99",
-      "title": "Will Bitcoin be above $149999.99 by Dec 31, 2026 at 11:59PM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-8.5",
-      "implied_prob": "0.085",
-      "true_prob": "0.0",
-      "confidence": "68",
-      "suggested_live_dollars": "0.92",
-      "suggested_paper_dollars": "19.32",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "92",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:29:10.800529Z",
-      "ticker": "FEDHIKE-27DEC31",
-      "title": "Will the Federal Reserve hike rates by December 31, 2027?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-8.9",
-      "implied_prob": "0.725",
-      "true_prob": "0.636",
-      "confidence": "68",
-      "suggested_live_dollars": "0.28",
-      "suggested_paper_dollars": "19.04",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "28",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:29:10.500910Z",
-      "ticker": "FEDHIKE-27JUN30",
-      "title": "Will the Federal Reserve hike rates by June 30, 2027?",
+      "timestamp": "2026-05-28T08:41:30.082490Z",
+      "ticker": "KXPCECORE-26APR-T0.3",
+      "title": "Will the rate of core PCE inflation be above 0.3% in April 2026?",
       "category": "Economics",
       "direction": "YES",
-      "edge_pct": "13.1",
-      "implied_prob": "0.505",
-      "true_prob": "0.636",
-      "confidence": "73",
-      "suggested_live_dollars": "0.53",
-      "suggested_paper_dollars": "19.61",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "53",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:29:10.072347Z",
-      "ticker": "FEDHIKE-26DEC31",
-      "title": "Will the Federal Reserve hike rates by December 31, 2026?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "27.1",
-      "implied_prob": "0.365",
-      "true_prob": "0.636",
-      "confidence": "95",
-      "suggested_live_dollars": "0.37",
-      "suggested_paper_dollars": "49.95",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "37",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:29:09.787337Z",
-      "ticker": "KXPCECORE-26APR-T0.2",
-      "title": "Will the rate of core PCE inflation be above 0.2% in April 2026?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-11.0",
-      "implied_prob": "0.91",
+      "edge_pct": "47.0",
+      "implied_prob": "0.33",
       "true_prob": "0.8",
-      "confidence": "73",
-      "suggested_live_dollars": "0.15",
-      "suggested_paper_dollars": "5.85",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "15",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:29:09.415961Z",
-      "ticker": "KXBRENTMON-26MAY2917-T100.99",
-      "title": "Will the brent crude oil close price be above 100.99  USD/Bbl on May 29, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "NO",
-      "edge_pct": "-22.04",
-      "implied_prob": "0.255",
-      "true_prob": "0.0346",
-      "confidence": "75",
-      "suggested_live_dollars": "0.75",
-      "suggested_paper_dollars": "39.75",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "75",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:29:09.120992Z",
-      "ticker": "KXBRENTMON-26MAY2917-T98.99",
-      "title": "Will the brent crude oil close price be above 98.99  USD/Bbl on May 29, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "NO",
-      "edge_pct": "-27.8",
-      "implied_prob": "0.355",
-      "true_prob": "0.077",
-      "confidence": "85",
-      "suggested_live_dollars": "0.69",
-      "suggested_paper_dollars": "49.68",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "69",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:29:08.822847Z",
-      "ticker": "KXBRENTMON-26MAY2917-T96.99",
-      "title": "Will the brent crude oil close price be above 96.99  USD/Bbl on May 29, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "NO",
-      "edge_pct": "-29.75",
-      "implied_prob": "0.45",
-      "true_prob": "0.1525",
-      "confidence": "85",
-      "suggested_live_dollars": "0.56",
-      "suggested_paper_dollars": "49.84",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "56",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:29:08.510834Z",
-      "ticker": "KXBRENTMON-26MAY2917-T94.99",
-      "title": "Will the brent crude oil close price be above 94.99  USD/Bbl on May 29, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "NO",
-      "edge_pct": "-33.16",
-      "implied_prob": "0.6",
-      "true_prob": "0.2684",
-      "confidence": "85",
-      "suggested_live_dollars": "0.41",
-      "suggested_paper_dollars": "49.61",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "41",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:29:08.170341Z",
-      "ticker": "KXBRENTMON-26MAY2917-T92.99",
-      "title": "Will the brent crude oil close price be above 92.99  USD/Bbl on May 29, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "NO",
-      "edge_pct": "-34.47",
-      "implied_prob": "0.765",
-      "true_prob": "0.4203",
-      "confidence": "85",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "24",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:29:07.863826Z",
-      "ticker": "KXBRENTMON-26MAY2917-T90.99",
-      "title": "Will the brent crude oil close price be above 90.99  USD/Bbl on May 29, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "NO",
-      "edge_pct": "-30.61",
-      "implied_prob": "0.895",
-      "true_prob": "0.5889",
-      "confidence": "85",
-      "suggested_live_dollars": "0.44",
-      "suggested_paper_dollars": "49.94",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "11",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:29:07.580696Z",
-      "ticker": "KXBRENTMON-26MAY2917-T88.99",
-      "title": "Will the brent crude oil close price be above 88.99  USD/Bbl on May 29, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "NO",
-      "edge_pct": "-14.47",
-      "implied_prob": "0.89",
-      "true_prob": "0.7453",
-      "confidence": "73",
-      "suggested_live_dollars": "0.12",
-      "suggested_paper_dollars": "19.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "12",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:29:07.276211Z",
-      "ticker": "KXBTCMINMON-BTC-26MAY31-7250000",
-      "title": "Will BTC trimmed mean be below $72500.00 by 11:59 PM ET on May 31, 2026?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-15.67",
-      "implied_prob": "0.225",
-      "true_prob": "0.0683",
-      "confidence": "75",
-      "suggested_live_dollars": "0.78",
-      "suggested_paper_dollars": "39.78",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "78",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:29:05.348837Z",
-      "ticker": "KXETHMINMON-ETH-26MAY31-200000",
-      "title": "Will ETH trimmed mean be below $2000.00 by 11:59 PM ET on May 31, 2026?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-31.48",
-      "implied_prob": "0.46",
-      "true_prob": "0.1452",
-      "confidence": "80",
-      "suggested_live_dollars": "0.57",
-      "suggested_paper_dollars": "49.59",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "57",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:29:05.037911Z",
-      "ticker": "KXSOLMINMON-SOL-26MAY31-8000",
-      "title": "Will SOL trimmed mean be below $80.00 by 11:59 PM ET on May 31, 2026?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-24.91",
-      "implied_prob": "0.4",
-      "true_prob": "0.1509",
       "confidence": "70",
-      "suggested_live_dollars": "0.61",
-      "suggested_paper_dollars": "39.65",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "61",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:29:04.746274Z",
-      "ticker": "KXXRPMINMON-XRP-26MAY31-130",
-      "title": "Will XRP trimmed mean be below $1.30 by 11:59 PM ET on May 31, 2026?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-62.5",
-      "implied_prob": "0.625",
-      "true_prob": "0.0",
-      "confidence": "80",
-      "suggested_live_dollars": "0.38",
-      "suggested_paper_dollars": "49.78",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "38",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:29:04.359119Z",
-      "ticker": "KXRAINDALM-26MAY-4",
-      "title": "Rain in Dallas in May 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-18.5",
-      "implied_prob": "0.775",
-      "true_prob": "0.59",
-      "confidence": "75",
-      "suggested_live_dollars": "0.31",
-      "suggested_paper_dollars": "19.22",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "31",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:29:04.079027Z",
-      "ticker": "KXRAINDENM-26MAY-2",
-      "title": "Rain in Denver in May 2026?",
-      "category": "Climate and Weather",
-      "direction": "YES",
-      "edge_pct": "18.0",
-      "implied_prob": "0.24",
-      "true_prob": "0.42",
-      "confidence": "75",
-      "suggested_live_dollars": "0.25",
-      "suggested_paper_dollars": "40.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "25",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:29:03.736699Z",
-      "ticker": "KXRAINHOUM-26MAY-7",
-      "title": "Rain in Houston in May 2026?",
-      "category": "Climate and Weather",
-      "direction": "YES",
-      "edge_pct": "21.0",
-      "implied_prob": "0.51",
-      "true_prob": "0.72",
-      "confidence": "75",
-      "suggested_live_dollars": "0.52",
-      "suggested_paper_dollars": "39.52",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "52",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:29:03.429830Z",
-      "ticker": "KXRAINMIAM-26MAY-5",
-      "title": "Rain in Miami in May 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-19.0",
-      "implied_prob": "0.5",
-      "true_prob": "0.31",
-      "confidence": "75",
-      "suggested_live_dollars": "0.53",
-      "suggested_paper_dollars": "39.75",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "53",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:29:02.552622Z",
-      "ticker": "KXRAINSEAM-26MAY-1",
-      "title": "Rain in Seattle in May 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-17.5",
-      "implied_prob": "0.195",
-      "true_prob": "0.02",
-      "confidence": "75",
-      "suggested_live_dollars": "0.81",
-      "suggested_paper_dollars": "39.69",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "81",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:29:02.086158Z",
-      "ticker": "KXCPICOREYOY-26MAY-T2.9",
-      "title": "Will the rate of core CPI inflation be above 2.9% for the year ending in May 2026?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "31.43",
-      "implied_prob": "0.345",
-      "true_prob": "0.6593",
-      "confidence": "85",
-      "suggested_live_dollars": "0.35",
-      "suggested_paper_dollars": "49.7",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "35",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:29:01.648519Z",
-      "ticker": "KXCPIYOY-26MAY-T4.3",
-      "title": "Will the rate of CPI inflation be above 4.3% for the year ending in May 2026?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "26.43",
-      "implied_prob": "0.255",
-      "true_prob": "0.5193",
-      "confidence": "85",
-      "suggested_live_dollars": "0.54",
-      "suggested_paper_dollars": "49.95",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "27",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:29:01.363715Z",
-      "ticker": "KXCPIYOY-26MAY-T4.2",
-      "title": "Will the rate of CPI inflation be above 4.2% for the year ending in May 2026?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-13.07",
-      "implied_prob": "0.66",
-      "true_prob": "0.5293",
-      "confidence": "68",
-      "suggested_live_dollars": "0.38",
-      "suggested_paper_dollars": "19.38",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "38",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:29:01.080348Z",
-      "ticker": "KXCPIYOY-26MAY-T4.1",
-      "title": "Will the rate of CPI inflation be above 4.1% for the year ending in May 2026?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-39.57",
-      "implied_prob": "0.935",
-      "true_prob": "0.5393",
-      "confidence": "85",
-      "suggested_live_dollars": "0.49",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "7",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:29:00.773472Z",
-      "ticker": "KXART-HOM26-20000000",
-      "title": "Will the lot sold price of the Homme \u00e0 la pipe (Le Notaire de Nice) by Amedeo Modigliani on Sotheby's be above $20000000 during the live auction beginning June 24, 2026, 01:00 PM EDT?",
-      "category": "Entertainment",
-      "direction": "NO",
-      "edge_pct": "-66.5",
-      "implied_prob": "0.665",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.34",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "34",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:29:00.365793Z",
-      "ticker": "KXCPIYOY-26JUN-T4.0",
-      "title": "Will the rate of CPI inflation be above 4.0% for the year ending in June 2026?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-32.57",
-      "implied_prob": "0.875",
-      "true_prob": "0.5493",
-      "confidence": "85",
-      "suggested_live_dollars": "0.51",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "17",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:29:00.046323Z",
-      "ticker": "KXFEDDECISION-26JUL-H25",
-      "title": "Will the Federal Reserve Hike rates by 25bps at their July 2026 meeting?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "56.6",
-      "implied_prob": "0.07",
-      "true_prob": "0.636",
-      "confidence": "85",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "8",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:59.725776Z",
-      "ticker": "KXFEDDECISION-26JUL-H0",
-      "title": "Will the Federal Reserve Hike rates by 0bps at their July 2026 meeting?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-26.4",
-      "implied_prob": "0.9",
-      "true_prob": "0.636",
-      "confidence": "90",
-      "suggested_live_dollars": "0.44",
-      "suggested_paper_dollars": "49.94",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "11",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:59.372844Z",
-      "ticker": "KXCPIYOY-26JUL-T4.2",
-      "title": "Will the rate of CPI inflation be above 4.2% for the year ending in July 2026?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-24.57",
-      "implied_prob": "0.775",
-      "true_prob": "0.5293",
-      "confidence": "75",
-      "suggested_live_dollars": "0.39",
-      "suggested_paper_dollars": "7.8",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "39",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:59.061854Z",
-      "ticker": "KXCPIYOY-26JUL-T4.1",
-      "title": "Will the rate of CPI inflation be above 4.1% for the year ending in July 2026?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-32.57",
-      "implied_prob": "0.865",
-      "true_prob": "0.5393",
-      "confidence": "85",
-      "suggested_live_dollars": "0.5",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "25",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:58.754132Z",
-      "ticker": "KXTSLA-26JULDELIV-440000.0",
-      "title": "Will Tesla Inc. report above 440000 total deliveries in Q2 2026?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-30.0",
-      "implied_prob": "0.3",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.71",
-      "suggested_paper_dollars": "49.7",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "71",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:58.356397Z",
-      "ticker": "KXTSLA-26JULDELIV-430000.0",
-      "title": "Will Tesla Inc. report above 430000 total deliveries in Q2 2026?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-38.5",
-      "implied_prob": "0.385",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.65",
-      "suggested_paper_dollars": "49.4",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "65",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:57.993018Z",
-      "ticker": "KXTSLA-26JULDELIV-420000.0",
-      "title": "Will Tesla Inc. report above 420000 total deliveries in Q2 2026?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-50.0",
-      "implied_prob": "0.5",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.52",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "52",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:56.757019Z",
-      "ticker": "KXTSLA-26JULDELIV-410000.0",
-      "title": "Will Tesla Inc. report above 410000 total deliveries in Q2 2026?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-57.5",
-      "implied_prob": "0.575",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.44",
-      "suggested_paper_dollars": "49.72",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "44",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:56.467256Z",
-      "ticker": "KXTSLA-26JULPROD-440000.0",
-      "title": "Will Tesla Inc. report above 440000 total production in Q2 2026?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-36.5",
-      "implied_prob": "0.365",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.65",
-      "suggested_paper_dollars": "49.4",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "65",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:56.142276Z",
-      "ticker": "KXTSLA-26JULPROD-420000.0",
-      "title": "Will Tesla Inc. report above 420000 total production in Q2 2026?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-62.0",
-      "implied_prob": "0.62",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.39",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "39",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:55.177669Z",
-      "ticker": "KXTSLA-26JULPROD-400000.0",
-      "title": "Will Tesla Inc. report above 400000 total production in Q2 2026?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-73.0",
-      "implied_prob": "0.73",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.29",
-      "suggested_paper_dollars": "49.88",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "29",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:54.863016Z",
-      "ticker": "KXTSLA-26JULPROD-380000.0",
-      "title": "Will Tesla Inc. report above 380000 total production in Q2 2026?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-87.0",
-      "implied_prob": "0.87",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "16",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:54.230912Z",
-      "ticker": "KXCOREUND-26DEC10-T2.2",
-      "title": "Will year-over-year Core CPI inflation for 2026 fall below 2.2%?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "50.43",
-      "implied_prob": "0.225",
-      "true_prob": "0.7293",
-      "confidence": "85",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "24",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:53.917654Z",
-      "ticker": "KXEMERCUTS-26-T1",
-      "title": "Will the Fed cut rates 1 times at emergency meetings?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "29.9",
-      "implied_prob": "0.065",
-      "true_prob": "0.364",
-      "confidence": "85",
-      "suggested_live_dollars": "0.49",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "7",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:53.559955Z",
-      "ticker": "KXEMERCUTS-26-T0",
-      "title": "Will the Fed cut rates 0 times at emergency meetings?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-54.1",
-      "implied_prob": "0.905",
-      "true_prob": "0.364",
-      "confidence": "95",
-      "suggested_live_dollars": "0.5",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "10",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:53.270017Z",
-      "ticker": "KXRATECUTCOUNT-26DEC31-T2",
-      "title": "Will the Fed cut rates 2 times?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "28.9",
-      "implied_prob": "0.115",
-      "true_prob": "0.404",
-      "confidence": "90",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "12",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:52.967040Z",
-      "ticker": "KXRATECUTCOUNT-26DEC31-T1",
-      "title": "Will the Fed cut rates 1 times?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "24.4",
-      "implied_prob": "0.16",
-      "true_prob": "0.404",
-      "confidence": "80",
-      "suggested_live_dollars": "0.32",
-      "suggested_paper_dollars": "40.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "16",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:52.639102Z",
-      "ticker": "KXRATECUTCOUNT-26DEC31-T0",
-      "title": "Will the Fed cut rates 0 times?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-25.1",
-      "implied_prob": "0.655",
-      "true_prob": "0.404",
-      "confidence": "95",
-      "suggested_live_dollars": "0.35",
-      "suggested_paper_dollars": "49.7",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "35",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:52.130323Z",
-      "ticker": "KXNASDAQ100Y-26DEC31H1600-T33000",
-      "title": "Will the Nasdaq-100 be above 33000 at the end of Dec 31, 2026 at 4pm EST?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-34.5",
-      "implied_prob": "0.345",
-      "true_prob": "0.0",
-      "confidence": "90",
-      "suggested_live_dollars": "0.68",
-      "suggested_paper_dollars": "49.64",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "68",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:51.443325Z",
-      "ticker": "KXNASDAQ100Y-26DEC31H1600-T19000",
-      "title": "Will the Nasdaq-100 be below 19000 at the end of Dec 31, 2026 at 4pm EST?",
-      "category": "Financials",
-      "direction": "YES",
-      "edge_pct": "90.0",
-      "implied_prob": "0.1",
-      "true_prob": "1.0",
-      "confidence": "95",
-      "suggested_live_dollars": "0.44",
-      "suggested_paper_dollars": "49.94",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "11",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:51.032928Z",
-      "ticker": "KXINXPOS-26DEC31H1900-T6845.5",
-      "title": "Will the S&P 500 be above 6845.5 on Dec 31, 2026 at 4pm EST?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-73.5",
-      "implied_prob": "0.735",
-      "true_prob": "0.0",
-      "confidence": "95",
-      "suggested_live_dollars": "0.54",
-      "suggested_paper_dollars": "49.95",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "27",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:49.844900Z",
-      "ticker": "KXNASDAQ100POS-26DEC31H1600-T25249.85",
-      "title": "Will the Nasdaq-100 be above 25249.85 at the end of Dec 31, 2026 at 4pm EST?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-70.0",
-      "implied_prob": "0.7",
-      "true_prob": "0.0",
-      "confidence": "90",
-      "suggested_live_dollars": "0.34",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "34",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:49.407458Z",
-      "ticker": "KXBTCMAXY-26DEC31-149999.99",
-      "title": "Will Bitcoin be above $149,999.99 by Dec 31, 2026 at 11:59 PM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-9.5",
-      "implied_prob": "0.095",
-      "true_prob": "0.0",
-      "confidence": "68",
-      "suggested_live_dollars": "0.91",
-      "suggested_paper_dollars": "19.11",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "91",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:49.008840Z",
-      "ticker": "KXBTCMAXY-26DEC31-139999.99",
-      "title": "Will Bitcoin be above $139,999.99 by Dec 31, 2026 at 11:59 PM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-12.48",
-      "implied_prob": "0.125",
-      "true_prob": "0.0002",
-      "confidence": "68",
-      "suggested_live_dollars": "0.88",
-      "suggested_paper_dollars": "19.36",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "88",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:48.667561Z",
-      "ticker": "KXBTCMAXY-26DEC31-129999.99",
-      "title": "Will Bitcoin be above $129,999.99 by Dec 31, 2026 at 11:59 PM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-14.41",
-      "implied_prob": "0.145",
-      "true_prob": "0.0009",
-      "confidence": "68",
-      "suggested_live_dollars": "0.86",
-      "suggested_paper_dollars": "19.78",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "86",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:48.302393Z",
-      "ticker": "KXBTCMAXY-26DEC31-119999.99",
-      "title": "Will Bitcoin be above $119,999.99 by Dec 31, 2026 at 11:59 PM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-17.12",
-      "implied_prob": "0.175",
-      "true_prob": "0.0038",
-      "confidence": "75",
-      "suggested_live_dollars": "0.83",
-      "suggested_paper_dollars": "39.84",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "83",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:47.983178Z",
-      "ticker": "KXBTCMAXY-26DEC31-109999.99",
-      "title": "Will Bitcoin be above $109,999.99 by Dec 31, 2026 at 11:59 PM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-22.99",
-      "implied_prob": "0.245",
-      "true_prob": "0.0151",
-      "confidence": "80",
-      "suggested_live_dollars": "0.76",
-      "suggested_paper_dollars": "39.52",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "76",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:47.510981Z",
-      "ticker": "KXBTCMAXY-26DEC31-99999.99",
-      "title": "Will Bitcoin be above $99,999.99 by Dec 31, 2026 at 11:59 PM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-32.24",
-      "implied_prob": "0.375",
-      "true_prob": "0.0526",
-      "confidence": "90",
-      "suggested_live_dollars": "0.63",
-      "suggested_paper_dollars": "49.77",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "63",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:47.166180Z",
-      "ticker": "KXBTCMAX100-26-DEC",
-      "title": "Will Bitcoin be above $100000.00 by Jan 1, 2027 at 12:00AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-31.24",
-      "implied_prob": "0.365",
-      "true_prob": "0.0526",
-      "confidence": "90",
-      "suggested_live_dollars": "0.64",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "64",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:46.591983Z",
-      "ticker": "KXBTCMAX100-26-SEP",
-      "title": "Will Bitcoin be above $100000 by October 1, 2026 at 12:00AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-15.83",
-      "implied_prob": "0.175",
-      "true_prob": "0.0167",
-      "confidence": "75",
-      "suggested_live_dollars": "0.83",
-      "suggested_paper_dollars": "39.84",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "83",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:46.141743Z",
-      "ticker": "KXBTCMINY-27JAN01-40000.00",
-      "title": "Will Bitcoin be below $40000.00 by Jan 1, 2027 at 12:00am ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-23.99",
-      "implied_prob": "0.24",
-      "true_prob": "0.0001",
-      "confidence": "80",
-      "suggested_live_dollars": "0.77",
-      "suggested_paper_dollars": "39.27",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "77",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:45.789900Z",
-      "ticker": "KXBTCMINY-27JAN01-45000.00",
-      "title": "Will Bitcoin be below $45000.00 by Jan 1, 2027 at 12:00am ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-30.35",
-      "implied_prob": "0.305",
-      "true_prob": "0.0015",
-      "confidence": "90",
-      "suggested_live_dollars": "0.7",
-      "suggested_paper_dollars": "49.7",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "70",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:45.459694Z",
-      "ticker": "KXBTCMINY-27JAN01-50000.00",
-      "title": "Will Bitcoin be below $50000.00 by Jan 1, 2027 at 12:00am ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-42.58",
-      "implied_prob": "0.435",
-      "true_prob": "0.0092",
-      "confidence": "90",
-      "suggested_live_dollars": "0.57",
-      "suggested_paper_dollars": "49.59",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "57",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:45.003898Z",
-      "ticker": "KXBTCMINY-27JAN01-55000.00",
-      "title": "Will Bitcoin be below $55000.00 by Jan 1, 2027 at 12:00am ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-42.99",
-      "implied_prob": "0.465",
-      "true_prob": "0.0351",
-      "confidence": "90",
-      "suggested_live_dollars": "0.54",
-      "suggested_paper_dollars": "49.68",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "54",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:44.670342Z",
-      "ticker": "KXBTCMINY-27JAN01-60000.00",
-      "title": "Will Bitcoin be below $60000.00 by Jan 1, 2027 at 12:00am ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-48.02",
-      "implied_prob": "0.575",
-      "true_prob": "0.0948",
-      "confidence": "90",
-      "suggested_live_dollars": "0.43",
-      "suggested_paper_dollars": "49.88",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "43",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:44.261059Z",
-      "ticker": "KXETHMAXY-27JAN01-4750.00",
-      "title": "Will Ethereum reach above $4750.00 by Jan 1, 2027 at 12:00AM?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-9.5",
-      "implied_prob": "0.095",
-      "true_prob": "0.0",
-      "confidence": "63",
-      "suggested_live_dollars": "0.91",
-      "suggested_paper_dollars": "19.11",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "91",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:43.934026Z",
-      "ticker": "KXETHMAXY-27JAN01-4500.00",
-      "title": "Will Ethereum reach above $4500.00 by Jan 1, 2027 at 12:00AM?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-11.0",
-      "implied_prob": "0.11",
-      "true_prob": "0.0",
-      "confidence": "63",
-      "suggested_live_dollars": "0.9",
-      "suggested_paper_dollars": "19.8",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "90",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:43.521188Z",
-      "ticker": "KXETHMAXY-27JAN01-4250.00",
-      "title": "Will Ethereum reach above $4250.00 by Jan 1, 2027 at 12:00AM?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-13.49",
-      "implied_prob": "0.135",
-      "true_prob": "0.0001",
-      "confidence": "63",
-      "suggested_live_dollars": "0.87",
-      "suggested_paper_dollars": "19.14",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "87",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:43.156384Z",
-      "ticker": "KXETHMAXY-27JAN01-4000.00",
-      "title": "Will Ethereum reach above $4000.00 by Jan 1, 2027 at 12:00AM?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-17.47",
-      "implied_prob": "0.175",
-      "true_prob": "0.0003",
-      "confidence": "75",
-      "suggested_live_dollars": "0.83",
-      "suggested_paper_dollars": "39.84",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "83",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:42.730045Z",
-      "ticker": "KXETHMAXY-27JAN01-3750.00",
-      "title": "Will Ethereum reach above $3750.00 by Jan 1, 2027 at 12:00AM?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-20.4",
-      "implied_prob": "0.205",
-      "true_prob": "0.001",
-      "confidence": "70",
-      "suggested_live_dollars": "0.8",
-      "suggested_paper_dollars": "40.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "80",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:42.321308Z",
-      "ticker": "KXETHMAXY-27JAN01-3500.00",
-      "title": "Will Ethereum reach above $3500.00 by Jan 1, 2027 at 12:00AM?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-25.2",
-      "implied_prob": "0.255",
-      "true_prob": "0.003",
-      "confidence": "85",
-      "suggested_live_dollars": "0.75",
-      "suggested_paper_dollars": "49.5",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "75",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:41.884796Z",
-      "ticker": "KXETHMINY-27JAN01-1000",
-      "title": "Will Ethereum reach below $1000.00 by Jan 1, 2027 at 12:00AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-20.49",
-      "implied_prob": "0.205",
-      "true_prob": "0.0001",
-      "confidence": "75",
-      "suggested_live_dollars": "0.8",
-      "suggested_paper_dollars": "40.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "80",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:41.344141Z",
-      "ticker": "KXETHMINY-27JAN01-1250",
-      "title": "Will Ethereum reach below $1250.00 by Jan 1, 2027 at 12:00AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-37.03",
-      "implied_prob": "0.375",
-      "true_prob": "0.0047",
-      "confidence": "85",
-      "suggested_live_dollars": "0.63",
-      "suggested_paper_dollars": "49.77",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "63",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:40.937269Z",
-      "ticker": "KXETHMINY-27JAN01-1500",
-      "title": "Will Ethereum reach below $1500.00 by Jan 1, 2027 at 12:00AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-45.57",
-      "implied_prob": "0.505",
-      "true_prob": "0.0493",
-      "confidence": "85",
-      "suggested_live_dollars": "0.52",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "52",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:40.326420Z",
-      "ticker": "KXETHMINY-27JAN01-1750",
-      "title": "Will Ethereum reach below $1750.00 by Jan 1, 2027 at 12:00AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-50.78",
-      "implied_prob": "0.705",
-      "true_prob": "0.1972",
-      "confidence": "90",
-      "suggested_live_dollars": "0.3",
-      "suggested_paper_dollars": "49.8",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "30",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:39.985728Z",
-      "ticker": "KXSOLMAXY-27JAN01-180",
-      "title": "Will the spot price of Solana be above $180.00 before Jan 1, 2027 at 12:00 AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-16.34",
-      "implied_prob": "0.165",
-      "true_prob": "0.0016",
-      "confidence": "70",
-      "suggested_live_dollars": "0.85",
-      "suggested_paper_dollars": "39.95",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "85",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:39.530988Z",
-      "ticker": "KXSOLMAXY-27JAN01-170",
-      "title": "Will the spot price of Solana be above $170.00 before Jan 1, 2027 at 12:00 AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-18.68",
-      "implied_prob": "0.19",
-      "true_prob": "0.0032",
-      "confidence": "70",
-      "suggested_live_dollars": "0.82",
-      "suggested_paper_dollars": "39.36",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "82",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:38.829549Z",
-      "ticker": "KXSOLMAXY-27JAN01-160",
-      "title": "Will the spot price of Solana be above $160.00 before Jan 1, 2027 at 12:00 AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-21.87",
-      "implied_prob": "0.225",
-      "true_prob": "0.0063",
-      "confidence": "70",
-      "suggested_live_dollars": "0.82",
-      "suggested_paper_dollars": "39.36",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "82",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:38.479521Z",
-      "ticker": "KXSOLMAXY-27JAN01-150",
-      "title": "Will the spot price of Solana be above $150.00 before Jan 1, 2027 at 12:00 AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-24.26",
-      "implied_prob": "0.255",
-      "true_prob": "0.0124",
-      "confidence": "70",
-      "suggested_live_dollars": "0.75",
-      "suggested_paper_dollars": "39.75",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "75",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:38.096011Z",
-      "ticker": "KXBILLS-HOUS",
-      "title": "Will legislation that would revise federal housing programs to increase housing supply and affordability by expanding federal financing and grant authority for affordable housing and streamlining federal requirements that delay housing development become law before Jan 1, 2027?",
-      "category": "Politics",
-      "direction": "NO",
-      "edge_pct": "-27.9",
-      "implied_prob": "0.875",
-      "true_prob": "0.596",
-      "confidence": "85",
-      "suggested_live_dollars": "0.45",
-      "suggested_paper_dollars": "49.95",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "15",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:37.777290Z",
-      "ticker": "KXLARGECUT-26",
-      "title": "Will the Fed cut rates more than 25 bps in 2026?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "30.4",
-      "implied_prob": "0.1",
-      "true_prob": "0.404",
-      "confidence": "90",
-      "suggested_live_dollars": "0.44",
-      "suggested_paper_dollars": "49.94",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "11",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:37.427181Z",
-      "ticker": "KXSUSPENDGASTAX-26MAY-JUL01",
-      "title": "Will legislation that would temporarily suspend or reduce the federal excise tax on gasoline become law before Jul 1, 2026?",
-      "category": "Politics",
-      "direction": "YES",
-      "edge_pct": "31.4",
-      "implied_prob": "0.09",
-      "true_prob": "0.404",
-      "confidence": "85",
-      "suggested_live_dollars": "0.5",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "10",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:37.034666Z",
-      "ticker": "KXTESLASEMI-27JAN-5000",
-      "title": "Will Tesla Inc report above 5000 Semi Trucks Produced before Jan 2027?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-15.0",
-      "implied_prob": "0.15",
-      "true_prob": "0.0",
-      "confidence": "75",
-      "suggested_live_dollars": "0.86",
-      "suggested_paper_dollars": "39.56",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "86",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-27T04:28:36.627007Z",
-      "ticker": "KXTESLASEMI-27JAN-1000",
-      "title": "Will Tesla Inc report above 1000 Semi Trucks Produced before Jan 2027?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-55.42",
-      "implied_prob": "0.56",
-      "true_prob": "0.0058",
-      "confidence": "90",
       "suggested_live_dollars": "0.46",
       "suggested_paper_dollars": "49.68",
       "is_paper_bet": "1",
@@ -3973,9 +2358,70 @@
       "null": [
         ""
       ]
-    }
-  ],
-  "recent_alerts": [
+    },
+    {
+      "timestamp": "2026-05-28T08:41:29.802158Z",
+      "ticker": "KXWTI-26MAY2814-T90.99",
+      "title": "Will the WTI crude oil settlement price be above 90.99 USD/Bbl on May 28, 2026?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-19.4",
+      "implied_prob": "0.675",
+      "true_prob": "0.481",
+      "confidence": "70",
+      "suggested_live_dollars": "0.44",
+      "suggested_paper_dollars": "9.24",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "44",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-28T08:41:29.335142Z",
+      "ticker": "KXBRENTW-26MAY2917-T86.99",
+      "title": "Will the brent crude oil close price be above 86.99  USD/Bbl on May 29, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-8.83",
+      "implied_prob": "0.95",
+      "true_prob": "0.8617",
+      "confidence": "68",
+      "suggested_live_dollars": "0.07",
+      "suggested_paper_dollars": "10.71",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "7",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-05-28T08:41:29.013270Z",
+      "ticker": "KXXRPMAXMON-XRP-26MAY31-180",
+      "title": "Will XRP trimmed mean be above $1.80 by 11:59 PM ET on May 31, 2026?",
+      "category": "Crypto",
+      "direction": "YES",
+      "edge_pct": "71.0",
+      "implied_prob": "0.29",
+      "true_prob": "1.0",
+      "confidence": "80",
+      "suggested_live_dollars": "0.58",
+      "suggested_paper_dollars": "49.88",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "58",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-05-28T04:23:19.739289Z",
       "ticker": "KXPCECORE-26APR-T0.2",
@@ -4941,90 +3387,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-05-28T00:17:06.422293Z",
-      "ticker": "KXEMERCUTS-26-T0",
-      "title": "Will the Fed cut rates 0 times at emergency meetings?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-49.5",
-      "implied_prob": "0.905",
-      "true_prob": "0.41",
-      "confidence": "95",
-      "suggested_live_dollars": "0.5",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "10",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-28T00:17:06.242459Z",
-      "ticker": "KXRATECUTCOUNT-26DEC31-T2",
-      "title": "Will the Fed cut rates 2 times?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "29.0",
-      "implied_prob": "0.12",
-      "true_prob": "0.41",
-      "confidence": "90",
-      "suggested_live_dollars": "0.52",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "13",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-28T00:17:05.944103Z",
-      "ticker": "KXRATECUTCOUNT-26DEC31-T1",
-      "title": "Will the Fed cut rates 1 times?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "25.0",
-      "implied_prob": "0.16",
-      "true_prob": "0.41",
-      "confidence": "80",
-      "suggested_live_dollars": "0.34",
-      "suggested_paper_dollars": "39.95",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "17",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-28T00:17:05.543159Z",
-      "ticker": "KXRATECUTCOUNT-26DEC31-T0",
-      "title": "Will the Fed cut rates 0 times?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-25.0",
-      "implied_prob": "0.66",
-      "true_prob": "0.41",
-      "confidence": "95",
-      "suggested_live_dollars": "0.34",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "34",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -5038,9 +3400,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 81,
+      "current_cents": 77,
       "dollars_risked": 0,
-      "current_value": 0.81,
+      "current_value": 0.77,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -5050,9 +3412,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 78,
+      "current_cents": 82,
       "dollars_risked": 0,
-      "current_value": 1.56,
+      "current_value": 1.64,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -5062,9 +3424,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 73,
+      "current_cents": 77,
       "dollars_risked": 0,
-      "current_value": 1.46,
+      "current_value": 1.54,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

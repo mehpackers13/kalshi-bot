@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-31T01:51:46.717713Z",
-  "last_scan_ts": "2026-05-31T01:51:46.717713Z",
+  "generated_at": "2026-05-31T04:35:15.171878Z",
+  "last_scan_ts": "2026-05-31T04:35:15.171878Z",
   "stats": {
-    "total_alerts": 3204,
+    "total_alerts": 3205,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -13,7 +13,7 @@
         "hit_rate": null
       },
       "Economics": {
-        "total": 723,
+        "total": 724,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,7 +69,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 614,
+        "total": 615,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 10.73,
+      "balance": 10.77,
       "cash": 5.35,
       "peak": 11.27,
       "initial_balance": 10.0
@@ -101,15 +101,36 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-05-31T01:35:28.586106Z"
+    "updated_at": "2026-05-31T04:19:39.850277Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.38,
-  "account_value": 10.73,
-  "live_pnl": 0.73,
+  "position_value": 5.42,
+  "account_value": 10.77,
+  "live_pnl": 0.77,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-05-31T04:35:14.655990Z",
+      "ticker": "KXFEDDECISION-27APR-H0",
+      "title": "Will the Federal Reserve Hike rates by 0bps at their April 2027 meeting?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "8.9",
+      "implied_prob": "0.525",
+      "true_prob": "0.614",
+      "confidence": "68",
+      "suggested_live_dollars": "0.53",
+      "suggested_paper_dollars": "19.61",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "53",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-05-31T01:51:46.382997Z",
       "ticker": "FEDHIKE-27DEC31",
@@ -1621,51 +1642,30 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-05-30T04:10:07.427450Z",
-      "ticker": "FEDHIKE-27DEC31",
-      "title": "Will the Federal Reserve hike rates by December 31, 2027?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-10.6",
-      "implied_prob": "0.69",
-      "true_prob": "0.584",
-      "confidence": "68",
-      "suggested_live_dollars": "0.35",
-      "suggested_paper_dollars": "12.25",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "35",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-30T04:10:06.845497Z",
-      "ticker": "KXSUSPENDGASTAX-26MAY-JUL01",
-      "title": "Will legislation that would temporarily suspend or reduce the federal excise tax on gasoline become law before Jul 1, 2026?",
-      "category": "Politics",
-      "direction": "YES",
-      "edge_pct": "34.1",
-      "implied_prob": "0.075",
-      "true_prob": "0.416",
-      "confidence": "85",
-      "suggested_live_dollars": "0.56",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "8",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "recent_alerts": [
+    {
+      "timestamp": "2026-05-31T04:35:14.655990Z",
+      "ticker": "KXFEDDECISION-27APR-H0",
+      "title": "Will the Federal Reserve Hike rates by 0bps at their April 2027 meeting?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "8.9",
+      "implied_prob": "0.525",
+      "true_prob": "0.614",
+      "confidence": "68",
+      "suggested_live_dollars": "0.53",
+      "suggested_paper_dollars": "19.61",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "53",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-05-31T01:51:46.382997Z",
       "ticker": "FEDHIKE-27DEC31",
@@ -2694,27 +2694,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-05-31T01:51:27.174863Z",
-      "ticker": "KXETHMAXY-27JAN01-3750.00",
-      "title": "Will Ethereum reach above $3750.00 by Jan 1, 2027 at 12:00AM?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-16.45",
-      "implied_prob": "0.165",
-      "true_prob": "0.0005",
-      "confidence": "70",
-      "suggested_live_dollars": "0.84",
-      "suggested_paper_dollars": "39.48",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "84",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -2728,9 +2707,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 75,
+      "current_cents": 77,
       "dollars_risked": 0,
-      "current_value": 0.75,
+      "current_value": 0.77,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -2740,9 +2719,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 74,
+      "current_cents": 75,
       "dollars_risked": 0,
-      "current_value": 1.48,
+      "current_value": 1.5,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

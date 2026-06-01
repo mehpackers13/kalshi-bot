@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-01T17:00:54.934973Z",
-  "last_scan_ts": "2026-06-01T17:00:54.934973Z",
+  "generated_at": "2026-06-01T21:16:09.668648Z",
+  "last_scan_ts": "2026-06-01T21:16:09.668648Z",
   "stats": {
-    "total_alerts": 3299,
+    "total_alerts": 3304,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -13,7 +13,7 @@
         "hit_rate": null
       },
       "Economics": {
-        "total": 743,
+        "total": 745,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -25,7 +25,7 @@
         "hit_rate": null
       },
       "Crypto": {
-        "total": 1196,
+        "total": 1197,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -37,7 +37,7 @@
         "hit_rate": null
       },
       "Climate and Weather": {
-        "total": 423,
+        "total": 425,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,19 +69,19 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 629,
+        "total": 630,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "medium (15-25%)": {
-        "total": 726,
+        "total": 727,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 1944,
+        "total": 1947,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 10.92,
+      "balance": 11.0,
       "cash": 5.35,
       "peak": 11.27,
       "initial_balance": 10.0
@@ -101,15 +101,120 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-06-01T16:44:31.348929Z"
+    "updated_at": "2026-06-01T21:00:02.939130Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.57,
-  "account_value": 10.92,
-  "live_pnl": 0.92,
+  "position_value": 5.65,
+  "account_value": 11.0,
+  "live_pnl": 1.0,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-06-01T21:16:09.375636Z",
+      "ticker": "KXHIGHAUS-26JUN01-B92.5",
+      "title": "Will the **high temp in Austin** be 92-93\u00b0 on Jun 1, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-65.74",
+      "implied_prob": "0.725",
+      "true_prob": "0.0676",
+      "confidence": "80",
+      "suggested_live_dollars": "0.28",
+      "suggested_paper_dollars": "49.84",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "28",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-01T21:16:09.065046Z",
+      "ticker": "KXHIGHPHIL-26JUN01-B79.5",
+      "title": "Will the **high temp in Philadelphia** be 79-80\u00b0 on Jun 1, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-74.43",
+      "implied_prob": "0.95",
+      "true_prob": "0.2057",
+      "confidence": "80",
+      "suggested_live_dollars": "0.54",
+      "suggested_paper_dollars": "49.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "6",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-01T21:16:08.846450Z",
+      "ticker": "KXCPICOREYOY-26MAY-T2.8",
+      "title": "Will the rate of core CPI inflation be above 2.8% for the year ending in May 2026?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "10.25",
+      "implied_prob": "0.565",
+      "true_prob": "0.6675",
+      "confidence": "68",
+      "suggested_live_dollars": "0.58",
+      "suggested_paper_dollars": "19.72",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "58",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-01T21:16:08.551217Z",
+      "ticker": "KXCPICOREYOY-26MAY-T2.7",
+      "title": "Will the rate of core CPI inflation be above 2.7% for the year ending in May 2026?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-21.75",
+      "implied_prob": "0.895",
+      "true_prob": "0.6775",
+      "confidence": "75",
+      "suggested_live_dollars": "0.39",
+      "suggested_paper_dollars": "39.65",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "13",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-01T21:16:08.156828Z",
+      "ticker": "KXBTCMINMON-BTC-26JUN30-7000000",
+      "title": "Will BTC trimmed mean be below $70000.00 by 11:59 PM ET on Jun 30, 2026?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-37.48",
+      "implied_prob": "0.78",
+      "true_prob": "0.4052",
+      "confidence": "80",
+      "suggested_live_dollars": "0.5",
+      "suggested_paper_dollars": "50.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "25",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-06-01T17:00:54.605326Z",
       "ticker": "KXBRENTD-26JUN0117-T97.50",
@@ -1747,156 +1852,114 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-05-31T20:33:07.631026Z",
-      "ticker": "KXWNBASPREAD-26MAY31LVGS-GS2",
-      "title": "Golden State wins by over 1.5 points?",
-      "category": "Sports",
-      "direction": "YES",
-      "edge_pct": "50.0",
-      "implied_prob": "0.5",
-      "true_prob": "1.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.51",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "51",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-31T20:33:07.166267Z",
-      "ticker": "KXHIGHAUS-26MAY31-B89.5",
-      "title": "Will the **high temp in Austin** be 89-90\u00b0 on May 31, 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-53.09",
-      "implied_prob": "0.555",
-      "true_prob": "0.0241",
-      "confidence": "80",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "48",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-31T19:03:17.013442Z",
-      "ticker": "KXWTI-26JUN0114-T88.99",
-      "title": "Will the WTI crude oil settlement price be above 88.99 USD/Bbl on Jun 1, 2026?",
-      "category": "Commodities",
-      "direction": "NO",
-      "edge_pct": "-28.24",
-      "implied_prob": "0.565",
-      "true_prob": "0.2826",
-      "confidence": "80",
-      "suggested_live_dollars": "0.44",
-      "suggested_paper_dollars": "49.72",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "44",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-31T19:03:16.578961Z",
-      "ticker": "KXBRENTD-26JUN0117-T89.50",
-      "title": "Will the brent crude oil close price be above 89.50 USD/Bbl on June 01, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "NO",
-      "edge_pct": "-70.31",
-      "implied_prob": "0.94",
-      "true_prob": "0.2369",
-      "confidence": "85",
-      "suggested_live_dollars": "0.49",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "7",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-31T19:03:16.074678Z",
-      "ticker": "KXRATECUTCOUNT-26DEC31-T3",
-      "title": "Will the Fed cut rates 3 times?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "32.6",
-      "implied_prob": "0.06",
-      "true_prob": "0.386",
-      "confidence": "85",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "8",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-31T17:33:36.543107Z",
-      "ticker": "KXHIGHMIA-26MAY31-B92.5",
-      "title": "Will the **high temp in Miami** be 92-93\u00b0 on May 31, 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-57.73",
-      "implied_prob": "0.8",
-      "true_prob": "0.2227",
-      "confidence": "80",
-      "suggested_live_dollars": "0.42",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "21",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-05-31T17:33:35.939927Z",
-      "ticker": "KXWTI-26JUN0114-T87.99",
-      "title": "Will the WTI crude oil settlement price be above 87.99 USD/Bbl on Jun 1, 2026?",
-      "category": "Commodities",
-      "direction": "NO",
-      "edge_pct": "-17.09",
-      "implied_prob": "0.585",
-      "true_prob": "0.4141",
-      "confidence": "75",
-      "suggested_live_dollars": "0.42",
-      "suggested_paper_dollars": "39.9",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "42",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "recent_alerts": [
+    {
+      "timestamp": "2026-06-01T21:16:09.375636Z",
+      "ticker": "KXHIGHAUS-26JUN01-B92.5",
+      "title": "Will the **high temp in Austin** be 92-93\u00b0 on Jun 1, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-65.74",
+      "implied_prob": "0.725",
+      "true_prob": "0.0676",
+      "confidence": "80",
+      "suggested_live_dollars": "0.28",
+      "suggested_paper_dollars": "49.84",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "28",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-01T21:16:09.065046Z",
+      "ticker": "KXHIGHPHIL-26JUN01-B79.5",
+      "title": "Will the **high temp in Philadelphia** be 79-80\u00b0 on Jun 1, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-74.43",
+      "implied_prob": "0.95",
+      "true_prob": "0.2057",
+      "confidence": "80",
+      "suggested_live_dollars": "0.54",
+      "suggested_paper_dollars": "49.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "6",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-01T21:16:08.846450Z",
+      "ticker": "KXCPICOREYOY-26MAY-T2.8",
+      "title": "Will the rate of core CPI inflation be above 2.8% for the year ending in May 2026?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "10.25",
+      "implied_prob": "0.565",
+      "true_prob": "0.6675",
+      "confidence": "68",
+      "suggested_live_dollars": "0.58",
+      "suggested_paper_dollars": "19.72",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "58",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-01T21:16:08.551217Z",
+      "ticker": "KXCPICOREYOY-26MAY-T2.7",
+      "title": "Will the rate of core CPI inflation be above 2.7% for the year ending in May 2026?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-21.75",
+      "implied_prob": "0.895",
+      "true_prob": "0.6775",
+      "confidence": "75",
+      "suggested_live_dollars": "0.39",
+      "suggested_paper_dollars": "39.65",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "13",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-01T21:16:08.156828Z",
+      "ticker": "KXBTCMINMON-BTC-26JUN30-7000000",
+      "title": "Will BTC trimmed mean be below $70000.00 by 11:59 PM ET on Jun 30, 2026?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-37.48",
+      "implied_prob": "0.78",
+      "true_prob": "0.4052",
+      "confidence": "80",
+      "suggested_live_dollars": "0.5",
+      "suggested_paper_dollars": "50.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "25",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-06-01T17:00:54.605326Z",
       "ticker": "KXBRENTD-26JUN0117-T97.50",
@@ -2841,111 +2904,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-06-01T01:56:42.769716Z",
-      "ticker": "KXNASDAQ100POS-26DEC31H1600-T25249.85",
-      "title": "Will the Nasdaq-100 be above 25249.85 at the end of Dec 31, 2026 at 4pm EST?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-77.5",
-      "implied_prob": "0.775",
-      "true_prob": "0.0",
-      "confidence": "90",
-      "suggested_live_dollars": "0.5",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "25",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-01T01:56:42.616933Z",
-      "ticker": "KXBTCMAXY-26DEC31-139999.99",
-      "title": "Will Bitcoin be above $139,999.99 by Dec 31, 2026 at 11:59 PM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-9.5",
-      "implied_prob": "0.095",
-      "true_prob": "0.0",
-      "confidence": "63",
-      "suggested_live_dollars": "0.91",
-      "suggested_paper_dollars": "19.11",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "91",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-01T01:56:42.392532Z",
-      "ticker": "KXBTCMAXY-26DEC31-129999.99",
-      "title": "Will Bitcoin be above $129,999.99 by Dec 31, 2026 at 11:59 PM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-11.48",
-      "implied_prob": "0.115",
-      "true_prob": "0.0002",
-      "confidence": "68",
-      "suggested_live_dollars": "0.89",
-      "suggested_paper_dollars": "19.58",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "89",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-01T01:56:42.003460Z",
-      "ticker": "KXBTCMAXY-26DEC31-119999.99",
-      "title": "Will Bitcoin be above $119,999.99 by Dec 31, 2026 at 11:59 PM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-15.37",
-      "implied_prob": "0.155",
-      "true_prob": "0.0013",
-      "confidence": "75",
-      "suggested_live_dollars": "0.85",
-      "suggested_paper_dollars": "39.95",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "85",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-01T01:56:41.843761Z",
-      "ticker": "KXBTCMAXY-26DEC31-109999.99",
-      "title": "Will Bitcoin be above $109,999.99 by Dec 31, 2026 at 11:59 PM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-19.86",
-      "implied_prob": "0.205",
-      "true_prob": "0.0064",
-      "confidence": "75",
-      "suggested_live_dollars": "0.8",
-      "suggested_paper_dollars": "40.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "80",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -2959,9 +2917,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 78,
+      "current_cents": 79,
       "dollars_risked": 0,
-      "current_value": 0.78,
+      "current_value": 0.79,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -2971,9 +2929,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 77,
+      "current_cents": 78,
       "dollars_risked": 0,
-      "current_value": 1.54,
+      "current_value": 1.56,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -2983,9 +2941,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 74,
+      "current_cents": 76,
       "dollars_risked": 0,
-      "current_value": 1.48,
+      "current_value": 1.52,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -2995,9 +2953,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 93,
+      "current_cents": 94,
       "dollars_risked": 0,
-      "current_value": 0.93,
+      "current_value": 0.94,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

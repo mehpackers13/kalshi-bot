@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-02T02:16:53.380480Z",
-  "last_scan_ts": "2026-06-02T02:16:53.380480Z",
+  "generated_at": "2026-06-02T04:44:42.955956Z",
+  "last_scan_ts": "2026-06-02T04:44:42.955956Z",
   "stats": {
-    "total_alerts": 3370,
+    "total_alerts": 3372,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -25,7 +25,7 @@
         "hit_rate": null
       },
       "Crypto": {
-        "total": 1221,
+        "total": 1222,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -55,7 +55,7 @@
         "hit_rate": null
       },
       "Commodities": {
-        "total": 321,
+        "total": 322,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,13 +69,13 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 641,
+        "total": 642,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "medium (15-25%)": {
-        "total": 742,
+        "total": 743,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 10.92,
+      "balance": 11.05,
       "cash": 5.35,
       "peak": 11.27,
       "initial_balance": 10.0
@@ -101,15 +101,57 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-06-02T02:00:26.825026Z"
+    "updated_at": "2026-06-02T04:27:22.776235Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.57,
-  "account_value": 10.92,
-  "live_pnl": 0.92,
+  "position_value": 5.7,
+  "account_value": 11.05,
+  "live_pnl": 1.05,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-06-02T04:44:42.637811Z",
+      "ticker": "KXBRENTW-26JUN0517-T89.99",
+      "title": "Will the brent crude oil close price be above 89.99 USD/Bbl on June 05, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-22.2",
+      "implied_prob": "0.815",
+      "true_prob": "0.593",
+      "confidence": "75",
+      "suggested_live_dollars": "0.4",
+      "suggested_paper_dollars": "40.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "20",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-02T04:44:38.589592Z",
+      "ticker": "KXBTCMAXY-26DEC31-139999.99",
+      "title": "Will Bitcoin be above $139,999.99 by Dec 31, 2026 at 11:59 PM ET?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-8.0",
+      "implied_prob": "0.08",
+      "true_prob": "0.0",
+      "confidence": "63",
+      "suggested_live_dollars": "0.93",
+      "suggested_paper_dollars": "19.53",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "93",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-06-02T02:16:53.028064Z",
       "ticker": "FEDHIKE-27DEC31",
@@ -1940,6 +1982,48 @@
   ],
   "recent_alerts": [
     {
+      "timestamp": "2026-06-02T04:44:42.637811Z",
+      "ticker": "KXBRENTW-26JUN0517-T89.99",
+      "title": "Will the brent crude oil close price be above 89.99 USD/Bbl on June 05, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-22.2",
+      "implied_prob": "0.815",
+      "true_prob": "0.593",
+      "confidence": "75",
+      "suggested_live_dollars": "0.4",
+      "suggested_paper_dollars": "40.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "20",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-02T04:44:38.589592Z",
+      "ticker": "KXBTCMAXY-26DEC31-139999.99",
+      "title": "Will Bitcoin be above $139,999.99 by Dec 31, 2026 at 11:59 PM ET?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-8.0",
+      "implied_prob": "0.08",
+      "true_prob": "0.0",
+      "confidence": "63",
+      "suggested_live_dollars": "0.93",
+      "suggested_paper_dollars": "19.53",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "93",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
       "timestamp": "2026-06-02T02:16:53.028064Z",
       "ticker": "FEDHIKE-27DEC31",
       "title": "Will the Federal Reserve hike rates by December 31, 2027?",
@@ -2946,48 +3030,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-06-02T02:16:33.896976Z",
-      "ticker": "KXETHMAXY-27JAN01-4500.00",
-      "title": "Will Ethereum reach above $4500.00 by Jan 1, 2027 at 12:00AM?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-8.0",
-      "implied_prob": "0.08",
-      "true_prob": "0.0",
-      "confidence": "63",
-      "suggested_live_dollars": "0.93",
-      "suggested_paper_dollars": "19.53",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "93",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-02T02:16:33.366655Z",
-      "ticker": "KXETHMAXY-27JAN01-4250.00",
-      "title": "Will Ethereum reach above $4250.00 by Jan 1, 2027 at 12:00AM?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-10.5",
-      "implied_prob": "0.105",
-      "true_prob": "0.0",
-      "confidence": "63",
-      "suggested_live_dollars": "0.9",
-      "suggested_paper_dollars": "19.8",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "90",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -3001,9 +3043,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 77,
+      "current_cents": 82,
       "dollars_risked": 0,
-      "current_value": 0.77,
+      "current_value": 0.82,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -3013,9 +3055,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 77,
+      "current_cents": 78,
       "dollars_risked": 0,
-      "current_value": 1.54,
+      "current_value": 1.56,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -3025,9 +3067,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 74,
+      "current_cents": 77,
       "dollars_risked": 0,
-      "current_value": 1.48,
+      "current_value": 1.54,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

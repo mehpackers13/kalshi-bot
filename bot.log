@@ -22448,3 +22448,43 @@ Total modelable markets evaluated: 0
 [2026-06-06 16:39:34 ET] [INFO] Scan complete — 1 alerts sent
 [2026-06-06 16:39:34 ET] [INFO] ============================================================
 [2026-06-06 16:39:34 ET] [INFO] Scan job complete
+[2026-06-06 17:38:39 ET] [INFO] Scan job starting
+[2026-06-06 17:38:39 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-06-06 17:38:39 ET] [INFO] ============================================================
+[2026-06-06 17:38:39 ET] [INFO] Starting market scan
+[2026-06-06 17:38:40 ET] [INFO] Portfolio value: $5.35 cash + $5.72 positions = $11.07
+[2026-06-06 17:38:40 ET] [INFO] Cash: $5.35  |  Positions: $5.72  |  Total: $11.07  |  Peak: $11.41
+[2026-06-06 17:38:40 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-06-06 17:38:41 ET] [WARN] API GET /markets → HTTP 400
+[2026-06-06 17:38:55 ET] [INFO] Fetched 64114 open markets via events endpoint across 38 pages
+[2026-06-06 17:38:55 ET] [INFO] Fetched 64114 open markets
+[2026-06-06 17:38:56 ET] [INFO] Parsed 59582 valid markets
+[2026-06-06 17:38:56 ET] [INFO] Categories: {'Sports': 30000, 'Elections': 11794, 'Entertainment': 6884, 'Economics': 2654, 'Crypto': 2232, 'Politics': 1649, 'Financials': 1152, 'Climate and Weather': 818}
+[2026-06-06 17:42:55 ET] [INFO]   fed model: implied_rate=3.622% current≈3.625% diff=-0.3bps → P=0.495
+[2026-06-06 17:46:25 ET] [INFO]   price model: ETH-USD spot=1558.45 target=4750.00 vol=41.4% T=4999.4h → P=0.000
+[2026-06-06 17:46:25 ET] [INFO]   price model: ETH-USD spot=1558.45 target=5000.00 vol=41.4% T=4999.4h → P=0.000
+[2026-06-06 17:46:29 ET] [INFO]   price model: BTC-USD spot=60750.18 target=129999.00 vol=30.7% T=4999.3h → P=0.001
+[2026-06-06 17:46:29 ET] [INFO]   price model: BTC-USD spot=60750.18 target=139999.00 vol=30.7% T=4999.3h → P=0.000
+[2026-06-06 17:46:33 ET] [INFO]   price model: SPY spot=737.55 target=9000.00 vol=12.3% T=4991.4h → P=0.000
+[2026-06-06 17:51:05 ET] [INFO]   CPI model: threshold=4.2% TNX=4.54% → P=0.534
+[2026-06-06 17:53:14 ET] [INFO]   CPI model: threshold=3.8% TNX=4.54% → P=0.574
+[2026-06-06 17:53:14 ET] [INFO]   CPI model: threshold=3.9% TNX=4.54% → P=0.564
+[2026-06-06 17:53:14 ET] [INFO]   EDGE FOUND: KXCPIYOY-26JUN-T3.9 | implied=69.0% true=56.4% edge=-12.6% dir=NO conf=68
+[2026-06-06 17:53:15 ET] [INFO]   CPI model: threshold=4.0% TNX=4.54% → P=0.554
+[2026-06-06 17:54:09 ET] [INFO]   price model: CL=F spot=90.54 target=74.99 vol=58.6% T=575.4h → P=0.895
+[2026-06-06 17:57:30 ET] [INFO]   CPI model: threshold=4.2% TNX=4.54% → P=0.534
+[2026-06-06 17:58:11 ET] [INFO]   price model: CL=F spot=90.54 target=92.99 vol=58.6% T=44.9h → P=0.262
+[2026-06-06 17:58:11 ET] [INFO]   EDGE FOUND: KXWTI-26JUN0814-T92.99 | implied=43.0% true=26.2% edge=-16.8% dir=NO conf=75
+[2026-06-06 17:59:16 ET] [INFO]   weather model: denver max=93.0°F target=[92,93]°F days_out=0 σ=3.5°F → P=0.223
+[2026-06-06 17:59:16 ET] [INFO]   EDGE FOUND: KXHIGHDEN-26JUN06-B92.5 | implied=89.5% true=22.3% edge=-67.2% dir=NO conf=80
+[2026-06-06 17:59:17 ET] [INFO]   weather model: austin can't parse temp condition from title
+[2026-06-06 18:01:29 ET] [INFO]   fed model: implied_rate=3.622% current≈3.625% diff=-0.3bps → P=0.495
+[2026-06-06 18:01:30 ET] [INFO] Checked 59495 markets | Modelable: 59495 | Edges found: 3
+[2026-06-06 18:01:30 ET] [INFO]   Skipping KXCPIYOY-26JUN-T3.9 — suggested bet too small to be meaningful
+[2026-06-06 18:01:31 ET] [INFO] [Discord] Trade alert sent: KXWTI-26JUN0814-T92.99
+[2026-06-06 18:01:31 ET] [WARN] AUTO-BET SKIP KXWTI-26JUN0814-T92.99: exposure 38.7% ≥ 25% limit ($7.00 of $18.07 in open positions)
+[2026-06-06 18:01:32 ET] [INFO] [Discord] Trade alert sent: KXHIGHDEN-26JUN06-B92.5
+[2026-06-06 18:01:32 ET] [WARN] AUTO-BET SKIP KXHIGHDEN-26JUN06-B92.5: exposure 38.7% ≥ 25% limit ($7.00 of $18.07 in open positions)
+[2026-06-06 18:01:32 ET] [INFO] Scan complete — 2 alerts sent
+[2026-06-06 18:01:32 ET] [INFO] ============================================================
+[2026-06-06 18:01:32 ET] [INFO] Scan job complete

@@ -22240,3 +22240,46 @@ Total modelable markets evaluated: 0
 [2026-06-06 08:11:32 ET] [INFO] Scan complete — no qualifying edges found (this is fine)
 [2026-06-06 08:11:32 ET] [INFO] ============================================================
 [2026-06-06 08:11:32 ET] [INFO] Scan job complete
+[2026-06-06 10:17:38 ET] [INFO] Scan job starting
+[2026-06-06 10:17:39 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-06-06 10:17:39 ET] [INFO] ============================================================
+[2026-06-06 10:17:39 ET] [INFO] Starting market scan
+[2026-06-06 10:17:40 ET] [INFO] Portfolio value: $5.35 cash + $5.37 positions = $10.72
+[2026-06-06 10:17:40 ET] [INFO] Cash: $5.35  |  Positions: $5.37  |  Total: $10.72  |  Peak: $11.41
+[2026-06-06 10:17:40 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-06-06 10:17:40 ET] [WARN] API GET /markets → HTTP 400
+[2026-06-06 10:17:54 ET] [INFO] Fetched 62324 open markets via events endpoint across 38 pages
+[2026-06-06 10:17:54 ET] [INFO] Fetched 62324 open markets
+[2026-06-06 10:17:54 ET] [INFO] Parsed 58175 valid markets
+[2026-06-06 10:17:54 ET] [INFO] Categories: {'Sports': 28748, 'Elections': 11794, 'Entertainment': 6828, 'Economics': 2620, 'Crypto': 2264, 'Politics': 1649, 'Financials': 1142, 'Climate and Weather': 829}
+[2026-06-06 10:21:54 ET] [INFO]   fed model: implied_rate=3.622% current≈3.625% diff=-0.3bps → P=0.495
+[2026-06-06 10:25:21 ET] [INFO]   price model: SOL-USD spot=62.62 target=160.00 vol=42.7% T=5006.7h → P=0.002
+[2026-06-06 10:25:21 ET] [INFO]   EDGE FOUND: KXSOLMAXY-27JAN01-160 | implied=19.5% true=0.2% edge=-19.3% dir=NO conf=70
+[2026-06-06 10:25:22 ET] [INFO]   price model: ETH-USD spot=1560.51 target=1500.00 vol=41.4% T=5006.7h → P=0.450
+[2026-06-06 10:25:22 ET] [INFO]   EDGE FOUND: KXETHMINY-27JAN01-1500 | implied=95.0% true=45.0% edge=-50.0% dir=NO conf=90
+[2026-06-06 10:25:22 ET] [INFO]   price model: ETH-USD spot=1560.51 target=4750.00 vol=41.4% T=5006.7h → P=0.000
+[2026-06-06 10:25:22 ET] [INFO]   price model: ETH-USD spot=1560.51 target=5000.00 vol=41.4% T=5006.7h → P=0.000
+[2026-06-06 10:25:26 ET] [INFO]   price model: BTC-USD spot=60820.06 target=129999.00 vol=30.7% T=5006.7h → P=0.001
+[2026-06-06 10:25:26 ET] [INFO]   price model: BTC-USD spot=60820.06 target=139999.00 vol=30.7% T=5006.7h → P=0.000
+[2026-06-06 10:25:26 ET] [INFO]   price model: BTC-USD spot=60820.06 target=149999.00 vol=30.7% T=5006.7h → P=0.000
+[2026-06-06 10:25:30 ET] [INFO]   price model: SPY spot=737.55 target=9000.00 vol=12.3% T=4998.7h → P=0.000
+[2026-06-06 10:30:03 ET] [INFO]   CPI model: threshold=4.2% TNX=4.54% → P=0.534
+[2026-06-06 10:32:12 ET] [INFO]   CPI model: threshold=3.8% TNX=4.54% → P=0.574
+[2026-06-06 10:32:12 ET] [INFO]   CPI model: threshold=4.0% TNX=4.54% → P=0.554
+[2026-06-06 10:33:07 ET] [INFO]   price model: CL=F spot=90.54 target=86.99 vol=58.6% T=582.7h → P=0.604
+[2026-06-06 10:35:28 ET] [INFO]   price model: SOL-USD spot=62.67 target=378.00 vol=42.7% T=94.2h → P=0.000
+[2026-06-06 10:35:28 ET] [INFO]   EDGE FOUND: KXUSGASCPI-26JUN10-T378 | implied=17.0% true=0.0% edge=-17.0% dir=NO conf=75
+[2026-06-06 10:36:29 ET] [INFO]   CPI model: threshold=4.2% TNX=4.54% → P=0.534
+[2026-06-06 10:36:29 ET] [INFO]   CPI model: threshold=2.8% TNX=4.54% → P=0.674
+[2026-06-06 10:37:09 ET] [INFO]   price model: CL=F spot=90.54 target=85.99 vol=58.6% T=52.2h → P=0.873
+[2026-06-06 10:37:09 ET] [INFO]   price model: CL=F spot=90.54 target=86.99 vol=58.6% T=52.2h → P=0.812
+[2026-06-06 10:39:51 ET] [INFO]   fed model: implied_rate=3.622% current≈3.625% diff=-0.3bps → P=0.495
+[2026-06-06 10:39:52 ET] [INFO] Checked 58099 markets | Modelable: 58099 | Edges found: 3
+[2026-06-06 10:39:52 ET] [INFO]   Skipping KXSOLMAXY-27JAN01-160 — suggested bet too small to be meaningful
+[2026-06-06 10:39:52 ET] [INFO] [Discord] Trade alert sent: KXETHMINY-27JAN01-1500
+[2026-06-06 10:39:52 ET] [WARN] AUTO-BET SKIP KXETHMINY-27JAN01-1500: exposure 39.5% ≥ 25% limit ($7.00 of $17.72 in open positions)
+[2026-06-06 10:39:53 ET] [INFO] [Discord] Trade alert sent: KXUSGASCPI-26JUN10-T378
+[2026-06-06 10:39:53 ET] [WARN] AUTO-BET SKIP KXUSGASCPI-26JUN10-T378: exposure 39.5% ≥ 25% limit ($7.00 of $17.72 in open positions)
+[2026-06-06 10:39:53 ET] [INFO] Scan complete — 2 alerts sent
+[2026-06-06 10:39:53 ET] [INFO] ============================================================
+[2026-06-06 10:39:53 ET] [INFO] Scan job complete

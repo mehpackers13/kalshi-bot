@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-07T02:03:30.244308Z",
-  "last_scan_ts": "2026-06-07T02:03:30.244308Z",
+  "generated_at": "2026-06-07T04:47:07.776649Z",
+  "last_scan_ts": "2026-06-07T04:47:07.776649Z",
   "stats": {
-    "total_alerts": 3843,
+    "total_alerts": 3848,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -13,7 +13,7 @@
         "hit_rate": null
       },
       "Economics": {
-        "total": 857,
+        "total": 859,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -37,7 +37,7 @@
         "hit_rate": null
       },
       "Climate and Weather": {
-        "total": 456,
+        "total": 457,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -55,7 +55,7 @@
         "hit_rate": null
       },
       "Commodities": {
-        "total": 371,
+        "total": 373,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,7 +69,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 746,
+        "total": 750,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -81,7 +81,7 @@
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 2278,
+        "total": 2279,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 11.07,
+      "balance": 11.05,
       "cash": 5.35,
       "peak": 11.41,
       "initial_balance": 10.0
@@ -101,15 +101,120 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-06-07T01:38:38.773303Z"
+    "updated_at": "2026-06-07T04:24:13.953967Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.72,
-  "account_value": 11.07,
-  "live_pnl": 1.07,
+  "position_value": 5.7,
+  "account_value": 11.05,
+  "live_pnl": 1.05,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-06-07T04:47:07.438622Z",
+      "ticker": "FEDHIKE-26DEC31",
+      "title": "Will the Federal Reserve hike rates by December 31, 2026?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "9.5",
+      "implied_prob": "0.465",
+      "true_prob": "0.56",
+      "confidence": "78",
+      "suggested_live_dollars": "0.47",
+      "suggested_paper_dollars": "19.74",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "47",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-07T04:47:07.191964Z",
+      "ticker": "KXWTI-26JUN0814-T88.99",
+      "title": "Will the WTI crude oil settlement price be above 88.99 USD/Bbl on Jun 8, 2026?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-11.96",
+      "implied_prob": "0.795",
+      "true_prob": "0.6754",
+      "confidence": "68",
+      "suggested_live_dollars": "0.21",
+      "suggested_paper_dollars": "19.95",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "21",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-07T04:47:06.941593Z",
+      "ticker": "KXCPICOREYOY-26MAY-T2.8",
+      "title": "Will the rate of core CPI inflation be above 2.8% for the year ending in May 2026?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "8.36",
+      "implied_prob": "0.59",
+      "true_prob": "0.6736",
+      "confidence": "68",
+      "suggested_live_dollars": "0.6",
+      "suggested_paper_dollars": "19.8",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "60",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-07T04:47:06.544261Z",
+      "ticker": "KXBRENTMON-26JUN3017-T82.99",
+      "title": "Will the brent crude oil close price be above 82.99 USD/Bbl on June 30, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-10.14",
+      "implied_prob": "0.825",
+      "true_prob": "0.7236",
+      "confidence": "68",
+      "suggested_live_dollars": "0.18",
+      "suggested_paper_dollars": "19.44",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "18",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-07T04:47:06.045568Z",
+      "ticker": "KXRAINAUSM-26JUN-3",
+      "title": "Rain in Austin in Jun 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-65.0",
+      "implied_prob": "0.93",
+      "true_prob": "0.28",
+      "confidence": "85",
+      "suggested_live_dollars": "0.52",
+      "suggested_paper_dollars": "49.92",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "13",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-06-07T02:03:29.844142Z",
       "ticker": "FEDHIKE-27DEC31",
@@ -3809,6 +3914,111 @@
   ],
   "recent_alerts": [
     {
+      "timestamp": "2026-06-07T04:47:07.438622Z",
+      "ticker": "FEDHIKE-26DEC31",
+      "title": "Will the Federal Reserve hike rates by December 31, 2026?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "9.5",
+      "implied_prob": "0.465",
+      "true_prob": "0.56",
+      "confidence": "78",
+      "suggested_live_dollars": "0.47",
+      "suggested_paper_dollars": "19.74",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "47",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-07T04:47:07.191964Z",
+      "ticker": "KXWTI-26JUN0814-T88.99",
+      "title": "Will the WTI crude oil settlement price be above 88.99 USD/Bbl on Jun 8, 2026?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-11.96",
+      "implied_prob": "0.795",
+      "true_prob": "0.6754",
+      "confidence": "68",
+      "suggested_live_dollars": "0.21",
+      "suggested_paper_dollars": "19.95",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "21",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-07T04:47:06.941593Z",
+      "ticker": "KXCPICOREYOY-26MAY-T2.8",
+      "title": "Will the rate of core CPI inflation be above 2.8% for the year ending in May 2026?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "8.36",
+      "implied_prob": "0.59",
+      "true_prob": "0.6736",
+      "confidence": "68",
+      "suggested_live_dollars": "0.6",
+      "suggested_paper_dollars": "19.8",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "60",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-07T04:47:06.544261Z",
+      "ticker": "KXBRENTMON-26JUN3017-T82.99",
+      "title": "Will the brent crude oil close price be above 82.99 USD/Bbl on June 30, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-10.14",
+      "implied_prob": "0.825",
+      "true_prob": "0.7236",
+      "confidence": "68",
+      "suggested_live_dollars": "0.18",
+      "suggested_paper_dollars": "19.44",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "18",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-07T04:47:06.045568Z",
+      "ticker": "KXRAINAUSM-26JUN-3",
+      "title": "Rain in Austin in Jun 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-65.0",
+      "implied_prob": "0.93",
+      "true_prob": "0.28",
+      "confidence": "85",
+      "suggested_live_dollars": "0.52",
+      "suggested_paper_dollars": "49.92",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "13",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
       "timestamp": "2026-06-07T02:03:29.844142Z",
       "ticker": "FEDHIKE-27DEC31",
       "title": "Will the Federal Reserve hike rates by December 31, 2027?",
@@ -4752,111 +4962,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-06-07T02:03:05.659984Z",
-      "ticker": "KXTSLA-26JULPROD-400000.0",
-      "title": "Will Tesla Inc. report above 400000 total production in Q2 2026?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-88.5",
-      "implied_prob": "0.885",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.52",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "13",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-07T02:03:05.208328Z",
-      "ticker": "KXTSLA-26JULPROD-380000.0",
-      "title": "Will Tesla Inc. report above 380000 total production in Q2 2026?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-92.0",
-      "implied_prob": "0.92",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.54",
-      "suggested_paper_dollars": "49.95",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "9",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-07T02:03:04.708844Z",
-      "ticker": "KXFEDDECISION-26OCT-H0",
-      "title": "Will the Federal Reserve Hike rates by 0bps at their October 2026 meeting?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-17.5",
-      "implied_prob": "0.67",
-      "true_prob": "0.495",
-      "confidence": "75",
-      "suggested_live_dollars": "0.41",
-      "suggested_paper_dollars": "21.32",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "41",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-07T02:03:04.215648Z",
-      "ticker": "KXCOREUND-26DEC10-T2.2",
-      "title": "Will year-over-year Core CPI inflation for 2026 fall below 2.2%?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "53.86",
-      "implied_prob": "0.195",
-      "true_prob": "0.7336",
-      "confidence": "85",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "24",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-07T02:03:03.587260Z",
-      "ticker": "KXEMERCUTS-26-T0",
-      "title": "Will the Fed cut rates 0 times at emergency meetings?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-37.5",
-      "implied_prob": "0.88",
-      "true_prob": "0.505",
-      "confidence": "95",
-      "suggested_live_dollars": "0.42",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "14",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -4894,9 +4999,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 82,
+      "current_cents": 81,
       "dollars_risked": 0,
-      "current_value": 1.64,
+      "current_value": 1.62,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

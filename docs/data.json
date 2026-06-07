@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-07T20:05:19.522576Z",
-  "last_scan_ts": "2026-06-07T20:05:19.522576Z",
+  "generated_at": "2026-06-07T21:42:19.502465Z",
+  "last_scan_ts": "2026-06-07T21:42:19.502465Z",
   "stats": {
-    "total_alerts": 3864,
+    "total_alerts": 3866,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -31,7 +31,7 @@
         "hit_rate": null
       },
       "Sports": {
-        "total": 58,
+        "total": 59,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -55,7 +55,7 @@
         "hit_rate": null
       },
       "Commodities": {
-        "total": 381,
+        "total": 382,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -75,13 +75,13 @@
         "hit_rate": null
       },
       "medium (15-25%)": {
-        "total": 820,
+        "total": 821,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 2293,
+        "total": 2294,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 11.07,
+      "balance": 11.09,
       "cash": 5.35,
       "peak": 11.41,
       "initial_balance": 10.0
@@ -101,15 +101,57 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-06-07T19:43:04.205022Z"
+    "updated_at": "2026-06-07T21:20:21.395142Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.72,
-  "account_value": 11.07,
-  "live_pnl": 1.07,
+  "position_value": 5.74,
+  "account_value": 11.09,
+  "live_pnl": 1.09,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-06-07T21:42:19.167271Z",
+      "ticker": "KXMLBSPREAD-26JUN071515WSHAZ-AZ5",
+      "title": "Diamondbacks wins by over 4.5 runs?",
+      "category": "Sports",
+      "direction": "YES",
+      "edge_pct": "62.0",
+      "implied_prob": "0.38",
+      "true_prob": "1.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.59",
+      "suggested_paper_dollars": "49.56",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "59",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-07T21:42:18.699053Z",
+      "ticker": "KXBRENTMON-26JUN3017-T88.99",
+      "title": "Will the brent crude oil close price be above 88.99 USD/Bbl on June 30, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-15.24",
+      "implied_prob": "0.7",
+      "true_prob": "0.5476",
+      "confidence": "75",
+      "suggested_live_dollars": "0.32",
+      "suggested_paper_dollars": "34.56",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "32",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-06-07T20:05:19.209606Z",
       "ticker": "KXHIGHAUS-26JUN07-B91.5",
@@ -2377,30 +2419,51 @@
       "null": [
         ""
       ]
-    },
+    }
+  ],
+  "recent_alerts": [
     {
-      "timestamp": "2026-06-06T20:39:34.402362Z",
-      "ticker": "KXHIGHPHIL-26JUN06-B91.5",
-      "title": "Will the **high temp in Philadelphia** be 91-92\u00b0 on Jun 6, 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-71.95",
-      "implied_prob": "0.895",
-      "true_prob": "0.1755",
-      "confidence": "80",
-      "suggested_live_dollars": "0.55",
-      "suggested_paper_dollars": "49.94",
+      "timestamp": "2026-06-07T21:42:19.167271Z",
+      "ticker": "KXMLBSPREAD-26JUN071515WSHAZ-AZ5",
+      "title": "Diamondbacks wins by over 4.5 runs?",
+      "category": "Sports",
+      "direction": "YES",
+      "edge_pct": "62.0",
+      "implied_prob": "0.38",
+      "true_prob": "1.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.59",
+      "suggested_paper_dollars": "49.56",
       "is_paper_bet": "1",
-      "paper_entry_price_cents": "11",
+      "paper_entry_price_cents": "59",
       "outcome": "",
       "resolved_at": "",
       "notes": "",
       "null": [
         ""
       ]
-    }
-  ],
-  "recent_alerts": [
+    },
+    {
+      "timestamp": "2026-06-07T21:42:18.699053Z",
+      "ticker": "KXBRENTMON-26JUN3017-T88.99",
+      "title": "Will the brent crude oil close price be above 88.99 USD/Bbl on June 30, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-15.24",
+      "implied_prob": "0.7",
+      "true_prob": "0.5476",
+      "confidence": "75",
+      "suggested_live_dollars": "0.32",
+      "suggested_paper_dollars": "34.56",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "32",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-06-07T20:05:19.209606Z",
       "ticker": "KXHIGHAUS-26JUN07-B91.5",
@@ -3408,48 +3471,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-06-07T02:03:11.953052Z",
-      "ticker": "KXBTCMINMON-BTC-26JUN30-5750000",
-      "title": "Will BTC trimmed mean be below $57500.00 by 11:59 PM ET on Jun 30, 2026?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-31.66",
-      "implied_prob": "0.525",
-      "true_prob": "0.2084",
-      "confidence": "85",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "48",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-07T02:03:11.665328Z",
-      "ticker": "KXETHMINMON-ETH-26JUN30-125000",
-      "title": "Will ETH trimmed mean be below $1250.00 by 11:59 PM ET on Jun 30, 2026?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-19.14",
-      "implied_prob": "0.205",
-      "true_prob": "0.0136",
-      "confidence": "70",
-      "suggested_live_dollars": "0.8",
-      "suggested_paper_dollars": "40.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "80",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -3487,9 +3508,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 82,
+      "current_cents": 83,
       "dollars_risked": 0,
-      "current_value": 1.64,
+      "current_value": 1.66,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

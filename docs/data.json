@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-09T04:26:17.256576Z",
-  "last_scan_ts": "2026-06-09T04:26:17.256576Z",
+  "generated_at": "2026-06-09T08:33:07.516838Z",
+  "last_scan_ts": "2026-06-09T08:33:07.516838Z",
   "stats": {
-    "total_alerts": 4061,
+    "total_alerts": 4065,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -49,13 +49,13 @@
         "hit_rate": null
       },
       "Financials": {
-        "total": 285,
+        "total": 286,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "Commodities": {
-        "total": 409,
+        "total": 412,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,19 +69,19 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 797,
+        "total": 798,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "medium (15-25%)": {
-        "total": 858,
+        "total": 860,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 2406,
+        "total": 2407,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 11.14,
+      "balance": 11.18,
       "cash": 5.35,
       "peak": 11.41,
       "initial_balance": 10.0
@@ -101,15 +101,99 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-06-09T04:00:52.215982Z"
+    "updated_at": "2026-06-09T08:07:08.990348Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.79,
-  "account_value": 11.14,
-  "live_pnl": 1.14,
+  "position_value": 5.83,
+  "account_value": 11.18,
+  "live_pnl": 1.18,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-06-09T08:33:07.175062Z",
+      "ticker": "KXWTI-26JUN0914-T89.99",
+      "title": "Will the WTI crude oil settlement price be above 89.99 USD/Bbl on Jun 9, 2026?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-18.55",
+      "implied_prob": "0.5",
+      "true_prob": "0.3145",
+      "confidence": "70",
+      "suggested_live_dollars": "0.51",
+      "suggested_paper_dollars": "39.78",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "51",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-09T08:33:06.875036Z",
+      "ticker": "KXWTI-26JUN0914-T88.99",
+      "title": "Will the WTI crude oil settlement price be above 88.99 USD/Bbl on Jun 9, 2026?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-16.04",
+      "implied_prob": "0.7",
+      "true_prob": "0.5396",
+      "confidence": "70",
+      "suggested_live_dollars": "0.31",
+      "suggested_paper_dollars": "36.89",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "31",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-09T08:33:06.533211Z",
+      "ticker": "KXINXU-26JUN09H1600-T7349.9999",
+      "title": "Will the S&P 500 be above 7349.9999 on Jun 9, 2026 at 4pm EDT?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-89.5",
+      "implied_prob": "0.895",
+      "true_prob": "0.0",
+      "confidence": "80",
+      "suggested_live_dollars": "0.48",
+      "suggested_paper_dollars": "49.92",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "12",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-09T08:33:06.015507Z",
+      "ticker": "KXBRENTMON-26JUN3017-T86.99",
+      "title": "Will the brent crude oil close price be above 86.99 USD/Bbl on June 30, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-8.92",
+      "implied_prob": "0.67",
+      "true_prob": "0.5808",
+      "confidence": "68",
+      "suggested_live_dollars": "0.34",
+      "suggested_paper_dollars": "19.04",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "34",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-06-09T04:26:16.904606Z",
       "ticker": "KXINXU-26JUN09H1600-T7399.9999",
@@ -2524,42 +2608,23 @@
       "null": [
         ""
       ]
-    },
+    }
+  ],
+  "recent_alerts": [
     {
-      "timestamp": "2026-06-08T05:03:20.101256Z",
-      "ticker": "FEDHIKE-27JUN30",
-      "title": "Will the Federal Reserve hike rates by June 30, 2027?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-16.0",
-      "implied_prob": "0.655",
-      "true_prob": "0.495",
-      "confidence": "80",
-      "suggested_live_dollars": "0.36",
-      "suggested_paper_dollars": "39.96",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "36",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-08T05:03:19.841083Z",
-      "ticker": "KXWTI-26JUN0814-T95.99",
-      "title": "Will the WTI crude oil settlement price be above 95.99 USD/Bbl on Jun 8, 2026?",
+      "timestamp": "2026-06-09T08:33:07.175062Z",
+      "ticker": "KXWTI-26JUN0914-T89.99",
+      "title": "Will the WTI crude oil settlement price be above 89.99 USD/Bbl on Jun 9, 2026?",
       "category": "Commodities",
       "direction": "NO",
-      "edge_pct": "-8.17",
-      "implied_prob": "0.315",
-      "true_prob": "0.2333",
-      "confidence": "63",
-      "suggested_live_dollars": "0.69",
-      "suggested_paper_dollars": "19.32",
+      "edge_pct": "-18.55",
+      "implied_prob": "0.5",
+      "true_prob": "0.3145",
+      "confidence": "70",
+      "suggested_live_dollars": "0.51",
+      "suggested_paper_dollars": "39.78",
       "is_paper_bet": "1",
-      "paper_entry_price_cents": "69",
+      "paper_entry_price_cents": "51",
       "outcome": "",
       "resolved_at": "",
       "notes": "",
@@ -2568,19 +2633,19 @@
       ]
     },
     {
-      "timestamp": "2026-06-08T05:03:19.455963Z",
-      "ticker": "KXBRENTD-26JUN0817-T96",
-      "title": "Will the brent crude oil close price be above 96 USD/Bbl on June 08, 2026 at 5:00 PM EDT?",
+      "timestamp": "2026-06-09T08:33:06.875036Z",
+      "ticker": "KXWTI-26JUN0914-T88.99",
+      "title": "Will the WTI crude oil settlement price be above 88.99 USD/Bbl on Jun 9, 2026?",
       "category": "Commodities",
       "direction": "NO",
-      "edge_pct": "-47.48",
-      "implied_prob": "0.725",
-      "true_prob": "0.2502",
-      "confidence": "80",
-      "suggested_live_dollars": "0.56",
-      "suggested_paper_dollars": "49.84",
+      "edge_pct": "-16.04",
+      "implied_prob": "0.7",
+      "true_prob": "0.5396",
+      "confidence": "70",
+      "suggested_live_dollars": "0.31",
+      "suggested_paper_dollars": "36.89",
       "is_paper_bet": "1",
-      "paper_entry_price_cents": "28",
+      "paper_entry_price_cents": "31",
       "outcome": "",
       "resolved_at": "",
       "notes": "",
@@ -2589,55 +2654,13 @@
       ]
     },
     {
-      "timestamp": "2026-06-08T05:03:18.945480Z",
-      "ticker": "KXBRENTD-26JUN0817-T95",
-      "title": "Will the brent crude oil close price be above 95 USD/Bbl on June 08, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "NO",
-      "edge_pct": "-41.73",
-      "implied_prob": "0.815",
-      "true_prob": "0.3977",
-      "confidence": "80",
-      "suggested_live_dollars": "0.38",
-      "suggested_paper_dollars": "49.97",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "19",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-08T05:03:18.694826Z",
-      "ticker": "KXBRENTD-26JUN0817-T93.50",
-      "title": "Will the brent crude oil close price be above 93.50 USD/Bbl on June 08, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "NO",
-      "edge_pct": "-27.03",
-      "implied_prob": "0.915",
-      "true_prob": "0.6447",
-      "confidence": "80",
-      "suggested_live_dollars": "0.54",
-      "suggested_paper_dollars": "49.95",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "9",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-08T05:03:18.459712Z",
-      "ticker": "KXINXU-26JUN08H1600-T7299.9999",
-      "title": "Will the S&P 500 be above 7299.9999 on Jun 8, 2026 at 4pm EDT?",
+      "timestamp": "2026-06-09T08:33:06.533211Z",
+      "ticker": "KXINXU-26JUN09H1600-T7349.9999",
+      "title": "Will the S&P 500 be above 7349.9999 on Jun 9, 2026 at 4pm EDT?",
       "category": "Financials",
       "direction": "NO",
-      "edge_pct": "-89.0",
-      "implied_prob": "0.89",
+      "edge_pct": "-89.5",
+      "implied_prob": "0.895",
       "true_prob": "0.0",
       "confidence": "80",
       "suggested_live_dollars": "0.48",
@@ -2652,40 +2675,19 @@
       ]
     },
     {
-      "timestamp": "2026-06-08T05:03:18.226439Z",
-      "ticker": "KXFEDDECISION-26OCT-H0",
-      "title": "Will the Federal Reserve Hike rates by 0bps at their October 2026 meeting?",
-      "category": "Economics",
+      "timestamp": "2026-06-09T08:33:06.015507Z",
+      "ticker": "KXBRENTMON-26JUN3017-T86.99",
+      "title": "Will the brent crude oil close price be above 86.99 USD/Bbl on June 30, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
       "direction": "NO",
-      "edge_pct": "-18.0",
-      "implied_prob": "0.675",
-      "true_prob": "0.495",
-      "confidence": "75",
-      "suggested_live_dollars": "0.4",
-      "suggested_paper_dollars": "24.8",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "40",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-08T05:03:17.928771Z",
-      "ticker": "KXBTCMAX100-26-SEP",
-      "title": "Will Bitcoin be above $100000 by October 1, 2026 at 12:00AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-8.0",
-      "implied_prob": "0.085",
-      "true_prob": "0.005",
+      "edge_pct": "-8.92",
+      "implied_prob": "0.67",
+      "true_prob": "0.5808",
       "confidence": "68",
-      "suggested_live_dollars": "0.92",
-      "suggested_paper_dollars": "19.32",
+      "suggested_live_dollars": "0.34",
+      "suggested_paper_dollars": "19.04",
       "is_paper_bet": "1",
-      "paper_entry_price_cents": "92",
+      "paper_entry_price_cents": "34",
       "outcome": "",
       "resolved_at": "",
       "notes": "",
@@ -2693,50 +2695,6 @@
         ""
       ]
     },
-    {
-      "timestamp": "2026-06-08T05:03:17.697228Z",
-      "ticker": "KXETHMAXY-27JAN01-4250.00",
-      "title": "Will Ethereum reach above $4250.00 by Jan 1, 2027 at 12:00AM?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-8.16",
-      "implied_prob": "0.085",
-      "true_prob": "0.0034",
-      "confidence": "63",
-      "suggested_live_dollars": "0.92",
-      "suggested_paper_dollars": "19.32",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "92",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-08T05:03:17.256336Z",
-      "ticker": "KXSUSPENDGASTAX-26MAY-JAN01",
-      "title": "Will legislation that would temporarily suspend or reduce the federal excise tax on gasoline become law before Jan 1, 2027?",
-      "category": "Politics",
-      "direction": "YES",
-      "edge_pct": "13.5",
-      "implied_prob": "0.37",
-      "true_prob": "0.505",
-      "confidence": "73",
-      "suggested_live_dollars": "0.38",
-      "suggested_paper_dollars": "19.76",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "38",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    }
-  ],
-  "recent_alerts": [
     {
       "timestamp": "2026-06-09T04:26:16.904606Z",
       "ticker": "KXINXU-26JUN09H1600-T7399.9999",
@@ -3702,90 +3660,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-06-09T00:36:50.854174Z",
-      "ticker": "KXTSLA-26JULPROD-400000.0",
-      "title": "Will Tesla Inc. report above 400000 total production in Q2 2026?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-86.5",
-      "implied_prob": "0.865",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "16",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-09T00:36:50.698237Z",
-      "ticker": "KXTSLA-26JULPROD-380000.0",
-      "title": "Will Tesla Inc. report above 380000 total production in Q2 2026?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-91.0",
-      "implied_prob": "0.91",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.55",
-      "suggested_paper_dollars": "49.94",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "11",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-09T00:36:50.412084Z",
-      "ticker": "KXFEDDECISION-26SEP-H0",
-      "title": "Will the Federal Reserve Hike rates by 0bps at their September 2026 meeting?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-22.1",
-      "implied_prob": "0.785",
-      "true_prob": "0.564",
-      "confidence": "75",
-      "suggested_live_dollars": "0.23",
-      "suggested_paper_dollars": "39.79",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "23",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-09T00:36:50.254530Z",
-      "ticker": "KXFEDDECISION-26OCT-H0",
-      "title": "Will the Federal Reserve Hike rates by 0bps at their October 2026 meeting?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-13.1",
-      "implied_prob": "0.695",
-      "true_prob": "0.564",
-      "confidence": "68",
-      "suggested_live_dollars": "0.39",
-      "suggested_paper_dollars": "1.56",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "39",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -3823,9 +3697,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 83,
+      "current_cents": 84,
       "dollars_risked": 0,
-      "current_value": 1.66,
+      "current_value": 1.68,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -3835,9 +3709,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 94,
+      "current_cents": 95,
       "dollars_risked": 0,
-      "current_value": 0.94,
+      "current_value": 0.95,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -3847,9 +3721,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 83,
+      "current_cents": 84,
       "dollars_risked": 0,
-      "current_value": 0.83,
+      "current_value": 0.84,
       "pl_dollars": 0.0,
       "timestamp": ""
     }

@@ -26700,3 +26700,44 @@ Total modelable markets evaluated: 0
 [2026-06-11 22:28:30 ET] [INFO] Scan complete — 80 alerts sent
 [2026-06-11 22:28:30 ET] [INFO] ============================================================
 [2026-06-11 22:28:30 ET] [INFO] Scan job complete
+[2026-06-12 00:27:36 ET] [INFO] Scan job starting
+[2026-06-12 00:27:36 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-06-12 00:27:36 ET] [INFO] ============================================================
+[2026-06-12 00:27:36 ET] [INFO] Starting market scan
+[2026-06-12 00:27:37 ET] [INFO] Portfolio value: $5.35 cash + $5.69 positions = $11.04
+[2026-06-12 00:27:37 ET] [INFO] Cash: $5.35  |  Positions: $5.69  |  Total: $11.04  |  Peak: $11.41
+[2026-06-12 00:27:38 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-06-12 00:27:38 ET] [WARN] API GET /markets → HTTP 400
+[2026-06-12 00:27:55 ET] [INFO] Fetched 63960 open markets via events endpoint across 38 pages
+[2026-06-12 00:27:55 ET] [INFO] Fetched 63960 open markets
+[2026-06-12 00:27:55 ET] [INFO] Parsed 60434 valid markets
+[2026-06-12 00:27:55 ET] [INFO] Categories: {'Sports': 31523, 'Elections': 11520, 'Entertainment': 6731, 'Economics': 2836, 'Politics': 1665, 'Crypto': 1634, 'Financials': 1084, 'Mentions': 854}
+[2026-06-12 00:33:01 ET] [INFO]   fed model: implied_rate=3.645% current≈3.623% diff=2.2bps → P=0.544
+[2026-06-12 00:37:20 ET] [INFO]   price model: ETH-USD spot=1676.29 target=4500.00 vol=50.4% T=4872.5h → P=0.004
+[2026-06-12 00:37:20 ET] [INFO]   price model: ETH-USD spot=1676.29 target=4750.00 vol=50.4% T=4872.5h → P=0.003
+[2026-06-12 00:37:20 ET] [INFO]   price model: ETH-USD spot=1676.29 target=5000.00 vol=50.4% T=4872.5h → P=0.002
+[2026-06-12 00:37:21 ET] [INFO]   price model: BTC-USD spot=63637.76 target=100000.00 vol=34.8% T=2663.5h → P=0.009
+[2026-06-12 00:37:25 ET] [INFO]   price model: BTC-USD spot=63637.76 target=129999.00 vol=34.8% T=4872.5h → P=0.003
+[2026-06-12 00:37:25 ET] [INFO]   price model: BTC-USD spot=63637.76 target=139999.00 vol=34.8% T=4872.5h → P=0.001
+[2026-06-12 00:43:10 ET] [INFO]   price model: TSLA spot=399.15 target=460000.00 vol=48.2% T=1695.5h → P=0.000
+[2026-06-12 00:43:10 ET] [INFO]   EDGE FOUND: KXTSLA-26JULDELIV-460000.0 | implied=18.0% true=0.0% edge=-18.0% dir=NO conf=75
+[2026-06-12 00:43:16 ET] [INFO]   CPI model: threshold=4.0% TNX=4.46% → P=0.546
+[2026-06-12 00:43:16 ET] [INFO]   CPI model: threshold=4.2% TNX=4.46% → P=0.526
+[2026-06-12 00:47:21 ET] [INFO]   price model: BTC-USD spot=63627.80 target=75000.00 vol=34.8% T=455.5h → P=0.019
+[2026-06-12 00:47:29 ET] [INFO]   price model: CL=F spot=86.25 target=74.99 vol=53.0% T=448.5h → P=0.878
+[2026-06-12 00:47:29 ET] [INFO]   price model: CL=F spot=86.25 target=76.99 vol=53.0% T=448.5h → P=0.828
+[2026-06-12 00:47:29 ET] [INFO]   price model: CL=F spot=86.25 target=80.99 vol=53.0% T=448.5h → P=0.700
+[2026-06-12 00:47:29 ET] [INFO]   price model: CL=F spot=86.25 target=92.99 vol=53.0% T=448.5h → P=0.265
+[2026-06-12 00:54:11 ET] [INFO]   price model: ADA-USD spot=0.17 target=1.50 vol=64.5% T=350.5h → P=0.000
+[2026-06-12 00:54:11 ET] [INFO]   EDGE FOUND: KXWCSPREAD-26JUN12CANBIH-CAN2 | implied=27.0% true=0.0% edge=-27.0% dir=NO conf=85
+[2026-06-12 00:54:46 ET] [INFO]   price model: CL=F spot=86.23 target=85.00 vol=53.0% T=14.0h → P=0.249
+[2026-06-12 00:54:47 ET] [INFO]   price model: CL=F spot=86.23 target=84.99 vol=53.0% T=14.0h → P=0.753
+[2026-06-12 00:54:47 ET] [INFO]   price model: CL=F spot=86.23 target=85.99 vol=53.0% T=14.0h → P=0.552
+[2026-06-12 00:55:57 ET] [INFO] Checked 60355 markets | Modelable: 60355 | Edges found: 2
+[2026-06-12 00:55:58 ET] [INFO] [Discord] Trade alert sent: KXTSLA-26JULDELIV-460000.0
+[2026-06-12 00:55:58 ET] [WARN] AUTO-BET SKIP KXTSLA-26JULDELIV-460000.0: exposure 38.8% ≥ 25% limit ($7.00 of $18.04 in open positions)
+[2026-06-12 00:55:59 ET] [INFO] [Discord] Trade alert sent: KXWCSPREAD-26JUN12CANBIH-CAN2
+[2026-06-12 00:55:59 ET] [WARN] AUTO-BET SKIP KXWCSPREAD-26JUN12CANBIH-CAN2: exposure 38.8% ≥ 25% limit ($7.00 of $18.04 in open positions)
+[2026-06-12 00:55:59 ET] [INFO] Scan complete — 2 alerts sent
+[2026-06-12 00:55:59 ET] [INFO] ============================================================
+[2026-06-12 00:55:59 ET] [INFO] Scan job complete

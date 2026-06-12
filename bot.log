@@ -27012,3 +27012,48 @@ Total modelable markets evaluated: 0
 [2026-06-12 16:03:25 ET] [INFO] Scan complete — 4 alerts sent
 [2026-06-12 16:03:25 ET] [INFO] ============================================================
 [2026-06-12 16:03:25 ET] [INFO] Scan job complete
+[2026-06-12 17:56:58 ET] [INFO] Scan job starting
+[2026-06-12 17:56:58 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-06-12 17:56:58 ET] [INFO] ============================================================
+[2026-06-12 17:56:58 ET] [INFO] Starting market scan
+[2026-06-12 17:56:59 ET] [INFO] Portfolio value: $5.35 cash + $5.68 positions = $11.03
+[2026-06-12 17:56:59 ET] [INFO] Cash: $5.35  |  Positions: $5.68  |  Total: $11.03  |  Peak: $11.41
+[2026-06-12 17:57:00 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-06-12 17:57:00 ET] [WARN] API GET /markets → HTTP 400
+[2026-06-12 17:57:15 ET] [INFO] Fetched 67924 open markets via events endpoint across 38 pages
+[2026-06-12 17:57:15 ET] [INFO] Fetched 67924 open markets
+[2026-06-12 17:57:15 ET] [INFO] Parsed 64261 valid markets
+[2026-06-12 17:57:15 ET] [INFO] Categories: {'Sports': 34415, 'Elections': 11485, 'Entertainment': 6923, 'Economics': 2787, 'Crypto': 2303, 'Politics': 1659, 'Financials': 1049, 'Mentions': 897}
+[2026-06-12 18:07:31 ET] [INFO]   price model: ETH-USD spot=1663.45 target=4500.00 vol=49.3% T=4855.0h → P=0.003
+[2026-06-12 18:07:31 ET] [INFO]   price model: ETH-USD spot=1663.45 target=4750.00 vol=49.3% T=4855.0h → P=0.002
+[2026-06-12 18:07:31 ET] [INFO]   price model: ETH-USD spot=1663.45 target=5000.00 vol=49.3% T=4855.0h → P=0.001
+[2026-06-12 18:07:31 ET] [INFO]   price model: ETH-USD spot=1663.45 target=6000.00 vol=49.3% T=4855.0h → P=0.000
+[2026-06-12 18:07:31 ET] [INFO]   price model: BTC-USD spot=63503.75 target=100000.00 vol=34.1% T=2646.0h → P=0.008
+[2026-06-12 18:07:32 ET] [INFO]   price model: BTC-USD spot=63503.75 target=200000.00 vol=34.1% T=4855.0h → P=0.000
+[2026-06-12 18:07:36 ET] [INFO]   price model: BTC-USD spot=63503.75 target=129999.00 vol=34.1% T=4855.0h → P=0.002
+[2026-06-12 18:07:36 ET] [INFO]   price model: BTC-USD spot=63503.75 target=139999.00 vol=34.1% T=4855.0h → P=0.001
+[2026-06-12 18:07:36 ET] [INFO]   price model: BTC-USD spot=63503.75 target=149999.00 vol=34.1% T=4855.0h → P=0.000
+[2026-06-12 18:17:09 ET] [INFO]   CPI model: threshold=3.9% TNX=4.49% → P=0.559
+[2026-06-12 18:17:09 ET] [INFO]   EDGE FOUND: KXCPIYOY-26JUN-T3.9 | implied=35.5% true=55.9% edge=+20.4% dir=YES conf=75
+[2026-06-12 18:18:40 ET] [INFO]   price model: CL=F spot=84.29 target=84.99 vol=54.1% T=431.0h → P=0.473
+[2026-06-12 18:18:40 ET] [INFO]   EDGE FOUND: KXBRENTMON-26JUN3017-T84.99 | implied=66.5% true=47.2% edge=-19.3% dir=NO conf=75
+[2026-06-12 18:26:34 ET] [INFO]   weather model: denver max=93.0°F target=[88,89]°F days_out=0 σ=3.5°F → P=0.101
+[2026-06-12 18:26:34 ET] [INFO]   EDGE FOUND: KXHIGHDEN-26JUN12-B88.5 | implied=58.5% true=10.1% edge=-48.4% dir=NO conf=80
+[2026-06-12 18:26:54 ET] [INFO]   price model: GC=F spot=4239.90 target=10.50 vol=24.4% T=340.0h → P=1.000
+[2026-06-12 18:26:54 ET] [INFO]   EDGE FOUND: KXWNBASPREAD-26JUN12GSSEA-GS11 | implied=45.5% true=100.0% edge=+54.5% dir=YES conf=85
+[2026-06-12 18:29:54 ET] [INFO] Checked 64166 markets | Modelable: 64166 | Edges found: 4
+[2026-06-12 18:29:54 ET] [INFO] [Discord] Trade alert sent: KXCPIYOY-26JUN-T3.9
+[2026-06-12 18:29:54 ET] [WARN] API GET /portfolio/positions → HTTP 403
+[2026-06-12 18:29:54 ET] [DEBUG] AUTO-BET SKIP KXCPIYOY-26JUN-T3.9: bet too small (<$0.50)
+[2026-06-12 18:29:54 ET] [INFO] [Discord] Trade alert sent: KXBRENTMON-26JUN3017-T84.99
+[2026-06-12 18:29:54 ET] [WARN] API GET /portfolio/positions → HTTP 403
+[2026-06-12 18:29:54 ET] [DEBUG] AUTO-BET SKIP KXBRENTMON-26JUN3017-T84.99: bet too small (<$0.50)
+[2026-06-12 18:29:54 ET] [INFO] [Discord] Trade alert sent: KXHIGHDEN-26JUN12-B88.5
+[2026-06-12 18:29:54 ET] [WARN] API GET /portfolio/positions → HTTP 403
+[2026-06-12 18:29:54 ET] [DEBUG] AUTO-BET SKIP KXHIGHDEN-26JUN12-B88.5: bet too small (<$0.50)
+[2026-06-12 18:29:55 ET] [INFO] [Discord] Trade alert sent: KXWNBASPREAD-26JUN12GSSEA-GS11
+[2026-06-12 18:29:55 ET] [WARN] API GET /portfolio/positions → HTTP 403
+[2026-06-12 18:29:55 ET] [DEBUG] AUTO-BET SKIP KXWNBASPREAD-26JUN12GSSEA-GS11: bet too small (<$0.50)
+[2026-06-12 18:29:55 ET] [INFO] Scan complete — 4 alerts sent
+[2026-06-12 18:29:55 ET] [INFO] ============================================================
+[2026-06-12 18:29:55 ET] [INFO] Scan job complete

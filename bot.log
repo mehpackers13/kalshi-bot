@@ -27630,3 +27630,42 @@ Total modelable markets evaluated: 0
 [2026-06-13 13:30:11 ET] [INFO] Scan complete — 2 alerts sent
 [2026-06-13 13:30:11 ET] [INFO] ============================================================
 [2026-06-13 13:30:11 ET] [INFO] Scan job complete
+[2026-06-13 14:20:08 ET] [INFO] Scan job starting
+[2026-06-13 14:20:08 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-06-13 14:20:08 ET] [INFO] ============================================================
+[2026-06-13 14:20:08 ET] [INFO] Starting market scan
+[2026-06-13 14:20:09 ET] [INFO] Portfolio value: $5.35 cash + $5.38 positions = $10.73
+[2026-06-13 14:20:09 ET] [INFO] Cash: $5.35  |  Positions: $5.38  |  Total: $10.73  |  Peak: $11.41
+[2026-06-13 14:20:10 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-06-13 14:20:10 ET] [WARN] API GET /markets → HTTP 400
+[2026-06-13 14:20:25 ET] [INFO] Fetched 66906 open markets via events endpoint across 39 pages
+[2026-06-13 14:20:25 ET] [INFO] Fetched 66906 open markets
+[2026-06-13 14:20:25 ET] [INFO] Parsed 62473 valid markets
+[2026-06-13 14:20:25 ET] [INFO] Categories: {'Sports': 32780, 'Elections': 11461, 'Entertainment': 6838, 'Economics': 2684, 'Crypto': 2160, 'Politics': 1662, 'Financials': 1223, 'Mentions': 870}
+[2026-06-13 14:26:04 ET] [INFO]   fed model: implied_rate=3.620% current≈3.618% diff=0.2bps → P=0.504
+[2026-06-13 14:31:01 ET] [INFO]   price model: ETH-USD spot=1679.81 target=4500.00 vol=49.4% T=4834.7h → P=0.004
+[2026-06-13 14:31:01 ET] [INFO]   price model: ETH-USD spot=1679.81 target=4750.00 vol=49.4% T=4834.7h → P=0.002
+[2026-06-13 14:31:01 ET] [INFO]   price model: ETH-USD spot=1679.81 target=5000.00 vol=49.4% T=4834.7h → P=0.001
+[2026-06-13 14:31:02 ET] [INFO]   price model: BTC-USD spot=64172.23 target=200000.00 vol=34.2% T=4834.7h → P=0.000
+[2026-06-13 14:31:07 ET] [INFO]   price model: BTC-USD spot=64172.23 target=129999.00 vol=34.2% T=4834.6h → P=0.003
+[2026-06-13 14:31:07 ET] [INFO]   price model: BTC-USD spot=64172.23 target=139999.00 vol=34.2% T=4834.6h → P=0.001
+[2026-06-13 14:42:24 ET] [INFO]   price model: BTC-USD spot=64256.80 target=75000.00 vol=34.2% T=417.7h → P=0.019
+[2026-06-13 14:42:33 ET] [INFO]   price model: CL=F spot=84.88 target=86.99 vol=53.7% T=410.7h → P=0.416
+[2026-06-13 14:47:50 ET] [INFO]   price model: CL=F spot=84.88 target=80.99 vol=53.7% T=48.2h → P=0.881
+[2026-06-13 14:47:50 ET] [INFO]   EDGE FOUND: KXWTI-26JUN1514-T80.99 | implied=65.5% true=88.1% edge=+22.6% dir=YES conf=75
+[2026-06-13 14:48:46 ET] [INFO]   weather model: nyc can't parse temp condition from title
+[2026-06-13 14:48:48 ET] [INFO]   weather model: chicago max=80.0°F target=[84,85]°F days_out=0 σ=3.5°F → P=0.101
+[2026-06-13 14:48:48 ET] [INFO]   EDGE FOUND: KXHIGHCHI-26JUN13-B84.5 | implied=63.0% true=10.1% edge=-52.9% dir=NO conf=80
+[2026-06-13 14:50:06 ET] [INFO]   price model: DIA spot=513.06 target=10.50 vol=13.9% T=339.7h → P=1.000
+[2026-06-13 14:50:06 ET] [INFO]   EDGE FOUND: KXWNBASPREAD-26JUN13INDCONN-IND11 | implied=43.5% true=100.0% edge=+56.5% dir=YES conf=85
+[2026-06-13 14:52:54 ET] [INFO]   price model: BTC-USD spot=64083.68 target=149999.00 vol=34.1% T=4834.6h → P=0.000
+[2026-06-13 14:52:54 ET] [INFO] Checked 62381 markets | Modelable: 62381 | Edges found: 3
+[2026-06-13 14:52:54 ET] [INFO] [Discord] Trade alert sent: KXWTI-26JUN1514-T80.99
+[2026-06-13 14:52:54 ET] [WARN] AUTO-BET SKIP KXWTI-26JUN1514-T80.99: exposure 39.5% ≥ 25% limit ($7.00 of $17.73 in open positions)
+[2026-06-13 14:52:55 ET] [INFO] [Discord] Trade alert sent: KXHIGHCHI-26JUN13-B84.5
+[2026-06-13 14:52:55 ET] [WARN] AUTO-BET SKIP KXHIGHCHI-26JUN13-B84.5: exposure 39.5% ≥ 25% limit ($7.00 of $17.73 in open positions)
+[2026-06-13 14:52:55 ET] [INFO] [Discord] Trade alert sent: KXWNBASPREAD-26JUN13INDCONN-IND11
+[2026-06-13 14:52:55 ET] [WARN] AUTO-BET SKIP KXWNBASPREAD-26JUN13INDCONN-IND11: exposure 39.5% ≥ 25% limit ($7.00 of $17.73 in open positions)
+[2026-06-13 14:52:55 ET] [INFO] Scan complete — 3 alerts sent
+[2026-06-13 14:52:55 ET] [INFO] ============================================================
+[2026-06-13 14:52:55 ET] [INFO] Scan job complete

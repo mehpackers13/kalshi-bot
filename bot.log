@@ -27707,3 +27707,40 @@ Total modelable markets evaluated: 0
 [2026-06-13 16:31:03 ET] [INFO] Scan complete — 3 alerts sent
 [2026-06-13 16:31:03 ET] [INFO] ============================================================
 [2026-06-13 16:31:03 ET] [INFO] Scan job complete
+[2026-06-13 17:48:31 ET] [INFO] Scan job starting
+[2026-06-13 17:48:31 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-06-13 17:48:31 ET] [INFO] ============================================================
+[2026-06-13 17:48:31 ET] [INFO] Starting market scan
+[2026-06-13 17:48:33 ET] [INFO] Portfolio value: $5.35 cash + $5.37 positions = $10.72
+[2026-06-13 17:48:33 ET] [INFO] Cash: $5.35  |  Positions: $5.37  |  Total: $10.72  |  Peak: $11.41
+[2026-06-13 17:48:33 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-06-13 17:48:34 ET] [WARN] API GET /markets → HTTP 400
+[2026-06-13 17:48:55 ET] [INFO] Fetched 67808 open markets via events endpoint across 40 pages
+[2026-06-13 17:48:55 ET] [INFO] Fetched 67808 open markets
+[2026-06-13 17:48:55 ET] [INFO] Parsed 63309 valid markets
+[2026-06-13 17:48:55 ET] [INFO] Categories: {'Sports': 33575, 'Elections': 11459, 'Entertainment': 6877, 'Economics': 2676, 'Crypto': 2205, 'Politics': 1661, 'Financials': 1223, 'Mentions': 842}
+[2026-06-13 17:54:03 ET] [INFO]   fed model: implied_rate=3.620% current≈3.618% diff=0.2bps → P=0.504
+[2026-06-13 17:57:57 ET] [INFO]   fed model: implied_rate=3.620% current≈3.618% diff=0.2bps → P=0.496
+[2026-06-13 17:57:57 ET] [INFO]   EDGE FOUND: KXSUSPENDGASTAX-26MAY-JUL01 | implied=5.5% true=49.6% edge=+44.1% dir=YES conf=85
+[2026-06-13 17:58:33 ET] [INFO]   price model: ETH-USD spot=1685.88 target=4500.00 vol=49.6% T=4831.2h → P=0.004
+[2026-06-13 17:58:34 ET] [INFO]   price model: ETH-USD spot=1685.88 target=4750.00 vol=49.6% T=4831.2h → P=0.002
+[2026-06-13 17:58:34 ET] [INFO]   price model: ETH-USD spot=1685.88 target=5000.00 vol=49.6% T=4831.2h → P=0.002
+[2026-06-13 17:58:34 ET] [INFO]   price model: ETH-USD spot=1685.88 target=6000.00 vol=49.6% T=4831.2h → P=0.000
+[2026-06-13 17:58:34 ET] [INFO]   price model: BTC-USD spot=64480.59 target=200000.00 vol=34.4% T=4831.2h → P=0.000
+[2026-06-13 17:58:39 ET] [INFO]   price model: BTC-USD spot=64480.59 target=129999.00 vol=34.4% T=4831.2h → P=0.003
+[2026-06-13 17:58:39 ET] [INFO]   price model: BTC-USD spot=64480.59 target=139999.00 vol=34.4% T=4831.2h → P=0.001
+[2026-06-13 18:09:01 ET] [INFO]   price model: BTC-USD spot=64406.11 target=75000.00 vol=34.3% T=414.2h → P=0.021
+[2026-06-13 18:09:08 ET] [INFO]   price model: CL=F spot=84.88 target=86.99 vol=53.7% T=407.2h → P=0.416
+[2026-06-13 18:09:08 ET] [INFO]   price model: CL=F spot=84.88 target=88.99 vol=53.7% T=407.2h → P=0.341
+[2026-06-13 18:15:54 ET] [INFO]   weather model: nyc can't parse temp condition from title
+[2026-06-13 18:15:55 ET] [INFO]   weather model: denver max=82.0°F target=[78,79]°F days_out=0 σ=3.5°F → P=0.138
+[2026-06-13 18:15:55 ET] [INFO]   EDGE FOUND: KXHIGHDEN-26JUN13-B78.5 | implied=94.5% true=13.8% edge=-80.7% dir=NO conf=80
+[2026-06-13 18:19:21 ET] [INFO]   price model: BTC-USD spot=64377.40 target=149999.00 vol=34.3% T=4831.2h → P=0.000
+[2026-06-13 18:19:21 ET] [INFO] Checked 63213 markets | Modelable: 63213 | Edges found: 2
+[2026-06-13 18:19:22 ET] [INFO] [Discord] Trade alert sent: KXSUSPENDGASTAX-26MAY-JUL01
+[2026-06-13 18:19:22 ET] [WARN] AUTO-BET SKIP KXSUSPENDGASTAX-26MAY-JUL01: exposure 39.5% ≥ 25% limit ($7.00 of $17.72 in open positions)
+[2026-06-13 18:19:22 ET] [INFO] [Discord] Trade alert sent: KXHIGHDEN-26JUN13-B78.5
+[2026-06-13 18:19:22 ET] [WARN] AUTO-BET SKIP KXHIGHDEN-26JUN13-B78.5: exposure 39.5% ≥ 25% limit ($7.00 of $17.72 in open positions)
+[2026-06-13 18:19:22 ET] [INFO] Scan complete — 2 alerts sent
+[2026-06-13 18:19:22 ET] [INFO] ============================================================
+[2026-06-13 18:19:22 ET] [INFO] Scan job complete

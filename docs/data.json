@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-14T18:55:14.029094Z",
-  "last_scan_ts": "2026-06-14T18:55:14.029094Z",
+  "generated_at": "2026-06-14T20:37:56.033255Z",
+  "last_scan_ts": "2026-06-14T20:37:56.033255Z",
   "stats": {
-    "total_alerts": 4670,
+    "total_alerts": 4674,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -31,7 +31,7 @@
         "hit_rate": null
       },
       "Sports": {
-        "total": 83,
+        "total": 86,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -55,7 +55,7 @@
         "hit_rate": null
       },
       "Commodities": {
-        "total": 514,
+        "total": 515,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,19 +69,19 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 927,
+        "total": 928,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "medium (15-25%)": {
-        "total": 965,
+        "total": 966,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 2778,
+        "total": 2780,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 10.88,
+      "balance": 10.9,
       "cash": 5.35,
       "peak": 11.41,
       "initial_balance": 10.0
@@ -101,15 +101,99 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-06-14T18:20:34.753525Z"
+    "updated_at": "2026-06-14T20:08:04.626922Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.53,
-  "account_value": 10.88,
-  "live_pnl": 0.88,
+  "position_value": 5.55,
+  "account_value": 10.9,
+  "live_pnl": 0.9,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-06-14T20:37:55.717618Z",
+      "ticker": "KXWCTEAMTOTAL-26JUN14NEDJPN-NED1",
+      "title": "Will Netherlands score over 0.5 goals?",
+      "category": "Sports",
+      "direction": "YES",
+      "edge_pct": "17.5",
+      "implied_prob": "0.825",
+      "true_prob": "1.0",
+      "confidence": "75",
+      "suggested_live_dollars": "0.83",
+      "suggested_paper_dollars": "39.84",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "83",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-14T20:37:55.286200Z",
+      "ticker": "KXWC1HSPREAD-26JUN14NEDJPN-NED2",
+      "title": "Netherlands wins by over 1.5 goals in the 1st Half?",
+      "category": "Sports",
+      "direction": "YES",
+      "edge_pct": "88.0",
+      "implied_prob": "0.12",
+      "true_prob": "1.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.52",
+      "suggested_paper_dollars": "49.92",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "13",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-14T20:37:54.957111Z",
+      "ticker": "KXWCSPREAD-26JUN14NEDJPN-NED3",
+      "title": "Netherlands wins by over 2.5 goals?",
+      "category": "Sports",
+      "direction": "YES",
+      "edge_pct": "90.5",
+      "implied_prob": "0.095",
+      "true_prob": "1.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.5",
+      "suggested_paper_dollars": "50.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "10",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-14T20:37:54.641216Z",
+      "ticker": "KXWTI-26JUN1514-T84.99",
+      "title": "Will the WTI crude oil settlement price be above 84.99 USD/Bbl on Jun 15, 2026?",
+      "category": "Commodities",
+      "direction": "YES",
+      "edge_pct": "8.1",
+      "implied_prob": "0.4",
+      "true_prob": "0.481",
+      "confidence": "63",
+      "suggested_live_dollars": "0.41",
+      "suggested_paper_dollars": "17.22",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "41",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-06-14T18:55:13.496300Z",
       "ticker": "KXCPIYOY-26JUL-T4.2",
@@ -2335,72 +2419,93 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-06-13T20:31:03.014386Z",
-      "ticker": "KXHIGHAUS-26JUN13-B93.5",
-      "title": "Will the **high temp in Austin** be 93-94\u00b0 on Jun 13, 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-50.95",
-      "implied_prob": "0.685",
-      "true_prob": "0.1755",
-      "confidence": "80",
-      "suggested_live_dollars": "0.33",
-      "suggested_paper_dollars": "49.83",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "33",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-13T20:31:02.792260Z",
-      "ticker": "KXHIGHCHI-26JUN13-B82.5",
-      "title": "Will the high temp in Chicago be 82-83\u00b0 on Jun 13, 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-75.95",
-      "implied_prob": "0.935",
-      "true_prob": "0.1755",
-      "confidence": "80",
-      "suggested_live_dollars": "0.49",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "7",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-13T20:31:02.442471Z",
-      "ticker": "KXRAINNYCM-26JUN-3",
-      "title": "Rain in NYC in Jun 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-66.0",
-      "implied_prob": "0.69",
-      "true_prob": "0.03",
-      "confidence": "85",
-      "suggested_live_dollars": "0.32",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "32",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "recent_alerts": [
+    {
+      "timestamp": "2026-06-14T20:37:55.717618Z",
+      "ticker": "KXWCTEAMTOTAL-26JUN14NEDJPN-NED1",
+      "title": "Will Netherlands score over 0.5 goals?",
+      "category": "Sports",
+      "direction": "YES",
+      "edge_pct": "17.5",
+      "implied_prob": "0.825",
+      "true_prob": "1.0",
+      "confidence": "75",
+      "suggested_live_dollars": "0.83",
+      "suggested_paper_dollars": "39.84",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "83",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-14T20:37:55.286200Z",
+      "ticker": "KXWC1HSPREAD-26JUN14NEDJPN-NED2",
+      "title": "Netherlands wins by over 1.5 goals in the 1st Half?",
+      "category": "Sports",
+      "direction": "YES",
+      "edge_pct": "88.0",
+      "implied_prob": "0.12",
+      "true_prob": "1.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.52",
+      "suggested_paper_dollars": "49.92",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "13",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-14T20:37:54.957111Z",
+      "ticker": "KXWCSPREAD-26JUN14NEDJPN-NED3",
+      "title": "Netherlands wins by over 2.5 goals?",
+      "category": "Sports",
+      "direction": "YES",
+      "edge_pct": "90.5",
+      "implied_prob": "0.095",
+      "true_prob": "1.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.5",
+      "suggested_paper_dollars": "50.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "10",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-14T20:37:54.641216Z",
+      "ticker": "KXWTI-26JUN1514-T84.99",
+      "title": "Will the WTI crude oil settlement price be above 84.99 USD/Bbl on Jun 15, 2026?",
+      "category": "Commodities",
+      "direction": "YES",
+      "edge_pct": "8.1",
+      "implied_prob": "0.4",
+      "true_prob": "0.481",
+      "confidence": "63",
+      "suggested_live_dollars": "0.41",
+      "suggested_paper_dollars": "17.22",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "41",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-06-14T18:55:13.496300Z",
       "ticker": "KXCPIYOY-26JUL-T4.2",
@@ -3366,90 +3471,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-06-14T02:28:54.846193Z",
-      "ticker": "KXCPIYOY-26JUN-T3.7",
-      "title": "Will the rate of CPI inflation be above 3.7% for the year ending in June 2026?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-35.13",
-      "implied_prob": "0.93",
-      "true_prob": "0.5787",
-      "confidence": "85",
-      "suggested_live_dollars": "0.54",
-      "suggested_paper_dollars": "49.95",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "9",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-14T02:28:54.703668Z",
-      "ticker": "KXFEDDECISION-26JUL-H25",
-      "title": "Will the Federal Reserve Hike rates by 25bps at their July 2026 meeting?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "43.9",
-      "implied_prob": "0.065",
-      "true_prob": "0.504",
-      "confidence": "85",
-      "suggested_live_dollars": "0.49",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "7",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-14T02:28:54.442783Z",
-      "ticker": "KXFEDDECISION-26JUL-H0",
-      "title": "Will the Federal Reserve Hike rates by 0bps at their July 2026 meeting?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-41.1",
-      "implied_prob": "0.915",
-      "true_prob": "0.504",
-      "confidence": "95",
-      "suggested_live_dollars": "0.54",
-      "suggested_paper_dollars": "49.95",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "9",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-14T02:28:54.290887Z",
-      "ticker": "KXCPIYOY-26JUL-T3.8",
-      "title": "Will the rate of CPI inflation be above 3.8% for the year ending in July 2026?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-24.63",
-      "implied_prob": "0.815",
-      "true_prob": "0.5687",
-      "confidence": "75",
-      "suggested_live_dollars": "0.22",
-      "suggested_paper_dollars": "39.82",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "22",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -3475,9 +3496,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 74,
+      "current_cents": 75,
       "dollars_risked": 0,
-      "current_value": 1.48,
+      "current_value": 1.5,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

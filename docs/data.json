@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-14T05:10:23.386237Z",
-  "last_scan_ts": "2026-06-14T05:10:23.386237Z",
+  "generated_at": "2026-06-14T13:31:40.497583Z",
+  "last_scan_ts": "2026-06-14T13:31:40.497583Z",
   "stats": {
-    "total_alerts": 4657,
+    "total_alerts": 4662,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -13,7 +13,7 @@
         "hit_rate": null
       },
       "Economics": {
-        "total": 1004,
+        "total": 1005,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -25,19 +25,19 @@
         "hit_rate": null
       },
       "Crypto": {
-        "total": 1559,
+        "total": 1561,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "Sports": {
-        "total": 81,
+        "total": 82,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "Climate and Weather": {
-        "total": 556,
+        "total": 557,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,19 +69,19 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 925,
+        "total": 926,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "medium (15-25%)": {
-        "total": 962,
+        "total": 963,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 2770,
+        "total": 2773,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 10.68,
+      "balance": 10.92,
       "cash": 5.35,
       "peak": 11.41,
       "initial_balance": 10.0
@@ -101,15 +101,120 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-06-14T04:43:54.069440Z"
+    "updated_at": "2026-06-14T13:01:03.457091Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.33,
-  "account_value": 10.68,
-  "live_pnl": 0.68,
+  "position_value": 5.57,
+  "account_value": 10.92,
+  "live_pnl": 0.92,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-06-14T13:31:40.126815Z",
+      "ticker": "KXWCSPREAD-26JUN14NEDJPN-NED2",
+      "title": "Netherlands wins by over 1.5 goals?",
+      "category": "Sports",
+      "direction": "YES",
+      "edge_pct": "76.5",
+      "implied_prob": "0.235",
+      "true_prob": "1.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.48",
+      "suggested_paper_dollars": "49.92",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "24",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-14T13:31:39.901856Z",
+      "ticker": "KXHIGHNY-26JUN14-B87.5",
+      "title": "Will the **high temp in NYC** be 87-88\u00b0 on Jun 14, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-37.3",
+      "implied_prob": "0.415",
+      "true_prob": "0.042",
+      "confidence": "80",
+      "suggested_live_dollars": "0.6",
+      "suggested_paper_dollars": "49.8",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "60",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-14T13:31:39.656257Z",
+      "ticker": "KXBTCMAXMON-BTC-26JUN30-7500000",
+      "title": "Will BTC trimmed mean be above $75000.00 by 11:59 PM ET on Jun 30, 2026?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-8.72",
+      "implied_prob": "0.105",
+      "true_prob": "0.0178",
+      "confidence": "68",
+      "suggested_live_dollars": "0.9",
+      "suggested_paper_dollars": "19.8",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "90",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-14T13:31:39.418849Z",
+      "ticker": "KXSOLMINMON-SOL-26JUN30-6000",
+      "title": "Will SOL trimmed mean be below $60.00 by 11:59 PM ET on Jun 30, 2026?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-15.21",
+      "implied_prob": "0.285",
+      "true_prob": "0.1329",
+      "confidence": "70",
+      "suggested_live_dollars": "0.75",
+      "suggested_paper_dollars": "39.75",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "75",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-14T13:31:38.925976Z",
+      "ticker": "KXCPIYOY-26JUN-T4.0",
+      "title": "Will the rate of CPI inflation be above 4.0% for the year ending in June 2026?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "33.37",
+      "implied_prob": "0.215",
+      "true_prob": "0.5487",
+      "confidence": "85",
+      "suggested_live_dollars": "0.44",
+      "suggested_paper_dollars": "49.94",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "22",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-06-14T05:10:23.065185Z",
       "ticker": "KXHIGHMIA-26JUN14-B91.5",
@@ -2251,177 +2356,114 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-06-13T13:23:40.144812Z",
-      "ticker": "KXHIGHNY-26JUN13-B87.5",
-      "title": "Will the **high temp in NYC** be 87-88\u00b0 on Jun 13, 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-46.24",
-      "implied_prob": "0.53",
-      "true_prob": "0.0676",
-      "confidence": "80",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "48",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-13T13:23:39.729715Z",
-      "ticker": "KXRAINHOUM-26JUN-5",
-      "title": "Rain in Houston in Jun 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-80.0",
-      "implied_prob": "0.91",
-      "true_prob": "0.11",
-      "confidence": "85",
-      "suggested_live_dollars": "0.4",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "10",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-13T13:23:39.447814Z",
-      "ticker": "KXTSLA-26JULDELIV-390000.0",
-      "title": "Will Tesla Inc. report above 390000 total deliveries in Q2 2026?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-84.0",
-      "implied_prob": "0.84",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.46",
-      "suggested_paper_dollars": "49.91",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "23",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-13T13:23:39.143252Z",
-      "ticker": "KXSOLMAXY-27JAN01-180",
-      "title": "Will the spot price of Solana be above $180.00 before Jan 1, 2027 at 12:00 AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-16.57",
-      "implied_prob": "0.17",
-      "true_prob": "0.0043",
-      "confidence": "70",
-      "suggested_live_dollars": "0.93",
-      "suggested_paper_dollars": "39.99",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "93",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-13T13:23:38.708418Z",
-      "ticker": "KXSOLMAXY-27JAN01-160",
-      "title": "Will the spot price of Solana be above $160.00 before Jan 1, 2027 at 12:00 AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-15.95",
-      "implied_prob": "0.17",
-      "true_prob": "0.0105",
-      "confidence": "70",
-      "suggested_live_dollars": "0.89",
-      "suggested_paper_dollars": "39.16",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "89",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-13T08:27:52.974709Z",
-      "ticker": "KXHIGHMIA-26JUN13-B90.5",
-      "title": "Will the **high temp in Miami** be 90-91\u00b0 on Jun 13, 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-43.23",
-      "implied_prob": "0.655",
-      "true_prob": "0.2227",
-      "confidence": "80",
-      "suggested_live_dollars": "0.36",
-      "suggested_paper_dollars": "49.68",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "36",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-13T08:27:52.674132Z",
-      "ticker": "KXWTI-26JUN1514-T81.99",
-      "title": "Will the WTI crude oil settlement price be above 81.99 USD/Bbl on Jun 15, 2026?",
-      "category": "Commodities",
-      "direction": "YES",
-      "edge_pct": "16.53",
-      "implied_prob": "0.62",
-      "true_prob": "0.7853",
-      "confidence": "75",
-      "suggested_live_dollars": "0.63",
-      "suggested_paper_dollars": "39.69",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "63",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-13T08:27:52.172217Z",
-      "ticker": "KXBTCMINMON-BTC-26JUN30-5250000",
-      "title": "Will BTC trimmed mean be below $52500.00 by 11:59 PM ET on Jun 30, 2026?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-8.03",
-      "implied_prob": "0.085",
-      "true_prob": "0.0047",
-      "confidence": "63",
-      "suggested_live_dollars": "0.92",
-      "suggested_paper_dollars": "19.32",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "92",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "recent_alerts": [
+    {
+      "timestamp": "2026-06-14T13:31:40.126815Z",
+      "ticker": "KXWCSPREAD-26JUN14NEDJPN-NED2",
+      "title": "Netherlands wins by over 1.5 goals?",
+      "category": "Sports",
+      "direction": "YES",
+      "edge_pct": "76.5",
+      "implied_prob": "0.235",
+      "true_prob": "1.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.48",
+      "suggested_paper_dollars": "49.92",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "24",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-14T13:31:39.901856Z",
+      "ticker": "KXHIGHNY-26JUN14-B87.5",
+      "title": "Will the **high temp in NYC** be 87-88\u00b0 on Jun 14, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-37.3",
+      "implied_prob": "0.415",
+      "true_prob": "0.042",
+      "confidence": "80",
+      "suggested_live_dollars": "0.6",
+      "suggested_paper_dollars": "49.8",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "60",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-14T13:31:39.656257Z",
+      "ticker": "KXBTCMAXMON-BTC-26JUN30-7500000",
+      "title": "Will BTC trimmed mean be above $75000.00 by 11:59 PM ET on Jun 30, 2026?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-8.72",
+      "implied_prob": "0.105",
+      "true_prob": "0.0178",
+      "confidence": "68",
+      "suggested_live_dollars": "0.9",
+      "suggested_paper_dollars": "19.8",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "90",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-14T13:31:39.418849Z",
+      "ticker": "KXSOLMINMON-SOL-26JUN30-6000",
+      "title": "Will SOL trimmed mean be below $60.00 by 11:59 PM ET on Jun 30, 2026?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-15.21",
+      "implied_prob": "0.285",
+      "true_prob": "0.1329",
+      "confidence": "70",
+      "suggested_live_dollars": "0.75",
+      "suggested_paper_dollars": "39.75",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "75",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-14T13:31:38.925976Z",
+      "ticker": "KXCPIYOY-26JUN-T4.0",
+      "title": "Will the rate of CPI inflation be above 4.0% for the year ending in June 2026?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "33.37",
+      "implied_prob": "0.215",
+      "true_prob": "0.5487",
+      "confidence": "85",
+      "suggested_live_dollars": "0.44",
+      "suggested_paper_dollars": "49.94",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "22",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-06-14T05:10:23.065185Z",
       "ticker": "KXHIGHMIA-26JUN14-B91.5",
@@ -3366,111 +3408,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-06-14T02:28:52.341515Z",
-      "ticker": "KXTSLA-26JULPROD-460000.0",
-      "title": "Will Tesla Inc. report above 460000 total production in Q2 2026?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-28.5",
-      "implied_prob": "0.285",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.73",
-      "suggested_paper_dollars": "49.64",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "73",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-14T02:28:52.049382Z",
-      "ticker": "KXTSLA-26JULPROD-440000.0",
-      "title": "Will Tesla Inc. report above 440000 total production in Q2 2026?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-47.5",
-      "implied_prob": "0.475",
-      "true_prob": "0.0",
-      "confidence": "90",
-      "suggested_live_dollars": "0.54",
-      "suggested_paper_dollars": "49.68",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "54",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-14T02:28:51.861579Z",
-      "ticker": "KXTSLA-26JULPROD-420000.0",
-      "title": "Will Tesla Inc. report above 420000 total production in Q2 2026?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-67.0",
-      "implied_prob": "0.67",
-      "true_prob": "0.0",
-      "confidence": "90",
-      "suggested_live_dollars": "0.34",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "34",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-14T02:28:51.634450Z",
-      "ticker": "KXTSLA-26JULPROD-400000.0",
-      "title": "Will Tesla Inc. report above 400000 total production in Q2 2026?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-82.5",
-      "implied_prob": "0.825",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.38",
-      "suggested_paper_dollars": "49.97",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "19",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-14T02:28:51.483584Z",
-      "ticker": "KXTSLA-26JULPROD-380000.0",
-      "title": "Will Tesla Inc. report above 380000 total production in Q2 2026?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-90.5",
-      "implied_prob": "0.905",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.52",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "13",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -3496,9 +3433,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 75,
+      "current_cents": 76,
       "dollars_risked": 0,
-      "current_value": 1.5,
+      "current_value": 1.52,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -3508,9 +3445,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 70,
+      "current_cents": 81,
       "dollars_risked": 0,
-      "current_value": 1.4,
+      "current_value": 1.62,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

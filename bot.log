@@ -28983,3 +28983,66 @@ Total modelable markets evaluated: 0
 [2026-06-14 22:25:23 ET] [INFO] Scan complete — 89 alerts sent
 [2026-06-14 22:25:23 ET] [INFO] ============================================================
 [2026-06-14 22:25:23 ET] [INFO] Scan job complete
+[2026-06-15 00:59:00 ET] [INFO] Scan job starting
+[2026-06-15 00:59:01 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-06-15 00:59:01 ET] [INFO] ============================================================
+[2026-06-15 00:59:01 ET] [INFO] Starting market scan
+[2026-06-15 00:59:02 ET] [INFO] Portfolio value: $5.35 cash + $5.47 positions = $10.82
+[2026-06-15 00:59:02 ET] [INFO] Cash: $5.35  |  Positions: $5.47  |  Total: $10.82  |  Peak: $11.41
+[2026-06-15 00:59:03 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-06-15 00:59:03 ET] [WARN] API GET /markets → HTTP 400
+[2026-06-15 00:59:19 ET] [INFO] Fetched 60713 open markets via events endpoint across 38 pages
+[2026-06-15 00:59:19 ET] [INFO] Fetched 60713 open markets
+[2026-06-15 00:59:19 ET] [INFO] Parsed 57262 valid markets
+[2026-06-15 00:59:19 ET] [INFO] Categories: {'Sports': 28260, 'Elections': 11444, 'Entertainment': 6541, 'Economics': 2632, 'Crypto': 2058, 'Politics': 1660, 'Financials': 1218, 'Climate and Weather': 763}
+[2026-06-15 01:00:02 ET] [INFO]   price model: TSLA spot=406.43 target=1.50 vol=47.9% T=15720.0h → P=1.000
+[2026-06-15 01:03:14 ET] [INFO]   fed model: implied_rate=3.635% current≈3.618% diff=1.7bps → P=0.534
+[2026-06-15 01:06:31 ET] [INFO]   price model: SOL-USD spot=70.82 target=160.00 vol=52.4% T=4800.0h → P=0.018
+[2026-06-15 01:06:31 ET] [INFO]   EDGE FOUND: KXSOLMAXY-27JAN01-160 | implied=17.0% true=1.8% edge=-15.2% dir=NO conf=70
+[2026-06-15 01:06:32 ET] [INFO]   price model: ETH-USD spot=1715.74 target=4500.00 vol=50.8% T=4800.0h → P=0.005
+[2026-06-15 01:06:32 ET] [INFO]   price model: ETH-USD spot=1715.74 target=5000.00 vol=50.8% T=4800.0h → P=0.002
+[2026-06-15 01:06:32 ET] [INFO]   price model: ETH-USD spot=1715.74 target=6000.00 vol=50.8% T=4800.0h → P=0.000
+[2026-06-15 01:06:36 ET] [INFO]   price model: BTC-USD spot=65596.91 target=129999.00 vol=35.7% T=4800.0h → P=0.005
+[2026-06-15 01:06:36 ET] [INFO]   price model: BTC-USD spot=65596.91 target=139999.00 vol=35.7% T=4800.0h → P=0.002
+[2026-06-15 01:06:37 ET] [INFO]   price model: BTC-USD spot=65596.91 target=149999.00 vol=35.7% T=4800.0h → P=0.001
+[2026-06-15 01:06:40 ET] [INFO]   price model: SPY spot=741.75 target=9000.00 vol=13.9% T=4792.0h → P=0.000
+[2026-06-15 01:11:14 ET] [INFO]   CPI model: threshold=4.2% TNX=4.49% → P=0.529
+[2026-06-15 01:11:14 ET] [INFO]   EDGE FOUND: KXCPIYOY-26JUL-T4.2 | implied=44.5% true=52.9% edge=+8.4% dir=YES conf=68
+[2026-06-15 01:14:11 ET] [INFO]   weather model: chicago rain 2026-06-15 forecast=6% → P=0.060
+[2026-06-15 01:14:11 ET] [INFO]   EDGE FOUND: KXRAINCHIM-26JUN-4 | implied=95.0% true=6.0% edge=-89.0% dir=NO conf=85
+[2026-06-15 01:14:12 ET] [INFO]   weather model: austin rain 2026-06-15 forecast=53% → P=0.530
+[2026-06-15 01:14:12 ET] [INFO]   EDGE FOUND: KXRAINAUSM-26JUN-4 | implied=90.0% true=53.0% edge=-37.0% dir=NO conf=85
+[2026-06-15 01:14:33 ET] [INFO]   price model: BTC-USD spot=65652.79 target=55000.00 vol=35.8% T=383.0h → P=0.009
+[2026-06-15 01:14:33 ET] [INFO]   price model: BTC-USD spot=65652.79 target=77500.00 vol=35.8% T=383.0h → P=0.013
+[2026-06-15 01:14:40 ET] [INFO]   price model: CL=F spot=80.60 target=90.99 vol=54.5% T=376.0h → P=0.141
+[2026-06-15 01:14:40 ET] [INFO]   price model: CL=F spot=80.60 target=92.99 vol=54.5% T=376.0h → P=0.103
+[2026-06-15 01:14:41 ET] [INFO]   price model: CL=F spot=80.60 target=94.99 vol=54.5% T=376.0h → P=0.073
+[2026-06-15 01:17:48 ET] [INFO]   price model: CL=F spot=80.67 target=77.99 vol=54.4% T=37.5h → P=0.829
+[2026-06-15 01:17:48 ET] [INFO]   EDGE FOUND: KXWTI-26JUN1614-T77.99 | implied=67.5% true=82.8% edge=+15.3% dir=YES conf=75
+[2026-06-15 01:17:48 ET] [INFO]   price model: CL=F spot=80.67 target=80.99 vol=54.4% T=37.5h → P=0.456
+[2026-06-15 01:17:48 ET] [INFO]   EDGE FOUND: KXWTI-26JUN1614-T80.99 | implied=35.5% true=45.6% edge=+10.1% dir=YES conf=68
+[2026-06-15 01:18:29 ET] [INFO]   price model: SPY spot=741.75 target=7500.00 vol=13.9% T=15.0h → P=0.000
+[2026-06-15 01:18:29 ET] [INFO]   EDGE FOUND: KXINXU-26JUN15H1600-T7499.9999 | implied=70.5% true=0.0% edge=-70.5% dir=NO conf=80
+[2026-06-15 01:18:48 ET] [INFO]   price model: GC=F spot=4347.60 target=4307.00 vol=26.1% T=16.0h → P=0.800
+[2026-06-15 01:18:48 ET] [INFO]   EDGE FOUND: KXGOLDD-26JUN1517-T4307 | implied=66.5% true=80.0% edge=+13.5% dir=YES conf=63
+[2026-06-15 01:18:58 ET] [INFO]   price model: CL=F spot=80.71 target=80.99 vol=54.4% T=13.5h → P=0.436
+[2026-06-15 01:20:05 ET] [INFO]   fed model: implied_rate=3.635% current≈3.618% diff=1.7bps → P=0.534
+[2026-06-15 01:20:06 ET] [INFO]   price model: BTC-USD spot=65680.92 target=149999.00 vol=35.8% T=4800.0h → P=0.001
+[2026-06-15 01:20:07 ET] [INFO] Checked 57173 markets | Modelable: 57173 | Edges found: 8
+[2026-06-15 01:20:07 ET] [INFO]   Skipping KXSOLMAXY-27JAN01-160 — suggested bet too small to be meaningful
+[2026-06-15 01:20:07 ET] [INFO]   Skipping KXCPIYOY-26JUL-T4.2 — suggested bet too small to be meaningful
+[2026-06-15 01:20:07 ET] [INFO] [Discord] Trade alert sent: KXRAINCHIM-26JUN-4
+[2026-06-15 01:20:07 ET] [WARN] AUTO-BET SKIP KXRAINCHIM-26JUN-4: exposure 39.3% ≥ 25% limit ($7.00 of $17.82 in open positions)
+[2026-06-15 01:20:08 ET] [INFO] [Discord] Trade alert sent: KXRAINAUSM-26JUN-4
+[2026-06-15 01:20:08 ET] [WARN] AUTO-BET SKIP KXRAINAUSM-26JUN-4: exposure 39.3% ≥ 25% limit ($7.00 of $17.82 in open positions)
+[2026-06-15 01:20:08 ET] [INFO] [Discord] Trade alert sent: KXWTI-26JUN1614-T77.99
+[2026-06-15 01:20:08 ET] [WARN] AUTO-BET SKIP KXWTI-26JUN1614-T77.99: exposure 39.3% ≥ 25% limit ($7.00 of $17.82 in open positions)
+[2026-06-15 01:20:09 ET] [INFO] [Discord] Trade alert sent: KXWTI-26JUN1614-T80.99
+[2026-06-15 01:20:09 ET] [WARN] AUTO-BET SKIP KXWTI-26JUN1614-T80.99: exposure 39.3% ≥ 25% limit ($7.00 of $17.82 in open positions)
+[2026-06-15 01:20:09 ET] [INFO] [Discord] Trade alert sent: KXINXU-26JUN15H1600-T7499.9999
+[2026-06-15 01:20:09 ET] [WARN] AUTO-BET SKIP KXINXU-26JUN15H1600-T7499.9999: exposure 39.3% ≥ 25% limit ($7.00 of $17.82 in open positions)
+[2026-06-15 01:20:09 ET] [INFO] [Discord] Trade alert sent: KXGOLDD-26JUN1517-T4307
+[2026-06-15 01:20:10 ET] [WARN] AUTO-BET SKIP KXGOLDD-26JUN1517-T4307: exposure 39.3% ≥ 25% limit ($7.00 of $17.82 in open positions)
+[2026-06-15 01:20:10 ET] [INFO] Scan complete — 6 alerts sent
+[2026-06-15 01:20:10 ET] [INFO] ============================================================
+[2026-06-15 01:20:10 ET] [INFO] Scan job complete

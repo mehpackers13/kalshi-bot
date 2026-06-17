@@ -30566,3 +30566,48 @@ Total modelable markets evaluated: 0
 [2026-06-17 16:51:11 ET] [INFO] Scan complete — 5 alerts sent
 [2026-06-17 16:51:11 ET] [INFO] ============================================================
 [2026-06-17 16:51:11 ET] [INFO] Scan job complete
+[2026-06-17 18:22:07 ET] [INFO] Scan job starting
+[2026-06-17 18:22:07 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-06-17 18:22:07 ET] [INFO] ============================================================
+[2026-06-17 18:22:07 ET] [INFO] Starting market scan
+[2026-06-17 18:22:08 ET] [INFO] Portfolio value: $5.35 cash + $5.31 positions = $10.66
+[2026-06-17 18:22:08 ET] [INFO] Cash: $5.35  |  Positions: $5.31  |  Total: $10.66  |  Peak: $11.41
+[2026-06-17 18:22:09 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-06-17 18:22:09 ET] [WARN] API GET /markets → HTTP 400
+[2026-06-17 18:22:23 ET] [INFO] Fetched 65436 open markets via events endpoint across 39 pages
+[2026-06-17 18:22:23 ET] [INFO] Fetched 65436 open markets
+[2026-06-17 18:22:23 ET] [INFO] Parsed 62091 valid markets
+[2026-06-17 18:22:23 ET] [INFO] Categories: {'Sports': 31891, 'Elections': 11410, 'Entertainment': 7136, 'Economics': 2691, 'Crypto': 2194, 'Politics': 1675, 'Financials': 1609, 'Climate and Weather': 790}
+[2026-06-17 18:23:34 ET] [INFO]   price model: TSLA spot=396.38 target=1.50 vol=48.2% T=15654.6h → P=1.000
+[2026-06-17 18:34:57 ET] [INFO]   price model: ETH-USD spot=1741.30 target=4500.00 vol=52.5% T=4734.6h → P=0.007
+[2026-06-17 18:34:57 ET] [INFO]   price model: ETH-USD spot=1741.30 target=6000.00 vol=52.5% T=4734.6h → P=0.001
+[2026-06-17 18:34:58 ET] [INFO]   price model: BTC-USD spot=64333.95 target=100000.00 vol=35.7% T=2525.6h → P=0.011
+[2026-06-17 18:34:58 ET] [INFO]   price model: BTC-USD spot=64333.95 target=200000.00 vol=35.7% T=4734.6h → P=0.000
+[2026-06-17 18:35:04 ET] [INFO]   price model: BTC-USD spot=64333.95 target=129999.00 vol=35.7% T=4734.6h → P=0.004
+[2026-06-17 18:35:04 ET] [INFO]   price model: BTC-USD spot=64333.95 target=139999.00 vol=35.7% T=4734.6h → P=0.002
+[2026-06-17 18:35:04 ET] [INFO]   price model: BTC-USD spot=64333.95 target=149999.00 vol=35.7% T=4734.6h → P=0.001
+[2026-06-17 18:35:10 ET] [INFO]   price model: SPY spot=740.96 target=9000.00 vol=14.7% T=4726.6h → P=0.000
+[2026-06-17 18:49:50 ET] [INFO]   price model: BTC-USD spot=64330.88 target=55000.00 vol=35.7% T=317.6h → P=0.011
+[2026-06-17 18:49:50 ET] [INFO]   EDGE FOUND: KXBTCMINMON-BTC-26JUN30-5500000 | implied=9.5% true=1.1% edge=-8.4% dir=NO conf=68
+[2026-06-17 18:49:50 ET] [INFO]   price model: BTC-USD spot=64330.88 target=52500.00 vol=35.7% T=317.6h → P=0.001
+[2026-06-17 18:49:50 ET] [INFO]   price model: BTC-USD spot=64330.88 target=75000.00 vol=35.7% T=317.6h → P=0.012
+[2026-06-17 18:50:00 ET] [INFO]   price model: CL=F spot=75.38 target=90.99 vol=54.1% T=310.6h → P=0.032
+[2026-06-17 18:57:24 ET] [INFO]   weather model: denver can't parse temp condition from title
+[2026-06-17 18:57:24 ET] [INFO]   weather model: denver max=99.0°F target=[92,93]°F days_out=0 σ=3.5°F → P=0.042
+[2026-06-17 18:57:24 ET] [INFO]   EDGE FOUND: KXHIGHDEN-26JUN17-B92.5 | implied=73.5% true=4.2% edge=-69.3% dir=NO conf=80
+[2026-06-17 18:57:25 ET] [INFO]   weather model: chicago max=62.0°F target=[69,70]°F days_out=0 σ=3.5°F → P=0.024
+[2026-06-17 18:57:25 ET] [INFO]   EDGE FOUND: KXHIGHCHI-26JUN17-B69.5 | implied=73.0% true=2.4% edge=-70.6% dir=NO conf=80
+[2026-06-17 18:57:26 ET] [INFO]   weather model: austin max=93.0°F target=[89,90]°F days_out=0 σ=3.5°F → P=0.138
+[2026-06-17 18:57:26 ET] [INFO]   EDGE FOUND: KXHIGHAUS-26JUN17-B89.5 | implied=91.5% true=13.8% edge=-77.7% dir=NO conf=80
+[2026-06-17 19:00:28 ET] [INFO] Checked 61995 markets | Modelable: 61995 | Edges found: 4
+[2026-06-17 19:00:29 ET] [INFO] [Discord] Trade alert sent: KXBTCMINMON-BTC-26JUN30-5500000
+[2026-06-17 19:00:29 ET] [WARN] AUTO-BET SKIP KXBTCMINMON-BTC-26JUN30-5500000: exposure 39.6% ≥ 25% limit ($7.00 of $17.66 in open positions)
+[2026-06-17 19:00:29 ET] [INFO] [Discord] Trade alert sent: KXHIGHDEN-26JUN17-B92.5
+[2026-06-17 19:00:29 ET] [WARN] AUTO-BET SKIP KXHIGHDEN-26JUN17-B92.5: exposure 39.6% ≥ 25% limit ($7.00 of $17.66 in open positions)
+[2026-06-17 19:00:29 ET] [INFO] [Discord] Trade alert sent: KXHIGHCHI-26JUN17-B69.5
+[2026-06-17 19:00:30 ET] [WARN] AUTO-BET SKIP KXHIGHCHI-26JUN17-B69.5: exposure 39.6% ≥ 25% limit ($7.00 of $17.66 in open positions)
+[2026-06-17 19:00:30 ET] [INFO] [Discord] Trade alert sent: KXHIGHAUS-26JUN17-B89.5
+[2026-06-17 19:00:30 ET] [WARN] AUTO-BET SKIP KXHIGHAUS-26JUN17-B89.5: exposure 39.6% ≥ 25% limit ($7.00 of $17.66 in open positions)
+[2026-06-17 19:00:30 ET] [INFO] Scan complete — 4 alerts sent
+[2026-06-17 19:00:30 ET] [INFO] ============================================================
+[2026-06-17 19:00:30 ET] [INFO] Scan job complete

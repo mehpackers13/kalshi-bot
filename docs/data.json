@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-20T08:35:00.420356Z",
-  "last_scan_ts": "2026-06-20T08:35:00.420356Z",
+  "generated_at": "2026-06-20T13:35:36.686988Z",
+  "last_scan_ts": "2026-06-20T13:35:36.686988Z",
   "stats": {
-    "total_alerts": 5338,
+    "total_alerts": 5340,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -31,13 +31,13 @@
         "hit_rate": null
       },
       "Sports": {
-        "total": 103,
+        "total": 104,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "Climate and Weather": {
-        "total": 647,
+        "total": 648,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,7 +69,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 1078,
+        "total": 1079,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -81,7 +81,7 @@
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 3168,
+        "total": 3169,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 10.68,
+      "balance": 10.69,
       "cash": 5.35,
       "peak": 11.41,
       "initial_balance": 10.0
@@ -101,15 +101,57 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-06-20T08:02:48.063116Z"
+    "updated_at": "2026-06-20T12:55:03.089057Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.33,
-  "account_value": 10.68,
-  "live_pnl": 0.68,
+  "position_value": 5.34,
+  "account_value": 10.69,
+  "live_pnl": 0.69,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-06-20T13:35:36.311278Z",
+      "ticker": "KXWCTEAMTOTAL-26JUN20NEDSWE-NED1",
+      "title": "Will Netherlands score over 0.5 goals?",
+      "category": "Sports",
+      "direction": "YES",
+      "edge_pct": "11.5",
+      "implied_prob": "0.885",
+      "true_prob": "1.0",
+      "confidence": "68",
+      "suggested_live_dollars": "0.89",
+      "suggested_paper_dollars": "19.58",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "89",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-20T13:35:35.828315Z",
+      "ticker": "KXRAINCHIM-26JUN-7",
+      "title": "Rain in Chicago in Jun 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-37.5",
+      "implied_prob": "0.445",
+      "true_prob": "0.07",
+      "confidence": "85",
+      "suggested_live_dollars": "0.57",
+      "suggested_paper_dollars": "49.59",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "57",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-06-20T08:35:00.083369Z",
       "ticker": "KXWCTEAMTOTAL-26JUN20NEDSWE-NED2",
@@ -2087,6 +2129,48 @@
   ],
   "recent_alerts": [
     {
+      "timestamp": "2026-06-20T13:35:36.311278Z",
+      "ticker": "KXWCTEAMTOTAL-26JUN20NEDSWE-NED1",
+      "title": "Will Netherlands score over 0.5 goals?",
+      "category": "Sports",
+      "direction": "YES",
+      "edge_pct": "11.5",
+      "implied_prob": "0.885",
+      "true_prob": "1.0",
+      "confidence": "68",
+      "suggested_live_dollars": "0.89",
+      "suggested_paper_dollars": "19.58",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "89",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-20T13:35:35.828315Z",
+      "ticker": "KXRAINCHIM-26JUN-7",
+      "title": "Rain in Chicago in Jun 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-37.5",
+      "implied_prob": "0.445",
+      "true_prob": "0.07",
+      "confidence": "85",
+      "suggested_live_dollars": "0.57",
+      "suggested_paper_dollars": "49.59",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "57",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
       "timestamp": "2026-06-20T08:35:00.083369Z",
       "ticker": "KXWCTEAMTOTAL-26JUN20NEDSWE-NED2",
       "title": "Will Netherlands score over 1.5 goals?",
@@ -3093,48 +3177,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-06-20T00:18:18.499893Z",
-      "ticker": "KXBRENTMON-26JUN3017-T86.99",
-      "title": "Will the brent crude oil close price be above 86.99 USD/Bbl on June 30, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "NO",
-      "edge_pct": "-10.74",
-      "implied_prob": "0.19",
-      "true_prob": "0.0826",
-      "confidence": "68",
-      "suggested_live_dollars": "0.83",
-      "suggested_paper_dollars": "19.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "83",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-20T00:18:18.321790Z",
-      "ticker": "KXBRENTMON-26JUN3017-T84.99",
-      "title": "Will the brent crude oil close price be above 84.99 USD/Bbl on June 30, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "NO",
-      "edge_pct": "-13.7",
-      "implied_prob": "0.265",
-      "true_prob": "0.128",
-      "confidence": "68",
-      "suggested_live_dollars": "0.76",
-      "suggested_paper_dollars": "19.76",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "76",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -3148,9 +3190,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 70,
+      "current_cents": 69,
       "dollars_risked": 0,
-      "current_value": 0.7,
+      "current_value": 0.69,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -3160,9 +3202,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 72,
+      "current_cents": 73,
       "dollars_risked": 0,
-      "current_value": 1.44,
+      "current_value": 1.46,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

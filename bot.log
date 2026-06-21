@@ -33414,3 +33414,39 @@ Total modelable markets evaluated: 0
 [2026-06-21 17:36:13 ET] [INFO] Scan complete — 1 alerts sent
 [2026-06-21 17:36:13 ET] [INFO] ============================================================
 [2026-06-21 17:36:13 ET] [INFO] Scan job complete
+[2026-06-21 18:19:56 ET] [INFO] Scan job starting
+[2026-06-21 18:19:57 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-06-21 18:19:57 ET] [INFO] ============================================================
+[2026-06-21 18:19:57 ET] [INFO] Starting market scan
+[2026-06-21 18:19:58 ET] [INFO] Portfolio value: $5.35 cash + $5.41 positions = $10.76
+[2026-06-21 18:19:58 ET] [INFO] Cash: $5.35  |  Positions: $5.41  |  Total: $10.76  |  Peak: $11.41
+[2026-06-21 18:19:58 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-06-21 18:19:59 ET] [WARN] API GET /markets → HTTP 400
+[2026-06-21 18:20:19 ET] [INFO] Fetched 62156 open markets via events endpoint across 39 pages
+[2026-06-21 18:20:19 ET] [INFO] Fetched 62156 open markets
+[2026-06-21 18:20:20 ET] [INFO] Parsed 58030 valid markets
+[2026-06-21 18:20:20 ET] [INFO] Categories: {'Sports': 27572, 'Elections': 11288, 'Entertainment': 7392, 'Economics': 2792, 'Crypto': 2112, 'Financials': 1711, 'Politics': 1671, 'Climate and Weather': 804}
+[2026-06-21 18:21:37 ET] [INFO]   price model: TSLA spot=400.49 target=1.50 vol=47.2% T=15558.7h → P=1.000
+[2026-06-21 18:27:44 ET] [INFO]   fed model: implied_rate=3.735% current≈3.658% diff=7.7bps → P=0.654
+[2026-06-21 18:33:40 ET] [INFO]   fed model: implied_rate=3.735% current≈3.658% diff=7.7bps → P=0.654
+[2026-06-21 18:33:55 ET] [INFO]   price model: ETH-USD spot=1712.46 target=4500.00 vol=51.5% T=4638.7h → P=0.005
+[2026-06-21 18:33:55 ET] [INFO]   price model: ETH-USD spot=1712.46 target=4750.00 vol=51.5% T=4638.7h → P=0.003
+[2026-06-21 18:33:55 ET] [INFO]   price model: ETH-USD spot=1712.46 target=5000.00 vol=51.5% T=4638.7h → P=0.002
+[2026-06-21 18:33:56 ET] [INFO]   price model: BTC-USD spot=63565.99 target=200000.00 vol=35.3% T=4638.7h → P=0.000
+[2026-06-21 18:34:03 ET] [INFO]   price model: BTC-USD spot=63565.99 target=129999.00 vol=35.3% T=4638.6h → P=0.003
+[2026-06-21 18:34:03 ET] [INFO]   price model: BTC-USD spot=63565.99 target=139999.00 vol=35.3% T=4638.6h → P=0.001
+[2026-06-21 18:34:09 ET] [INFO]   price model: SPY spot=746.74 target=9000.00 vol=14.9% T=4630.7h → P=0.000
+[2026-06-21 18:38:56 ET] [INFO]   fed model: implied_rate=3.735% current≈3.658% diff=7.7bps → P=0.654
+[2026-06-21 18:48:37 ET] [INFO]   price model: BTC-USD spot=63602.00 target=55000.00 vol=35.3% T=221.7h → P=0.005
+[2026-06-21 18:55:09 ET] [INFO]   weather model: austin max=91.0°F target=[92,93]°F days_out=0 σ=3.5°F → P=0.206
+[2026-06-21 18:55:09 ET] [INFO]   EDGE FOUND: KXHIGHAUS-26JUN21-B92.5 | implied=52.0% true=20.6% edge=-31.4% dir=NO conf=80
+[2026-06-21 18:58:16 ET] [INFO]   fed model: implied_rate=3.740% current≈3.658% diff=8.2bps → P=0.664
+[2026-06-21 18:58:16 ET] [INFO]   EDGE FOUND: FEDHIKE-26DEC31 | implied=57.5% true=66.4% edge=+8.9% dir=YES conf=78
+[2026-06-21 18:58:18 ET] [INFO] Checked 57925 markets | Modelable: 57925 | Edges found: 2
+[2026-06-21 18:58:18 ET] [INFO] [Discord] Trade alert sent: KXHIGHAUS-26JUN21-B92.5
+[2026-06-21 18:58:19 ET] [WARN] AUTO-BET SKIP KXHIGHAUS-26JUN21-B92.5: exposure 39.4% ≥ 25% limit ($7.00 of $17.76 in open positions)
+[2026-06-21 18:58:19 ET] [INFO] [Discord] Trade alert sent: FEDHIKE-26DEC31
+[2026-06-21 18:58:19 ET] [WARN] AUTO-BET SKIP FEDHIKE-26DEC31: exposure 39.4% ≥ 25% limit ($7.00 of $17.76 in open positions)
+[2026-06-21 18:58:19 ET] [INFO] Scan complete — 2 alerts sent
+[2026-06-21 18:58:19 ET] [INFO] ============================================================
+[2026-06-21 18:58:19 ET] [INFO] Scan job complete

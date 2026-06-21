@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-21T17:47:50.959063Z",
-  "last_scan_ts": "2026-06-21T17:47:50.959063Z",
+  "generated_at": "2026-06-21T19:43:37.386557Z",
+  "last_scan_ts": "2026-06-21T19:43:37.386557Z",
   "stats": {
-    "total_alerts": 5455,
+    "total_alerts": 5458,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -49,13 +49,13 @@
         "hit_rate": null
       },
       "Financials": {
-        "total": 425,
+        "total": 426,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "Commodities": {
-        "total": 646,
+        "total": 648,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -75,13 +75,13 @@
         "hit_rate": null
       },
       "medium (15-25%)": {
-        "total": 1114,
+        "total": 1116,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 3235,
+        "total": 3236,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 10.69,
+      "balance": 10.71,
       "cash": 5.35,
       "peak": 11.41,
       "initial_balance": 10.0
@@ -101,15 +101,78 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-06-21T17:09:08.015475Z"
+    "updated_at": "2026-06-21T19:03:49.270411Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.34,
-  "account_value": 10.69,
-  "live_pnl": 0.69,
+  "position_value": 5.36,
+  "account_value": 10.71,
+  "live_pnl": 0.71,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-06-21T19:43:37.041332Z",
+      "ticker": "KXWTI-26JUN2214-T81.99",
+      "title": "Will the WTI crude oil settlement price be above 81.99 USD/Bbl on Jun 22, 2026?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-19.51",
+      "implied_prob": "0.2",
+      "true_prob": "0.0049",
+      "confidence": "70",
+      "suggested_live_dollars": "0.81",
+      "suggested_paper_dollars": "39.69",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "81",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-21T19:43:36.791396Z",
+      "ticker": "KXBRENTMON-26JUN3017-T88.99",
+      "title": "Will the brent crude oil close price be above 88.99 USD/Bbl on June 30, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-17.31",
+      "implied_prob": "0.205",
+      "true_prob": "0.0319",
+      "confidence": "75",
+      "suggested_live_dollars": "0.8",
+      "suggested_paper_dollars": "40.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "80",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-21T19:43:36.463904Z",
+      "ticker": "KXNASDAQ100MAXY-26DEC31H1600-T30799.99",
+      "title": "Will the Nasdaq-100 be above 30799.99 after issuance and before Dec 31, 2026 at 4pm EST?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-91.5",
+      "implied_prob": "0.915",
+      "true_prob": "0.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.42",
+      "suggested_paper_dollars": "49.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "14",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-06-21T17:47:50.634654Z",
       "ticker": "KXHIGHMIA-26JUN21-B92.5",
@@ -2314,51 +2377,72 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-06-20T19:33:30.669705Z",
-      "ticker": "KXWNBASPREAD-26JUN20INDATL-IND2",
-      "title": "Indiana wins by over 1.5 points?",
-      "category": "Sports",
-      "direction": "YES",
-      "edge_pct": "93.5",
-      "implied_prob": "0.065",
-      "true_prob": "1.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "8",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-20T19:33:30.362457Z",
-      "ticker": "KXTSLA-26JULPROD-380000.0",
-      "title": "Will Tesla Inc. report above 380000 total production in Q2 2026?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-93.5",
-      "implied_prob": "0.935",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.5",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "10",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "recent_alerts": [
+    {
+      "timestamp": "2026-06-21T19:43:37.041332Z",
+      "ticker": "KXWTI-26JUN2214-T81.99",
+      "title": "Will the WTI crude oil settlement price be above 81.99 USD/Bbl on Jun 22, 2026?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-19.51",
+      "implied_prob": "0.2",
+      "true_prob": "0.0049",
+      "confidence": "70",
+      "suggested_live_dollars": "0.81",
+      "suggested_paper_dollars": "39.69",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "81",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-21T19:43:36.791396Z",
+      "ticker": "KXBRENTMON-26JUN3017-T88.99",
+      "title": "Will the brent crude oil close price be above 88.99 USD/Bbl on June 30, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-17.31",
+      "implied_prob": "0.205",
+      "true_prob": "0.0319",
+      "confidence": "75",
+      "suggested_live_dollars": "0.8",
+      "suggested_paper_dollars": "40.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "80",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-21T19:43:36.463904Z",
+      "ticker": "KXNASDAQ100MAXY-26DEC31H1600-T30799.99",
+      "title": "Will the Nasdaq-100 be above 30799.99 after issuance and before Dec 31, 2026 at 4pm EST?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-91.5",
+      "implied_prob": "0.915",
+      "true_prob": "0.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.42",
+      "suggested_paper_dollars": "49.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "14",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-06-21T17:47:50.634654Z",
       "ticker": "KXHIGHMIA-26JUN21-B92.5",
@@ -3345,69 +3429,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-06-21T02:37:10.166737Z",
-      "ticker": "KXRAINSEAM-26JUN-2",
-      "title": "Rain in Seattle in Jun 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-31.5",
-      "implied_prob": "0.375",
-      "true_prob": "0.06",
-      "confidence": "85",
-      "suggested_live_dollars": "0.63",
-      "suggested_paper_dollars": "49.77",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "63",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-21T02:37:09.726230Z",
-      "ticker": "KXCPIYOY-26JUN-T4.0",
-      "title": "Will the rate of CPI inflation be above 4.0% for the year ending in June 2026?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "44.01",
-      "implied_prob": "0.105",
-      "true_prob": "0.5451",
-      "confidence": "85",
-      "suggested_live_dollars": "0.44",
-      "suggested_paper_dollars": "49.94",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "11",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-21T02:37:09.582000Z",
-      "ticker": "KXCPIYOY-26JUN-T3.9",
-      "title": "Will the rate of CPI inflation be above 3.9% for the year ending in June 2026?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "31.01",
-      "implied_prob": "0.245",
-      "true_prob": "0.5551",
-      "confidence": "85",
-      "suggested_live_dollars": "0.5",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "25",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -3421,9 +3442,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 69,
+      "current_cents": 70,
       "dollars_risked": 0,
-      "current_value": 0.69,
+      "current_value": 0.7,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -3433,9 +3454,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 72,
+      "current_cents": 73,
       "dollars_risked": 0,
-      "current_value": 1.44,
+      "current_value": 1.46,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -3469,9 +3490,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 80,
+      "current_cents": 79,
       "dollars_risked": 0,
-      "current_value": 0.8,
+      "current_value": 0.79,
       "pl_dollars": 0.0,
       "timestamp": ""
     }

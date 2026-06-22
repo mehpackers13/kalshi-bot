@@ -34070,3 +34070,44 @@ Total modelable markets evaluated: 0
 [2026-06-22 16:11:31 ET] [INFO] Scan complete — 4 alerts sent
 [2026-06-22 16:11:31 ET] [INFO] ============================================================
 [2026-06-22 16:11:31 ET] [INFO] Scan job complete
+[2026-06-22 18:10:20 ET] [INFO] Scan job starting
+[2026-06-22 18:10:20 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-06-22 18:10:20 ET] [INFO] ============================================================
+[2026-06-22 18:10:20 ET] [INFO] Starting market scan
+[2026-06-22 18:10:21 ET] [INFO] Portfolio value: $5.35 cash + $5.40 positions = $10.75
+[2026-06-22 18:10:21 ET] [INFO] Cash: $5.35  |  Positions: $5.40  |  Total: $10.75  |  Peak: $11.41
+[2026-06-22 18:10:22 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-06-22 18:10:22 ET] [WARN] API GET /markets → HTTP 400
+[2026-06-22 18:10:44 ET] [INFO] Fetched 67017 open markets via events endpoint across 39 pages
+[2026-06-22 18:10:44 ET] [INFO] Fetched 67017 open markets
+[2026-06-22 18:10:45 ET] [INFO] Parsed 63595 valid markets
+[2026-06-22 18:10:45 ET] [INFO] Categories: {'Sports': 33200, 'Elections': 11372, 'Entertainment': 7370, 'Economics': 2797, 'Crypto': 2125, 'Politics': 1657, 'Financials': 1652, 'Mentions': 813}
+[2026-06-22 18:11:59 ET] [INFO]   CPI model: threshold=10.0% TNX=4.51% → P=0.200
+[2026-06-22 18:24:18 ET] [INFO]   fed model: implied_rate=3.725% current≈3.680% diff=4.5bps → P=0.590
+[2026-06-22 18:24:33 ET] [INFO]   price model: ETH-USD spot=1729.34 target=4500.00 vol=52.0% T=4614.8h → P=0.006
+[2026-06-22 18:24:33 ET] [INFO]   price model: ETH-USD spot=1729.34 target=4750.00 vol=52.0% T=4614.8h → P=0.004
+[2026-06-22 18:24:33 ET] [INFO]   price model: ETH-USD spot=1729.34 target=5000.00 vol=52.0% T=4614.8h → P=0.002
+[2026-06-22 18:24:39 ET] [INFO]   price model: BTC-USD spot=64172.55 target=129999.00 vol=35.8% T=4614.8h → P=0.003
+[2026-06-22 18:24:39 ET] [INFO]   price model: BTC-USD spot=64172.55 target=139999.00 vol=35.8% T=4614.8h → P=0.001
+[2026-06-22 18:24:39 ET] [INFO]   price model: BTC-USD spot=64172.55 target=149999.00 vol=35.8% T=4614.8h → P=0.001
+[2026-06-22 18:24:46 ET] [INFO]   price model: SPY spot=744.39 target=9000.00 vol=14.8% T=4606.8h → P=0.000
+[2026-06-22 18:29:27 ET] [INFO]   fed model: implied_rate=3.725% current≈3.680% diff=4.5bps → P=0.590
+[2026-06-22 18:40:43 ET] [INFO]   weather model: chicago rain 2026-06-22 forecast=29% → P=0.290
+[2026-06-22 18:48:13 ET] [INFO]   weather model: denver max=91.0°F target=[88,89]°F days_out=0 σ=3.5°F → P=0.175
+[2026-06-22 18:48:13 ET] [INFO]   EDGE FOUND: KXHIGHDEN-26JUN22-B88.5 | implied=74.0% true=17.5% edge=-56.5% dir=NO conf=80
+[2026-06-22 18:48:14 ET] [INFO]   weather model: austin max=99.0°F target=[93,94]°F days_out=0 σ=3.5°F → P=0.068
+[2026-06-22 18:48:14 ET] [INFO]   EDGE FOUND: KXHIGHAUS-26JUN22-B93.5 | implied=81.0% true=6.8% edge=-74.2% dir=NO conf=80
+[2026-06-22 18:49:12 ET] [INFO]   price model: DIA spot=517.08 target=4.50 vol=13.5% T=337.8h → P=1.000
+[2026-06-22 18:49:12 ET] [INFO]   EDGE FOUND: KXWNBASPREAD-26JUN22PHXIND-IND5 | implied=62.0% true=100.0% edge=+38.0% dir=YES conf=85
+[2026-06-22 18:52:40 ET] [INFO]   fed model: implied_rate=3.725% current≈3.680% diff=4.5bps → P=0.590
+[2026-06-22 18:52:42 ET] [INFO]   price model: BTC-USD spot=63892.83 target=149999.00 vol=35.6% T=4614.8h → P=0.000
+[2026-06-22 18:52:43 ET] [INFO] Checked 63509 markets | Modelable: 63509 | Edges found: 3
+[2026-06-22 18:52:43 ET] [INFO] [Discord] Trade alert sent: KXHIGHDEN-26JUN22-B88.5
+[2026-06-22 18:52:43 ET] [WARN] AUTO-BET SKIP KXHIGHDEN-26JUN22-B88.5: exposure 39.4% ≥ 25% limit ($7.00 of $17.75 in open positions)
+[2026-06-22 18:52:43 ET] [INFO] [Discord] Trade alert sent: KXHIGHAUS-26JUN22-B93.5
+[2026-06-22 18:52:43 ET] [WARN] AUTO-BET SKIP KXHIGHAUS-26JUN22-B93.5: exposure 39.4% ≥ 25% limit ($7.00 of $17.75 in open positions)
+[2026-06-22 18:52:44 ET] [INFO] [Discord] Trade alert sent: KXWNBASPREAD-26JUN22PHXIND-IND5
+[2026-06-22 18:52:44 ET] [WARN] AUTO-BET SKIP KXWNBASPREAD-26JUN22PHXIND-IND5: exposure 39.4% ≥ 25% limit ($7.00 of $17.75 in open positions)
+[2026-06-22 18:52:44 ET] [INFO] Scan complete — 3 alerts sent
+[2026-06-22 18:52:44 ET] [INFO] ============================================================
+[2026-06-22 18:52:44 ET] [INFO] Scan job complete

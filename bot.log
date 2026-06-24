@@ -35428,3 +35428,43 @@ Total modelable markets evaluated: 0
 [2026-06-24 14:46:42 ET] [INFO] Scan complete — 6 alerts sent
 [2026-06-24 14:46:42 ET] [INFO] ============================================================
 [2026-06-24 14:46:42 ET] [INFO] Scan job complete
+[2026-06-24 16:19:47 ET] [INFO] Scan job starting
+[2026-06-24 16:19:48 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-06-24 16:19:48 ET] [INFO] ============================================================
+[2026-06-24 16:19:48 ET] [INFO] Starting market scan
+[2026-06-24 16:19:49 ET] [INFO] Portfolio value: $5.35 cash + $5.49 positions = $10.84
+[2026-06-24 16:19:49 ET] [INFO] Cash: $5.35  |  Positions: $5.49  |  Total: $10.84  |  Peak: $11.41
+[2026-06-24 16:19:49 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-06-24 16:19:50 ET] [WARN] API GET /markets → HTTP 400
+[2026-06-24 16:20:06 ET] [INFO] Fetched 64997 open markets via events endpoint across 37 pages
+[2026-06-24 16:20:06 ET] [INFO] Fetched 64997 open markets
+[2026-06-24 16:20:07 ET] [INFO] Parsed 61283 valid markets
+[2026-06-24 16:20:07 ET] [INFO] Categories: {'Sports': 30390, 'Elections': 11142, 'Entertainment': 7882, 'Economics': 2831, 'Financials': 1834, 'Crypto': 1758, 'Politics': 1668, 'Mentions': 883}
+[2026-06-24 16:21:25 ET] [INFO]   CPI model: threshold=10.0% TNX=4.40% → P=0.200
+[2026-06-24 16:21:29 ET] [INFO]   price model: META spot=557.67 target=65000.00 vol=38.6% T=15498.7h → P=0.000
+[2026-06-24 16:21:29 ET] [INFO]   EDGE FOUND: KXMETAA-28JANHEAD-65000 | implied=94.5% true=0.0% edge=-94.5% dir=NO conf=85
+[2026-06-24 16:34:49 ET] [INFO]   price model: ETH-USD spot=1606.81 target=4250.00 vol=53.0% T=4568.7h → P=0.006
+[2026-06-24 16:34:49 ET] [INFO]   price model: ETH-USD spot=1606.81 target=4500.00 vol=53.0% T=4568.7h → P=0.004
+[2026-06-24 16:34:50 ET] [INFO]   price model: ETH-USD spot=1606.81 target=4750.00 vol=53.0% T=4568.7h → P=0.002
+[2026-06-24 16:34:50 ET] [INFO]   price model: ETH-USD spot=1606.81 target=5000.00 vol=53.0% T=4568.7h → P=0.002
+[2026-06-24 16:34:51 ET] [INFO]   price model: BTC-USD spot=60585.38 target=100000.00 vol=36.4% T=2359.7h → P=0.004
+[2026-06-24 16:34:56 ET] [INFO]   price model: BTC-USD spot=60585.38 target=129999.00 vol=36.4% T=4568.6h → P=0.002
+[2026-06-24 16:34:56 ET] [INFO]   price model: BTC-USD spot=60585.38 target=139999.00 vol=36.4% T=4568.6h → P=0.001
+[2026-06-24 16:34:56 ET] [INFO]   price model: BTC-USD spot=60585.38 target=149999.00 vol=36.4% T=4568.6h → P=0.000
+[2026-06-24 16:57:56 ET] [INFO]   price model: CL=F spot=69.86 target=69.99 vol=50.2% T=22.2h → P=0.471
+[2026-06-24 16:58:36 ET] [INFO]   weather model: denver max=90.0°F target=[87,88]°F days_out=0 σ=3.5°F → P=0.175
+[2026-06-24 16:58:36 ET] [INFO]   EDGE FOUND: KXHIGHDEN-26JUN24-B87.5 | implied=77.5% true=17.5% edge=-60.0% dir=NO conf=80
+[2026-06-24 16:58:37 ET] [INFO]   weather model: chicago can't parse temp condition from title
+[2026-06-24 16:58:38 ET] [INFO]   weather model: austin max=96.0°F target=[93,94]°F days_out=0 σ=3.5°F → P=0.175
+[2026-06-24 16:58:38 ET] [INFO]   EDGE FOUND: KXHIGHAUS-26JUN24-B93.5 | implied=62.5% true=17.5% edge=-45.0% dir=NO conf=80
+[2026-06-24 17:02:36 ET] [INFO]   fed model: implied_rate=3.720% current≈3.690% diff=3.0bps → P=0.560
+[2026-06-24 17:02:39 ET] [INFO] Checked 61199 markets | Modelable: 61199 | Edges found: 3
+[2026-06-24 17:02:39 ET] [INFO] [Discord] Trade alert sent: KXMETAA-28JANHEAD-65000
+[2026-06-24 17:02:39 ET] [WARN] AUTO-BET SKIP KXMETAA-28JANHEAD-65000: exposure 39.2% ≥ 25% limit ($7.00 of $17.84 in open positions)
+[2026-06-24 17:02:40 ET] [INFO] [Discord] Trade alert sent: KXHIGHDEN-26JUN24-B87.5
+[2026-06-24 17:02:40 ET] [WARN] AUTO-BET SKIP KXHIGHDEN-26JUN24-B87.5: exposure 39.2% ≥ 25% limit ($7.00 of $17.84 in open positions)
+[2026-06-24 17:02:40 ET] [INFO] [Discord] Trade alert sent: KXHIGHAUS-26JUN24-B93.5
+[2026-06-24 17:02:40 ET] [WARN] AUTO-BET SKIP KXHIGHAUS-26JUN24-B93.5: exposure 39.2% ≥ 25% limit ($7.00 of $17.84 in open positions)
+[2026-06-24 17:02:40 ET] [INFO] Scan complete — 3 alerts sent
+[2026-06-24 17:02:40 ET] [INFO] ============================================================
+[2026-06-24 17:02:40 ET] [INFO] Scan job complete

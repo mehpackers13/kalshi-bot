@@ -36214,3 +36214,34 @@ Total modelable markets evaluated: 0
 [2026-06-25 15:21:15 ET] [INFO] Scan complete — 4 alerts sent
 [2026-06-25 15:21:15 ET] [INFO] ============================================================
 [2026-06-25 15:21:15 ET] [INFO] Scan job complete
+[2026-06-25 17:01:06 ET] [INFO] Scan job starting
+[2026-06-25 17:01:06 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-06-25 17:01:06 ET] [INFO] ============================================================
+[2026-06-25 17:01:06 ET] [INFO] Starting market scan
+[2026-06-25 17:01:07 ET] [INFO] Portfolio value: $5.35 cash + $5.48 positions = $10.83
+[2026-06-25 17:01:07 ET] [INFO] Cash: $5.35  |  Positions: $5.48  |  Total: $10.83  |  Peak: $11.41
+[2026-06-25 17:01:07 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-06-25 17:01:08 ET] [WARN] API GET /markets → HTTP 400
+[2026-06-25 17:01:22 ET] [INFO] Fetched 63049 open markets via events endpoint across 36 pages
+[2026-06-25 17:01:22 ET] [INFO] Fetched 63049 open markets
+[2026-06-25 17:01:22 ET] [INFO] Parsed 59242 valid markets
+[2026-06-25 17:01:22 ET] [INFO] Categories: {'Sports': 28681, 'Elections': 11155, 'Entertainment': 8014, 'Economics': 2732, 'Financials': 1959, 'Crypto': 1662, 'Politics': 1658, 'Climate and Weather': 894}
+[2026-06-25 17:02:47 ET] [INFO]   CPI model: threshold=10.0% TNX=4.39% → P=0.200
+[2026-06-25 17:17:31 ET] [INFO]   price model: ETH-USD spot=1561.50 target=4250.00 vol=53.1% T=4544.0h → P=0.004
+[2026-06-25 17:17:31 ET] [INFO]   price model: ETH-USD spot=1561.50 target=4500.00 vol=53.1% T=4544.0h → P=0.003
+[2026-06-25 17:17:31 ET] [INFO]   price model: ETH-USD spot=1561.50 target=5000.00 vol=53.1% T=4544.0h → P=0.001
+[2026-06-25 17:17:38 ET] [INFO]   price model: BTC-USD spot=59495.30 target=129999.00 vol=36.2% T=4544.0h → P=0.001
+[2026-06-25 17:41:33 ET] [INFO]   weather model: philadelphia max=93.0°F target=[86,87]°F days_out=0 σ=3.5°F → P=0.042
+[2026-06-25 17:41:33 ET] [INFO]   EDGE FOUND: KXHIGHPHIL-26JUN25-B86.5 | implied=74.5% true=4.2% edge=-70.3% dir=NO conf=80
+[2026-06-25 17:41:35 ET] [INFO]   weather model: denver can't parse temp condition from title
+[2026-06-25 17:41:36 ET] [INFO]   weather model: chicago max=72.0°F target=[81,82]°F days_out=0 σ=3.5°F → P=0.010
+[2026-06-25 17:41:36 ET] [INFO]   EDGE FOUND: KXHIGHCHI-26JUN25-B81.5 | implied=33.5% true=1.0% edge=-32.5% dir=NO conf=80
+[2026-06-25 17:45:10 ET] [INFO]   price model: BTC-USD spot=59853.59 target=149999.00 vol=36.0% T=4544.0h → P=0.000
+[2026-06-25 17:45:11 ET] [INFO] Checked 59159 markets | Modelable: 59159 | Edges found: 2
+[2026-06-25 17:45:11 ET] [INFO] [Discord] Trade alert sent: KXHIGHPHIL-26JUN25-B86.5
+[2026-06-25 17:45:12 ET] [WARN] AUTO-BET SKIP KXHIGHPHIL-26JUN25-B86.5: exposure 39.3% ≥ 25% limit ($7.00 of $17.83 in open positions)
+[2026-06-25 17:45:12 ET] [INFO] [Discord] Trade alert sent: KXHIGHCHI-26JUN25-B81.5
+[2026-06-25 17:45:12 ET] [WARN] AUTO-BET SKIP KXHIGHCHI-26JUN25-B81.5: exposure 39.3% ≥ 25% limit ($7.00 of $17.83 in open positions)
+[2026-06-25 17:45:12 ET] [INFO] Scan complete — 2 alerts sent
+[2026-06-25 17:45:12 ET] [INFO] ============================================================
+[2026-06-25 17:45:12 ET] [INFO] Scan job complete

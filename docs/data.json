@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-26T14:07:10.319073Z",
-  "last_scan_ts": "2026-06-26T14:07:10.319073Z",
+  "generated_at": "2026-06-26T16:24:45.789681Z",
+  "last_scan_ts": "2026-06-26T16:24:45.789681Z",
   "stats": {
-    "total_alerts": 5988,
+    "total_alerts": 5998,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -37,7 +37,7 @@
         "hit_rate": null
       },
       "Climate and Weather": {
-        "total": 723,
+        "total": 726,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -49,13 +49,13 @@
         "hit_rate": null
       },
       "Financials": {
-        "total": 495,
+        "total": 501,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "Commodities": {
-        "total": 718,
+        "total": 719,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,7 +69,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 1218,
+        "total": 1219,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -81,7 +81,7 @@
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 3559,
+        "total": 3568,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 10.82,
+      "balance": 10.83,
       "cash": 5.35,
       "peak": 11.41,
       "initial_balance": 10.0
@@ -101,15 +101,225 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-06-26T13:16:20.070675Z"
+    "updated_at": "2026-06-26T15:40:50.258875Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.47,
-  "account_value": 10.82,
-  "live_pnl": 0.82,
+  "position_value": 5.48,
+  "account_value": 10.83,
+  "live_pnl": 0.83,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-06-26T16:24:45.417196Z",
+      "ticker": "KXWTI-26JUN2614-T67.99",
+      "title": "Will the WTI crude oil settlement price be above 67.99 USD/Bbl on Jun 26, 2026?",
+      "category": "Commodities",
+      "direction": "YES",
+      "edge_pct": "9.44",
+      "implied_prob": "0.87",
+      "true_prob": "0.9644",
+      "confidence": "58",
+      "suggested_live_dollars": "0.88",
+      "suggested_paper_dollars": "19.36",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "88",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-26T16:24:45.027785Z",
+      "ticker": "KXINXDUD-26JUN26H1600-T7357.49",
+      "title": "Will the S&P 500 be above 7357.49 on Jun 26, 2026 at 4pm EDT?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-72.5",
+      "implied_prob": "0.725",
+      "true_prob": "0.0",
+      "confidence": "70",
+      "suggested_live_dollars": "0.28",
+      "suggested_paper_dollars": "49.84",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "28",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-26T16:24:44.690507Z",
+      "ticker": "KXINXU-26JUN26H1600-T7374.9999",
+      "title": "Will the S&P 500 be above 7374.9999 on Jun 26, 2026 at 4pm EDT?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-68.5",
+      "implied_prob": "0.685",
+      "true_prob": "0.0",
+      "confidence": "70",
+      "suggested_live_dollars": "0.33",
+      "suggested_paper_dollars": "49.83",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "33",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-26T16:24:44.368972Z",
+      "ticker": "KXINXU-26JUN26H1600-T7324.9999",
+      "title": "Will the S&P 500 be above 7324.9999 on Jun 26, 2026 at 4pm EDT?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-93.0",
+      "implied_prob": "0.93",
+      "true_prob": "0.0",
+      "confidence": "70",
+      "suggested_live_dollars": "0.48",
+      "suggested_paper_dollars": "50.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "8",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-26T16:24:44.000006Z",
+      "ticker": "KXNASDAQ100U-26JUN26H1600-T29199.99",
+      "title": "Will the Nasdaq-100 be above 29199.99 at the end of Jun 26, 2026 at 4pm EDT?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-79.0",
+      "implied_prob": "0.79",
+      "true_prob": "0.0",
+      "confidence": "70",
+      "suggested_live_dollars": "0.44",
+      "suggested_paper_dollars": "49.94",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "22",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-26T16:24:43.655063Z",
+      "ticker": "KXNASDAQ100U-26JUN26H1600-T29099.99",
+      "title": "Will the Nasdaq-100 be above 29099.99 at the end of Jun 26, 2026 at 4pm EDT?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-86.5",
+      "implied_prob": "0.865",
+      "true_prob": "0.0",
+      "confidence": "75",
+      "suggested_live_dollars": "0.45",
+      "suggested_paper_dollars": "49.95",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "15",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-26T16:24:43.323917Z",
+      "ticker": "KXNASDAQ100U-26JUN26H1600-T28999.99",
+      "title": "Will the Nasdaq-100 be above 28999.99 at the end of Jun 26, 2026 at 4pm EDT?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-92.5",
+      "implied_prob": "0.925",
+      "true_prob": "0.0",
+      "confidence": "70",
+      "suggested_live_dollars": "0.48",
+      "suggested_paper_dollars": "50.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "8",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-26T16:24:42.919241Z",
+      "ticker": "KXHIGHMIA-26JUN26-B90.5",
+      "title": "Will the **high temp in Miami** be 90-91\u00b0 on Jun 26, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-52.95",
+      "implied_prob": "0.705",
+      "true_prob": "0.1755",
+      "confidence": "80",
+      "suggested_live_dollars": "0.3",
+      "suggested_paper_dollars": "49.8",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "30",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-26T16:24:42.497800Z",
+      "ticker": "KXHIGHNY-26JUN26-B83.5",
+      "title": "Will the **high temp in NYC** be 83-84\u00b0 on Jun 26, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-43.09",
+      "implied_prob": "0.455",
+      "true_prob": "0.0241",
+      "confidence": "80",
+      "suggested_live_dollars": "0.55",
+      "suggested_paper_dollars": "49.5",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "55",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-26T16:24:42.039582Z",
+      "ticker": "KXHIGHNY-26JUN26-B81.5",
+      "title": "Will the **high temp in NYC** be 81-82\u00b0 on Jun 26, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-39.5",
+      "implied_prob": "0.405",
+      "true_prob": "0.01",
+      "confidence": "80",
+      "suggested_live_dollars": "0.6",
+      "suggested_paper_dollars": "49.8",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "60",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-06-26T14:07:09.933215Z",
       "ticker": "KXBRENTW-26JUN2617-T72.99",
@@ -2381,6 +2591,216 @@
   ],
   "recent_alerts": [
     {
+      "timestamp": "2026-06-26T16:24:45.417196Z",
+      "ticker": "KXWTI-26JUN2614-T67.99",
+      "title": "Will the WTI crude oil settlement price be above 67.99 USD/Bbl on Jun 26, 2026?",
+      "category": "Commodities",
+      "direction": "YES",
+      "edge_pct": "9.44",
+      "implied_prob": "0.87",
+      "true_prob": "0.9644",
+      "confidence": "58",
+      "suggested_live_dollars": "0.88",
+      "suggested_paper_dollars": "19.36",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "88",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-26T16:24:45.027785Z",
+      "ticker": "KXINXDUD-26JUN26H1600-T7357.49",
+      "title": "Will the S&P 500 be above 7357.49 on Jun 26, 2026 at 4pm EDT?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-72.5",
+      "implied_prob": "0.725",
+      "true_prob": "0.0",
+      "confidence": "70",
+      "suggested_live_dollars": "0.28",
+      "suggested_paper_dollars": "49.84",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "28",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-26T16:24:44.690507Z",
+      "ticker": "KXINXU-26JUN26H1600-T7374.9999",
+      "title": "Will the S&P 500 be above 7374.9999 on Jun 26, 2026 at 4pm EDT?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-68.5",
+      "implied_prob": "0.685",
+      "true_prob": "0.0",
+      "confidence": "70",
+      "suggested_live_dollars": "0.33",
+      "suggested_paper_dollars": "49.83",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "33",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-26T16:24:44.368972Z",
+      "ticker": "KXINXU-26JUN26H1600-T7324.9999",
+      "title": "Will the S&P 500 be above 7324.9999 on Jun 26, 2026 at 4pm EDT?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-93.0",
+      "implied_prob": "0.93",
+      "true_prob": "0.0",
+      "confidence": "70",
+      "suggested_live_dollars": "0.48",
+      "suggested_paper_dollars": "50.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "8",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-26T16:24:44.000006Z",
+      "ticker": "KXNASDAQ100U-26JUN26H1600-T29199.99",
+      "title": "Will the Nasdaq-100 be above 29199.99 at the end of Jun 26, 2026 at 4pm EDT?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-79.0",
+      "implied_prob": "0.79",
+      "true_prob": "0.0",
+      "confidence": "70",
+      "suggested_live_dollars": "0.44",
+      "suggested_paper_dollars": "49.94",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "22",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-26T16:24:43.655063Z",
+      "ticker": "KXNASDAQ100U-26JUN26H1600-T29099.99",
+      "title": "Will the Nasdaq-100 be above 29099.99 at the end of Jun 26, 2026 at 4pm EDT?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-86.5",
+      "implied_prob": "0.865",
+      "true_prob": "0.0",
+      "confidence": "75",
+      "suggested_live_dollars": "0.45",
+      "suggested_paper_dollars": "49.95",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "15",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-26T16:24:43.323917Z",
+      "ticker": "KXNASDAQ100U-26JUN26H1600-T28999.99",
+      "title": "Will the Nasdaq-100 be above 28999.99 at the end of Jun 26, 2026 at 4pm EDT?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-92.5",
+      "implied_prob": "0.925",
+      "true_prob": "0.0",
+      "confidence": "70",
+      "suggested_live_dollars": "0.48",
+      "suggested_paper_dollars": "50.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "8",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-26T16:24:42.919241Z",
+      "ticker": "KXHIGHMIA-26JUN26-B90.5",
+      "title": "Will the **high temp in Miami** be 90-91\u00b0 on Jun 26, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-52.95",
+      "implied_prob": "0.705",
+      "true_prob": "0.1755",
+      "confidence": "80",
+      "suggested_live_dollars": "0.3",
+      "suggested_paper_dollars": "49.8",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "30",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-26T16:24:42.497800Z",
+      "ticker": "KXHIGHNY-26JUN26-B83.5",
+      "title": "Will the **high temp in NYC** be 83-84\u00b0 on Jun 26, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-43.09",
+      "implied_prob": "0.455",
+      "true_prob": "0.0241",
+      "confidence": "80",
+      "suggested_live_dollars": "0.55",
+      "suggested_paper_dollars": "49.5",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "55",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-26T16:24:42.039582Z",
+      "ticker": "KXHIGHNY-26JUN26-B81.5",
+      "title": "Will the **high temp in NYC** be 81-82\u00b0 on Jun 26, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-39.5",
+      "implied_prob": "0.405",
+      "true_prob": "0.01",
+      "confidence": "80",
+      "suggested_live_dollars": "0.6",
+      "suggested_paper_dollars": "49.8",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "60",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
       "timestamp": "2026-06-26T14:07:09.933215Z",
       "ticker": "KXBRENTW-26JUN2617-T72.99",
       "title": "Will the brent crude oil close price be above 72.99 USD/Bbl on June 26, 2026 at 5:00 PM EDT?",
@@ -3219,216 +3639,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-06-26T01:03:49.162895Z",
-      "ticker": "KXTSLA-26JULPROD-420000.0",
-      "title": "Will Tesla Inc. report above 420000 total production in Q2 2026?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-66.0",
-      "implied_prob": "0.66",
-      "true_prob": "0.0",
-      "confidence": "90",
-      "suggested_live_dollars": "0.37",
-      "suggested_paper_dollars": "49.95",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "37",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-26T01:03:48.830901Z",
-      "ticker": "KXTSLA-26JULPROD-400000.0",
-      "title": "Will Tesla Inc. report above 400000 total production in Q2 2026?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-85.0",
-      "implied_prob": "0.85",
-      "true_prob": "0.0",
-      "confidence": "90",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "16",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-26T01:03:48.546665Z",
-      "ticker": "KXFEDDECISION-26SEP-H25",
-      "title": "Will the Federal Reserve Hike rates by 25bps at their September 2026 meeting?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "17.5",
-      "implied_prob": "0.375",
-      "true_prob": "0.55",
-      "confidence": "75",
-      "suggested_live_dollars": "0.38",
-      "suggested_paper_dollars": "39.9",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "38",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-26T01:03:48.347262Z",
-      "ticker": "KXFEDDECISION-26OCT-H0",
-      "title": "Will the Federal Reserve Hike rates by 0bps at their October 2026 meeting?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-11.5",
-      "implied_prob": "0.665",
-      "true_prob": "0.55",
-      "confidence": "68",
-      "suggested_live_dollars": "0.35",
-      "suggested_paper_dollars": "19.95",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "35",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-26T01:03:48.118391Z",
-      "ticker": "KXCOREUND-26DEC10-T2.2",
-      "title": "Will year-over-year Core CPI inflation for 2026 fall below 2.2%?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "46.92",
-      "implied_prob": "0.25",
-      "true_prob": "0.7192",
-      "confidence": "85",
-      "suggested_live_dollars": "0.28",
-      "suggested_paper_dollars": "49.84",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "28",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-26T01:03:47.923852Z",
-      "ticker": "KXEMERCUTS-26-T1",
-      "title": "Will the Fed cut rates 1 times at emergency meetings?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "38.5",
-      "implied_prob": "0.065",
-      "true_prob": "0.45",
-      "confidence": "85",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "8",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-26T01:03:47.696976Z",
-      "ticker": "KXEMERCUTS-26-T0",
-      "title": "Will the Fed cut rates 0 times at emergency meetings?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-46.5",
-      "implied_prob": "0.915",
-      "true_prob": "0.45",
-      "confidence": "95",
-      "suggested_live_dollars": "0.54",
-      "suggested_paper_dollars": "49.95",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "9",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-26T01:03:47.347492Z",
-      "ticker": "KXRATECUTCOUNT-26DEC31-T2",
-      "title": "Will the Fed cut rates 2 times?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "38.0",
-      "implied_prob": "0.07",
-      "true_prob": "0.45",
-      "confidence": "90",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "8",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-26T01:03:46.962499Z",
-      "ticker": "KXRATECUTCOUNT-26DEC31-T1",
-      "title": "Will the Fed cut rates 1 times?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "29.0",
-      "implied_prob": "0.16",
-      "true_prob": "0.45",
-      "confidence": "90",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "16",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-26T01:03:46.630104Z",
-      "ticker": "KXRATECUTCOUNT-26DEC31-T0",
-      "title": "Will the Fed cut rates 0 times?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-32.5",
-      "implied_prob": "0.775",
-      "true_prob": "0.45",
-      "confidence": "95",
-      "suggested_live_dollars": "0.46",
-      "suggested_paper_dollars": "49.91",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "23",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -3442,9 +3652,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 71,
+      "current_cents": 72,
       "dollars_risked": 0,
-      "current_value": 0.71,
+      "current_value": 0.72,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

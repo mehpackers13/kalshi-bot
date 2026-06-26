@@ -36623,3 +36623,48 @@ Total modelable markets evaluated: 0
 [2026-06-25 21:03:56 ET] [INFO] Scan complete — 72 alerts sent
 [2026-06-25 21:03:56 ET] [INFO] ============================================================
 [2026-06-25 21:03:56 ET] [INFO] Scan job complete
+[2026-06-26 00:10:02 ET] [INFO] Scan job starting
+[2026-06-26 00:10:02 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-06-26 00:10:02 ET] [INFO] ============================================================
+[2026-06-26 00:10:02 ET] [INFO] Starting market scan
+[2026-06-26 00:10:03 ET] [INFO] Portfolio value: $5.35 cash + $5.47 positions = $10.82
+[2026-06-26 00:10:03 ET] [INFO] Cash: $5.35  |  Positions: $5.47  |  Total: $10.82  |  Peak: $11.41
+[2026-06-26 00:10:04 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-06-26 00:10:04 ET] [WARN] API GET /markets → HTTP 400
+[2026-06-26 00:10:17 ET] [INFO] Fetched 60787 open markets via events endpoint across 35 pages
+[2026-06-26 00:10:17 ET] [INFO] Fetched 60787 open markets
+[2026-06-26 00:10:17 ET] [INFO] Parsed 57136 valid markets
+[2026-06-26 00:10:17 ET] [INFO] Categories: {'Sports': 26596, 'Elections': 11163, 'Entertainment': 7906, 'Economics': 2786, 'Financials': 2012, 'Crypto': 1720, 'Politics': 1653, 'Climate and Weather': 873}
+[2026-06-26 00:11:46 ET] [INFO]   CPI model: threshold=10.0% TNX=4.39% → P=0.200
+[2026-06-26 00:11:58 ET] [INFO]   price model: SOL-USD spot=68.06 target=3.00 vol=56.6% T=15456.8h → P=1.000
+[2026-06-26 00:26:31 ET] [INFO]   fed model: implied_rate=3.705% current≈3.680% diff=2.5bps → P=0.550
+[2026-06-26 00:26:33 ET] [INFO]   fed model: implied_rate=3.705% current≈3.680% diff=2.5bps → P=0.550
+[2026-06-26 00:26:33 ET] [INFO]   EDGE FOUND: KXBILLS-HOUS | implied=93.0% true=55.0% edge=-38.0% dir=NO conf=95
+[2026-06-26 00:26:49 ET] [INFO]   price model: ETH-USD spot=1548.66 target=4250.00 vol=54.5% T=4536.8h → P=0.005
+[2026-06-26 00:26:49 ET] [INFO]   price model: ETH-USD spot=1548.66 target=4500.00 vol=54.5% T=4536.8h → P=0.003
+[2026-06-26 00:26:49 ET] [INFO]   price model: ETH-USD spot=1548.66 target=4750.00 vol=54.5% T=4536.8h → P=0.002
+[2026-06-26 00:26:49 ET] [INFO]   price model: ETH-USD spot=1548.66 target=5000.00 vol=54.5% T=4536.8h → P=0.001
+[2026-06-26 00:26:56 ET] [INFO]   price model: BTC-USD spot=59801.59 target=129999.00 vol=36.7% T=4536.8h → P=0.002
+[2026-06-26 00:34:21 ET] [INFO]   fed model: implied_rate=3.705% current≈3.680% diff=2.5bps → P=0.550
+[2026-06-26 00:42:06 ET] [INFO]   CPI model: threshold=3.6% TNX=4.39% → P=0.579
+[2026-06-26 00:42:06 ET] [INFO]   EDGE FOUND: KXCPIYOY-26JUN-T3.6 | implied=95.0% true=57.9% edge=-37.1% dir=NO conf=90
+[2026-06-26 00:45:08 ET] [INFO]   price model: BTC-USD spot=59881.83 target=52500.00 vol=36.7% T=119.8h → P=0.001
+[2026-06-26 00:50:44 ET] [INFO]   price model: CL=F spot=70.44 target=71.00 vol=45.2% T=14.3h → P=0.668
+[2026-06-26 00:50:45 ET] [INFO]   price model: CL=F spot=70.44 target=67.99 vol=45.2% T=14.3h → P=0.974
+[2026-06-26 00:50:45 ET] [INFO]   price model: CL=F spot=70.44 target=68.99 vol=45.2% T=14.3h → P=0.872
+[2026-06-26 00:50:45 ET] [INFO]   price model: CL=F spot=70.44 target=69.99 vol=45.2% T=14.3h → P=0.637
+[2026-06-26 00:50:45 ET] [INFO]   price model: CL=F spot=70.44 target=70.99 vol=45.2% T=14.3h → P=0.335
+[2026-06-26 00:52:26 ET] [INFO]   fed model: implied_rate=3.700% current≈3.680% diff=2.0bps → P=0.540
+[2026-06-26 00:52:26 ET] [INFO]   fed model: implied_rate=3.700% current≈3.680% diff=2.0bps → P=0.540
+[2026-06-26 00:52:26 ET] [INFO]   EDGE FOUND: FEDHIKE-27JUN30 | implied=63.0% true=54.0% edge=-9.0% dir=NO conf=73
+[2026-06-26 00:52:28 ET] [INFO]   price model: BTC-USD spot=59816.88 target=149999.00 vol=36.7% T=4536.8h → P=0.000
+[2026-06-26 00:52:29 ET] [INFO] Checked 57066 markets | Modelable: 57066 | Edges found: 3
+[2026-06-26 00:52:29 ET] [INFO] [Discord] Trade alert sent: KXBILLS-HOUS
+[2026-06-26 00:52:29 ET] [WARN] AUTO-BET SKIP KXBILLS-HOUS: exposure 39.3% ≥ 25% limit ($7.00 of $17.82 in open positions)
+[2026-06-26 00:52:29 ET] [INFO] [Discord] Trade alert sent: KXCPIYOY-26JUN-T3.6
+[2026-06-26 00:52:30 ET] [WARN] AUTO-BET SKIP KXCPIYOY-26JUN-T3.6: exposure 39.3% ≥ 25% limit ($7.00 of $17.82 in open positions)
+[2026-06-26 00:52:30 ET] [INFO] [Discord] Trade alert sent: FEDHIKE-27JUN30
+[2026-06-26 00:52:30 ET] [WARN] AUTO-BET SKIP FEDHIKE-27JUN30: exposure 39.3% ≥ 25% limit ($7.00 of $17.82 in open positions)
+[2026-06-26 00:52:30 ET] [INFO] Scan complete — 3 alerts sent
+[2026-06-26 00:52:30 ET] [INFO] ============================================================
+[2026-06-26 00:52:30 ET] [INFO] Scan job complete

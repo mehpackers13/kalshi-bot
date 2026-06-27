@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-27T04:37:36.204229Z",
-  "last_scan_ts": "2026-06-27T04:37:36.204229Z",
+  "generated_at": "2026-06-27T08:05:43.243056Z",
+  "last_scan_ts": "2026-06-27T08:05:43.243056Z",
   "stats": {
-    "total_alerts": 6071,
+    "total_alerts": 6073,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -43,7 +43,7 @@
         "hit_rate": null
       },
       "Companies": {
-        "total": 634,
+        "total": 635,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -55,7 +55,7 @@
         "hit_rate": null
       },
       "Commodities": {
-        "total": 722,
+        "total": 723,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,7 +69,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 1233,
+        "total": 1234,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -81,7 +81,7 @@
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 3615,
+        "total": 3616,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 11.34,
+      "balance": 11.36,
       "cash": 5.35,
       "peak": 11.42,
       "initial_balance": 10.0
@@ -101,15 +101,57 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-06-27T03:56:08.421703Z"
+    "updated_at": "2026-06-27T07:22:15.424919Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.99,
-  "account_value": 11.34,
-  "live_pnl": 1.34,
+  "position_value": 6.01,
+  "account_value": 11.36,
+  "live_pnl": 1.36,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-06-27T08:05:42.864601Z",
+      "ticker": "KXBRENTMON-26JUN3017-T80.99",
+      "title": "Will the brent crude oil close price be above 80.99 USD/Bbl on June 30, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-11.47",
+      "implied_prob": "0.115",
+      "true_prob": "0.0003",
+      "confidence": "68",
+      "suggested_live_dollars": "0.92",
+      "suggested_paper_dollars": "19.32",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "92",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-27T08:05:42.484185Z",
+      "ticker": "KXTSLA-26JULDELIV-380000.0",
+      "title": "Will Tesla Inc. report above 380000 total deliveries in Q2 2026?",
+      "category": "Companies",
+      "direction": "NO",
+      "edge_pct": "-94.5",
+      "implied_prob": "0.945",
+      "true_prob": "0.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.54",
+      "suggested_paper_dollars": "49.95",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "9",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-06-27T04:37:35.800487Z",
       "ticker": "FEDHIKE-27JUN30",
@@ -1999,21 +2041,23 @@
       "null": [
         ""
       ]
-    },
+    }
+  ],
+  "recent_alerts": [
     {
-      "timestamp": "2026-06-26T04:52:30.213474Z",
-      "ticker": "FEDHIKE-27JUN30",
-      "title": "Will the Federal Reserve hike rates by June 30, 2027?",
-      "category": "Economics",
+      "timestamp": "2026-06-27T08:05:42.864601Z",
+      "ticker": "KXBRENTMON-26JUN3017-T80.99",
+      "title": "Will the brent crude oil close price be above 80.99 USD/Bbl on June 30, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
       "direction": "NO",
-      "edge_pct": "-9.0",
-      "implied_prob": "0.63",
-      "true_prob": "0.54",
-      "confidence": "73",
-      "suggested_live_dollars": "0.38",
-      "suggested_paper_dollars": "19.76",
+      "edge_pct": "-11.47",
+      "implied_prob": "0.115",
+      "true_prob": "0.0003",
+      "confidence": "68",
+      "suggested_live_dollars": "0.92",
+      "suggested_paper_dollars": "19.32",
       "is_paper_bet": "1",
-      "paper_entry_price_cents": "38",
+      "paper_entry_price_cents": "92",
       "outcome": "",
       "resolved_at": "",
       "notes": "",
@@ -2022,36 +2066,15 @@
       ]
     },
     {
-      "timestamp": "2026-06-26T04:52:29.992212Z",
-      "ticker": "KXCPIYOY-26JUN-T3.6",
-      "title": "Will the rate of CPI inflation be above 3.6% for the year ending in June 2026?",
-      "category": "Economics",
+      "timestamp": "2026-06-27T08:05:42.484185Z",
+      "ticker": "KXTSLA-26JULDELIV-380000.0",
+      "title": "Will Tesla Inc. report above 380000 total deliveries in Q2 2026?",
+      "category": "Companies",
       "direction": "NO",
-      "edge_pct": "-37.08",
-      "implied_prob": "0.95",
-      "true_prob": "0.5792",
-      "confidence": "90",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "8",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-26T04:52:29.565665Z",
-      "ticker": "KXBILLS-HOUS",
-      "title": "Will legislation that would revise federal housing programs to increase housing supply and affordability by expanding federal financing and grant authority for affordable housing and streamlining federal requirements that delay housing development become law before Jan 1, 2027?",
-      "category": "Politics",
-      "direction": "NO",
-      "edge_pct": "-38.0",
-      "implied_prob": "0.93",
-      "true_prob": "0.55",
-      "confidence": "95",
+      "edge_pct": "-94.5",
+      "implied_prob": "0.945",
+      "true_prob": "0.0",
+      "confidence": "85",
       "suggested_live_dollars": "0.54",
       "suggested_paper_dollars": "49.95",
       "is_paper_bet": "1",
@@ -2062,9 +2085,7 @@
       "null": [
         ""
       ]
-    }
-  ],
-  "recent_alerts": [
+    },
     {
       "timestamp": "2026-06-27T04:37:35.800487Z",
       "ticker": "FEDHIKE-27JUN30",
@@ -3072,48 +3093,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-06-27T02:10:16.461882Z",
-      "ticker": "KXBTCMINY-27JAN01-45000.00",
-      "title": "Will Bitcoin be below $45000.00 by Jan 1, 2027 at 12:00am ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-34.52",
-      "implied_prob": "0.485",
-      "true_prob": "0.1398",
-      "confidence": "90",
-      "suggested_live_dollars": "0.52",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "52",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-27T02:10:16.179736Z",
-      "ticker": "KXBTCMINY-27JAN01-50000.00",
-      "title": "Will Bitcoin be below $50000.00 by Jan 1, 2027 at 12:00am ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-36.76",
-      "implied_prob": "0.615",
-      "true_prob": "0.2474",
-      "confidence": "90",
-      "suggested_live_dollars": "0.39",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "39",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -3127,9 +3106,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 87,
+      "current_cents": 89,
       "dollars_risked": 0,
-      "current_value": 0.87,
+      "current_value": 0.89,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -3139,9 +3118,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 84,
+      "current_cents": 85,
       "dollars_risked": 0,
-      "current_value": 1.68,
+      "current_value": 1.7,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -3151,9 +3130,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 85,
+      "current_cents": 84,
       "dollars_risked": 0,
-      "current_value": 1.7,
+      "current_value": 1.68,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

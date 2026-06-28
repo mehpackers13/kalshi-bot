@@ -38264,3 +38264,36 @@ Total modelable markets evaluated: 0
 [2026-06-28 17:07:36 ET] [INFO] Scan complete — 2 alerts sent
 [2026-06-28 17:07:36 ET] [INFO] ============================================================
 [2026-06-28 17:07:37 ET] [INFO] Scan job complete
+[2026-06-28 17:40:58 ET] [INFO] Scan job starting
+[2026-06-28 17:40:58 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-06-28 17:40:58 ET] [INFO] ============================================================
+[2026-06-28 17:40:58 ET] [INFO] Starting market scan
+[2026-06-28 17:40:59 ET] [INFO] Portfolio value: $5.35 cash + $6.06 positions = $11.41
+[2026-06-28 17:40:59 ET] [INFO] Cash: $5.35  |  Positions: $6.06  |  Total: $11.41  |  Peak: $11.42
+[2026-06-28 17:41:00 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-06-28 17:41:00 ET] [WARN] API GET /markets → HTTP 400
+[2026-06-28 17:41:14 ET] [INFO] Fetched 61281 open markets via events endpoint across 36 pages
+[2026-06-28 17:41:14 ET] [INFO] Fetched 61281 open markets
+[2026-06-28 17:41:15 ET] [INFO] Parsed 57017 valid markets
+[2026-06-28 17:41:15 ET] [INFO] Categories: {'Sports': 25991, 'Elections': 11077, 'Entertainment': 7997, 'Economics': 2808, 'Crypto': 2263, 'Financials': 1984, 'Politics': 1650, 'Climate and Weather': 901}
+[2026-06-28 17:42:31 ET] [INFO]   CPI model: threshold=10.0% TNX=4.37% → P=0.200
+[2026-06-28 17:42:36 ET] [INFO]   price model: TSLA spot=379.71 target=1.50 vol=45.9% T=15391.3h → P=1.000
+[2026-06-28 17:55:33 ET] [INFO]   price model: ETH-USD spot=1560.42 target=4250.00 vol=53.1% T=4471.3h → P=0.004
+[2026-06-28 17:55:34 ET] [INFO]   price model: BTC-USD spot=59312.02 target=100000.00 vol=36.1% T=2262.3h → P=0.002
+[2026-06-28 18:14:17 ET] [INFO]   price model: SPY spot=728.99 target=7325.00 vol=15.2% T=22.3h → P=0.000
+[2026-06-28 18:14:17 ET] [INFO]   EDGE FOUND: KXINXU-26JUN29H1600-T7324.9999 | implied=63.0% true=0.0% edge=-63.0% dir=NO conf=80
+[2026-06-28 18:15:17 ET] [INFO]   weather model: denver max=96.0°F target=[90,91]°F days_out=0 σ=3.5°F → P=0.068
+[2026-06-28 18:15:17 ET] [INFO]   EDGE FOUND: KXHIGHDEN-26JUN28-B90.5 | implied=60.5% true=6.8% edge=-53.7% dir=NO conf=80
+[2026-06-28 18:15:18 ET] [INFO]   weather model: chicago can't parse temp condition from title
+[2026-06-28 18:15:19 ET] [INFO]   weather model: austin max=101.0°F target=[94,95]°F days_out=0 σ=3.5°F → P=0.042
+[2026-06-28 18:15:19 ET] [INFO]   EDGE FOUND: KXHIGHAUS-26JUN28-B94.5 | implied=82.0% true=4.2% edge=-77.8% dir=NO conf=80
+[2026-06-28 18:18:35 ET] [INFO] Checked 56921 markets | Modelable: 56921 | Edges found: 3
+[2026-06-28 18:18:35 ET] [INFO] [Discord] Trade alert sent: KXINXU-26JUN29H1600-T7324.9999
+[2026-06-28 18:18:35 ET] [WARN] AUTO-BET SKIP KXINXU-26JUN29H1600-T7324.9999: exposure 38.0% ≥ 25% limit ($7.00 of $18.41 in open positions)
+[2026-06-28 18:18:36 ET] [INFO] [Discord] Trade alert sent: KXHIGHDEN-26JUN28-B90.5
+[2026-06-28 18:18:36 ET] [WARN] AUTO-BET SKIP KXHIGHDEN-26JUN28-B90.5: exposure 38.0% ≥ 25% limit ($7.00 of $18.41 in open positions)
+[2026-06-28 18:18:36 ET] [INFO] [Discord] Trade alert sent: KXHIGHAUS-26JUN28-B94.5
+[2026-06-28 18:18:36 ET] [WARN] AUTO-BET SKIP KXHIGHAUS-26JUN28-B94.5: exposure 38.0% ≥ 25% limit ($7.00 of $18.41 in open positions)
+[2026-06-28 18:18:36 ET] [INFO] Scan complete — 3 alerts sent
+[2026-06-28 18:18:36 ET] [INFO] ============================================================
+[2026-06-28 18:18:36 ET] [INFO] Scan job complete

@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-27T22:31:14.852262Z",
-  "last_scan_ts": "2026-06-27T22:31:14.852262Z",
+  "generated_at": "2026-06-28T00:01:18.462152Z",
+  "last_scan_ts": "2026-06-28T00:01:18.462152Z",
   "stats": {
-    "total_alerts": 6092,
+    "total_alerts": 6095,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -13,7 +13,7 @@
         "hit_rate": null
       },
       "Economics": {
-        "total": 1282,
+        "total": 1284,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -55,7 +55,7 @@
         "hit_rate": null
       },
       "Commodities": {
-        "total": 727,
+        "total": 728,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -75,13 +75,13 @@
         "hit_rate": null
       },
       "medium (15-25%)": {
-        "total": 1224,
+        "total": 1225,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 3631,
+        "total": 3633,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -101,7 +101,7 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-06-27T21:39:30.947139Z"
+    "updated_at": "2026-06-27T23:10:56.268928Z"
   },
   "cash_bal": 5.35,
   "position_value": 6.01,
@@ -110,6 +110,69 @@
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-06-28T00:01:18.073424Z",
+      "ticker": "FEDHIKE-27DEC31",
+      "title": "Will the Federal Reserve hike rates by December 31, 2027?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-37.6",
+      "implied_prob": "0.805",
+      "true_prob": "0.429",
+      "confidence": "90",
+      "suggested_live_dollars": "0.42",
+      "suggested_paper_dollars": "49.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "21",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-28T00:01:17.722097Z",
+      "ticker": "FEDHIKE-27JUN30",
+      "title": "Will the Federal Reserve hike rates by June 30, 2027?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-20.1",
+      "implied_prob": "0.63",
+      "true_prob": "0.429",
+      "confidence": "80",
+      "suggested_live_dollars": "0.38",
+      "suggested_paper_dollars": "39.9",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "38",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-28T00:01:17.283312Z",
+      "ticker": "KXBRENTD-26JUN2917-T72",
+      "title": "Will the brent crude oil close price be above 72 USD/Bbl on June 29, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-73.66",
+      "implied_prob": "0.855",
+      "true_prob": "0.1184",
+      "confidence": "85",
+      "suggested_live_dollars": "0.45",
+      "suggested_paper_dollars": "49.95",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "15",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-06-27T22:31:14.462262Z",
       "ticker": "KXHIGHAUS-26JUN27-B94.5",
@@ -1978,21 +2041,23 @@
       "null": [
         ""
       ]
-    },
+    }
+  ],
+  "recent_alerts": [
     {
-      "timestamp": "2026-06-27T00:00:45.609731Z",
+      "timestamp": "2026-06-28T00:01:18.073424Z",
       "ticker": "FEDHIKE-27DEC31",
       "title": "Will the Federal Reserve hike rates by December 31, 2027?",
       "category": "Economics",
       "direction": "NO",
-      "edge_pct": "-17.6",
-      "implied_prob": "0.75",
-      "true_prob": "0.574",
-      "confidence": "80",
-      "suggested_live_dollars": "0.26",
-      "suggested_paper_dollars": "39.78",
+      "edge_pct": "-37.6",
+      "implied_prob": "0.805",
+      "true_prob": "0.429",
+      "confidence": "90",
+      "suggested_live_dollars": "0.42",
+      "suggested_paper_dollars": "49.98",
       "is_paper_bet": "1",
-      "paper_entry_price_cents": "26",
+      "paper_entry_price_cents": "21",
       "outcome": "",
       "resolved_at": "",
       "notes": "",
@@ -2001,28 +2066,47 @@
       ]
     },
     {
-      "timestamp": "2026-06-26T22:36:05.105597Z",
-      "ticker": "KXHIGHAUS-26JUN26-B94.5",
-      "title": "Will the **high temp in Austin** be 94-95\u00b0 on Jun 26, 2026?",
-      "category": "Climate and Weather",
+      "timestamp": "2026-06-28T00:01:17.722097Z",
+      "ticker": "FEDHIKE-27JUN30",
+      "title": "Will the Federal Reserve hike rates by June 30, 2027?",
+      "category": "Economics",
       "direction": "NO",
-      "edge_pct": "-84.24",
-      "implied_prob": "0.91",
-      "true_prob": "0.0676",
+      "edge_pct": "-20.1",
+      "implied_prob": "0.63",
+      "true_prob": "0.429",
       "confidence": "80",
-      "suggested_live_dollars": "0.5",
-      "suggested_paper_dollars": "50.0",
+      "suggested_live_dollars": "0.38",
+      "suggested_paper_dollars": "39.9",
       "is_paper_bet": "1",
-      "paper_entry_price_cents": "10",
+      "paper_entry_price_cents": "38",
       "outcome": "",
       "resolved_at": "",
       "notes": "",
       "null": [
         ""
       ]
-    }
-  ],
-  "recent_alerts": [
+    },
+    {
+      "timestamp": "2026-06-28T00:01:17.283312Z",
+      "ticker": "KXBRENTD-26JUN2917-T72",
+      "title": "Will the brent crude oil close price be above 72 USD/Bbl on June 29, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-73.66",
+      "implied_prob": "0.855",
+      "true_prob": "0.1184",
+      "confidence": "85",
+      "suggested_live_dollars": "0.45",
+      "suggested_paper_dollars": "49.95",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "15",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-06-27T22:31:14.462262Z",
       "ticker": "KXHIGHAUS-26JUN27-B94.5",
@@ -3003,69 +3087,6 @@
       "suggested_paper_dollars": "49.4",
       "is_paper_bet": "1",
       "paper_entry_price_cents": "65",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-27T02:10:24.295818Z",
-      "ticker": "KXTSLA-26JULDELIV-430000.0",
-      "title": "Will Tesla Inc. report above 430000 total deliveries in Q2 2026?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-39.5",
-      "implied_prob": "0.395",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.63",
-      "suggested_paper_dollars": "49.77",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "63",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-27T02:10:24.029690Z",
-      "ticker": "KXTSLA-26JULDELIV-420000.0",
-      "title": "Will Tesla Inc. report above 420000 total deliveries in Q2 2026?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-50.5",
-      "implied_prob": "0.505",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.5",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "50",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-27T02:10:23.806613Z",
-      "ticker": "KXTSLA-26JULDELIV-410000.0",
-      "title": "Will Tesla Inc. report above 410000 total deliveries in Q2 2026?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-68.5",
-      "implied_prob": "0.685",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.32",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "32",
       "outcome": "",
       "resolved_at": "",
       "notes": "",

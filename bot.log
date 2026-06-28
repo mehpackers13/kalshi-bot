@@ -38041,3 +38041,43 @@ Total modelable markets evaluated: 0
 [2026-06-28 01:01:24 ET] [INFO] Scan complete — 5 alerts sent
 [2026-06-28 01:01:24 ET] [INFO] ============================================================
 [2026-06-28 01:01:24 ET] [INFO] Scan job complete
+[2026-06-28 04:02:43 ET] [INFO] Scan job starting
+[2026-06-28 04:02:43 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-06-28 04:02:43 ET] [INFO] ============================================================
+[2026-06-28 04:02:43 ET] [INFO] Starting market scan
+[2026-06-28 04:02:45 ET] [INFO] Portfolio value: $5.35 cash + $6.03 positions = $11.38
+[2026-06-28 04:02:45 ET] [INFO] Cash: $5.35  |  Positions: $6.03  |  Total: $11.38  |  Peak: $11.42
+[2026-06-28 04:02:45 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-06-28 04:02:45 ET] [WARN] API GET /markets → HTTP 400
+[2026-06-28 04:03:02 ET] [INFO] Fetched 61415 open markets via events endpoint across 38 pages
+[2026-06-28 04:03:02 ET] [INFO] Fetched 61415 open markets
+[2026-06-28 04:03:02 ET] [INFO] Parsed 57306 valid markets
+[2026-06-28 04:03:02 ET] [INFO] Categories: {'Sports': 26568, 'Elections': 11079, 'Entertainment': 7936, 'Economics': 2796, 'Crypto': 2218, 'Financials': 1985, 'Politics': 1644, 'Commodities': 711}
+[2026-06-28 04:04:37 ET] [INFO]   CPI model: threshold=10.0% TNX=4.37% → P=0.200
+[2026-06-28 04:04:44 ET] [INFO]   price model: TSLA spot=379.71 target=1.50 vol=45.9% T=15404.9h → P=1.000
+[2026-06-28 04:21:01 ET] [INFO]   price model: ETH-USD spot=1573.66 target=4250.00 vol=53.1% T=4484.9h → P=0.004
+[2026-06-28 04:21:02 ET] [INFO]   price model: BTC-USD spot=60132.00 target=100000.00 vol=36.2% T=2275.9h → P=0.003
+[2026-06-28 04:21:08 ET] [INFO]   price model: BTC-USD spot=60132.00 target=129999.00 vol=36.2% T=4484.9h → P=0.001
+[2026-06-28 04:22:54 ET] [INFO]   fed model: implied_rate=3.705% current≈3.663% diff=4.2bps → P=0.416
+[2026-06-28 04:22:54 ET] [INFO]   EDGE FOUND: KXEMERCUTS-26-T1 | implied=6.0% true=41.6% edge=+35.6% dir=YES conf=85
+[2026-06-28 04:38:18 ET] [INFO]   CPI model: threshold=3.6% TNX=4.37% → P=0.577
+[2026-06-28 04:38:18 ET] [INFO]   EDGE FOUND: KXCPIYOY-26JUN-T3.6 | implied=94.5% true=57.7% edge=-36.8% dir=NO conf=90
+[2026-06-28 04:42:14 ET] [INFO]   price model: BTC-USD spot=60344.51 target=55000.00 vol=36.3% T=67.9h → P=0.002
+[2026-06-28 04:42:40 ET] [INFO]   price model: CL=F spot=69.23 target=94.99 vol=46.6% T=60.9h → P=0.000
+[2026-06-28 04:46:09 ET] [INFO]   price model: ADA-USD spot=0.15 target=0.50 vol=69.1% T=346.9h → P=0.000
+[2026-06-28 04:46:09 ET] [INFO]   EDGE FOUND: KXWCTEAMTOTAL-26JUN28RSACAN-CAN1 | implied=84.5% true=0.0% edge=-84.5% dir=NO conf=85
+[2026-06-28 04:46:09 ET] [INFO]   price model: ADA-USD spot=0.15 target=1.50 vol=69.1% T=346.9h → P=0.000
+[2026-06-28 04:46:09 ET] [INFO]   EDGE FOUND: KXWCTEAMTOTAL-26JUN28RSACAN-CAN2 | implied=50.5% true=0.0% edge=-50.5% dir=NO conf=85
+[2026-06-28 04:49:51 ET] [INFO]   price model: BTC-USD spot=60339.35 target=149999.00 vol=36.3% T=4484.9h → P=0.000
+[2026-06-28 04:49:52 ET] [INFO] Checked 57224 markets | Modelable: 57224 | Edges found: 4
+[2026-06-28 04:49:52 ET] [INFO] [Discord] Trade alert sent: KXEMERCUTS-26-T1
+[2026-06-28 04:49:52 ET] [WARN] AUTO-BET SKIP KXEMERCUTS-26-T1: exposure 38.1% ≥ 25% limit ($7.00 of $18.38 in open positions)
+[2026-06-28 04:49:53 ET] [INFO] [Discord] Trade alert sent: KXCPIYOY-26JUN-T3.6
+[2026-06-28 04:49:53 ET] [WARN] AUTO-BET SKIP KXCPIYOY-26JUN-T3.6: exposure 38.1% ≥ 25% limit ($7.00 of $18.38 in open positions)
+[2026-06-28 04:49:53 ET] [INFO] [Discord] Trade alert sent: KXWCTEAMTOTAL-26JUN28RSACAN-CAN1
+[2026-06-28 04:49:53 ET] [WARN] AUTO-BET SKIP KXWCTEAMTOTAL-26JUN28RSACAN-CAN1: exposure 38.1% ≥ 25% limit ($7.00 of $18.38 in open positions)
+[2026-06-28 04:49:53 ET] [INFO] [Discord] Trade alert sent: KXWCTEAMTOTAL-26JUN28RSACAN-CAN2
+[2026-06-28 04:49:53 ET] [WARN] AUTO-BET SKIP KXWCTEAMTOTAL-26JUN28RSACAN-CAN2: exposure 38.1% ≥ 25% limit ($7.00 of $18.38 in open positions)
+[2026-06-28 04:49:53 ET] [INFO] Scan complete — 4 alerts sent
+[2026-06-28 04:49:53 ET] [INFO] ============================================================
+[2026-06-28 04:49:54 ET] [INFO] Scan job complete

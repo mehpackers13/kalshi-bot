@@ -38139,3 +38139,35 @@ Total modelable markets evaluated: 0
 [2026-06-28 11:06:51 ET] [INFO] Scan complete — 1 alerts sent
 [2026-06-28 11:06:51 ET] [INFO] ============================================================
 [2026-06-28 11:06:51 ET] [INFO] Scan job complete
+[2026-06-28 11:52:31 ET] [INFO] Scan job starting
+[2026-06-28 11:52:31 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-06-28 11:52:31 ET] [INFO] ============================================================
+[2026-06-28 11:52:31 ET] [INFO] Starting market scan
+[2026-06-28 11:52:32 ET] [INFO] Portfolio value: $5.35 cash + $6.03 positions = $11.38
+[2026-06-28 11:52:32 ET] [INFO] Cash: $5.35  |  Positions: $6.03  |  Total: $11.38  |  Peak: $11.42
+[2026-06-28 11:52:32 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-06-28 11:52:33 ET] [WARN] API GET /markets → HTTP 400
+[2026-06-28 11:52:47 ET] [INFO] Fetched 61909 open markets via events endpoint across 37 pages
+[2026-06-28 11:52:47 ET] [INFO] Fetched 61909 open markets
+[2026-06-28 11:52:47 ET] [INFO] Parsed 57854 valid markets
+[2026-06-28 11:52:47 ET] [INFO] Categories: {'Sports': 27042, 'Elections': 11076, 'Entertainment': 7924, 'Economics': 2808, 'Crypto': 2116, 'Financials': 1985, 'Politics': 1655, 'Climate and Weather': 906}
+[2026-06-28 11:54:22 ET] [INFO]   CPI model: threshold=10.0% TNX=4.37% → P=0.200
+[2026-06-28 11:54:29 ET] [INFO]   price model: TSLA spot=379.71 target=1.50 vol=45.9% T=15397.1h → P=1.000
+[2026-06-28 12:10:48 ET] [INFO]   price model: ETH-USD spot=1576.55 target=4250.00 vol=53.2% T=4477.1h → P=0.005
+[2026-06-28 12:10:49 ET] [INFO]   price model: BTC-USD spot=59761.81 target=100000.00 vol=36.1% T=2268.1h → P=0.003
+[2026-06-28 12:22:02 ET] [INFO]   price model: TSLA spot=379.71 target=460000.00 vol=45.9% T=1300.1h → P=0.000
+[2026-06-28 12:22:02 ET] [INFO]   EDGE FOUND: KXTSLA-26JULPROD-460000.0 | implied=22.5% true=0.0% edge=-22.5% dir=NO conf=75
+[2026-06-28 12:32:01 ET] [INFO]   price model: BTC-USD spot=59668.99 target=55000.00 vol=36.1% T=60.1h → P=0.003
+[2026-06-28 12:32:01 ET] [INFO]   EDGE FOUND: KXBTCMINMON-BTC-26JUN30-5500000 | implied=8.5% true=0.3% edge=-8.2% dir=NO conf=68
+[2026-06-28 12:34:22 ET] [INFO]   weather model: nyc max=89.0°F target=[79,80]°F days_out=0 σ=3.5°F → P=0.010
+[2026-06-28 12:34:22 ET] [INFO]   EDGE FOUND: KXHIGHNY-26JUN28-B79.5 | implied=44.5% true=1.0% edge=-43.5% dir=NO conf=80
+[2026-06-28 12:40:38 ET] [INFO] Checked 57765 markets | Modelable: 57765 | Edges found: 3
+[2026-06-28 12:40:39 ET] [INFO] [Discord] Trade alert sent: KXTSLA-26JULPROD-460000.0
+[2026-06-28 12:40:39 ET] [WARN] AUTO-BET SKIP KXTSLA-26JULPROD-460000.0: exposure 38.1% ≥ 25% limit ($7.00 of $18.38 in open positions)
+[2026-06-28 12:40:39 ET] [INFO] [Discord] Trade alert sent: KXBTCMINMON-BTC-26JUN30-5500000
+[2026-06-28 12:40:39 ET] [WARN] AUTO-BET SKIP KXBTCMINMON-BTC-26JUN30-5500000: exposure 38.1% ≥ 25% limit ($7.00 of $18.38 in open positions)
+[2026-06-28 12:40:40 ET] [INFO] [Discord] Trade alert sent: KXHIGHNY-26JUN28-B79.5
+[2026-06-28 12:40:40 ET] [WARN] AUTO-BET SKIP KXHIGHNY-26JUN28-B79.5: exposure 38.1% ≥ 25% limit ($7.00 of $18.38 in open positions)
+[2026-06-28 12:40:40 ET] [INFO] Scan complete — 3 alerts sent
+[2026-06-28 12:40:40 ET] [INFO] ============================================================
+[2026-06-28 12:40:40 ET] [INFO] Scan job complete

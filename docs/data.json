@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-28T08:49:54.282180Z",
-  "last_scan_ts": "2026-06-28T08:49:54.282180Z",
+  "generated_at": "2026-06-28T13:08:05.966622Z",
+  "last_scan_ts": "2026-06-28T13:08:05.966622Z",
   "stats": {
-    "total_alerts": 6182,
+    "total_alerts": 6184,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -25,7 +25,7 @@
         "hit_rate": null
       },
       "Crypto": {
-        "total": 1904,
+        "total": 1905,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -55,7 +55,7 @@
         "hit_rate": null
       },
       "Commodities": {
-        "total": 741,
+        "total": 742,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,7 +69,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 1255,
+        "total": 1257,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 11.38,
+      "balance": 11.35,
       "cash": 5.35,
       "peak": 11.42,
       "initial_balance": 10.0
@@ -101,15 +101,57 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-06-28T08:02:45.115084Z"
+    "updated_at": "2026-06-28T12:19:16.623068Z"
   },
   "cash_bal": 5.35,
-  "position_value": 6.03,
-  "account_value": 11.38,
-  "live_pnl": 1.38,
+  "position_value": 6.0,
+  "account_value": 11.35,
+  "live_pnl": 1.35,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-06-28T13:08:05.521920Z",
+      "ticker": "KXBRENTMON-26JUN3017-T84.99",
+      "title": "Will the brent crude oil close price be above 84.99 USD/Bbl on June 30, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-11.5",
+      "implied_prob": "0.115",
+      "true_prob": "0.0",
+      "confidence": "68",
+      "suggested_live_dollars": "0.9",
+      "suggested_paper_dollars": "19.8",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "90",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-28T13:08:05.116440Z",
+      "ticker": "KXSOLMAXY-27JAN01-170",
+      "title": "Will the spot price of Solana be above $170.00 before Jan 1, 2027 at 12:00 AM ET?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-9.84",
+      "implied_prob": "0.12",
+      "true_prob": "0.0216",
+      "confidence": "63",
+      "suggested_live_dollars": "0.9",
+      "suggested_paper_dollars": "19.8",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "90",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-06-28T08:49:53.892541Z",
       "ticker": "KXWCTEAMTOTAL-26JUN28RSACAN-CAN2",
@@ -2314,93 +2356,51 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-06-27T13:00:52.583151Z",
-      "ticker": "KXHIGHNY-26JUN27-B76.5",
-      "title": "Will the **high temp in NYC** be 76-77\u00b0 on Jun 27, 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-48.3",
-      "implied_prob": "0.525",
-      "true_prob": "0.042",
-      "confidence": "80",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "48",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-27T13:00:52.274564Z",
-      "ticker": "KXWTI-26JUN2914-T69.99",
-      "title": "Will the WTI crude oil settlement price be above 69.99 USD/Bbl on Jun 29, 2026?",
-      "category": "Commodities",
-      "direction": "NO",
-      "edge_pct": "-24.88",
-      "implied_prob": "0.63",
-      "true_prob": "0.3812",
-      "confidence": "75",
-      "suggested_live_dollars": "0.38",
-      "suggested_paper_dollars": "39.9",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "38",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-27T13:00:51.753596Z",
-      "ticker": "KXBRENTD-26JUN2917-T72.50",
-      "title": "Will the brent crude oil close price be above 72.50 USD/Bbl on June 29, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "NO",
-      "edge_pct": "-66.94",
-      "implied_prob": "0.775",
-      "true_prob": "0.1056",
-      "confidence": "85",
-      "suggested_live_dollars": "0.46",
-      "suggested_paper_dollars": "49.91",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "23",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-27T13:00:51.204818Z",
-      "ticker": "KXBRENTMON-26JUN3017-T92.99",
-      "title": "Will the brent crude oil close price be above 92.99 USD/Bbl on June 30, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "NO",
-      "edge_pct": "-8.0",
-      "implied_prob": "0.08",
-      "true_prob": "0.0",
-      "confidence": "68",
-      "suggested_live_dollars": "0.97",
-      "suggested_paper_dollars": "19.4",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "97",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "recent_alerts": [
+    {
+      "timestamp": "2026-06-28T13:08:05.521920Z",
+      "ticker": "KXBRENTMON-26JUN3017-T84.99",
+      "title": "Will the brent crude oil close price be above 84.99 USD/Bbl on June 30, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-11.5",
+      "implied_prob": "0.115",
+      "true_prob": "0.0",
+      "confidence": "68",
+      "suggested_live_dollars": "0.9",
+      "suggested_paper_dollars": "19.8",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "90",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-28T13:08:05.116440Z",
+      "ticker": "KXSOLMAXY-27JAN01-170",
+      "title": "Will the spot price of Solana be above $170.00 before Jan 1, 2027 at 12:00 AM ET?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-9.84",
+      "implied_prob": "0.12",
+      "true_prob": "0.0216",
+      "confidence": "63",
+      "suggested_live_dollars": "0.9",
+      "suggested_paper_dollars": "19.8",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "90",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-06-28T08:49:53.892541Z",
       "ticker": "KXWCTEAMTOTAL-26JUN28RSACAN-CAN2",
@@ -3408,48 +3408,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-06-28T02:24:31.816344Z",
-      "ticker": "KXFEDDECISION-26OCT-H0",
-      "title": "Will the Federal Reserve Hike rates by 0bps at their October 2026 meeting?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-11.6",
-      "implied_prob": "0.545",
-      "true_prob": "0.429",
-      "confidence": "68",
-      "suggested_live_dollars": "0.49",
-      "suggested_paper_dollars": "19.6",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "49",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-28T02:24:31.402647Z",
-      "ticker": "KXCOREUND-26DEC10-T2.2",
-      "title": "Will year-over-year Core CPI inflation for 2026 fall below 2.2%?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "45.72",
-      "implied_prob": "0.26",
-      "true_prob": "0.7172",
-      "confidence": "85",
-      "suggested_live_dollars": "0.29",
-      "suggested_paper_dollars": "49.88",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "29",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -3463,9 +3421,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 89,
+      "current_cents": 86,
       "dollars_risked": 0,
-      "current_value": 0.89,
+      "current_value": 0.86,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

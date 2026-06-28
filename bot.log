@@ -38235,3 +38235,32 @@ Total modelable markets evaluated: 0
 [2026-06-28 15:36:39 ET] [INFO] Scan complete — 2 alerts sent
 [2026-06-28 15:36:39 ET] [INFO] ============================================================
 [2026-06-28 15:36:39 ET] [INFO] Scan job complete
+[2026-06-28 16:19:17 ET] [INFO] Scan job starting
+[2026-06-28 16:19:17 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-06-28 16:19:17 ET] [INFO] ============================================================
+[2026-06-28 16:19:17 ET] [INFO] Starting market scan
+[2026-06-28 16:19:19 ET] [INFO] Portfolio value: $5.35 cash + $6.05 positions = $11.40
+[2026-06-28 16:19:19 ET] [INFO] Cash: $5.35  |  Positions: $6.05  |  Total: $11.40  |  Peak: $11.42
+[2026-06-28 16:19:19 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-06-28 16:19:19 ET] [WARN] API GET /markets → HTTP 400
+[2026-06-28 16:19:33 ET] [INFO] Fetched 63968 open markets via events endpoint across 37 pages
+[2026-06-28 16:19:33 ET] [INFO] Fetched 63968 open markets
+[2026-06-28 16:19:34 ET] [INFO] Parsed 59382 valid markets
+[2026-06-28 16:19:34 ET] [INFO] Categories: {'Sports': 28851, 'Elections': 11078, 'Entertainment': 7953, 'Economics': 2809, 'Financials': 1984, 'Crypto': 1789, 'Politics': 1653, 'Climate and Weather': 901}
+[2026-06-28 16:21:09 ET] [INFO]   CPI model: threshold=10.0% TNX=4.37% → P=0.200
+[2026-06-28 16:21:16 ET] [INFO]   price model: TSLA spot=379.71 target=1.50 vol=45.9% T=15392.7h → P=1.000
+[2026-06-28 16:37:33 ET] [INFO]   price model: ETH-USD spot=1571.22 target=4250.00 vol=53.1% T=4472.7h → P=0.004
+[2026-06-28 16:37:33 ET] [INFO]   price model: BTC-USD spot=59599.62 target=100000.00 vol=36.1% T=2263.7h → P=0.002
+[2026-06-28 16:48:28 ET] [INFO]   price model: TSLA spot=379.71 target=360000.00 vol=45.9% T=1295.7h → P=0.000
+[2026-06-28 16:48:28 ET] [INFO]   EDGE FOUND: KXTSLA-26JULDELIV-360000.0 | implied=94.5% true=0.0% edge=-94.5% dir=NO conf=85
+[2026-06-28 17:01:40 ET] [INFO]   weather model: chicago can't parse temp condition from title
+[2026-06-28 17:02:56 ET] [INFO]   price model: GC=F spot=4096.30 target=3.50 vol=29.6% T=338.7h → P=1.000
+[2026-06-28 17:02:56 ET] [INFO]   EDGE FOUND: KXWNBASPREAD-26JUN28NYGS-GS4 | implied=45.5% true=100.0% edge=+54.5% dir=YES conf=85
+[2026-06-28 17:07:36 ET] [INFO] Checked 59284 markets | Modelable: 59284 | Edges found: 2
+[2026-06-28 17:07:36 ET] [INFO] [Discord] Trade alert sent: KXTSLA-26JULDELIV-360000.0
+[2026-06-28 17:07:36 ET] [WARN] AUTO-BET SKIP KXTSLA-26JULDELIV-360000.0: exposure 38.0% ≥ 25% limit ($7.00 of $18.40 in open positions)
+[2026-06-28 17:07:36 ET] [INFO] [Discord] Trade alert sent: KXWNBASPREAD-26JUN28NYGS-GS4
+[2026-06-28 17:07:36 ET] [WARN] AUTO-BET SKIP KXWNBASPREAD-26JUN28NYGS-GS4: exposure 38.0% ≥ 25% limit ($7.00 of $18.40 in open positions)
+[2026-06-28 17:07:36 ET] [INFO] Scan complete — 2 alerts sent
+[2026-06-28 17:07:36 ET] [INFO] ============================================================
+[2026-06-28 17:07:37 ET] [INFO] Scan job complete

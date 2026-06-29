@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-29T20:44:12.982634Z",
-  "last_scan_ts": "2026-06-29T20:44:12.982634Z",
+  "generated_at": "2026-06-29T22:45:15.175483Z",
+  "last_scan_ts": "2026-06-29T22:45:15.175483Z",
   "stats": {
-    "total_alerts": 6310,
+    "total_alerts": 6313,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -13,7 +13,7 @@
         "hit_rate": null
       },
       "Economics": {
-        "total": 1328,
+        "total": 1329,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -37,13 +37,13 @@
         "hit_rate": null
       },
       "Climate and Weather": {
-        "total": 758,
+        "total": 759,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "Companies": {
-        "total": 670,
+        "total": 671,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -81,7 +81,7 @@
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 3777,
+        "total": 3780,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 11.21,
+      "balance": 11.13,
       "cash": 5.35,
       "peak": 11.42,
       "initial_balance": 10.0
@@ -101,15 +101,78 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-06-29T20:09:16.372641Z"
+    "updated_at": "2026-06-29T21:54:21.436817Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.86,
-  "account_value": 11.21,
-  "live_pnl": 1.21,
+  "position_value": 5.78,
+  "account_value": 11.13,
+  "live_pnl": 1.13,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-06-29T22:45:14.787519Z",
+      "ticker": "KXHIGHDEN-26JUN29-B87.5",
+      "title": "Will the **high temp in Denver** be 87-88\u00b0 on Jun 29, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-42.45",
+      "implied_prob": "0.6",
+      "true_prob": "0.1755",
+      "confidence": "80",
+      "suggested_live_dollars": "0.44",
+      "suggested_paper_dollars": "49.72",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "44",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-29T22:45:14.553725Z",
+      "ticker": "KXCPIYOY-26JUN-T3.6",
+      "title": "Will the rate of CPI inflation be above 3.6% for the year ending in June 2026?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-35.76",
+      "implied_prob": "0.935",
+      "true_prob": "0.5774",
+      "confidence": "90",
+      "suggested_live_dollars": "0.56",
+      "suggested_paper_dollars": "50.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "8",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-29T22:45:13.960688Z",
+      "ticker": "KXTSLA-26JULDELIV-390000.0",
+      "title": "Will Tesla Inc. report above 390000 total deliveries in Q2 2026?",
+      "category": "Companies",
+      "direction": "NO",
+      "edge_pct": "-95.0",
+      "implied_prob": "0.95",
+      "true_prob": "0.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.56",
+      "suggested_paper_dollars": "49.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "7",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-06-29T20:44:12.645732Z",
       "ticker": "KXWCTEAMTOTAL-26JUN29NEDMAR-NED2",
@@ -2440,21 +2503,23 @@
       "null": [
         ""
       ]
-    },
+    }
+  ],
+  "recent_alerts": [
     {
-      "timestamp": "2026-06-28T22:18:36.405422Z",
-      "ticker": "KXHIGHAUS-26JUN28-B94.5",
-      "title": "Will the **high temp in Austin** be 94-95\u00b0 on Jun 28, 2026?",
+      "timestamp": "2026-06-29T22:45:14.787519Z",
+      "ticker": "KXHIGHDEN-26JUN29-B87.5",
+      "title": "Will the **high temp in Denver** be 87-88\u00b0 on Jun 29, 2026?",
       "category": "Climate and Weather",
       "direction": "NO",
-      "edge_pct": "-77.8",
-      "implied_prob": "0.82",
-      "true_prob": "0.042",
+      "edge_pct": "-42.45",
+      "implied_prob": "0.6",
+      "true_prob": "0.1755",
       "confidence": "80",
-      "suggested_live_dollars": "0.4",
-      "suggested_paper_dollars": "50.0",
+      "suggested_live_dollars": "0.44",
+      "suggested_paper_dollars": "49.72",
       "is_paper_bet": "1",
-      "paper_entry_price_cents": "20",
+      "paper_entry_price_cents": "44",
       "outcome": "",
       "resolved_at": "",
       "notes": "",
@@ -2463,78 +2528,15 @@
       ]
     },
     {
-      "timestamp": "2026-06-28T22:18:36.145914Z",
-      "ticker": "KXHIGHDEN-26JUN28-B90.5",
-      "title": "Will the **high temp in Denver** be 90-91\u00b0 on Jun 28, 2026?",
-      "category": "Climate and Weather",
+      "timestamp": "2026-06-29T22:45:14.553725Z",
+      "ticker": "KXCPIYOY-26JUN-T3.6",
+      "title": "Will the rate of CPI inflation be above 3.6% for the year ending in June 2026?",
+      "category": "Economics",
       "direction": "NO",
-      "edge_pct": "-53.74",
-      "implied_prob": "0.605",
-      "true_prob": "0.0676",
-      "confidence": "80",
-      "suggested_live_dollars": "0.43",
-      "suggested_paper_dollars": "49.88",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "43",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-28T22:18:35.692203Z",
-      "ticker": "KXINXU-26JUN29H1600-T7324.9999",
-      "title": "Will the S&P 500 be above 7324.9999 on Jun 29, 2026 at 4pm EDT?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-63.0",
-      "implied_prob": "0.63",
-      "true_prob": "0.0",
-      "confidence": "80",
-      "suggested_live_dollars": "0.39",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "39",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-28T21:07:36.874005Z",
-      "ticker": "KXWNBASPREAD-26JUN28NYGS-GS4",
-      "title": "Golden State wins by over 3.5 points?",
-      "category": "Sports",
-      "direction": "YES",
-      "edge_pct": "54.5",
-      "implied_prob": "0.455",
-      "true_prob": "1.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.46",
-      "suggested_paper_dollars": "49.68",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "46",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-28T21:07:36.552265Z",
-      "ticker": "KXTSLA-26JULDELIV-360000.0",
-      "title": "Will Tesla Inc. report above 360000 total deliveries in Q2 2026?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-94.5",
-      "implied_prob": "0.945",
-      "true_prob": "0.0",
-      "confidence": "85",
+      "edge_pct": "-35.76",
+      "implied_prob": "0.935",
+      "true_prob": "0.5774",
+      "confidence": "90",
       "suggested_live_dollars": "0.56",
       "suggested_paper_dollars": "50.0",
       "is_paper_bet": "1",
@@ -2545,9 +2547,28 @@
       "null": [
         ""
       ]
-    }
-  ],
-  "recent_alerts": [
+    },
+    {
+      "timestamp": "2026-06-29T22:45:13.960688Z",
+      "ticker": "KXTSLA-26JULDELIV-390000.0",
+      "title": "Will Tesla Inc. report above 390000 total deliveries in Q2 2026?",
+      "category": "Companies",
+      "direction": "NO",
+      "edge_pct": "-95.0",
+      "implied_prob": "0.95",
+      "true_prob": "0.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.56",
+      "suggested_paper_dollars": "49.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "7",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-06-29T20:44:12.645732Z",
       "ticker": "KXWCTEAMTOTAL-26JUN29NEDMAR-NED2",
@@ -3534,69 +3555,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-06-29T02:21:53.326891Z",
-      "ticker": "KXBTCMINMON-BTC-26JUN30-5750000",
-      "title": "Will BTC trimmed mean be below $57500.00 by 11:59 PM ET on Jun 30, 2026?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-24.46",
-      "implied_prob": "0.435",
-      "true_prob": "0.1904",
-      "confidence": "80",
-      "suggested_live_dollars": "0.57",
-      "suggested_paper_dollars": "39.9",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "57",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-29T02:21:53.078602Z",
-      "ticker": "KXETHMINMON-ETH-26JUN30-150000",
-      "title": "Will ETH trimmed mean be below $1500.00 by 11:59 PM ET on Jun 30, 2026?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-19.37",
-      "implied_prob": "0.39",
-      "true_prob": "0.1963",
-      "confidence": "75",
-      "suggested_live_dollars": "0.62",
-      "suggested_paper_dollars": "39.68",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "62",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-29T02:21:52.800734Z",
-      "ticker": "KXXRPMINMON-XRP-26JUN30-100",
-      "title": "Will XRP trimmed mean be below $1.00 by 11:59 PM ET on Jun 30, 2026?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-21.74",
-      "implied_prob": "0.39",
-      "true_prob": "0.1726",
-      "confidence": "70",
-      "suggested_live_dollars": "0.63",
-      "suggested_paper_dollars": "39.69",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "63",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -3622,9 +3580,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 83,
+      "current_cents": 79,
       "dollars_risked": 0,
-      "current_value": 1.66,
+      "current_value": 1.58,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

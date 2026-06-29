@@ -38818,3 +38818,61 @@ Total modelable markets evaluated: 0
 [2026-06-29 05:57:17 ET] [INFO] Scan complete — 7 alerts sent
 [2026-06-29 05:57:17 ET] [INFO] ============================================================
 [2026-06-29 05:57:17 ET] [INFO] Scan job complete
+[2026-06-29 10:50:05 ET] [INFO] Scan job starting
+[2026-06-29 10:50:05 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-06-29 10:50:05 ET] [INFO] ============================================================
+[2026-06-29 10:50:05 ET] [INFO] Starting market scan
+[2026-06-29 10:50:06 ET] [INFO] Portfolio value: $5.35 cash + $5.97 positions = $11.32
+[2026-06-29 10:50:06 ET] [INFO] Cash: $5.35  |  Positions: $5.97  |  Total: $11.32  |  Peak: $11.42
+[2026-06-29 10:50:07 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-06-29 10:50:07 ET] [WARN] API GET /markets → HTTP 400
+[2026-06-29 10:50:23 ET] [INFO] Fetched 63931 open markets via events endpoint across 36 pages
+[2026-06-29 10:50:23 ET] [INFO] Fetched 63931 open markets
+[2026-06-29 10:50:23 ET] [INFO] Parsed 58423 valid markets
+[2026-06-29 10:50:23 ET] [INFO] Categories: {'Sports': 25630, 'Elections': 11070, 'Entertainment': 7615, 'Financials': 4027, 'Economics': 2802, 'Crypto': 2188, 'Politics': 1630, 'Climate and Weather': 903}
+[2026-06-29 10:51:51 ET] [INFO]   CPI model: threshold=10.0% TNX=4.37% → P=0.200
+[2026-06-29 10:51:57 ET] [INFO]   price model: TSLA spot=396.43 target=1.50 vol=46.2% T=15374.2h → P=1.000
+[2026-06-29 11:07:14 ET] [INFO]   price model: ETH-USD spot=1561.92 target=4250.00 vol=53.1% T=4454.2h → P=0.004
+[2026-06-29 11:07:14 ET] [INFO]   price model: ETH-USD spot=1561.92 target=4500.00 vol=53.1% T=4454.2h → P=0.003
+[2026-06-29 11:07:14 ET] [INFO]   price model: ETH-USD spot=1561.92 target=5000.00 vol=53.1% T=4454.2h → P=0.001
+[2026-06-29 11:07:14 ET] [INFO]   price model: BTC-USD spot=59063.52 target=100000.00 vol=36.1% T=2245.2h → P=0.002
+[2026-06-29 11:07:26 ET] [INFO]   price model: QQQ spot=715.68 target=31999.99 vol=28.0% T=4446.2h → P=0.000
+[2026-06-29 11:07:26 ET] [INFO]   EDGE FOUND: KXNASDAQ100MAXY-26DEC31H1600-T31999.99 | implied=59.0% true=0.0% edge=-59.0% dir=NO conf=85
+[2026-06-29 11:16:26 ET] [INFO]   price model: DIA spot=520.90 target=1.00 vol=13.0% T=1525.2h → P=1.000
+[2026-06-29 11:28:34 ET] [INFO]   price model: CL=F spot=70.52 target=66.99 vol=47.5% T=27.7h → P=0.973
+[2026-06-29 11:28:48 ET] [INFO]   weather model: nyc can't parse temp condition from title
+[2026-06-29 11:28:49 ET] [INFO]   weather model: miami max=93.0°F target=[93,94]°F days_out=0 σ=3.5°F → P=0.223
+[2026-06-29 11:28:49 ET] [INFO]   EDGE FOUND: KXHIGHMIA-26JUN29-B93.5 | implied=76.5% true=22.3% edge=-54.2% dir=NO conf=80
+[2026-06-29 11:30:40 ET] [INFO]   price model: QQQ spot=717.54 target=29118.24 vol=28.1% T=5.2h → P=0.000
+[2026-06-29 11:30:40 ET] [INFO]   EDGE FOUND: KXNASDAQDUD-26JUN29H1600-T29118.24 | implied=78.0% true=0.0% edge=-78.0% dir=NO conf=70
+[2026-06-29 11:30:40 ET] [INFO]   price model: QQQ spot=717.54 target=28799.99 vol=28.1% T=5.2h → P=0.000
+[2026-06-29 11:30:40 ET] [INFO]   EDGE FOUND: KXNASDAQ100U-26JUN29H1600-T28799.99 | implied=95.0% true=0.0% edge=-95.0% dir=NO conf=70
+[2026-06-29 11:30:40 ET] [INFO]   price model: QQQ spot=717.54 target=28899.99 vol=28.1% T=5.2h → P=0.000
+[2026-06-29 11:30:40 ET] [INFO]   EDGE FOUND: KXNASDAQ100U-26JUN29H1600-T28899.99 | implied=90.5% true=0.0% edge=-90.5% dir=NO conf=70
+[2026-06-29 11:30:40 ET] [INFO]   price model: QQQ spot=717.54 target=29299.99 vol=28.1% T=5.2h → P=0.000
+[2026-06-29 11:30:40 ET] [INFO]   EDGE FOUND: KXNASDAQ100U-26JUN29H1600-T29299.99 | implied=60.0% true=0.0% edge=-60.0% dir=NO conf=70
+[2026-06-29 11:30:44 ET] [INFO]   price model: SPY spot=737.75 target=7425.00 vol=15.3% T=5.2h → P=0.000
+[2026-06-29 11:30:44 ET] [INFO]   EDGE FOUND: KXINXU-26JUN29H1600-T7424.9999 | implied=29.0% true=0.0% edge=-29.0% dir=NO conf=70
+[2026-06-29 11:31:24 ET] [INFO]   price model: CL=F spot=70.49 target=73.50 vol=47.5% T=6.2h → P=0.000
+[2026-06-29 11:31:24 ET] [INFO]   EDGE FOUND: KXBRENTD-26JUN2917-T73.50 | implied=57.0% true=0.0% edge=-57.0% dir=NO conf=80
+[2026-06-29 11:31:55 ET] [INFO]   price model: CL=F spot=70.48 target=70.99 vol=47.5% T=3.7h → P=0.229
+[2026-06-29 11:35:07 ET] [INFO] Checked 58337 markets | Modelable: 58337 | Edges found: 8
+[2026-06-29 11:35:08 ET] [INFO] [Discord] Trade alert sent: KXNASDAQ100MAXY-26DEC31H1600-T31999.99
+[2026-06-29 11:35:08 ET] [WARN] AUTO-BET SKIP KXNASDAQ100MAXY-26DEC31H1600-T31999.99: exposure 38.2% ≥ 25% limit ($7.00 of $18.32 in open positions)
+[2026-06-29 11:35:09 ET] [INFO] [Discord] Trade alert sent: KXHIGHMIA-26JUN29-B93.5
+[2026-06-29 11:35:09 ET] [WARN] AUTO-BET SKIP KXHIGHMIA-26JUN29-B93.5: exposure 38.2% ≥ 25% limit ($7.00 of $18.32 in open positions)
+[2026-06-29 11:35:09 ET] [INFO] [Discord] Trade alert sent: KXNASDAQDUD-26JUN29H1600-T29118.24
+[2026-06-29 11:35:09 ET] [WARN] AUTO-BET SKIP KXNASDAQDUD-26JUN29H1600-T29118.24: exposure 38.2% ≥ 25% limit ($7.00 of $18.32 in open positions)
+[2026-06-29 11:35:10 ET] [INFO] [Discord] Trade alert sent: KXNASDAQ100U-26JUN29H1600-T28799.99
+[2026-06-29 11:35:10 ET] [WARN] AUTO-BET SKIP KXNASDAQ100U-26JUN29H1600-T28799.99: exposure 38.2% ≥ 25% limit ($7.00 of $18.32 in open positions)
+[2026-06-29 11:35:10 ET] [INFO] [Discord] Trade alert sent: KXNASDAQ100U-26JUN29H1600-T28899.99
+[2026-06-29 11:35:10 ET] [WARN] AUTO-BET SKIP KXNASDAQ100U-26JUN29H1600-T28899.99: exposure 38.2% ≥ 25% limit ($7.00 of $18.32 in open positions)
+[2026-06-29 11:35:10 ET] [INFO] [Discord] Trade alert sent: KXNASDAQ100U-26JUN29H1600-T29299.99
+[2026-06-29 11:35:10 ET] [WARN] AUTO-BET SKIP KXNASDAQ100U-26JUN29H1600-T29299.99: exposure 38.2% ≥ 25% limit ($7.00 of $18.32 in open positions)
+[2026-06-29 11:35:11 ET] [INFO] [Discord] Trade alert sent: KXINXU-26JUN29H1600-T7424.9999
+[2026-06-29 11:35:11 ET] [WARN] AUTO-BET SKIP KXINXU-26JUN29H1600-T7424.9999: exposure 38.2% ≥ 25% limit ($7.00 of $18.32 in open positions)
+[2026-06-29 11:35:11 ET] [INFO] [Discord] Trade alert sent: KXBRENTD-26JUN2917-T73.50
+[2026-06-29 11:35:11 ET] [WARN] AUTO-BET SKIP KXBRENTD-26JUN2917-T73.50: exposure 38.2% ≥ 25% limit ($7.00 of $18.32 in open positions)
+[2026-06-29 11:35:11 ET] [INFO] Scan complete — 8 alerts sent
+[2026-06-29 11:35:11 ET] [INFO] ============================================================
+[2026-06-29 11:35:12 ET] [INFO] Scan job complete

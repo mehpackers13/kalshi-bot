@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-30T21:20:13.124784Z",
-  "last_scan_ts": "2026-06-30T21:20:13.124784Z",
+  "generated_at": "2026-06-30T23:09:53.573789Z",
+  "last_scan_ts": "2026-06-30T23:09:53.573789Z",
   "stats": {
-    "total_alerts": 6407,
+    "total_alerts": 6409,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -37,7 +37,7 @@
         "hit_rate": null
       },
       "Climate and Weather": {
-        "total": 767,
+        "total": 768,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -49,7 +49,7 @@
         "hit_rate": null
       },
       "Financials": {
-        "total": 563,
+        "total": 564,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -75,13 +75,13 @@
         "hit_rate": null
       },
       "medium (15-25%)": {
-        "total": 1261,
+        "total": 1262,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 3842,
+        "total": 3843,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 11.21,
+      "balance": 11.23,
       "cash": 5.35,
       "peak": 11.42,
       "initial_balance": 10.0
@@ -101,15 +101,57 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-06-30T20:30:54.457653Z"
+    "updated_at": "2026-06-30T22:19:31.883296Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.86,
-  "account_value": 11.21,
-  "live_pnl": 1.21,
+  "position_value": 5.88,
+  "account_value": 11.23,
+  "live_pnl": 1.23,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-06-30T23:09:53.242670Z",
+      "ticker": "KXHIGHPHIL-26JUN30-B90.5",
+      "title": "Will the **high temp in Philadelphia** be 90-91\u00b0 on Jun 30, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-66.17",
+      "implied_prob": "0.8",
+      "true_prob": "0.1383",
+      "confidence": "80",
+      "suggested_live_dollars": "0.5",
+      "suggested_paper_dollars": "50.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "25",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-30T23:09:52.848279Z",
+      "ticker": "KXB200WS-26JUL10-4.000",
+      "title": "Will the NVIDIA B200 compute per hour price be above $4 at 4 PM ET on Jul 10?",
+      "category": "Financials",
+      "direction": "YES",
+      "edge_pct": "16.5",
+      "implied_prob": "0.835",
+      "true_prob": "1.0",
+      "confidence": "75",
+      "suggested_live_dollars": "0.84",
+      "suggested_paper_dollars": "39.48",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "84",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-06-30T21:20:12.703449Z",
       "ticker": "KXHIGHAUS-26JUN30-B95.5",
@@ -2083,72 +2125,51 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-06-29T22:45:14.787519Z",
-      "ticker": "KXHIGHDEN-26JUN29-B87.5",
-      "title": "Will the **high temp in Denver** be 87-88\u00b0 on Jun 29, 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-42.45",
-      "implied_prob": "0.6",
-      "true_prob": "0.1755",
-      "confidence": "80",
-      "suggested_live_dollars": "0.44",
-      "suggested_paper_dollars": "49.72",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "44",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-29T22:45:14.553725Z",
-      "ticker": "KXCPIYOY-26JUN-T3.6",
-      "title": "Will the rate of CPI inflation be above 3.6% for the year ending in June 2026?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-35.76",
-      "implied_prob": "0.935",
-      "true_prob": "0.5774",
-      "confidence": "90",
-      "suggested_live_dollars": "0.56",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "8",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-29T22:45:13.960688Z",
-      "ticker": "KXTSLA-26JULDELIV-390000.0",
-      "title": "Will Tesla Inc. report above 390000 total deliveries in Q2 2026?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-95.0",
-      "implied_prob": "0.95",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.56",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "7",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "recent_alerts": [
+    {
+      "timestamp": "2026-06-30T23:09:53.242670Z",
+      "ticker": "KXHIGHPHIL-26JUN30-B90.5",
+      "title": "Will the **high temp in Philadelphia** be 90-91\u00b0 on Jun 30, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-66.17",
+      "implied_prob": "0.8",
+      "true_prob": "0.1383",
+      "confidence": "80",
+      "suggested_live_dollars": "0.5",
+      "suggested_paper_dollars": "50.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "25",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-30T23:09:52.848279Z",
+      "ticker": "KXB200WS-26JUL10-4.000",
+      "title": "Will the NVIDIA B200 compute per hour price be above $4 at 4 PM ET on Jul 10?",
+      "category": "Financials",
+      "direction": "YES",
+      "edge_pct": "16.5",
+      "implied_prob": "0.835",
+      "true_prob": "1.0",
+      "confidence": "75",
+      "suggested_live_dollars": "0.84",
+      "suggested_paper_dollars": "39.48",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "84",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-06-30T21:20:12.703449Z",
       "ticker": "KXHIGHAUS-26JUN30-B95.5",
@@ -3156,48 +3177,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-06-30T02:17:49.108553Z",
-      "ticker": "KXTSLA-26JULPROD-400000.0",
-      "title": "Will Tesla Inc. report above 400000 total production in Q2 2026?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-87.0",
-      "implied_prob": "0.87",
-      "true_prob": "0.0",
-      "confidence": "90",
-      "suggested_live_dollars": "0.45",
-      "suggested_paper_dollars": "49.95",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "15",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-30T02:17:48.735595Z",
-      "ticker": "KXFEDDECISION-26SEP-H25",
-      "title": "Will the Federal Reserve Hike rates by 25bps at their September 2026 meeting?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "8.0",
-      "implied_prob": "0.325",
-      "true_prob": "0.405",
-      "confidence": "68",
-      "suggested_live_dollars": "0.33",
-      "suggested_paper_dollars": "18.15",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "33",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -3223,9 +3202,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 84,
+      "current_cents": 85,
       "dollars_risked": 0,
-      "current_value": 1.68,
+      "current_value": 1.7,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

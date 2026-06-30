@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-30T16:52:25.385531Z",
-  "last_scan_ts": "2026-06-30T16:52:25.385531Z",
+  "generated_at": "2026-06-30T19:07:46.212672Z",
+  "last_scan_ts": "2026-06-30T19:07:46.212672Z",
   "stats": {
-    "total_alerts": 6403,
+    "total_alerts": 6405,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -37,7 +37,7 @@
         "hit_rate": null
       },
       "Climate and Weather": {
-        "total": 764,
+        "total": 765,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -55,7 +55,7 @@
         "hit_rate": null
       },
       "Commodities": {
-        "total": 756,
+        "total": 757,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,7 +69,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 1303,
+        "total": 1304,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -81,7 +81,7 @@
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 3839,
+        "total": 3840,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 11.15,
+      "balance": 11.21,
       "cash": 5.35,
       "peak": 11.42,
       "initial_balance": 10.0
@@ -101,15 +101,57 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-06-30T16:08:09.308917Z"
+    "updated_at": "2026-06-30T18:19:57.677242Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.8,
-  "account_value": 11.15,
-  "live_pnl": 1.15,
+  "position_value": 5.86,
+  "account_value": 11.21,
+  "live_pnl": 1.21,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-06-30T19:07:45.831253Z",
+      "ticker": "KXGOLDD-26JUN3017-T4025",
+      "title": "Will the gold close price be above 4025 USD/t.oz on June 30, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "YES",
+      "edge_pct": "12.12",
+      "implied_prob": "0.725",
+      "true_prob": "0.8462",
+      "confidence": "53",
+      "suggested_live_dollars": "0.73",
+      "suggested_paper_dollars": "19.71",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "73",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-30T19:07:45.159972Z",
+      "ticker": "KXHIGHCHI-26JUN30-B94.5",
+      "title": "Will the high temp in Chicago be 94-95\u00b0 on Jun 30, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-56.3",
+      "implied_prob": "0.605",
+      "true_prob": "0.042",
+      "confidence": "80",
+      "suggested_live_dollars": "0.4",
+      "suggested_paper_dollars": "50.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "40",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-06-30T16:52:25.050352Z",
       "ticker": "KXINXDUD-26JUN30H1600-T7440.43",
@@ -2167,156 +2209,51 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-06-29T18:30:42.795681Z",
-      "ticker": "KXBRENTD-26JUN2917-T74",
-      "title": "Will the brent crude oil close price be above 74 USD/Bbl on June 29, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "NO",
-      "edge_pct": "-51.0",
-      "implied_prob": "0.51",
-      "true_prob": "0.0",
-      "confidence": "70",
-      "suggested_live_dollars": "0.5",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "50",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-29T18:30:42.453000Z",
-      "ticker": "KXINXU-26JUN29H1600-T7449.9999",
-      "title": "Will the S&P 500 be above 7449.9999 on Jun 29, 2026 at 4pm EDT?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-14.0",
-      "implied_prob": "0.14",
-      "true_prob": "0.0",
-      "confidence": "53",
-      "suggested_live_dollars": "0.87",
-      "suggested_paper_dollars": "19.14",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "87",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-29T18:30:42.169470Z",
-      "ticker": "KXNASDAQ100U-26JUN29H1600-T29699.99",
-      "title": "Will the Nasdaq-100 be above 29699.99 at the end of Jun 29, 2026 at 4pm EDT?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-61.0",
-      "implied_prob": "0.61",
-      "true_prob": "0.0",
-      "confidence": "70",
-      "suggested_live_dollars": "0.41",
-      "suggested_paper_dollars": "49.61",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "41",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-29T18:30:41.901559Z",
-      "ticker": "KXNASDAQ100U-26JUN29H1600-T29599.99",
-      "title": "Will the Nasdaq-100 be above 29599.99 at the end of Jun 29, 2026 at 4pm EDT?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-84.0",
-      "implied_prob": "0.84",
-      "true_prob": "0.0",
-      "confidence": "70",
-      "suggested_live_dollars": "0.51",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "17",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-29T18:30:41.627613Z",
-      "ticker": "KXNASDAQ100U-26JUN29H1600-T29499.99",
-      "title": "Will the Nasdaq-100 be above 29499.99 at the end of Jun 29, 2026 at 4pm EDT?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-93.5",
-      "implied_prob": "0.935",
-      "true_prob": "0.0",
-      "confidence": "70",
-      "suggested_live_dollars": "0.56",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "7",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-29T18:30:41.237486Z",
-      "ticker": "KXTSLA-26JULDELIV-360000.0",
-      "title": "Will Tesla Inc. report above 360000 total deliveries in Q2 2026?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-94.5",
-      "implied_prob": "0.945",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.54",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "6",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-29T18:30:38.921147Z",
-      "ticker": "KXSOLMAXY-27JAN01-170",
-      "title": "Will the spot price of Solana be above $170.00 before Jan 1, 2027 at 12:00 AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-9.76",
-      "implied_prob": "0.13",
-      "true_prob": "0.0324",
-      "confidence": "63",
-      "suggested_live_dollars": "0.9",
-      "suggested_paper_dollars": "19.8",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "90",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "recent_alerts": [
+    {
+      "timestamp": "2026-06-30T19:07:45.831253Z",
+      "ticker": "KXGOLDD-26JUN3017-T4025",
+      "title": "Will the gold close price be above 4025 USD/t.oz on June 30, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "YES",
+      "edge_pct": "12.12",
+      "implied_prob": "0.725",
+      "true_prob": "0.8462",
+      "confidence": "53",
+      "suggested_live_dollars": "0.73",
+      "suggested_paper_dollars": "19.71",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "73",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-06-30T19:07:45.159972Z",
+      "ticker": "KXHIGHCHI-26JUN30-B94.5",
+      "title": "Will the high temp in Chicago be 94-95\u00b0 on Jun 30, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-56.3",
+      "implied_prob": "0.605",
+      "true_prob": "0.042",
+      "confidence": "80",
+      "suggested_live_dollars": "0.4",
+      "suggested_paper_dollars": "50.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "40",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-06-30T16:52:25.050352Z",
       "ticker": "KXINXDUD-26JUN30H1600-T7440.43",
@@ -3324,48 +3261,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-06-30T02:17:47.993039Z",
-      "ticker": "KXCOREUND-26DEC10-T2.2",
-      "title": "Will year-over-year Core CPI inflation for 2026 fall below 2.2%?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "45.74",
-      "implied_prob": "0.26",
-      "true_prob": "0.7174",
-      "confidence": "85",
-      "suggested_live_dollars": "0.29",
-      "suggested_paper_dollars": "49.88",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "29",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-06-30T02:17:47.574054Z",
-      "ticker": "KXEMERCUTS-26-T0",
-      "title": "Will the Fed cut rates 0 times at emergency meetings?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-30.5",
-      "implied_prob": "0.9",
-      "true_prob": "0.595",
-      "confidence": "95",
-      "suggested_live_dollars": "0.55",
-      "suggested_paper_dollars": "49.94",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "11",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -3391,9 +3286,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 81,
+      "current_cents": 84,
       "dollars_risked": 0,
-      "current_value": 1.62,
+      "current_value": 1.68,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-02T04:53:27.744100Z",
-  "last_scan_ts": "2026-07-02T04:53:27.744100Z",
+  "generated_at": "2026-07-02T08:29:32.038537Z",
+  "last_scan_ts": "2026-07-02T08:29:32.038537Z",
   "stats": {
-    "total_alerts": 6581,
+    "total_alerts": 6584,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -43,19 +43,19 @@
         "hit_rate": null
       },
       "Companies": {
-        "total": 726,
+        "total": 727,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "Financials": {
-        "total": 597,
+        "total": 598,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "Commodities": {
-        "total": 759,
+        "total": 760,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -75,13 +75,13 @@
         "hit_rate": null
       },
       "medium (15-25%)": {
-        "total": 1285,
+        "total": 1286,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 3958,
+        "total": 3960,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -101,7 +101,7 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-07-02T04:00:17.640826Z"
+    "updated_at": "2026-07-02T07:39:02.916401Z"
   },
   "cash_bal": 5.35,
   "position_value": 5.62,
@@ -110,6 +110,69 @@
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-07-02T08:29:31.667956Z",
+      "ticker": "KXWTI-26JUL0214-T67.99",
+      "title": "Will the WTI crude oil settlement price be above 67.99 USD/Bbl on Jul 2, 2026?",
+      "category": "Commodities",
+      "direction": "YES",
+      "edge_pct": "25.12",
+      "implied_prob": "0.32",
+      "true_prob": "0.5712",
+      "confidence": "80",
+      "suggested_live_dollars": "0.38",
+      "suggested_paper_dollars": "49.78",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "38",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-02T08:29:31.372128Z",
+      "ticker": "KXTSLA-26JULDELIV-400000.0",
+      "title": "Will Tesla Inc. report above 400000 total deliveries in Q2 2026?",
+      "category": "Companies",
+      "direction": "NO",
+      "edge_pct": "-82.0",
+      "implied_prob": "0.82",
+      "true_prob": "0.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.46",
+      "suggested_paper_dollars": "49.91",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "23",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-02T08:29:30.988590Z",
+      "ticker": "KXH200MS-26AUG-1.500",
+      "title": "Will the monthly average compute price of NVIDIA's H200 be above $1.50 in August 2026?",
+      "category": "Financials",
+      "direction": "YES",
+      "edge_pct": "19.5",
+      "implied_prob": "0.805",
+      "true_prob": "1.0",
+      "confidence": "75",
+      "suggested_live_dollars": "0.93",
+      "suggested_paper_dollars": "39.99",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "93",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-07-02T04:53:27.315960Z",
       "ticker": "FEDHIKE-26DEC31",
@@ -2272,21 +2335,23 @@
       "null": [
         ""
       ]
-    },
+    }
+  ],
+  "recent_alerts": [
     {
-      "timestamp": "2026-07-01T05:14:45.320340Z",
-      "ticker": "FEDHIKE-26DEC31",
-      "title": "Will the Federal Reserve hike rates by December 31, 2026?",
-      "category": "Economics",
+      "timestamp": "2026-07-02T08:29:31.667956Z",
+      "ticker": "KXWTI-26JUL0214-T67.99",
+      "title": "Will the WTI crude oil settlement price be above 67.99 USD/Bbl on Jul 2, 2026?",
+      "category": "Commodities",
       "direction": "YES",
-      "edge_pct": "9.4",
-      "implied_prob": "0.51",
-      "true_prob": "0.604",
-      "confidence": "78",
-      "suggested_live_dollars": "0.52",
-      "suggested_paper_dollars": "19.76",
+      "edge_pct": "25.12",
+      "implied_prob": "0.32",
+      "true_prob": "0.5712",
+      "confidence": "80",
+      "suggested_live_dollars": "0.38",
+      "suggested_paper_dollars": "49.78",
       "is_paper_bet": "1",
-      "paper_entry_price_cents": "52",
+      "paper_entry_price_cents": "38",
       "outcome": "",
       "resolved_at": "",
       "notes": "",
@@ -2295,202 +2360,13 @@
       ]
     },
     {
-      "timestamp": "2026-07-01T05:14:45.067309Z",
-      "ticker": "KXCPIYOY-26JUN-T3.6",
-      "title": "Will the rate of CPI inflation be above 3.6% for the year ending in June 2026?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-37.28",
-      "implied_prob": "0.95",
-      "true_prob": "0.5772",
-      "confidence": "90",
-      "suggested_live_dollars": "0.49",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "7",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-01T05:14:44.732881Z",
-      "ticker": "KXTSLA-26JULDELIV-480000",
-      "title": "Will Tesla Inc. report above 480000 total deliveries in Q2 2026?",
+      "timestamp": "2026-07-02T08:29:31.372128Z",
+      "ticker": "KXTSLA-26JULDELIV-400000.0",
+      "title": "Will Tesla Inc. report above 400000 total deliveries in Q2 2026?",
       "category": "Companies",
       "direction": "NO",
-      "edge_pct": "-43.5",
-      "implied_prob": "0.435",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.59",
-      "suggested_paper_dollars": "49.56",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "59",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-01T05:14:44.479238Z",
-      "ticker": "KXB200MS-26NOV-3.00",
-      "title": "Will the monthly average compute price of NVIDIA's B200 be above $3.00 in November 2026?",
-      "category": "Financials",
-      "direction": "YES",
-      "edge_pct": "20.5",
-      "implied_prob": "0.795",
-      "true_prob": "1.0",
-      "confidence": "75",
-      "suggested_live_dollars": "0.8",
-      "suggested_paper_dollars": "40.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "80",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-01T05:14:44.222804Z",
-      "ticker": "KXSOLMAXY-27JAN01-180",
-      "title": "Will the spot price of Solana be above $180.00 before Jan 1, 2027 at 12:00 AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-16.41",
-      "implied_prob": "0.18",
-      "true_prob": "0.0159",
-      "confidence": "70",
-      "suggested_live_dollars": "0.9",
-      "suggested_paper_dollars": "39.6",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "90",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-01T05:14:43.987855Z",
-      "ticker": "KXFEDDECISION-27APR-H0",
-      "title": "Will the Federal Reserve Hike rates by 0bps at their April 2027 meeting?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-20.9",
-      "implied_prob": "0.675",
-      "true_prob": "0.466",
-      "confidence": "75",
-      "suggested_live_dollars": "0.34",
-      "suggested_paper_dollars": "39.78",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "34",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-01T05:14:43.715361Z",
-      "ticker": "KXAMZNA-28JANHEAD-1525000",
-      "title": "Will Amazon.com, Inc. report above 1525000 Employees (full-time and part-time; excludes contractors & temporary personnel) in 2026?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-91.5",
-      "implied_prob": "0.915",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.55",
-      "suggested_paper_dollars": "49.94",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "11",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-01T05:14:43.442367Z",
-      "ticker": "KXAMZNA-28JANHEAD-1500000",
-      "title": "Will Amazon.com, Inc. report above 1500000 Employees (full-time and part-time; excludes contractors & temporary personnel) in 2026?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-94.0",
-      "implied_prob": "0.94",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "8",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-01T05:14:43.195213Z",
-      "ticker": "KXMELIA-28JANITEMS-3000000000.0",
-      "title": "Will MercadoLibre Inc. report Above 3 billion items sold in 2026?",
-      "category": "Financials",
-      "direction": "YES",
-      "edge_pct": "10.0",
-      "implied_prob": "0.9",
-      "true_prob": "1.0",
-      "confidence": "68",
-      "suggested_live_dollars": "0.92",
-      "suggested_paper_dollars": "19.32",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "92",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-01T05:14:42.939918Z",
-      "ticker": "KXMETAA-28JANHEAD-71000",
-      "title": "Will Meta Platforms, Inc. report above 71000 Headcount in 2026?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-68.0",
-      "implied_prob": "0.68",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.36",
-      "suggested_paper_dollars": "49.68",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "36",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-01T05:14:42.580126Z",
-      "ticker": "KXMETAA-28JANHEAD-68000",
-      "title": "Will Meta Platforms, Inc. report above 68000 Headcount in 2026?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-81.5",
-      "implied_prob": "0.815",
+      "edge_pct": "-82.0",
+      "implied_prob": "0.82",
       "true_prob": "0.0",
       "confidence": "85",
       "suggested_live_dollars": "0.46",
@@ -2505,28 +2381,26 @@
       ]
     },
     {
-      "timestamp": "2026-07-01T05:14:42.237720Z",
-      "ticker": "KXMETAA-28JANHEAD-65000",
-      "title": "Will Meta Platforms, Inc. report above 65000 Headcount in 2026?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-94.5",
-      "implied_prob": "0.945",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.49",
-      "suggested_paper_dollars": "49.98",
+      "timestamp": "2026-07-02T08:29:30.988590Z",
+      "ticker": "KXH200MS-26AUG-1.500",
+      "title": "Will the monthly average compute price of NVIDIA's H200 be above $1.50 in August 2026?",
+      "category": "Financials",
+      "direction": "YES",
+      "edge_pct": "19.5",
+      "implied_prob": "0.805",
+      "true_prob": "1.0",
+      "confidence": "75",
+      "suggested_live_dollars": "0.93",
+      "suggested_paper_dollars": "39.99",
       "is_paper_bet": "1",
-      "paper_entry_price_cents": "7",
+      "paper_entry_price_cents": "93",
       "outcome": "",
       "resolved_at": "",
       "notes": "",
       "null": [
         ""
       ]
-    }
-  ],
-  "recent_alerts": [
+    },
     {
       "timestamp": "2026-07-02T04:53:27.315960Z",
       "ticker": "FEDHIKE-26DEC31",
@@ -3507,69 +3381,6 @@
       "suggested_paper_dollars": "19.14",
       "is_paper_bet": "1",
       "paper_entry_price_cents": "87",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-02T01:05:09.080242Z",
-      "ticker": "KXBTCMAX100-26-DEC",
-      "title": "Will Bitcoin be above $100000.00 by Jan 1, 2027 at 12:00AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-10.62",
-      "implied_prob": "0.115",
-      "true_prob": "0.0088",
-      "confidence": "68",
-      "suggested_live_dollars": "0.89",
-      "suggested_paper_dollars": "19.58",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "89",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-02T01:05:08.724228Z",
-      "ticker": "KXBTCMINY-27JAN01-40000.00",
-      "title": "Will Bitcoin be below $40000.00 by Jan 1, 2027 at 12:00am ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-29.15",
-      "implied_prob": "0.325",
-      "true_prob": "0.0335",
-      "confidence": "90",
-      "suggested_live_dollars": "0.68",
-      "suggested_paper_dollars": "49.64",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "68",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-02T01:05:08.461228Z",
-      "ticker": "KXBTCMINY-27JAN01-45000.00",
-      "title": "Will Bitcoin be below $45000.00 by Jan 1, 2027 at 12:00am ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-33.66",
-      "implied_prob": "0.435",
-      "true_prob": "0.0984",
-      "confidence": "90",
-      "suggested_live_dollars": "0.57",
-      "suggested_paper_dollars": "49.59",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "57",
       "outcome": "",
       "resolved_at": "",
       "notes": "",

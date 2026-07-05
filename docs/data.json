@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-05T22:59:09.981173Z",
-  "last_scan_ts": "2026-07-05T22:59:09.981173Z",
+  "generated_at": "2026-07-05T23:59:20.912642Z",
+  "last_scan_ts": "2026-07-05T23:59:20.912642Z",
   "stats": {
-    "total_alerts": 6825,
+    "total_alerts": 6827,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -13,7 +13,7 @@
         "hit_rate": null
       },
       "Economics": {
-        "total": 1457,
+        "total": 1458,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -25,7 +25,7 @@
         "hit_rate": null
       },
       "Crypto": {
-        "total": 2067,
+        "total": 2068,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,7 +69,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 1393,
+        "total": 1394,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -81,7 +81,7 @@
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 4093,
+        "total": 4094,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 10.95,
+      "balance": 10.77,
       "cash": 5.35,
       "peak": 11.42,
       "initial_balance": 10.0
@@ -101,15 +101,57 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-07-05T21:35:47.080651Z"
+    "updated_at": "2026-07-05T23:09:44.254268Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.6,
-  "account_value": 10.95,
-  "live_pnl": 0.95,
+  "position_value": 5.42,
+  "account_value": 10.77,
+  "live_pnl": 0.77,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-07-05T23:59:20.578340Z",
+      "ticker": "KXXRPMAXMON-XRP-26JUL31-120",
+      "title": "Will XRP trimmed mean be above $1.20 by 11:59 PM ET on Jul 31, 2026?",
+      "category": "Crypto",
+      "direction": "YES",
+      "edge_pct": "12.18",
+      "implied_prob": "0.785",
+      "true_prob": "0.9068",
+      "confidence": "63",
+      "suggested_live_dollars": "0.79",
+      "suggested_paper_dollars": "19.75",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "79",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-05T23:59:20.237745Z",
+      "ticker": "KXRATECUTCOUNT-26DEC31-T2",
+      "title": "Will the Fed cut rates 2 times?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "41.6",
+      "implied_prob": "0.05",
+      "true_prob": "0.466",
+      "confidence": "90",
+      "suggested_live_dollars": "0.54",
+      "suggested_paper_dollars": "49.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "6",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-07-05T22:32:07.365672Z",
       "ticker": "FEDHIKE-27JUN30",
@@ -1621,72 +1663,51 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-07-04T23:30:12.717257Z",
-      "ticker": "KXHOLIDAYTMAX-260704100-OKC",
-      "title": "Will the max temperature in Oklahoma City be above 100 degrees on Jul 4, 2026?",
-      "category": "Climate and Weather",
-      "direction": "YES",
-      "edge_pct": "47.34",
-      "implied_prob": "0.45",
-      "true_prob": "0.9234",
-      "confidence": "70",
-      "suggested_live_dollars": "0.53",
-      "suggested_paper_dollars": "49.82",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "53",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-04T23:30:12.379387Z",
-      "ticker": "KXHOLIDAYTMAX-260704100-PHX",
-      "title": "Will the max temperature in Phoenix be above 100 degrees on Jul 4, 2026?",
-      "category": "Climate and Weather",
-      "direction": "YES",
-      "edge_pct": "9.0",
-      "implied_prob": "0.9",
-      "true_prob": "0.99",
-      "confidence": "58",
-      "suggested_live_dollars": "0.93",
-      "suggested_paper_dollars": "19.53",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "93",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-04T23:30:11.822025Z",
-      "ticker": "KXTSLAA-28JANDEL-1550000.0",
-      "title": "Will Tesla Inc. report Above 1.55 million total deliveries in 2026?",
-      "category": "Companies",
-      "direction": "YES",
-      "edge_pct": "8.5",
-      "implied_prob": "0.915",
-      "true_prob": "1.0",
-      "confidence": "68",
-      "suggested_live_dollars": "0.94",
-      "suggested_paper_dollars": "19.74",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "94",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "recent_alerts": [
+    {
+      "timestamp": "2026-07-05T23:59:20.578340Z",
+      "ticker": "KXXRPMAXMON-XRP-26JUL31-120",
+      "title": "Will XRP trimmed mean be above $1.20 by 11:59 PM ET on Jul 31, 2026?",
+      "category": "Crypto",
+      "direction": "YES",
+      "edge_pct": "12.18",
+      "implied_prob": "0.785",
+      "true_prob": "0.9068",
+      "confidence": "63",
+      "suggested_live_dollars": "0.79",
+      "suggested_paper_dollars": "19.75",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "79",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-05T23:59:20.237745Z",
+      "ticker": "KXRATECUTCOUNT-26DEC31-T2",
+      "title": "Will the Fed cut rates 2 times?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "41.6",
+      "implied_prob": "0.05",
+      "true_prob": "0.466",
+      "confidence": "90",
+      "suggested_live_dollars": "0.54",
+      "suggested_paper_dollars": "49.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "6",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-07-05T22:32:07.365672Z",
       "ticker": "FEDHIKE-27JUN30",
@@ -2694,48 +2715,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-07-05T01:06:46.783550Z",
-      "ticker": "KXBTCMINY-27JAN01-50000.00",
-      "title": "Will Bitcoin be below $50000.00 by Jan 1, 2027 at 12:00am ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-42.08",
-      "implied_prob": "0.555",
-      "true_prob": "0.1342",
-      "confidence": "90",
-      "suggested_live_dollars": "0.45",
-      "suggested_paper_dollars": "49.95",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "45",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-05T01:06:46.624011Z",
-      "ticker": "KXBTCMINY-27JAN01-55000.00",
-      "title": "Will Bitcoin be below $55000.00 by Jan 1, 2027 at 12:00am ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-41.2",
-      "implied_prob": "0.67",
-      "true_prob": "0.258",
-      "confidence": "90",
-      "suggested_live_dollars": "0.34",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "34",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -2761,9 +2740,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 76,
+      "current_cents": 75,
       "dollars_risked": 0,
-      "current_value": 1.52,
+      "current_value": 1.5,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -2773,9 +2752,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 78,
+      "current_cents": 70,
       "dollars_risked": 0,
-      "current_value": 1.56,
+      "current_value": 1.4,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-05T21:16:19.446600Z",
-  "last_scan_ts": "2026-07-05T21:16:19.446600Z",
+  "generated_at": "2026-07-05T22:32:07.765771Z",
+  "last_scan_ts": "2026-07-05T22:32:07.765771Z",
   "stats": {
-    "total_alerts": 6821,
+    "total_alerts": 6825,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -13,7 +13,7 @@
         "hit_rate": null
       },
       "Economics": {
-        "total": 1456,
+        "total": 1457,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -25,7 +25,7 @@
         "hit_rate": null
       },
       "Crypto": {
-        "total": 2066,
+        "total": 2067,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -37,7 +37,7 @@
         "hit_rate": null
       },
       "Climate and Weather": {
-        "total": 805,
+        "total": 806,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -55,7 +55,7 @@
         "hit_rate": null
       },
       "Commodities": {
-        "total": 768,
+        "total": 769,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,7 +69,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 1390,
+        "total": 1393,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -81,7 +81,7 @@
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 4092,
+        "total": 4093,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 10.97,
+      "balance": 10.95,
       "cash": 5.35,
       "peak": 11.42,
       "initial_balance": 10.0
@@ -101,15 +101,99 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-07-05T20:19:27.557022Z"
+    "updated_at": "2026-07-05T21:35:47.080651Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.62,
-  "account_value": 10.97,
-  "live_pnl": 0.97,
+  "position_value": 5.6,
+  "account_value": 10.95,
+  "live_pnl": 0.95,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-07-05T22:32:07.365672Z",
+      "ticker": "FEDHIKE-27JUN30",
+      "title": "Will the Federal Reserve hike rates by June 30, 2027?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-8.6",
+      "implied_prob": "0.61",
+      "true_prob": "0.524",
+      "confidence": "73",
+      "suggested_live_dollars": "0.4",
+      "suggested_paper_dollars": "20.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "40",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-05T22:32:07.026376Z",
+      "ticker": "KXHIGHAUS-26JUL05-B96.5",
+      "title": "Will the **high temp in Austin** be 96-97\u00b0 on Jul 5, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-92.59",
+      "implied_prob": "0.95",
+      "true_prob": "0.0241",
+      "confidence": "80",
+      "suggested_live_dollars": "0.54",
+      "suggested_paper_dollars": "49.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "6",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-05T22:32:06.732489Z",
+      "ticker": "KXWTI-26JUL0614-T66.99",
+      "title": "Will the WTI crude oil settlement price be above 66.99 USD/Bbl on Jul 6, 2026?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-10.48",
+      "implied_prob": "0.935",
+      "true_prob": "0.8302",
+      "confidence": "63",
+      "suggested_live_dollars": "0.14",
+      "suggested_paper_dollars": "16.38",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "7",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-05T22:32:06.370617Z",
+      "ticker": "KXETHMAXY-27JAN01-4250.00",
+      "title": "Will Ethereum reach above $4250.00 by Jan 1, 2027 at 12:00AM?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-8.27",
+      "implied_prob": "0.085",
+      "true_prob": "0.0023",
+      "confidence": "63",
+      "suggested_live_dollars": "0.92",
+      "suggested_paper_dollars": "19.32",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "92",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-07-05T21:16:19.059640Z",
       "ticker": "KXHIGHPHIL-26JUL05-B91.5",
@@ -1600,30 +1684,93 @@
       "null": [
         ""
       ]
-    },
+    }
+  ],
+  "recent_alerts": [
     {
-      "timestamp": "2026-07-04T22:19:07.262923Z",
-      "ticker": "KXRAINHOLIDAY-260704-PHX",
-      "title": "Will it rain in Phoenix on Jul 4, 2026?",
-      "category": "Climate and Weather",
+      "timestamp": "2026-07-05T22:32:07.365672Z",
+      "ticker": "FEDHIKE-27JUN30",
+      "title": "Will the Federal Reserve hike rates by June 30, 2027?",
+      "category": "Economics",
       "direction": "NO",
-      "edge_pct": "-19.5",
-      "implied_prob": "0.215",
-      "true_prob": "0.02",
-      "confidence": "70",
-      "suggested_live_dollars": "0.91",
-      "suggested_paper_dollars": "31.85",
+      "edge_pct": "-8.6",
+      "implied_prob": "0.61",
+      "true_prob": "0.524",
+      "confidence": "73",
+      "suggested_live_dollars": "0.4",
+      "suggested_paper_dollars": "20.0",
       "is_paper_bet": "1",
-      "paper_entry_price_cents": "91",
+      "paper_entry_price_cents": "40",
       "outcome": "",
       "resolved_at": "",
       "notes": "",
       "null": [
         ""
       ]
-    }
-  ],
-  "recent_alerts": [
+    },
+    {
+      "timestamp": "2026-07-05T22:32:07.026376Z",
+      "ticker": "KXHIGHAUS-26JUL05-B96.5",
+      "title": "Will the **high temp in Austin** be 96-97\u00b0 on Jul 5, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-92.59",
+      "implied_prob": "0.95",
+      "true_prob": "0.0241",
+      "confidence": "80",
+      "suggested_live_dollars": "0.54",
+      "suggested_paper_dollars": "49.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "6",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-05T22:32:06.732489Z",
+      "ticker": "KXWTI-26JUL0614-T66.99",
+      "title": "Will the WTI crude oil settlement price be above 66.99 USD/Bbl on Jul 6, 2026?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-10.48",
+      "implied_prob": "0.935",
+      "true_prob": "0.8302",
+      "confidence": "63",
+      "suggested_live_dollars": "0.14",
+      "suggested_paper_dollars": "16.38",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "7",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-05T22:32:06.370617Z",
+      "ticker": "KXETHMAXY-27JAN01-4250.00",
+      "title": "Will Ethereum reach above $4250.00 by Jan 1, 2027 at 12:00AM?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-8.27",
+      "implied_prob": "0.085",
+      "true_prob": "0.0023",
+      "confidence": "63",
+      "suggested_live_dollars": "0.92",
+      "suggested_paper_dollars": "19.32",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "92",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-07-05T21:16:19.059640Z",
       "ticker": "KXHIGHPHIL-26JUL05-B91.5",
@@ -2589,90 +2736,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-07-05T01:06:46.275530Z",
-      "ticker": "KXETHMAXY-27JAN01-4000.00",
-      "title": "Will Ethereum reach above $4000.00 by Jan 1, 2027 at 12:00AM?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-9.06",
-      "implied_prob": "0.095",
-      "true_prob": "0.0044",
-      "confidence": "63",
-      "suggested_live_dollars": "0.91",
-      "suggested_paper_dollars": "19.11",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "91",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-05T01:06:45.923162Z",
-      "ticker": "KXETHMAXY-27JAN01-3750.00",
-      "title": "Will Ethereum reach above $3750.00 by Jan 1, 2027 at 12:00AM?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-10.71",
-      "implied_prob": "0.115",
-      "true_prob": "0.0079",
-      "confidence": "63",
-      "suggested_live_dollars": "0.89",
-      "suggested_paper_dollars": "19.58",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "89",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-05T01:06:45.524069Z",
-      "ticker": "KXETHMAXY-27JAN01-3500.00",
-      "title": "Will Ethereum reach above $3500.00 by Jan 1, 2027 at 12:00AM?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-13.07",
-      "implied_prob": "0.145",
-      "true_prob": "0.0143",
-      "confidence": "68",
-      "suggested_live_dollars": "0.86",
-      "suggested_paper_dollars": "19.78",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "86",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-05T01:06:45.180164Z",
-      "ticker": "KXETHMINY-27JAN01-750",
-      "title": "Will Ethereum reach below $750.00 by Jan 1, 2027 at 12:00AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-16.22",
-      "implied_prob": "0.165",
-      "true_prob": "0.0028",
-      "confidence": "70",
-      "suggested_live_dollars": "0.84",
-      "suggested_paper_dollars": "39.48",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "84",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -2710,9 +2773,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 79,
+      "current_cents": 78,
       "dollars_risked": 0,
-      "current_value": 1.58,
+      "current_value": 1.56,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-08T16:16:51.035198Z",
-  "last_scan_ts": "2026-07-08T16:16:51.035198Z",
+  "generated_at": "2026-07-08T17:58:58.068718Z",
+  "last_scan_ts": "2026-07-08T17:58:58.068718Z",
   "stats": {
-    "total_alerts": 7089,
+    "total_alerts": 7093,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -37,7 +37,7 @@
         "hit_rate": null
       },
       "Climate and Weather": {
-        "total": 822,
+        "total": 823,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -55,7 +55,7 @@
         "hit_rate": null
       },
       "Commodities": {
-        "total": 787,
+        "total": 790,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,7 +69,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 1449,
+        "total": 1451,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -81,7 +81,7 @@
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 4248,
+        "total": 4250,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 11.21,
+      "balance": 11.23,
       "cash": 5.35,
       "peak": 11.42,
       "initial_balance": 10.0
@@ -101,15 +101,99 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-07-08T15:28:39.880133Z"
+    "updated_at": "2026-07-08T17:03:05.880064Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.86,
-  "account_value": 11.21,
-  "live_pnl": 1.21,
+  "position_value": 5.88,
+  "account_value": 11.23,
+  "live_pnl": 1.23,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-07-08T17:58:57.682993Z",
+      "ticker": "KXBRENTD-26JUL0817-T77",
+      "title": "Will the brent crude oil close price be above 77 USD/Bbl on July 08, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-95.0",
+      "implied_prob": "0.95",
+      "true_prob": "0.0",
+      "confidence": "70",
+      "suggested_live_dollars": "0.54",
+      "suggested_paper_dollars": "49.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "6",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-08T17:58:57.354570Z",
+      "ticker": "KXGOLDD-26JUL0817-T4038",
+      "title": "Will the gold close price be above 4038 USD/t.oz on July 08, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "YES",
+      "edge_pct": "12.16",
+      "implied_prob": "0.835",
+      "true_prob": "0.9566",
+      "confidence": "53",
+      "suggested_live_dollars": "0.84",
+      "suggested_paper_dollars": "19.32",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "84",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-08T17:58:57.020074Z",
+      "ticker": "KXHIGHCHI-26JUL08-B88.5",
+      "title": "Will the high temp in Chicago be 88-89\u00b0 on Jul 8, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-64.0",
+      "implied_prob": "0.65",
+      "true_prob": "0.01",
+      "confidence": "80",
+      "suggested_live_dollars": "0.36",
+      "suggested_paper_dollars": "49.68",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "36",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-08T17:58:56.655126Z",
+      "ticker": "KXWTIW-26JUL1014-T75.99",
+      "title": "Will the WTI crude oil settlement price be above 75.99 USD/Bbl on Jul 10, 2026?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-14.4",
+      "implied_prob": "0.345",
+      "true_prob": "0.201",
+      "confidence": "68",
+      "suggested_live_dollars": "0.66",
+      "suggested_paper_dollars": "19.8",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "66",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-07-08T16:16:50.661678Z",
       "ticker": "KXWTI-26JUL0814-T74.99",
@@ -1894,114 +1978,93 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-07-07T17:00:53.245111Z",
-      "ticker": "FEDHIKE-26DEC31",
-      "title": "Will the Federal Reserve hike rates by December 31, 2026?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-16.0",
-      "implied_prob": "0.475",
-      "true_prob": "0.315",
-      "confidence": "85",
-      "suggested_live_dollars": "0.53",
-      "suggested_paper_dollars": "39.75",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "53",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-07T17:00:52.893526Z",
-      "ticker": "KXBRENTD-26JUL0717-T73.50",
-      "title": "Will the brent crude oil close price be above 73.50 USD/Bbl on July 07, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "NO",
-      "edge_pct": "-72.5",
-      "implied_prob": "0.725",
-      "true_prob": "0.0",
-      "confidence": "70",
-      "suggested_live_dollars": "0.28",
-      "suggested_paper_dollars": "49.84",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "28",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-07T17:00:52.345104Z",
-      "ticker": "KXNASDAQ100U-26JUL07H1600-T28999.99",
-      "title": "Will the Nasdaq-100 be above 28999.99 at the end of Jul 7, 2026 at 4pm EDT?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-85.5",
-      "implied_prob": "0.855",
-      "true_prob": "0.0",
-      "confidence": "75",
-      "suggested_live_dollars": "0.51",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "17",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-07T17:00:51.891107Z",
-      "ticker": "KXHIGHCHI-26JUL07-B85.5",
-      "title": "Will the high temp in Chicago be 85-86\u00b0 on Jul 7, 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-47.5",
-      "implied_prob": "0.485",
-      "true_prob": "0.01",
-      "confidence": "80",
-      "suggested_live_dollars": "0.52",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "52",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-07T17:00:51.338171Z",
-      "ticker": "KXRAINCHIM-26JUL-4",
-      "title": "Rain in Chicago in Jul 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-80.5",
-      "implied_prob": "0.925",
-      "true_prob": "0.12",
-      "confidence": "85",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "8",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "recent_alerts": [
+    {
+      "timestamp": "2026-07-08T17:58:57.682993Z",
+      "ticker": "KXBRENTD-26JUL0817-T77",
+      "title": "Will the brent crude oil close price be above 77 USD/Bbl on July 08, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-95.0",
+      "implied_prob": "0.95",
+      "true_prob": "0.0",
+      "confidence": "70",
+      "suggested_live_dollars": "0.54",
+      "suggested_paper_dollars": "49.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "6",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-08T17:58:57.354570Z",
+      "ticker": "KXGOLDD-26JUL0817-T4038",
+      "title": "Will the gold close price be above 4038 USD/t.oz on July 08, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "YES",
+      "edge_pct": "12.16",
+      "implied_prob": "0.835",
+      "true_prob": "0.9566",
+      "confidence": "53",
+      "suggested_live_dollars": "0.84",
+      "suggested_paper_dollars": "19.32",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "84",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-08T17:58:57.020074Z",
+      "ticker": "KXHIGHCHI-26JUL08-B88.5",
+      "title": "Will the high temp in Chicago be 88-89\u00b0 on Jul 8, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-64.0",
+      "implied_prob": "0.65",
+      "true_prob": "0.01",
+      "confidence": "80",
+      "suggested_live_dollars": "0.36",
+      "suggested_paper_dollars": "49.68",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "36",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-08T17:58:56.655126Z",
+      "ticker": "KXWTIW-26JUL1014-T75.99",
+      "title": "Will the WTI crude oil settlement price be above 75.99 USD/Bbl on Jul 10, 2026?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-14.4",
+      "implied_prob": "0.345",
+      "true_prob": "0.201",
+      "confidence": "68",
+      "suggested_live_dollars": "0.66",
+      "suggested_paper_dollars": "19.8",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "66",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-07-08T16:16:50.661678Z",
       "ticker": "KXWTI-26JUL0814-T74.99",
@@ -2967,90 +3030,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-07-08T04:17:42.398314Z",
-      "ticker": "KXSUSPENDGASTAX-26MAY-JAN01",
-      "title": "Will legislation that would temporarily suspend or reduce the federal excise tax on gasoline become law before Jan 1, 2027?",
-      "category": "Politics",
-      "direction": "YES",
-      "edge_pct": "53.0",
-      "implied_prob": "0.155",
-      "true_prob": "0.685",
-      "confidence": "85",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "16",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-08T04:17:42.073373Z",
-      "ticker": "KXTESLASEMI-27JAN-5000",
-      "title": "Will Tesla Inc report above 5000 Semi Trucks Produced before Jan 2027?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-13.5",
-      "implied_prob": "0.135",
-      "true_prob": "0.0",
-      "confidence": "68",
-      "suggested_live_dollars": "0.89",
-      "suggested_paper_dollars": "19.58",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "89",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-08T04:17:41.775126Z",
-      "ticker": "KXTESLASEMI-27JAN-1000",
-      "title": "Will Tesla Inc report above 1000 Semi Trucks Produced before Jan 2027?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-37.63",
-      "implied_prob": "0.39",
-      "true_prob": "0.0137",
-      "confidence": "85",
-      "suggested_live_dollars": "0.64",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "64",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-08T04:17:41.351927Z",
-      "ticker": "KXFEDDECISION-27APR-H0",
-      "title": "Will the Federal Reserve Hike rates by 0bps at their April 2027 meeting?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-22.0",
-      "implied_prob": "0.535",
-      "true_prob": "0.315",
-      "confidence": "75",
-      "suggested_live_dollars": "0.51",
-      "suggested_paper_dollars": "39.78",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "51",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -3076,9 +3055,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 81,
+      "current_cents": 82,
       "dollars_risked": 0,
-      "current_value": 1.62,
+      "current_value": 1.64,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

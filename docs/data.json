@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-09T21:54:44.077332Z",
-  "last_scan_ts": "2026-07-09T21:54:44.077332Z",
+  "generated_at": "2026-07-09T23:37:04.799394Z",
+  "last_scan_ts": "2026-07-09T23:37:04.799394Z",
   "stats": {
-    "total_alerts": 7211,
+    "total_alerts": 7213,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -37,7 +37,7 @@
         "hit_rate": null
       },
       "Climate and Weather": {
-        "total": 835,
+        "total": 836,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -49,7 +49,7 @@
         "hit_rate": null
       },
       "Financials": {
-        "total": 698,
+        "total": 699,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,7 +69,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 1481,
+        "total": 1482,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -81,7 +81,7 @@
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 4321,
+        "total": 4322,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 11.04,
+      "balance": 11.03,
       "cash": 5.35,
       "peak": 11.42,
       "initial_balance": 10.0
@@ -101,15 +101,57 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-07-09T20:52:35.558919Z"
+    "updated_at": "2026-07-09T22:38:05.377867Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.69,
-  "account_value": 11.04,
-  "live_pnl": 1.04,
+  "position_value": 5.68,
+  "account_value": 11.03,
+  "live_pnl": 1.03,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-07-09T23:37:04.452187Z",
+      "ticker": "KXHIGHDEN-26JUL09-B90.5",
+      "title": "Will the **high temp in Denver** be 90-91\u00b0 on Jul 9, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-68.45",
+      "implied_prob": "0.86",
+      "true_prob": "0.1755",
+      "confidence": "80",
+      "suggested_live_dollars": "0.38",
+      "suggested_paper_dollars": "49.97",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "19",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-09T23:37:03.993580Z",
+      "ticker": "KXB200WS-26JUL10-6.000",
+      "title": "Will the NVIDIA B200 compute per hour price be above $6 at 4 PM ET on Jul 10?",
+      "category": "Financials",
+      "direction": "YES",
+      "edge_pct": "14.0",
+      "implied_prob": "0.86",
+      "true_prob": "1.0",
+      "confidence": "63",
+      "suggested_live_dollars": "0.87",
+      "suggested_paper_dollars": "19.14",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "87",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-07-09T21:54:43.680860Z",
       "ticker": "KXHIGHAUS-26JUL09-B98.5",
@@ -2335,30 +2377,51 @@
       "null": [
         ""
       ]
-    },
+    }
+  ],
+  "recent_alerts": [
     {
-      "timestamp": "2026-07-08T22:48:06.277748Z",
-      "ticker": "KXWTI-26JUL0914-T74.99",
-      "title": "Will the WTI crude oil settlement price be above 74.99 USD/Bbl on Jul 9, 2026?",
-      "category": "Commodities",
+      "timestamp": "2026-07-09T23:37:04.452187Z",
+      "ticker": "KXHIGHDEN-26JUL09-B90.5",
+      "title": "Will the **high temp in Denver** be 90-91\u00b0 on Jul 9, 2026?",
+      "category": "Climate and Weather",
       "direction": "NO",
-      "edge_pct": "-9.38",
-      "implied_prob": "0.48",
-      "true_prob": "0.3862",
-      "confidence": "63",
-      "suggested_live_dollars": "0.53",
-      "suggested_paper_dollars": "19.61",
+      "edge_pct": "-68.45",
+      "implied_prob": "0.86",
+      "true_prob": "0.1755",
+      "confidence": "80",
+      "suggested_live_dollars": "0.38",
+      "suggested_paper_dollars": "49.97",
       "is_paper_bet": "1",
-      "paper_entry_price_cents": "53",
+      "paper_entry_price_cents": "19",
       "outcome": "",
       "resolved_at": "",
       "notes": "",
       "null": [
         ""
       ]
-    }
-  ],
-  "recent_alerts": [
+    },
+    {
+      "timestamp": "2026-07-09T23:37:03.993580Z",
+      "ticker": "KXB200WS-26JUL10-6.000",
+      "title": "Will the NVIDIA B200 compute per hour price be above $6 at 4 PM ET on Jul 10?",
+      "category": "Financials",
+      "direction": "YES",
+      "edge_pct": "14.0",
+      "implied_prob": "0.86",
+      "true_prob": "1.0",
+      "confidence": "63",
+      "suggested_live_dollars": "0.87",
+      "suggested_paper_dollars": "19.14",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "87",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-07-09T21:54:43.680860Z",
       "ticker": "KXHIGHAUS-26JUL09-B98.5",
@@ -3366,48 +3429,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-07-09T02:12:25.900657Z",
-      "ticker": "KXB200MS-26NOV-3.00",
-      "title": "Will the monthly average compute price of NVIDIA's B200 be above $3.00 in November 2026?",
-      "category": "Financials",
-      "direction": "YES",
-      "edge_pct": "17.5",
-      "implied_prob": "0.825",
-      "true_prob": "1.0",
-      "confidence": "75",
-      "suggested_live_dollars": "0.83",
-      "suggested_paper_dollars": "39.84",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "83",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-09T02:12:25.534028Z",
-      "ticker": "KXCOREUND-26DEC10-T2.2",
-      "title": "Will year-over-year Core CPI inflation for 2026 fall below 2.2%?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "51.69",
-      "implied_prob": "0.22",
-      "true_prob": "0.7369",
-      "confidence": "85",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "24",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -3457,9 +3478,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 96,
+      "current_cents": 95,
       "dollars_risked": 0,
-      "current_value": 0.96,
+      "current_value": 0.95,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

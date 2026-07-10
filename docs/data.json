@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-10T08:44:44.671006Z",
-  "last_scan_ts": "2026-07-10T08:44:44.671006Z",
+  "generated_at": "2026-07-10T14:11:09.756153Z",
+  "last_scan_ts": "2026-07-10T14:11:09.756153Z",
   "stats": {
-    "total_alerts": 7297,
+    "total_alerts": 7299,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -55,7 +55,7 @@
         "hit_rate": null
       },
       "Commodities": {
-        "total": 824,
+        "total": 826,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,13 +69,13 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 1505,
+        "total": 1506,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "medium (15-25%)": {
-        "total": 1422,
+        "total": 1423,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 11.01,
+      "balance": 11.02,
       "cash": 5.35,
       "peak": 11.42,
       "initial_balance": 10.0
@@ -101,15 +101,57 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-07-10T07:40:58.722062Z"
+    "updated_at": "2026-07-10T13:16:37.943378Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.66,
-  "account_value": 11.01,
-  "live_pnl": 1.01,
+  "position_value": 5.67,
+  "account_value": 11.02,
+  "live_pnl": 1.02,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-07-10T14:11:09.405052Z",
+      "ticker": "KXWTI-26JUL1014-T73.49",
+      "title": "Will the WTI crude oil settlement price be above 73.49 USD/Bbl on Jul 10, 2026?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-12.54",
+      "implied_prob": "0.13",
+      "true_prob": "0.0046",
+      "confidence": "53",
+      "suggested_live_dollars": "0.88",
+      "suggested_paper_dollars": "19.36",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "88",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-10T14:11:08.452785Z",
+      "ticker": "KXWTI-26JUL1014-T72.49",
+      "title": "Will the WTI crude oil settlement price be above 72.49 USD/Bbl on Jul 10, 2026?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-23.58",
+      "implied_prob": "0.34",
+      "true_prob": "0.1042",
+      "confidence": "60",
+      "suggested_live_dollars": "0.68",
+      "suggested_paper_dollars": "39.44",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "68",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-07-10T08:44:44.292908Z",
       "ticker": "KXWTI-26JUL1014-T71.99",
@@ -2234,6 +2276,48 @@
   ],
   "recent_alerts": [
     {
+      "timestamp": "2026-07-10T14:11:09.405052Z",
+      "ticker": "KXWTI-26JUL1014-T73.49",
+      "title": "Will the WTI crude oil settlement price be above 73.49 USD/Bbl on Jul 10, 2026?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-12.54",
+      "implied_prob": "0.13",
+      "true_prob": "0.0046",
+      "confidence": "53",
+      "suggested_live_dollars": "0.88",
+      "suggested_paper_dollars": "19.36",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "88",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-10T14:11:08.452785Z",
+      "ticker": "KXWTI-26JUL1014-T72.49",
+      "title": "Will the WTI crude oil settlement price be above 72.49 USD/Bbl on Jul 10, 2026?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-23.58",
+      "implied_prob": "0.34",
+      "true_prob": "0.1042",
+      "confidence": "60",
+      "suggested_live_dollars": "0.68",
+      "suggested_paper_dollars": "39.44",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "68",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
       "timestamp": "2026-07-10T08:44:44.292908Z",
       "ticker": "KXWTI-26JUL1014-T71.99",
       "title": "Will the WTI crude oil settlement price be above 71.99 USD/Bbl on Jul 10, 2026?",
@@ -3240,48 +3324,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-07-10T01:22:29.722953Z",
-      "ticker": "KXNASDAQ100MAXY-26DEC31H1600-T31999.99",
-      "title": "Will the Nasdaq-100 be above 31999.99 at the end of Dec 31, 2026 at 4pm EST?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-49.0",
-      "implied_prob": "0.49",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.64",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "64",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-10T01:22:29.469071Z",
-      "ticker": "KXNASDAQ100MAXY-26DEC31H1600-T30799.99",
-      "title": "Will the Nasdaq-100 be above 30799.99 after issuance and before Dec 31, 2026 at 4pm EST?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-88.5",
-      "implied_prob": "0.885",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.4",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "20",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -3295,9 +3337,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 84,
+      "current_cents": 85,
       "dollars_risked": 0,
-      "current_value": 0.84,
+      "current_value": 0.85,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-12T15:13:34.017693Z",
-  "last_scan_ts": "2026-07-12T15:13:34.017693Z",
+  "generated_at": "2026-07-12T16:45:25.959573Z",
+  "last_scan_ts": "2026-07-12T16:45:25.959573Z",
   "stats": {
-    "total_alerts": 7479,
+    "total_alerts": 7481,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -25,7 +25,7 @@
         "hit_rate": null
       },
       "Crypto": {
-        "total": 2264,
+        "total": 2265,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -37,7 +37,7 @@
         "hit_rate": null
       },
       "Climate and Weather": {
-        "total": 860,
+        "total": 861,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,7 +69,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 1537,
+        "total": 1538,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -81,7 +81,7 @@
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 4492,
+        "total": 4493,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 11.01,
+      "balance": 10.79,
       "cash": 5.35,
       "peak": 11.42,
       "initial_balance": 10.0
@@ -101,15 +101,57 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-07-12T14:07:03.473155Z"
+    "updated_at": "2026-07-12T15:35:59.945772Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.66,
-  "account_value": 11.01,
-  "live_pnl": 1.01,
+  "position_value": 5.44,
+  "account_value": 10.79,
+  "live_pnl": 0.79,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-07-12T16:45:25.546817Z",
+      "ticker": "KXHIGHNY-26JUL12-B82.5",
+      "title": "Will the **high temp in NYC** be 82-83\u00b0 on Jul 12, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-59.3",
+      "implied_prob": "0.635",
+      "true_prob": "0.042",
+      "confidence": "80",
+      "suggested_live_dollars": "0.37",
+      "suggested_paper_dollars": "49.95",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "37",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-12T16:45:25.011930Z",
+      "ticker": "KXSOLMAXY-27JAN01-180",
+      "title": "Will the spot price of Solana be above $180.00 before Jan 1, 2027 at 12:00 AM ET?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-14.7",
+      "implied_prob": "0.15",
+      "true_prob": "0.003",
+      "confidence": "63",
+      "suggested_live_dollars": "0.93",
+      "suggested_paper_dollars": "19.53",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "93",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-07-12T15:13:33.480456Z",
       "ticker": "KXFEDDECISION-27DEC-H26",
@@ -1919,6 +1961,48 @@
   ],
   "recent_alerts": [
     {
+      "timestamp": "2026-07-12T16:45:25.546817Z",
+      "ticker": "KXHIGHNY-26JUL12-B82.5",
+      "title": "Will the **high temp in NYC** be 82-83\u00b0 on Jul 12, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-59.3",
+      "implied_prob": "0.635",
+      "true_prob": "0.042",
+      "confidence": "80",
+      "suggested_live_dollars": "0.37",
+      "suggested_paper_dollars": "49.95",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "37",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-12T16:45:25.011930Z",
+      "ticker": "KXSOLMAXY-27JAN01-180",
+      "title": "Will the spot price of Solana be above $180.00 before Jan 1, 2027 at 12:00 AM ET?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-14.7",
+      "implied_prob": "0.15",
+      "true_prob": "0.003",
+      "confidence": "63",
+      "suggested_live_dollars": "0.93",
+      "suggested_paper_dollars": "19.53",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "93",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
       "timestamp": "2026-07-12T15:13:33.480456Z",
       "ticker": "KXFEDDECISION-27DEC-H26",
       "title": "Will the Federal Reserve Hike rates by >25bps at their December 2027 meeting?",
@@ -2925,48 +3009,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-07-12T04:26:30.537691Z",
-      "ticker": "KXNASDAQ100POS-26DEC31H1600-T25249.85",
-      "title": "Will the Nasdaq-100 be above 25249.85 at the end of Dec 31, 2026 at 4pm EST?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-80.5",
-      "implied_prob": "0.805",
-      "true_prob": "0.0",
-      "confidence": "90",
-      "suggested_live_dollars": "0.42",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "21",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-12T04:26:30.204637Z",
-      "ticker": "KXBTCMAXY-26DEC31-109999.99",
-      "title": "Will Bitcoin be above $109,999.99 by Dec 31, 2026 at 11:59 PM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-10.39",
-      "implied_prob": "0.105",
-      "true_prob": "0.0011",
-      "confidence": "68",
-      "suggested_live_dollars": "0.9",
-      "suggested_paper_dollars": "19.8",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "90",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -2980,9 +3022,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 81,
+      "current_cents": 77,
       "dollars_risked": 0,
-      "current_value": 0.81,
+      "current_value": 0.77,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -2992,9 +3034,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 81,
+      "current_cents": 77,
       "dollars_risked": 0,
-      "current_value": 1.62,
+      "current_value": 1.54,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -3004,9 +3046,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 81,
+      "current_cents": 76,
       "dollars_risked": 0,
-      "current_value": 1.62,
+      "current_value": 1.52,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

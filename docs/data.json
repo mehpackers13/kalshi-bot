@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-12T19:36:08.290062Z",
-  "last_scan_ts": "2026-07-12T19:36:08.290062Z",
+  "generated_at": "2026-07-12T20:50:15.731327Z",
+  "last_scan_ts": "2026-07-12T20:50:15.731327Z",
   "stats": {
-    "total_alerts": 7486,
+    "total_alerts": 7488,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -25,7 +25,7 @@
         "hit_rate": null
       },
       "Crypto": {
-        "total": 2265,
+        "total": 2266,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -55,7 +55,7 @@
         "hit_rate": null
       },
       "Commodities": {
-        "total": 834,
+        "total": 835,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,7 +69,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 1538,
+        "total": 1539,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -81,7 +81,7 @@
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 4498,
+        "total": 4499,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 10.93,
+      "balance": 10.91,
       "cash": 5.35,
       "peak": 11.42,
       "initial_balance": 10.0
@@ -101,15 +101,57 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-07-12T18:29:27.211376Z"
+    "updated_at": "2026-07-12T19:44:36.823628Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.58,
-  "account_value": 10.93,
-  "live_pnl": 0.93,
+  "position_value": 5.56,
+  "account_value": 10.91,
+  "live_pnl": 0.91,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-07-12T20:50:15.311274Z",
+      "ticker": "KXBRENTD-26JUL1317-T77",
+      "title": "Will the brent crude oil close price be above 77 USD/Bbl on July 13, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-82.46",
+      "implied_prob": "0.825",
+      "true_prob": "0.0004",
+      "confidence": "85",
+      "suggested_live_dollars": "0.54",
+      "suggested_paper_dollars": "49.86",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "18",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-12T20:50:14.761771Z",
+      "ticker": "KXETHMAXMON-ETH-26JUL31-225000",
+      "title": "Will ETH trimmed mean be above $2250.00 by 11:59 PM ET on Jul 31, 2026?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-9.38",
+      "implied_prob": "0.1",
+      "true_prob": "0.0062",
+      "confidence": "63",
+      "suggested_live_dollars": "0.92",
+      "suggested_paper_dollars": "19.32",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "92",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-07-12T19:36:07.891447Z",
       "ticker": "KXHIGHCHI-26JUL12-B86.5",
@@ -1978,30 +2020,51 @@
       "null": [
         ""
       ]
-    },
+    }
+  ],
+  "recent_alerts": [
     {
-      "timestamp": "2026-07-11T20:21:43.996839Z",
-      "ticker": "KXHIGHNY-26JUL11-B81.5",
-      "title": "Will the **high temp in NYC** be 81-82\u00b0 on Jul 11, 2026?",
-      "category": "Climate and Weather",
+      "timestamp": "2026-07-12T20:50:15.311274Z",
+      "ticker": "KXBRENTD-26JUL1317-T77",
+      "title": "Will the brent crude oil close price be above 77 USD/Bbl on July 13, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
       "direction": "NO",
-      "edge_pct": "-18.23",
-      "implied_prob": "0.405",
-      "true_prob": "0.2227",
-      "confidence": "70",
-      "suggested_live_dollars": "0.6",
-      "suggested_paper_dollars": "39.6",
+      "edge_pct": "-82.46",
+      "implied_prob": "0.825",
+      "true_prob": "0.0004",
+      "confidence": "85",
+      "suggested_live_dollars": "0.54",
+      "suggested_paper_dollars": "49.86",
       "is_paper_bet": "1",
-      "paper_entry_price_cents": "60",
+      "paper_entry_price_cents": "18",
       "outcome": "",
       "resolved_at": "",
       "notes": "",
       "null": [
         ""
       ]
-    }
-  ],
-  "recent_alerts": [
+    },
+    {
+      "timestamp": "2026-07-12T20:50:14.761771Z",
+      "ticker": "KXETHMAXMON-ETH-26JUL31-225000",
+      "title": "Will ETH trimmed mean be above $2250.00 by 11:59 PM ET on Jul 31, 2026?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-9.38",
+      "implied_prob": "0.1",
+      "true_prob": "0.0062",
+      "confidence": "63",
+      "suggested_live_dollars": "0.92",
+      "suggested_paper_dollars": "19.32",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "92",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-07-12T19:36:07.891447Z",
       "ticker": "KXHIGHCHI-26JUL12-B86.5",
@@ -3009,48 +3072,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-07-12T04:26:33.836566Z",
-      "ticker": "KXRATECUTCOUNT-26DEC31-T1",
-      "title": "Will the Fed cut rates 1 times?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "48.0",
-      "implied_prob": "0.15",
-      "true_prob": "0.63",
-      "confidence": "90",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "16",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-12T04:26:33.514965Z",
-      "ticker": "KXRATECUTCOUNT-26DEC31-T0",
-      "title": "Will the Fed cut rates 0 times?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-12.5",
-      "implied_prob": "0.755",
-      "true_prob": "0.63",
-      "confidence": "78",
-      "suggested_live_dollars": "0.25",
-      "suggested_paper_dollars": "20.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "25",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -3064,9 +3085,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 79,
+      "current_cents": 77,
       "dollars_risked": 0,
-      "current_value": 0.79,
+      "current_value": 0.77,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -3076,9 +3097,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 80,
+      "current_cents": 78,
       "dollars_risked": 0,
-      "current_value": 1.6,
+      "current_value": 1.56,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -3088,9 +3109,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 79,
+      "current_cents": 81,
       "dollars_risked": 0,
-      "current_value": 1.58,
+      "current_value": 1.62,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

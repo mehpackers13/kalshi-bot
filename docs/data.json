@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-12T04:26:45.568723Z",
-  "last_scan_ts": "2026-07-12T04:26:45.568723Z",
+  "generated_at": "2026-07-12T07:24:26.609986Z",
+  "last_scan_ts": "2026-07-12T07:24:26.609986Z",
   "stats": {
-    "total_alerts": 7475,
+    "total_alerts": 7477,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -37,7 +37,7 @@
         "hit_rate": null
       },
       "Climate and Weather": {
-        "total": 859,
+        "total": 860,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -55,7 +55,7 @@
         "hit_rate": null
       },
       "Commodities": {
-        "total": 830,
+        "total": 831,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,7 +69,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 1536,
+        "total": 1537,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -81,7 +81,7 @@
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 4489,
+        "total": 4490,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 10.94,
+      "balance": 10.78,
       "cash": 5.35,
       "peak": 11.42,
       "initial_balance": 10.0
@@ -101,15 +101,57 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-07-12T03:26:44.072720Z"
+    "updated_at": "2026-07-12T06:18:23.533381Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.59,
-  "account_value": 10.94,
-  "live_pnl": 0.94,
+  "position_value": 5.43,
+  "account_value": 10.78,
+  "live_pnl": 0.78,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-07-12T07:24:26.199985Z",
+      "ticker": "KXWTI-26JUL1314-T73.49",
+      "title": "Will the WTI crude oil settlement price be above 73.49 USD/Bbl on Jul 13, 2026?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-37.04",
+      "implied_prob": "0.515",
+      "true_prob": "0.1446",
+      "confidence": "85",
+      "suggested_live_dollars": "0.53",
+      "suggested_paper_dollars": "49.82",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "53",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-12T07:24:25.897072Z",
+      "ticker": "KXRAINSEAM-26JUL-1",
+      "title": "Rain in Seattle in Jul 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-8.5",
+      "implied_prob": "0.165",
+      "true_prob": "0.08",
+      "confidence": "68",
+      "suggested_live_dollars": "0.85",
+      "suggested_paper_dollars": "19.55",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "85",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-07-12T04:26:45.182206Z",
       "ticker": "FEDHIKE-27DEC31",
@@ -1852,93 +1894,51 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-07-11T06:55:42.460573Z",
-      "ticker": "KXRAINMIAM-26JUL-3",
-      "title": "Rain in Miami in Jul 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-85.0",
-      "implied_prob": "0.93",
-      "true_prob": "0.08",
-      "confidence": "85",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "8",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-11T06:55:42.132946Z",
-      "ticker": "KXCBRATEHIKE-27-FED",
-      "title": "Will the Federal Reserve raise the target range for the federal funds rate before 2027?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-17.0",
-      "implied_prob": "0.54",
-      "true_prob": "0.37",
-      "confidence": "75",
-      "suggested_live_dollars": "0.47",
-      "suggested_paper_dollars": "39.95",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "47",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-11T06:55:41.658633Z",
-      "ticker": "KXFEDDECISION-27APR-H0",
-      "title": "Will the Federal Reserve Hike rates by 0bps at their April 2027 meeting?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-14.0",
-      "implied_prob": "0.51",
-      "true_prob": "0.37",
-      "confidence": "68",
-      "suggested_live_dollars": "0.51",
-      "suggested_paper_dollars": "19.89",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "51",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-11T06:55:41.219209Z",
-      "ticker": "KXTSLAA-28JANDEL-1700000.0",
-      "title": "Will Tesla Inc. report Above 1.7 million total deliveries in 2026?",
-      "category": "Companies",
-      "direction": "YES",
-      "edge_pct": "27.0",
-      "implied_prob": "0.73",
-      "true_prob": "1.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.75",
-      "suggested_paper_dollars": "49.5",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "75",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "recent_alerts": [
+    {
+      "timestamp": "2026-07-12T07:24:26.199985Z",
+      "ticker": "KXWTI-26JUL1314-T73.49",
+      "title": "Will the WTI crude oil settlement price be above 73.49 USD/Bbl on Jul 13, 2026?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-37.04",
+      "implied_prob": "0.515",
+      "true_prob": "0.1446",
+      "confidence": "85",
+      "suggested_live_dollars": "0.53",
+      "suggested_paper_dollars": "49.82",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "53",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-12T07:24:25.897072Z",
+      "ticker": "KXRAINSEAM-26JUL-1",
+      "title": "Rain in Seattle in Jul 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-8.5",
+      "implied_prob": "0.165",
+      "true_prob": "0.08",
+      "confidence": "68",
+      "suggested_live_dollars": "0.85",
+      "suggested_paper_dollars": "19.55",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "85",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-07-12T04:26:45.182206Z",
       "ticker": "FEDHIKE-27DEC31",
@@ -2946,48 +2946,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-07-12T04:26:29.197044Z",
-      "ticker": "KXBTCMINY-27JAN01-40000.00",
-      "title": "Will Bitcoin be below $40000.00 by Jan 1, 2027 at 12:00am ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-31.13",
-      "implied_prob": "0.315",
-      "true_prob": "0.0037",
-      "confidence": "90",
-      "suggested_live_dollars": "0.69",
-      "suggested_paper_dollars": "49.68",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "69",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-12T04:26:28.874435Z",
-      "ticker": "KXBTCMINY-27JAN01-45000.00",
-      "title": "Will Bitcoin be below $45000.00 by Jan 1, 2027 at 12:00am ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-38.3",
-      "implied_prob": "0.405",
-      "true_prob": "0.022",
-      "confidence": "90",
-      "suggested_live_dollars": "0.6",
-      "suggested_paper_dollars": "49.8",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "60",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -3013,9 +2971,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 82,
+      "current_cents": 78,
       "dollars_risked": 0,
-      "current_value": 1.64,
+      "current_value": 1.56,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -3025,9 +2983,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 80,
+      "current_cents": 76,
       "dollars_risked": 0,
-      "current_value": 1.6,
+      "current_value": 1.52,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-16T06:54:49.668532Z",
-  "last_scan_ts": "2026-07-16T06:54:49.668532Z",
+  "generated_at": "2026-07-16T13:32:45.826180Z",
+  "last_scan_ts": "2026-07-16T13:32:45.826180Z",
   "stats": {
-    "total_alerts": 7907,
+    "total_alerts": 7909,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -37,7 +37,7 @@
         "hit_rate": null
       },
       "Climate and Weather": {
-        "total": 917,
+        "total": 918,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -55,7 +55,7 @@
         "hit_rate": null
       },
       "Commodities": {
-        "total": 910,
+        "total": 911,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -75,13 +75,13 @@
         "hit_rate": null
       },
       "medium (15-25%)": {
-        "total": 1514,
+        "total": 1515,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 4748,
+        "total": 4749,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 10.9,
+      "balance": 10.82,
       "cash": 5.35,
       "peak": 11.42,
       "initial_balance": 10.0
@@ -101,15 +101,57 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-07-16T05:46:52.628276Z"
+    "updated_at": "2026-07-16T12:24:52.695723Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.55,
-  "account_value": 10.9,
-  "live_pnl": 0.9,
+  "position_value": 5.47,
+  "account_value": 10.82,
+  "live_pnl": 0.82,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-07-16T13:32:45.398617Z",
+      "ticker": "KXWTI-26JUL1614-T79.99",
+      "title": "Will the WTI crude oil settlement price be above 79.99 USD/Bbl on Jul 16, 2026?",
+      "category": "Commodities",
+      "direction": "YES",
+      "edge_pct": "18.79",
+      "implied_prob": "0.48",
+      "true_prob": "0.6679",
+      "confidence": "70",
+      "suggested_live_dollars": "0.49",
+      "suggested_paper_dollars": "39.69",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "49",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-16T13:32:45.048200Z",
+      "ticker": "KXRAINNYCM-26JUL-3",
+      "title": "Rain in NYC in Jul 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-67.0",
+      "implied_prob": "0.73",
+      "true_prob": "0.06",
+      "confidence": "85",
+      "suggested_live_dollars": "0.28",
+      "suggested_paper_dollars": "49.84",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "28",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-07-16T06:54:49.173758Z",
       "ticker": "KXWTI-26JUL1614-T79.49",
@@ -2465,6 +2507,48 @@
   ],
   "recent_alerts": [
     {
+      "timestamp": "2026-07-16T13:32:45.398617Z",
+      "ticker": "KXWTI-26JUL1614-T79.99",
+      "title": "Will the WTI crude oil settlement price be above 79.99 USD/Bbl on Jul 16, 2026?",
+      "category": "Commodities",
+      "direction": "YES",
+      "edge_pct": "18.79",
+      "implied_prob": "0.48",
+      "true_prob": "0.6679",
+      "confidence": "70",
+      "suggested_live_dollars": "0.49",
+      "suggested_paper_dollars": "39.69",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "49",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-16T13:32:45.048200Z",
+      "ticker": "KXRAINNYCM-26JUL-3",
+      "title": "Rain in NYC in Jul 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-67.0",
+      "implied_prob": "0.73",
+      "true_prob": "0.06",
+      "confidence": "85",
+      "suggested_live_dollars": "0.28",
+      "suggested_paper_dollars": "49.84",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "28",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
       "timestamp": "2026-07-16T06:54:49.173758Z",
       "ticker": "KXWTI-26JUL1614-T79.49",
       "title": "Will the WTI crude oil settlement price be above 79.49 USD/Bbl on Jul 16, 2026?",
@@ -3471,48 +3555,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-07-16T00:39:07.451847Z",
-      "ticker": "KXWNBA1HSPREAD-26JUL15GSIND-IND2",
-      "title": "Will Indiana win the 1H by over 1.5 points?",
-      "category": "Sports",
-      "direction": "YES",
-      "edge_pct": "51.5",
-      "implied_prob": "0.485",
-      "true_prob": "1.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.49",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "49",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-16T00:39:07.198286Z",
-      "ticker": "KXWNBASPREAD-26JUL15GSIND-GS4",
-      "title": "Golden State wins by over 3.5 points",
-      "category": "Sports",
-      "direction": "YES",
-      "edge_pct": "66.5",
-      "implied_prob": "0.335",
-      "true_prob": "1.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.34",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "34",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -3538,9 +3580,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 77,
+      "current_cents": 76,
       "dollars_risked": 0,
-      "current_value": 1.54,
+      "current_value": 1.52,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -3550,9 +3592,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 79,
+      "current_cents": 76,
       "dollars_risked": 0,
-      "current_value": 1.58,
+      "current_value": 1.52,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

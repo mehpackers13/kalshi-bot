@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-16T18:45:19.659378Z",
-  "last_scan_ts": "2026-07-16T18:45:19.659378Z",
+  "generated_at": "2026-07-16T20:25:54.972599Z",
+  "last_scan_ts": "2026-07-16T20:25:54.972599Z",
   "stats": {
-    "total_alerts": 7917,
+    "total_alerts": 7918,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -13,7 +13,7 @@
         "hit_rate": null
       },
       "Economics": {
-        "total": 1700,
+        "total": 1701,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,7 +69,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 1646,
+        "total": 1647,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 10.84,
+      "balance": 10.85,
       "cash": 5.35,
       "peak": 11.42,
       "initial_balance": 10.0
@@ -101,15 +101,36 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-07-16T17:47:50.113477Z"
+    "updated_at": "2026-07-16T19:23:30.508551Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.49,
-  "account_value": 10.84,
-  "live_pnl": 0.84,
+  "position_value": 5.5,
+  "account_value": 10.85,
+  "live_pnl": 0.85,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-07-16T20:25:54.494392Z",
+      "ticker": "FEDHIKE-26DEC31",
+      "title": "Will the Federal Reserve hike rates by December 31, 2026?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-8.9",
+      "implied_prob": "0.495",
+      "true_prob": "0.406",
+      "confidence": "78",
+      "suggested_live_dollars": "0.51",
+      "suggested_paper_dollars": "19.89",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "51",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-07-16T18:45:19.284291Z",
       "ticker": "KXBRENTD-26JUL1617-T83.50",
@@ -2104,40 +2125,21 @@
       "null": [
         ""
       ]
-    },
+    }
+  ],
+  "recent_alerts": [
     {
-      "timestamp": "2026-07-15T20:19:59.888091Z",
-      "ticker": "KXWNBASPREAD-26JUL15GSIND-IND4",
-      "title": "Indiana wins by over 3.5 points",
-      "category": "Sports",
-      "direction": "YES",
-      "edge_pct": "57.5",
-      "implied_prob": "0.425",
-      "true_prob": "1.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.43",
-      "suggested_paper_dollars": "49.88",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "43",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-15T18:51:07.175068Z",
-      "ticker": "KXBRENTD-26JUL1517-T84.50",
-      "title": "Will the brent crude oil close price be above 84.50 USD/Bbl on July 15, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
+      "timestamp": "2026-07-16T20:25:54.494392Z",
+      "ticker": "FEDHIKE-26DEC31",
+      "title": "Will the Federal Reserve hike rates by December 31, 2026?",
+      "category": "Economics",
       "direction": "NO",
-      "edge_pct": "-49.5",
+      "edge_pct": "-8.9",
       "implied_prob": "0.495",
-      "true_prob": "0.0",
-      "confidence": "70",
+      "true_prob": "0.406",
+      "confidence": "78",
       "suggested_live_dollars": "0.51",
-      "suggested_paper_dollars": "49.98",
+      "suggested_paper_dollars": "19.89",
       "is_paper_bet": "1",
       "paper_entry_price_cents": "51",
       "outcome": "",
@@ -2147,176 +2149,6 @@
         ""
       ]
     },
-    {
-      "timestamp": "2026-07-15T18:51:06.884248Z",
-      "ticker": "KXBRENTD-26JUL1517-T83.50",
-      "title": "Will the brent crude oil close price be above 83.50 USD/Bbl on July 15, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "NO",
-      "edge_pct": "-84.5",
-      "implied_prob": "0.845",
-      "true_prob": "0.0",
-      "confidence": "70",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "16",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-15T18:51:06.650401Z",
-      "ticker": "KXGOLDD-26JUL1517-T4060",
-      "title": "Will the gold close price be above 4060 USD/t.oz on July 15, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "YES",
-      "edge_pct": "12.97",
-      "implied_prob": "0.685",
-      "true_prob": "0.8147",
-      "confidence": "53",
-      "suggested_live_dollars": "0.69",
-      "suggested_paper_dollars": "19.32",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "69",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-15T18:51:06.360211Z",
-      "ticker": "KXGOLDD-26JUL1517-T4050",
-      "title": "Will the gold close price be above 4050 USD/t.oz on July 15, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "YES",
-      "edge_pct": "8.56",
-      "implied_prob": "0.825",
-      "true_prob": "0.9106",
-      "confidence": "53",
-      "suggested_live_dollars": "0.83",
-      "suggested_paper_dollars": "19.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "83",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-15T18:51:06.078954Z",
-      "ticker": "KXGOLDD-26JUL1517-T4040",
-      "title": "Will the gold close price be above 4040 USD/t.oz on July 15, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "YES",
-      "edge_pct": "8.87",
-      "implied_prob": "0.875",
-      "true_prob": "0.9637",
-      "confidence": "53",
-      "suggested_live_dollars": "0.88",
-      "suggested_paper_dollars": "19.36",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "88",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-15T18:51:05.743501Z",
-      "ticker": "KXINXDUD-26JUL15H1600-T7543.59",
-      "title": "Will the S&P 500 be above 7543.59 on Jul 15, 2026 at 4pm EDT?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-91.5",
-      "implied_prob": "0.915",
-      "true_prob": "0.0",
-      "confidence": "70",
-      "suggested_live_dollars": "0.54",
-      "suggested_paper_dollars": "49.95",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "9",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-15T18:51:05.405638Z",
-      "ticker": "KXINXU-26JUL15H1600-T7564.9999",
-      "title": "Will the S&P 500 be above 7564.9999 on Jul 15, 2026 at 4pm EDT?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-52.5",
-      "implied_prob": "0.525",
-      "true_prob": "0.0",
-      "confidence": "70",
-      "suggested_live_dollars": "0.49",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "49",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-15T18:51:05.054109Z",
-      "ticker": "KXINXU-26JUL15H1600-T7544.9999",
-      "title": "Will the S&P 500 be above 7544.9999 on Jul 15, 2026 at 4pm EDT?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-90.5",
-      "implied_prob": "0.905",
-      "true_prob": "0.0",
-      "confidence": "70",
-      "suggested_live_dollars": "0.44",
-      "suggested_paper_dollars": "49.94",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "11",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-15T18:51:04.595353Z",
-      "ticker": "KXNASDAQ100U-26JUL15H1600-T29299.99",
-      "title": "Will the Nasdaq-100 be above 29299.99 at the end of Jul 15, 2026 at 4pm EDT?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-94.0",
-      "implied_prob": "0.94",
-      "true_prob": "0.0",
-      "confidence": "70",
-      "suggested_live_dollars": "0.49",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "7",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    }
-  ],
-  "recent_alerts": [
     {
       "timestamp": "2026-07-16T18:45:19.284291Z",
       "ticker": "KXBRENTD-26JUL1617-T83.50",
@@ -3345,27 +3177,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-07-16T03:59:04.640237Z",
-      "ticker": "KXAMZNA-28JANHEAD-1500000",
-      "title": "Will Amazon.com, Inc. report above 1500000 Employees (full-time and part-time; excludes contractors & temporary personnel) in 2026?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-93.0",
-      "implied_prob": "0.93",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "8",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -3403,9 +3214,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 76,
+      "current_cents": 77,
       "dollars_risked": 0,
-      "current_value": 1.52,
+      "current_value": 1.54,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -3427,9 +3238,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 78,
+      "current_cents": 77,
       "dollars_risked": 0,
-      "current_value": 0.78,
+      "current_value": 0.77,
       "pl_dollars": 0.0,
       "timestamp": ""
     }

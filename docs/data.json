@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-19T07:35:39.427296Z",
-  "last_scan_ts": "2026-07-19T07:35:39.427296Z",
+  "generated_at": "2026-07-19T13:13:28.399716Z",
+  "last_scan_ts": "2026-07-19T13:13:28.399716Z",
   "stats": {
-    "total_alerts": 8227,
+    "total_alerts": 8232,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -25,7 +25,7 @@
         "hit_rate": null
       },
       "Crypto": {
-        "total": 2456,
+        "total": 2457,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -43,19 +43,19 @@
         "hit_rate": null
       },
       "Companies": {
-        "total": 825,
+        "total": 826,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "Financials": {
-        "total": 858,
+        "total": 859,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "Commodities": {
-        "total": 952,
+        "total": 954,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,7 +69,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 1711,
+        "total": 1713,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -81,7 +81,7 @@
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 4941,
+        "total": 4944,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 10.79,
+      "balance": 10.8,
       "cash": 5.35,
       "peak": 11.42,
       "initial_balance": 10.0
@@ -101,15 +101,120 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-07-19T06:13:27.458673Z"
+    "updated_at": "2026-07-19T12:02:44.632092Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.44,
-  "account_value": 10.79,
-  "live_pnl": 0.79,
+  "position_value": 5.45,
+  "account_value": 10.8,
+  "live_pnl": 0.8,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-07-19T13:13:28.047766Z",
+      "ticker": "KXWTI-26JUL2014-T83.49",
+      "title": "Will the WTI crude oil settlement price be above 83.49 USD/Bbl on Jul 20, 2026?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-31.96",
+      "implied_prob": "0.575",
+      "true_prob": "0.2554",
+      "confidence": "85",
+      "suggested_live_dollars": "0.43",
+      "suggested_paper_dollars": "49.88",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "43",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-19T13:13:27.753309Z",
+      "ticker": "KXINXDUD-26JUL20H1600-T7457.69",
+      "title": "Will the S&P 500 be above 7457.69 on Jul 20, 2026 at 4pm EDT?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-46.5",
+      "implied_prob": "0.465",
+      "true_prob": "0.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.54",
+      "suggested_paper_dollars": "49.68",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "54",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-19T13:13:27.502445Z",
+      "ticker": "KXWTI-26JUL2114-T83.49",
+      "title": "Will the WTI crude oil settlement price be above 83.49 USD/Bbl on Jul 21, 2026?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-28.36",
+      "implied_prob": "0.595",
+      "true_prob": "0.3114",
+      "confidence": "85",
+      "suggested_live_dollars": "0.42",
+      "suggested_paper_dollars": "49.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "42",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-19T13:13:27.255920Z",
+      "ticker": "KXBTCMINMON-BTC-26JUL31-5750000",
+      "title": "Will BTC trimmed mean be below $57500.00 by 11:59 PM ET on Jul 31, 2026?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-8.13",
+      "implied_prob": "0.095",
+      "true_prob": "0.0137",
+      "confidence": "63",
+      "suggested_live_dollars": "0.91",
+      "suggested_paper_dollars": "19.11",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "91",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-19T13:13:26.960452Z",
+      "ticker": "KXTSLAA-28JANDEL-1600000.0",
+      "title": "Will Tesla Inc. report Above 1.6 million total deliveries in 2026?",
+      "category": "Companies",
+      "direction": "YES",
+      "edge_pct": "8.5",
+      "implied_prob": "0.915",
+      "true_prob": "1.0",
+      "confidence": "68",
+      "suggested_live_dollars": "0.94",
+      "suggested_paper_dollars": "19.74",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "94",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-07-19T07:35:38.988773Z",
       "ticker": "KXRAINMIAM-26JUL-4",
@@ -2234,6 +2339,111 @@
   ],
   "recent_alerts": [
     {
+      "timestamp": "2026-07-19T13:13:28.047766Z",
+      "ticker": "KXWTI-26JUL2014-T83.49",
+      "title": "Will the WTI crude oil settlement price be above 83.49 USD/Bbl on Jul 20, 2026?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-31.96",
+      "implied_prob": "0.575",
+      "true_prob": "0.2554",
+      "confidence": "85",
+      "suggested_live_dollars": "0.43",
+      "suggested_paper_dollars": "49.88",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "43",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-19T13:13:27.753309Z",
+      "ticker": "KXINXDUD-26JUL20H1600-T7457.69",
+      "title": "Will the S&P 500 be above 7457.69 on Jul 20, 2026 at 4pm EDT?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-46.5",
+      "implied_prob": "0.465",
+      "true_prob": "0.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.54",
+      "suggested_paper_dollars": "49.68",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "54",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-19T13:13:27.502445Z",
+      "ticker": "KXWTI-26JUL2114-T83.49",
+      "title": "Will the WTI crude oil settlement price be above 83.49 USD/Bbl on Jul 21, 2026?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-28.36",
+      "implied_prob": "0.595",
+      "true_prob": "0.3114",
+      "confidence": "85",
+      "suggested_live_dollars": "0.42",
+      "suggested_paper_dollars": "49.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "42",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-19T13:13:27.255920Z",
+      "ticker": "KXBTCMINMON-BTC-26JUL31-5750000",
+      "title": "Will BTC trimmed mean be below $57500.00 by 11:59 PM ET on Jul 31, 2026?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-8.13",
+      "implied_prob": "0.095",
+      "true_prob": "0.0137",
+      "confidence": "63",
+      "suggested_live_dollars": "0.91",
+      "suggested_paper_dollars": "19.11",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "91",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-19T13:13:26.960452Z",
+      "ticker": "KXTSLAA-28JANDEL-1600000.0",
+      "title": "Will Tesla Inc. report Above 1.6 million total deliveries in 2026?",
+      "category": "Companies",
+      "direction": "YES",
+      "edge_pct": "8.5",
+      "implied_prob": "0.915",
+      "true_prob": "1.0",
+      "confidence": "68",
+      "suggested_live_dollars": "0.94",
+      "suggested_paper_dollars": "19.74",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "94",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
       "timestamp": "2026-07-19T07:35:38.988773Z",
       "ticker": "KXRAINMIAM-26JUL-4",
       "title": "Rain in Miami in Jul 2026?",
@@ -3177,111 +3387,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-07-19T01:26:52.420544Z",
-      "ticker": "KXRATECUTCOUNT-26DEC31-T1",
-      "title": "Will the Fed cut rates 1 times?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "50.4",
-      "implied_prob": "0.15",
-      "true_prob": "0.654",
-      "confidence": "90",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "16",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-19T01:26:52.118625Z",
-      "ticker": "KXRATECUTCOUNT-26DEC31-T0",
-      "title": "Will the Fed cut rates 0 times?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-14.6",
-      "implied_prob": "0.8",
-      "true_prob": "0.654",
-      "confidence": "78",
-      "suggested_live_dollars": "0.2",
-      "suggested_paper_dollars": "20.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "20",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-19T01:26:51.828746Z",
-      "ticker": "KXNASDAQ100MAXY-26DEC31H1600-T31999.99",
-      "title": "Will the Nasdaq-100 be above 31999.99 at the end of Dec 31, 2026 at 4pm EST?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-37.5",
-      "implied_prob": "0.375",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.65",
-      "suggested_paper_dollars": "49.4",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "65",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-19T01:26:51.414115Z",
-      "ticker": "KXNASDAQ100MAXY-26DEC31H1600-T30799.99",
-      "title": "Will the Nasdaq-100 be above 30799.99 after issuance and before Dec 31, 2026 at 4pm EST?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-70.5",
-      "implied_prob": "0.705",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.34",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "34",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-19T01:26:51.081565Z",
-      "ticker": "KXNASDAQ100Y-26DEC31H1600-T33000",
-      "title": "Will the Nasdaq-100 be above 33000 at the end of Dec 31, 2026 at 4pm EST?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-21.0",
-      "implied_prob": "0.21",
-      "true_prob": "0.0",
-      "confidence": "80",
-      "suggested_live_dollars": "0.8",
-      "suggested_paper_dollars": "40.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "80",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -3295,9 +3400,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 71,
+      "current_cents": 72,
       "dollars_risked": 0,
-      "current_value": 0.71,
+      "current_value": 0.72,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

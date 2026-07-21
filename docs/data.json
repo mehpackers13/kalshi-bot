@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-21T04:22:31.867173Z",
-  "last_scan_ts": "2026-07-21T04:22:31.867173Z",
+  "generated_at": "2026-07-21T07:27:35.747015Z",
+  "last_scan_ts": "2026-07-21T07:27:35.747015Z",
   "stats": {
-    "total_alerts": 8473,
+    "total_alerts": 8477,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -25,7 +25,7 @@
         "hit_rate": null
       },
       "Crypto": {
-        "total": 2509,
+        "total": 2510,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -49,13 +49,13 @@
         "hit_rate": null
       },
       "Financials": {
-        "total": 909,
+        "total": 910,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "Commodities": {
-        "total": 1001,
+        "total": 1003,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,7 +69,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 1766,
+        "total": 1769,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -81,7 +81,7 @@
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 5089,
+        "total": 5090,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 10.83,
+      "balance": 10.86,
       "cash": 5.35,
       "peak": 11.42,
       "initial_balance": 10.0
@@ -101,15 +101,99 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-07-21T03:17:13.051987Z"
+    "updated_at": "2026-07-21T06:12:18.087875Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.48,
-  "account_value": 10.83,
-  "live_pnl": 0.83,
+  "position_value": 5.51,
+  "account_value": 10.86,
+  "live_pnl": 0.86,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-07-21T07:27:35.345975Z",
+      "ticker": "KXWTI-26JUL2114-T80.49",
+      "title": "Will the WTI crude oil settlement price be above 80.49 USD/Bbl on Jul 21, 2026?",
+      "category": "Commodities",
+      "direction": "YES",
+      "edge_pct": "8.01",
+      "implied_prob": "0.82",
+      "true_prob": "0.9001",
+      "confidence": "63",
+      "suggested_live_dollars": "0.83",
+      "suggested_paper_dollars": "19.92",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "83",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-21T07:27:35.117501Z",
+      "ticker": "KXWTI-26JUL2114-T79.99",
+      "title": "Will the WTI crude oil settlement price be above 79.99 USD/Bbl on Jul 21, 2026?",
+      "category": "Commodities",
+      "direction": "YES",
+      "edge_pct": "11.14",
+      "implied_prob": "0.835",
+      "true_prob": "0.9464",
+      "confidence": "63",
+      "suggested_live_dollars": "0.84",
+      "suggested_paper_dollars": "19.32",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "84",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-21T07:27:34.658550Z",
+      "ticker": "KXINXU-26JUL21H1600-T7434.9999",
+      "title": "Will the S&P 500 be above 7434.9999 on Jul 21, 2026 at 4pm EDT?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-84.0",
+      "implied_prob": "0.84",
+      "true_prob": "0.0",
+      "confidence": "80",
+      "suggested_live_dollars": "0.51",
+      "suggested_paper_dollars": "49.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "17",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-21T07:27:34.058923Z",
+      "ticker": "KXBTCMAXMON-BTC-26JUL31-7250000",
+      "title": "Will BTC trimmed mean be above $72500.00 by 11:59 PM ET on Jul 31, 2026?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-8.55",
+      "implied_prob": "0.105",
+      "true_prob": "0.0195",
+      "confidence": "68",
+      "suggested_live_dollars": "0.9",
+      "suggested_paper_dollars": "19.8",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "90",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-07-21T04:22:31.546718Z",
       "ticker": "FEDHIKE-27DEC31",
@@ -3154,303 +3238,93 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-07-20T04:47:54.457995Z",
-      "ticker": "KXBRENTD-26JUL2017-T90.00",
-      "title": "Will the brent crude oil close price be above 90.00 USD/Bbl on July 20, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "NO",
-      "edge_pct": "-59.42",
-      "implied_prob": "0.595",
-      "true_prob": "0.0008",
-      "confidence": "80",
-      "suggested_live_dollars": "0.41",
-      "suggested_paper_dollars": "49.61",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "41",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-20T04:47:54.078014Z",
-      "ticker": "KXBRENTD-26JUL2017-T87",
-      "title": "Will the brent crude oil close price be above 87 USD/Bbl on July 20, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "NO",
-      "edge_pct": "-89.98",
-      "implied_prob": "0.945",
-      "true_prob": "0.0452",
-      "confidence": "80",
-      "suggested_live_dollars": "0.54",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "6",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-20T04:47:53.620378Z",
-      "ticker": "KXRAINHOUM-26JUL-6",
-      "title": "Rain in Houston in Jul 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-24.0",
-      "implied_prob": "0.32",
-      "true_prob": "0.08",
-      "confidence": "75",
-      "suggested_live_dollars": "0.8",
-      "suggested_paper_dollars": "40.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "80",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-20T04:47:53.273447Z",
-      "ticker": "KXBTCMAXY-26DEC31-109999.99",
-      "title": "Will Bitcoin be above $109,999.99 by Dec 31, 2026 at 11:59 PM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-8.31",
-      "implied_prob": "0.085",
-      "true_prob": "0.0019",
-      "confidence": "68",
-      "suggested_live_dollars": "0.92",
-      "suggested_paper_dollars": "19.32",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "92",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-20T04:47:52.953928Z",
-      "ticker": "KXFEDDECISION-27APR-H0",
-      "title": "Will the Federal Reserve Hike rates by 0bps at their April 2027 meeting?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-21.4",
-      "implied_prob": "0.62",
-      "true_prob": "0.406",
-      "confidence": "75",
-      "suggested_live_dollars": "0.46",
-      "suggested_paper_dollars": "37.26",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "46",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-20T04:47:52.631511Z",
-      "ticker": "KXFEDDECISION-27DEC-H26",
-      "title": "Will the Federal Reserve Hike rates by >25bps at their December 2027 meeting?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "34.1",
-      "implied_prob": "0.065",
-      "true_prob": "0.406",
-      "confidence": "85",
-      "suggested_live_dollars": "0.49",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "7",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-20T04:47:52.257848Z",
-      "ticker": "KXAMZNA-28JANHEAD-1525000",
-      "title": "Will Amazon.com, Inc. report above 1525000 Employees (full-time and part-time; excludes contractors & temporary personnel) in 2026?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-89.5",
-      "implied_prob": "0.895",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.52",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "13",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-20T04:47:51.877009Z",
-      "ticker": "KXAMZNA-28JANHEAD-1500000",
-      "title": "Will Amazon.com, Inc. report above 1500000 Employees (full-time and part-time; excludes contractors & temporary personnel) in 2026?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-93.0",
-      "implied_prob": "0.93",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "8",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-20T04:47:51.493360Z",
-      "ticker": "KXNVDAA-28JANHEAD-46000",
-      "title": "Will NVIDIA Corporation report above 46000 total employees in 2027?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-87.5",
-      "implied_prob": "0.875",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.42",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "14",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-20T04:47:50.964052Z",
-      "ticker": "KXMELIA-28JANITEMS-3000000000.0",
-      "title": "Will MercadoLibre Inc. report Above 3 billion items sold in 2026?",
-      "category": "Financials",
-      "direction": "YES",
-      "edge_pct": "9.0",
-      "implied_prob": "0.91",
-      "true_prob": "1.0",
-      "confidence": "68",
-      "suggested_live_dollars": "0.93",
-      "suggested_paper_dollars": "19.53",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "93",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-20T04:47:50.596905Z",
-      "ticker": "KXTSLAA-28JANDEL-1700000.0",
-      "title": "Will Tesla Inc. report Above 1.7 million total deliveries in 2026?",
-      "category": "Companies",
-      "direction": "YES",
-      "edge_pct": "30.5",
-      "implied_prob": "0.695",
-      "true_prob": "1.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.72",
-      "suggested_paper_dollars": "49.68",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "72",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-20T04:47:50.224473Z",
-      "ticker": "KXMETAA-28JANHEAD-71000",
-      "title": "Will Meta Platforms, Inc. report above 71000 Headcount in 2026?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-65.5",
-      "implied_prob": "0.655",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.39",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "39",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-20T04:47:49.915301Z",
-      "ticker": "KXMETAA-28JANHEAD-68000",
-      "title": "Will Meta Platforms, Inc. report above 68000 Headcount in 2026?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-86.0",
-      "implied_prob": "0.86",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.54",
-      "suggested_paper_dollars": "49.86",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "18",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-20T04:47:49.437594Z",
-      "ticker": "KXMETAA-28JANHEAD-65000",
-      "title": "Will Meta Platforms, Inc. report above 65000 Headcount in 2026?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-90.5",
-      "implied_prob": "0.905",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.42",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "14",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "recent_alerts": [
+    {
+      "timestamp": "2026-07-21T07:27:35.345975Z",
+      "ticker": "KXWTI-26JUL2114-T80.49",
+      "title": "Will the WTI crude oil settlement price be above 80.49 USD/Bbl on Jul 21, 2026?",
+      "category": "Commodities",
+      "direction": "YES",
+      "edge_pct": "8.01",
+      "implied_prob": "0.82",
+      "true_prob": "0.9001",
+      "confidence": "63",
+      "suggested_live_dollars": "0.83",
+      "suggested_paper_dollars": "19.92",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "83",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-21T07:27:35.117501Z",
+      "ticker": "KXWTI-26JUL2114-T79.99",
+      "title": "Will the WTI crude oil settlement price be above 79.99 USD/Bbl on Jul 21, 2026?",
+      "category": "Commodities",
+      "direction": "YES",
+      "edge_pct": "11.14",
+      "implied_prob": "0.835",
+      "true_prob": "0.9464",
+      "confidence": "63",
+      "suggested_live_dollars": "0.84",
+      "suggested_paper_dollars": "19.32",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "84",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-21T07:27:34.658550Z",
+      "ticker": "KXINXU-26JUL21H1600-T7434.9999",
+      "title": "Will the S&P 500 be above 7434.9999 on Jul 21, 2026 at 4pm EDT?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-84.0",
+      "implied_prob": "0.84",
+      "true_prob": "0.0",
+      "confidence": "80",
+      "suggested_live_dollars": "0.51",
+      "suggested_paper_dollars": "49.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "17",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-21T07:27:34.058923Z",
+      "ticker": "KXBTCMAXMON-BTC-26JUL31-7250000",
+      "title": "Will BTC trimmed mean be above $72500.00 by 11:59 PM ET on Jul 31, 2026?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-8.55",
+      "implied_prob": "0.105",
+      "true_prob": "0.0195",
+      "confidence": "68",
+      "suggested_live_dollars": "0.9",
+      "suggested_paper_dollars": "19.8",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "90",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-07-21T04:22:31.546718Z",
       "ticker": "FEDHIKE-27DEC31",
@@ -4416,90 +4290,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-07-21T04:22:19.581933Z",
-      "ticker": "KXCOREUND-26DEC10-T2.2",
-      "title": "Will year-over-year Core CPI inflation for 2026 fall below 2.2%?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "47.48",
-      "implied_prob": "0.265",
-      "true_prob": "0.7398",
-      "confidence": "85",
-      "suggested_live_dollars": "0.54",
-      "suggested_paper_dollars": "49.95",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "27",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-21T04:22:19.331287Z",
-      "ticker": "KXBRAZILINF-26DEC-4.00",
-      "title": "Will inflation in Brazil be below 4.00% in Dec 2026?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "12.52",
-      "implied_prob": "0.315",
-      "true_prob": "0.4402",
-      "confidence": "68",
-      "suggested_live_dollars": "0.33",
-      "suggested_paper_dollars": "19.8",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "33",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-21T04:22:19.126062Z",
-      "ticker": "KXEMERCUTS-26-T0",
-      "title": "Will the Fed cut rates 0 times at emergency meetings?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-34.0",
-      "implied_prob": "0.92",
-      "true_prob": "0.58",
-      "confidence": "95",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "8",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-21T04:22:18.769574Z",
-      "ticker": "KXRATECUTCOUNT-26DEC31-T1",
-      "title": "Will the Fed cut rates 1 times?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "45.0",
-      "implied_prob": "0.13",
-      "true_prob": "0.58",
-      "confidence": "90",
-      "suggested_live_dollars": "0.52",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "13",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -4513,9 +4303,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 72,
+      "current_cents": 71,
       "dollars_risked": 0,
-      "current_value": 0.72,
+      "current_value": 0.71,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -4525,9 +4315,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 75,
+      "current_cents": 77,
       "dollars_risked": 0,
-      "current_value": 1.5,
+      "current_value": 1.54,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-23T19:49:51.497850Z",
-  "last_scan_ts": "2026-07-23T19:49:51.497850Z",
+  "generated_at": "2026-07-23T21:17:23.981670Z",
+  "last_scan_ts": "2026-07-23T21:17:23.981670Z",
   "stats": {
-    "total_alerts": 8759,
+    "total_alerts": 8761,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -37,7 +37,7 @@
         "hit_rate": null
       },
       "Climate and Weather": {
-        "total": 1018,
+        "total": 1019,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -55,7 +55,7 @@
         "hit_rate": null
       },
       "Commodities": {
-        "total": 1071,
+        "total": 1072,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,7 +69,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 1821,
+        "total": 1822,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -81,7 +81,7 @@
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 5270,
+        "total": 5271,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 11.02,
+      "balance": 10.98,
       "cash": 5.35,
       "peak": 11.42,
       "initial_balance": 10.0
@@ -101,15 +101,57 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-07-23T18:20:36.725574Z"
+    "updated_at": "2026-07-23T19:56:43.069013Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.67,
-  "account_value": 11.02,
-  "live_pnl": 1.02,
+  "position_value": 5.63,
+  "account_value": 10.98,
+  "live_pnl": 0.98,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-07-23T21:17:23.581735Z",
+      "ticker": "KXHIGHCHI-26JUL23-B76.5",
+      "title": "Will the high temp in Chicago be 76-77\u00b0 on Jul 23, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-40.43",
+      "implied_prob": "0.61",
+      "true_prob": "0.2057",
+      "confidence": "80",
+      "suggested_live_dollars": "0.41",
+      "suggested_paper_dollars": "49.61",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "41",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-23T21:17:23.221357Z",
+      "ticker": "KXWTI-26JUL2414-T89.99",
+      "title": "Will the WTI crude oil settlement price be above 89.99 USD/Bbl on Jul 24, 2026?",
+      "category": "Commodities",
+      "direction": "YES",
+      "edge_pct": "12.89",
+      "implied_prob": "0.72",
+      "true_prob": "0.8489",
+      "confidence": "63",
+      "suggested_live_dollars": "0.73",
+      "suggested_paper_dollars": "19.71",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "73",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-07-23T19:49:51.056058Z",
       "ticker": "KXBRENTD-26JUL2317-T101.00",
@@ -2801,6 +2843,48 @@
   ],
   "recent_alerts": [
     {
+      "timestamp": "2026-07-23T21:17:23.581735Z",
+      "ticker": "KXHIGHCHI-26JUL23-B76.5",
+      "title": "Will the high temp in Chicago be 76-77\u00b0 on Jul 23, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-40.43",
+      "implied_prob": "0.61",
+      "true_prob": "0.2057",
+      "confidence": "80",
+      "suggested_live_dollars": "0.41",
+      "suggested_paper_dollars": "49.61",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "41",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-23T21:17:23.221357Z",
+      "ticker": "KXWTI-26JUL2414-T89.99",
+      "title": "Will the WTI crude oil settlement price be above 89.99 USD/Bbl on Jul 24, 2026?",
+      "category": "Commodities",
+      "direction": "YES",
+      "edge_pct": "12.89",
+      "implied_prob": "0.72",
+      "true_prob": "0.8489",
+      "confidence": "63",
+      "suggested_live_dollars": "0.73",
+      "suggested_paper_dollars": "19.71",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "73",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
       "timestamp": "2026-07-23T19:49:51.056058Z",
       "ticker": "KXBRENTD-26JUL2317-T101.00",
       "title": "Will the brent crude oil close price be above 101.00 USD/Bbl on July 23, 2026 at 5:00 PM EDT?",
@@ -3807,48 +3891,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-07-23T01:23:50.521631Z",
-      "ticker": "KXBRENTW-26JUL2417-T86.99",
-      "title": "Will the brent crude oil close price be above 86.99 USD/Bbl on July 24, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "NO",
-      "edge_pct": "-22.97",
-      "implied_prob": "0.85",
-      "true_prob": "0.6203",
-      "confidence": "75",
-      "suggested_live_dollars": "0.32",
-      "suggested_paper_dollars": "40.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "16",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-23T01:23:50.249685Z",
-      "ticker": "KXFEDDECISION-26JUL-H25",
-      "title": "Will the Federal Reserve Hike rates by 25bps at their July 2026 meeting?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "22.5",
-      "implied_prob": "0.225",
-      "true_prob": "0.45",
-      "confidence": "85",
-      "suggested_live_dollars": "0.23",
-      "suggested_paper_dollars": "39.79",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "23",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -3886,9 +3928,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 84,
+      "current_cents": 82,
       "dollars_risked": 0,
-      "current_value": 1.68,
+      "current_value": 1.64,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

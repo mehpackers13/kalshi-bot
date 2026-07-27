@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-27T08:57:09.372183Z",
-  "last_scan_ts": "2026-07-27T08:57:09.372183Z",
+  "generated_at": "2026-07-27T14:51:41.244707Z",
+  "last_scan_ts": "2026-07-27T14:51:41.244707Z",
   "stats": {
-    "total_alerts": 9192,
+    "total_alerts": 9194,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -37,7 +37,7 @@
         "hit_rate": null
       },
       "Climate and Weather": {
-        "total": 1052,
+        "total": 1053,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -55,7 +55,7 @@
         "hit_rate": null
       },
       "Commodities": {
-        "total": 1135,
+        "total": 1136,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,7 +69,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 1929,
+        "total": 1930,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -81,7 +81,7 @@
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 5529,
+        "total": 5530,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 10.94,
+      "balance": 10.97,
       "cash": 5.35,
       "peak": 11.42,
       "initial_balance": 10.0
@@ -101,15 +101,57 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-07-27T07:37:53.700081Z"
+    "updated_at": "2026-07-27T13:42:11.028774Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.59,
-  "account_value": 10.94,
-  "live_pnl": 0.94,
+  "position_value": 5.62,
+  "account_value": 10.97,
+  "live_pnl": 0.97,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-07-27T14:51:40.880517Z",
+      "ticker": "KXGOLDD-26JUL2717-T4055",
+      "title": "Will the gold close price be above 4055 USD/t.oz on July 27, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-12.56",
+      "implied_prob": "0.825",
+      "true_prob": "0.6994",
+      "confidence": "63",
+      "suggested_live_dollars": "0.18",
+      "suggested_paper_dollars": "19.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "18",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-27T14:51:40.427386Z",
+      "ticker": "KXHIGHNY-26JUL27-B83.5",
+      "title": "Will the **high temp in NYC** be 83-84\u00b0 on Jul 27, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-45.09",
+      "implied_prob": "0.475",
+      "true_prob": "0.0241",
+      "confidence": "80",
+      "suggested_live_dollars": "0.54",
+      "suggested_paper_dollars": "49.68",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "54",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-07-27T08:57:08.943404Z",
       "ticker": "KXWTI-26JUL2714-T84.49",
@@ -2356,114 +2398,51 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-07-26T13:25:22.437310Z",
-      "ticker": "KXHIGHNY-26JUL26-B83.5",
-      "title": "Will the **high temp in NYC** be 83-84\u00b0 on Jul 26, 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-62.09",
-      "implied_prob": "0.645",
-      "true_prob": "0.0241",
-      "confidence": "80",
-      "suggested_live_dollars": "0.36",
-      "suggested_paper_dollars": "49.68",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "36",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-26T13:25:22.176315Z",
-      "ticker": "KXBRENTMON-26JUL3117-T88.99",
-      "title": "Will the brent crude oil close price be above 88.99 USD/Bbl on July 31, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "YES",
-      "edge_pct": "8.28",
-      "implied_prob": "0.44",
-      "true_prob": "0.5228",
-      "confidence": "68",
-      "suggested_live_dollars": "0.46",
-      "suggested_paper_dollars": "16.56",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "46",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-26T13:25:21.935998Z",
-      "ticker": "KXBRENTMON-26JUL3117-T86.99",
-      "title": "Will the brent crude oil close price be above 86.99 USD/Bbl on July 31, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "YES",
-      "edge_pct": "12.73",
-      "implied_prob": "0.535",
-      "true_prob": "0.6623",
-      "confidence": "68",
-      "suggested_live_dollars": "0.55",
-      "suggested_paper_dollars": "19.8",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "55",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-26T13:25:21.568779Z",
-      "ticker": "KXBRENTMON-26JUL3117-T82.99",
-      "title": "Will the brent crude oil close price be above 82.99 USD/Bbl on July 31, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "YES",
-      "edge_pct": "13.35",
-      "implied_prob": "0.745",
-      "true_prob": "0.8785",
-      "confidence": "68",
-      "suggested_live_dollars": "0.76",
-      "suggested_paper_dollars": "19.76",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "76",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-26T13:25:21.228369Z",
-      "ticker": "KXBRENTMON-26JUL3117-T80.99",
-      "title": "Will the brent crude oil close price be above 80.99 USD/Bbl on July 31, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "YES",
-      "edge_pct": "9.51",
-      "implied_prob": "0.845",
-      "true_prob": "0.9401",
-      "confidence": "68",
-      "suggested_live_dollars": "0.86",
-      "suggested_paper_dollars": "19.78",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "86",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "recent_alerts": [
+    {
+      "timestamp": "2026-07-27T14:51:40.880517Z",
+      "ticker": "KXGOLDD-26JUL2717-T4055",
+      "title": "Will the gold close price be above 4055 USD/t.oz on July 27, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-12.56",
+      "implied_prob": "0.825",
+      "true_prob": "0.6994",
+      "confidence": "63",
+      "suggested_live_dollars": "0.18",
+      "suggested_paper_dollars": "19.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "18",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-27T14:51:40.427386Z",
+      "ticker": "KXHIGHNY-26JUL27-B83.5",
+      "title": "Will the **high temp in NYC** be 83-84\u00b0 on Jul 27, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-45.09",
+      "implied_prob": "0.475",
+      "true_prob": "0.0241",
+      "confidence": "80",
+      "suggested_live_dollars": "0.54",
+      "suggested_paper_dollars": "49.68",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "54",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-07-27T08:57:08.943404Z",
       "ticker": "KXWTI-26JUL2714-T84.49",
@@ -3471,48 +3450,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-07-27T01:14:47.774521Z",
-      "ticker": "KXAC-26AUGPLF-86.0",
-      "title": "Will Air Canada report Above 86% passenger load factor in Q2 2026?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-75.5",
-      "implied_prob": "0.755",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.5",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "25",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-27T01:14:47.467899Z",
-      "ticker": "KXCOREUND-26DEC10-T2.2",
-      "title": "Will year-over-year Core CPI inflation for 2026 fall below 2.2%?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "51.03",
-      "implied_prob": "0.24",
-      "true_prob": "0.7503",
-      "confidence": "85",
-      "suggested_live_dollars": "0.54",
-      "suggested_paper_dollars": "49.95",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "27",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -3526,9 +3463,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 77,
+      "current_cents": 74,
       "dollars_risked": 0,
-      "current_value": 0.77,
+      "current_value": 0.74,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -3538,9 +3475,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 78,
+      "current_cents": 81,
       "dollars_risked": 0,
-      "current_value": 1.56,
+      "current_value": 1.62,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

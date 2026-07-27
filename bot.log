@@ -60909,3 +60909,96 @@ Total modelable markets evaluated: 0
 [2026-07-27 10:51:40 ET] [INFO] Scan complete — 2 alerts sent
 [2026-07-27 10:51:40 ET] [INFO] ============================================================
 [2026-07-27 10:51:41 ET] [INFO] Scan job complete
+[2026-07-27 12:26:44 ET] [INFO] Scan job starting
+[2026-07-27 12:26:45 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-07-27 12:26:45 ET] [INFO] ============================================================
+[2026-07-27 12:26:45 ET] [INFO] Starting market scan
+[2026-07-27 12:26:46 ET] [INFO] Portfolio value: $5.35 cash + $5.60 positions = $10.95
+[2026-07-27 12:26:46 ET] [INFO] Cash: $5.35  |  Positions: $5.60  |  Total: $10.95  |  Peak: $11.42
+[2026-07-27 12:26:46 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-07-27 12:26:46 ET] [WARN] API GET /markets → HTTP 400
+[2026-07-27 12:27:03 ET] [INFO] Fetched 68001 open markets via events endpoint across 42 pages
+[2026-07-27 12:27:03 ET] [INFO] Fetched 68001 open markets
+[2026-07-27 12:27:04 ET] [INFO] Parsed 63527 valid markets
+[2026-07-27 12:27:04 ET] [INFO] Categories: {'Sports': 28524, 'Elections': 11186, 'Entertainment': 6636, 'Financials': 4900, 'Crypto': 3022, 'Economics': 2981, 'Politics': 1870, 'Mentions': 1140}
+[2026-07-27 12:29:55 ET] [INFO]   CPI model: threshold=10.0% TNX=4.65% → P=0.200
+[2026-07-27 12:30:07 ET] [INFO]   price model: TSLA spot=309.53 target=1.60 vol=66.3% T=14700.5h → P=1.000
+[2026-07-27 12:41:04 ET] [INFO]   fed model: implied_rate=3.720% current≈3.813% diff=-9.3bps → P=0.686
+[2026-07-27 12:41:04 ET] [INFO]   EDGE FOUND: KXFEDDECISION-27SEP-C26 | implied=36.5% true=68.6% edge=+32.1% dir=YES conf=85
+[2026-07-27 12:42:43 ET] [INFO]   fed model: implied_rate=3.715% current≈3.813% diff=-9.8bps → P=0.696
+[2026-07-27 12:42:43 ET] [INFO]   EDGE FOUND: KXFEDDECISION-27JUN-C26 | implied=37.0% true=69.6% edge=+32.6% dir=YES conf=85
+[2026-07-27 13:01:44 ET] [INFO]   price model: ETH-USD spot=1937.85 target=4750.00 vol=37.3% T=3780.5h → P=0.000
+[2026-07-27 13:01:44 ET] [INFO]   price model: ETH-USD spot=1937.85 target=5000.00 vol=37.3% T=3780.5h → P=0.000
+[2026-07-27 13:02:01 ET] [INFO]   price model: BTC-USD spot=64845.89 target=119999.00 vol=25.5% T=3780.5h → P=0.000
+[2026-07-27 13:02:01 ET] [INFO]   price model: BTC-USD spot=64845.89 target=129999.00 vol=25.5% T=3780.5h → P=0.000
+[2026-07-27 13:02:01 ET] [INFO]   price model: BTC-USD spot=64845.89 target=139999.00 vol=25.5% T=3780.5h → P=0.000
+[2026-07-27 13:23:03 ET] [INFO]   CPI model: threshold=3.3% TNX=4.65% → P=0.635
+[2026-07-27 13:27:44 ET] [INFO]   price model: XRP-USD spot=1.09 target=1.00 vol=31.1% T=107.5h → P=0.005
+[2026-07-27 13:27:44 ET] [INFO]   EDGE FOUND: KXXRPMINMON-XRP-26JUL31-100 | implied=10.5% true=0.5% edge=-10.0% dir=NO conf=63
+[2026-07-27 13:27:46 ET] [INFO]   price model: SOL-USD spot=75.99 target=70.00 vol=37.2% T=107.5h → P=0.023
+[2026-07-27 13:27:46 ET] [INFO]   EDGE FOUND: KXSOLMINMON-SOL-26JUL31-7000 | implied=15.0% true=2.3% edge=-12.7% dir=NO conf=63
+[2026-07-27 13:29:29 ET] [INFO]   price model: CL=F spot=82.64 target=76.99 vol=57.4% T=100.5h → P=0.875
+[2026-07-27 13:29:29 ET] [INFO]   price model: CL=F spot=82.64 target=78.99 vol=57.4% T=100.5h → P=0.769
+[2026-07-27 13:29:29 ET] [INFO]   EDGE FOUND: KXBRENTMON-26JUL3117-T78.99 | implied=88.5% true=76.9% edge=-11.6% dir=NO conf=68
+[2026-07-27 13:34:22 ET] [INFO]   weather model: new york city rain 2026-07-27 forecast=6% → P=0.060
+[2026-07-27 13:34:22 ET] [INFO]   EDGE FOUND: KXRAIN-26JUL27-NYC | implied=70.5% true=6.0% edge=-64.5% dir=NO conf=80
+[2026-07-27 13:37:09 ET] [INFO]   weather model: nyc max=89.0°F target=[85,86]°F days_out=0 σ=3.5°F → P=0.138
+[2026-07-27 13:37:09 ET] [INFO]   EDGE FOUND: KXHIGHNY-26JUL27-B85.5 | implied=34.5% true=13.8% edge=-20.7% dir=NO conf=70
+[2026-07-27 13:37:10 ET] [INFO]   weather model: miami max=89.0°F target=[91,92]°F days_out=0 σ=3.5°F → P=0.175
+[2026-07-27 13:37:10 ET] [INFO]   EDGE FOUND: KXHIGHMIA-26JUL27-B91.5 | implied=56.5% true=17.5% edge=-38.9% dir=NO conf=80
+[2026-07-27 13:37:12 ET] [INFO]   weather model: chicago can't parse temp condition from title
+[2026-07-27 13:40:37 ET] [INFO]   price model: GC=F spot=4077.60 target=4065.00 vol=23.5% T=4.5h → P=0.718
+[2026-07-27 13:40:37 ET] [INFO]   EDGE FOUND: KXGOLDD-26JUL2717-T4065 | implied=86.5% true=71.8% edge=-14.7% dir=NO conf=53
+[2026-07-27 13:40:45 ET] [INFO]   price model: CL=F spot=82.70 target=84.50 vol=57.3% T=4.5h → P=0.049
+[2026-07-27 13:40:45 ET] [INFO]   EDGE FOUND: KXBRENTD-26JUL2717-T84.50 | implied=93.0% true=5.0% edge=-88.1% dir=NO conf=70
+[2026-07-27 13:40:45 ET] [INFO]   price model: CL=F spot=82.70 target=85.50 vol=57.3% T=4.5h → P=0.005
+[2026-07-27 13:40:45 ET] [INFO]   EDGE FOUND: KXBRENTD-26JUL2717-T85.50 | implied=77.5% true=0.5% edge=-77.0% dir=NO conf=70
+[2026-07-27 13:41:13 ET] [INFO]   price model: SPY spot=736.69 target=7380.00 vol=13.0% T=3.5h → P=0.000
+[2026-07-27 13:41:13 ET] [INFO]   EDGE FOUND: KXINXU-26JUL27H1600-T7379.9999 | implied=85.0% true=0.0% edge=-85.0% dir=NO conf=70
+[2026-07-27 13:41:13 ET] [INFO]   price model: SPY spot=736.69 target=7395.00 vol=13.0% T=3.5h → P=0.000
+[2026-07-27 13:41:13 ET] [INFO]   EDGE FOUND: KXINXU-26JUL27H1600-T7394.9999 | implied=74.0% true=0.0% edge=-74.0% dir=NO conf=75
+[2026-07-27 13:41:13 ET] [INFO]   price model: SPY spot=736.69 target=7400.00 vol=13.0% T=3.5h → P=0.000
+[2026-07-27 13:41:13 ET] [INFO]   EDGE FOUND: KXINXU-26JUL27H1600-T7399.9999 | implied=68.0% true=0.0% edge=-68.0% dir=NO conf=70
+[2026-07-27 13:41:14 ET] [INFO]   price model: SPY spot=736.69 target=7420.00 vol=13.0% T=3.5h → P=0.000
+[2026-07-27 13:41:14 ET] [INFO]   EDGE FOUND: KXINXU-26JUL27H1600-T7419.9999 | implied=43.0% true=0.0% edge=-43.0% dir=NO conf=70
+[2026-07-27 13:42:00 ET] [INFO]   price model: CL=F spot=82.69 target=81.99 vol=57.3% T=2.0h → P=0.834
+[2026-07-27 13:42:00 ET] [INFO]   price model: CL=F spot=82.69 target=82.49 vol=57.3% T=2.0h → P=0.609
+[2026-07-27 13:42:00 ET] [INFO]   EDGE FOUND: KXWTI-26JUL2714-T82.49 | implied=77.5% true=60.9% edge=-16.6% dir=NO conf=60
+[2026-07-27 13:42:00 ET] [INFO]   price model: CL=F spot=82.69 target=82.99 vol=57.3% T=2.0h → P=0.340
+[2026-07-27 13:42:00 ET] [INFO]   EDGE FOUND: KXWTI-26JUL2714-T82.99 | implied=63.5% true=34.0% edge=-29.5% dir=NO conf=70
+[2026-07-27 13:46:36 ET] [INFO] Checked 63428 markets | Modelable: 63428 | Edges found: 17
+[2026-07-27 13:46:36 ET] [INFO]   Skipping KXFEDDECISION-27SEP-C26 — suggested bet too small to be meaningful
+[2026-07-27 13:46:36 ET] [INFO]   Skipping KXFEDDECISION-27JUN-C26 — suggested bet too small to be meaningful
+[2026-07-27 13:46:37 ET] [INFO] [Discord] Trade alert sent: KXXRPMINMON-XRP-26JUL31-100
+[2026-07-27 13:46:37 ET] [WARN] AUTO-BET SKIP KXXRPMINMON-XRP-26JUL31-100: exposure 39.0% ≥ 25% limit ($7.00 of $17.95 in open positions)
+[2026-07-27 13:46:37 ET] [INFO] [Discord] Trade alert sent: KXSOLMINMON-SOL-26JUL31-7000
+[2026-07-27 13:46:37 ET] [WARN] AUTO-BET SKIP KXSOLMINMON-SOL-26JUL31-7000: exposure 39.0% ≥ 25% limit ($7.00 of $17.95 in open positions)
+[2026-07-27 13:46:37 ET] [INFO] [Discord] Trade alert sent: KXBRENTMON-26JUL3117-T78.99
+[2026-07-27 13:46:37 ET] [WARN] AUTO-BET SKIP KXBRENTMON-26JUL3117-T78.99: exposure 39.0% ≥ 25% limit ($7.00 of $17.95 in open positions)
+[2026-07-27 13:46:38 ET] [INFO] [Discord] Trade alert sent: KXRAIN-26JUL27-NYC
+[2026-07-27 13:46:38 ET] [WARN] AUTO-BET SKIP KXRAIN-26JUL27-NYC: exposure 39.0% ≥ 25% limit ($7.00 of $17.95 in open positions)
+[2026-07-27 13:46:38 ET] [INFO] [Discord] Trade alert sent: KXHIGHNY-26JUL27-B85.5
+[2026-07-27 13:46:38 ET] [WARN] AUTO-BET SKIP KXHIGHNY-26JUL27-B85.5: exposure 39.0% ≥ 25% limit ($7.00 of $17.95 in open positions)
+[2026-07-27 13:46:38 ET] [INFO] [Discord] Trade alert sent: KXHIGHMIA-26JUL27-B91.5
+[2026-07-27 13:46:38 ET] [WARN] AUTO-BET SKIP KXHIGHMIA-26JUL27-B91.5: exposure 39.0% ≥ 25% limit ($7.00 of $17.95 in open positions)
+[2026-07-27 13:46:38 ET] [INFO] [Discord] Trade alert sent: KXGOLDD-26JUL2717-T4065
+[2026-07-27 13:46:38 ET] [WARN] AUTO-BET SKIP KXGOLDD-26JUL2717-T4065: exposure 39.0% ≥ 25% limit ($7.00 of $17.95 in open positions)
+[2026-07-27 13:46:39 ET] [INFO] [Discord] Trade alert sent: KXBRENTD-26JUL2717-T84.50
+[2026-07-27 13:46:39 ET] [WARN] AUTO-BET SKIP KXBRENTD-26JUL2717-T84.50: exposure 39.0% ≥ 25% limit ($7.00 of $17.95 in open positions)
+[2026-07-27 13:46:39 ET] [INFO] [Discord] Trade alert sent: KXBRENTD-26JUL2717-T85.50
+[2026-07-27 13:46:39 ET] [WARN] AUTO-BET SKIP KXBRENTD-26JUL2717-T85.50: exposure 39.0% ≥ 25% limit ($7.00 of $17.95 in open positions)
+[2026-07-27 13:46:39 ET] [INFO] [Discord] Trade alert sent: KXINXU-26JUL27H1600-T7379.9999
+[2026-07-27 13:46:39 ET] [WARN] AUTO-BET SKIP KXINXU-26JUL27H1600-T7379.9999: exposure 39.0% ≥ 25% limit ($7.00 of $17.95 in open positions)
+[2026-07-27 13:46:40 ET] [INFO] [Discord] Trade alert sent: KXINXU-26JUL27H1600-T7394.9999
+[2026-07-27 13:46:40 ET] [WARN] AUTO-BET SKIP KXINXU-26JUL27H1600-T7394.9999: exposure 39.0% ≥ 25% limit ($7.00 of $17.95 in open positions)
+[2026-07-27 13:46:40 ET] [INFO] [Discord] Trade alert sent: KXINXU-26JUL27H1600-T7399.9999
+[2026-07-27 13:46:40 ET] [WARN] AUTO-BET SKIP KXINXU-26JUL27H1600-T7399.9999: exposure 39.0% ≥ 25% limit ($7.00 of $17.95 in open positions)
+[2026-07-27 13:46:40 ET] [INFO] [Discord] Trade alert sent: KXINXU-26JUL27H1600-T7419.9999
+[2026-07-27 13:46:40 ET] [WARN] AUTO-BET SKIP KXINXU-26JUL27H1600-T7419.9999: exposure 39.0% ≥ 25% limit ($7.00 of $17.95 in open positions)
+[2026-07-27 13:46:41 ET] [INFO] [Discord] Trade alert sent: KXWTI-26JUL2714-T82.49
+[2026-07-27 13:46:41 ET] [WARN] AUTO-BET SKIP KXWTI-26JUL2714-T82.49: exposure 39.0% ≥ 25% limit ($7.00 of $17.95 in open positions)
+[2026-07-27 13:46:41 ET] [INFO] [Discord] Trade alert sent: KXWTI-26JUL2714-T82.99
+[2026-07-27 13:46:41 ET] [WARN] AUTO-BET SKIP KXWTI-26JUL2714-T82.99: exposure 39.0% ≥ 25% limit ($7.00 of $17.95 in open positions)
+[2026-07-27 13:46:41 ET] [INFO] Scan complete — 15 alerts sent
+[2026-07-27 13:46:41 ET] [INFO] ============================================================
+[2026-07-27 13:46:41 ET] [INFO] Scan job complete

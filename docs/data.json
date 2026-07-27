@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-27T19:25:03.869445Z",
-  "last_scan_ts": "2026-07-27T19:25:03.869445Z",
+  "generated_at": "2026-07-27T21:25:35.403197Z",
+  "last_scan_ts": "2026-07-27T21:25:35.403197Z",
   "stats": {
-    "total_alerts": 9210,
+    "total_alerts": 9211,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -55,7 +55,7 @@
         "hit_rate": null
       },
       "Commodities": {
-        "total": 1142,
+        "total": 1143,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,7 +69,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 1934,
+        "total": 1935,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 10.97,
+      "balance": 10.85,
       "cash": 5.35,
       "peak": 11.42,
       "initial_balance": 10.0
@@ -101,15 +101,36 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-07-27T18:08:31.511014Z"
+    "updated_at": "2026-07-27T20:06:39.728643Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.62,
-  "account_value": 10.97,
-  "live_pnl": 0.97,
+  "position_value": 5.5,
+  "account_value": 10.85,
+  "live_pnl": 0.85,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-07-27T21:25:34.819556Z",
+      "ticker": "KXBRENTMON-26JUL3117-T76.99",
+      "title": "Will the brent crude oil close price be above 76.99 USD/Bbl on July 31, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-9.16",
+      "implied_prob": "0.925",
+      "true_prob": "0.8334",
+      "confidence": "68",
+      "suggested_live_dollars": "0.09",
+      "suggested_paper_dollars": "12.96",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "9",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-07-27T19:25:03.384253Z",
       "ticker": "KXRAINCHIM-26JUL-6",
@@ -2629,30 +2650,30 @@
       "null": [
         ""
       ]
-    },
+    }
+  ],
+  "recent_alerts": [
     {
-      "timestamp": "2026-07-26T19:51:48.807168Z",
-      "ticker": "KXHIGHCHI-26JUL26-B89.5",
-      "title": "Will the high temp in Chicago be 89-90\u00b0 on Jul 26, 2026?",
-      "category": "Climate and Weather",
+      "timestamp": "2026-07-27T21:25:34.819556Z",
+      "ticker": "KXBRENTMON-26JUL3117-T76.99",
+      "title": "Will the brent crude oil close price be above 76.99 USD/Bbl on July 31, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
       "direction": "NO",
-      "edge_pct": "-53.0",
-      "implied_prob": "0.54",
-      "true_prob": "0.01",
-      "confidence": "80",
-      "suggested_live_dollars": "0.47",
-      "suggested_paper_dollars": "49.82",
+      "edge_pct": "-9.16",
+      "implied_prob": "0.925",
+      "true_prob": "0.8334",
+      "confidence": "68",
+      "suggested_live_dollars": "0.09",
+      "suggested_paper_dollars": "12.96",
       "is_paper_bet": "1",
-      "paper_entry_price_cents": "47",
+      "paper_entry_price_cents": "9",
       "outcome": "",
       "resolved_at": "",
       "notes": "",
       "null": [
         ""
       ]
-    }
-  ],
-  "recent_alerts": [
+    },
     {
       "timestamp": "2026-07-27T19:25:03.384253Z",
       "ticker": "KXRAINCHIM-26JUL-6",
@@ -3681,27 +3702,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-07-27T01:14:53.192558Z",
-      "ticker": "KXCPICOREYOY-26JUL-T2.2",
-      "title": "Will the rate of core CPI inflation be above 2.2% for the year ending in July 2026?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-16.97",
-      "implied_prob": "0.92",
-      "true_prob": "0.7503",
-      "confidence": "75",
-      "suggested_live_dollars": "0.13",
-      "suggested_paper_dollars": "22.1",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "13",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -3715,9 +3715,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 74,
+      "current_cents": 76,
       "dollars_risked": 0,
-      "current_value": 0.74,
+      "current_value": 0.76,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -3739,9 +3739,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 75,
+      "current_cents": 68,
       "dollars_risked": 0,
-      "current_value": 1.5,
+      "current_value": 1.36,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

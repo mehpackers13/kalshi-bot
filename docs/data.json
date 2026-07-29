@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-29T07:56:47.955733Z",
-  "last_scan_ts": "2026-07-29T07:56:47.955733Z",
+  "generated_at": "2026-07-29T14:37:26.629085Z",
+  "last_scan_ts": "2026-07-29T14:37:26.629085Z",
   "stats": {
-    "total_alerts": 9444,
+    "total_alerts": 9451,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -13,7 +13,7 @@
         "hit_rate": null
       },
       "Economics": {
-        "total": 2027,
+        "total": 2028,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -31,13 +31,13 @@
         "hit_rate": null
       },
       "Sports": {
-        "total": 223,
+        "total": 224,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "Climate and Weather": {
-        "total": 1071,
+        "total": 1073,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -49,13 +49,13 @@
         "hit_rate": null
       },
       "Financials": {
-        "total": 1137,
+        "total": 1138,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "Commodities": {
-        "total": 1181,
+        "total": 1183,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,19 +69,19 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 1985,
+        "total": 1987,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "medium (15-25%)": {
-        "total": 1776,
+        "total": 1777,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 5683,
+        "total": 5687,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 11.18,
+      "balance": 11.2,
       "cash": 5.35,
       "peak": 11.42,
       "initial_balance": 10.0
@@ -101,15 +101,162 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-07-29T06:14:24.973043Z"
+    "updated_at": "2026-07-29T13:05:01.272643Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.83,
-  "account_value": 11.18,
-  "live_pnl": 1.18,
+  "position_value": 5.85,
+  "account_value": 11.2,
+  "live_pnl": 1.2,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-07-29T14:37:26.232737Z",
+      "ticker": "KXWTI-26JUL2914-T83.49",
+      "title": "Will the WTI crude oil settlement price be above 83.49 USD/Bbl on Jul 29, 2026?",
+      "category": "Commodities",
+      "direction": "YES",
+      "edge_pct": "10.89",
+      "implied_prob": "0.685",
+      "true_prob": "0.7939",
+      "confidence": "53",
+      "suggested_live_dollars": "0.69",
+      "suggested_paper_dollars": "19.32",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "69",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-29T14:37:25.923060Z",
+      "ticker": "KXBRENTD-26JUL2917-T85",
+      "title": "Will the brent crude oil close price be above 85 USD/Bbl on July 29, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-40.28",
+      "implied_prob": "0.795",
+      "true_prob": "0.3922",
+      "confidence": "80",
+      "suggested_live_dollars": "0.44",
+      "suggested_paper_dollars": "49.94",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "22",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-29T14:37:25.557486Z",
+      "ticker": "KXINXU-26JUL29H1600-T7469.9999",
+      "title": "Will the S&P 500 be above 7469.9999 on Jul 29, 2026 at 4pm EDT?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-27.5",
+      "implied_prob": "0.275",
+      "true_prob": "0.0",
+      "confidence": "80",
+      "suggested_live_dollars": "0.74",
+      "suggested_paper_dollars": "49.58",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "74",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-29T14:37:25.267579Z",
+      "ticker": "KXWNBASPREAD-26JUL29GSPHX-GS5",
+      "title": "Golden State wins the game by over 4.5 points?",
+      "category": "Sports",
+      "direction": "YES",
+      "edge_pct": "49.5",
+      "implied_prob": "0.505",
+      "true_prob": "1.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.51",
+      "suggested_paper_dollars": "49.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "51",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-29T14:37:23.596201Z",
+      "ticker": "KXHIGHNY-26JUL29-B80.5",
+      "title": "Will the **high temp in NYC** be 80-81\u00b0 on Jul 29, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-18.45",
+      "implied_prob": "0.36",
+      "true_prob": "0.1755",
+      "confidence": "70",
+      "suggested_live_dollars": "0.65",
+      "suggested_paper_dollars": "39.65",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "65",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-29T14:37:23.204052Z",
+      "ticker": "KXHIGHNY-26JUL29-B78.5",
+      "title": "Will the **high temp in NYC** be 78-79\u00b0 on Jul 29, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-33.94",
+      "implied_prob": "0.44",
+      "true_prob": "0.1006",
+      "confidence": "80",
+      "suggested_live_dollars": "0.57",
+      "suggested_paper_dollars": "49.59",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "57",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-29T14:37:22.703811Z",
+      "ticker": "KXCPICOREYOY-26NOV-T2.0",
+      "title": "Will the rate of core CPI inflation be above 2.0% for the year ending in November 2026?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-14.73",
+      "implied_prob": "0.91",
+      "true_prob": "0.7627",
+      "confidence": "68",
+      "suggested_live_dollars": "0.17",
+      "suggested_paper_dollars": "5.95",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "17",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-07-29T07:56:47.523923Z",
       "ticker": "KXGOLDD-26JUL2917-T4025",
@@ -3049,114 +3196,156 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-07-28T14:28:25.843961Z",
-      "ticker": "KXINXU-26JUL28H1600-T7379.9999",
-      "title": "Will the S&P 500 be above 7379.9999 on Jul 28, 2026 at 4pm EDT?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-83.5",
-      "implied_prob": "0.835",
-      "true_prob": "0.0",
-      "confidence": "80",
-      "suggested_live_dollars": "0.54",
-      "suggested_paper_dollars": "49.86",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "18",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-28T14:28:25.545023Z",
-      "ticker": "KXINXU-26JUL28H1600-T7344.9999",
-      "title": "Will the S&P 500 be above 7344.9999 on Jul 28, 2026 at 4pm EDT?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-94.0",
-      "implied_prob": "0.94",
-      "true_prob": "0.0",
-      "confidence": "80",
-      "suggested_live_dollars": "0.56",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "7",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-28T14:28:25.168998Z",
-      "ticker": "KXHIGHNY-26JUL28-B79.5",
-      "title": "Will the **high temp in NYC** be 79-80\u00b0 on Jul 28, 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-53.5",
-      "implied_prob": "0.545",
-      "true_prob": "0.01",
-      "confidence": "80",
-      "suggested_live_dollars": "0.46",
-      "suggested_paper_dollars": "49.68",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "46",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-28T14:28:24.850632Z",
-      "ticker": "KXCPIYOY-26JUL-T3.3",
-      "title": "Will the rate of CPI inflation be above 3.3% for the year ending in July 2026?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "8.26",
-      "implied_prob": "0.55",
-      "true_prob": "0.6326",
-      "confidence": "73",
-      "suggested_live_dollars": "0.56",
-      "suggested_paper_dollars": "19.6",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "56",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-28T14:28:24.482737Z",
-      "ticker": "KXAC-26AUGPLF-85.5",
-      "title": "Will Air Canada report Above 85.5% passenger load factor in Q2 2026?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-80.5",
-      "implied_prob": "0.805",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.4",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "20",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "recent_alerts": [
+    {
+      "timestamp": "2026-07-29T14:37:26.232737Z",
+      "ticker": "KXWTI-26JUL2914-T83.49",
+      "title": "Will the WTI crude oil settlement price be above 83.49 USD/Bbl on Jul 29, 2026?",
+      "category": "Commodities",
+      "direction": "YES",
+      "edge_pct": "10.89",
+      "implied_prob": "0.685",
+      "true_prob": "0.7939",
+      "confidence": "53",
+      "suggested_live_dollars": "0.69",
+      "suggested_paper_dollars": "19.32",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "69",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-29T14:37:25.923060Z",
+      "ticker": "KXBRENTD-26JUL2917-T85",
+      "title": "Will the brent crude oil close price be above 85 USD/Bbl on July 29, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-40.28",
+      "implied_prob": "0.795",
+      "true_prob": "0.3922",
+      "confidence": "80",
+      "suggested_live_dollars": "0.44",
+      "suggested_paper_dollars": "49.94",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "22",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-29T14:37:25.557486Z",
+      "ticker": "KXINXU-26JUL29H1600-T7469.9999",
+      "title": "Will the S&P 500 be above 7469.9999 on Jul 29, 2026 at 4pm EDT?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-27.5",
+      "implied_prob": "0.275",
+      "true_prob": "0.0",
+      "confidence": "80",
+      "suggested_live_dollars": "0.74",
+      "suggested_paper_dollars": "49.58",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "74",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-29T14:37:25.267579Z",
+      "ticker": "KXWNBASPREAD-26JUL29GSPHX-GS5",
+      "title": "Golden State wins the game by over 4.5 points?",
+      "category": "Sports",
+      "direction": "YES",
+      "edge_pct": "49.5",
+      "implied_prob": "0.505",
+      "true_prob": "1.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.51",
+      "suggested_paper_dollars": "49.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "51",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-29T14:37:23.596201Z",
+      "ticker": "KXHIGHNY-26JUL29-B80.5",
+      "title": "Will the **high temp in NYC** be 80-81\u00b0 on Jul 29, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-18.45",
+      "implied_prob": "0.36",
+      "true_prob": "0.1755",
+      "confidence": "70",
+      "suggested_live_dollars": "0.65",
+      "suggested_paper_dollars": "39.65",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "65",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-29T14:37:23.204052Z",
+      "ticker": "KXHIGHNY-26JUL29-B78.5",
+      "title": "Will the **high temp in NYC** be 78-79\u00b0 on Jul 29, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-33.94",
+      "implied_prob": "0.44",
+      "true_prob": "0.1006",
+      "confidence": "80",
+      "suggested_live_dollars": "0.57",
+      "suggested_paper_dollars": "49.59",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "57",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-29T14:37:22.703811Z",
+      "ticker": "KXCPICOREYOY-26NOV-T2.0",
+      "title": "Will the rate of core CPI inflation be above 2.0% for the year ending in November 2026?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-14.73",
+      "implied_prob": "0.91",
+      "true_prob": "0.7627",
+      "confidence": "68",
+      "suggested_live_dollars": "0.17",
+      "suggested_paper_dollars": "5.95",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "17",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-07-29T07:56:47.523923Z",
       "ticker": "KXGOLDD-26JUL2917-T4025",
@@ -4059,153 +4248,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-07-29T02:42:01.294801Z",
-      "ticker": "KXBTCMINY-27JAN01-45000.00",
-      "title": "Will Bitcoin be below $45000.00 by Jan 1, 2027 at 12:00am ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-33.65",
-      "implied_prob": "0.355",
-      "true_prob": "0.0185",
-      "confidence": "90",
-      "suggested_live_dollars": "0.65",
-      "suggested_paper_dollars": "49.4",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "65",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-29T02:42:01.007445Z",
-      "ticker": "KXBTCMINY-27JAN01-50000.00",
-      "title": "Will Bitcoin be below $50000.00 by Jan 1, 2027 at 12:00am ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-37.22",
-      "implied_prob": "0.445",
-      "true_prob": "0.0728",
-      "confidence": "90",
-      "suggested_live_dollars": "0.56",
-      "suggested_paper_dollars": "49.84",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "56",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-29T02:42:00.773448Z",
-      "ticker": "KXBTCMINY-27JAN01-55000.00",
-      "title": "Will Bitcoin be below $55000.00 by Jan 1, 2027 at 12:00am ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-41.7",
-      "implied_prob": "0.605",
-      "true_prob": "0.188",
-      "confidence": "90",
-      "suggested_live_dollars": "0.4",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "40",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-29T02:42:00.311986Z",
-      "ticker": "KXETHMAXY-27JAN01-4500.00",
-      "title": "Will Ethereum reach above $4500.00 by Jan 1, 2027 at 12:00AM?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-8.47",
-      "implied_prob": "0.085",
-      "true_prob": "0.0003",
-      "confidence": "63",
-      "suggested_live_dollars": "0.92",
-      "suggested_paper_dollars": "19.32",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "92",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-29T02:42:00.034058Z",
-      "ticker": "KXETHMAXY-27JAN01-4250.00",
-      "title": "Will Ethereum reach above $4250.00 by Jan 1, 2027 at 12:00AM?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-8.44",
-      "implied_prob": "0.085",
-      "true_prob": "0.0006",
-      "confidence": "63",
-      "suggested_live_dollars": "0.92",
-      "suggested_paper_dollars": "19.32",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "92",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-29T02:41:59.586679Z",
-      "ticker": "KXETHMAXY-27JAN01-4000.00",
-      "title": "Will Ethereum reach above $4000.00 by Jan 1, 2027 at 12:00AM?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-10.36",
-      "implied_prob": "0.105",
-      "true_prob": "0.0014",
-      "confidence": "63",
-      "suggested_live_dollars": "0.9",
-      "suggested_paper_dollars": "19.8",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "90",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-29T02:41:59.095989Z",
-      "ticker": "KXETHMAXY-27JAN01-3750.00",
-      "title": "Will Ethereum reach above $3750.00 by Jan 1, 2027 at 12:00AM?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-11.18",
-      "implied_prob": "0.115",
-      "true_prob": "0.0032",
-      "confidence": "63",
-      "suggested_live_dollars": "0.89",
-      "suggested_paper_dollars": "19.58",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "89",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -4231,9 +4273,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 84,
+      "current_cents": 85,
       "dollars_risked": 0,
-      "current_value": 1.68,
+      "current_value": 1.7,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

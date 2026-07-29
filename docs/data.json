@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-29T04:58:33.845996Z",
-  "last_scan_ts": "2026-07-29T04:58:33.845996Z",
+  "generated_at": "2026-07-29T07:56:47.955733Z",
+  "last_scan_ts": "2026-07-29T07:56:47.955733Z",
   "stats": {
-    "total_alerts": 9441,
+    "total_alerts": 9444,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -55,7 +55,7 @@
         "hit_rate": null
       },
       "Commodities": {
-        "total": 1178,
+        "total": 1181,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,7 +69,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 1984,
+        "total": 1985,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -81,7 +81,7 @@
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 5681,
+        "total": 5683,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 11.22,
+      "balance": 11.18,
       "cash": 5.35,
       "peak": 11.42,
       "initial_balance": 10.0
@@ -101,15 +101,78 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-07-29T03:12:25.571400Z"
+    "updated_at": "2026-07-29T06:14:24.973043Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.87,
-  "account_value": 11.22,
-  "live_pnl": 1.22,
+  "position_value": 5.83,
+  "account_value": 11.18,
+  "live_pnl": 1.18,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-07-29T07:56:47.523923Z",
+      "ticker": "KXGOLDD-26JUL2917-T4025",
+      "title": "Will the gold close price be above 4025 USD/t.oz on July 29, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "YES",
+      "edge_pct": "38.34",
+      "implied_prob": "0.605",
+      "true_prob": "0.9884",
+      "confidence": "80",
+      "suggested_live_dollars": "0.61",
+      "suggested_paper_dollars": "49.41",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "61",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-29T07:56:47.226943Z",
+      "ticker": "KXGOLDD-26JUL2917-T4015",
+      "title": "Will the gold close price be above 4015 USD/t.oz on July 29, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "YES",
+      "edge_pct": "31.97",
+      "implied_prob": "0.675",
+      "true_prob": "0.9947",
+      "confidence": "80",
+      "suggested_live_dollars": "0.68",
+      "suggested_paper_dollars": "49.64",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "68",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-29T07:56:46.854299Z",
+      "ticker": "KXBRENTMON-26JUL3117-T78.99",
+      "title": "Will the brent crude oil close price be above 78.99 USD/Bbl on July 31, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-8.96",
+      "implied_prob": "0.88",
+      "true_prob": "0.7904",
+      "confidence": "68",
+      "suggested_live_dollars": "0.13",
+      "suggested_paper_dollars": "14.56",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "13",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-07-29T04:58:33.402169Z",
       "ticker": "KXWNBASPREAD-26JUL28INDSEA-IND19",
@@ -3091,93 +3154,72 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-07-28T07:06:34.546241Z",
-      "ticker": "KXWTI-26JUL2814-T81.99",
-      "title": "Will the WTI crude oil settlement price be above 81.99 USD/Bbl on Jul 28, 2026?",
-      "category": "Commodities",
-      "direction": "NO",
-      "edge_pct": "-23.66",
-      "implied_prob": "0.525",
-      "true_prob": "0.2884",
-      "confidence": "70",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "39.84",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "48",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-28T07:06:34.029673Z",
-      "ticker": "KXWTI-26JUL2814-T81.49",
-      "title": "Will the WTI crude oil settlement price be above 81.49 USD/Bbl on Jul 28, 2026?",
-      "category": "Commodities",
-      "direction": "NO",
-      "edge_pct": "-23.41",
-      "implied_prob": "0.625",
-      "true_prob": "0.3909",
-      "confidence": "70",
-      "suggested_live_dollars": "0.38",
-      "suggested_paper_dollars": "39.9",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "38",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-28T07:06:33.682010Z",
-      "ticker": "KXWNBASPREAD-26JUL28INDSEA-IND2",
-      "title": "Indiana wins the game by over 1.5 points?",
-      "category": "Sports",
-      "direction": "YES",
-      "edge_pct": "23.5",
-      "implied_prob": "0.765",
-      "true_prob": "1.0",
-      "confidence": "75",
-      "suggested_live_dollars": "0.77",
-      "suggested_paper_dollars": "39.27",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "77",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-28T07:06:33.137759Z",
-      "ticker": "KXBTCMAXMON-BTC-26JUL31-6750000",
-      "title": "Will BTC trimmed mean be above $67500.00 by 11:59 PM ET on Jul 31, 2026?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-8.17",
-      "implied_prob": "0.095",
-      "true_prob": "0.0133",
-      "confidence": "73",
-      "suggested_live_dollars": "0.91",
-      "suggested_paper_dollars": "19.11",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "91",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "recent_alerts": [
+    {
+      "timestamp": "2026-07-29T07:56:47.523923Z",
+      "ticker": "KXGOLDD-26JUL2917-T4025",
+      "title": "Will the gold close price be above 4025 USD/t.oz on July 29, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "YES",
+      "edge_pct": "38.34",
+      "implied_prob": "0.605",
+      "true_prob": "0.9884",
+      "confidence": "80",
+      "suggested_live_dollars": "0.61",
+      "suggested_paper_dollars": "49.41",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "61",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-29T07:56:47.226943Z",
+      "ticker": "KXGOLDD-26JUL2917-T4015",
+      "title": "Will the gold close price be above 4015 USD/t.oz on July 29, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "YES",
+      "edge_pct": "31.97",
+      "implied_prob": "0.675",
+      "true_prob": "0.9947",
+      "confidence": "80",
+      "suggested_live_dollars": "0.68",
+      "suggested_paper_dollars": "49.64",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "68",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-29T07:56:46.854299Z",
+      "ticker": "KXBRENTMON-26JUL3117-T78.99",
+      "title": "Will the brent crude oil close price be above 78.99 USD/Bbl on July 31, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-8.96",
+      "implied_prob": "0.88",
+      "true_prob": "0.7904",
+      "confidence": "68",
+      "suggested_live_dollars": "0.13",
+      "suggested_paper_dollars": "14.56",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "13",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-07-29T04:58:33.402169Z",
       "ticker": "KXWNBASPREAD-26JUL28INDSEA-IND19",
@@ -4164,69 +4206,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-07-29T02:41:58.597979Z",
-      "ticker": "KXETHMAXY-27JAN01-3500.00",
-      "title": "Will Ethereum reach above $3500.00 by Jan 1, 2027 at 12:00AM?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-13.77",
-      "implied_prob": "0.145",
-      "true_prob": "0.0073",
-      "confidence": "68",
-      "suggested_live_dollars": "0.86",
-      "suggested_paper_dollars": "19.78",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "86",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-29T02:41:58.406856Z",
-      "ticker": "KXETHMINY-27JAN01-1000",
-      "title": "Will Ethereum reach below $1000.00 by Jan 1, 2027 at 12:00AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-13.05",
-      "implied_prob": "0.135",
-      "true_prob": "0.0045",
-      "confidence": "63",
-      "suggested_live_dollars": "0.87",
-      "suggested_paper_dollars": "19.14",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "87",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-29T02:41:58.156711Z",
-      "ticker": "KXETHMINY-27JAN01-1250",
-      "title": "Will Ethereum reach below $1250.00 by Jan 1, 2027 at 12:00AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-31.13",
-      "implied_prob": "0.355",
-      "true_prob": "0.0437",
-      "confidence": "85",
-      "suggested_live_dollars": "0.65",
-      "suggested_paper_dollars": "49.4",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "65",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -4252,9 +4231,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 86,
+      "current_cents": 84,
       "dollars_risked": 0,
-      "current_value": 1.72,
+      "current_value": 1.68,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

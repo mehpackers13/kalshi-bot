@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-31T02:37:22.825090Z",
-  "last_scan_ts": "2026-07-31T02:37:22.825090Z",
+  "generated_at": "2026-07-31T05:06:51.937939Z",
+  "last_scan_ts": "2026-07-31T05:06:51.937939Z",
   "stats": {
-    "total_alerts": 9671,
+    "total_alerts": 9674,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -37,7 +37,7 @@
         "hit_rate": null
       },
       "Climate and Weather": {
-        "total": 1087,
+        "total": 1089,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -55,7 +55,7 @@
         "hit_rate": null
       },
       "Commodities": {
-        "total": 1224,
+        "total": 1225,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,19 +69,19 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 2036,
+        "total": 2037,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "medium (15-25%)": {
-        "total": 1813,
+        "total": 1814,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 5822,
+        "total": 5823,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 11.32,
+      "balance": 11.42,
       "cash": 5.35,
       "peak": 11.42,
       "initial_balance": 10.0
@@ -101,15 +101,78 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-07-31T01:07:04.161402Z"
+    "updated_at": "2026-07-31T03:27:33.372721Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.97,
-  "account_value": 11.32,
-  "live_pnl": 1.32,
+  "position_value": 6.07,
+  "account_value": 11.42,
+  "live_pnl": 1.42,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-07-31T05:06:51.525150Z",
+      "ticker": "KXRAINCHIM-26JUL-7",
+      "title": "Rain in Chicago in Jul 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-31.0",
+      "implied_prob": "0.4",
+      "true_prob": "0.09",
+      "confidence": "85",
+      "suggested_live_dollars": "0.67",
+      "suggested_paper_dollars": "49.58",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "67",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-31T05:06:51.264654Z",
+      "ticker": "KXRAINMIAM-26JUL-5",
+      "title": "Rain in Miami in Jul 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-20.5",
+      "implied_prob": "0.335",
+      "true_prob": "0.13",
+      "confidence": "75",
+      "suggested_live_dollars": "0.71",
+      "suggested_paper_dollars": "39.76",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "71",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-31T05:06:50.958391Z",
+      "ticker": "KXGOLDDIRY-26DEC31H1700-T4300",
+      "title": "Will the price of Gold be above 4300 on December 31, 2026 at 05:00 PM EST?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-8.06",
+      "implied_prob": "0.465",
+      "true_prob": "0.3844",
+      "confidence": "68",
+      "suggested_live_dollars": "0.55",
+      "suggested_paper_dollars": "19.8",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "55",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-07-31T02:37:22.388440Z",
       "ticker": "FEDHIKE-27DEC31",
@@ -2461,21 +2524,23 @@
       "null": [
         ""
       ]
-    },
+    }
+  ],
+  "recent_alerts": [
     {
-      "timestamp": "2026-07-30T04:15:30.748562Z",
-      "ticker": "KXWNBA1HSPREAD-26JUL29GSPHX-GS3",
-      "title": "Golden State wins the 1st half by over 2.5 points?",
-      "category": "Sports",
-      "direction": "YES",
-      "edge_pct": "74.5",
-      "implied_prob": "0.255",
-      "true_prob": "1.0",
+      "timestamp": "2026-07-31T05:06:51.525150Z",
+      "ticker": "KXRAINCHIM-26JUL-7",
+      "title": "Rain in Chicago in Jul 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-31.0",
+      "implied_prob": "0.4",
+      "true_prob": "0.09",
       "confidence": "85",
-      "suggested_live_dollars": "0.52",
-      "suggested_paper_dollars": "49.92",
+      "suggested_live_dollars": "0.67",
+      "suggested_paper_dollars": "49.58",
       "is_paper_bet": "1",
-      "paper_entry_price_cents": "26",
+      "paper_entry_price_cents": "67",
       "outcome": "",
       "resolved_at": "",
       "notes": "",
@@ -2484,19 +2549,19 @@
       ]
     },
     {
-      "timestamp": "2026-07-30T04:15:30.568215Z",
-      "ticker": "KXWNBASPREAD-26JUL29GSPHX-GS2",
-      "title": "Golden State wins the game by over 1.5 points?",
-      "category": "Sports",
-      "direction": "YES",
-      "edge_pct": "49.0",
-      "implied_prob": "0.51",
-      "true_prob": "1.0",
-      "confidence": "90",
-      "suggested_live_dollars": "0.52",
-      "suggested_paper_dollars": "49.92",
+      "timestamp": "2026-07-31T05:06:51.264654Z",
+      "ticker": "KXRAINMIAM-26JUL-5",
+      "title": "Rain in Miami in Jul 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-20.5",
+      "implied_prob": "0.335",
+      "true_prob": "0.13",
+      "confidence": "75",
+      "suggested_live_dollars": "0.71",
+      "suggested_paper_dollars": "39.76",
       "is_paper_bet": "1",
-      "paper_entry_price_cents": "52",
+      "paper_entry_price_cents": "71",
       "outcome": "",
       "resolved_at": "",
       "notes": "",
@@ -2505,143 +2570,17 @@
       ]
     },
     {
-      "timestamp": "2026-07-30T04:15:30.336371Z",
-      "ticker": "KXWNBASPREAD-26JUL29GSPHX-GS8",
-      "title": "Golden State wins the game by over 7.5 points?",
-      "category": "Sports",
-      "direction": "YES",
-      "edge_pct": "73.5",
-      "implied_prob": "0.265",
-      "true_prob": "1.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.54",
-      "suggested_paper_dollars": "49.95",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "27",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-30T04:15:30.186075Z",
-      "ticker": "KXWNBATOTAL-26JUL29GSPHX-167",
-      "title": "Golden State vs Phoenix women's Pro Basketball game: Over 166.5 points?",
-      "category": "Sports",
-      "direction": "YES",
-      "edge_pct": "89.5",
-      "implied_prob": "0.105",
-      "true_prob": "1.0",
-      "confidence": "85",
+      "timestamp": "2026-07-31T05:06:50.958391Z",
+      "ticker": "KXGOLDDIRY-26DEC31H1700-T4300",
+      "title": "Will the price of Gold be above 4300 on December 31, 2026 at 05:00 PM EST?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-8.06",
+      "implied_prob": "0.465",
+      "true_prob": "0.3844",
+      "confidence": "68",
       "suggested_live_dollars": "0.55",
-      "suggested_paper_dollars": "49.94",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "11",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-30T04:15:29.962822Z",
-      "ticker": "KXWNBATOTAL-26JUL29GSPHX-161",
-      "title": "Golden State vs Phoenix women's Pro Basketball game: Over 160.5 points?",
-      "category": "Sports",
-      "direction": "YES",
-      "edge_pct": "84.5",
-      "implied_prob": "0.155",
-      "true_prob": "1.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "16",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-30T04:15:29.817192Z",
-      "ticker": "KXWNBATOTAL-26JUL29GSPHX-155",
-      "title": "Golden State vs Phoenix women's Pro Basketball game: Over 154.5 points?",
-      "category": "Sports",
-      "direction": "YES",
-      "edge_pct": "72.5",
-      "implied_prob": "0.275",
-      "true_prob": "1.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.56",
-      "suggested_paper_dollars": "49.84",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "28",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-30T04:15:29.511560Z",
-      "ticker": "KXWNBATOTAL-26JUL29GSPHX-152",
-      "title": "Golden State vs Phoenix women's Pro Basketball game: Over 151.5 points?",
-      "category": "Sports",
-      "direction": "YES",
-      "edge_pct": "63.5",
-      "implied_prob": "0.365",
-      "true_prob": "1.0",
-      "confidence": "90",
-      "suggested_live_dollars": "0.37",
-      "suggested_paper_dollars": "49.95",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "37",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-30T04:15:29.156092Z",
-      "ticker": "KXWNBATOTAL-26JUL29GSPHX-149",
-      "title": "Golden State vs Phoenix women's Pro Basketball game: Over 148.5 points?",
-      "category": "Sports",
-      "direction": "YES",
-      "edge_pct": "54.5",
-      "implied_prob": "0.455",
-      "true_prob": "1.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.46",
-      "suggested_paper_dollars": "49.68",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "46",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-30T04:15:29.014046Z",
-      "ticker": "KXWNBATOTAL-26JUL29GSPHX-146",
-      "title": "Golden State vs Phoenix women's Pro Basketball game: Over 145.5 points?",
-      "category": "Sports",
-      "direction": "YES",
-      "edge_pct": "45.5",
-      "implied_prob": "0.545",
-      "true_prob": "1.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.55",
-      "suggested_paper_dollars": "49.5",
+      "suggested_paper_dollars": "19.8",
       "is_paper_bet": "1",
       "paper_entry_price_cents": "55",
       "outcome": "",
@@ -2651,302 +2590,6 @@
         ""
       ]
     },
-    {
-      "timestamp": "2026-07-30T04:15:28.788348Z",
-      "ticker": "KXWNBATOTAL-26JUL29GSPHX-143",
-      "title": "Golden State vs Phoenix women's Pro Basketball game: Over 142.5 points?",
-      "category": "Sports",
-      "direction": "YES",
-      "edge_pct": "35.5",
-      "implied_prob": "0.645",
-      "true_prob": "1.0",
-      "confidence": "90",
-      "suggested_live_dollars": "0.65",
-      "suggested_paper_dollars": "49.4",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "65",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-30T04:15:28.534109Z",
-      "ticker": "KXPCECORE-26JUN-T0.1",
-      "title": "Will the rate of core PCE inflation be above 0.1% in June 2026?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "9.0",
-      "implied_prob": "0.71",
-      "true_prob": "0.8",
-      "confidence": "63",
-      "suggested_live_dollars": "0.76",
-      "suggested_paper_dollars": "6.84",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "76",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-30T04:15:28.255461Z",
-      "ticker": "KXRAINMIAM-26JUL-5",
-      "title": "Rain in Miami in Jul 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-23.0",
-      "implied_prob": "0.31",
-      "true_prob": "0.08",
-      "confidence": "75",
-      "suggested_live_dollars": "0.72",
-      "suggested_paper_dollars": "39.6",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "72",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-30T04:15:27.908938Z",
-      "ticker": "KXFEDDECISION-27JAN-H0",
-      "title": "Will the Federal Reserve Hike rates by 0bps at their January 2027 meeting?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-21.1",
-      "implied_prob": "0.665",
-      "true_prob": "0.454",
-      "confidence": "75",
-      "suggested_live_dollars": "0.34",
-      "suggested_paper_dollars": "39.78",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "34",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-30T04:15:27.686401Z",
-      "ticker": "KXFEDDECISION-27APR-H0",
-      "title": "Will the Federal Reserve Hike rates by 0bps at their April 2027 meeting?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-11.6",
-      "implied_prob": "0.57",
-      "true_prob": "0.454",
-      "confidence": "68",
-      "suggested_live_dollars": "0.47",
-      "suggested_paper_dollars": "18.33",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "47",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-30T04:15:27.238761Z",
-      "ticker": "KXFEDDECISION-27DEC-H26",
-      "title": "Will the Federal Reserve Hike rates by >25bps at their December 2027 meeting?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "36.4",
-      "implied_prob": "0.09",
-      "true_prob": "0.454",
-      "confidence": "85",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "12",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-30T04:15:27.011711Z",
-      "ticker": "KXAMZNA-28JANHEAD-1525000",
-      "title": "Will Amazon.com, Inc. report above 1525000 Employees (full-time and part-time; excludes contractors & temporary personnel) in 2026?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-89.5",
-      "implied_prob": "0.895",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.52",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "13",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-30T04:15:26.712795Z",
-      "ticker": "KXAMZNA-28JANHEAD-1500000",
-      "title": "Will Amazon.com, Inc. report above 1500000 Employees (full-time and part-time; excludes contractors & temporary personnel) in 2026?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-92.0",
-      "implied_prob": "0.92",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.5",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "10",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-30T04:15:26.397267Z",
-      "ticker": "KXNVDAA-28JANHEAD-46000",
-      "title": "Will NVIDIA Corporation report above 46000 total employees in 2027?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-90.0",
-      "implied_prob": "0.9",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "12",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-30T04:15:26.181807Z",
-      "ticker": "KXMELIA-28JANITEMS-3000000000.0",
-      "title": "Will MercadoLibre Inc. report Above 3 billion items sold in 2026?",
-      "category": "Financials",
-      "direction": "YES",
-      "edge_pct": "9.0",
-      "implied_prob": "0.91",
-      "true_prob": "1.0",
-      "confidence": "68",
-      "suggested_live_dollars": "0.93",
-      "suggested_paper_dollars": "19.53",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "93",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-30T04:15:25.901271Z",
-      "ticker": "KXTSLAA-28JANDEL-1700000.0",
-      "title": "Will Tesla Inc. report Above 1.7 million total deliveries in 2026?",
-      "category": "Companies",
-      "direction": "YES",
-      "edge_pct": "25.5",
-      "implied_prob": "0.745",
-      "true_prob": "1.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.77",
-      "suggested_paper_dollars": "49.28",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "77",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-30T04:15:25.589595Z",
-      "ticker": "KXMETAA-28JANHEAD-71000",
-      "title": "Will Meta Platforms, Inc. report above 71000 Headcount in 2026?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-66.0",
-      "implied_prob": "0.66",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.39",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "39",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-30T04:15:25.305298Z",
-      "ticker": "KXMETAA-28JANHEAD-68000",
-      "title": "Will Meta Platforms, Inc. report above 68000 Headcount in 2026?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-86.0",
-      "implied_prob": "0.86",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.54",
-      "suggested_paper_dollars": "49.86",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "18",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-30T04:15:24.927448Z",
-      "ticker": "KXMETAA-28JANHEAD-65000",
-      "title": "Will Meta Platforms, Inc. report above 65000 Headcount in 2026?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-90.5",
-      "implied_prob": "0.905",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.56",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "14",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    }
-  ],
-  "recent_alerts": [
     {
       "timestamp": "2026-07-31T02:37:22.388440Z",
       "ticker": "FEDHIKE-27DEC31",
@@ -3933,69 +3576,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-07-31T02:37:04.265748Z",
-      "ticker": "KXSOLMAXY-27JAN01-170",
-      "title": "Will the spot price of Solana be above $170.00 before Jan 1, 2027 at 12:00 AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-12.5",
-      "implied_prob": "0.125",
-      "true_prob": "0.0",
-      "confidence": "63",
-      "suggested_live_dollars": "0.89",
-      "suggested_paper_dollars": "19.58",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "89",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-31T02:37:03.860083Z",
-      "ticker": "KXSOLMAXY-27JAN01-160",
-      "title": "Will the spot price of Solana be above $160.00 before Jan 1, 2027 at 12:00 AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-14.5",
-      "implied_prob": "0.145",
-      "true_prob": "0.0",
-      "confidence": "63",
-      "suggested_live_dollars": "0.88",
-      "suggested_paper_dollars": "19.36",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "88",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-31T02:37:03.522458Z",
-      "ticker": "KXSOLMAXY-27JAN01-150",
-      "title": "Will the spot price of Solana be above $150.00 before Jan 1, 2027 at 12:00 AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-14.49",
-      "implied_prob": "0.145",
-      "true_prob": "0.0001",
-      "confidence": "63",
-      "suggested_live_dollars": "0.86",
-      "suggested_paper_dollars": "19.78",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "86",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -4009,9 +3589,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 86,
+      "current_cents": 88,
       "dollars_risked": 0,
-      "current_value": 0.86,
+      "current_value": 0.88,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -4021,9 +3601,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 83,
+      "current_cents": 87,
       "dollars_risked": 0,
-      "current_value": 1.66,
+      "current_value": 1.74,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

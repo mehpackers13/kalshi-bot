@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-31T05:06:51.937939Z",
-  "last_scan_ts": "2026-07-31T05:06:51.937939Z",
+  "generated_at": "2026-07-31T07:58:41.902425Z",
+  "last_scan_ts": "2026-07-31T07:58:41.902425Z",
   "stats": {
-    "total_alerts": 9674,
+    "total_alerts": 9679,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -31,7 +31,7 @@
         "hit_rate": null
       },
       "Sports": {
-        "total": 239,
+        "total": 241,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -49,13 +49,13 @@
         "hit_rate": null
       },
       "Financials": {
-        "total": 1180,
+        "total": 1181,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "Commodities": {
-        "total": 1225,
+        "total": 1227,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,7 +69,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 2037,
+        "total": 2038,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -81,7 +81,7 @@
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 5823,
+        "total": 5827,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 11.42,
+      "balance": 11.32,
       "cash": 5.35,
       "peak": 11.42,
       "initial_balance": 10.0
@@ -101,15 +101,120 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-07-31T03:27:33.372721Z"
+    "updated_at": "2026-07-31T06:31:14.236206Z"
   },
   "cash_bal": 5.35,
-  "position_value": 6.07,
-  "account_value": 11.42,
-  "live_pnl": 1.42,
+  "position_value": 5.97,
+  "account_value": 11.32,
+  "live_pnl": 1.32,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-07-31T07:58:41.519612Z",
+      "ticker": "KXWTI-26JUL3114-T81.49",
+      "title": "Will the WTI crude oil settlement price be above 81.49 USD/Bbl on Jul 31, 2026?",
+      "category": "Commodities",
+      "direction": "YES",
+      "edge_pct": "11.62",
+      "implied_prob": "0.61",
+      "true_prob": "0.7262",
+      "confidence": "63",
+      "suggested_live_dollars": "0.62",
+      "suggested_paper_dollars": "19.84",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "62",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-31T07:58:41.291297Z",
+      "ticker": "KXBRENTW-26JUL3117-T84.99",
+      "title": "Will the brent crude oil close price be above 84.99 USD/Bbl on July 31, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-48.51",
+      "implied_prob": "0.58",
+      "true_prob": "0.0949",
+      "confidence": "80",
+      "suggested_live_dollars": "0.44",
+      "suggested_paper_dollars": "49.72",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "44",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-31T07:58:41.025687Z",
+      "ticker": "KXWNBATOTAL-26JUL31INDPDX-188",
+      "title": "Indiana vs Portland women's Pro Basketball game: Over 187.5 points?",
+      "category": "Sports",
+      "direction": "YES",
+      "edge_pct": "47.5",
+      "implied_prob": "0.525",
+      "true_prob": "1.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.53",
+      "suggested_paper_dollars": "49.82",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "53",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-31T07:58:40.775439Z",
+      "ticker": "KXPGAROUNDSCORE-ROC26R2-JSPI68",
+      "title": "Will Jordan Spieth shoot under 68.5 in Round 2?",
+      "category": "Sports",
+      "direction": "NO",
+      "edge_pct": "-57.5",
+      "implied_prob": "0.575",
+      "true_prob": "0.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.49",
+      "suggested_paper_dollars": "49.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "49",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-31T07:58:40.379165Z",
+      "ticker": "KXAC-26AUGPLF-86.5",
+      "title": "Will Air Canada report Above 86.5% passenger load factor in Q2 2026?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-60.5",
+      "implied_prob": "0.605",
+      "true_prob": "0.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.4",
+      "suggested_paper_dollars": "50.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "40",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-07-31T05:06:51.525150Z",
       "ticker": "KXRAINCHIM-26JUL-7",
@@ -2356,19 +2461,105 @@
       "null": [
         ""
       ]
-    },
+    }
+  ],
+  "recent_alerts": [
     {
-      "timestamp": "2026-07-30T07:13:50.548283Z",
-      "ticker": "KXWTI-26JUL3014-T85.49",
-      "title": "Will the WTI crude oil settlement price be above 85.49 USD/Bbl on Jul 30, 2026?",
+      "timestamp": "2026-07-31T07:58:41.519612Z",
+      "ticker": "KXWTI-26JUL3114-T81.49",
+      "title": "Will the WTI crude oil settlement price be above 81.49 USD/Bbl on Jul 31, 2026?",
       "category": "Commodities",
       "direction": "YES",
-      "edge_pct": "11.11",
-      "implied_prob": "0.395",
-      "true_prob": "0.5061",
+      "edge_pct": "11.62",
+      "implied_prob": "0.61",
+      "true_prob": "0.7262",
       "confidence": "63",
+      "suggested_live_dollars": "0.62",
+      "suggested_paper_dollars": "19.84",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "62",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-31T07:58:41.291297Z",
+      "ticker": "KXBRENTW-26JUL3117-T84.99",
+      "title": "Will the brent crude oil close price be above 84.99 USD/Bbl on July 31, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-48.51",
+      "implied_prob": "0.58",
+      "true_prob": "0.0949",
+      "confidence": "80",
+      "suggested_live_dollars": "0.44",
+      "suggested_paper_dollars": "49.72",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "44",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-31T07:58:41.025687Z",
+      "ticker": "KXWNBATOTAL-26JUL31INDPDX-188",
+      "title": "Indiana vs Portland women's Pro Basketball game: Over 187.5 points?",
+      "category": "Sports",
+      "direction": "YES",
+      "edge_pct": "47.5",
+      "implied_prob": "0.525",
+      "true_prob": "1.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.53",
+      "suggested_paper_dollars": "49.82",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "53",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-31T07:58:40.775439Z",
+      "ticker": "KXPGAROUNDSCORE-ROC26R2-JSPI68",
+      "title": "Will Jordan Spieth shoot under 68.5 in Round 2?",
+      "category": "Sports",
+      "direction": "NO",
+      "edge_pct": "-57.5",
+      "implied_prob": "0.575",
+      "true_prob": "0.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.49",
+      "suggested_paper_dollars": "49.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "49",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-07-31T07:58:40.379165Z",
+      "ticker": "KXAC-26AUGPLF-86.5",
+      "title": "Will Air Canada report Above 86.5% passenger load factor in Q2 2026?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-60.5",
+      "implied_prob": "0.605",
+      "true_prob": "0.0",
+      "confidence": "85",
       "suggested_live_dollars": "0.4",
-      "suggested_paper_dollars": "20.0",
+      "suggested_paper_dollars": "50.0",
       "is_paper_bet": "1",
       "paper_entry_price_cents": "40",
       "outcome": "",
@@ -2378,155 +2569,6 @@
         ""
       ]
     },
-    {
-      "timestamp": "2026-07-30T07:13:50.289603Z",
-      "ticker": "KXWTI-26JUL3014-T84.49",
-      "title": "Will the WTI crude oil settlement price be above 84.49 USD/Bbl on Jul 30, 2026?",
-      "category": "Commodities",
-      "direction": "YES",
-      "edge_pct": "12.72",
-      "implied_prob": "0.575",
-      "true_prob": "0.7022",
-      "confidence": "63",
-      "suggested_live_dollars": "0.58",
-      "suggested_paper_dollars": "19.72",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "58",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-30T07:13:49.906197Z",
-      "ticker": "KXWTI-26JUL3014-T83.99",
-      "title": "Will the WTI crude oil settlement price be above 83.99 USD/Bbl on Jul 30, 2026?",
-      "category": "Commodities",
-      "direction": "YES",
-      "edge_pct": "10.05",
-      "implied_prob": "0.685",
-      "true_prob": "0.7855",
-      "confidence": "63",
-      "suggested_live_dollars": "0.69",
-      "suggested_paper_dollars": "19.32",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "69",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-30T07:13:49.685222Z",
-      "ticker": "KXWTI-26JUL3014-T83.49",
-      "title": "Will the WTI crude oil settlement price be above 83.49 USD/Bbl on Jul 30, 2026?",
-      "category": "Commodities",
-      "direction": "YES",
-      "edge_pct": "10.87",
-      "implied_prob": "0.745",
-      "true_prob": "0.8537",
-      "confidence": "63",
-      "suggested_live_dollars": "0.75",
-      "suggested_paper_dollars": "19.5",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "75",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-30T07:13:49.328574Z",
-      "ticker": "KXWTI-26JUL3014-T82.99",
-      "title": "Will the WTI crude oil settlement price be above 82.99 USD/Bbl on Jul 30, 2026?",
-      "category": "Commodities",
-      "direction": "YES",
-      "edge_pct": "11.08",
-      "implied_prob": "0.795",
-      "true_prob": "0.9058",
-      "confidence": "63",
-      "suggested_live_dollars": "0.8",
-      "suggested_paper_dollars": "20.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "80",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-30T07:13:49.083982Z",
-      "ticker": "KXWTI-26JUL3014-T82.49",
-      "title": "Will the WTI crude oil settlement price be above 82.49 USD/Bbl on Jul 30, 2026?",
-      "category": "Commodities",
-      "direction": "YES",
-      "edge_pct": "10.3",
-      "implied_prob": "0.84",
-      "true_prob": "0.943",
-      "confidence": "63",
-      "suggested_live_dollars": "0.85",
-      "suggested_paper_dollars": "19.55",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "85",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-30T07:13:48.872550Z",
-      "ticker": "KXGOLDD-26JUL3017-T3998",
-      "title": "Will the gold close price be above 3998 USD/t.oz on July 30, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "YES",
-      "edge_pct": "22.24",
-      "implied_prob": "0.775",
-      "true_prob": "0.9974",
-      "confidence": "70",
-      "suggested_live_dollars": "0.79",
-      "suggested_paper_dollars": "39.5",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "79",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-30T07:13:48.510087Z",
-      "ticker": "KXTSLAA-28JANDEL-1750000.0",
-      "title": "Will Tesla Inc. report Above 1.75 million total deliveries in 2026?",
-      "category": "Companies",
-      "direction": "YES",
-      "edge_pct": "48.5",
-      "implied_prob": "0.515",
-      "true_prob": "1.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.55",
-      "suggested_paper_dollars": "49.5",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "55",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    }
-  ],
-  "recent_alerts": [
     {
       "timestamp": "2026-07-31T05:06:51.525150Z",
       "ticker": "KXRAINCHIM-26JUL-7",
@@ -3471,111 +3513,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-07-31T02:37:06.318492Z",
-      "ticker": "KXETHMAXY-27JAN01-3750.00",
-      "title": "Will Ethereum reach above $3750.00 by Jan 1, 2027 at 12:00AM?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-11.36",
-      "implied_prob": "0.115",
-      "true_prob": "0.0014",
-      "confidence": "63",
-      "suggested_live_dollars": "0.89",
-      "suggested_paper_dollars": "19.58",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "89",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-31T02:37:05.831371Z",
-      "ticker": "KXETHMAXY-27JAN01-3500.00",
-      "title": "Will Ethereum reach above $3500.00 by Jan 1, 2027 at 12:00AM?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-14.13",
-      "implied_prob": "0.145",
-      "true_prob": "0.0037",
-      "confidence": "68",
-      "suggested_live_dollars": "0.86",
-      "suggested_paper_dollars": "19.78",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "86",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-31T02:37:05.447312Z",
-      "ticker": "KXETHMINY-27JAN01-1000",
-      "title": "Will Ethereum reach below $1000.00 by Jan 1, 2027 at 12:00AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-13.31",
-      "implied_prob": "0.135",
-      "true_prob": "0.0019",
-      "confidence": "63",
-      "suggested_live_dollars": "0.87",
-      "suggested_paper_dollars": "19.14",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "87",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-31T02:37:05.098320Z",
-      "ticker": "KXETHMINY-27JAN01-1250",
-      "title": "Will Ethereum reach below $1250.00 by Jan 1, 2027 at 12:00AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-32.68",
-      "implied_prob": "0.355",
-      "true_prob": "0.0282",
-      "confidence": "90",
-      "suggested_live_dollars": "0.65",
-      "suggested_paper_dollars": "49.4",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "65",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-31T02:37:04.628623Z",
-      "ticker": "KXETHMINY-27JAN01-1500",
-      "title": "Will Ethereum reach below $1500.00 by Jan 1, 2027 at 12:00AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-36.84",
-      "implied_prob": "0.505",
-      "true_prob": "0.1366",
-      "confidence": "90",
-      "suggested_live_dollars": "0.5",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "50",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -3589,9 +3526,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 88,
+      "current_cents": 86,
       "dollars_risked": 0,
-      "current_value": 0.88,
+      "current_value": 0.86,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -3601,9 +3538,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 87,
+      "current_cents": 83,
       "dollars_risked": 0,
-      "current_value": 1.74,
+      "current_value": 1.66,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

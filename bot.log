@@ -64222,3 +64222,31 @@ Total modelable markets evaluated: 0
 [2026-07-31 15:15:51 ET] [INFO] Scan complete — 15 alerts sent
 [2026-07-31 15:15:51 ET] [INFO] ============================================================
 [2026-07-31 15:15:51 ET] [INFO] Scan job complete
+[2026-07-31 15:45:22 ET] [INFO] Scan job starting
+[2026-07-31 15:45:22 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-07-31 15:45:22 ET] [INFO] ============================================================
+[2026-07-31 15:45:22 ET] [INFO] Starting market scan
+[2026-07-31 15:45:24 ET] [INFO] Portfolio value: $5.35 cash + $5.87 positions = $11.22
+[2026-07-31 15:45:24 ET] [INFO] Cash: $5.35  |  Positions: $5.87  |  Total: $11.22  |  Peak: $11.46
+[2026-07-31 15:45:24 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-07-31 15:45:25 ET] [WARN] API GET /markets → HTTP 400
+[2026-07-31 15:45:48 ET] [INFO] Fetched 72664 open markets via events endpoint across 45 pages
+[2026-07-31 15:45:48 ET] [INFO] Fetched 72664 open markets
+[2026-07-31 15:45:49 ET] [INFO] Parsed 67718 valid markets
+[2026-07-31 15:45:49 ET] [INFO] Categories: {'Sports': 34758, 'Elections': 11195, 'Entertainment': 6275, 'Financials': 3830, 'Economics': 3193, 'Crypto': 2584, 'Politics': 1983, 'Mentions': 1093}
+[2026-07-31 15:50:00 ET] [INFO]   price model: TSLA spot=312.18 target=1.60 vol=67.5% T=14601.2h → P=1.000
+[2026-07-31 16:30:38 ET] [INFO]   price model: BTC-USD spot=62931.37 target=109999.00 vol=25.1% T=3681.2h → P=0.000
+[2026-07-31 16:30:38 ET] [INFO]   price model: BTC-USD spot=62931.37 target=119999.00 vol=25.1% T=3681.2h → P=0.000
+[2026-07-31 16:30:38 ET] [INFO]   price model: BTC-USD spot=62931.37 target=129999.00 vol=25.1% T=3681.2h → P=0.000
+[2026-07-31 16:48:47 ET] [INFO]   fed model: implied_rate=3.635% current≈3.682% diff=-4.7bps → P=0.406
+[2026-07-31 16:51:51 ET] [INFO]   weather model: houston can't parse temp condition from title
+[2026-07-31 16:56:35 ET] [INFO]   CPI model: threshold=3.3% TNX=4.74% → P=0.644
+[2026-07-31 17:13:28 ET] [INFO]   weather model: miami can't parse temp condition from title
+[2026-07-31 17:13:31 ET] [INFO]   weather model: austin max=105.0°F target=[100,101]°F days_out=0 σ=3.5°F → P=0.101
+[2026-07-31 17:13:31 ET] [INFO]   EDGE FOUND: KXHIGHAUS-26JUL31-B100.5 | implied=80.5% true=10.1% edge=-70.4% dir=NO conf=80
+[2026-07-31 17:25:24 ET] [INFO] Checked 67630 markets | Modelable: 67630 | Edges found: 1
+[2026-07-31 17:25:25 ET] [INFO] [Discord] Trade alert sent: KXHIGHAUS-26JUL31-B100.5
+[2026-07-31 17:25:25 ET] [WARN] AUTO-BET SKIP KXHIGHAUS-26JUL31-B100.5: exposure 38.4% ≥ 25% limit ($7.00 of $18.22 in open positions)
+[2026-07-31 17:25:25 ET] [INFO] Scan complete — 1 alerts sent
+[2026-07-31 17:25:25 ET] [INFO] ============================================================
+[2026-07-31 17:25:25 ET] [INFO] Scan job complete

@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-01T07:38:45.442364Z",
-  "last_scan_ts": "2026-08-01T07:38:45.442364Z",
+  "generated_at": "2026-08-01T13:19:18.813277Z",
+  "last_scan_ts": "2026-08-01T13:19:18.813277Z",
   "stats": {
-    "total_alerts": 9798,
+    "total_alerts": 9803,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -25,7 +25,7 @@
         "hit_rate": null
       },
       "Crypto": {
-        "total": 2754,
+        "total": 2757,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -37,7 +37,7 @@
         "hit_rate": null
       },
       "Climate and Weather": {
-        "total": 1093,
+        "total": 1094,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -55,7 +55,7 @@
         "hit_rate": null
       },
       "Commodities": {
-        "total": 1239,
+        "total": 1240,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,19 +69,19 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 2064,
+        "total": 2066,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "medium (15-25%)": {
-        "total": 1832,
+        "total": 1833,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 5902,
+        "total": 5904,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 11.17,
+      "balance": 11.15,
       "cash": 5.35,
       "peak": 11.46,
       "initial_balance": 10.0
@@ -101,15 +101,120 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-08-01T06:15:11.784160Z"
+    "updated_at": "2026-08-01T12:06:40.981259Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.82,
-  "account_value": 11.17,
-  "live_pnl": 1.17,
+  "position_value": 5.8,
+  "account_value": 11.15,
+  "live_pnl": 1.15,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-08-01T13:19:18.452084Z",
+      "ticker": "KXHIGHNY-26AUG01-B84.5",
+      "title": "Will the **high temp in NYC** be 84-85\u00b0 on Aug 1, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-57.09",
+      "implied_prob": "0.595",
+      "true_prob": "0.0241",
+      "confidence": "80",
+      "suggested_live_dollars": "0.41",
+      "suggested_paper_dollars": "49.61",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "41",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-01T13:19:18.133293Z",
+      "ticker": "KXWTI-26AUG0314-T84.49",
+      "title": "Will the WTI crude oil settlement price be above 84.49 USD/Bbl on Aug 3, 2026?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-21.65",
+      "implied_prob": "0.735",
+      "true_prob": "0.5185",
+      "confidence": "75",
+      "suggested_live_dollars": "0.27",
+      "suggested_paper_dollars": "39.96",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "27",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-01T13:19:17.710347Z",
+      "ticker": "KXBTCMAXMON-BTC-26AUG31-6500000",
+      "title": "Will BTC trimmed mean be above $65000.00 by 11:59 PM ET on Aug 31, 2026?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-37.01",
+      "implied_prob": "0.705",
+      "true_prob": "0.3349",
+      "confidence": "80",
+      "suggested_live_dollars": "0.31",
+      "suggested_paper_dollars": "49.91",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "31",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-01T13:19:17.435505Z",
+      "ticker": "KXETHMAXY-27JAN01-4500.00",
+      "title": "Will Ethereum reach above $4500.00 by Jan 1, 2027 at 12:00AM?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-8.5",
+      "implied_prob": "0.085",
+      "true_prob": "0.0",
+      "confidence": "63",
+      "suggested_live_dollars": "0.92",
+      "suggested_paper_dollars": "19.32",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "92",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-01T13:19:16.932952Z",
+      "ticker": "KXETHMAXY-27JAN01-4250.00",
+      "title": "Will Ethereum reach above $4250.00 by Jan 1, 2027 at 12:00AM?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-8.49",
+      "implied_prob": "0.085",
+      "true_prob": "0.0001",
+      "confidence": "63",
+      "suggested_live_dollars": "0.92",
+      "suggested_paper_dollars": "19.32",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "92",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-08-01T07:38:44.937821Z",
       "ticker": "KXH200WS-26AUG07-5.000",
@@ -2608,114 +2713,114 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-07-31T07:58:41.519612Z",
-      "ticker": "KXWTI-26JUL3114-T81.49",
-      "title": "Will the WTI crude oil settlement price be above 81.49 USD/Bbl on Jul 31, 2026?",
-      "category": "Commodities",
-      "direction": "YES",
-      "edge_pct": "11.62",
-      "implied_prob": "0.61",
-      "true_prob": "0.7262",
-      "confidence": "63",
-      "suggested_live_dollars": "0.62",
-      "suggested_paper_dollars": "19.84",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "62",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-31T07:58:41.291297Z",
-      "ticker": "KXBRENTW-26JUL3117-T84.99",
-      "title": "Will the brent crude oil close price be above 84.99 USD/Bbl on July 31, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "NO",
-      "edge_pct": "-48.51",
-      "implied_prob": "0.58",
-      "true_prob": "0.0949",
-      "confidence": "80",
-      "suggested_live_dollars": "0.44",
-      "suggested_paper_dollars": "49.72",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "44",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-31T07:58:41.025687Z",
-      "ticker": "KXWNBATOTAL-26JUL31INDPDX-188",
-      "title": "Indiana vs Portland women's Pro Basketball game: Over 187.5 points?",
-      "category": "Sports",
-      "direction": "YES",
-      "edge_pct": "47.5",
-      "implied_prob": "0.525",
-      "true_prob": "1.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.53",
-      "suggested_paper_dollars": "49.82",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "53",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-31T07:58:40.775439Z",
-      "ticker": "KXPGAROUNDSCORE-ROC26R2-JSPI68",
-      "title": "Will Jordan Spieth shoot under 68.5 in Round 2?",
-      "category": "Sports",
-      "direction": "NO",
-      "edge_pct": "-57.5",
-      "implied_prob": "0.575",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.49",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "49",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-07-31T07:58:40.379165Z",
-      "ticker": "KXAC-26AUGPLF-86.5",
-      "title": "Will Air Canada report Above 86.5% passenger load factor in Q2 2026?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-60.5",
-      "implied_prob": "0.605",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.4",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "40",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "recent_alerts": [
+    {
+      "timestamp": "2026-08-01T13:19:18.452084Z",
+      "ticker": "KXHIGHNY-26AUG01-B84.5",
+      "title": "Will the **high temp in NYC** be 84-85\u00b0 on Aug 1, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-57.09",
+      "implied_prob": "0.595",
+      "true_prob": "0.0241",
+      "confidence": "80",
+      "suggested_live_dollars": "0.41",
+      "suggested_paper_dollars": "49.61",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "41",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-01T13:19:18.133293Z",
+      "ticker": "KXWTI-26AUG0314-T84.49",
+      "title": "Will the WTI crude oil settlement price be above 84.49 USD/Bbl on Aug 3, 2026?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-21.65",
+      "implied_prob": "0.735",
+      "true_prob": "0.5185",
+      "confidence": "75",
+      "suggested_live_dollars": "0.27",
+      "suggested_paper_dollars": "39.96",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "27",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-01T13:19:17.710347Z",
+      "ticker": "KXBTCMAXMON-BTC-26AUG31-6500000",
+      "title": "Will BTC trimmed mean be above $65000.00 by 11:59 PM ET on Aug 31, 2026?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-37.01",
+      "implied_prob": "0.705",
+      "true_prob": "0.3349",
+      "confidence": "80",
+      "suggested_live_dollars": "0.31",
+      "suggested_paper_dollars": "49.91",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "31",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-01T13:19:17.435505Z",
+      "ticker": "KXETHMAXY-27JAN01-4500.00",
+      "title": "Will Ethereum reach above $4500.00 by Jan 1, 2027 at 12:00AM?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-8.5",
+      "implied_prob": "0.085",
+      "true_prob": "0.0",
+      "confidence": "63",
+      "suggested_live_dollars": "0.92",
+      "suggested_paper_dollars": "19.32",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "92",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-01T13:19:16.932952Z",
+      "ticker": "KXETHMAXY-27JAN01-4250.00",
+      "title": "Will Ethereum reach above $4250.00 by Jan 1, 2027 at 12:00AM?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-8.49",
+      "implied_prob": "0.085",
+      "true_prob": "0.0001",
+      "confidence": "63",
+      "suggested_live_dollars": "0.92",
+      "suggested_paper_dollars": "19.32",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "92",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-08-01T07:38:44.937821Z",
       "ticker": "KXH200WS-26AUG07-5.000",
@@ -3660,111 +3765,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-08-01T04:57:43.262609Z",
-      "ticker": "KXETHMAXY-27JAN01-3500.00",
-      "title": "Will Ethereum reach above $3500.00 by Jan 1, 2027 at 12:00AM?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-14.26",
-      "implied_prob": "0.145",
-      "true_prob": "0.0024",
-      "confidence": "68",
-      "suggested_live_dollars": "0.86",
-      "suggested_paper_dollars": "19.78",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "86",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-01T04:57:42.969655Z",
-      "ticker": "KXETHMINY-27JAN01-1000",
-      "title": "Will Ethereum reach below $1000.00 by Jan 1, 2027 at 12:00AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-15.24",
-      "implied_prob": "0.155",
-      "true_prob": "0.0026",
-      "confidence": "75",
-      "suggested_live_dollars": "0.85",
-      "suggested_paper_dollars": "39.95",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "85",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-01T04:57:42.539627Z",
-      "ticker": "KXETHMINY-27JAN01-1250",
-      "title": "Will Ethereum reach below $1250.00 by Jan 1, 2027 at 12:00AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-37.89",
-      "implied_prob": "0.415",
-      "true_prob": "0.0361",
-      "confidence": "90",
-      "suggested_live_dollars": "0.59",
-      "suggested_paper_dollars": "49.56",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "59",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-01T04:57:42.389780Z",
-      "ticker": "KXETHMINY-27JAN01-1500",
-      "title": "Will Ethereum reach below $1500.00 by Jan 1, 2027 at 12:00AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-38.16",
-      "implied_prob": "0.545",
-      "true_prob": "0.1634",
-      "confidence": "90",
-      "suggested_live_dollars": "0.46",
-      "suggested_paper_dollars": "49.68",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "46",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-01T04:57:42.242660Z",
-      "ticker": "KXSOLMAXY-27JAN01-170",
-      "title": "Will the spot price of Solana be above $170.00 before Jan 1, 2027 at 12:00 AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-13.5",
-      "implied_prob": "0.135",
-      "true_prob": "0.0",
-      "confidence": "63",
-      "suggested_live_dollars": "0.89",
-      "suggested_paper_dollars": "19.58",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "89",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -3778,9 +3778,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 84,
+      "current_cents": 82,
       "dollars_risked": 0,
-      "current_value": 0.84,
+      "current_value": 0.82,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-02T13:40:31.905357Z",
-  "last_scan_ts": "2026-08-02T13:40:31.905357Z",
+  "generated_at": "2026-08-02T15:46:24.384341Z",
+  "last_scan_ts": "2026-08-02T15:46:24.384341Z",
   "stats": {
-    "total_alerts": 9884,
+    "total_alerts": 9890,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -13,7 +13,7 @@
         "hit_rate": null
       },
       "Economics": {
-        "total": 2129,
+        "total": 2132,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -37,7 +37,7 @@
         "hit_rate": null
       },
       "Climate and Weather": {
-        "total": 1099,
+        "total": 1100,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -55,7 +55,7 @@
         "hit_rate": null
       },
       "Commodities": {
-        "total": 1248,
+        "total": 1250,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,7 +69,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 2080,
+        "total": 2082,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -81,7 +81,7 @@
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 5954,
+        "total": 5958,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 11.26,
+      "balance": 11.28,
       "cash": 5.35,
       "peak": 11.46,
       "initial_balance": 10.0
@@ -101,15 +101,141 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-08-02T12:09:30.567456Z"
+    "updated_at": "2026-08-02T14:09:49.990330Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.91,
-  "account_value": 11.26,
-  "live_pnl": 1.26,
+  "position_value": 5.93,
+  "account_value": 11.28,
+  "live_pnl": 1.28,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-08-02T15:46:23.977213Z",
+      "ticker": "FEDHIKE-27DEC31",
+      "title": "Will the Federal Reserve hike rates by December 31, 2027?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-42.4",
+      "implied_prob": "0.815",
+      "true_prob": "0.391",
+      "confidence": "90",
+      "suggested_live_dollars": "0.38",
+      "suggested_paper_dollars": "49.97",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "19",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-02T15:46:23.735647Z",
+      "ticker": "FEDHIKE-27JUN30",
+      "title": "Will the Federal Reserve hike rates by June 30, 2027?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-36.4",
+      "implied_prob": "0.755",
+      "true_prob": "0.391",
+      "confidence": "95",
+      "suggested_live_dollars": "0.5",
+      "suggested_paper_dollars": "50.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "25",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-02T15:46:23.322288Z",
+      "ticker": "FEDHIKE-26DEC31",
+      "title": "Will the Federal Reserve hike rates by December 31, 2026?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-29.4",
+      "implied_prob": "0.685",
+      "true_prob": "0.391",
+      "confidence": "95",
+      "suggested_live_dollars": "0.32",
+      "suggested_paper_dollars": "49.92",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "32",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-02T15:46:23.042929Z",
+      "ticker": "KXHIGHNY-26AUG02-B82.5",
+      "title": "Will the **high temp in NYC** be 82-83\u00b0 on Aug 2, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-37.67",
+      "implied_prob": "0.515",
+      "true_prob": "0.1383",
+      "confidence": "80",
+      "suggested_live_dollars": "0.49",
+      "suggested_paper_dollars": "49.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "49",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-02T15:46:22.746091Z",
+      "ticker": "KXWTI-26AUG0314-T77.99",
+      "title": "Will the WTI crude oil settlement price be above 77.99 USD/Bbl on Aug 3, 2026?",
+      "category": "Commodities",
+      "direction": "YES",
+      "edge_pct": "14.75",
+      "implied_prob": "0.845",
+      "true_prob": "0.9925",
+      "confidence": "68",
+      "suggested_live_dollars": "0.85",
+      "suggested_paper_dollars": "19.55",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "85",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-02T15:46:22.398945Z",
+      "ticker": "KXGOLDDIRY-26DEC31H1700-T4300",
+      "title": "Will the price of Gold be above 4300 on December 31, 2026 at 05:00 PM EST?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-8.6",
+      "implied_prob": "0.45",
+      "true_prob": "0.364",
+      "confidence": "68",
+      "suggested_live_dollars": "0.56",
+      "suggested_paper_dollars": "19.6",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "56",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-08-02T13:40:31.383151Z",
       "ticker": "KXWNBATOTAL-26AUG02INDMIN-195",
@@ -1814,6 +1940,132 @@
   ],
   "recent_alerts": [
     {
+      "timestamp": "2026-08-02T15:46:23.977213Z",
+      "ticker": "FEDHIKE-27DEC31",
+      "title": "Will the Federal Reserve hike rates by December 31, 2027?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-42.4",
+      "implied_prob": "0.815",
+      "true_prob": "0.391",
+      "confidence": "90",
+      "suggested_live_dollars": "0.38",
+      "suggested_paper_dollars": "49.97",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "19",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-02T15:46:23.735647Z",
+      "ticker": "FEDHIKE-27JUN30",
+      "title": "Will the Federal Reserve hike rates by June 30, 2027?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-36.4",
+      "implied_prob": "0.755",
+      "true_prob": "0.391",
+      "confidence": "95",
+      "suggested_live_dollars": "0.5",
+      "suggested_paper_dollars": "50.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "25",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-02T15:46:23.322288Z",
+      "ticker": "FEDHIKE-26DEC31",
+      "title": "Will the Federal Reserve hike rates by December 31, 2026?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-29.4",
+      "implied_prob": "0.685",
+      "true_prob": "0.391",
+      "confidence": "95",
+      "suggested_live_dollars": "0.32",
+      "suggested_paper_dollars": "49.92",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "32",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-02T15:46:23.042929Z",
+      "ticker": "KXHIGHNY-26AUG02-B82.5",
+      "title": "Will the **high temp in NYC** be 82-83\u00b0 on Aug 2, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-37.67",
+      "implied_prob": "0.515",
+      "true_prob": "0.1383",
+      "confidence": "80",
+      "suggested_live_dollars": "0.49",
+      "suggested_paper_dollars": "49.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "49",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-02T15:46:22.746091Z",
+      "ticker": "KXWTI-26AUG0314-T77.99",
+      "title": "Will the WTI crude oil settlement price be above 77.99 USD/Bbl on Aug 3, 2026?",
+      "category": "Commodities",
+      "direction": "YES",
+      "edge_pct": "14.75",
+      "implied_prob": "0.845",
+      "true_prob": "0.9925",
+      "confidence": "68",
+      "suggested_live_dollars": "0.85",
+      "suggested_paper_dollars": "19.55",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "85",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-02T15:46:22.398945Z",
+      "ticker": "KXGOLDDIRY-26DEC31H1700-T4300",
+      "title": "Will the price of Gold be above 4300 on December 31, 2026 at 05:00 PM EST?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-8.6",
+      "implied_prob": "0.45",
+      "true_prob": "0.364",
+      "confidence": "68",
+      "suggested_live_dollars": "0.56",
+      "suggested_paper_dollars": "19.6",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "56",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
       "timestamp": "2026-08-02T13:40:31.383151Z",
       "ticker": "KXWNBATOTAL-26AUG02INDMIN-195",
       "title": "Indiana vs Minnesota women's Pro Basketball game: Over 194.5 points?",
@@ -2736,132 +2988,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-08-02T05:03:32.813537Z",
-      "ticker": "KXBTCMINY-27JAN01-45000.00",
-      "title": "Will Bitcoin be below $45000.00 by Jan 1, 2027 at 12:00am ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-31.75",
-      "implied_prob": "0.335",
-      "true_prob": "0.0175",
-      "confidence": "90",
-      "suggested_live_dollars": "0.67",
-      "suggested_paper_dollars": "49.58",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "67",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-02T05:03:32.677776Z",
-      "ticker": "KXBTCMINY-27JAN01-50000.00",
-      "title": "Will Bitcoin be below $50000.00 by Jan 1, 2027 at 12:00am ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-40.81",
-      "implied_prob": "0.48",
-      "true_prob": "0.0719",
-      "confidence": "90",
-      "suggested_live_dollars": "0.53",
-      "suggested_paper_dollars": "49.82",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "53",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-02T05:03:32.420706Z",
-      "ticker": "KXBTCMINY-27JAN01-55000.00",
-      "title": "Will Bitcoin be below $55000.00 by Jan 1, 2027 at 12:00am ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-45.47",
-      "implied_prob": "0.645",
-      "true_prob": "0.1903",
-      "confidence": "90",
-      "suggested_live_dollars": "0.36",
-      "suggested_paper_dollars": "49.68",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "36",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-02T05:03:32.025470Z",
-      "ticker": "KXETHMAXY-27JAN01-4000.00",
-      "title": "Will Ethereum reach above $4000.00 by Jan 1, 2027 at 12:00AM?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-10.46",
-      "implied_prob": "0.105",
-      "true_prob": "0.0004",
-      "confidence": "63",
-      "suggested_live_dollars": "0.9",
-      "suggested_paper_dollars": "19.8",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "90",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-02T05:03:31.887144Z",
-      "ticker": "KXETHMAXY-27JAN01-3750.00",
-      "title": "Will Ethereum reach above $3750.00 by Jan 1, 2027 at 12:00AM?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-10.4",
-      "implied_prob": "0.105",
-      "true_prob": "0.001",
-      "confidence": "63",
-      "suggested_live_dollars": "0.9",
-      "suggested_paper_dollars": "19.8",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "90",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-02T05:03:31.676642Z",
-      "ticker": "KXETHMAXY-27JAN01-3500.00",
-      "title": "Will Ethereum reach above $3500.00 by Jan 1, 2027 at 12:00AM?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-14.23",
-      "implied_prob": "0.145",
-      "true_prob": "0.0027",
-      "confidence": "68",
-      "suggested_live_dollars": "0.86",
-      "suggested_paper_dollars": "19.78",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "86",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -2875,9 +3001,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 82,
+      "current_cents": 84,
       "dollars_risked": 0,
-      "current_value": 0.82,
+      "current_value": 0.84,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

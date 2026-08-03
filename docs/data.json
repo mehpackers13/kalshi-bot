@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-03T18:11:31.955920Z",
-  "last_scan_ts": "2026-08-03T18:11:31.955920Z",
+  "generated_at": "2026-08-03T20:29:30.448025Z",
+  "last_scan_ts": "2026-08-03T20:29:30.448025Z",
   "stats": {
-    "total_alerts": 10026,
+    "total_alerts": 10031,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -37,7 +37,7 @@
         "hit_rate": null
       },
       "Climate and Weather": {
-        "total": 1108,
+        "total": 1110,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -55,7 +55,7 @@
         "hit_rate": null
       },
       "Commodities": {
-        "total": 1271,
+        "total": 1274,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,7 +69,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 2108,
+        "total": 2109,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -81,7 +81,7 @@
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 6048,
+        "total": 6052,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 11.28,
+      "balance": 11.34,
       "cash": 5.35,
       "peak": 11.46,
       "initial_balance": 10.0
@@ -101,15 +101,120 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-08-03T16:31:23.577651Z"
+    "updated_at": "2026-08-03T18:53:44.307815Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.93,
-  "account_value": 11.28,
-  "live_pnl": 1.28,
+  "position_value": 6.01,
+  "account_value": 11.36,
+  "live_pnl": 1.36,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-08-03T20:29:30.030724Z",
+      "ticker": "KXBRENTD-26AUG0317-T84",
+      "title": "Will the brent crude oil close price be above 84 USD/Bbl on August 03, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-48.0",
+      "implied_prob": "0.48",
+      "true_prob": "0.0",
+      "confidence": "70",
+      "suggested_live_dollars": "0.53",
+      "suggested_paper_dollars": "49.82",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "53",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-03T20:29:29.441196Z",
+      "ticker": "KXGOLDD-26AUG0317-T4042",
+      "title": "Will the gold close price be above 4042 USD/t.oz on August 03, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "YES",
+      "edge_pct": "40.5",
+      "implied_prob": "0.595",
+      "true_prob": "1.0",
+      "confidence": "70",
+      "suggested_live_dollars": "0.6",
+      "suggested_paper_dollars": "49.8",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "60",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-03T20:29:29.151784Z",
+      "ticker": "KXGOLDD-26AUG0317-T4032",
+      "title": "Will the gold close price be above 4032 USD/t.oz on August 03, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "YES",
+      "edge_pct": "13.5",
+      "implied_prob": "0.865",
+      "true_prob": "1.0",
+      "confidence": "53",
+      "suggested_live_dollars": "0.87",
+      "suggested_paper_dollars": "19.14",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "87",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-03T20:29:27.022663Z",
+      "ticker": "KXHIGHCHI-26AUG03-B80.5",
+      "title": "Will the high temp in Chicago be 80-81\u00b0 on Aug 3, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-63.09",
+      "implied_prob": "0.655",
+      "true_prob": "0.0241",
+      "confidence": "80",
+      "suggested_live_dollars": "0.36",
+      "suggested_paper_dollars": "49.68",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "36",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-03T20:29:26.621386Z",
+      "ticker": "KXHIGHPHIL-26AUG03-B86.5",
+      "title": "Will the **high temp in Philadelphia** be 86-87\u00b0 on Aug 3, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-61.67",
+      "implied_prob": "0.755",
+      "true_prob": "0.1383",
+      "confidence": "80",
+      "suggested_live_dollars": "0.5",
+      "suggested_paper_dollars": "50.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "25",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-08-03T18:11:31.472055Z",
       "ticker": "KXINXU-26AUG03H1600-T7589.9999",
@@ -2692,21 +2797,23 @@
       "null": [
         ""
       ]
-    },
+    }
+  ],
+  "recent_alerts": [
     {
-      "timestamp": "2026-08-02T19:03:30.302483Z",
-      "ticker": "KXWNBA2QTOTAL-26AUG02INDMIN-50",
-      "title": "Indiana vs Minnesota women's Pro Basketball game: Over 49.5 2Q points?",
-      "category": "Sports",
-      "direction": "YES",
-      "edge_pct": "40.0",
-      "implied_prob": "0.6",
-      "true_prob": "1.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.62",
-      "suggested_paper_dollars": "49.6",
+      "timestamp": "2026-08-03T20:29:30.030724Z",
+      "ticker": "KXBRENTD-26AUG0317-T84",
+      "title": "Will the brent crude oil close price be above 84 USD/Bbl on August 03, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-48.0",
+      "implied_prob": "0.48",
+      "true_prob": "0.0",
+      "confidence": "70",
+      "suggested_live_dollars": "0.53",
+      "suggested_paper_dollars": "49.82",
       "is_paper_bet": "1",
-      "paper_entry_price_cents": "62",
+      "paper_entry_price_cents": "53",
       "outcome": "",
       "resolved_at": "",
       "notes": "",
@@ -2715,36 +2822,15 @@
       ]
     },
     {
-      "timestamp": "2026-08-02T19:03:29.942664Z",
-      "ticker": "KXWNBATOTAL-26AUG02INDMIN-214",
-      "title": "Indiana vs Minnesota women's Pro Basketball game: Over 213.5 points?",
-      "category": "Sports",
+      "timestamp": "2026-08-03T20:29:29.441196Z",
+      "ticker": "KXGOLDD-26AUG0317-T4042",
+      "title": "Will the gold close price be above 4042 USD/t.oz on August 03, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
       "direction": "YES",
-      "edge_pct": "49.5",
-      "implied_prob": "0.505",
+      "edge_pct": "40.5",
+      "implied_prob": "0.595",
       "true_prob": "1.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.52",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "52",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-02T19:03:29.652318Z",
-      "ticker": "KXWNBATOTAL-26AUG02INDMIN-211",
-      "title": "Indiana vs Minnesota women's Pro Basketball game: Over 210.5 points?",
-      "category": "Sports",
-      "direction": "YES",
-      "edge_pct": "42.0",
-      "implied_prob": "0.58",
-      "true_prob": "1.0",
-      "confidence": "90",
+      "confidence": "70",
       "suggested_live_dollars": "0.6",
       "suggested_paper_dollars": "49.8",
       "is_paper_bet": "1",
@@ -2757,78 +2843,15 @@
       ]
     },
     {
-      "timestamp": "2026-08-02T19:03:29.244759Z",
-      "ticker": "KXWNBATOTAL-26AUG02INDMIN-207",
-      "title": "Indiana vs Minnesota women's Pro Basketball game: Over 206.5 points?",
-      "category": "Sports",
+      "timestamp": "2026-08-03T20:29:29.151784Z",
+      "ticker": "KXGOLDD-26AUG0317-T4032",
+      "title": "Will the gold close price be above 4032 USD/t.oz on August 03, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
       "direction": "YES",
-      "edge_pct": "36.5",
-      "implied_prob": "0.635",
+      "edge_pct": "13.5",
+      "implied_prob": "0.865",
       "true_prob": "1.0",
-      "confidence": "90",
-      "suggested_live_dollars": "0.64",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "64",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-02T19:03:28.315169Z",
-      "ticker": "KXWNBATOTAL-26AUG02INDMIN-204",
-      "title": "Indiana vs Minnesota women's Pro Basketball game: Over 203.5 points?",
-      "category": "Sports",
-      "direction": "YES",
-      "edge_pct": "27.5",
-      "implied_prob": "0.725",
-      "true_prob": "1.0",
-      "confidence": "90",
-      "suggested_live_dollars": "0.74",
-      "suggested_paper_dollars": "49.58",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "74",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-02T19:03:27.905904Z",
-      "ticker": "KXWNBATOTAL-26AUG02INDMIN-201",
-      "title": "Indiana vs Minnesota women's Pro Basketball game: Over 200.5 points?",
-      "category": "Sports",
-      "direction": "YES",
-      "edge_pct": "23.0",
-      "implied_prob": "0.77",
-      "true_prob": "1.0",
-      "confidence": "80",
-      "suggested_live_dollars": "0.78",
-      "suggested_paper_dollars": "39.78",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "78",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-02T19:03:27.582389Z",
-      "ticker": "KXWNBATOTAL-26AUG02INDMIN-198",
-      "title": "Indiana vs Minnesota women's Pro Basketball game: Over 197.5 points?",
-      "category": "Sports",
-      "direction": "YES",
-      "edge_pct": "14.0",
-      "implied_prob": "0.86",
-      "true_prob": "1.0",
-      "confidence": "68",
+      "confidence": "53",
       "suggested_live_dollars": "0.87",
       "suggested_paper_dollars": "19.14",
       "is_paper_bet": "1",
@@ -2841,19 +2864,19 @@
       ]
     },
     {
-      "timestamp": "2026-08-02T19:03:27.259071Z",
-      "ticker": "KXPGAROUNDSCORE-ROC26R4-JSPI68",
-      "title": "Will Jordan Spieth shoot under 68.5 in Round 4?",
-      "category": "Sports",
+      "timestamp": "2026-08-03T20:29:27.022663Z",
+      "ticker": "KXHIGHCHI-26AUG03-B80.5",
+      "title": "Will the high temp in Chicago be 80-81\u00b0 on Aug 3, 2026?",
+      "category": "Climate and Weather",
       "direction": "NO",
-      "edge_pct": "-46.0",
-      "implied_prob": "0.46",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.88",
-      "suggested_paper_dollars": "49.28",
+      "edge_pct": "-63.09",
+      "implied_prob": "0.655",
+      "true_prob": "0.0241",
+      "confidence": "80",
+      "suggested_live_dollars": "0.36",
+      "suggested_paper_dollars": "49.68",
       "is_paper_bet": "1",
-      "paper_entry_price_cents": "88",
+      "paper_entry_price_cents": "36",
       "outcome": "",
       "resolved_at": "",
       "notes": "",
@@ -2862,19 +2885,19 @@
       ]
     },
     {
-      "timestamp": "2026-08-02T19:03:26.977747Z",
-      "ticker": "KXHIGHCHI-26AUG02-B73.5",
-      "title": "Will the high temp in Chicago be 73-74\u00b0 on Aug 2, 2026?",
+      "timestamp": "2026-08-03T20:29:26.621386Z",
+      "ticker": "KXHIGHPHIL-26AUG03-B86.5",
+      "title": "Will the **high temp in Philadelphia** be 86-87\u00b0 on Aug 3, 2026?",
       "category": "Climate and Weather",
       "direction": "NO",
-      "edge_pct": "-28.23",
-      "implied_prob": "0.505",
-      "true_prob": "0.2227",
+      "edge_pct": "-61.67",
+      "implied_prob": "0.755",
+      "true_prob": "0.1383",
       "confidence": "80",
       "suggested_live_dollars": "0.5",
       "suggested_paper_dollars": "50.0",
       "is_paper_bet": "1",
-      "paper_entry_price_cents": "50",
+      "paper_entry_price_cents": "25",
       "outcome": "",
       "resolved_at": "",
       "notes": "",
@@ -2882,92 +2905,6 @@
         ""
       ]
     },
-    {
-      "timestamp": "2026-08-02T19:03:26.631728Z",
-      "ticker": "KXHIGHMIA-26AUG02-B90.5",
-      "title": "Will the **high temp in Miami** be 90-91\u00b0 on Aug 2, 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-62.93",
-      "implied_prob": "0.835",
-      "true_prob": "0.2057",
-      "confidence": "80",
-      "suggested_live_dollars": "0.51",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "17",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-02T19:03:26.339449Z",
-      "ticker": "KXHIGHPHIL-26AUG02-B89.5",
-      "title": "Will the **high temp in Philadelphia** be 89-90\u00b0 on Aug 2, 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-62.67",
-      "implied_prob": "0.765",
-      "true_prob": "0.1383",
-      "confidence": "80",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "24",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-02T19:03:26.020523Z",
-      "ticker": "KXWTI-26AUG0314-T78.99",
-      "title": "Will the WTI crude oil settlement price be above 78.99 USD/Bbl on Aug 3, 2026?",
-      "category": "Commodities",
-      "direction": "YES",
-      "edge_pct": "24.56",
-      "implied_prob": "0.74",
-      "true_prob": "0.9856",
-      "confidence": "75",
-      "suggested_live_dollars": "0.75",
-      "suggested_paper_dollars": "39.75",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "75",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-02T19:03:25.646268Z",
-      "ticker": "KXRAIN-26AUG02-NYC",
-      "title": "Will it rain in New York City on Aug 2, 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-64.0",
-      "implied_prob": "0.76",
-      "true_prob": "0.12",
-      "confidence": "80",
-      "suggested_live_dollars": "0.52",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "26",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    }
-  ],
-  "recent_alerts": [
     {
       "timestamp": "2026-08-03T18:11:31.472055Z",
       "ticker": "KXINXU-26AUG03H1600-T7589.9999",
@@ -3912,111 +3849,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-08-03T04:56:58.104616Z",
-      "ticker": "KXFEDDECISION-26OCT-H0",
-      "title": "Will the Federal Reserve Hike rates by 0bps at their October 2026 meeting?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "8.1",
-      "implied_prob": "0.675",
-      "true_prob": "0.756",
-      "confidence": "68",
-      "suggested_live_dollars": "0.7",
-      "suggested_paper_dollars": "19.6",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "70",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T04:56:57.589773Z",
-      "ticker": "KXCBRATEHIKE-27-FED",
-      "title": "Will the Federal Reserve raise the target range for the federal funds rate before 2027?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-28.4",
-      "implied_prob": "0.675",
-      "true_prob": "0.391",
-      "confidence": "85",
-      "suggested_live_dollars": "0.34",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "34",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T04:56:56.944594Z",
-      "ticker": "KXSUSPENDGASTAX-26MAY-JAN01",
-      "title": "Will legislation that would temporarily suspend or reduce the federal excise tax on gasoline become law before Jan 1, 2027?",
-      "category": "Politics",
-      "direction": "YES",
-      "edge_pct": "44.4",
-      "implied_prob": "0.165",
-      "true_prob": "0.609",
-      "confidence": "85",
-      "suggested_live_dollars": "0.51",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "17",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T01:42:06.726605Z",
-      "ticker": "FEDHIKE-26DEC31",
-      "title": "Will the Federal Reserve hike rates by December 31, 2026?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "8.1",
-      "implied_prob": "0.665",
-      "true_prob": "0.746",
-      "confidence": "78",
-      "suggested_live_dollars": "0.67",
-      "suggested_paper_dollars": "19.43",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "67",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T01:42:06.563757Z",
-      "ticker": "KXWNBASPREAD-26AUG02TORGS-GS5",
-      "title": "Golden State wins the game by over 4.5 points?",
-      "category": "Sports",
-      "direction": "YES",
-      "edge_pct": "18.5",
-      "implied_prob": "0.815",
-      "true_prob": "1.0",
-      "confidence": "75",
-      "suggested_live_dollars": "0.82",
-      "suggested_paper_dollars": "39.36",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "82",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -4030,9 +3862,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 81,
+      "current_cents": 85,
       "dollars_risked": 0,
-      "current_value": 0.81,
+      "current_value": 0.85,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -4054,9 +3886,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 78,
+      "current_cents": 80,
       "dollars_risked": 0,
-      "current_value": 1.56,
+      "current_value": 1.6,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

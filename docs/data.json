@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-03T01:42:07.145423Z",
-  "last_scan_ts": "2026-08-03T01:42:07.145423Z",
+  "generated_at": "2026-08-03T04:56:58.505811Z",
+  "last_scan_ts": "2026-08-03T04:56:58.505811Z",
   "stats": {
-    "total_alerts": 9978,
+    "total_alerts": 9981,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -13,13 +13,13 @@
         "hit_rate": null
       },
       "Economics": {
-        "total": 2151,
+        "total": 2153,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "Politics": {
-        "total": 159,
+        "total": 160,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,7 +69,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 2101,
+        "total": 2102,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -81,7 +81,7 @@
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 6014,
+        "total": 6016,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 11.27,
+      "balance": 11.29,
       "cash": 5.35,
       "peak": 11.46,
       "initial_balance": 10.0
@@ -101,15 +101,78 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-08-03T00:04:55.060920Z"
+    "updated_at": "2026-08-03T03:28:12.399641Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.92,
-  "account_value": 11.27,
-  "live_pnl": 1.27,
+  "position_value": 5.94,
+  "account_value": 11.29,
+  "live_pnl": 1.29,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-08-03T04:56:58.104616Z",
+      "ticker": "KXFEDDECISION-26OCT-H0",
+      "title": "Will the Federal Reserve Hike rates by 0bps at their October 2026 meeting?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "8.1",
+      "implied_prob": "0.675",
+      "true_prob": "0.756",
+      "confidence": "68",
+      "suggested_live_dollars": "0.7",
+      "suggested_paper_dollars": "19.6",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "70",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-03T04:56:57.589773Z",
+      "ticker": "KXCBRATEHIKE-27-FED",
+      "title": "Will the Federal Reserve raise the target range for the federal funds rate before 2027?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-28.4",
+      "implied_prob": "0.675",
+      "true_prob": "0.391",
+      "confidence": "85",
+      "suggested_live_dollars": "0.34",
+      "suggested_paper_dollars": "49.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "34",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-03T04:56:56.944594Z",
+      "ticker": "KXSUSPENDGASTAX-26MAY-JAN01",
+      "title": "Will legislation that would temporarily suspend or reduce the federal excise tax on gasoline become law before Jan 1, 2027?",
+      "category": "Politics",
+      "direction": "YES",
+      "edge_pct": "44.4",
+      "implied_prob": "0.165",
+      "true_prob": "0.609",
+      "confidence": "85",
+      "suggested_live_dollars": "0.51",
+      "suggested_paper_dollars": "49.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "17",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-08-03T01:42:06.726605Z",
       "ticker": "FEDHIKE-26DEC31",
@@ -3599,6 +3662,69 @@
   ],
   "recent_alerts": [
     {
+      "timestamp": "2026-08-03T04:56:58.104616Z",
+      "ticker": "KXFEDDECISION-26OCT-H0",
+      "title": "Will the Federal Reserve Hike rates by 0bps at their October 2026 meeting?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "8.1",
+      "implied_prob": "0.675",
+      "true_prob": "0.756",
+      "confidence": "68",
+      "suggested_live_dollars": "0.7",
+      "suggested_paper_dollars": "19.6",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "70",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-03T04:56:57.589773Z",
+      "ticker": "KXCBRATEHIKE-27-FED",
+      "title": "Will the Federal Reserve raise the target range for the federal funds rate before 2027?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-28.4",
+      "implied_prob": "0.675",
+      "true_prob": "0.391",
+      "confidence": "85",
+      "suggested_live_dollars": "0.34",
+      "suggested_paper_dollars": "49.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "34",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-03T04:56:56.944594Z",
+      "ticker": "KXSUSPENDGASTAX-26MAY-JAN01",
+      "title": "Will legislation that would temporarily suspend or reduce the federal excise tax on gasoline become law before Jan 1, 2027?",
+      "category": "Politics",
+      "direction": "YES",
+      "edge_pct": "44.4",
+      "implied_prob": "0.165",
+      "true_prob": "0.609",
+      "confidence": "85",
+      "suggested_live_dollars": "0.51",
+      "suggested_paper_dollars": "49.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "17",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
       "timestamp": "2026-08-03T01:42:06.726605Z",
       "ticker": "FEDHIKE-26DEC31",
       "title": "Will the Federal Reserve hike rates by December 31, 2026?",
@@ -4584,69 +4710,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-08-03T01:41:55.701649Z",
-      "ticker": "KXETHMINY-27JAN01-1000",
-      "title": "Will Ethereum reach below $1000.00 by Jan 1, 2027 at 12:00AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-16.23",
-      "implied_prob": "0.165",
-      "true_prob": "0.0027",
-      "confidence": "75",
-      "suggested_live_dollars": "0.84",
-      "suggested_paper_dollars": "39.48",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "84",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T01:41:55.409100Z",
-      "ticker": "KXETHMINY-27JAN01-1250",
-      "title": "Will Ethereum reach below $1250.00 by Jan 1, 2027 at 12:00AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-36.84",
-      "implied_prob": "0.405",
-      "true_prob": "0.0366",
-      "confidence": "90",
-      "suggested_live_dollars": "0.6",
-      "suggested_paper_dollars": "49.8",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "60",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T01:41:54.846128Z",
-      "ticker": "KXETHMINY-27JAN01-1500",
-      "title": "Will Ethereum reach below $1500.00 by Jan 1, 2027 at 12:00AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-38.17",
-      "implied_prob": "0.545",
-      "true_prob": "0.1633",
-      "confidence": "90",
-      "suggested_live_dollars": "0.46",
-      "suggested_paper_dollars": "49.68",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "46",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -4672,9 +4735,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 84,
+      "current_cents": 85,
       "dollars_risked": 0,
-      "current_value": 1.68,
+      "current_value": 1.7,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

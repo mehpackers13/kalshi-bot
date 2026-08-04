@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-04T01:44:30.091053Z",
-  "last_scan_ts": "2026-08-04T01:44:30.091053Z",
+  "generated_at": "2026-08-04T04:21:24.909979Z",
+  "last_scan_ts": "2026-08-04T04:21:24.909979Z",
   "stats": {
-    "total_alerts": 10101,
+    "total_alerts": 10103,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -13,7 +13,7 @@
         "hit_rate": null
       },
       "Economics": {
-        "total": 2178,
+        "total": 2179,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -55,7 +55,7 @@
         "hit_rate": null
       },
       "Commodities": {
-        "total": 1275,
+        "total": 1277,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,7 +69,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 2110,
+        "total": 2124,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -81,7 +81,7 @@
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 6098,
+        "total": 6099,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 11.39,
+      "balance": 11.31,
       "cash": 5.35,
       "peak": 11.46,
       "initial_balance": 10.0
@@ -101,15 +101,57 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-08-03T23:59:42.784563Z"
+    "updated_at": "2026-08-04T02:56:17.994680Z"
   },
   "cash_bal": 5.35,
-  "position_value": 6.04,
-  "account_value": 11.39,
-  "live_pnl": 1.39,
+  "position_value": 5.96,
+  "account_value": 11.31,
+  "live_pnl": 1.31,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-08-04T04:21:24.493366Z",
+      "ticker": "KXCOREUND-26DEC10-T2.2",
+      "title": "Will year-over-year Core CPI inflation for 2026 fall below 2.2%?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "56.36",
+      "implied_prob": "0.185",
+      "true_prob": "0.7486",
+      "confidence": "85",
+      "suggested_live_dollars": "0.38",
+      "suggested_paper_dollars": "49.97",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "19",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-04T04:21:23.991711Z",
+      "ticker": "KXGOLDDIRY-26DEC31H1700-T4400",
+      "title": "Will the price of Gold be above 4400 on December 31, 2026 at 05:00 PM EST?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-8.38",
+      "implied_prob": "0.395",
+      "true_prob": "0.3112",
+      "confidence": "68",
+      "suggested_live_dollars": "0.63",
+      "suggested_paper_dollars": "19.53",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "63",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-08-04T01:44:29.682429Z",
       "ticker": "FEDHIKE-27DEC31",
@@ -2696,6 +2738,48 @@
   ],
   "recent_alerts": [
     {
+      "timestamp": "2026-08-04T04:21:24.493366Z",
+      "ticker": "KXCOREUND-26DEC10-T2.2",
+      "title": "Will year-over-year Core CPI inflation for 2026 fall below 2.2%?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "56.36",
+      "implied_prob": "0.185",
+      "true_prob": "0.7486",
+      "confidence": "85",
+      "suggested_live_dollars": "0.38",
+      "suggested_paper_dollars": "49.97",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "19",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-04T04:21:23.991711Z",
+      "ticker": "KXGOLDDIRY-26DEC31H1700-T4400",
+      "title": "Will the price of Gold be above 4400 on December 31, 2026 at 05:00 PM EST?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-8.38",
+      "implied_prob": "0.395",
+      "true_prob": "0.3112",
+      "confidence": "68",
+      "suggested_live_dollars": "0.63",
+      "suggested_paper_dollars": "19.53",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "63",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
       "timestamp": "2026-08-04T01:44:29.682429Z",
       "ticker": "FEDHIKE-27DEC31",
       "title": "Will the Federal Reserve hike rates by December 31, 2027?",
@@ -3702,1415 +3786,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-08-04T01:44:19.156768Z",
-      "ticker": "KXSOLMAXY-27JAN01-160",
-      "title": "Will the spot price of Solana be above $160.00 before Jan 1, 2027 at 12:00 AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-10.5",
-      "implied_prob": "0.105",
-      "true_prob": "0.0",
-      "confidence": "63",
-      "suggested_live_dollars": "0.91",
-      "suggested_paper_dollars": "19.11",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "91",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-04T01:44:18.846608Z",
-      "ticker": "KXSOLMAXY-27JAN01-150",
-      "title": "Will the spot price of Solana be above $150.00 before Jan 1, 2027 at 12:00 AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-17.49",
-      "implied_prob": "0.175",
-      "true_prob": "0.0001",
-      "confidence": "70",
-      "suggested_live_dollars": "0.86",
-      "suggested_paper_dollars": "39.56",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "84",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T01:41:53.416550Z",
-      "ticker": "KXLARGECUT-26",
-      "title": "Will the Fed cut rates more than 25 bps in 2026?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "20.9",
-      "implied_prob": "0.055",
-      "true_prob": "0.264",
-      "confidence": "80",
-      "suggested_live_dollars": "0.42",
-      "suggested_paper_dollars": "39.96",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "6",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T01:41:53.105655Z",
-      "ticker": "KXRATECUT-26DEC31",
-      "title": "Will the Federal Reserve cut rates before 2027?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "11.9",
-      "implied_prob": "0.145",
-      "true_prob": "0.264",
-      "confidence": "78",
-      "suggested_live_dollars": "0.15",
-      "suggested_paper_dollars": "19.95",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "15",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T01:41:52.848332Z",
-      "ticker": "KXTESLASEMI-27JAN-5000",
-      "title": "Will Tesla Inc report above 5000 Semi Trucks Produced before Jan 2027?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-12.0",
-      "implied_prob": "0.12",
-      "true_prob": "0.0",
-      "confidence": "68",
-      "suggested_live_dollars": "0.9",
-      "suggested_paper_dollars": "19.8",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "90",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T01:41:52.574222Z",
-      "ticker": "KXTESLASEMI-27JAN-1000",
-      "title": "Will Tesla Inc report above 1000 Semi Trucks Produced before Jan 2027?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-40.14",
-      "implied_prob": "0.405",
-      "true_prob": "0.0036",
-      "confidence": "90",
-      "suggested_live_dollars": "0.61",
-      "suggested_paper_dollars": "49.41",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "61",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T01:41:52.292929Z",
-      "ticker": "KXFEDDECISION-27JAN-H0",
-      "title": "Will the Federal Reserve Hike rates by 0bps at their January 2027 meeting?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "10.1",
-      "implied_prob": "0.635",
-      "true_prob": "0.736",
-      "confidence": "68",
-      "suggested_live_dollars": "0.64",
-      "suggested_paper_dollars": "19.84",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "64",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T01:41:52.002628Z",
-      "ticker": "KXFEDDECISION-27DEC-H26",
-      "title": "Will the Federal Reserve Hike rates by >25bps at their December 2027 meeting?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "66.1",
-      "implied_prob": "0.075",
-      "true_prob": "0.736",
-      "confidence": "85",
-      "suggested_live_dollars": "0.54",
-      "suggested_paper_dollars": "49.95",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "9",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T01:41:51.700346Z",
-      "ticker": "KXAMZNA-28JANHEAD-1525000",
-      "title": "Will Amazon.com, Inc. report above 1525000 Employees (full-time and part-time; excludes contractors & temporary personnel) in 2026?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-87.5",
-      "implied_prob": "0.875",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.56",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "14",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T01:41:51.347266Z",
-      "ticker": "KXAMZNA-28JANHEAD-1500000",
-      "title": "Will Amazon.com, Inc. report above 1500000 Employees (full-time and part-time; excludes contractors & temporary personnel) in 2026?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-92.5",
-      "implied_prob": "0.925",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.54",
-      "suggested_paper_dollars": "49.95",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "9",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T01:41:50.850878Z",
-      "ticker": "KXNVDAA-28JANHEAD-46000",
-      "title": "Will NVIDIA Corporation report above 46000 total employees in 2027?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-90.5",
-      "implied_prob": "0.905",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.55",
-      "suggested_paper_dollars": "49.94",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "11",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T01:41:50.558243Z",
-      "ticker": "KXMELIA-28JANITEMS-3000000000.0",
-      "title": "Will MercadoLibre Inc. report Above 3 billion items sold in 2026?",
-      "category": "Financials",
-      "direction": "YES",
-      "edge_pct": "9.5",
-      "implied_prob": "0.905",
-      "true_prob": "1.0",
-      "confidence": "68",
-      "suggested_live_dollars": "0.93",
-      "suggested_paper_dollars": "19.53",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "93",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T01:41:50.298486Z",
-      "ticker": "KXTSLAA-28JANDEL-1750000.0",
-      "title": "Will Tesla Inc. report Above 1.75 million total deliveries in 2026?",
-      "category": "Companies",
-      "direction": "YES",
-      "edge_pct": "50.0",
-      "implied_prob": "0.5",
-      "true_prob": "1.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.52",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "52",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T01:41:49.902863Z",
-      "ticker": "KXTSLAA-28JANDEL-1700000.0",
-      "title": "Will Tesla Inc. report Above 1.7 million total deliveries in 2026?",
-      "category": "Companies",
-      "direction": "YES",
-      "edge_pct": "27.5",
-      "implied_prob": "0.725",
-      "true_prob": "1.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.76",
-      "suggested_paper_dollars": "49.4",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "76",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T01:41:49.652518Z",
-      "ticker": "KXMETAA-28JANHEAD-71000",
-      "title": "Will Meta Platforms, Inc. report above 71000 Headcount in 2026?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-65.5",
-      "implied_prob": "0.655",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.39",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "39",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T01:41:49.374830Z",
-      "ticker": "KXMETAA-28JANHEAD-68000",
-      "title": "Will Meta Platforms, Inc. report above 68000 Headcount in 2026?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-88.0",
-      "implied_prob": "0.88",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "16",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T01:41:48.962655Z",
-      "ticker": "KXMETAA-28JANHEAD-65000",
-      "title": "Will Meta Platforms, Inc. report above 65000 Headcount in 2026?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-91.5",
-      "implied_prob": "0.915",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.52",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "13",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    }
-  ],
-  "recent_alerts": [
-    {
-      "timestamp": "2026-08-03T22:18:36.457925Z",
-      "ticker": "KXHIGHAUS-26AUG03-B102.5",
-      "title": "Will the **high temp in Austin** be 102-103\u00b0 on Aug 3, 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-77.67",
-      "implied_prob": "0.915",
-      "true_prob": "0.1383",
-      "confidence": "80",
-      "suggested_live_dollars": "0.54",
-      "suggested_paper_dollars": "49.95",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "9",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T22:18:35.928338Z",
-      "ticker": "KXHIGHDEN-26AUG03-B99.5",
-      "title": "Will the **high temp in Denver** be 99-100\u00b0 on Aug 3, 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-44.23",
-      "implied_prob": "0.665",
-      "true_prob": "0.2227",
-      "confidence": "80",
-      "suggested_live_dollars": "0.35",
-      "suggested_paper_dollars": "49.7",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "35",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T20:29:30.030724Z",
-      "ticker": "KXBRENTD-26AUG0317-T84",
-      "title": "Will the brent crude oil close price be above 84 USD/Bbl on August 03, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "NO",
-      "edge_pct": "-48.0",
-      "implied_prob": "0.48",
-      "true_prob": "0.0",
-      "confidence": "70",
-      "suggested_live_dollars": "0.53",
-      "suggested_paper_dollars": "49.82",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "53",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T20:29:29.441196Z",
-      "ticker": "KXGOLDD-26AUG0317-T4042",
-      "title": "Will the gold close price be above 4042 USD/t.oz on August 03, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "YES",
-      "edge_pct": "40.5",
-      "implied_prob": "0.595",
-      "true_prob": "1.0",
-      "confidence": "70",
-      "suggested_live_dollars": "0.6",
-      "suggested_paper_dollars": "49.8",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "60",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T20:29:29.151784Z",
-      "ticker": "KXGOLDD-26AUG0317-T4032",
-      "title": "Will the gold close price be above 4032 USD/t.oz on August 03, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "YES",
-      "edge_pct": "13.5",
-      "implied_prob": "0.865",
-      "true_prob": "1.0",
-      "confidence": "53",
-      "suggested_live_dollars": "0.87",
-      "suggested_paper_dollars": "19.14",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "87",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T20:29:27.022663Z",
-      "ticker": "KXHIGHCHI-26AUG03-B80.5",
-      "title": "Will the high temp in Chicago be 80-81\u00b0 on Aug 3, 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-63.09",
-      "implied_prob": "0.655",
-      "true_prob": "0.0241",
-      "confidence": "80",
-      "suggested_live_dollars": "0.36",
-      "suggested_paper_dollars": "49.68",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "36",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T20:29:26.621386Z",
-      "ticker": "KXHIGHPHIL-26AUG03-B86.5",
-      "title": "Will the **high temp in Philadelphia** be 86-87\u00b0 on Aug 3, 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-61.67",
-      "implied_prob": "0.755",
-      "true_prob": "0.1383",
-      "confidence": "80",
-      "suggested_live_dollars": "0.5",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "25",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T18:11:31.472055Z",
-      "ticker": "KXINXU-26AUG03H1600-T7589.9999",
-      "title": "Will the S&P 500 be above 7589.9999 on Aug 3, 2026 at 4pm EDT?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-51.0",
-      "implied_prob": "0.51",
-      "true_prob": "0.0",
-      "confidence": "70",
-      "suggested_live_dollars": "0.5",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "50",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T18:11:31.178236Z",
-      "ticker": "KXINXU-26AUG03H1600-T7584.9999",
-      "title": "Will the S&P 500 be above 7584.9999 on Aug 3, 2026 at 4pm EDT?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-64.0",
-      "implied_prob": "0.64",
-      "true_prob": "0.0",
-      "confidence": "70",
-      "suggested_live_dollars": "0.37",
-      "suggested_paper_dollars": "49.95",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "37",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T18:11:30.876564Z",
-      "ticker": "KXINXU-26AUG03H1600-T7579.9999",
-      "title": "Will the S&P 500 be above 7579.9999 on Aug 3, 2026 at 4pm EDT?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-76.0",
-      "implied_prob": "0.76",
-      "true_prob": "0.0",
-      "confidence": "70",
-      "suggested_live_dollars": "0.5",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "25",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T18:11:30.515783Z",
-      "ticker": "KXINXU-26AUG03H1600-T7574.9999",
-      "title": "Will the S&P 500 be above 7574.9999 on Aug 3, 2026 at 4pm EDT?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-84.0",
-      "implied_prob": "0.84",
-      "true_prob": "0.0",
-      "confidence": "75",
-      "suggested_live_dollars": "0.54",
-      "suggested_paper_dollars": "49.86",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "18",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T18:11:30.216929Z",
-      "ticker": "KXINXU-26AUG03H1600-T7569.9999",
-      "title": "Will the S&P 500 be above 7569.9999 on Aug 3, 2026 at 4pm EDT?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-90.0",
-      "implied_prob": "0.9",
-      "true_prob": "0.0",
-      "confidence": "75",
-      "suggested_live_dollars": "0.55",
-      "suggested_paper_dollars": "49.94",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "11",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T18:11:29.701068Z",
-      "ticker": "KXINXU-26AUG03H1600-T7564.9999",
-      "title": "Will the S&P 500 be above 7564.9999 on Aug 3, 2026 at 4pm EDT?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-92.5",
-      "implied_prob": "0.925",
-      "true_prob": "0.0",
-      "confidence": "70",
-      "suggested_live_dollars": "0.56",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "8",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T18:11:29.388523Z",
-      "ticker": "KXNASDAQ100U-26AUG03H1600-T28699.99",
-      "title": "Will the Nasdaq-100 be above 28699.99 at the end of Aug 3, 2026 at 4pm EDT?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-60.0",
-      "implied_prob": "0.6",
-      "true_prob": "0.0",
-      "confidence": "70",
-      "suggested_live_dollars": "0.42",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "42",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T18:11:28.983106Z",
-      "ticker": "KXNASDAQ100U-26AUG03H1600-T28669.99",
-      "title": "Will the Nasdaq-100 be above 28669.99 at the end of Aug 3, 2026 at 4pm EDT?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-70.5",
-      "implied_prob": "0.705",
-      "true_prob": "0.0",
-      "confidence": "70",
-      "suggested_live_dollars": "0.31",
-      "suggested_paper_dollars": "49.91",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "31",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T18:11:28.630914Z",
-      "ticker": "KXNASDAQ100U-26AUG03H1600-T28589.99",
-      "title": "Will the Nasdaq-100 be above 28589.99 at the end of Aug 3, 2026 at 4pm EDT?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-89.5",
-      "implied_prob": "0.895",
-      "true_prob": "0.0",
-      "confidence": "70",
-      "suggested_live_dollars": "0.52",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "13",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T18:11:28.170043Z",
-      "ticker": "KXBRENTD-26AUG0317-T83.50",
-      "title": "Will the brent crude oil close price be above 83.50 USD/Bbl on August 03, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "NO",
-      "edge_pct": "-51.77",
-      "implied_prob": "0.52",
-      "true_prob": "0.0023",
-      "confidence": "70",
-      "suggested_live_dollars": "0.5",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "50",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T18:11:27.704497Z",
-      "ticker": "KXBRENTD-26AUG0317-T83",
-      "title": "Will the brent crude oil close price be above 83 USD/Bbl on August 03, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "NO",
-      "edge_pct": "-68.67",
-      "implied_prob": "0.695",
-      "true_prob": "0.0083",
-      "confidence": "70",
-      "suggested_live_dollars": "0.32",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "32",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T18:11:27.257229Z",
-      "ticker": "KXBRENTD-26AUG0317-T82.50",
-      "title": "Will the brent crude oil close price be above 82.50 USD/Bbl on August 03, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "NO",
-      "edge_pct": "-80.5",
-      "implied_prob": "0.83",
-      "true_prob": "0.025",
-      "confidence": "70",
-      "suggested_live_dollars": "0.38",
-      "suggested_paper_dollars": "49.97",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "19",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T18:11:26.959317Z",
-      "ticker": "KXBRENTD-26AUG0317-T82",
-      "title": "Will the brent crude oil close price be above 82 USD/Bbl on August 03, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "NO",
-      "edge_pct": "-87.1",
-      "implied_prob": "0.935",
-      "true_prob": "0.064",
-      "confidence": "70",
-      "suggested_live_dollars": "0.56",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "7",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T18:11:26.462416Z",
-      "ticker": "KXGOLDD-26AUG0317-T4022",
-      "title": "Will the gold close price be above 4022 USD/t.oz on August 03, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "YES",
-      "edge_pct": "15.97",
-      "implied_prob": "0.84",
-      "true_prob": "0.9997",
-      "confidence": "60",
-      "suggested_live_dollars": "0.85",
-      "suggested_paper_dollars": "39.95",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "85",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T18:11:26.170802Z",
-      "ticker": "KXHIGHMIA-26AUG03-B92.5",
-      "title": "Will the **high temp in Miami** be 92-93\u00b0 on Aug 3, 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-35.23",
-      "implied_prob": "0.575",
-      "true_prob": "0.2227",
-      "confidence": "80",
-      "suggested_live_dollars": "0.43",
-      "suggested_paper_dollars": "49.88",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "43",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T18:11:25.864253Z",
-      "ticker": "KXRAIN-26AUG03-ATL",
-      "title": "Will it rain in Atlanta on Aug 3, 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-73.5",
-      "implied_prob": "0.805",
-      "true_prob": "0.07",
-      "confidence": "80",
-      "suggested_live_dollars": "0.4",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "20",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T18:11:25.533312Z",
-      "ticker": "KXH200WS-26AUG07-4.000",
-      "title": "Will the NVIDIA H200 compute per hour price be above $4 at 4 PM ET on Aug 07?",
-      "category": "Financials",
-      "direction": "YES",
-      "edge_pct": "18.5",
-      "implied_prob": "0.815",
-      "true_prob": "1.0",
-      "confidence": "75",
-      "suggested_live_dollars": "0.84",
-      "suggested_paper_dollars": "39.48",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "84",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T18:11:24.961509Z",
-      "ticker": "KXH200MS-26AUG-4.000",
-      "title": "Will the monthly average compute price of NVIDIA's H200 be above $4.00 in August 2026?",
-      "category": "Financials",
-      "direction": "YES",
-      "edge_pct": "18.5",
-      "implied_prob": "0.815",
-      "true_prob": "1.0",
-      "confidence": "75",
-      "suggested_live_dollars": "0.82",
-      "suggested_paper_dollars": "39.36",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "82",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T15:18:06.604210Z",
-      "ticker": "KXWTI-26AUG0314-T76.99",
-      "title": "Will the WTI crude oil settlement price be above 76.99 USD/Bbl on Aug 3, 2026?",
-      "category": "Commodities",
-      "direction": "YES",
-      "edge_pct": "12.42",
-      "implied_prob": "0.87",
-      "true_prob": "0.9942",
-      "confidence": "53",
-      "suggested_live_dollars": "0.89",
-      "suggested_paper_dollars": "19.58",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "89",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T15:18:06.369060Z",
-      "ticker": "KXINXU-26AUG03H1600-T7539.9999",
-      "title": "Will the S&P 500 be above 7539.9999 on Aug 3, 2026 at 4pm EDT?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-60.5",
-      "implied_prob": "0.605",
-      "true_prob": "0.0",
-      "confidence": "80",
-      "suggested_live_dollars": "0.44",
-      "suggested_paper_dollars": "49.72",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "44",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T15:18:06.217793Z",
-      "ticker": "KXINXU-26AUG03H1600-T7529.9999",
-      "title": "Will the S&P 500 be above 7529.9999 on Aug 3, 2026 at 4pm EDT?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-68.5",
-      "implied_prob": "0.685",
-      "true_prob": "0.0",
-      "confidence": "80",
-      "suggested_live_dollars": "0.34",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "34",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T15:18:05.883803Z",
-      "ticker": "KXINXU-26AUG03H1600-T7489.9999",
-      "title": "Will the S&P 500 be above 7489.9999 on Aug 3, 2026 at 4pm EDT?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-91.0",
-      "implied_prob": "0.91",
-      "true_prob": "0.0",
-      "confidence": "80",
-      "suggested_live_dollars": "0.55",
-      "suggested_paper_dollars": "49.94",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "11",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T15:18:05.561115Z",
-      "ticker": "KXINXU-26AUG03H1600-T7464.9999",
-      "title": "Will the S&P 500 be above 7464.9999 on Aug 3, 2026 at 4pm EDT?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-95.0",
-      "implied_prob": "0.95",
-      "true_prob": "0.0",
-      "confidence": "80",
-      "suggested_live_dollars": "0.56",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "7",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T15:18:05.330787Z",
-      "ticker": "KXNASDAQ100U-26AUG03H1600-T28399.99",
-      "title": "Will the Nasdaq-100 be above 28399.99 at the end of Aug 3, 2026 at 4pm EDT?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-53.5",
-      "implied_prob": "0.535",
-      "true_prob": "0.0",
-      "confidence": "80",
-      "suggested_live_dollars": "0.64",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "64",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T15:18:05.128307Z",
-      "ticker": "KXNASDAQ100U-26AUG03H1600-T28349.99",
-      "title": "Will the Nasdaq-100 be above 28349.99 at the end of Aug 3, 2026 at 4pm EDT?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-62.0",
-      "implied_prob": "0.62",
-      "true_prob": "0.0",
-      "confidence": "80",
-      "suggested_live_dollars": "0.55",
-      "suggested_paper_dollars": "49.5",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "55",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T15:18:04.864749Z",
-      "ticker": "KXNASDAQ100U-26AUG03H1600-T28229.99",
-      "title": "Will the Nasdaq-100 be above 28229.99 at the end of Aug 3, 2026 at 4pm EDT?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-63.5",
-      "implied_prob": "0.635",
-      "true_prob": "0.0",
-      "confidence": "80",
-      "suggested_live_dollars": "0.59",
-      "suggested_paper_dollars": "49.56",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "59",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T15:18:04.580498Z",
-      "ticker": "KXNASDAQ100U-26AUG03H1600-T28039.99",
-      "title": "Will the Nasdaq-100 be above 28039.99 at the end of Aug 3, 2026 at 4pm EDT?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-86.5",
-      "implied_prob": "0.865",
-      "true_prob": "0.0",
-      "confidence": "80",
-      "suggested_live_dollars": "0.5",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "25",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T15:18:04.334505Z",
-      "ticker": "KXNASDAQ100U-26AUG03H1600-T28019.99",
-      "title": "Will the Nasdaq-100 be above 28019.99 at the end of Aug 3, 2026 at 4pm EDT?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-87.0",
-      "implied_prob": "0.87",
-      "true_prob": "0.0",
-      "confidence": "80",
-      "suggested_live_dollars": "0.5",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "25",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T15:18:04.119908Z",
-      "ticker": "KXNASDAQ100U-26AUG03H1600-T28009.99",
-      "title": "Will the Nasdaq-100 be above 28009.99 at the end of Aug 3, 2026 at 4pm EDT?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-87.0",
-      "implied_prob": "0.87",
-      "true_prob": "0.0",
-      "confidence": "80",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "24",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T15:18:03.674682Z",
-      "ticker": "KXNASDAQ100U-26AUG03H1600-T27939.99",
-      "title": "Will the Nasdaq-100 be above 27939.99 at the end of Aug 3, 2026 at 4pm EDT?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-88.5",
-      "implied_prob": "0.885",
-      "true_prob": "0.0",
-      "confidence": "80",
-      "suggested_live_dollars": "0.44",
-      "suggested_paper_dollars": "49.94",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "22",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T15:18:03.439294Z",
-      "ticker": "KXHIGHNY-26AUG03-B80.5",
-      "title": "Will the **high temp in NYC** be 80-81\u00b0 on Aug 3, 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-35.93",
-      "implied_prob": "0.565",
-      "true_prob": "0.2057",
-      "confidence": "80",
-      "suggested_live_dollars": "0.44",
-      "suggested_paper_dollars": "49.72",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "44",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T15:18:03.167569Z",
-      "ticker": "KXGOLDDIRY-26DEC31H1700-T4300",
-      "title": "Will the price of Gold be above 4300 on December 31, 2026 at 05:00 PM EST?",
-      "category": "Commodities",
-      "direction": "NO",
-      "edge_pct": "-9.82",
-      "implied_prob": "0.45",
-      "true_prob": "0.3518",
-      "confidence": "68",
-      "suggested_live_dollars": "0.56",
-      "suggested_paper_dollars": "19.6",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "56",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T15:18:02.907116Z",
-      "ticker": "KXFEDDECISION-27APR-H0",
-      "title": "Will the Federal Reserve Hike rates by 0bps at their April 2027 meeting?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-28.6",
-      "implied_prob": "0.68",
-      "true_prob": "0.394",
-      "confidence": "85",
-      "suggested_live_dollars": "0.36",
-      "suggested_paper_dollars": "49.68",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "36",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T15:18:02.559317Z",
-      "ticker": "KXCITRINI-28JUL01",
-      "title": "Will the number of unemployment rate exceeds 10% (monthly BLS); S&P 500 declines more than 30% from its closing level on Issuance; Zillow Home Value Index declines more than 10% YoY in any of: NYC, LA, San Francisco, Chicago, Houston, Phoenix; labor share of gross domestic income (GDI) first-release value for any quarter falls below 50%; CPI-U (All items, not seasonally-adjusted) YoY falls below 0% in any monthly release during before July 2028 be above 2?",
-      "category": "Elections",
-      "direction": "YES",
-      "edge_pct": "83.5",
-      "implied_prob": "0.165",
-      "true_prob": "1.0",
-      "confidence": "95",
-      "suggested_live_dollars": "0.51",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "17",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T08:28:04.680046Z",
-      "ticker": "FEDHIKE-27DEC31",
-      "title": "Will the Federal Reserve hike rates by December 31, 2027?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-41.4",
-      "implied_prob": "0.815",
-      "true_prob": "0.401",
-      "confidence": "90",
-      "suggested_live_dollars": "0.38",
-      "suggested_paper_dollars": "49.97",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "19",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T08:28:04.156083Z",
-      "ticker": "FEDHIKE-27JUN30",
-      "title": "Will the Federal Reserve hike rates by June 30, 2027?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-35.4",
-      "implied_prob": "0.755",
-      "true_prob": "0.401",
-      "confidence": "95",
-      "suggested_live_dollars": "0.5",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "25",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T08:28:03.835168Z",
-      "ticker": "KXWTI-26AUG0314-T80.49",
-      "title": "Will the WTI crude oil settlement price be above 80.49 USD/Bbl on Aug 3, 2026?",
-      "category": "Commodities",
-      "direction": "YES",
-      "edge_pct": "9.92",
-      "implied_prob": "0.265",
-      "true_prob": "0.3642",
-      "confidence": "63",
-      "suggested_live_dollars": "0.27",
-      "suggested_paper_dollars": "19.44",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "27",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T08:28:03.403959Z",
-      "ticker": "KXWTI-26AUG0314-T79.99",
-      "title": "Will the WTI crude oil settlement price be above 79.99 USD/Bbl on Aug 3, 2026?",
-      "category": "Commodities",
-      "direction": "YES",
-      "edge_pct": "8.63",
-      "implied_prob": "0.385",
-      "true_prob": "0.4713",
-      "confidence": "63",
-      "suggested_live_dollars": "0.39",
-      "suggested_paper_dollars": "19.89",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "39",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T08:28:03.074586Z",
-      "ticker": "KXWTI-26AUG0314-T79.49",
-      "title": "Will the WTI crude oil settlement price be above 79.49 USD/Bbl on Aug 3, 2026?",
-      "category": "Commodities",
-      "direction": "YES",
-      "edge_pct": "16.13",
-      "implied_prob": "0.42",
-      "true_prob": "0.5813",
-      "confidence": "70",
-      "suggested_live_dollars": "0.43",
-      "suggested_paper_dollars": "39.99",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "43",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T08:28:02.662331Z",
-      "ticker": "KXWTI-26AUG0314-T78.99",
-      "title": "Will the WTI crude oil settlement price be above 78.99 USD/Bbl on Aug 3, 2026?",
-      "category": "Commodities",
-      "direction": "YES",
-      "edge_pct": "17.09",
-      "implied_prob": "0.515",
-      "true_prob": "0.6859",
-      "confidence": "70",
-      "suggested_live_dollars": "0.52",
-      "suggested_paper_dollars": "39.52",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "52",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T08:28:02.387092Z",
-      "ticker": "KXWTI-26AUG0314-T78.49",
-      "title": "Will the WTI crude oil settlement price be above 78.49 USD/Bbl on Aug 3, 2026?",
-      "category": "Commodities",
-      "direction": "YES",
-      "edge_pct": "20.28",
-      "implied_prob": "0.575",
-      "true_prob": "0.7778",
-      "confidence": "70",
-      "suggested_live_dollars": "0.59",
-      "suggested_paper_dollars": "39.53",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "59",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T08:28:02.044662Z",
-      "ticker": "KXWTI-26AUG0314-T77.99",
-      "title": "Will the WTI crude oil settlement price be above 77.99 USD/Bbl on Aug 3, 2026?",
-      "category": "Commodities",
-      "direction": "YES",
-      "edge_pct": "19.25",
-      "implied_prob": "0.66",
-      "true_prob": "0.8525",
-      "confidence": "70",
-      "suggested_live_dollars": "0.67",
-      "suggested_paper_dollars": "39.53",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "67",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-03T08:28:01.530045Z",
-      "ticker": "KXWTI-26AUG0314-T77.49",
-      "title": "Will the WTI crude oil settlement price be above 77.49 USD/Bbl on Aug 3, 2026?",
-      "category": "Commodities",
-      "direction": "YES",
-      "edge_pct": "11.35",
-      "implied_prob": "0.795",
-      "true_prob": "0.9085",
-      "confidence": "63",
-      "suggested_live_dollars": "0.8",
-      "suggested_paper_dollars": "20.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "80",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -5124,9 +3799,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 88,
+      "current_cents": 86,
       "dollars_risked": 0,
-      "current_value": 0.88,
+      "current_value": 0.86,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -5136,9 +3811,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 88,
+      "current_cents": 84,
       "dollars_risked": 0,
-      "current_value": 1.76,
+      "current_value": 1.68,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -5148,9 +3823,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 79,
+      "current_cents": 80,
       "dollars_risked": 0,
-      "current_value": 1.58,
+      "current_value": 1.6,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

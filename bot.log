@@ -66835,3 +66835,42 @@ Total modelable markets evaluated: 0
 [2026-08-03 21:44:29 ET] [INFO] Scan complete — 68 alerts sent
 [2026-08-03 21:44:29 ET] [INFO] ============================================================
 [2026-08-03 21:44:29 ET] [INFO] Scan job complete
+[2026-08-03 22:56:16 ET] [INFO] Scan job starting
+[2026-08-03 22:56:16 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-08-03 22:56:16 ET] [INFO] ============================================================
+[2026-08-03 22:56:16 ET] [INFO] Starting market scan
+[2026-08-03 22:56:17 ET] [INFO] Portfolio value: $5.35 cash + $5.96 positions = $11.31
+[2026-08-03 22:56:17 ET] [INFO] Cash: $5.35  |  Positions: $5.96  |  Total: $11.31  |  Peak: $11.46
+[2026-08-03 22:56:18 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-08-03 22:56:18 ET] [WARN] API GET /markets → HTTP 400
+[2026-08-03 22:56:42 ET] [INFO] Fetched 79587 open markets via events endpoint across 49 pages
+[2026-08-03 22:56:42 ET] [INFO] Fetched 79587 open markets
+[2026-08-03 22:56:42 ET] [INFO] Parsed 73539 valid markets
+[2026-08-03 22:56:42 ET] [INFO] Categories: {'Sports': 37218, 'Elections': 11258, 'Financials': 6837, 'Entertainment': 5972, 'Economics': 3360, 'Crypto': 3083, 'Politics': 1962, 'Mentions': 919}
+[2026-08-03 22:59:59 ET] [INFO]   CPI model: threshold=10.0% TNX=4.69% → P=0.200
+[2026-08-03 23:00:12 ET] [INFO]   price model: TSLA spot=322.08 target=1.60 vol=68.3% T=14522.1h → P=1.000
+[2026-08-03 23:32:30 ET] [INFO]   price model: ETH-USD spot=1863.26 target=4500.00 vol=35.4% T=3602.1h → P=0.000
+[2026-08-03 23:32:49 ET] [INFO]   price model: BTC-USD spot=63760.49 target=109999.00 vol=25.2% T=3602.0h → P=0.000
+[2026-08-03 23:32:49 ET] [INFO]   price model: BTC-USD spot=63760.49 target=119999.00 vol=25.2% T=3602.0h → P=0.000
+[2026-08-03 23:32:49 ET] [INFO]   price model: BTC-USD spot=63760.49 target=129999.00 vol=25.2% T=3602.0h → P=0.000
+[2026-08-03 23:32:53 ET] [INFO]   price model: GC=F spot=4115.80 target=4400.00 vol=21.2% T=3595.1h → P=0.311
+[2026-08-03 23:32:53 ET] [INFO]   EDGE FOUND: KXGOLDDIRY-26DEC31H1700-T4400 | implied=39.5% true=31.1% edge=-8.4% dir=NO conf=68
+[2026-08-03 23:38:09 ET] [INFO]   CPI model: threshold=2.2% TNX=4.69% → P=0.749
+[2026-08-03 23:38:09 ET] [INFO]   EDGE FOUND: KXCOREUND-26DEC10-T2.2 | implied=18.5% true=74.9% edge=+56.4% dir=YES conf=85
+[2026-08-03 23:40:12 ET] [INFO]   price model: DIA spot=531.22 target=3.00 vol=11.8% T=2858.1h → P=1.000
+[2026-08-03 23:47:33 ET] [INFO]   fed model: implied_rate=3.635% current≈3.700% diff=-6.5bps → P=0.370
+[2026-08-03 23:51:19 ET] [INFO]   weather model: houston can't parse temp condition from title
+[2026-08-03 23:51:41 ET] [INFO]   price model: BTC-USD spot=63761.27 target=75000.00 vol=25.2% T=673.1h → P=0.010
+[2026-08-03 23:55:39 ET] [INFO]   CPI model: threshold=3.3% TNX=4.69% → P=0.639
+[2026-08-04 00:02:21 ET] [INFO]   price model: DIA spot=531.22 target=5.00 vol=11.4% T=89.1h → P=1.000
+[2026-08-04 00:13:57 ET] [INFO]   price model: CL=F spot=81.11 target=78.49 vol=61.2% T=15.6h → P=0.899
+[2026-08-04 00:13:57 ET] [INFO]   price model: CL=F spot=81.11 target=79.49 vol=61.2% T=15.6h → P=0.783
+[2026-08-04 00:13:57 ET] [INFO]   price model: CL=F spot=81.11 target=80.49 vol=61.2% T=15.6h → P=0.617
+[2026-08-04 00:21:23 ET] [INFO] Checked 73471 markets | Modelable: 73471 | Edges found: 2
+[2026-08-04 00:21:23 ET] [INFO] [Discord] Trade alert sent: KXGOLDDIRY-26DEC31H1700-T4400
+[2026-08-04 00:21:24 ET] [WARN] AUTO-BET SKIP KXGOLDDIRY-26DEC31H1700-T4400: exposure 38.2% ≥ 25% limit ($7.00 of $18.31 in open positions)
+[2026-08-04 00:21:24 ET] [INFO] [Discord] Trade alert sent: KXCOREUND-26DEC10-T2.2
+[2026-08-04 00:21:24 ET] [WARN] AUTO-BET SKIP KXCOREUND-26DEC10-T2.2: exposure 38.2% ≥ 25% limit ($7.00 of $18.31 in open positions)
+[2026-08-04 00:21:24 ET] [INFO] Scan complete — 2 alerts sent
+[2026-08-04 00:21:24 ET] [INFO] ============================================================
+[2026-08-04 00:21:24 ET] [INFO] Scan job complete

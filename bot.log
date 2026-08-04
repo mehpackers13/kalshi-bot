@@ -67104,3 +67104,45 @@ Total modelable markets evaluated: 0
 [2026-08-04 15:46:43 ET] [INFO] Scan complete — 8 alerts sent
 [2026-08-04 15:46:43 ET] [INFO] ============================================================
 [2026-08-04 15:46:43 ET] [INFO] Scan job complete
+[2026-08-04 15:50:12 ET] [INFO] Scan job starting
+[2026-08-04 15:50:12 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-08-04 15:50:12 ET] [INFO] ============================================================
+[2026-08-04 15:50:12 ET] [INFO] Starting market scan
+[2026-08-04 15:50:13 ET] [INFO] Portfolio value: $5.35 cash + $5.97 positions = $11.32
+[2026-08-04 15:50:13 ET] [INFO] Cash: $5.35  |  Positions: $5.97  |  Total: $11.32  |  Peak: $11.46
+[2026-08-04 15:50:13 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-08-04 15:50:14 ET] [WARN] API GET /markets → HTTP 400
+[2026-08-04 15:50:31 ET] [INFO] Fetched 78104 open markets via events endpoint across 49 pages
+[2026-08-04 15:50:31 ET] [INFO] Fetched 78104 open markets
+[2026-08-04 15:50:31 ET] [INFO] Parsed 73447 valid markets
+[2026-08-04 15:50:31 ET] [INFO] Categories: {'Sports': 38737, 'Elections': 11308, 'Entertainment': 5969, 'Financials': 5088, 'Economics': 3377, 'Crypto': 3023, 'Politics': 1904, 'Commodities': 1000}
+[2026-08-04 15:53:38 ET] [INFO]   CPI model: threshold=10.0% TNX=4.63% → P=0.200
+[2026-08-04 15:53:51 ET] [INFO]   price model: TSLA spot=327.23 target=1.60 vol=66.8% T=14505.2h → P=1.000
+[2026-08-04 16:26:48 ET] [INFO]   price model: ETH-USD spot=1869.52 target=4500.00 vol=34.9% T=3585.2h → P=0.000
+[2026-08-04 16:27:07 ET] [INFO]   price model: BTC-USD spot=64081.49 target=119999.00 vol=24.8% T=3585.1h → P=0.000
+[2026-08-04 16:27:07 ET] [INFO]   price model: BTC-USD spot=64081.49 target=129999.00 vol=24.8% T=3585.1h → P=0.000
+[2026-08-04 16:33:56 ET] [INFO]   price model: DIA spot=540.43 target=3.00 vol=12.8% T=2841.2h → P=1.000
+[2026-08-04 16:44:49 ET] [INFO]   weather model: houston can't parse temp condition from title
+[2026-08-04 16:45:11 ET] [INFO]   price model: BTC-USD spot=64323.31 target=75000.00 vol=25.0% T=656.2h → P=0.012
+[2026-08-04 16:49:06 ET] [INFO]   CPI model: threshold=3.3% TNX=4.63% → P=0.633
+[2026-08-04 16:55:38 ET] [INFO]   price model: DIA spot=540.43 target=5.00 vol=12.8% T=72.2h → P=1.000
+[2026-08-04 17:01:25 ET] [INFO]   weather model: miami rain 2026-08-04 forecast=10% → P=0.100
+[2026-08-04 17:01:25 ET] [INFO]   EDGE FOUND: KXRAIN-26AUG04-MIA | implied=81.5% true=10.0% edge=-71.5% dir=NO conf=80
+[2026-08-04 17:04:41 ET] [INFO]   weather model: philadelphia max=90.0°F target=[89,90]°F days_out=0 σ=3.5°F → P=0.223
+[2026-08-04 17:04:41 ET] [INFO]   EDGE FOUND: KXHIGHPHIL-26AUG04-B89.5 | implied=92.5% true=22.3% edge=-70.2% dir=NO conf=80
+[2026-08-04 17:05:20 ET] [INFO]   price model: GC=F spot=4133.60 target=154.50 vol=22.0% T=54.2h → P=1.000
+[2026-08-04 17:05:20 ET] [INFO]   EDGE FOUND: KXWNBATOTAL-26AUG04TORGS-155 | implied=83.5% true=100.0% edge=+16.5% dir=YES conf=75
+[2026-08-04 17:05:20 ET] [INFO]   price model: GC=F spot=4133.60 target=163.50 vol=22.0% T=54.2h → P=1.000
+[2026-08-04 17:05:20 ET] [INFO]   EDGE FOUND: KXWNBATOTAL-26AUG04TORGS-164 | implied=64.5% true=100.0% edge=+35.5% dir=YES conf=85
+[2026-08-04 17:12:22 ET] [INFO] Checked 73360 markets | Modelable: 73360 | Edges found: 4
+[2026-08-04 17:12:23 ET] [INFO] [Discord] Trade alert sent: KXRAIN-26AUG04-MIA
+[2026-08-04 17:12:24 ET] [WARN] AUTO-BET SKIP KXRAIN-26AUG04-MIA: exposure 38.2% ≥ 25% limit ($7.00 of $18.32 in open positions)
+[2026-08-04 17:12:24 ET] [INFO] [Discord] Trade alert sent: KXHIGHPHIL-26AUG04-B89.5
+[2026-08-04 17:12:24 ET] [WARN] AUTO-BET SKIP KXHIGHPHIL-26AUG04-B89.5: exposure 38.2% ≥ 25% limit ($7.00 of $18.32 in open positions)
+[2026-08-04 17:12:24 ET] [INFO] [Discord] Trade alert sent: KXWNBATOTAL-26AUG04TORGS-155
+[2026-08-04 17:12:24 ET] [WARN] AUTO-BET SKIP KXWNBATOTAL-26AUG04TORGS-155: exposure 38.2% ≥ 25% limit ($7.00 of $18.32 in open positions)
+[2026-08-04 17:12:25 ET] [INFO] [Discord] Trade alert sent: KXWNBATOTAL-26AUG04TORGS-164
+[2026-08-04 17:12:25 ET] [WARN] AUTO-BET SKIP KXWNBATOTAL-26AUG04TORGS-164: exposure 38.2% ≥ 25% limit ($7.00 of $18.32 in open positions)
+[2026-08-04 17:12:25 ET] [INFO] Scan complete — 4 alerts sent
+[2026-08-04 17:12:25 ET] [INFO] ============================================================
+[2026-08-04 17:12:25 ET] [INFO] Scan job complete

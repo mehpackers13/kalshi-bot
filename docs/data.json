@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-05T20:56:31.971172Z",
-  "last_scan_ts": "2026-08-05T20:56:31.971172Z",
+  "generated_at": "2026-08-06T00:42:42.044491Z",
+  "last_scan_ts": "2026-08-06T00:42:42.044491Z",
   "stats": {
-    "total_alerts": 10243,
+    "total_alerts": 10262,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -13,7 +13,7 @@
         "hit_rate": null
       },
       "Economics": {
-        "total": 2204,
+        "total": 2210,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -49,13 +49,13 @@
         "hit_rate": null
       },
       "Financials": {
-        "total": 1305,
+        "total": 1307,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "Commodities": {
-        "total": 1303,
+        "total": 1306,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -75,13 +75,13 @@
         "hit_rate": null
       },
       "medium (15-25%)": {
-        "total": 1896,
+        "total": 1900,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 6199,
+        "total": 6211,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 11.37,
+      "balance": 11.3,
       "cash": 5.35,
       "peak": 11.46,
       "initial_balance": 10.0
@@ -101,15 +101,414 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-08-05T19:03:55.049814Z"
+    "updated_at": "2026-08-05T22:48:36.543015Z"
   },
   "cash_bal": 5.35,
-  "position_value": 6.02,
-  "account_value": 11.37,
-  "live_pnl": 1.37,
+  "position_value": 5.95,
+  "account_value": 11.3,
+  "live_pnl": 1.3,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-08-06T00:42:41.575878Z",
+      "ticker": "FEDHIKE-27DEC31",
+      "title": "Will the Federal Reserve hike rates by December 31, 2027?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-48.0",
+      "implied_prob": "0.795",
+      "true_prob": "0.315",
+      "confidence": "90",
+      "suggested_live_dollars": "0.42",
+      "suggested_paper_dollars": "49.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "21",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-06T00:42:41.166704Z",
+      "ticker": "FEDHIKE-27JUN30",
+      "title": "Will the Federal Reserve hike rates by June 30, 2027?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-43.0",
+      "implied_prob": "0.745",
+      "true_prob": "0.315",
+      "confidence": "95",
+      "suggested_live_dollars": "0.52",
+      "suggested_paper_dollars": "49.92",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "26",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-06T00:42:40.709188Z",
+      "ticker": "FEDHIKE-26DEC31",
+      "title": "Will the Federal Reserve hike rates by December 31, 2026?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-33.0",
+      "implied_prob": "0.645",
+      "true_prob": "0.315",
+      "confidence": "95",
+      "suggested_live_dollars": "0.36",
+      "suggested_paper_dollars": "49.68",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "36",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-06T00:42:40.353981Z",
+      "ticker": "KXH200WS-26AUG07-4.500",
+      "title": "Will the NVIDIA H200 compute per hour price be above $4.5 at 4 PM ET on Aug 07?",
+      "category": "Financials",
+      "direction": "YES",
+      "edge_pct": "21.5",
+      "implied_prob": "0.785",
+      "true_prob": "1.0",
+      "confidence": "75",
+      "suggested_live_dollars": "0.8",
+      "suggested_paper_dollars": "40.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "80",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-06T00:42:39.996025Z",
+      "ticker": "KXBRENTW-26AUG0717-T78.99",
+      "title": "Will the brent crude oil close price be above 78.99 USD/Bbl on August 07, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-44.22",
+      "implied_prob": "0.57",
+      "true_prob": "0.1278",
+      "confidence": "85",
+      "suggested_live_dollars": "0.44",
+      "suggested_paper_dollars": "49.72",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "44",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-06T00:42:39.622266Z",
+      "ticker": "KXBRENTW-26AUG0717-T76.99",
+      "title": "Will the brent crude oil close price be above 76.99 USD/Bbl on August 07, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-46.1",
+      "implied_prob": "0.74",
+      "true_prob": "0.279",
+      "confidence": "85",
+      "suggested_live_dollars": "0.54",
+      "suggested_paper_dollars": "49.95",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "27",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-06T00:42:39.278583Z",
+      "ticker": "KXBRENTW-26AUG0717-T74.99",
+      "title": "Will the brent crude oil close price be above 74.99 USD/Bbl on August 07, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-38.3",
+      "implied_prob": "0.875",
+      "true_prob": "0.492",
+      "confidence": "85",
+      "suggested_live_dollars": "0.52",
+      "suggested_paper_dollars": "49.92",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "13",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-06T00:42:38.900771Z",
+      "ticker": "KXCPIYOY-26JUL-T3.4",
+      "title": "Will the rate of CPI inflation be above 3.4% for the year ending in July 2026?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "43.67",
+      "implied_prob": "0.185",
+      "true_prob": "0.6217",
+      "confidence": "90",
+      "suggested_live_dollars": "0.4",
+      "suggested_paper_dollars": "50.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "20",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-06T00:42:38.498926Z",
+      "ticker": "KXCPIYOY-26JUL-T3.2",
+      "title": "Will the rate of CPI inflation be above 3.2% for the year ending in July 2026?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-24.33",
+      "implied_prob": "0.885",
+      "true_prob": "0.6417",
+      "confidence": "80",
+      "suggested_live_dollars": "0.36",
+      "suggested_paper_dollars": "39.96",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "12",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-06T00:42:38.076777Z",
+      "ticker": "KXUSGASCPI-26AUG12-T330",
+      "title": "Will Gasoline (All Types) in U.S. City Average for July 2026 be above 330\u3164?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-80.5",
+      "implied_prob": "0.805",
+      "true_prob": "0.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.4",
+      "suggested_paper_dollars": "50.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "20",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-06T00:42:37.677186Z",
+      "ticker": "KXBTCMAXMON-BTC-26AUG31-7250000",
+      "title": "Will BTC trimmed mean be above $72500.00 by 11:59 PM ET on Aug 31, 2026?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-9.48",
+      "implied_prob": "0.135",
+      "true_prob": "0.0402",
+      "confidence": "63",
+      "suggested_live_dollars": "0.87",
+      "suggested_paper_dollars": "19.14",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "87",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-06T00:42:37.318394Z",
+      "ticker": "KXBTCMAXMON-BTC-26AUG31-7000000",
+      "title": "Will BTC trimmed mean be above $70000.00 by 11:59 PM ET on Aug 31, 2026?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-20.3",
+      "implied_prob": "0.315",
+      "true_prob": "0.112",
+      "confidence": "75",
+      "suggested_live_dollars": "0.69",
+      "suggested_paper_dollars": "39.33",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "69",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-06T00:42:36.966184Z",
+      "ticker": "KXBTCMAXMON-BTC-26AUG31-6750000",
+      "title": "Will BTC trimmed mean be above $67500.00 by 11:59 PM ET on Aug 31, 2026?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-30.16",
+      "implied_prob": "0.555",
+      "true_prob": "0.2534",
+      "confidence": "85",
+      "suggested_live_dollars": "0.45",
+      "suggested_paper_dollars": "49.95",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "45",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-06T00:42:36.562531Z",
+      "ticker": "KXBTCMAXMON-BTC-26AUG31-6500000",
+      "title": "Will BTC trimmed mean be above $65000.00 by 11:59 PM ET on Aug 31, 2026?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-41.13",
+      "implied_prob": "0.875",
+      "true_prob": "0.4637",
+      "confidence": "90",
+      "suggested_live_dollars": "0.52",
+      "suggested_paper_dollars": "49.92",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "13",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-06T00:42:36.191954Z",
+      "ticker": "KXBTCMINMON-BTC-26AUG31-5750000",
+      "title": "Will BTC trimmed mean be below $57500.00 by 11:59 PM ET on Aug 31, 2026?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-16.16",
+      "implied_prob": "0.2",
+      "true_prob": "0.0384",
+      "confidence": "70",
+      "suggested_live_dollars": "0.81",
+      "suggested_paper_dollars": "39.69",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "81",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-06T00:42:35.739048Z",
+      "ticker": "KXBTCMINMON-BTC-26AUG31-6000000",
+      "title": "Will BTC trimmed mean be below $60000.00 by 11:59 PM ET on Aug 31, 2026?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-30.44",
+      "implied_prob": "0.435",
+      "true_prob": "0.1306",
+      "confidence": "85",
+      "suggested_live_dollars": "0.57",
+      "suggested_paper_dollars": "49.59",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "57",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-06T00:42:35.230510Z",
+      "ticker": "KXETHMAXMON-ETH-26AUG31-200000",
+      "title": "Will ETH trimmed mean be above $2000.00 by 11:59 PM ET on Aug 31, 2026?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-35.67",
+      "implied_prob": "0.665",
+      "true_prob": "0.3083",
+      "confidence": "80",
+      "suggested_live_dollars": "0.34",
+      "suggested_paper_dollars": "49.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "34",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-06T00:42:34.839784Z",
+      "ticker": "KXH200MS-26AUG-4.000",
+      "title": "Will the monthly average compute price of NVIDIA's H200 be above $4.00 in August 2026?",
+      "category": "Financials",
+      "direction": "YES",
+      "edge_pct": "13.5",
+      "implied_prob": "0.865",
+      "true_prob": "1.0",
+      "confidence": "68",
+      "suggested_live_dollars": "0.88",
+      "suggested_paper_dollars": "19.36",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "88",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-06T00:42:34.355683Z",
+      "ticker": "KXBTCMAXY-26DEC31-119999.99",
+      "title": "Will Bitcoin be above $119,999.99 by Dec 31, 2026 at 11:59 PM ET?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-8.5",
+      "implied_prob": "0.085",
+      "true_prob": "0.0",
+      "confidence": "68",
+      "suggested_live_dollars": "0.92",
+      "suggested_paper_dollars": "19.32",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "92",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-08-05T20:56:31.547896Z",
       "ticker": "KXHIGHCHI-26AUG05-B83.5",
@@ -2314,42 +2713,23 @@
       "null": [
         ""
       ]
-    },
+    }
+  ],
+  "recent_alerts": [
     {
-      "timestamp": "2026-08-04T23:10:53.118560Z",
-      "ticker": "KXWNBASPREAD-26AUG04TORGS-GS7",
-      "title": "Golden State wins the game by over 6.5 points?",
-      "category": "Sports",
-      "direction": "YES",
-      "edge_pct": "30.5",
-      "implied_prob": "0.695",
-      "true_prob": "1.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.7",
-      "suggested_paper_dollars": "49.7",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "70",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-04T23:10:52.755364Z",
-      "ticker": "KXHIGHAUS-26AUG04-B101.5",
-      "title": "Will the **high temp in Austin** be 101-102\u00b0 on Aug 4, 2026?",
-      "category": "Climate and Weather",
+      "timestamp": "2026-08-06T00:42:41.575878Z",
+      "ticker": "FEDHIKE-27DEC31",
+      "title": "Will the Federal Reserve hike rates by December 31, 2027?",
+      "category": "Economics",
       "direction": "NO",
-      "edge_pct": "-56.17",
-      "implied_prob": "0.7",
-      "true_prob": "0.1383",
-      "confidence": "80",
-      "suggested_live_dollars": "0.31",
-      "suggested_paper_dollars": "49.91",
+      "edge_pct": "-48.0",
+      "implied_prob": "0.795",
+      "true_prob": "0.315",
+      "confidence": "90",
+      "suggested_live_dollars": "0.42",
+      "suggested_paper_dollars": "49.98",
       "is_paper_bet": "1",
-      "paper_entry_price_cents": "31",
+      "paper_entry_price_cents": "21",
       "outcome": "",
       "resolved_at": "",
       "notes": "",
@@ -2358,19 +2738,40 @@
       ]
     },
     {
-      "timestamp": "2026-08-04T21:12:25.016263Z",
-      "ticker": "KXWNBATOTAL-26AUG04TORGS-164",
-      "title": "Toronto vs Golden State women's Pro Basketball game: Over 163.5 points?",
-      "category": "Sports",
-      "direction": "YES",
-      "edge_pct": "35.5",
+      "timestamp": "2026-08-06T00:42:41.166704Z",
+      "ticker": "FEDHIKE-27JUN30",
+      "title": "Will the Federal Reserve hike rates by June 30, 2027?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-43.0",
+      "implied_prob": "0.745",
+      "true_prob": "0.315",
+      "confidence": "95",
+      "suggested_live_dollars": "0.52",
+      "suggested_paper_dollars": "49.92",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "26",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-06T00:42:40.709188Z",
+      "ticker": "FEDHIKE-26DEC31",
+      "title": "Will the Federal Reserve hike rates by December 31, 2026?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-33.0",
       "implied_prob": "0.645",
-      "true_prob": "1.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.65",
-      "suggested_paper_dollars": "49.4",
+      "true_prob": "0.315",
+      "confidence": "95",
+      "suggested_live_dollars": "0.36",
+      "suggested_paper_dollars": "49.68",
       "is_paper_bet": "1",
-      "paper_entry_price_cents": "65",
+      "paper_entry_price_cents": "36",
       "outcome": "",
       "resolved_at": "",
       "notes": "",
@@ -2379,19 +2780,19 @@
       ]
     },
     {
-      "timestamp": "2026-08-04T21:12:24.665910Z",
-      "ticker": "KXWNBATOTAL-26AUG04TORGS-155",
-      "title": "Toronto vs Golden State women's Pro Basketball game: Over 154.5 points?",
-      "category": "Sports",
+      "timestamp": "2026-08-06T00:42:40.353981Z",
+      "ticker": "KXH200WS-26AUG07-4.500",
+      "title": "Will the NVIDIA H200 compute per hour price be above $4.5 at 4 PM ET on Aug 07?",
+      "category": "Financials",
       "direction": "YES",
-      "edge_pct": "16.5",
-      "implied_prob": "0.835",
+      "edge_pct": "21.5",
+      "implied_prob": "0.785",
       "true_prob": "1.0",
       "confidence": "75",
-      "suggested_live_dollars": "0.84",
-      "suggested_paper_dollars": "39.48",
+      "suggested_live_dollars": "0.8",
+      "suggested_paper_dollars": "40.0",
       "is_paper_bet": "1",
-      "paper_entry_price_cents": "84",
+      "paper_entry_price_cents": "80",
       "outcome": "",
       "resolved_at": "",
       "notes": "",
@@ -2400,19 +2801,19 @@
       ]
     },
     {
-      "timestamp": "2026-08-04T21:12:24.378795Z",
-      "ticker": "KXHIGHPHIL-26AUG04-B89.5",
-      "title": "Will the **high temp in Philadelphia** be 89-90\u00b0 on Aug 4, 2026?",
-      "category": "Climate and Weather",
+      "timestamp": "2026-08-06T00:42:39.996025Z",
+      "ticker": "KXBRENTW-26AUG0717-T78.99",
+      "title": "Will the brent crude oil close price be above 78.99 USD/Bbl on August 07, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
       "direction": "NO",
-      "edge_pct": "-70.23",
-      "implied_prob": "0.925",
-      "true_prob": "0.2227",
-      "confidence": "80",
-      "suggested_live_dollars": "0.5",
-      "suggested_paper_dollars": "50.0",
+      "edge_pct": "-44.22",
+      "implied_prob": "0.57",
+      "true_prob": "0.1278",
+      "confidence": "85",
+      "suggested_live_dollars": "0.44",
+      "suggested_paper_dollars": "49.72",
       "is_paper_bet": "1",
-      "paper_entry_price_cents": "10",
+      "paper_entry_price_cents": "44",
       "outcome": "",
       "resolved_at": "",
       "notes": "",
@@ -2421,15 +2822,57 @@
       ]
     },
     {
-      "timestamp": "2026-08-04T21:12:23.944044Z",
-      "ticker": "KXRAIN-26AUG04-MIA",
-      "title": "Will it rain in Miami on Aug 4, 2026?",
-      "category": "Climate and Weather",
+      "timestamp": "2026-08-06T00:42:39.622266Z",
+      "ticker": "KXBRENTW-26AUG0717-T76.99",
+      "title": "Will the brent crude oil close price be above 76.99 USD/Bbl on August 07, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
       "direction": "NO",
-      "edge_pct": "-71.5",
-      "implied_prob": "0.815",
-      "true_prob": "0.1",
-      "confidence": "80",
+      "edge_pct": "-46.1",
+      "implied_prob": "0.74",
+      "true_prob": "0.279",
+      "confidence": "85",
+      "suggested_live_dollars": "0.54",
+      "suggested_paper_dollars": "49.95",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "27",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-06T00:42:39.278583Z",
+      "ticker": "KXBRENTW-26AUG0717-T74.99",
+      "title": "Will the brent crude oil close price be above 74.99 USD/Bbl on August 07, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-38.3",
+      "implied_prob": "0.875",
+      "true_prob": "0.492",
+      "confidence": "85",
+      "suggested_live_dollars": "0.52",
+      "suggested_paper_dollars": "49.92",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "13",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-06T00:42:38.900771Z",
+      "ticker": "KXCPIYOY-26JUL-T3.4",
+      "title": "Will the rate of CPI inflation be above 3.4% for the year ending in July 2026?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "43.67",
+      "implied_prob": "0.185",
+      "true_prob": "0.6217",
+      "confidence": "90",
       "suggested_live_dollars": "0.4",
       "suggested_paper_dollars": "50.0",
       "is_paper_bet": "1",
@@ -2440,9 +2883,238 @@
       "null": [
         ""
       ]
-    }
-  ],
-  "recent_alerts": [
+    },
+    {
+      "timestamp": "2026-08-06T00:42:38.498926Z",
+      "ticker": "KXCPIYOY-26JUL-T3.2",
+      "title": "Will the rate of CPI inflation be above 3.2% for the year ending in July 2026?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-24.33",
+      "implied_prob": "0.885",
+      "true_prob": "0.6417",
+      "confidence": "80",
+      "suggested_live_dollars": "0.36",
+      "suggested_paper_dollars": "39.96",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "12",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-06T00:42:38.076777Z",
+      "ticker": "KXUSGASCPI-26AUG12-T330",
+      "title": "Will Gasoline (All Types) in U.S. City Average for July 2026 be above 330\u3164?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-80.5",
+      "implied_prob": "0.805",
+      "true_prob": "0.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.4",
+      "suggested_paper_dollars": "50.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "20",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-06T00:42:37.677186Z",
+      "ticker": "KXBTCMAXMON-BTC-26AUG31-7250000",
+      "title": "Will BTC trimmed mean be above $72500.00 by 11:59 PM ET on Aug 31, 2026?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-9.48",
+      "implied_prob": "0.135",
+      "true_prob": "0.0402",
+      "confidence": "63",
+      "suggested_live_dollars": "0.87",
+      "suggested_paper_dollars": "19.14",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "87",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-06T00:42:37.318394Z",
+      "ticker": "KXBTCMAXMON-BTC-26AUG31-7000000",
+      "title": "Will BTC trimmed mean be above $70000.00 by 11:59 PM ET on Aug 31, 2026?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-20.3",
+      "implied_prob": "0.315",
+      "true_prob": "0.112",
+      "confidence": "75",
+      "suggested_live_dollars": "0.69",
+      "suggested_paper_dollars": "39.33",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "69",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-06T00:42:36.966184Z",
+      "ticker": "KXBTCMAXMON-BTC-26AUG31-6750000",
+      "title": "Will BTC trimmed mean be above $67500.00 by 11:59 PM ET on Aug 31, 2026?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-30.16",
+      "implied_prob": "0.555",
+      "true_prob": "0.2534",
+      "confidence": "85",
+      "suggested_live_dollars": "0.45",
+      "suggested_paper_dollars": "49.95",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "45",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-06T00:42:36.562531Z",
+      "ticker": "KXBTCMAXMON-BTC-26AUG31-6500000",
+      "title": "Will BTC trimmed mean be above $65000.00 by 11:59 PM ET on Aug 31, 2026?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-41.13",
+      "implied_prob": "0.875",
+      "true_prob": "0.4637",
+      "confidence": "90",
+      "suggested_live_dollars": "0.52",
+      "suggested_paper_dollars": "49.92",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "13",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-06T00:42:36.191954Z",
+      "ticker": "KXBTCMINMON-BTC-26AUG31-5750000",
+      "title": "Will BTC trimmed mean be below $57500.00 by 11:59 PM ET on Aug 31, 2026?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-16.16",
+      "implied_prob": "0.2",
+      "true_prob": "0.0384",
+      "confidence": "70",
+      "suggested_live_dollars": "0.81",
+      "suggested_paper_dollars": "39.69",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "81",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-06T00:42:35.739048Z",
+      "ticker": "KXBTCMINMON-BTC-26AUG31-6000000",
+      "title": "Will BTC trimmed mean be below $60000.00 by 11:59 PM ET on Aug 31, 2026?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-30.44",
+      "implied_prob": "0.435",
+      "true_prob": "0.1306",
+      "confidence": "85",
+      "suggested_live_dollars": "0.57",
+      "suggested_paper_dollars": "49.59",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "57",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-06T00:42:35.230510Z",
+      "ticker": "KXETHMAXMON-ETH-26AUG31-200000",
+      "title": "Will ETH trimmed mean be above $2000.00 by 11:59 PM ET on Aug 31, 2026?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-35.67",
+      "implied_prob": "0.665",
+      "true_prob": "0.3083",
+      "confidence": "80",
+      "suggested_live_dollars": "0.34",
+      "suggested_paper_dollars": "49.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "34",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-06T00:42:34.839784Z",
+      "ticker": "KXH200MS-26AUG-4.000",
+      "title": "Will the monthly average compute price of NVIDIA's H200 be above $4.00 in August 2026?",
+      "category": "Financials",
+      "direction": "YES",
+      "edge_pct": "13.5",
+      "implied_prob": "0.865",
+      "true_prob": "1.0",
+      "confidence": "68",
+      "suggested_live_dollars": "0.88",
+      "suggested_paper_dollars": "19.36",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "88",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-06T00:42:34.355683Z",
+      "ticker": "KXBTCMAXY-26DEC31-119999.99",
+      "title": "Will Bitcoin be above $119,999.99 by Dec 31, 2026 at 11:59 PM ET?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-8.5",
+      "implied_prob": "0.085",
+      "true_prob": "0.0",
+      "confidence": "68",
+      "suggested_live_dollars": "0.92",
+      "suggested_paper_dollars": "19.32",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "92",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-08-05T20:56:31.547896Z",
       "ticker": "KXHIGHCHI-26AUG05-B83.5",
@@ -3093,405 +3765,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-08-05T03:07:28.520875Z",
-      "ticker": "KXWNBASPREAD-26AUG04TORGS-GS7",
-      "title": "Golden State wins the game by over 6.5 points?",
-      "category": "Sports",
-      "direction": "YES",
-      "edge_pct": "30.5",
-      "implied_prob": "0.695",
-      "true_prob": "1.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.7",
-      "suggested_paper_dollars": "49.7",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "70",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-05T03:07:28.262087Z",
-      "ticker": "KXWNBASPREAD-26AUG04TORGS-GS10",
-      "title": "Golden State wins the game by over 9.5 points?",
-      "category": "Sports",
-      "direction": "YES",
-      "edge_pct": "41.5",
-      "implied_prob": "0.585",
-      "true_prob": "1.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.59",
-      "suggested_paper_dollars": "49.56",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "59",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-05T03:07:28.065836Z",
-      "ticker": "KXWNBASPREAD-26AUG04TORGS-GS13",
-      "title": "Golden State wins the game by over 12.5 points?",
-      "category": "Sports",
-      "direction": "YES",
-      "edge_pct": "53.5",
-      "implied_prob": "0.465",
-      "true_prob": "1.0",
-      "confidence": "90",
-      "suggested_live_dollars": "0.47",
-      "suggested_paper_dollars": "49.82",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "47",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-05T03:07:27.733689Z",
-      "ticker": "KXWNBASPREAD-26AUG04TORGS-GS16",
-      "title": "Golden State wins the game by over 15.5 points?",
-      "category": "Sports",
-      "direction": "YES",
-      "edge_pct": "64.0",
-      "implied_prob": "0.36",
-      "true_prob": "1.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.37",
-      "suggested_paper_dollars": "49.95",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "37",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-05T03:07:27.492603Z",
-      "ticker": "KXWNBATOTAL-26AUG04TORGS-173",
-      "title": "Toronto vs Golden State women's Pro Basketball game: Over 172.5 points?",
-      "category": "Sports",
-      "direction": "YES",
-      "edge_pct": "56.5",
-      "implied_prob": "0.435",
-      "true_prob": "1.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.44",
-      "suggested_paper_dollars": "49.72",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "44",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-05T03:07:27.263389Z",
-      "ticker": "KXWNBATOTAL-26AUG04TORGS-170",
-      "title": "Toronto vs Golden State women's Pro Basketball game: Over 169.5 points?",
-      "category": "Sports",
-      "direction": "YES",
-      "edge_pct": "49.5",
-      "implied_prob": "0.505",
-      "true_prob": "1.0",
-      "confidence": "90",
-      "suggested_live_dollars": "0.51",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "51",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-05T03:07:26.967653Z",
-      "ticker": "KXWNBATOTAL-26AUG04TORGS-167",
-      "title": "Toronto vs Golden State women's Pro Basketball game: Over 166.5 points?",
-      "category": "Sports",
-      "direction": "YES",
-      "edge_pct": "39.5",
-      "implied_prob": "0.605",
-      "true_prob": "1.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.61",
-      "suggested_paper_dollars": "49.41",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "61",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-05T03:07:26.619064Z",
-      "ticker": "KXWNBATOTAL-26AUG04TORGS-164",
-      "title": "Toronto vs Golden State women's Pro Basketball game: Over 163.5 points?",
-      "category": "Sports",
-      "direction": "YES",
-      "edge_pct": "33.0",
-      "implied_prob": "0.67",
-      "true_prob": "1.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.68",
-      "suggested_paper_dollars": "49.64",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "68",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-05T03:07:26.312256Z",
-      "ticker": "KXWNBATOTAL-26AUG04TORGS-161",
-      "title": "Toronto vs Golden State women's Pro Basketball game: Over 160.5 points?",
-      "category": "Sports",
-      "direction": "YES",
-      "edge_pct": "26.5",
-      "implied_prob": "0.735",
-      "true_prob": "1.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.74",
-      "suggested_paper_dollars": "49.58",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "74",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-05T03:07:26.103343Z",
-      "ticker": "KXWNBATOTAL-26AUG04TORGS-155",
-      "title": "Toronto vs Golden State women's Pro Basketball game: Over 154.5 points?",
-      "category": "Sports",
-      "direction": "YES",
-      "edge_pct": "14.5",
-      "implied_prob": "0.855",
-      "true_prob": "1.0",
-      "confidence": "68",
-      "suggested_live_dollars": "0.86",
-      "suggested_paper_dollars": "19.78",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "86",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-05T03:07:25.860239Z",
-      "ticker": "KXWTI-26AUG0514-T75.49",
-      "title": "Will the WTI crude oil settlement price be above 75.49 USD/Bbl on Aug 5, 2026?",
-      "category": "Commodities",
-      "direction": "NO",
-      "edge_pct": "-19.56",
-      "implied_prob": "0.495",
-      "true_prob": "0.2994",
-      "confidence": "70",
-      "suggested_live_dollars": "0.51",
-      "suggested_paper_dollars": "39.78",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "51",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-05T03:07:25.518283Z",
-      "ticker": "KXH200WS-26AUG07-4.500",
-      "title": "Will the NVIDIA H200 compute per hour price be above $4.5 at 4 PM ET on Aug 07?",
-      "category": "Financials",
-      "direction": "YES",
-      "edge_pct": "42.0",
-      "implied_prob": "0.58",
-      "true_prob": "1.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.62",
-      "suggested_paper_dollars": "49.6",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "62",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-05T03:07:25.296458Z",
-      "ticker": "KXH200WS-26AUG07-4.000",
-      "title": "Will the NVIDIA H200 compute per hour price be above $4 at 4 PM ET on Aug 07?",
-      "category": "Financials",
-      "direction": "YES",
-      "edge_pct": "8.5",
-      "implied_prob": "0.915",
-      "true_prob": "1.0",
-      "confidence": "68",
-      "suggested_live_dollars": "0.92",
-      "suggested_paper_dollars": "19.32",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "92",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-05T03:07:25.004276Z",
-      "ticker": "KXBRENTW-26AUG0717-T78.99",
-      "title": "Will the brent crude oil close price be above 78.99 USD/Bbl on August 07, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "NO",
-      "edge_pct": "-36.94",
-      "implied_prob": "0.54",
-      "true_prob": "0.1706",
-      "confidence": "85",
-      "suggested_live_dollars": "0.47",
-      "suggested_paper_dollars": "49.82",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "47",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-05T03:07:24.788665Z",
-      "ticker": "KXBRENTW-26AUG0717-T74.99",
-      "title": "Will the brent crude oil close price be above 74.99 USD/Bbl on August 07, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "NO",
-      "edge_pct": "-37.03",
-      "implied_prob": "0.85",
-      "true_prob": "0.4797",
-      "confidence": "85",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "16",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-05T03:07:24.521786Z",
-      "ticker": "KXCPIYOY-26JUL-T3.5",
-      "title": "Will the rate of CPI inflation be above 3.5% for the year ending in July 2026?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "56.27",
-      "implied_prob": "0.05",
-      "true_prob": "0.6127",
-      "confidence": "85",
-      "suggested_live_dollars": "0.54",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "6",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-05T03:07:24.297352Z",
-      "ticker": "KXCPIYOY-26JUL-T3.4",
-      "title": "Will the rate of CPI inflation be above 3.4% for the year ending in July 2026?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "37.77",
-      "implied_prob": "0.245",
-      "true_prob": "0.6227",
-      "confidence": "90",
-      "suggested_live_dollars": "0.56",
-      "suggested_paper_dollars": "49.84",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "28",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-05T03:07:24.099096Z",
-      "ticker": "KXCPIYOY-26JUL-T3.2",
-      "title": "Will the rate of CPI inflation be above 3.2% for the year ending in July 2026?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-26.23",
-      "implied_prob": "0.905",
-      "true_prob": "0.6427",
-      "confidence": "90",
-      "suggested_live_dollars": "0.5",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "10",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-05T03:07:23.850122Z",
-      "ticker": "KXUSGASCPI-26AUG12-T330",
-      "title": "Will Gasoline (All Types) in U.S. City Average for July 2026 be above 330\u3164?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-89.5",
-      "implied_prob": "0.895",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.56",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "14",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -3505,9 +3778,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 85,
+      "current_cents": 86,
       "dollars_risked": 0,
-      "current_value": 0.85,
+      "current_value": 0.86,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -3517,9 +3790,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 88,
+      "current_cents": 86,
       "dollars_risked": 0,
-      "current_value": 1.76,
+      "current_value": 1.72,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

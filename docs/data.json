@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-07T04:51:02.721379Z",
-  "last_scan_ts": "2026-08-07T04:51:02.721379Z",
+  "generated_at": "2026-08-07T06:50:57.559807Z",
+  "last_scan_ts": "2026-08-07T06:50:57.559807Z",
   "stats": {
-    "total_alerts": 10393,
+    "total_alerts": 10395,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -55,7 +55,7 @@
         "hit_rate": null
       },
       "Commodities": {
-        "total": 1316,
+        "total": 1318,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,7 +69,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 2181,
+        "total": 2183,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 11.27,
+      "balance": 11.33,
       "cash": 5.35,
       "peak": 11.46,
       "initial_balance": 10.0
@@ -101,15 +101,57 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-08-07T02:52:26.167813Z"
+    "updated_at": "2026-08-07T04:58:02.603299Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.92,
-  "account_value": 11.27,
-  "live_pnl": 1.27,
+  "position_value": 5.98,
+  "account_value": 11.33,
+  "live_pnl": 1.33,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-08-07T06:50:57.122688Z",
+      "ticker": "KXWTI-26AUG0714-T77.99",
+      "title": "Will the WTI crude oil settlement price be above 77.99 USD/Bbl on Aug 7, 2026?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-11.76",
+      "implied_prob": "0.555",
+      "true_prob": "0.4374",
+      "confidence": "63",
+      "suggested_live_dollars": "0.45",
+      "suggested_paper_dollars": "19.8",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "45",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-07T06:50:56.706967Z",
+      "ticker": "KXWTI-26AUG0714-T76.49",
+      "title": "Will the WTI crude oil settlement price be above 76.49 USD/Bbl on Aug 7, 2026?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-9.58",
+      "implied_prob": "0.825",
+      "true_prob": "0.7292",
+      "confidence": "63",
+      "suggested_live_dollars": "0.18",
+      "suggested_paper_dollars": "16.74",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "18",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-08-07T04:51:02.210906Z",
       "ticker": "KXBTCMINMON-BTC-26AUG31-5500000",
@@ -1793,6 +1835,48 @@
   ],
   "recent_alerts": [
     {
+      "timestamp": "2026-08-07T06:50:57.122688Z",
+      "ticker": "KXWTI-26AUG0714-T77.99",
+      "title": "Will the WTI crude oil settlement price be above 77.99 USD/Bbl on Aug 7, 2026?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-11.76",
+      "implied_prob": "0.555",
+      "true_prob": "0.4374",
+      "confidence": "63",
+      "suggested_live_dollars": "0.45",
+      "suggested_paper_dollars": "19.8",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "45",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-07T06:50:56.706967Z",
+      "ticker": "KXWTI-26AUG0714-T76.49",
+      "title": "Will the WTI crude oil settlement price be above 76.49 USD/Bbl on Aug 7, 2026?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-9.58",
+      "implied_prob": "0.825",
+      "true_prob": "0.7292",
+      "confidence": "63",
+      "suggested_live_dollars": "0.18",
+      "suggested_paper_dollars": "16.74",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "18",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
       "timestamp": "2026-08-07T04:51:02.210906Z",
       "ticker": "KXBTCMINMON-BTC-26AUG31-5500000",
       "title": "Will BTC trimmed mean be below $55000.00 by 11:59 PM ET on Aug 31, 2026?",
@@ -2799,48 +2883,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-08-07T02:29:39.997575Z",
-      "ticker": "KXETHMINY-27JAN01-1000",
-      "title": "Will Ethereum reach below $1000.00 by Jan 1, 2027 at 12:00AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-16.31",
-      "implied_prob": "0.165",
-      "true_prob": "0.0019",
-      "confidence": "75",
-      "suggested_live_dollars": "0.84",
-      "suggested_paper_dollars": "39.48",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "84",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-07T02:29:39.634088Z",
-      "ticker": "KXETHMINY-27JAN01-1250",
-      "title": "Will Ethereum reach below $1250.00 by Jan 1, 2027 at 12:00AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-29.54",
-      "implied_prob": "0.325",
-      "true_prob": "0.0296",
-      "confidence": "85",
-      "suggested_live_dollars": "0.68",
-      "suggested_paper_dollars": "49.64",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "68",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -2854,9 +2896,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 83,
+      "current_cents": 85,
       "dollars_risked": 0,
-      "current_value": 0.83,
+      "current_value": 0.85,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -2866,9 +2908,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 86,
+      "current_cents": 88,
       "dollars_risked": 0,
-      "current_value": 1.72,
+      "current_value": 1.76,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

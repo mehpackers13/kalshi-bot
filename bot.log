@@ -69393,3 +69393,54 @@ Total modelable markets evaluated: 0
 [2026-08-08 03:41:34 ET] [INFO] Scan complete — 9 alerts sent
 [2026-08-08 03:41:34 ET] [INFO] ============================================================
 [2026-08-08 03:41:34 ET] [INFO] Scan job complete
+[2026-08-08 07:35:49 ET] [INFO] Scan job starting
+[2026-08-08 07:35:49 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-08-08 07:35:49 ET] [INFO] ============================================================
+[2026-08-08 07:35:49 ET] [INFO] Starting market scan
+[2026-08-08 07:35:50 ET] [INFO] Portfolio value: $5.35 cash + $5.97 positions = $11.32
+[2026-08-08 07:35:50 ET] [INFO] Cash: $5.35  |  Positions: $5.97  |  Total: $11.32  |  Peak: $11.46
+[2026-08-08 07:35:50 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-08-08 07:35:50 ET] [WARN] API GET /markets → HTTP 400
+[2026-08-08 07:36:09 ET] [INFO] Fetched 79944 open markets via events endpoint across 49 pages
+[2026-08-08 07:36:09 ET] [INFO] Fetched 79944 open markets
+[2026-08-08 07:36:10 ET] [INFO] Parsed 73981 valid markets
+[2026-08-08 07:36:10 ET] [INFO] Categories: {'Sports': 37505, 'Elections': 11030, 'Financials': 6966, 'Entertainment': 6579, 'Economics': 3372, 'Crypto': 3080, 'Politics': 1954, 'Science and Technology': 840}
+[2026-08-08 07:41:39 ET] [INFO]   CPI model: threshold=10.0% TNX=4.66% → P=0.200
+[2026-08-08 07:42:02 ET] [INFO]   price model: TSLA spot=328.58 target=1.60 vol=67.4% T=14417.4h → P=1.000
+[2026-08-08 08:31:28 ET] [INFO]   price model: ADA-USD spot=0.20 target=6.50 vol=49.9% T=3497.4h → P=1.000
+[2026-08-08 08:31:28 ET] [INFO]   EDGE FOUND: KXUE-CAN27BEL-6.5 | implied=90.0% true=100.0% edge=+10.0% dir=YES conf=68
+[2026-08-08 08:40:35 ET] [INFO]   price model: ETH-USD spot=1918.95 target=4000.00 vol=33.6% T=3497.4h → P=0.000
+[2026-08-08 08:40:35 ET] [INFO]   price model: ETH-USD spot=1918.95 target=4250.00 vol=33.6% T=3497.4h → P=0.000
+[2026-08-08 08:40:36 ET] [INFO]   price model: ETH-USD spot=1918.95 target=4500.00 vol=33.6% T=3497.4h → P=0.000
+[2026-08-08 08:41:08 ET] [INFO]   price model: BTC-USD spot=64979.00 target=119999.00 vol=23.6% T=3497.4h → P=0.000
+[2026-08-08 08:41:08 ET] [INFO]   price model: BTC-USD spot=64979.00 target=129999.00 vol=23.6% T=3497.4h → P=0.000
+[2026-08-08 08:41:17 ET] [INFO]   price model: GC=F spot=4340.70 target=4400.00 vol=24.6% T=3490.4h → P=0.465
+[2026-08-08 08:41:17 ET] [INFO]   EDGE FOUND: KXGOLDDIRY-26DEC31H1700-T4400 | implied=59.5% true=46.5% edge=-13.0% dir=NO conf=68
+[2026-08-08 08:50:33 ET] [INFO]   CPI model: threshold=2.0% TNX=4.66% → P=0.766
+[2026-08-08 08:54:01 ET] [INFO]   price model: DIA spot=539.62 target=3.00 vol=13.1% T=2753.4h → P=1.000
+[2026-08-08 09:13:45 ET] [INFO]   weather model: houston can't parse temp condition from title
+[2026-08-08 09:14:24 ET] [INFO]   price model: BTC-USD spot=64961.05 target=75000.00 vol=23.6% T=568.4h → P=0.008
+[2026-08-08 09:14:25 ET] [INFO]   price model: BNB-USD spot=595.96 target=490.00 vol=19.1% T=568.4h → P=0.000
+[2026-08-08 09:14:25 ET] [INFO]   price model: BNB-USD spot=595.96 target=480.00 vol=19.1% T=568.4h → P=0.000
+[2026-08-08 09:14:25 ET] [INFO]   EDGE FOUND: KXBNBMINMON-BNB-26AUG31-48000 | implied=8.0% true=0.0% edge=-8.0% dir=NO conf=63
+[2026-08-08 09:27:14 ET] [INFO]   CPI model: threshold=2.1% TNX=4.66% → P=0.756
+[2026-08-08 09:39:56 ET] [INFO]   weather model: nyc max=96.0°F target=[89,90]°F days_out=0 σ=3.5°F → P=0.042
+[2026-08-08 09:39:56 ET] [INFO]   EDGE FOUND: KXHIGHNY-26AUG08-B89.5 | implied=63.5% true=4.2% edge=-59.3% dir=NO conf=80
+[2026-08-08 09:48:08 ET] [INFO]   price model: DIA spot=539.62 target=192.50 vol=13.1% T=55.9h → P=1.000
+[2026-08-08 09:48:08 ET] [INFO]   EDGE FOUND: KXWNBATOTAL-26AUG08INDCHI-193 | implied=45.5% true=100.0% edge=+54.5% dir=YES conf=85
+[2026-08-08 09:48:09 ET] [INFO]   price model: DIA spot=539.62 target=6.50 vol=13.1% T=55.9h → P=1.000
+[2026-08-08 09:48:09 ET] [INFO]   EDGE FOUND: KXWNBASPREAD-26AUG08INDCHI-IND7 | implied=47.5% true=100.0% edge=+52.5% dir=YES conf=85
+[2026-08-08 10:00:50 ET] [INFO] Checked 73910 markets | Modelable: 73910 | Edges found: 6
+[2026-08-08 10:00:50 ET] [INFO]   Skipping KXUE-CAN27BEL-6.5 — suggested bet too small to be meaningful
+[2026-08-08 10:00:50 ET] [INFO] [Discord] Trade alert sent: KXGOLDDIRY-26DEC31H1700-T4400
+[2026-08-08 10:00:50 ET] [WARN] AUTO-BET SKIP KXGOLDDIRY-26DEC31H1700-T4400: exposure 38.2% ≥ 25% limit ($7.00 of $18.32 in open positions)
+[2026-08-08 10:00:50 ET] [INFO]   Skipping KXBNBMINMON-BNB-26AUG31-48000 — suggested bet too small to be meaningful
+[2026-08-08 10:00:51 ET] [INFO] [Discord] Trade alert sent: KXHIGHNY-26AUG08-B89.5
+[2026-08-08 10:00:51 ET] [WARN] AUTO-BET SKIP KXHIGHNY-26AUG08-B89.5: exposure 38.2% ≥ 25% limit ($7.00 of $18.32 in open positions)
+[2026-08-08 10:00:51 ET] [INFO] [Discord] Trade alert sent: KXWNBATOTAL-26AUG08INDCHI-193
+[2026-08-08 10:00:51 ET] [WARN] AUTO-BET SKIP KXWNBATOTAL-26AUG08INDCHI-193: exposure 38.2% ≥ 25% limit ($7.00 of $18.32 in open positions)
+[2026-08-08 10:00:51 ET] [INFO] [Discord] Trade alert sent: KXWNBASPREAD-26AUG08INDCHI-IND7
+[2026-08-08 10:00:51 ET] [WARN] AUTO-BET SKIP KXWNBASPREAD-26AUG08INDCHI-IND7: exposure 38.2% ≥ 25% limit ($7.00 of $18.32 in open positions)
+[2026-08-08 10:00:51 ET] [INFO] Scan complete — 4 alerts sent
+[2026-08-08 10:00:51 ET] [INFO] ============================================================
+[2026-08-08 10:00:52 ET] [INFO] Scan job complete

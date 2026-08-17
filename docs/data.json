@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-17T15:49:31.640821Z",
-  "last_scan_ts": "2026-08-17T15:49:31.640821Z",
+  "generated_at": "2026-08-17T20:10:45.343319Z",
+  "last_scan_ts": "2026-08-17T20:10:45.343319Z",
   "stats": {
-    "total_alerts": 11404,
+    "total_alerts": 11408,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -13,7 +13,7 @@
         "hit_rate": null
       },
       "Economics": {
-        "total": 2478,
+        "total": 2479,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -31,7 +31,7 @@
         "hit_rate": null
       },
       "Sports": {
-        "total": 374,
+        "total": 375,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -49,13 +49,13 @@
         "hit_rate": null
       },
       "Financials": {
-        "total": 1514,
+        "total": 1515,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "Commodities": {
-        "total": 1418,
+        "total": 1419,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,7 +69,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 2413,
+        "total": 2414,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -81,7 +81,7 @@
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 6909,
+        "total": 6912,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 11.25,
+      "balance": 11.3,
       "cash": 5.35,
       "peak": 11.46,
       "initial_balance": 10.0
@@ -101,15 +101,99 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-08-17T13:47:40.754804Z"
+    "updated_at": "2026-08-17T17:56:37.830956Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.9,
-  "account_value": 11.25,
-  "live_pnl": 1.25,
+  "position_value": 5.95,
+  "account_value": 11.3,
+  "live_pnl": 1.3,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-08-17T20:10:44.871985Z",
+      "ticker": "KXINXU-26AUG17H1600-T7754.9999",
+      "title": "Will the S&P 500 be above 7754.9999 on Aug 17, 2026 at 4pm EDT?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-55.0",
+      "implied_prob": "0.55",
+      "true_prob": "0.0",
+      "confidence": "70",
+      "suggested_live_dollars": "0.46",
+      "suggested_paper_dollars": "49.68",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "46",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-17T20:10:44.511407Z",
+      "ticker": "KXBRENTD-26AUG1717-T90.50",
+      "title": "Will the brent crude oil close price be above 90.50 USD/Bbl on August 17, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-77.0",
+      "implied_prob": "0.77",
+      "true_prob": "0.0",
+      "confidence": "70",
+      "suggested_live_dollars": "0.48",
+      "suggested_paper_dollars": "49.92",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "24",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-17T20:10:44.150573Z",
+      "ticker": "KXWNBATOTAL-26AUG17DALGS-154",
+      "title": "Dallas vs Golden State women's Pro Basketball game: Over 153.5 points?",
+      "category": "Sports",
+      "direction": "YES",
+      "edge_pct": "29.5",
+      "implied_prob": "0.705",
+      "true_prob": "1.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.71",
+      "suggested_paper_dollars": "49.7",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "71",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-17T20:10:43.613609Z",
+      "ticker": "KXCBRATEHIKE-27-FED",
+      "title": "Will the Federal Reserve raise the target range for the federal funds rate before 2027?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "8.9",
+      "implied_prob": "0.465",
+      "true_prob": "0.554",
+      "confidence": "68",
+      "suggested_live_dollars": "0.5",
+      "suggested_paper_dollars": "12.5",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "50",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-08-17T15:49:31.209753Z",
       "ticker": "KXINXU-26AUG17H1600-T7794.9999",
@@ -3240,90 +3324,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-08-17T01:38:41.182697Z",
-      "ticker": "KXAMZNCC-26SEP07-T105",
-      "title": "Will Amazon Monthly Credit Card Spend for August 2026 be above 105 ?",
-      "category": "Financials",
-      "direction": "YES",
-      "edge_pct": "11.0",
-      "implied_prob": "0.89",
-      "true_prob": "1.0",
-      "confidence": "68",
-      "suggested_live_dollars": "0.94",
-      "suggested_paper_dollars": "19.74",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "94",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-17T01:38:40.894396Z",
-      "ticker": "KXCARTAPP-26SEP07-T130",
-      "title": "Will Instacart App Downloads for August 2026 be above 130 ?",
-      "category": "Financials",
-      "direction": "YES",
-      "edge_pct": "43.5",
-      "implied_prob": "0.565",
-      "true_prob": "1.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.59",
-      "suggested_paper_dollars": "49.56",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "59",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-17T01:38:40.605728Z",
-      "ticker": "KXCARTAPP-26SEP07-T120",
-      "title": "Will Instacart App Downloads for August 2026 be above 120 ?",
-      "category": "Financials",
-      "direction": "YES",
-      "edge_pct": "25.5",
-      "implied_prob": "0.745",
-      "true_prob": "1.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.79",
-      "suggested_paper_dollars": "49.77",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "79",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-17T01:38:40.260714Z",
-      "ticker": "KXCARTAPP-26SEP07-T110",
-      "title": "Will Instacart App Downloads for August 2026 be above 110 ?",
-      "category": "Financials",
-      "direction": "YES",
-      "edge_pct": "9.5",
-      "implied_prob": "0.905",
-      "true_prob": "1.0",
-      "confidence": "68",
-      "suggested_live_dollars": "0.95",
-      "suggested_paper_dollars": "19.95",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "95",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -3337,9 +3337,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 82,
+      "current_cents": 83,
       "dollars_risked": 0,
-      "current_value": 0.82,
+      "current_value": 0.83,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -3361,9 +3361,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 76,
+      "current_cents": 78,
       "dollars_risked": 0,
-      "current_value": 1.52,
+      "current_value": 1.56,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

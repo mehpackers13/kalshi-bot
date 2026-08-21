@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-21T13:39:57.696977Z",
-  "last_scan_ts": "2026-08-21T13:39:57.696977Z",
+  "generated_at": "2026-08-21T16:30:24.781308Z",
+  "last_scan_ts": "2026-08-21T16:30:24.781308Z",
   "stats": {
-    "total_alerts": 11807,
+    "total_alerts": 11810,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -25,7 +25,7 @@
         "hit_rate": null
       },
       "Crypto": {
-        "total": 3261,
+        "total": 3264,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,7 +69,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 2523,
+        "total": 2524,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -81,7 +81,7 @@
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 7142,
+        "total": 7144,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 11.18,
+      "balance": 11.16,
       "cash": 5.35,
       "peak": 11.46,
       "initial_balance": 10.0
@@ -101,15 +101,78 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-08-21T11:32:46.578770Z"
+    "updated_at": "2026-08-21T14:08:02.208488Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.83,
-  "account_value": 11.18,
-  "live_pnl": 1.18,
+  "position_value": 5.81,
+  "account_value": 11.16,
+  "live_pnl": 1.16,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-08-21T16:30:24.282601Z",
+      "ticker": "KXSOLMAXMON-SOL-26AUG31-10000",
+      "title": "Will SOL trimmed mean be above $100.00 by 11:59 PM ET on Aug 31, 2026?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-31.14",
+      "implied_prob": "0.41",
+      "true_prob": "0.0986",
+      "confidence": "80",
+      "suggested_live_dollars": "0.6",
+      "suggested_paper_dollars": "49.8",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "60",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-21T16:30:23.902159Z",
+      "ticker": "KXXRPMAXMON-XRP-26AUG31-160",
+      "title": "Will XRP trimmed mean be above $1.60 by 11:59 PM ET on Aug 31, 2026?",
+      "category": "Crypto",
+      "direction": "YES",
+      "edge_pct": "66.38",
+      "implied_prob": "0.335",
+      "true_prob": "0.9988",
+      "confidence": "80",
+      "suggested_live_dollars": "0.36",
+      "suggested_paper_dollars": "49.68",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "36",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-21T16:30:23.516880Z",
+      "ticker": "KXETHMAXY-27JAN01-4250.00",
+      "title": "Will Ethereum reach above $4250.00 by Jan 1, 2027 at 12:00AM?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-10.57",
+      "implied_prob": "0.155",
+      "true_prob": "0.0493",
+      "confidence": "63",
+      "suggested_live_dollars": "0.85",
+      "suggested_paper_dollars": "19.55",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "85",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-08-21T13:39:57.281465Z",
       "ticker": "KXETHMAXMON-ETH-26AUG31-275000",
@@ -2104,198 +2167,72 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-08-20T16:26:35.904037Z",
-      "ticker": "KXINXU-26AUG20H1600-T7664.9999",
-      "title": "Will the S&P 500 be above 7664.9999 on Aug 20, 2026 at 4pm EDT?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-76.0",
-      "implied_prob": "0.76",
-      "true_prob": "0.0",
-      "confidence": "70",
-      "suggested_live_dollars": "0.5",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "25",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-20T16:26:35.518055Z",
-      "ticker": "KXWNBASPREAD-26AUG20INDDAL-IND5",
-      "title": "Indiana wins the game by over 4.5 points?",
-      "category": "Sports",
-      "direction": "YES",
-      "edge_pct": "55.5",
-      "implied_prob": "0.445",
-      "true_prob": "1.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.45",
-      "suggested_paper_dollars": "49.95",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "45",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-20T16:26:34.606313Z",
-      "ticker": "KXBTCMAXMON-BTC-26AUG31-8250000",
-      "title": "Will BTC trimmed mean be above $82500.00 by 11:59 PM ET on Aug 31, 2026?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-8.58",
-      "implied_prob": "0.095",
-      "true_prob": "0.0092",
-      "confidence": "63",
-      "suggested_live_dollars": "0.91",
-      "suggested_paper_dollars": "19.11",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "91",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-20T13:40:53.833660Z",
-      "ticker": "KXWNBASPREAD-26AUG20INDDAL-IND2",
-      "title": "Indiana wins the game by over 1.5 points?",
-      "category": "Sports",
-      "direction": "YES",
-      "edge_pct": "42.0",
-      "implied_prob": "0.58",
-      "true_prob": "1.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.59",
-      "suggested_paper_dollars": "49.56",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "59",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-20T13:40:53.229333Z",
-      "ticker": "KXWNBATOTAL-26AUG20INDDAL-186",
-      "title": "Indiana vs Dallas women's Pro Basketball game: Over 185.5 points?",
-      "category": "Sports",
-      "direction": "YES",
-      "edge_pct": "49.5",
-      "implied_prob": "0.505",
-      "true_prob": "1.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.51",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "51",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-20T13:40:52.807330Z",
-      "ticker": "KXWNBATOTAL-26AUG20INDDAL-174",
-      "title": "Indiana vs Dallas women's Pro Basketball game: Over 173.5 points?",
-      "category": "Sports",
-      "direction": "YES",
-      "edge_pct": "22.5",
-      "implied_prob": "0.775",
-      "true_prob": "1.0",
-      "confidence": "75",
-      "suggested_live_dollars": "0.79",
-      "suggested_paper_dollars": "39.5",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "79",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-20T13:40:52.496238Z",
-      "ticker": "KXBTCMAXMON-BTC-26AUG31-8000000",
-      "title": "Will BTC trimmed mean be above $80000.00 by 11:59 PM ET on Aug 31, 2026?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-14.94",
-      "implied_prob": "0.175",
-      "true_prob": "0.0256",
-      "confidence": "63",
-      "suggested_live_dollars": "0.84",
-      "suggested_paper_dollars": "19.32",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "84",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-20T13:40:52.144350Z",
-      "ticker": "KXBNBMAXY-BNB-26DEC31-65000",
-      "title": "Will BNB trimmed mean be above $650.00 by 11:59 PM ET on Dec 31, 2026?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-41.19",
-      "implied_prob": "0.875",
-      "true_prob": "0.4631",
-      "confidence": "80",
-      "suggested_live_dollars": "0.52",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "13",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-20T13:40:51.710936Z",
-      "ticker": "KXMELIA-28JANITEMS-3000000000.0",
-      "title": "Will MercadoLibre Inc. report Above 3 billion items sold in 2026?",
-      "category": "Financials",
-      "direction": "YES",
-      "edge_pct": "8.5",
-      "implied_prob": "0.915",
-      "true_prob": "1.0",
-      "confidence": "68",
-      "suggested_live_dollars": "0.96",
-      "suggested_paper_dollars": "19.2",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "96",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "recent_alerts": [
+    {
+      "timestamp": "2026-08-21T16:30:24.282601Z",
+      "ticker": "KXSOLMAXMON-SOL-26AUG31-10000",
+      "title": "Will SOL trimmed mean be above $100.00 by 11:59 PM ET on Aug 31, 2026?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-31.14",
+      "implied_prob": "0.41",
+      "true_prob": "0.0986",
+      "confidence": "80",
+      "suggested_live_dollars": "0.6",
+      "suggested_paper_dollars": "49.8",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "60",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-21T16:30:23.902159Z",
+      "ticker": "KXXRPMAXMON-XRP-26AUG31-160",
+      "title": "Will XRP trimmed mean be above $1.60 by 11:59 PM ET on Aug 31, 2026?",
+      "category": "Crypto",
+      "direction": "YES",
+      "edge_pct": "66.38",
+      "implied_prob": "0.335",
+      "true_prob": "0.9988",
+      "confidence": "80",
+      "suggested_live_dollars": "0.36",
+      "suggested_paper_dollars": "49.68",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "36",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-21T16:30:23.516880Z",
+      "ticker": "KXETHMAXY-27JAN01-4250.00",
+      "title": "Will Ethereum reach above $4250.00 by Jan 1, 2027 at 12:00AM?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-10.57",
+      "implied_prob": "0.155",
+      "true_prob": "0.0493",
+      "confidence": "63",
+      "suggested_live_dollars": "0.85",
+      "suggested_paper_dollars": "19.55",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "85",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-08-21T13:39:57.281465Z",
       "ticker": "KXETHMAXMON-ETH-26AUG31-275000",
@@ -3282,69 +3219,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-08-21T01:34:37.823892Z",
-      "ticker": "KXAMZNCC-26SEP07-T105",
-      "title": "Will Amazon Monthly Credit Card Spend for August 2026 be above 105 ?",
-      "category": "Financials",
-      "direction": "YES",
-      "edge_pct": "39.0",
-      "implied_prob": "0.61",
-      "true_prob": "1.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.65",
-      "suggested_paper_dollars": "49.4",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "65",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-21T01:34:37.510575Z",
-      "ticker": "KXCARTAPP-26SEP07-T120",
-      "title": "Will Instacart App Downloads for August 2026 be above 120 ?",
-      "category": "Financials",
-      "direction": "YES",
-      "edge_pct": "20.5",
-      "implied_prob": "0.795",
-      "true_prob": "1.0",
-      "confidence": "75",
-      "suggested_live_dollars": "0.84",
-      "suggested_paper_dollars": "39.48",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "84",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-21T01:34:37.256878Z",
-      "ticker": "KXCLAUDEAPP-26SEP07-T1600",
-      "title": "Will Claude App Downloads for August 2026 be above 1600 ?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-43.5",
-      "implied_prob": "0.435",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.58",
-      "suggested_paper_dollars": "49.88",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "58",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -3370,9 +3244,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 84,
+      "current_cents": 87,
       "dollars_risked": 0,
-      "current_value": 1.68,
+      "current_value": 1.74,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -3382,9 +3256,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 76,
+      "current_cents": 72,
       "dollars_risked": 0,
-      "current_value": 1.52,
+      "current_value": 1.44,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

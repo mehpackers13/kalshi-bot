@@ -77674,3 +77674,72 @@ Total modelable markets evaluated: 0
 [2026-08-21 02:29:01 ET] [INFO] Scan complete — 19 alerts sent
 [2026-08-21 02:29:01 ET] [INFO] ============================================================
 [2026-08-21 02:29:01 ET] [INFO] Scan job complete
+[2026-08-21 07:32:44 ET] [INFO] Scan job starting
+[2026-08-21 07:32:45 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-08-21 07:32:45 ET] [INFO] ============================================================
+[2026-08-21 07:32:45 ET] [INFO] Starting market scan
+[2026-08-21 07:32:46 ET] [INFO] Portfolio value: $5.35 cash + $5.83 positions = $11.18
+[2026-08-21 07:32:46 ET] [INFO] Cash: $5.35  |  Positions: $5.83  |  Total: $11.18  |  Peak: $11.46
+[2026-08-21 07:32:47 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-08-21 07:32:47 ET] [WARN] API GET /markets → HTTP 400
+[2026-08-21 07:33:07 ET] [INFO] Fetched 84102 open markets via events endpoint across 50 pages
+[2026-08-21 07:33:07 ET] [INFO] Fetched 84102 open markets
+[2026-08-21 07:33:08 ET] [INFO] Parsed 80937 valid markets
+[2026-08-21 07:33:08 ET] [INFO] Categories: {'Sports': 48819, 'Elections': 10870, 'Entertainment': 7251, 'Financials': 5208, 'Economics': 3613, 'Politics': 1901, 'Science and Technology': 755, 'Climate and Weather': 681}
+[2026-08-21 07:37:42 ET] [INFO]   CPI model: threshold=10.0% TNX=4.70% → P=0.200
+[2026-08-21 07:38:04 ET] [INFO]   price model: TSLA spot=345.13 target=1.60 vol=54.7% T=14105.4h → P=1.000
+[2026-08-21 07:38:16 ET] [INFO]   price model: SOL-USD spot=90.53 target=3.00 vol=41.2% T=14105.4h → P=1.000
+[2026-08-21 07:41:23 ET] [INFO]   fed model: implied_rate=3.720% current≈3.703% diff=1.7bps → P=0.534
+[2026-08-21 07:41:23 ET] [INFO]   EDGE FOUND: KXFEDDECISION-27DEC-H25 | implied=34.5% true=53.4% edge=+18.9% dir=YES conf=75
+[2026-08-21 08:28:29 ET] [INFO]   fed model: implied_rate=3.725% current≈3.703% diff=2.2bps → P=0.544
+[2026-08-21 08:29:20 ET] [INFO]   price model: ETH-USD spot=2374.50 target=750.00 vol=57.0% T=3185.4h → P=0.000
+[2026-08-21 08:29:20 ET] [INFO]   EDGE FOUND: KXETHMINY-27JAN01-750 | implied=8.5% true=0.0% edge=-8.5% dir=NO conf=63
+[2026-08-21 08:29:20 ET] [INFO]   price model: ETH-USD spot=2374.50 target=4000.00 vol=57.0% T=3185.4h → P=0.065
+[2026-08-21 08:29:20 ET] [INFO]   EDGE FOUND: KXETHMAXY-27JAN01-4000.00 | implied=17.5% true=6.5% edge=-11.0% dir=NO conf=68
+[2026-08-21 08:29:20 ET] [INFO]   price model: ETH-USD spot=2374.50 target=4250.00 vol=57.0% T=3185.4h → P=0.045
+[2026-08-21 08:29:20 ET] [INFO]   price model: ETH-USD spot=2374.50 target=4500.00 vol=57.0% T=3185.4h → P=0.032
+[2026-08-21 08:29:20 ET] [INFO]   price model: ETH-USD spot=2374.50 target=4750.00 vol=57.0% T=3185.4h → P=0.022
+[2026-08-21 08:29:21 ET] [INFO]   price model: ETH-USD spot=2374.50 target=5000.00 vol=57.0% T=3185.4h → P=0.015
+[2026-08-21 08:29:22 ET] [INFO]   price model: BTC-USD spot=76705.10 target=100000.00 vol=34.3% T=976.4h → P=0.010
+[2026-08-21 08:29:22 ET] [INFO]   EDGE FOUND: KXBTCMAX100-26-SEP | implied=13.5% true=1.0% edge=-12.5% dir=NO conf=73
+[2026-08-21 08:29:22 ET] [INFO]   price model: BTC-USD spot=76705.10 target=100000.00 vol=34.3% T=2441.4h → P=0.071
+[2026-08-21 08:29:22 ET] [INFO]   EDGE FOUND: KXBTCMAX100-26-NOV | implied=30.0% true=7.1% edge=-22.9% dir=NO conf=70
+[2026-08-21 08:29:47 ET] [INFO]   price model: BTC-USD spot=76669.67 target=129999.00 vol=34.2% T=3185.4h → P=0.005
+[2026-08-21 08:29:47 ET] [INFO]   price model: BTC-USD spot=76669.67 target=139999.00 vol=34.2% T=3185.4h → P=0.002
+[2026-08-21 08:29:47 ET] [INFO]   price model: BTC-USD spot=76669.67 target=149999.00 vol=34.2% T=3185.4h → P=0.001
+[2026-08-21 08:29:55 ET] [INFO]   price model: GC=F spot=4643.40 target=4300.00 vol=23.3% T=3178.4h → P=0.708
+[2026-08-21 08:29:55 ET] [INFO]   price model: GC=F spot=4643.40 target=4500.00 vol=23.3% T=3178.4h → P=0.589
+[2026-08-21 08:29:55 ET] [INFO]   price model: GC=F spot=4643.40 target=4600.00 vol=23.3% T=3178.4h → P=0.527
+[2026-08-21 08:29:56 ET] [INFO]   price model: GC=F spot=4643.40 target=4800.00 vol=23.3% T=3178.4h → P=0.406
+[2026-08-21 08:37:00 ET] [INFO]   CPI model: threshold=4.0% TNX=4.69% → P=0.431
+[2026-08-21 08:57:34 ET] [INFO]   price model: SOL-USD spot=90.85 target=300.00 vol=41.4% T=504.9h → P=0.000
+[2026-08-21 08:57:34 ET] [INFO]   EDGE FOUND: KXUSGASCPI-26SEP11-T300 | implied=94.0% true=0.0% edge=-94.0% dir=NO conf=85
+[2026-08-21 08:59:36 ET] [INFO]   price model: DIA spot=527.51 target=180.00 vol=12.9% T=398.9h → P=1.000
+[2026-08-21 08:59:50 ET] [INFO]   price model: DIA spot=527.51 target=115.00 vol=12.9% T=398.9h → P=1.000
+[2026-08-21 08:59:55 ET] [INFO]   price model: AMZN spot=260.11 target=103.00 vol=55.6% T=398.9h → P=1.000
+[2026-08-21 09:01:43 ET] [INFO]   CPI model: threshold=3.3% TNX=4.70% → P=0.640
+[2026-08-21 09:09:16 ET] [INFO]   weather model: houston can't parse temp condition from title
+[2026-08-21 09:09:24 ET] [INFO]   price model: XRP-USD spot=1.38 target=1.00 vol=62.8% T=256.4h → P=0.999
+[2026-08-21 09:09:24 ET] [INFO]   EDGE FOUND: KXXRPMAXMON-XRP-26AUG31-150 | implied=45.5% true=99.9% edge=+54.4% dir=YES conf=80
+[2026-08-21 09:09:36 ET] [INFO]   price model: ETH-USD spot=2389.58 target=2750.00 vol=57.2% T=256.4h → P=0.076
+[2026-08-21 09:09:36 ET] [INFO]   EDGE FOUND: KXETHMAXMON-ETH-26AUG31-275000 | implied=18.5% true=7.5% edge=-10.9% dir=NO conf=63
+[2026-08-21 09:24:33 ET] [INFO]   weather model: austin can't parse temp condition from title
+[2026-08-21 09:39:54 ET] [INFO] Checked 80866 markets | Modelable: 80866 | Edges found: 8
+[2026-08-21 09:39:54 ET] [INFO]   Skipping KXFEDDECISION-27DEC-H25 — suggested bet too small to be meaningful
+[2026-08-21 09:39:54 ET] [INFO] [Discord] Trade alert sent: KXETHMINY-27JAN01-750
+[2026-08-21 09:39:54 ET] [WARN] AUTO-BET SKIP KXETHMINY-27JAN01-750: exposure 38.5% ≥ 25% limit ($7.00 of $18.18 in open positions)
+[2026-08-21 09:39:55 ET] [INFO] [Discord] Trade alert sent: KXETHMAXY-27JAN01-4000.00
+[2026-08-21 09:39:55 ET] [WARN] AUTO-BET SKIP KXETHMAXY-27JAN01-4000.00: exposure 38.5% ≥ 25% limit ($7.00 of $18.18 in open positions)
+[2026-08-21 09:39:55 ET] [INFO] [Discord] Trade alert sent: KXBTCMAX100-26-SEP
+[2026-08-21 09:39:55 ET] [WARN] AUTO-BET SKIP KXBTCMAX100-26-SEP: exposure 38.5% ≥ 25% limit ($7.00 of $18.18 in open positions)
+[2026-08-21 09:39:55 ET] [INFO] [Discord] Trade alert sent: KXBTCMAX100-26-NOV
+[2026-08-21 09:39:56 ET] [WARN] AUTO-BET SKIP KXBTCMAX100-26-NOV: exposure 38.5% ≥ 25% limit ($7.00 of $18.18 in open positions)
+[2026-08-21 09:39:56 ET] [INFO] [Discord] Trade alert sent: KXUSGASCPI-26SEP11-T300
+[2026-08-21 09:39:56 ET] [WARN] AUTO-BET SKIP KXUSGASCPI-26SEP11-T300: exposure 38.5% ≥ 25% limit ($7.00 of $18.18 in open positions)
+[2026-08-21 09:39:56 ET] [INFO] [Discord] Trade alert sent: KXXRPMAXMON-XRP-26AUG31-150
+[2026-08-21 09:39:56 ET] [WARN] AUTO-BET SKIP KXXRPMAXMON-XRP-26AUG31-150: exposure 38.5% ≥ 25% limit ($7.00 of $18.18 in open positions)
+[2026-08-21 09:39:57 ET] [INFO] [Discord] Trade alert sent: KXETHMAXMON-ETH-26AUG31-275000
+[2026-08-21 09:39:57 ET] [WARN] AUTO-BET SKIP KXETHMAXMON-ETH-26AUG31-275000: exposure 38.5% ≥ 25% limit ($7.00 of $18.18 in open positions)
+[2026-08-21 09:39:57 ET] [INFO] Scan complete — 7 alerts sent
+[2026-08-21 09:39:57 ET] [INFO] ============================================================
+[2026-08-21 09:39:57 ET] [INFO] Scan job complete

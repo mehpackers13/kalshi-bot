@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-26T13:42:11.454344Z",
-  "last_scan_ts": "2026-08-26T13:42:11.454344Z",
+  "generated_at": "2026-08-26T16:46:21.838330Z",
+  "last_scan_ts": "2026-08-26T16:46:21.838330Z",
   "stats": {
-    "total_alerts": 12287,
+    "total_alerts": 12289,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -13,7 +13,7 @@
         "hit_rate": null
       },
       "Economics": {
-        "total": 2656,
+        "total": 2657,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -37,7 +37,7 @@
         "hit_rate": null
       },
       "Climate and Weather": {
-        "total": 1264,
+        "total": 1265,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,7 +69,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 2684,
+        "total": 2685,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -81,7 +81,7 @@
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 7362,
+        "total": 7363,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 10.75,
+      "balance": 10.81,
       "cash": 5.35,
       "peak": 11.46,
       "initial_balance": 10.0
@@ -101,15 +101,57 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-08-26T11:36:50.336828Z"
+    "updated_at": "2026-08-26T14:20:06.649740Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.4,
-  "account_value": 10.75,
-  "live_pnl": 0.75,
+  "position_value": 5.46,
+  "account_value": 10.81,
+  "live_pnl": 0.81,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-08-26T16:46:21.391812Z",
+      "ticker": "KXRAINDENM-26AUG-2",
+      "title": "Rain in Denver in Aug 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-13.5",
+      "implied_prob": "0.185",
+      "true_prob": "0.05",
+      "confidence": "68",
+      "suggested_live_dollars": "0.82",
+      "suggested_paper_dollars": "19.68",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "82",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-26T16:46:20.872185Z",
+      "ticker": "KXFEDDECISION-26DEC-H25",
+      "title": "Will the Federal Reserve Hike rates by 25bps at their December 2026 meeting?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "29.5",
+      "implied_prob": "0.275",
+      "true_prob": "0.57",
+      "confidence": "85",
+      "suggested_live_dollars": "0.29",
+      "suggested_paper_dollars": "49.88",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "29",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-08-26T13:42:11.026211Z",
       "ticker": "KXRAIN-26AUG26-MIA",
@@ -2104,177 +2146,51 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-08-25T16:32:40.431024Z",
-      "ticker": "KXRAIN-26AUG25-MIA",
-      "title": "Will it rain in Miami on Aug 25, 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-46.5",
-      "implied_prob": "0.555",
-      "true_prob": "0.09",
-      "confidence": "80",
-      "suggested_live_dollars": "0.46",
-      "suggested_paper_dollars": "49.68",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "46",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-25T16:32:39.980227Z",
-      "ticker": "KXSOLMAXY-27JAN01-200",
-      "title": "Will the spot price of Solana be above $200.00 before Jan 1, 2027 at 12:00 AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-14.29",
-      "implied_prob": "0.145",
-      "true_prob": "0.0021",
-      "confidence": "63",
-      "suggested_live_dollars": "0.92",
-      "suggested_paper_dollars": "19.32",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "92",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-25T14:05:33.328766Z",
-      "ticker": "KXBRENTMON-26AUG3117-T76.99",
-      "title": "Will the brent crude oil close price be above 76.99 USD/Bbl on August 31, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "NO",
-      "edge_pct": "-12.91",
-      "implied_prob": "0.945",
-      "true_prob": "0.8159",
-      "confidence": "68",
-      "suggested_live_dollars": "0.18",
-      "suggested_paper_dollars": "19.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "6",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-25T14:05:32.851982Z",
-      "ticker": "KXH200WS-26SEP04-3.500",
-      "title": "Will the NVIDIA H200 compute per hour price be above $3.5 at 4 PM ET on Sep 04?",
-      "category": "Financials",
-      "direction": "YES",
-      "edge_pct": "10.5",
-      "implied_prob": "0.895",
-      "true_prob": "1.0",
-      "confidence": "68",
-      "suggested_live_dollars": "0.94",
-      "suggested_paper_dollars": "19.74",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "94",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-25T14:05:32.417853Z",
-      "ticker": "KXFEDDECISION-26SEP-H0",
-      "title": "Will the Federal Reserve Hike rates by 0bps at their September 2026 meeting?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-9.5",
-      "implied_prob": "0.655",
-      "true_prob": "0.56",
-      "confidence": "78",
-      "suggested_live_dollars": "0.35",
-      "suggested_paper_dollars": "19.95",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "35",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-25T14:05:31.944601Z",
-      "ticker": "KXFEDDECISION-26DEC-H0",
-      "title": "Will the Federal Reserve Hike rates by 0bps at their December 2026 meeting?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-9.5",
-      "implied_prob": "0.655",
-      "true_prob": "0.56",
-      "confidence": "68",
-      "suggested_live_dollars": "0.35",
-      "suggested_paper_dollars": "19.95",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "35",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-25T14:05:31.547236Z",
-      "ticker": "KXGOLDDIRY-26DEC31H1700-T4800",
-      "title": "Will the price of Gold be above 4800 on December 31, 2026 at 05:00 PM EST?",
-      "category": "Commodities",
-      "direction": "NO",
-      "edge_pct": "-8.38",
-      "implied_prob": "0.515",
-      "true_prob": "0.4312",
-      "confidence": "68",
-      "suggested_live_dollars": "0.5",
-      "suggested_paper_dollars": "20.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "50",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-25T14:05:30.973664Z",
-      "ticker": "KXBTCMAX100-26-SEP",
-      "title": "Will Bitcoin be above $100000 by October 1, 2026 at 12:00AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-9.52",
-      "implied_prob": "0.115",
-      "true_prob": "0.0198",
-      "confidence": "73",
-      "suggested_live_dollars": "0.89",
-      "suggested_paper_dollars": "19.58",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "89",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "recent_alerts": [
+    {
+      "timestamp": "2026-08-26T16:46:21.391812Z",
+      "ticker": "KXRAINDENM-26AUG-2",
+      "title": "Rain in Denver in Aug 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-13.5",
+      "implied_prob": "0.185",
+      "true_prob": "0.05",
+      "confidence": "68",
+      "suggested_live_dollars": "0.82",
+      "suggested_paper_dollars": "19.68",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "82",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-26T16:46:20.872185Z",
+      "ticker": "KXFEDDECISION-26DEC-H25",
+      "title": "Will the Federal Reserve Hike rates by 25bps at their December 2026 meeting?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "29.5",
+      "implied_prob": "0.275",
+      "true_prob": "0.57",
+      "confidence": "85",
+      "suggested_live_dollars": "0.29",
+      "suggested_paper_dollars": "49.88",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "29",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-08-26T13:42:11.026211Z",
       "ticker": "KXRAIN-26AUG26-MIA",
@@ -3282,48 +3198,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-08-26T02:48:33.140797Z",
-      "ticker": "KXBTCMAXY-26DEC31-109999.99",
-      "title": "Will Bitcoin be above $109,999.99 by Dec 31, 2026 at 11:59 PM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-16.14",
-      "implied_prob": "0.225",
-      "true_prob": "0.0636",
-      "confidence": "80",
-      "suggested_live_dollars": "0.78",
-      "suggested_paper_dollars": "39.78",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "78",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-26T02:48:32.970918Z",
-      "ticker": "KXBTCMAXY-26DEC31-99999.99",
-      "title": "Will Bitcoin be above $99,999.99 by Dec 31, 2026 at 11:59 PM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-18.71",
-      "implied_prob": "0.325",
-      "true_prob": "0.1379",
-      "confidence": "80",
-      "suggested_live_dollars": "0.68",
-      "suggested_paper_dollars": "39.44",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "68",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -3361,9 +3235,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 65,
+      "current_cents": 68,
       "dollars_risked": 0,
-      "current_value": 1.3,
+      "current_value": 1.36,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

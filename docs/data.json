@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-27T10:45:59.178410Z",
-  "last_scan_ts": "2026-08-27T10:45:59.178410Z",
+  "generated_at": "2026-08-27T23:20:16.707310Z",
+  "last_scan_ts": "2026-08-27T23:20:16.707310Z",
   "stats": {
-    "total_alerts": 12379,
+    "total_alerts": 12381,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -13,7 +13,7 @@
         "hit_rate": null
       },
       "Economics": {
-        "total": 2675,
+        "total": 2676,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -49,7 +49,7 @@
         "hit_rate": null
       },
       "Financials": {
-        "total": 1698,
+        "total": 1699,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,7 +69,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 2713,
+        "total": 2714,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -81,7 +81,7 @@
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 7405,
+        "total": 7406,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 10.68,
+      "balance": 10.66,
       "cash": 5.35,
       "peak": 11.46,
       "initial_balance": 10.0
@@ -101,15 +101,57 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-08-27T08:32:04.417392Z"
+    "updated_at": "2026-08-27T20:57:54.296405Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.33,
-  "account_value": 10.68,
-  "live_pnl": 0.68,
+  "position_value": 5.31,
+  "account_value": 10.66,
+  "live_pnl": 0.66,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-08-27T23:20:16.204348Z",
+      "ticker": "KXCPIYOY-26AUG-T3.3",
+      "title": "Will the rate of CPI inflation be above 3.3% for the year ending in August 2026?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "8.22",
+      "implied_prob": "0.555",
+      "true_prob": "0.6372",
+      "confidence": "73",
+      "suggested_live_dollars": "0.56",
+      "suggested_paper_dollars": "19.6",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "56",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-27T23:20:15.672027Z",
+      "ticker": "KXCARTAPP-26SEP07-T125",
+      "title": "Will Instacart App Downloads for August 2026 be above 125 ?",
+      "category": "Financials",
+      "direction": "YES",
+      "edge_pct": "29.5",
+      "implied_prob": "0.705",
+      "true_prob": "1.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.75",
+      "suggested_paper_dollars": "49.5",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "75",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-08-27T10:45:58.677115Z",
       "ticker": "KXXRPMAXMON-XRP-26AUG31-180",
@@ -1957,143 +1999,19 @@
       "null": [
         ""
       ]
-    },
+    }
+  ],
+  "recent_alerts": [
     {
-      "timestamp": "2026-08-26T21:19:26.163950Z",
-      "ticker": "KXRAIN-26AUG26-ATL",
-      "title": "Will it rain in Atlanta on Aug 26, 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-38.5",
-      "implied_prob": "0.455",
-      "true_prob": "0.07",
-      "confidence": "80",
-      "suggested_live_dollars": "0.55",
-      "suggested_paper_dollars": "49.5",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "55",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-26T21:19:25.755833Z",
-      "ticker": "KXEMERCUTS-26-T1",
-      "title": "Will the Fed cut rates 1 times at emergency meetings?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "36.5",
-      "implied_prob": "0.055",
-      "true_prob": "0.42",
-      "confidence": "85",
-      "suggested_live_dollars": "0.49",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "7",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-26T16:46:21.391812Z",
-      "ticker": "KXRAINDENM-26AUG-2",
-      "title": "Rain in Denver in Aug 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-13.5",
-      "implied_prob": "0.185",
-      "true_prob": "0.05",
-      "confidence": "68",
-      "suggested_live_dollars": "0.82",
-      "suggested_paper_dollars": "19.68",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "82",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-26T16:46:20.872185Z",
-      "ticker": "KXFEDDECISION-26DEC-H25",
-      "title": "Will the Federal Reserve Hike rates by 25bps at their December 2026 meeting?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "29.5",
-      "implied_prob": "0.275",
-      "true_prob": "0.57",
-      "confidence": "85",
-      "suggested_live_dollars": "0.29",
-      "suggested_paper_dollars": "49.88",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "29",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-26T13:42:11.026211Z",
-      "ticker": "KXRAIN-26AUG26-MIA",
-      "title": "Will it rain in Miami on Aug 26, 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-67.5",
-      "implied_prob": "0.855",
-      "true_prob": "0.18",
-      "confidence": "80",
-      "suggested_live_dollars": "0.45",
-      "suggested_paper_dollars": "49.95",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "15",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-26T13:42:08.084741Z",
+      "timestamp": "2026-08-27T23:20:16.204348Z",
       "ticker": "KXCPIYOY-26AUG-T3.3",
       "title": "Will the rate of CPI inflation be above 3.3% for the year ending in August 2026?",
       "category": "Economics",
       "direction": "YES",
-      "edge_pct": "10.53",
-      "implied_prob": "0.53",
-      "true_prob": "0.6353",
-      "confidence": "68",
-      "suggested_live_dollars": "0.59",
-      "suggested_paper_dollars": "7.08",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "59",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-26T13:42:07.730659Z",
-      "ticker": "KXGOLDDIRY-26DEC31H1700-T4900",
-      "title": "Will the price of Gold be above 4900 on December 31, 2026 at 05:00 PM EST?",
-      "category": "Commodities",
-      "direction": "NO",
-      "edge_pct": "-10.86",
-      "implied_prob": "0.46",
-      "true_prob": "0.3514",
-      "confidence": "68",
+      "edge_pct": "8.22",
+      "implied_prob": "0.555",
+      "true_prob": "0.6372",
+      "confidence": "73",
       "suggested_live_dollars": "0.56",
       "suggested_paper_dollars": "19.6",
       "is_paper_bet": "1",
@@ -2106,61 +2024,19 @@
       ]
     },
     {
-      "timestamp": "2026-08-26T13:42:07.255849Z",
-      "ticker": "KXETHMAXY-27JAN01-5000.00",
-      "title": "Will Ethereum reach above $5000.00 by Jan 1, 2027 at 12:00AM?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-8.13",
-      "implied_prob": "0.105",
-      "true_prob": "0.0237",
-      "confidence": "68",
-      "suggested_live_dollars": "0.9",
-      "suggested_paper_dollars": "19.8",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "90",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-26T13:42:06.776137Z",
-      "ticker": "KXCBRATEHIKE-27-FED",
-      "title": "Will the Federal Reserve raise the target range for the federal funds rate before 2027?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-9.0",
-      "implied_prob": "0.63",
-      "true_prob": "0.54",
-      "confidence": "68",
-      "suggested_live_dollars": "0.39",
-      "suggested_paper_dollars": "16.77",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "39",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-26T13:42:06.415768Z",
-      "ticker": "KXNYCASKRENT-27JAN31-T3800",
-      "title": "Will New York City\u2019s median asking rent for December 2026 be above $3,800?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-93.5",
-      "implied_prob": "0.935",
-      "true_prob": "0.0",
+      "timestamp": "2026-08-27T23:20:15.672027Z",
+      "ticker": "KXCARTAPP-26SEP07-T125",
+      "title": "Will Instacart App Downloads for August 2026 be above 125 ?",
+      "category": "Financials",
+      "direction": "YES",
+      "edge_pct": "29.5",
+      "implied_prob": "0.705",
+      "true_prob": "1.0",
       "confidence": "85",
-      "suggested_live_dollars": "0.49",
-      "suggested_paper_dollars": "49.98",
+      "suggested_live_dollars": "0.75",
+      "suggested_paper_dollars": "49.5",
       "is_paper_bet": "1",
-      "paper_entry_price_cents": "7",
+      "paper_entry_price_cents": "75",
       "outcome": "",
       "resolved_at": "",
       "notes": "",
@@ -2168,29 +2044,6 @@
         ""
       ]
     },
-    {
-      "timestamp": "2026-08-26T13:42:05.815091Z",
-      "ticker": "KXNVHOMEPRICE-27FEB28-T423.62",
-      "title": "Will Nevada\u2019s seasonally adjusted Purchase-Only House Price Index for Q4 2026 be above 423.62?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-79.0",
-      "implied_prob": "0.79",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.44",
-      "suggested_paper_dollars": "49.94",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "22",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    }
-  ],
-  "recent_alerts": [
     {
       "timestamp": "2026-08-27T10:45:58.677115Z",
       "ticker": "KXXRPMAXMON-XRP-26AUG31-180",
@@ -3198,48 +3051,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-08-27T03:11:36.942888Z",
-      "ticker": "KXXRPMAXY-XRP-26DEC31-200",
-      "title": "Will XRP trimmed mean be above $2.00 by 11:59 PM ET on Dec 31, 2026?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-25.11",
-      "implied_prob": "0.46",
-      "true_prob": "0.2089",
-      "confidence": "80",
-      "suggested_live_dollars": "0.56",
-      "suggested_paper_dollars": "49.84",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "56",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-27T03:11:36.390039Z",
-      "ticker": "KXBTCMAX100-26-DEC",
-      "title": "Will Bitcoin be above $100000.00 by Jan 1, 2027 at 12:00AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-13.31",
-      "implied_prob": "0.27",
-      "true_prob": "0.1369",
-      "confidence": "73",
-      "suggested_live_dollars": "0.74",
-      "suggested_paper_dollars": "19.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "74",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -3277,9 +3088,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 67,
+      "current_cents": 66,
       "dollars_risked": 0,
-      "current_value": 1.34,
+      "current_value": 1.32,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

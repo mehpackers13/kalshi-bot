@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-30T07:14:32.473236Z",
-  "last_scan_ts": "2026-08-30T07:14:32.473236Z",
+  "generated_at": "2026-08-30T17:45:24.198429Z",
+  "last_scan_ts": "2026-08-30T17:45:24.198429Z",
   "stats": {
-    "total_alerts": 12632,
+    "total_alerts": 12638,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -13,7 +13,7 @@
         "hit_rate": null
       },
       "Economics": {
-        "total": 2738,
+        "total": 2739,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -25,7 +25,7 @@
         "hit_rate": null
       },
       "Crypto": {
-        "total": 3552,
+        "total": 3554,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -37,7 +37,7 @@
         "hit_rate": null
       },
       "Climate and Weather": {
-        "total": 1278,
+        "total": 1279,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -49,13 +49,13 @@
         "hit_rate": null
       },
       "Financials": {
-        "total": 1749,
+        "total": 1750,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "Commodities": {
-        "total": 1533,
+        "total": 1534,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,19 +69,19 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 2789,
+        "total": 2791,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "medium (15-25%)": {
-        "total": 2320,
+        "total": 2323,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 7523,
+        "total": 7524,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 10.37,
+      "balance": 10.33,
       "cash": 5.35,
       "peak": 11.46,
       "initial_balance": 10.0
@@ -101,15 +101,141 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-08-30T04:45:27.708365Z"
+    "updated_at": "2026-08-30T15:17:59.075844Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.02,
-  "account_value": 10.37,
-  "live_pnl": 0.37,
+  "position_value": 4.98,
+  "account_value": 10.33,
+  "live_pnl": 0.33,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-08-30T17:45:23.761332Z",
+      "ticker": "KXGOLDMON-26AUG3117-T4451.99",
+      "title": "Will the gold close price be above 4451.99 USD/t.oz on August 31, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "YES",
+      "edge_pct": "22.35",
+      "implied_prob": "0.69",
+      "true_prob": "0.9135",
+      "confidence": "75",
+      "suggested_live_dollars": "0.7",
+      "suggested_paper_dollars": "39.9",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "70",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-30T17:45:23.375696Z",
+      "ticker": "KXRAIN-26AUG30-MIA",
+      "title": "Will it rain in Miami on Aug 30, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-36.5",
+      "implied_prob": "0.635",
+      "true_prob": "0.27",
+      "confidence": "80",
+      "suggested_live_dollars": "0.37",
+      "suggested_paper_dollars": "49.95",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "37",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-30T17:45:23.094989Z",
+      "ticker": "KXAMZNCC-26SEP07-T104",
+      "title": "Will Amazon Monthly Credit Card Spend for August 2026 be above 104 ?",
+      "category": "Financials",
+      "direction": "YES",
+      "edge_pct": "24.0",
+      "implied_prob": "0.76",
+      "true_prob": "1.0",
+      "confidence": "75",
+      "suggested_live_dollars": "0.77",
+      "suggested_paper_dollars": "39.27",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "77",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-30T17:45:22.819838Z",
+      "ticker": "KXFEDDECISION-26SEP-H0",
+      "title": "Will the Federal Reserve Hike rates by 0bps at their September 2026 meeting?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "8.5",
+      "implied_prob": "0.515",
+      "true_prob": "0.6",
+      "confidence": "78",
+      "suggested_live_dollars": "0.52",
+      "suggested_paper_dollars": "19.76",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "52",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-30T17:45:22.456244Z",
+      "ticker": "KXETHMINY-27JAN01-1000",
+      "title": "Will Ethereum reach below $1000.00 by Jan 1, 2027 at 12:00AM ET?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-8.0",
+      "implied_prob": "0.085",
+      "true_prob": "0.005",
+      "confidence": "63",
+      "suggested_live_dollars": "0.92",
+      "suggested_paper_dollars": "19.32",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "92",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-30T17:45:22.020066Z",
+      "ticker": "KXSOLMAXY-27JAN01-190",
+      "title": "Will the spot price of Solana be above $190.00 before Jan 1, 2027 at 12:00 AM ET?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-18.12",
+      "implied_prob": "0.205",
+      "true_prob": "0.0238",
+      "confidence": "70",
+      "suggested_live_dollars": "0.84",
+      "suggested_paper_dollars": "39.48",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "84",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-08-30T07:14:32.055487Z",
       "ticker": "KXGOLDMON-26AUG3117-T4411.99",
@@ -1768,21 +1894,23 @@
       "null": [
         ""
       ]
-    },
+    }
+  ],
+  "recent_alerts": [
     {
-      "timestamp": "2026-08-29T08:49:50.867157Z",
-      "ticker": "KXRAINHOUM-26AUG-2",
-      "title": "Rain in Houston in Aug 2026?",
-      "category": "Climate and Weather",
+      "timestamp": "2026-08-30T17:45:23.761332Z",
+      "ticker": "KXGOLDMON-26AUG3117-T4451.99",
+      "title": "Will the gold close price be above 4451.99 USD/t.oz on August 31, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
       "direction": "YES",
-      "edge_pct": "15.5",
-      "implied_prob": "0.205",
-      "true_prob": "0.36",
+      "edge_pct": "22.35",
+      "implied_prob": "0.69",
+      "true_prob": "0.9135",
       "confidence": "75",
-      "suggested_live_dollars": "0.3",
-      "suggested_paper_dollars": "7.5",
+      "suggested_live_dollars": "0.7",
+      "suggested_paper_dollars": "39.9",
       "is_paper_bet": "1",
-      "paper_entry_price_cents": "30",
+      "paper_entry_price_cents": "70",
       "outcome": "",
       "resolved_at": "",
       "notes": "",
@@ -1791,19 +1919,19 @@
       ]
     },
     {
-      "timestamp": "2026-08-29T08:49:50.604889Z",
-      "ticker": "KXRAINMIAM-26AUG-5",
-      "title": "Rain in Miami in Aug 2026?",
+      "timestamp": "2026-08-30T17:45:23.375696Z",
+      "ticker": "KXRAIN-26AUG30-MIA",
+      "title": "Will it rain in Miami on Aug 30, 2026?",
       "category": "Climate and Weather",
       "direction": "NO",
-      "edge_pct": "-46.5",
-      "implied_prob": "0.645",
-      "true_prob": "0.18",
-      "confidence": "85",
-      "suggested_live_dollars": "0.39",
-      "suggested_paper_dollars": "49.92",
+      "edge_pct": "-36.5",
+      "implied_prob": "0.635",
+      "true_prob": "0.27",
+      "confidence": "80",
+      "suggested_live_dollars": "0.37",
+      "suggested_paper_dollars": "49.95",
       "is_paper_bet": "1",
-      "paper_entry_price_cents": "39",
+      "paper_entry_price_cents": "37",
       "outcome": "",
       "resolved_at": "",
       "notes": "",
@@ -1812,19 +1940,19 @@
       ]
     },
     {
-      "timestamp": "2026-08-29T08:49:50.347777Z",
+      "timestamp": "2026-08-30T17:45:23.094989Z",
       "ticker": "KXAMZNCC-26SEP07-T104",
       "title": "Will Amazon Monthly Credit Card Spend for August 2026 be above 104 ?",
       "category": "Financials",
       "direction": "YES",
-      "edge_pct": "16.0",
-      "implied_prob": "0.84",
+      "edge_pct": "24.0",
+      "implied_prob": "0.76",
       "true_prob": "1.0",
       "confidence": "75",
-      "suggested_live_dollars": "0.87",
-      "suggested_paper_dollars": "39.15",
+      "suggested_live_dollars": "0.77",
+      "suggested_paper_dollars": "39.27",
       "is_paper_bet": "1",
-      "paper_entry_price_cents": "87",
+      "paper_entry_price_cents": "77",
       "outcome": "",
       "resolved_at": "",
       "notes": "",
@@ -1833,19 +1961,40 @@
       ]
     },
     {
-      "timestamp": "2026-08-29T08:49:50.110861Z",
-      "ticker": "KXCLAUDEAPP-26SEP07-T1600",
-      "title": "Will Claude App Downloads for August 2026 be above 1600 ?",
-      "category": "Financials",
+      "timestamp": "2026-08-30T17:45:22.819838Z",
+      "ticker": "KXFEDDECISION-26SEP-H0",
+      "title": "Will the Federal Reserve Hike rates by 0bps at their September 2026 meeting?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "8.5",
+      "implied_prob": "0.515",
+      "true_prob": "0.6",
+      "confidence": "78",
+      "suggested_live_dollars": "0.52",
+      "suggested_paper_dollars": "19.76",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "52",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-30T17:45:22.456244Z",
+      "ticker": "KXETHMINY-27JAN01-1000",
+      "title": "Will Ethereum reach below $1000.00 by Jan 1, 2027 at 12:00AM ET?",
+      "category": "Crypto",
       "direction": "NO",
-      "edge_pct": "-49.0",
-      "implied_prob": "0.49",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.83",
-      "suggested_paper_dollars": "49.8",
+      "edge_pct": "-8.0",
+      "implied_prob": "0.085",
+      "true_prob": "0.005",
+      "confidence": "63",
+      "suggested_live_dollars": "0.92",
+      "suggested_paper_dollars": "19.32",
       "is_paper_bet": "1",
-      "paper_entry_price_cents": "83",
+      "paper_entry_price_cents": "92",
       "outcome": "",
       "resolved_at": "",
       "notes": "",
@@ -1854,19 +2003,19 @@
       ]
     },
     {
-      "timestamp": "2026-08-29T08:49:49.653266Z",
-      "ticker": "KXFEDDECISION-27APR-H0",
-      "title": "Will the Federal Reserve Hike rates by 0bps at their April 2027 meeting?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "34.5",
-      "implied_prob": "0.605",
-      "true_prob": "0.95",
-      "confidence": "85",
-      "suggested_live_dollars": "0.61",
-      "suggested_paper_dollars": "49.41",
+      "timestamp": "2026-08-30T17:45:22.020066Z",
+      "ticker": "KXSOLMAXY-27JAN01-190",
+      "title": "Will the spot price of Solana be above $190.00 before Jan 1, 2027 at 12:00 AM ET?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-18.12",
+      "implied_prob": "0.205",
+      "true_prob": "0.0238",
+      "confidence": "70",
+      "suggested_live_dollars": "0.84",
+      "suggested_paper_dollars": "39.48",
       "is_paper_bet": "1",
-      "paper_entry_price_cents": "61",
+      "paper_entry_price_cents": "84",
       "outcome": "",
       "resolved_at": "",
       "notes": "",
@@ -1874,29 +2023,6 @@
         ""
       ]
     },
-    {
-      "timestamp": "2026-08-29T08:49:49.350654Z",
-      "ticker": "KXFEDDECISION-27DEC-H25",
-      "title": "Will the Federal Reserve Hike rates by 25bps at their December 2027 meeting?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "55.0",
-      "implied_prob": "0.4",
-      "true_prob": "0.95",
-      "confidence": "85",
-      "suggested_live_dollars": "0.72",
-      "suggested_paper_dollars": "49.68",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "72",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    }
-  ],
-  "recent_alerts": [
     {
       "timestamp": "2026-08-30T07:14:32.055487Z",
       "ticker": "KXGOLDMON-26AUG3117-T4411.99",
@@ -2820,132 +2946,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-08-30T07:14:21.514916Z",
-      "ticker": "KXSOLMAXY-27JAN01-150",
-      "title": "Will the spot price of Solana be above $150.00 before Jan 1, 2027 at 12:00 AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-25.98",
-      "implied_prob": "0.37",
-      "true_prob": "0.1102",
-      "confidence": "85",
-      "suggested_live_dollars": "0.64",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "64",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-30T07:14:21.165331Z",
-      "ticker": "KXLARGECUT-26",
-      "title": "Will the Fed cut rates more than 25 bps in 2026?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "35.0",
-      "implied_prob": "0.05",
-      "true_prob": "0.4",
-      "confidence": "90",
-      "suggested_live_dollars": "0.5",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "5",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-30T07:14:20.779707Z",
-      "ticker": "KXRATECUT-26DEC31",
-      "title": "Will the Federal Reserve cut rates before 2027?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "30.0",
-      "implied_prob": "0.1",
-      "true_prob": "0.4",
-      "confidence": "95",
-      "suggested_live_dollars": "0.44",
-      "suggested_paper_dollars": "49.94",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "11",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-30T07:14:20.512660Z",
-      "ticker": "KXSUSPENDGASTAX-26MAY-JAN01",
-      "title": "Will legislation that would temporarily suspend or reduce the federal excise tax on gasoline become law before Jan 1, 2027?",
-      "category": "Politics",
-      "direction": "YES",
-      "edge_pct": "28.5",
-      "implied_prob": "0.115",
-      "true_prob": "0.4",
-      "confidence": "85",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "12",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-30T07:14:20.135583Z",
-      "ticker": "KXTESLASEMI-27JAN-5000",
-      "title": "Will Tesla Inc report above 5000 Semi Trucks Produced before Jan 2027?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-13.0",
-      "implied_prob": "0.13",
-      "true_prob": "0.0",
-      "confidence": "68",
-      "suggested_live_dollars": "0.88",
-      "suggested_paper_dollars": "19.36",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "88",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-30T07:14:19.683086Z",
-      "ticker": "KXTESLASEMI-27JAN-1000",
-      "title": "Will Tesla Inc report above 1000 Semi Trucks Produced before Jan 2027?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-34.42",
-      "implied_prob": "0.345",
-      "true_prob": "0.0008",
-      "confidence": "85",
-      "suggested_live_dollars": "0.68",
-      "suggested_paper_dollars": "49.64",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "68",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -2983,9 +2983,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 62,
+      "current_cents": 61,
       "dollars_risked": 0,
-      "current_value": 1.24,
+      "current_value": 1.22,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -3007,9 +3007,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 86,
+      "current_cents": 84,
       "dollars_risked": 0,
-      "current_value": 0.86,
+      "current_value": 0.84,
       "pl_dollars": 0.0,
       "timestamp": ""
     }

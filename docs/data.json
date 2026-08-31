@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-31T02:43:40.039137Z",
-  "last_scan_ts": "2026-08-31T02:43:40.039137Z",
+  "generated_at": "2026-08-31T07:03:33.024849Z",
+  "last_scan_ts": "2026-08-31T07:03:33.024849Z",
   "stats": {
-    "total_alerts": 12728,
+    "total_alerts": 12730,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -25,7 +25,7 @@
         "hit_rate": null
       },
       "Crypto": {
-        "total": 3579,
+        "total": 3580,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -49,7 +49,7 @@
         "hit_rate": null
       },
       "Financials": {
-        "total": 1768,
+        "total": 1769,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -75,13 +75,13 @@
         "hit_rate": null
       },
       "medium (15-25%)": {
-        "total": 2340,
+        "total": 2341,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 7562,
+        "total": 7563,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 10.26,
+      "balance": 10.44,
       "cash": 5.35,
       "peak": 11.46,
       "initial_balance": 10.0
@@ -101,15 +101,57 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-08-31T00:22:33.551317Z"
+    "updated_at": "2026-08-31T04:48:42.812918Z"
   },
   "cash_bal": 5.35,
-  "position_value": 4.91,
-  "account_value": 10.26,
-  "live_pnl": 0.26,
+  "position_value": 5.09,
+  "account_value": 10.44,
+  "live_pnl": 0.44,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-08-31T07:03:32.551236Z",
+      "ticker": "KXCARTAPP-26SEP07-T125",
+      "title": "Will Instacart App Downloads for August 2026 be above 125 ?",
+      "category": "Financials",
+      "direction": "YES",
+      "edge_pct": "25.0",
+      "implied_prob": "0.75",
+      "true_prob": "1.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.79",
+      "suggested_paper_dollars": "49.77",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "79",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-31T07:03:32.089534Z",
+      "ticker": "KXSOLMAXY-27JAN01-190",
+      "title": "Will the spot price of Solana be above $190.00 before Jan 1, 2027 at 12:00 AM ET?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-19.04",
+      "implied_prob": "0.21",
+      "true_prob": "0.0196",
+      "confidence": "70",
+      "suggested_live_dollars": "0.84",
+      "suggested_paper_dollars": "39.48",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "84",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-08-31T02:43:39.574109Z",
       "ticker": "KXRAINHOUM-26AUG-2",
@@ -3515,6 +3557,48 @@
   ],
   "recent_alerts": [
     {
+      "timestamp": "2026-08-31T07:03:32.551236Z",
+      "ticker": "KXCARTAPP-26SEP07-T125",
+      "title": "Will Instacart App Downloads for August 2026 be above 125 ?",
+      "category": "Financials",
+      "direction": "YES",
+      "edge_pct": "25.0",
+      "implied_prob": "0.75",
+      "true_prob": "1.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.79",
+      "suggested_paper_dollars": "49.77",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "79",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-08-31T07:03:32.089534Z",
+      "ticker": "KXSOLMAXY-27JAN01-190",
+      "title": "Will the spot price of Solana be above $190.00 before Jan 1, 2027 at 12:00 AM ET?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-19.04",
+      "implied_prob": "0.21",
+      "true_prob": "0.0196",
+      "confidence": "70",
+      "suggested_live_dollars": "0.84",
+      "suggested_paper_dollars": "39.48",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "84",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
       "timestamp": "2026-08-31T02:43:39.574109Z",
       "ticker": "KXRAINHOUM-26AUG-2",
       "title": "Rain in Houston in Aug 2026?",
@@ -4521,48 +4605,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-08-31T02:43:20.572908Z",
-      "ticker": "KXSOLMAXY-27JAN01-170",
-      "title": "Will the spot price of Solana be above $170.00 before Jan 1, 2027 at 12:00 AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-18.52",
-      "implied_prob": "0.23",
-      "true_prob": "0.0448",
-      "confidence": "70",
-      "suggested_live_dollars": "0.82",
-      "suggested_paper_dollars": "39.36",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "82",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-08-31T02:43:20.089675Z",
-      "ticker": "KXSOLMAXY-27JAN01-160",
-      "title": "Will the spot price of Solana be above $160.00 before Jan 1, 2027 at 12:00 AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-28.26",
-      "implied_prob": "0.35",
-      "true_prob": "0.0674",
-      "confidence": "80",
-      "suggested_live_dollars": "0.68",
-      "suggested_paper_dollars": "49.64",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "68",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -4576,9 +4618,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 72,
+      "current_cents": 73,
       "dollars_risked": 0,
-      "current_value": 0.72,
+      "current_value": 0.73,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -4588,9 +4630,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 62,
+      "current_cents": 64,
       "dollars_risked": 0,
-      "current_value": 1.24,
+      "current_value": 1.28,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -4600,9 +4642,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 59,
+      "current_cents": 64,
       "dollars_risked": 0,
-      "current_value": 1.18,
+      "current_value": 1.28,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -4624,9 +4666,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 84,
+      "current_cents": 87,
       "dollars_risked": 0,
-      "current_value": 0.84,
+      "current_value": 0.87,
       "pl_dollars": 0.0,
       "timestamp": ""
     }

@@ -84221,3 +84221,33 @@ Total modelable markets evaluated: 0
 [2026-09-01 14:16:41 ET] [INFO] Scan complete — 4 alerts sent
 [2026-09-01 14:16:41 ET] [INFO] ============================================================
 [2026-09-01 14:16:41 ET] [INFO] Scan job complete
+[2026-09-01 14:45:54 ET] [INFO] Scan job starting
+[2026-09-01 14:45:54 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-09-01 14:45:54 ET] [INFO] ============================================================
+[2026-09-01 14:45:54 ET] [INFO] Starting market scan
+[2026-09-01 14:45:56 ET] [INFO] Portfolio value: $5.35 cash + $5.11 positions = $10.46
+[2026-09-01 14:45:56 ET] [INFO] Cash: $5.35  |  Positions: $5.11  |  Total: $10.46  |  Peak: $11.46
+[2026-09-01 14:45:56 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-09-01 14:45:57 ET] [WARN] API GET /markets → HTTP 400
+[2026-09-01 14:46:16 ET] [INFO] Fetched 88790 open markets via events endpoint across 50 pages
+[2026-09-01 14:46:16 ET] [INFO] Fetched 88790 open markets
+[2026-09-01 14:46:17 ET] [INFO] Parsed 83866 valid markets
+[2026-09-01 14:46:17 ET] [INFO] Categories: {'Sports': 49077, 'Elections': 11262, 'Entertainment': 7575, 'Financials': 5667, 'Economics': 3717, 'Politics': 2039, 'Crypto': 956, 'Climate and Weather': 845}
+[2026-09-01 14:52:32 ET] [INFO]   CPI model: threshold=10.0% TNX=4.80% → P=0.200
+[2026-09-01 14:53:02 ET] [INFO]   price model: TSLA spot=353.95 target=1.60 vol=60.2% T=13834.2h → P=1.000
+[2026-09-01 15:44:29 ET] [INFO]   fed model: implied_rate=3.805% current≈3.772% diff=3.3bps → P=0.566
+[2026-09-01 16:00:57 ET] [INFO]   price model: SOL-USD spot=99.98 target=500.00 vol=52.4% T=2914.2h → P=0.000
+[2026-09-01 16:01:18 ET] [INFO]   price model: ETH-USD spot=2416.06 target=1000.00 vol=60.9% T=2914.2h → P=0.006
+[2026-09-01 16:01:18 ET] [INFO]   price model: ETH-USD spot=2416.06 target=4500.00 vol=60.9% T=2914.2h → P=0.038
+[2026-09-01 16:01:19 ET] [INFO]   price model: ETH-USD spot=2416.06 target=4750.00 vol=60.9% T=2914.2h → P=0.027
+[2026-09-01 16:01:20 ET] [INFO]   price model: BTC-USD spot=77270.18 target=100000.00 vol=37.2% T=1449.2h → P=0.044
+[2026-09-01 16:01:51 ET] [INFO]   price model: BTC-USD spot=77256.71 target=129999.00 vol=37.2% T=2914.2h → P=0.008
+[2026-09-01 16:01:51 ET] [INFO]   price model: BTC-USD spot=77256.71 target=139999.00 vol=37.2% T=2914.2h → P=0.003
+[2026-09-01 16:13:59 ET] [INFO]   CPI model: threshold=4.0% TNX=4.80% → P=0.420
+[2026-09-01 16:17:33 ET] [INFO]   CPI model: threshold=2.0% TNX=4.80% → P=0.780
+[2026-09-01 16:47:03 ET] [INFO]   fed model: implied_rate=3.810% current≈3.772% diff=3.8bps → P=0.576
+[2026-09-01 17:32:22 ET] [INFO]   weather model: miami rain 2026-09-01 forecast=78% → P=0.780
+[2026-09-01 17:36:26 ET] [INFO] Checked 83789 markets | Modelable: 83789 | Edges found: 0
+[2026-09-01 17:36:26 ET] [INFO] Scan complete — no qualifying edges found (this is fine)
+[2026-09-01 17:36:26 ET] [INFO] ============================================================
+[2026-09-01 17:36:26 ET] [INFO] Scan job complete

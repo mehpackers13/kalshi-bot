@@ -84665,3 +84665,44 @@ Total modelable markets evaluated: 0
 [2026-09-02 06:48:45 ET] [INFO] Scan complete — 3 alerts sent
 [2026-09-02 06:48:45 ET] [INFO] ============================================================
 [2026-09-02 06:48:45 ET] [INFO] Scan job complete
+[2026-09-02 11:02:34 ET] [INFO] Scan job starting
+[2026-09-02 11:02:35 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-09-02 11:02:35 ET] [INFO] ============================================================
+[2026-09-02 11:02:35 ET] [INFO] Starting market scan
+[2026-09-02 11:02:36 ET] [INFO] Portfolio value: $5.35 cash + $5.40 positions = $10.75
+[2026-09-02 11:02:36 ET] [INFO] Cash: $5.35  |  Positions: $5.40  |  Total: $10.75  |  Peak: $11.46
+[2026-09-02 11:02:37 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-09-02 11:02:37 ET] [WARN] API GET /markets → HTTP 400
+[2026-09-02 11:03:00 ET] [INFO] Fetched 91117 open markets via events endpoint across 50 pages
+[2026-09-02 11:03:00 ET] [INFO] Fetched 91117 open markets
+[2026-09-02 11:03:00 ET] [INFO] Parsed 85995 valid markets
+[2026-09-02 11:03:00 ET] [INFO] Categories: {'Sports': 51500, 'Elections': 11331, 'Entertainment': 8011, 'Financials': 5084, 'Economics': 3691, 'Politics': 2046, 'Crypto': 945, 'Climate and Weather': 903}
+[2026-09-02 11:08:39 ET] [INFO]   CPI model: threshold=10.0% TNX=4.80% → P=0.200
+[2026-09-02 11:37:28 ET] [INFO]   fed model: implied_rate=3.795% current≈3.772% diff=2.3bps → P=0.546
+[2026-09-02 11:56:48 ET] [INFO]   fed model: implied_rate=3.800% current≈3.772% diff=2.8bps → P=0.556
+[2026-09-02 12:12:04 ET] [INFO]   price model: SOL-USD spot=99.41 target=500.00 vol=52.6% T=2893.9h → P=0.000
+[2026-09-02 12:12:24 ET] [INFO]   price model: ETH-USD spot=2393.23 target=3750.00 vol=61.2% T=2893.9h → P=0.101
+[2026-09-02 12:12:24 ET] [INFO]   price model: ETH-USD spot=2393.23 target=4250.00 vol=61.2% T=2893.9h → P=0.051
+[2026-09-02 12:12:24 ET] [INFO]   price model: ETH-USD spot=2393.23 target=4500.00 vol=61.2% T=2893.9h → P=0.036
+[2026-09-02 12:12:25 ET] [INFO]   price model: ETH-USD spot=2393.23 target=4750.00 vol=61.2% T=2893.9h → P=0.026
+[2026-09-02 12:12:26 ET] [INFO]   price model: BTC-USD spot=77299.57 target=100000.00 vol=37.2% T=1428.9h → P=0.043
+[2026-09-02 12:12:51 ET] [INFO]   price model: BTC-USD spot=77317.48 target=109999.00 vol=37.2% T=2893.9h → P=0.050
+[2026-09-02 12:12:52 ET] [INFO]   price model: BTC-USD spot=77317.48 target=129999.00 vol=37.2% T=2893.9h → P=0.008
+[2026-09-02 12:12:52 ET] [INFO]   price model: BTC-USD spot=77317.48 target=139999.00 vol=37.2% T=2893.9h → P=0.003
+[2026-09-02 12:24:24 ET] [INFO]   CPI model: threshold=4.0% TNX=4.80% → P=0.420
+[2026-09-02 12:27:49 ET] [INFO]   CPI model: threshold=2.0% TNX=4.80% → P=0.780
+[2026-09-02 12:53:04 ET] [INFO]   price model: BTC-USD spot=77240.01 target=85000.00 vol=37.2% T=684.9h → P=0.179
+[2026-09-02 12:53:04 ET] [INFO]   EDGE FOUND: KXBTCMAXMON-BTC-26SEP30-8500000 | implied=29.0% true=17.9% edge=-11.1% dir=NO conf=63
+[2026-09-02 12:59:15 ET] [INFO]   fed model: implied_rate=3.800% current≈3.772% diff=2.8bps → P=0.556
+[2026-09-02 13:02:28 ET] [INFO]   price model: DIA spot=529.98 target=260.00 vol=12.7% T=107.4h → P=1.000
+[2026-09-02 13:02:28 ET] [INFO]   EDGE FOUND: KXGEMINIAPP-26SEP07-T260 | implied=68.0% true=100.0% edge=+32.0% dir=YES conf=85
+[2026-09-02 13:02:40 ET] [INFO]   price model: AMZN spot=255.12 target=105.00 vol=54.7% T=107.4h → P=1.000
+[2026-09-02 13:02:40 ET] [INFO]   EDGE FOUND: KXAMZNCC-26SEP07-T105 | implied=49.0% true=100.0% edge=+51.0% dir=YES conf=85
+[2026-09-02 13:46:31 ET] [INFO] Checked 85927 markets | Modelable: 85927 | Edges found: 3
+[2026-09-02 13:46:32 ET] [INFO] [Discord] Trade alert sent: KXBTCMAXMON-BTC-26SEP30-8500000
+[2026-09-02 13:46:32 ET] [WARN] AUTO-BET SKIP KXBTCMAXMON-BTC-26SEP30-8500000: exposure 39.4% ≥ 25% limit ($7.00 of $17.75 in open positions)
+[2026-09-02 13:46:32 ET] [INFO]   Skipping KXGEMINIAPP-26SEP07-T260 — suggested bet too small to be meaningful
+[2026-09-02 13:46:32 ET] [INFO]   Skipping KXAMZNCC-26SEP07-T105 — suggested bet too small to be meaningful
+[2026-09-02 13:46:32 ET] [INFO] Scan complete — 1 alerts sent
+[2026-09-02 13:46:32 ET] [INFO] ============================================================
+[2026-09-02 13:46:32 ET] [INFO] Scan job complete

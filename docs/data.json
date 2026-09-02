@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-02T17:46:32.765705Z",
-  "last_scan_ts": "2026-09-02T17:46:32.765705Z",
+  "generated_at": "2026-09-02T22:03:48.762860Z",
+  "last_scan_ts": "2026-09-02T22:03:48.762860Z",
   "stats": {
-    "total_alerts": 12893,
+    "total_alerts": 12896,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -25,7 +25,7 @@
         "hit_rate": null
       },
       "Crypto": {
-        "total": 3623,
+        "total": 3625,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -49,7 +49,7 @@
         "hit_rate": null
       },
       "Financials": {
-        "total": 1799,
+        "total": 1800,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,7 +69,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 2875,
+        "total": 2878,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -101,7 +101,7 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-09-02T15:02:36.697216Z"
+    "updated_at": "2026-09-02T18:55:19.665057Z"
   },
   "cash_bal": 5.35,
   "position_value": 5.4,
@@ -110,6 +110,69 @@
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-09-02T22:03:48.244519Z",
+      "ticker": "KXBTCMINMON-BTC-26SEP30-6500000",
+      "title": "Will BTC trimmed mean be below $65000.00 by 11:59 PM ET on Sep 30, 2026?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-9.86",
+      "implied_prob": "0.145",
+      "true_prob": "0.0464",
+      "confidence": "63",
+      "suggested_live_dollars": "0.86",
+      "suggested_paper_dollars": "19.78",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "86",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-09-02T22:03:47.776994Z",
+      "ticker": "KXETHMAXY-27JAN01-3750.00",
+      "title": "Will Ethereum reach above $3750.00 by Jan 1, 2027 at 12:00AM?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-8.47",
+      "implied_prob": "0.185",
+      "true_prob": "0.1003",
+      "confidence": "68",
+      "suggested_live_dollars": "0.82",
+      "suggested_paper_dollars": "19.68",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "82",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-09-02T22:03:47.144021Z",
+      "ticker": "KXMELIA-28JANITEMS-3000000000.0",
+      "title": "Will MercadoLibre Inc. report Above 3 billion items sold in 2026?",
+      "category": "Financials",
+      "direction": "YES",
+      "edge_pct": "9.5",
+      "implied_prob": "0.905",
+      "true_prob": "1.0",
+      "confidence": "68",
+      "suggested_live_dollars": "0.95",
+      "suggested_paper_dollars": "19.95",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "95",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-09-02T17:46:32.241659Z",
       "ticker": "KXBTCMAXMON-BTC-26SEP30-8500000",
@@ -1642,93 +1705,72 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-09-01T18:16:41.435903Z",
-      "ticker": "KXRAIN-26SEP01-PHIL",
-      "title": "Will it rain in Philadelphia on Sep 1, 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-60.5",
-      "implied_prob": "0.815",
-      "true_prob": "0.21",
-      "confidence": "80",
-      "suggested_live_dollars": "0.38",
-      "suggested_paper_dollars": "49.97",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "19",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-09-01T18:16:40.496511Z",
-      "ticker": "KXH100WS-26SEP04-2.750",
-      "title": "Will the NVIDIA H100 compute per hour price be above $2.75 at 4 PM ET on Sep 04?",
-      "category": "Financials",
-      "direction": "YES",
-      "edge_pct": "33.0",
-      "implied_prob": "0.67",
-      "true_prob": "1.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.68",
-      "suggested_paper_dollars": "49.64",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "68",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-09-01T18:16:39.751162Z",
-      "ticker": "KXCPIYOY-26AUG-T3.1",
-      "title": "Will the rate of CPI inflation be above 3.1% for the year ending in August 2026?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-27.62",
-      "implied_prob": "0.945",
-      "true_prob": "0.6688",
-      "confidence": "85",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "6",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-09-01T18:16:39.169956Z",
-      "ticker": "KXFEDDECISION-26OCT-H0",
-      "title": "Will the Federal Reserve Hike rates by 0bps at their October 2026 meeting?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-11.9",
-      "implied_prob": "0.685",
-      "true_prob": "0.566",
-      "confidence": "73",
-      "suggested_live_dollars": "0.32",
-      "suggested_paper_dollars": "19.84",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "32",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "recent_alerts": [
+    {
+      "timestamp": "2026-09-02T22:03:48.244519Z",
+      "ticker": "KXBTCMINMON-BTC-26SEP30-6500000",
+      "title": "Will BTC trimmed mean be below $65000.00 by 11:59 PM ET on Sep 30, 2026?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-9.86",
+      "implied_prob": "0.145",
+      "true_prob": "0.0464",
+      "confidence": "63",
+      "suggested_live_dollars": "0.86",
+      "suggested_paper_dollars": "19.78",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "86",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-09-02T22:03:47.776994Z",
+      "ticker": "KXETHMAXY-27JAN01-3750.00",
+      "title": "Will Ethereum reach above $3750.00 by Jan 1, 2027 at 12:00AM?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-8.47",
+      "implied_prob": "0.185",
+      "true_prob": "0.1003",
+      "confidence": "68",
+      "suggested_live_dollars": "0.82",
+      "suggested_paper_dollars": "19.68",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "82",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-09-02T22:03:47.144021Z",
+      "ticker": "KXMELIA-28JANITEMS-3000000000.0",
+      "title": "Will MercadoLibre Inc. report Above 3 billion items sold in 2026?",
+      "category": "Financials",
+      "direction": "YES",
+      "edge_pct": "9.5",
+      "implied_prob": "0.905",
+      "true_prob": "1.0",
+      "confidence": "68",
+      "suggested_live_dollars": "0.95",
+      "suggested_paper_dollars": "19.95",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "95",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-09-02T17:46:32.241659Z",
       "ticker": "KXBTCMAXMON-BTC-26SEP30-8500000",
@@ -2709,69 +2751,6 @@
       "suggested_paper_dollars": "39.36",
       "is_paper_bet": "1",
       "paper_entry_price_cents": "82",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-09-02T06:48:07.350026Z",
-      "ticker": "KXSOLMAXY-27JAN01-160",
-      "title": "Will the spot price of Solana be above $160.00 before Jan 1, 2027 at 12:00 AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-24.25",
-      "implied_prob": "0.305",
-      "true_prob": "0.0625",
-      "confidence": "70",
-      "suggested_live_dollars": "0.76",
-      "suggested_paper_dollars": "39.52",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "76",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-09-02T06:48:07.066434Z",
-      "ticker": "KXSOLMAXY-27JAN01-150",
-      "title": "Will the spot price of Solana be above $150.00 before Jan 1, 2027 at 12:00 AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-23.73",
-      "implied_prob": "0.33",
-      "true_prob": "0.0927",
-      "confidence": "75",
-      "suggested_live_dollars": "0.69",
-      "suggested_paper_dollars": "39.33",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "69",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-09-02T06:48:06.766219Z",
-      "ticker": "KXCBRATEHIKE-27-FED",
-      "title": "Will the Federal Reserve raise the target range for the federal funds rate before 2027?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-16.9",
-      "implied_prob": "0.745",
-      "true_prob": "0.576",
-      "confidence": "80",
-      "suggested_live_dollars": "0.26",
-      "suggested_paper_dollars": "39.78",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "26",
       "outcome": "",
       "resolved_at": "",
       "notes": "",

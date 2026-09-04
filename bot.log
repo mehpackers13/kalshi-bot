@@ -85357,3 +85357,91 @@ Total modelable markets evaluated: 0
 [2026-09-03 17:31:42 ET] [INFO] Scan complete — 7 alerts sent
 [2026-09-03 17:31:42 ET] [INFO] ============================================================
 [2026-09-03 17:31:42 ET] [INFO] Scan job complete
+[2026-09-03 17:38:36 ET] [INFO] Scan job starting
+[2026-09-03 17:38:36 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-09-03 17:38:36 ET] [INFO] ============================================================
+[2026-09-03 17:38:36 ET] [INFO] Starting market scan
+[2026-09-03 17:38:37 ET] [INFO] Portfolio value: $5.35 cash + $4.88 positions = $10.23
+[2026-09-03 17:38:37 ET] [INFO] Cash: $5.35  |  Positions: $4.88  |  Total: $10.23  |  Peak: $11.46
+[2026-09-03 17:38:38 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-09-03 17:38:38 ET] [WARN] API GET /markets → HTTP 400
+[2026-09-03 17:38:59 ET] [INFO] Fetched 92705 open markets via events endpoint across 50 pages
+[2026-09-03 17:38:59 ET] [INFO] Fetched 92705 open markets
+[2026-09-03 17:39:00 ET] [INFO] Parsed 87377 valid markets
+[2026-09-03 17:39:00 ET] [INFO] Categories: {'Sports': 54666, 'Elections': 11259, 'Entertainment': 8129, 'Economics': 3935, 'Financials': 3797, 'Politics': 2031, 'Mentions': 934, 'Science and Technology': 704}
+[2026-09-03 17:44:33 ET] [INFO]   CPI model: threshold=10.0% TNX=4.76% → P=0.200
+[2026-09-03 17:44:57 ET] [INFO]   price model: TSLA spot=376.36 target=1.60 vol=42.4% T=13783.4h → P=1.000
+[2026-09-03 18:26:38 ET] [INFO]   fed model: implied_rate=3.765% current≈3.740% diff=2.5bps → P=0.550
+[2026-09-03 18:40:27 ET] [INFO]   price model: SOL-USD spot=104.06 target=500.00 vol=52.9% T=2863.4h → P=0.000
+[2026-09-03 18:40:45 ET] [INFO]   price model: ETH-USD spot=2494.85 target=4000.00 vol=61.9% T=2863.4h → P=0.091
+[2026-09-03 18:40:45 ET] [INFO]   price model: ETH-USD spot=2494.85 target=4250.00 vol=61.9% T=2863.4h → P=0.066
+[2026-09-03 18:40:46 ET] [INFO]   price model: ETH-USD spot=2494.85 target=4500.00 vol=61.9% T=2863.4h → P=0.048
+[2026-09-03 18:40:46 ET] [INFO]   price model: ETH-USD spot=2494.85 target=4750.00 vol=61.9% T=2863.4h → P=0.035
+[2026-09-03 18:40:46 ET] [INFO]   price model: ETH-USD spot=2494.85 target=5000.00 vol=61.9% T=2863.4h → P=0.025
+[2026-09-03 18:40:47 ET] [INFO]   price model: BTC-USD spot=81225.12 target=100000.00 vol=39.4% T=654.4h → P=0.027
+[2026-09-03 18:40:48 ET] [INFO]   price model: BTC-USD spot=81225.12 target=100000.00 vol=39.4% T=1398.4h → P=0.093
+[2026-09-03 18:41:04 ET] [INFO]   price model: BTC-USD spot=81233.98 target=119999.00 vol=39.4% T=2863.3h → P=0.042
+[2026-09-03 18:41:04 ET] [INFO]   price model: BTC-USD spot=81233.98 target=129999.00 vol=39.4% T=2863.3h → P=0.018
+[2026-09-03 18:41:04 ET] [INFO]   price model: BTC-USD spot=81233.98 target=139999.00 vol=39.4% T=2863.3h → P=0.008
+[2026-09-03 18:41:10 ET] [INFO]   price model: GC=F spot=4523.00 target=4400.00 vol=25.8% T=2856.4h → P=0.574
+[2026-09-03 18:51:16 ET] [INFO]   CPI model: threshold=4.0% TNX=4.76% → P=0.424
+[2026-09-03 18:51:16 ET] [INFO]   EDGE FOUND: KXBRAZILINF-26DEC-4.00 | implied=50.5% true=42.4% edge=-8.1% dir=NO conf=68
+[2026-09-03 18:54:19 ET] [INFO]   CPI model: threshold=2.0% TNX=4.76% → P=0.776
+[2026-09-03 18:54:23 ET] [INFO]   fed model: implied_rate=3.765% current≈3.740% diff=2.5bps → P=0.550
+[2026-09-03 19:16:55 ET] [INFO]   price model: ETH-USD spot=2498.95 target=2750.00 vol=62.0% T=654.3h → P=0.286
+[2026-09-03 19:16:55 ET] [INFO]   EDGE FOUND: KXETHMAXMON-ETH-26SEP30-275000 | implied=46.5% true=28.6% edge=-17.9% dir=NO conf=70
+[2026-09-03 19:17:00 ET] [INFO]   price model: BTC-USD spot=81204.36 target=92500.00 vol=39.4% T=654.3h → P=0.113
+[2026-09-03 19:17:00 ET] [INFO]   EDGE FOUND: KXBTCMAXMON-BTC-26SEP30-9250000 | implied=26.0% true=11.3% edge=-14.7% dir=NO conf=63
+[2026-09-03 19:17:01 ET] [INFO]   price model: BTC-USD spot=81204.36 target=95000.00 vol=39.4% T=654.3h → P=0.072
+[2026-09-03 19:17:01 ET] [INFO]   EDGE FOUND: KXBTCMAXMON-BTC-26SEP30-9500000 | implied=18.5% true=7.2% edge=-11.3% dir=NO conf=63
+[2026-09-03 19:17:01 ET] [INFO]   price model: BTC-USD spot=81204.36 target=97500.00 vol=39.4% T=654.3h → P=0.045
+[2026-09-03 19:17:01 ET] [INFO]   EDGE FOUND: KXBTCMAXMON-BTC-26SEP30-9750000 | implied=12.5% true=4.5% edge=-8.0% dir=NO conf=63
+[2026-09-03 19:17:01 ET] [INFO]   price model: BNB-USD spot=723.89 target=480.00 vol=31.0% T=654.3h → P=0.000
+[2026-09-03 19:17:01 ET] [INFO]   EDGE FOUND: KXBNBMINMON-BNB-26SEP30-48000 | implied=49.5% true=0.0% edge=-49.5% dir=NO conf=85
+[2026-09-03 19:17:02 ET] [INFO]   price model: BNB-USD spot=723.89 target=500.00 vol=31.0% T=654.3h → P=0.000
+[2026-09-03 19:17:02 ET] [INFO]   EDGE FOUND: KXBNBMINMON-BNB-26SEP30-50000 | implied=43.0% true=0.0% edge=-43.0% dir=NO conf=85
+[2026-09-03 19:17:02 ET] [INFO]   price model: BNB-USD spot=723.89 target=510.00 vol=31.0% T=654.3h → P=0.000
+[2026-09-03 19:17:02 ET] [INFO]   EDGE FOUND: KXBNBMINMON-BNB-26SEP30-51000 | implied=49.5% true=0.0% edge=-49.5% dir=NO conf=85
+[2026-09-03 19:17:03 ET] [INFO]   price model: BNB-USD spot=723.89 target=560.00 vol=31.0% T=654.3h → P=0.001
+[2026-09-03 19:17:03 ET] [INFO]   EDGE FOUND: KXBNBMINMON-BNB-26SEP30-56000 | implied=49.5% true=0.1% edge=-49.4% dir=NO conf=85
+[2026-09-03 19:17:03 ET] [INFO]   price model: BNB-USD spot=723.89 target=580.00 vol=31.0% T=654.3h → P=0.004
+[2026-09-03 19:17:03 ET] [INFO]   EDGE FOUND: KXBNBMINMON-BNB-26SEP30-58000 | implied=50.0% true=0.4% edge=-49.5% dir=NO conf=80
+[2026-09-03 19:26:48 ET] [INFO]   price model: DIA spot=536.93 target=116.00 vol=13.1% T=76.8h → P=1.000
+[2026-09-03 19:26:48 ET] [INFO]   EDGE FOUND: KXUBEREAPP-26SEP07-T116 | implied=75.0% true=100.0% edge=+25.0% dir=YES conf=85
+[2026-09-03 19:27:04 ET] [INFO]   price model: DIA spot=536.93 target=260.00 vol=13.1% T=76.8h → P=1.000
+[2026-09-03 19:27:04 ET] [INFO]   EDGE FOUND: KXGEMINIAPP-26SEP07-T260 | implied=57.5% true=100.0% edge=+42.5% dir=YES conf=85
+[2026-09-03 19:27:16 ET] [INFO]   price model: DIA spot=536.93 target=110.00 vol=13.1% T=76.8h → P=1.000
+[2026-09-03 19:27:17 ET] [INFO]   price model: DIA spot=536.93 target=115.00 vol=13.1% T=76.8h → P=1.000
+[2026-09-03 19:27:17 ET] [INFO]   price model: DIA spot=536.93 target=120.00 vol=13.1% T=76.8h → P=1.000
+[2026-09-03 19:27:17 ET] [INFO]   EDGE FOUND: KXCARTAPP-26SEP07-T120 | implied=53.0% true=100.0% edge=+47.0% dir=YES conf=85
+[2026-09-03 19:27:17 ET] [INFO]   price model: DIA spot=536.93 target=125.00 vol=13.1% T=76.8h → P=1.000
+[2026-09-03 19:27:17 ET] [INFO]   EDGE FOUND: KXCARTAPP-26SEP07-T125 | implied=62.0% true=100.0% edge=+38.0% dir=YES conf=85
+[2026-09-03 19:27:21 ET] [INFO]   price model: AMZN spot=258.90 target=105.00 vol=54.8% T=76.8h → P=1.000
+[2026-09-03 19:27:21 ET] [INFO]   EDGE FOUND: KXAMZNCC-26SEP07-T105 | implied=85.5% true=100.0% edge=+14.5% dir=YES conf=68
+[2026-09-03 20:08:06 ET] [INFO]   price model: DIA spot=536.93 target=40.50 vol=12.9% T=90.3h → P=1.000
+[2026-09-03 20:08:06 ET] [INFO]   EDGE FOUND: KXNCAAFSPREAD-26SEP05UNTIND-IND41 | implied=48.5% true=100.0% edge=+51.5% dir=YES conf=85
+[2026-09-03 20:08:43 ET] [INFO] Checked 87296 markets | Modelable: 87296 | Edges found: 16
+[2026-09-03 20:08:43 ET] [INFO]   Skipping KXBRAZILINF-26DEC-4.00 — suggested bet too small to be meaningful
+[2026-09-03 20:08:44 ET] [INFO] [Discord] Trade alert sent: KXETHMAXMON-ETH-26SEP30-275000
+[2026-09-03 20:08:44 ET] [WARN] AUTO-BET SKIP KXETHMAXMON-ETH-26SEP30-275000: exposure 40.6% ≥ 25% limit ($7.00 of $17.23 in open positions)
+[2026-09-03 20:08:45 ET] [INFO] [Discord] Trade alert sent: KXBTCMAXMON-BTC-26SEP30-9250000
+[2026-09-03 20:08:45 ET] [WARN] AUTO-BET SKIP KXBTCMAXMON-BTC-26SEP30-9250000: exposure 40.6% ≥ 25% limit ($7.00 of $17.23 in open positions)
+[2026-09-03 20:08:45 ET] [INFO] [Discord] Trade alert sent: KXBTCMAXMON-BTC-26SEP30-9500000
+[2026-09-03 20:08:45 ET] [WARN] AUTO-BET SKIP KXBTCMAXMON-BTC-26SEP30-9500000: exposure 40.6% ≥ 25% limit ($7.00 of $17.23 in open positions)
+[2026-09-03 20:08:45 ET] [INFO] [Discord] Trade alert sent: KXBTCMAXMON-BTC-26SEP30-9750000
+[2026-09-03 20:08:46 ET] [WARN] AUTO-BET SKIP KXBTCMAXMON-BTC-26SEP30-9750000: exposure 40.6% ≥ 25% limit ($7.00 of $17.23 in open positions)
+[2026-09-03 20:08:46 ET] [INFO]   Skipping KXBNBMINMON-BNB-26SEP30-48000 — suggested bet too small to be meaningful
+[2026-09-03 20:08:46 ET] [INFO]   Skipping KXBNBMINMON-BNB-26SEP30-50000 — suggested bet too small to be meaningful
+[2026-09-03 20:08:46 ET] [INFO]   Skipping KXBNBMINMON-BNB-26SEP30-51000 — suggested bet too small to be meaningful
+[2026-09-03 20:08:46 ET] [INFO]   Skipping KXBNBMINMON-BNB-26SEP30-56000 — suggested bet too small to be meaningful
+[2026-09-03 20:08:46 ET] [INFO]   Skipping KXBNBMINMON-BNB-26SEP30-58000 — suggested bet too small to be meaningful
+[2026-09-03 20:08:46 ET] [INFO]   Skipping KXUBEREAPP-26SEP07-T116 — suggested bet too small to be meaningful
+[2026-09-03 20:08:46 ET] [INFO]   Skipping KXGEMINIAPP-26SEP07-T260 — suggested bet too small to be meaningful
+[2026-09-03 20:08:46 ET] [INFO]   Skipping KXCARTAPP-26SEP07-T120 — suggested bet too small to be meaningful
+[2026-09-03 20:08:46 ET] [INFO]   Skipping KXCARTAPP-26SEP07-T125 — suggested bet too small to be meaningful
+[2026-09-03 20:08:46 ET] [INFO]   Skipping KXAMZNCC-26SEP07-T105 — suggested bet too small to be meaningful
+[2026-09-03 20:08:46 ET] [INFO] [Discord] Trade alert sent: KXNCAAFSPREAD-26SEP05UNTIND-IND41
+[2026-09-03 20:08:46 ET] [WARN] AUTO-BET SKIP KXNCAAFSPREAD-26SEP05UNTIND-IND41: exposure 40.6% ≥ 25% limit ($7.00 of $17.23 in open positions)
+[2026-09-03 20:08:46 ET] [INFO] Scan complete — 5 alerts sent
+[2026-09-03 20:08:46 ET] [INFO] ============================================================
+[2026-09-03 20:08:46 ET] [INFO] Scan job complete

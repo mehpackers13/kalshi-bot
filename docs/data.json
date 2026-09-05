@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-05T11:01:12.242602Z",
-  "last_scan_ts": "2026-09-05T11:01:12.242602Z",
+  "generated_at": "2026-09-05T16:45:11.182975Z",
+  "last_scan_ts": "2026-09-05T16:45:11.182975Z",
   "stats": {
-    "total_alerts": 13144,
+    "total_alerts": 13146,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -13,7 +13,7 @@
         "hit_rate": null
       },
       "Economics": {
-        "total": 2881,
+        "total": 2882,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -37,7 +37,7 @@
         "hit_rate": null
       },
       "Climate and Weather": {
-        "total": 1294,
+        "total": 1295,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,7 +69,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 2967,
+        "total": 2968,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -81,7 +81,7 @@
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 7743,
+        "total": 7744,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 10.44,
+      "balance": 10.42,
       "cash": 5.35,
       "peak": 11.46,
       "initial_balance": 10.0
@@ -101,15 +101,57 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-09-05T08:14:14.788877Z"
+    "updated_at": "2026-09-05T13:49:07.668622Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.09,
-  "account_value": 10.44,
-  "live_pnl": 0.44,
+  "position_value": 5.07,
+  "account_value": 10.42,
+  "live_pnl": 0.42,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-09-05T16:45:10.712260Z",
+      "ticker": "KXRAIN-26SEP05-HOU",
+      "title": "Will it rain in Houston on Sep 5, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-61.0",
+      "implied_prob": "0.75",
+      "true_prob": "0.14",
+      "confidence": "80",
+      "suggested_live_dollars": "0.27",
+      "suggested_paper_dollars": "49.95",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "27",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-09-05T16:45:10.318399Z",
+      "ticker": "KXCPIYOY-26AUG-T3.3",
+      "title": "Will the rate of CPI inflation be above 3.3% for the year ending in August 2026?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "8.34",
+      "implied_prob": "0.565",
+      "true_prob": "0.6484",
+      "confidence": "73",
+      "suggested_live_dollars": "0.6",
+      "suggested_paper_dollars": "15.6",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "60",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-09-05T11:01:11.773850Z",
       "ticker": "KXCPIYOY-26AUG-T3.1",
@@ -1919,6 +1961,48 @@
   ],
   "recent_alerts": [
     {
+      "timestamp": "2026-09-05T16:45:10.712260Z",
+      "ticker": "KXRAIN-26SEP05-HOU",
+      "title": "Will it rain in Houston on Sep 5, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-61.0",
+      "implied_prob": "0.75",
+      "true_prob": "0.14",
+      "confidence": "80",
+      "suggested_live_dollars": "0.27",
+      "suggested_paper_dollars": "49.95",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "27",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-09-05T16:45:10.318399Z",
+      "ticker": "KXCPIYOY-26AUG-T3.3",
+      "title": "Will the rate of CPI inflation be above 3.3% for the year ending in August 2026?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "8.34",
+      "implied_prob": "0.565",
+      "true_prob": "0.6484",
+      "confidence": "73",
+      "suggested_live_dollars": "0.6",
+      "suggested_paper_dollars": "15.6",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "60",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
       "timestamp": "2026-09-05T11:01:11.773850Z",
       "ticker": "KXCPIYOY-26AUG-T3.1",
       "title": "Will the rate of CPI inflation be above 3.1% for the year ending in August 2026?",
@@ -2925,48 +3009,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-09-05T04:45:36.112984Z",
-      "ticker": "KXETHMINY-27JAN01-1250",
-      "title": "Will Ethereum reach below $1250.00 by Jan 1, 2027 at 12:00AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-11.29",
-      "implied_prob": "0.145",
-      "true_prob": "0.0321",
-      "confidence": "68",
-      "suggested_live_dollars": "0.86",
-      "suggested_paper_dollars": "19.78",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "86",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-09-05T04:45:35.770329Z",
-      "ticker": "KXETHMINY-27JAN01-1500",
-      "title": "Will Ethereum reach below $1500.00 by Jan 1, 2027 at 12:00AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-14.14",
-      "implied_prob": "0.23",
-      "true_prob": "0.0886",
-      "confidence": "68",
-      "suggested_live_dollars": "0.78",
-      "suggested_paper_dollars": "19.5",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "78",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -2992,9 +3034,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 63,
+      "current_cents": 62,
       "dollars_risked": 0,
-      "current_value": 1.26,
+      "current_value": 1.24,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -3016,9 +3058,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 96,
+      "current_cents": 95,
       "dollars_risked": 0,
-      "current_value": 0.96,
+      "current_value": 0.95,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -3028,9 +3070,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 82,
+      "current_cents": 83,
       "dollars_risked": 0,
-      "current_value": 0.82,
+      "current_value": 0.83,
       "pl_dollars": 0.0,
       "timestamp": ""
     }

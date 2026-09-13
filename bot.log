@@ -91984,3 +91984,49 @@ Total modelable markets evaluated: 0
 [2026-09-13 13:48:56 ET] [INFO] Scan complete — 3 alerts sent
 [2026-09-13 13:48:56 ET] [INFO] ============================================================
 [2026-09-13 13:48:56 ET] [INFO] Scan job complete
+[2026-09-13 14:03:42 ET] [INFO] Scan job starting
+[2026-09-13 14:03:43 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-09-13 14:03:43 ET] [INFO] ============================================================
+[2026-09-13 14:03:43 ET] [INFO] Starting market scan
+[2026-09-13 14:03:44 ET] [INFO] Portfolio value: $5.35 cash + $5.43 positions = $10.78
+[2026-09-13 14:03:44 ET] [INFO] Cash: $5.35  |  Positions: $5.43  |  Total: $10.78  |  Peak: $11.46
+[2026-09-13 14:03:45 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-09-13 14:03:45 ET] [WARN] API GET /markets → HTTP 400
+[2026-09-13 14:04:03 ET] [INFO] Fetched 92906 open markets via events endpoint across 50 pages
+[2026-09-13 14:04:03 ET] [INFO] Fetched 92906 open markets
+[2026-09-13 14:04:04 ET] [INFO] Parsed 86466 valid markets
+[2026-09-13 14:04:04 ET] [INFO] Categories: {'Sports': 41601, 'Elections': 20674, 'Entertainment': 8322, 'Financials': 5298, 'Economics': 3855, 'Politics': 2139, 'Climate and Weather': 889, 'Crypto': 851}
+[2026-09-13 14:10:37 ET] [INFO]   CPI model: threshold=10.0% TNX=4.97% → P=0.200
+[2026-09-13 14:15:48 ET] [INFO]   fed model: implied_rate=3.860% current≈3.913% diff=-5.3bps → P=0.394
+[2026-09-13 15:38:00 ET] [INFO]   price model: ETH-USD spot=2503.56 target=4250.00 vol=63.2% T=2626.9h → P=0.063
+[2026-09-13 15:38:00 ET] [INFO]   price model: ETH-USD spot=2503.56 target=4500.00 vol=63.2% T=2626.9h → P=0.045
+[2026-09-13 15:38:00 ET] [INFO]   price model: ETH-USD spot=2503.56 target=4750.00 vol=63.2% T=2626.9h → P=0.032
+[2026-09-13 15:38:01 ET] [INFO]   price model: ETH-USD spot=2503.56 target=5000.00 vol=63.2% T=2626.9h → P=0.023
+[2026-09-13 15:38:02 ET] [INFO]   price model: BTC-USD spot=77202.13 target=100000.00 vol=40.9% T=1161.9h → P=0.041
+[2026-09-13 15:38:39 ET] [INFO]   price model: BTC-USD spot=77202.12 target=99999.00 vol=40.9% T=2626.9h → P=0.124
+[2026-09-13 15:38:39 ET] [INFO]   price model: BTC-USD spot=77202.12 target=129999.00 vol=40.9% T=2626.9h → P=0.010
+[2026-09-13 15:50:33 ET] [INFO]   CPI model: threshold=4.0% TNX=4.97% → P=0.403
+[2026-09-13 15:50:33 ET] [INFO]   EDGE FOUND: KXBRAZILINF-26DEC-4.00 | implied=50.5% true=40.2% edge=-10.2% dir=NO conf=73
+[2026-09-13 15:54:13 ET] [INFO]   CPI model: threshold=2.0% TNX=4.97% → P=0.797
+[2026-09-13 16:14:44 ET] [INFO]   price model: DIA spot=525.79 target=46.00 vol=11.7% T=585.9h → P=1.000
+[2026-09-13 16:14:44 ET] [INFO]   EDGE FOUND: KXGROKAPP-26OCT08-T46 | implied=87.0% true=100.0% edge=+13.0% dir=YES conf=68
+[2026-09-13 16:22:26 ET] [INFO]   price model: BTC-USD spot=77286.47 target=65000.00 vol=40.9% T=417.9h → P=0.026
+[2026-09-13 16:22:27 ET] [INFO]   price model: BTC-USD spot=77286.47 target=85000.00 vol=40.9% T=417.9h → P=0.143
+[2026-09-13 16:22:27 ET] [INFO]   price model: BTC-USD spot=77286.47 target=87500.00 vol=40.9% T=417.9h → P=0.082
+[2026-09-13 16:22:27 ET] [INFO]   price model: BTC-USD spot=77286.47 target=90000.00 vol=40.9% T=417.9h → P=0.044
+[2026-09-13 16:22:28 ET] [INFO]   price model: BTC-USD spot=77286.47 target=92500.00 vol=40.9% T=417.9h → P=0.022
+[2026-09-13 16:22:50 ET] [INFO]   price model: CL=F spot=100.05 target=99.99 vol=37.6% T=410.9h → P=0.503
+[2026-09-13 16:49:42 ET] [INFO]   weather model: chicago rain 2026-09-13 forecast=7% → P=0.070
+[2026-09-13 16:49:42 ET] [INFO]   EDGE FOUND: KXRAIN-26SEP13-CHI | implied=80.0% true=7.0% edge=-73.0% dir=NO conf=80
+[2026-09-13 16:49:43 ET] [INFO]   weather model: miami rain 2026-09-13 forecast=17% → P=0.170
+[2026-09-13 16:49:43 ET] [INFO]   EDGE FOUND: KXRAIN-26SEP13-MIA | implied=74.0% true=17.0% edge=-57.0% dir=NO conf=80
+[2026-09-13 16:54:18 ET] [INFO] Checked 86378 markets | Modelable: 86378 | Edges found: 4
+[2026-09-13 16:54:18 ET] [INFO]   Skipping KXBRAZILINF-26DEC-4.00 — suggested bet too small to be meaningful
+[2026-09-13 16:54:18 ET] [INFO]   Skipping KXGROKAPP-26OCT08-T46 — suggested bet too small to be meaningful
+[2026-09-13 16:54:18 ET] [INFO] [Discord] Trade alert sent: KXRAIN-26SEP13-CHI
+[2026-09-13 16:54:18 ET] [WARN] AUTO-BET SKIP KXRAIN-26SEP13-CHI: exposure 39.4% ≥ 25% limit ($7.00 of $17.78 in open positions)
+[2026-09-13 16:54:19 ET] [INFO] [Discord] Trade alert sent: KXRAIN-26SEP13-MIA
+[2026-09-13 16:54:19 ET] [WARN] AUTO-BET SKIP KXRAIN-26SEP13-MIA: exposure 39.4% ≥ 25% limit ($7.00 of $17.78 in open positions)
+[2026-09-13 16:54:19 ET] [INFO] Scan complete — 2 alerts sent
+[2026-09-13 16:54:19 ET] [INFO] ============================================================
+[2026-09-13 16:54:19 ET] [INFO] Scan job complete

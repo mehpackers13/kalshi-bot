@@ -93104,3 +93104,79 @@ Total modelable markets evaluated: 0
 [2026-09-15 08:51:51 ET] [INFO] Scan complete — 3 alerts sent
 [2026-09-15 08:51:51 ET] [INFO] ============================================================
 [2026-09-15 08:51:51 ET] [INFO] Scan job complete
+[2026-09-15 11:31:10 ET] [INFO] Scan job starting
+[2026-09-15 11:31:10 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-09-15 11:31:10 ET] [INFO] ============================================================
+[2026-09-15 11:31:10 ET] [INFO] Starting market scan
+[2026-09-15 11:31:12 ET] [INFO] Portfolio value: $5.35 cash + $5.64 positions = $10.99
+[2026-09-15 11:31:12 ET] [INFO] Cash: $5.35  |  Positions: $5.64  |  Total: $10.99  |  Peak: $11.46
+[2026-09-15 11:31:12 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-09-15 11:31:12 ET] [WARN] API GET /markets → HTTP 400
+[2026-09-15 11:31:32 ET] [INFO] Fetched 99104 open markets via events endpoint across 50 pages
+[2026-09-15 11:31:32 ET] [INFO] Fetched 99104 open markets
+[2026-09-15 11:31:32 ET] [INFO] Parsed 93212 valid markets
+[2026-09-15 11:31:32 ET] [INFO] Categories: {'Sports': 48662, 'Elections': 20793, 'Entertainment': 7405, 'Financials': 5602, 'Economics': 3925, 'Politics': 2148, 'Crypto': 892, 'Mentions': 890}
+[2026-09-15 11:37:57 ET] [INFO]   CPI model: threshold=10.0% TNX=5.00% → P=0.200
+[2026-09-15 11:38:25 ET] [INFO]   price model: TSLA spot=360.18 target=1.60 vol=45.1% T=13501.5h → P=1.000
+[2026-09-15 11:40:19 ET] [INFO]   price model: AMZN spot=248.93 target=1500000.00 vol=24.6% T=13511.5h → P=0.000
+[2026-09-15 11:40:19 ET] [INFO]   EDGE FOUND: KXAMZNA-28JANHEAD-1500000 | implied=95.0% true=0.0% edge=-95.0% dir=NO conf=85
+[2026-09-15 11:43:03 ET] [INFO]   fed model: implied_rate=3.870% current≈3.960% diff=-9.0bps → P=0.320
+[2026-09-15 11:43:03 ET] [INFO]   EDGE FOUND: KXFEDDECISION-27DEC-H25 | implied=40.0% true=32.0% edge=-8.0% dir=NO conf=68
+[2026-09-15 12:14:24 ET] [INFO]   price model: CL=F spot=104.99 target=5.70 vol=37.7% T=4726.5h → P=1.000
+[2026-09-15 13:07:20 ET] [INFO]   price model: ETH-USD spot=2415.97 target=4000.00 vol=65.1% T=2581.5h → P=0.077
+[2026-09-15 13:07:20 ET] [INFO]   price model: ETH-USD spot=2415.97 target=4250.00 vol=65.1% T=2581.5h → P=0.055
+[2026-09-15 13:07:21 ET] [INFO]   price model: ETH-USD spot=2415.97 target=4500.00 vol=65.1% T=2581.5h → P=0.039
+[2026-09-15 13:07:21 ET] [INFO]   price model: ETH-USD spot=2415.97 target=4750.00 vol=65.1% T=2581.5h → P=0.028
+[2026-09-15 13:07:22 ET] [INFO]   price model: BTC-USD spot=76204.79 target=100000.00 vol=41.7% T=1116.5h → P=0.034
+[2026-09-15 13:07:23 ET] [INFO]   price model: BTC-USD spot=76204.79 target=100000.00 vol=41.7% T=1837.5h → P=0.077
+[2026-09-15 13:07:57 ET] [INFO]   price model: BTC-USD spot=76191.02 target=109999.00 vol=41.7% T=2581.5h → P=0.052
+[2026-09-15 13:07:57 ET] [INFO]   EDGE FOUND: KXBTCMAXY-26DEC31-109999.99 | implied=14.0% true=5.2% edge=-8.8% dir=NO conf=68
+[2026-09-15 13:07:57 ET] [INFO]   price model: BTC-USD spot=76191.02 target=119999.00 vol=41.7% T=2581.5h → P=0.022
+[2026-09-15 13:07:58 ET] [INFO]   price model: BTC-USD spot=76191.02 target=129999.00 vol=41.7% T=2581.5h → P=0.009
+[2026-09-15 13:08:03 ET] [INFO]   price model: GC=F spot=4336.50 target=4400.00 vol=22.4% T=2574.5h → P=0.452
+[2026-09-15 13:08:03 ET] [INFO]   price model: GC=F spot=4336.50 target=4500.00 vol=22.4% T=2574.5h → P=0.380
+[2026-09-15 13:08:03 ET] [INFO]   EDGE FOUND: KXGOLDDIRY-26DEC31H1700-T4500 | implied=50.5% true=38.0% edge=-12.5% dir=NO conf=68
+[2026-09-15 13:08:04 ET] [INFO]   price model: GC=F spot=4336.50 target=4600.00 vol=22.4% T=2574.5h → P=0.314
+[2026-09-15 13:19:37 ET] [INFO]   CPI model: threshold=4.0% TNX=5.01% → P=0.399
+[2026-09-15 13:43:42 ET] [INFO]   price model: DIA spot=520.37 target=46.00 vol=9.8% T=540.5h → P=1.000
+[2026-09-15 13:43:42 ET] [INFO]   EDGE FOUND: KXGROKAPP-26OCT08-T46 | implied=87.0% true=100.0% edge=+13.0% dir=YES conf=68
+[2026-09-15 13:54:03 ET] [INFO]   price model: BTC-USD spot=76989.06 target=65000.00 vol=41.1% T=372.5h → P=0.023
+[2026-09-15 13:54:03 ET] [INFO]   price model: BTC-USD spot=76989.06 target=67500.00 vol=41.1% T=372.5h → P=0.060
+[2026-09-15 13:54:03 ET] [INFO]   EDGE FOUND: KXBTCMINMON-BTC-26SEP30-6750000 | implied=17.5% true=6.0% edge=-11.5% dir=NO conf=63
+[2026-09-15 13:54:04 ET] [INFO]   price model: BTC-USD spot=76989.06 target=90000.00 vol=41.1% T=372.5h → P=0.033
+[2026-09-15 13:54:04 ET] [INFO]   price model: BTC-USD spot=76989.06 target=92500.00 vol=41.1% T=372.5h → P=0.015
+[2026-09-15 13:54:26 ET] [INFO]   price model: CL=F spot=106.38 target=87.99 vol=39.0% T=365.5h → P=0.991
+[2026-09-15 13:54:26 ET] [INFO]   price model: CL=F spot=106.38 target=99.99 vol=39.0% T=365.5h → P=0.782
+[2026-09-15 13:54:26 ET] [INFO]   EDGE FOUND: KXBRENTMON-26SEP3017-T99.99 | implied=57.5% true=78.2% edge=+20.7% dir=YES conf=75
+[2026-09-15 13:54:26 ET] [INFO]   price model: CL=F spot=106.38 target=101.99 vol=39.0% T=365.5h → P=0.702
+[2026-09-15 13:54:26 ET] [INFO]   EDGE FOUND: KXBRENTMON-26SEP3017-T101.99 | implied=50.0% true=70.2% edge=+20.2% dir=YES conf=75
+[2026-09-15 13:54:27 ET] [INFO]   price model: CL=F spot=106.38 target=103.99 vol=39.0% T=365.5h → P=0.612
+[2026-09-15 13:54:27 ET] [INFO]   EDGE FOUND: KXBRENTMON-26SEP3017-T103.99 | implied=42.0% true=61.2% edge=+19.2% dir=YES conf=75
+[2026-09-15 13:59:44 ET] [INFO]   price model: DIA spot=520.38 target=2.00 vol=9.8% T=244.5h → P=1.000
+[2026-09-15 13:59:44 ET] [INFO]   EDGE FOUND: KXH100WS-26SEP25-2.250 | implied=90.5% true=100.0% edge=+9.5% dir=YES conf=68
+[2026-09-15 14:28:21 ET] [INFO]   price model: CL=F spot=105.87 target=101.99 vol=38.5% T=77.5h → P=0.849
+[2026-09-15 14:28:21 ET] [INFO]   EDGE FOUND: KXBRENTW-26SEP1817-T101.99 | implied=62.0% true=84.9% edge=+22.9% dir=YES conf=75
+[2026-09-15 14:33:49 ET] [INFO] Checked 93133 markets | Modelable: 93133 | Edges found: 11
+[2026-09-15 14:33:50 ET] [INFO] [Discord] Trade alert sent: KXAMZNA-28JANHEAD-1500000
+[2026-09-15 14:33:50 ET] [WARN] AUTO-BET SKIP KXAMZNA-28JANHEAD-1500000: exposure 38.9% ≥ 25% limit ($7.00 of $17.99 in open positions)
+[2026-09-15 14:33:50 ET] [INFO]   Skipping KXFEDDECISION-27DEC-H25 — suggested bet too small to be meaningful
+[2026-09-15 14:33:50 ET] [INFO] [Discord] Trade alert sent: KXBTCMAXY-26DEC31-109999.99
+[2026-09-15 14:33:50 ET] [WARN] AUTO-BET SKIP KXBTCMAXY-26DEC31-109999.99: exposure 38.9% ≥ 25% limit ($7.00 of $17.99 in open positions)
+[2026-09-15 14:33:51 ET] [INFO] [Discord] Trade alert sent: KXGOLDDIRY-26DEC31H1700-T4500
+[2026-09-15 14:33:51 ET] [WARN] AUTO-BET SKIP KXGOLDDIRY-26DEC31H1700-T4500: exposure 38.9% ≥ 25% limit ($7.00 of $17.99 in open positions)
+[2026-09-15 14:33:51 ET] [INFO]   Skipping KXGROKAPP-26OCT08-T46 — suggested bet too small to be meaningful
+[2026-09-15 14:33:52 ET] [INFO] [Discord] Trade alert sent: KXBTCMINMON-BTC-26SEP30-6750000
+[2026-09-15 14:33:52 ET] [WARN] AUTO-BET SKIP KXBTCMINMON-BTC-26SEP30-6750000: exposure 38.9% ≥ 25% limit ($7.00 of $17.99 in open positions)
+[2026-09-15 14:33:53 ET] [INFO] [Discord] Trade alert sent: KXBRENTMON-26SEP3017-T99.99
+[2026-09-15 14:33:53 ET] [WARN] AUTO-BET SKIP KXBRENTMON-26SEP3017-T99.99: exposure 38.9% ≥ 25% limit ($7.00 of $17.99 in open positions)
+[2026-09-15 14:33:53 ET] [INFO] [Discord] Trade alert sent: KXBRENTMON-26SEP3017-T101.99
+[2026-09-15 14:33:53 ET] [WARN] AUTO-BET SKIP KXBRENTMON-26SEP3017-T101.99: exposure 38.9% ≥ 25% limit ($7.00 of $17.99 in open positions)
+[2026-09-15 14:33:53 ET] [INFO] [Discord] Trade alert sent: KXBRENTMON-26SEP3017-T103.99
+[2026-09-15 14:33:54 ET] [WARN] AUTO-BET SKIP KXBRENTMON-26SEP3017-T103.99: exposure 38.9% ≥ 25% limit ($7.00 of $17.99 in open positions)
+[2026-09-15 14:33:54 ET] [INFO] [Discord] Trade alert sent: KXH100WS-26SEP25-2.250
+[2026-09-15 14:33:54 ET] [WARN] AUTO-BET SKIP KXH100WS-26SEP25-2.250: exposure 38.9% ≥ 25% limit ($7.00 of $17.99 in open positions)
+[2026-09-15 14:33:55 ET] [INFO] [Discord] Trade alert sent: KXBRENTW-26SEP1817-T101.99
+[2026-09-15 14:33:55 ET] [WARN] AUTO-BET SKIP KXBRENTW-26SEP1817-T101.99: exposure 38.9% ≥ 25% limit ($7.00 of $17.99 in open positions)
+[2026-09-15 14:33:55 ET] [INFO] Scan complete — 9 alerts sent
+[2026-09-15 14:33:55 ET] [INFO] ============================================================
+[2026-09-15 14:33:55 ET] [INFO] Scan job complete

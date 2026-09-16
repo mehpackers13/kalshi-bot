@@ -93651,3 +93651,64 @@ Total modelable markets evaluated: 0
 [2026-09-16 08:41:57 ET] [INFO] Scan complete — 6 alerts sent
 [2026-09-16 08:41:57 ET] [INFO] ============================================================
 [2026-09-16 08:41:57 ET] [INFO] Scan job complete
+[2026-09-16 11:23:21 ET] [INFO] Scan job starting
+[2026-09-16 11:23:21 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-09-16 11:23:21 ET] [INFO] ============================================================
+[2026-09-16 11:23:21 ET] [INFO] Starting market scan
+[2026-09-16 11:23:22 ET] [INFO] Portfolio value: $5.35 cash + $6.02 positions = $11.37
+[2026-09-16 11:23:22 ET] [INFO] Cash: $5.35  |  Positions: $6.02  |  Total: $11.37  |  Peak: $11.46
+[2026-09-16 11:23:23 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-09-16 11:23:23 ET] [WARN] API GET /markets → HTTP 400
+[2026-09-16 11:23:42 ET] [INFO] Fetched 99941 open markets via events endpoint across 50 pages
+[2026-09-16 11:23:42 ET] [INFO] Fetched 99941 open markets
+[2026-09-16 11:23:42 ET] [INFO] Parsed 93857 valid markets
+[2026-09-16 11:23:42 ET] [INFO] Categories: {'Sports': 50918, 'Elections': 20841, 'Entertainment': 7482, 'Financials': 5046, 'Economics': 3898, 'Politics': 2115, 'Mentions': 831, 'Science and Technology': 810}
+[2026-09-16 11:31:20 ET] [INFO]   CPI model: threshold=10.0% TNX=4.95% → P=0.200
+[2026-09-16 11:37:25 ET] [INFO]   fed model: implied_rate=3.870% current≈3.940% diff=-7.0bps → P=0.360
+[2026-09-16 12:16:51 ET] [INFO]   price model: CL=F spot=102.34 target=5.70 vol=40.8% T=4702.6h → P=1.000
+[2026-09-16 13:22:26 ET] [INFO]   price model: SOL-USD spot=96.91 target=500.00 vol=60.1% T=2557.6h → P=0.000
+[2026-09-16 13:22:48 ET] [INFO]   price model: ETH-USD spot=2385.98 target=1000.00 vol=65.6% T=2557.6h → P=0.007
+[2026-09-16 13:22:48 ET] [INFO]   price model: ETH-USD spot=2385.98 target=3500.00 vol=65.6% T=2557.6h → P=0.140
+[2026-09-16 13:22:49 ET] [INFO]   price model: ETH-USD spot=2385.98 target=3750.00 vol=65.6% T=2557.6h → P=0.101
+[2026-09-16 13:22:49 ET] [INFO]   price model: ETH-USD spot=2385.98 target=4000.00 vol=65.6% T=2557.6h → P=0.073
+[2026-09-16 13:22:49 ET] [INFO]   EDGE FOUND: KXETHMAXY-27JAN01-4000.00 | implied=15.5% true=7.3% edge=-8.2% dir=NO conf=68
+[2026-09-16 13:22:49 ET] [INFO]   price model: ETH-USD spot=2385.98 target=4250.00 vol=65.6% T=2557.6h → P=0.052
+[2026-09-16 13:22:49 ET] [INFO]   price model: ETH-USD spot=2385.98 target=4500.00 vol=65.6% T=2557.6h → P=0.037
+[2026-09-16 13:22:49 ET] [INFO]   price model: ETH-USD spot=2385.98 target=4750.00 vol=65.6% T=2557.6h → P=0.026
+[2026-09-16 13:22:50 ET] [INFO]   price model: ETH-USD spot=2385.98 target=5000.00 vol=65.6% T=2557.6h → P=0.018
+[2026-09-16 13:22:51 ET] [INFO]   price model: BTC-USD spot=75567.05 target=100000.00 vol=42.3% T=1813.6h → P=0.073
+[2026-09-16 13:22:51 ET] [INFO]   price model: BTC-USD spot=75567.05 target=100000.00 vol=42.3% T=2557.6h → P=0.110
+[2026-09-16 13:23:31 ET] [INFO]   price model: BTC-USD spot=75607.96 target=99999.00 vol=42.2% T=2557.6h → P=0.110
+[2026-09-16 13:23:32 ET] [INFO]   price model: BTC-USD spot=75607.96 target=109999.00 vol=42.2% T=2557.6h → P=0.050
+[2026-09-16 13:23:32 ET] [INFO]   price model: BTC-USD spot=75607.96 target=119999.00 vol=42.2% T=2557.6h → P=0.022
+[2026-09-16 13:23:32 ET] [INFO]   price model: BTC-USD spot=75607.96 target=129999.00 vol=42.2% T=2557.6h → P=0.009
+[2026-09-16 13:23:38 ET] [INFO]   price model: GC=F spot=4383.90 target=4400.00 vol=22.7% T=2550.6h → P=0.488
+[2026-09-16 13:23:38 ET] [INFO]   price model: GC=F spot=4383.90 target=4500.00 vol=22.7% T=2550.6h → P=0.415
+[2026-09-16 13:23:39 ET] [INFO]   price model: GC=F spot=4383.90 target=4600.00 vol=22.7% T=2550.6h → P=0.347
+[2026-09-16 13:37:12 ET] [INFO]   CPI model: threshold=4.0% TNX=4.95% → P=0.405
+[2026-09-16 14:05:22 ET] [INFO]   price model: DIA spot=521.22 target=46.00 vol=9.6% T=516.6h → P=1.000
+[2026-09-16 14:05:22 ET] [INFO]   EDGE FOUND: KXGROKAPP-26OCT08-T46 | implied=89.0% true=100.0% edge=+11.0% dir=YES conf=68
+[2026-09-16 14:05:48 ET] [INFO]   CPI model: threshold=3.1% TNX=4.95% → P=0.685
+[2026-09-16 14:05:48 ET] [INFO]   EDGE FOUND: KXCPIYOY-26SEP-T3.1 | implied=91.5% true=68.5% edge=-23.0% dir=NO conf=75
+[2026-09-16 14:05:48 ET] [INFO]   CPI model: threshold=3.3% TNX=4.95% → P=0.665
+[2026-09-16 14:05:48 ET] [INFO]   EDGE FOUND: KXCPIYOY-26SEP-T3.3 | implied=92.5% true=66.5% edge=-26.0% dir=NO conf=85
+[2026-09-16 14:05:49 ET] [INFO]   CPI model: threshold=3.5% TNX=4.95% → P=0.645
+[2026-09-16 14:17:47 ET] [INFO]   price model: ETH-USD spot=2400.99 target=2750.00 vol=65.6% T=348.6h → P=0.150
+[2026-09-16 14:17:59 ET] [INFO]   price model: BTC-USD spot=75800.96 target=65000.00 vol=42.2% T=348.6h → P=0.034
+[2026-09-16 14:18:00 ET] [INFO]   price model: BTC-USD spot=75800.96 target=85000.00 vol=42.2% T=348.6h → P=0.087
+[2026-09-16 14:18:00 ET] [INFO]   price model: BTC-USD spot=75800.96 target=87500.00 vol=42.2% T=348.6h → P=0.044
+[2026-09-16 14:18:24 ET] [INFO]   price model: CL=F spot=102.23 target=87.99 vol=41.0% T=341.6h → P=0.968
+[2026-09-16 15:06:04 ET] [INFO] Checked 93784 markets | Modelable: 93784 | Edges found: 4
+[2026-09-16 15:06:04 ET] [WARN] [Discord] HTTP 429: {"message": "Service resource is being rate limited.", "retry_after": 3, "global": false, "code": 40062}
+[2026-09-16 15:06:04 ET] [INFO] [Discord] Trade alert sent: KXETHMAXY-27JAN01-4000.00
+[2026-09-16 15:06:05 ET] [WARN] AUTO-BET SKIP KXETHMAXY-27JAN01-4000.00: exposure 38.1% ≥ 25% limit ($7.00 of $18.37 in open positions)
+[2026-09-16 15:06:05 ET] [INFO]   Skipping KXGROKAPP-26OCT08-T46 — suggested bet too small to be meaningful
+[2026-09-16 15:06:05 ET] [WARN] [Discord] HTTP 429: {"message": "Service resource is being rate limited.", "retry_after": 3, "global": false, "code": 40062}
+[2026-09-16 15:06:05 ET] [INFO] [Discord] Trade alert sent: KXCPIYOY-26SEP-T3.1
+[2026-09-16 15:06:05 ET] [WARN] AUTO-BET SKIP KXCPIYOY-26SEP-T3.1: exposure 38.1% ≥ 25% limit ($7.00 of $18.37 in open positions)
+[2026-09-16 15:06:05 ET] [WARN] [Discord] HTTP 429: {"message": "Service resource is being rate limited.", "retry_after": 3, "global": false, "code": 40062}
+[2026-09-16 15:06:05 ET] [INFO] [Discord] Trade alert sent: KXCPIYOY-26SEP-T3.3
+[2026-09-16 15:06:05 ET] [WARN] AUTO-BET SKIP KXCPIYOY-26SEP-T3.3: exposure 38.1% ≥ 25% limit ($7.00 of $18.37 in open positions)
+[2026-09-16 15:06:05 ET] [INFO] Scan complete — 3 alerts sent
+[2026-09-16 15:06:05 ET] [INFO] ============================================================
+[2026-09-16 15:06:05 ET] [INFO] Scan job complete

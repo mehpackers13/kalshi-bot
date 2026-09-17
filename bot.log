@@ -94117,3 +94117,63 @@ Total modelable markets evaluated: 0
 [2026-09-17 05:00:35 ET] [INFO] Scan complete — 19 alerts sent
 [2026-09-17 05:00:35 ET] [INFO] ============================================================
 [2026-09-17 05:00:35 ET] [INFO] Scan job complete
+[2026-09-17 05:36:23 ET] [INFO] Scan job starting
+[2026-09-17 05:36:23 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-09-17 05:36:23 ET] [INFO] ============================================================
+[2026-09-17 05:36:23 ET] [INFO] Starting market scan
+[2026-09-17 05:36:24 ET] [INFO] Portfolio value: $5.35 cash + $5.86 positions = $11.21
+[2026-09-17 05:36:24 ET] [INFO] Cash: $5.35  |  Positions: $5.86  |  Total: $11.21  |  Peak: $11.46
+[2026-09-17 05:36:25 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-09-17 05:36:25 ET] [WARN] API GET /markets → HTTP 400
+[2026-09-17 05:36:44 ET] [INFO] Fetched 100792 open markets via events endpoint across 50 pages
+[2026-09-17 05:36:44 ET] [INFO] Fetched 100792 open markets
+[2026-09-17 05:36:44 ET] [INFO] Parsed 94617 valid markets
+[2026-09-17 05:36:44 ET] [INFO] Categories: {'Sports': 51292, 'Elections': 20833, 'Entertainment': 7833, 'Financials': 5054, 'Economics': 3883, 'Politics': 2141, 'Mentions': 847, 'Science and Technology': 801}
+[2026-09-17 05:44:03 ET] [INFO]   CPI model: threshold=10.0% TNX=5.01% → P=0.200
+[2026-09-17 05:49:51 ET] [INFO]   fed model: implied_rate=4.015% current≈3.970% diff=4.5bps → P=0.590
+[2026-09-17 05:49:51 ET] [INFO]   EDGE FOUND: KXFEDDECISION-27DEC-H25 | implied=25.5% true=59.0% edge=+33.5% dir=YES conf=85
+[2026-09-17 06:25:30 ET] [INFO]   price model: CL=F spot=100.87 target=5.70 vol=40.0% T=4684.4h → P=1.000
+[2026-09-17 07:24:25 ET] [INFO]   price model: ETH-USD spot=2434.51 target=4750.00 vol=41.5% T=2539.4h → P=0.001
+[2026-09-17 07:24:25 ET] [INFO]   price model: ETH-USD spot=2434.51 target=5000.00 vol=41.5% T=2539.4h → P=0.001
+[2026-09-17 07:24:27 ET] [INFO]   price model: BTC-USD spot=76312.44 target=100000.00 vol=37.3% T=1795.4h → P=0.055
+[2026-09-17 07:25:05 ET] [INFO]   price model: BTC-USD spot=76284.10 target=109999.00 vol=37.3% T=2539.4h → P=0.034
+[2026-09-17 07:25:06 ET] [INFO]   price model: BTC-USD spot=76284.10 target=119999.00 vol=37.3% T=2539.4h → P=0.012
+[2026-09-17 07:25:06 ET] [INFO]   price model: BTC-USD spot=76284.10 target=129999.00 vol=37.3% T=2539.4h → P=0.004
+[2026-09-17 07:25:12 ET] [INFO]   price model: GC=F spot=4372.40 target=4400.00 vol=22.5% T=2532.4h → P=0.479
+[2026-09-17 07:25:12 ET] [INFO]   price model: GC=F spot=4372.40 target=4500.00 vol=22.5% T=2532.4h → P=0.406
+[2026-09-17 07:25:12 ET] [INFO]   price model: GC=F spot=4372.40 target=4600.00 vol=22.5% T=2532.4h → P=0.338
+[2026-09-17 07:38:08 ET] [INFO]   CPI model: threshold=4.0% TNX=5.01% → P=0.399
+[2026-09-17 08:05:26 ET] [INFO]   price model: DIA spot=515.22 target=46.00 vol=10.0% T=498.4h → P=1.000
+[2026-09-17 08:05:50 ET] [INFO]   CPI model: threshold=3.5% TNX=5.01% → P=0.651
+[2026-09-17 08:05:50 ET] [INFO]   EDGE FOUND: KXCPIYOY-26SEP-T3.5 | implied=77.0% true=65.1% edge=-11.9% dir=NO conf=68
+[2026-09-17 08:15:15 ET] [INFO]   weather model: chicago rain 2026-09-17 forecast=42% → P=0.420
+[2026-09-17 08:15:15 ET] [INFO]   EDGE FOUND: KXRAINCHIM-26SEP-2 | implied=88.0% true=42.0% edge=-46.0% dir=NO conf=85
+[2026-09-17 08:15:15 ET] [INFO]   weather model: chicago rain 2026-09-17 forecast=42% → P=0.420
+[2026-09-17 08:15:15 ET] [INFO]   EDGE FOUND: KXRAINCHIM-26SEP-3 | implied=65.5% true=42.0% edge=-23.5% dir=NO conf=75
+[2026-09-17 08:17:46 ET] [INFO]   price model: DIA spot=515.22 target=4.00 vol=10.0% T=330.4h → P=1.000
+[2026-09-17 08:17:59 ET] [INFO]   price model: BTC-USD spot=76875.47 target=65000.00 vol=37.3% T=330.4h → P=0.010
+[2026-09-17 08:17:59 ET] [INFO]   price model: BTC-USD spot=76875.47 target=82500.00 vol=37.3% T=330.4h → P=0.165
+[2026-09-17 08:17:59 ET] [INFO]   price model: BTC-USD spot=76875.47 target=85000.00 vol=37.3% T=330.4h → P=0.083
+[2026-09-17 08:18:00 ET] [INFO]   price model: BTC-USD spot=76875.47 target=87500.00 vol=37.3% T=330.4h → P=0.037
+[2026-09-17 08:18:21 ET] [INFO]   price model: CL=F spot=99.68 target=87.99 vol=41.0% T=323.4h → P=0.943
+[2026-09-17 08:18:22 ET] [INFO]   price model: CL=F spot=99.68 target=93.99 vol=41.0% T=323.4h → P=0.772
+[2026-09-17 08:18:23 ET] [INFO]   price model: CL=F spot=99.68 target=103.99 vol=41.0% T=323.4h → P=0.295
+[2026-09-17 08:18:23 ET] [INFO]   EDGE FOUND: KXBRENTMON-26SEP3017-T103.99 | implied=38.5% true=29.5% edge=-9.0% dir=NO conf=68
+[2026-09-17 08:58:02 ET] [INFO]   price model: ADA-USD spot=0.20 target=3.50 vol=72.8% T=109.4h → P=0.000
+[2026-09-17 08:58:02 ET] [INFO]   EDGE FOUND: KXNCAAFSPREAD-26SEP19NEVMTU-NEV4 | implied=51.5% true=0.0% edge=-51.5% dir=NO conf=85
+[2026-09-17 09:03:21 ET] [INFO] Checked 94542 markets | Modelable: 94542 | Edges found: 6
+[2026-09-17 09:03:22 ET] [INFO] [Discord] Trade alert sent: KXFEDDECISION-27DEC-H25
+[2026-09-17 09:03:22 ET] [WARN] AUTO-BET SKIP KXFEDDECISION-27DEC-H25: exposure 38.4% ≥ 25% limit ($7.00 of $18.21 in open positions)
+[2026-09-17 09:03:22 ET] [INFO] [Discord] Trade alert sent: KXCPIYOY-26SEP-T3.5
+[2026-09-17 09:03:22 ET] [WARN] AUTO-BET SKIP KXCPIYOY-26SEP-T3.5: exposure 38.4% ≥ 25% limit ($7.00 of $18.21 in open positions)
+[2026-09-17 09:03:22 ET] [INFO] [Discord] Trade alert sent: KXRAINCHIM-26SEP-2
+[2026-09-17 09:03:22 ET] [WARN] AUTO-BET SKIP KXRAINCHIM-26SEP-2: exposure 38.4% ≥ 25% limit ($7.00 of $18.21 in open positions)
+[2026-09-17 09:03:23 ET] [INFO] [Discord] Trade alert sent: KXRAINCHIM-26SEP-3
+[2026-09-17 09:03:24 ET] [WARN] AUTO-BET SKIP KXRAINCHIM-26SEP-3: exposure 38.4% ≥ 25% limit ($7.00 of $18.21 in open positions)
+[2026-09-17 09:03:24 ET] [INFO] [Discord] Trade alert sent: KXBRENTMON-26SEP3017-T103.99
+[2026-09-17 09:03:24 ET] [WARN] AUTO-BET SKIP KXBRENTMON-26SEP3017-T103.99: exposure 38.4% ≥ 25% limit ($7.00 of $18.21 in open positions)
+[2026-09-17 09:03:24 ET] [INFO] [Discord] Trade alert sent: KXNCAAFSPREAD-26SEP19NEVMTU-NEV4
+[2026-09-17 09:03:24 ET] [WARN] AUTO-BET SKIP KXNCAAFSPREAD-26SEP19NEVMTU-NEV4: exposure 38.4% ≥ 25% limit ($7.00 of $18.21 in open positions)
+[2026-09-17 09:03:24 ET] [INFO] Scan complete — 6 alerts sent
+[2026-09-17 09:03:24 ET] [INFO] ============================================================
+[2026-09-17 09:03:24 ET] [INFO] Scan job complete

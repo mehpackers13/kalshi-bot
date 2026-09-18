@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-18T18:04:12.595337Z",
-  "last_scan_ts": "2026-09-18T18:04:12.595337Z",
+  "generated_at": "2026-09-18T21:23:53.492647Z",
+  "last_scan_ts": "2026-09-18T21:23:53.492647Z",
   "stats": {
-    "total_alerts": 14261,
+    "total_alerts": 14265,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -25,7 +25,7 @@
         "hit_rate": null
       },
       "Crypto": {
-        "total": 4057,
+        "total": 4060,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -49,7 +49,7 @@
         "hit_rate": null
       },
       "Financials": {
-        "total": 2009,
+        "total": 2010,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,19 +69,19 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 3396,
+        "total": 3398,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "medium (15-25%)": {
-        "total": 2661,
+        "total": 2662,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 8204,
+        "total": 8205,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 10.83,
+      "balance": 10.65,
       "cash": 5.35,
       "peak": 11.46,
       "initial_balance": 10.0
@@ -101,15 +101,99 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-09-18T14:53:55.287723Z"
+    "updated_at": "2026-09-18T18:16:54.205565Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.48,
-  "account_value": 10.83,
-  "live_pnl": 0.83,
+  "position_value": 5.3,
+  "account_value": 10.65,
+  "live_pnl": 0.65,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-09-18T21:23:52.970402Z",
+      "ticker": "KXSOLMAXMON-SOL-26SEP30-12000",
+      "title": "Will SOL trimmed mean be above $120.00 by 11:59 PM ET on Sep 30, 2026?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-17.57",
+      "implied_prob": "0.495",
+      "true_prob": "0.3193",
+      "confidence": "70",
+      "suggested_live_dollars": "0.51",
+      "suggested_paper_dollars": "39.78",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "51",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-09-18T21:23:52.748239Z",
+      "ticker": "KXETHMAXY-27JAN01-5000.00",
+      "title": "Will Ethereum reach above $5000.00 by Jan 1, 2027 at 12:00AM?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-8.49",
+      "implied_prob": "0.09",
+      "true_prob": "0.0051",
+      "confidence": "68",
+      "suggested_live_dollars": "0.92",
+      "suggested_paper_dollars": "19.32",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "92",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-09-18T21:23:52.440649Z",
+      "ticker": "KXETHMAXY-27JAN01-4750.00",
+      "title": "Will Ethereum reach above $4750.00 by Jan 1, 2027 at 12:00AM?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-9.09",
+      "implied_prob": "0.1",
+      "true_prob": "0.0091",
+      "confidence": "68",
+      "suggested_live_dollars": "0.91",
+      "suggested_paper_dollars": "19.11",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "91",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-09-18T21:23:50.868014Z",
+      "ticker": "KXFSLR-26OCTMWSOLD-3800",
+      "title": "Will First Solar Inc. report Above 3800 mw module volume sold in Q3 2026?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-93.0",
+      "implied_prob": "0.93",
+      "true_prob": "0.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.5",
+      "suggested_paper_dollars": "50.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "10",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-09-18T18:04:12.116280Z",
       "ticker": "KXBRENTMON-26SEP3017-T87.99",
@@ -2020,21 +2104,23 @@
       "null": [
         ""
       ]
-    },
+    }
+  ],
+  "recent_alerts": [
     {
-      "timestamp": "2026-09-17T19:20:33.926921Z",
-      "ticker": "KXBRENTMON-26SEP3017-T93.99",
-      "title": "Will the brent crude oil close price be above 93.99 USD/Bbl on September 30, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "YES",
-      "edge_pct": "14.28",
-      "implied_prob": "0.72",
-      "true_prob": "0.8628",
-      "confidence": "68",
-      "suggested_live_dollars": "0.74",
-      "suggested_paper_dollars": "19.98",
+      "timestamp": "2026-09-18T21:23:52.970402Z",
+      "ticker": "KXSOLMAXMON-SOL-26SEP30-12000",
+      "title": "Will SOL trimmed mean be above $120.00 by 11:59 PM ET on Sep 30, 2026?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-17.57",
+      "implied_prob": "0.495",
+      "true_prob": "0.3193",
+      "confidence": "70",
+      "suggested_live_dollars": "0.51",
+      "suggested_paper_dollars": "39.78",
       "is_paper_bet": "1",
-      "paper_entry_price_cents": "74",
+      "paper_entry_price_cents": "51",
       "outcome": "",
       "resolved_at": "",
       "notes": "",
@@ -2043,14 +2129,35 @@
       ]
     },
     {
-      "timestamp": "2026-09-17T19:20:33.441921Z",
-      "ticker": "KXBRENTMON-26SEP3017-T87.99",
-      "title": "Will the brent crude oil close price be above 87.99 USD/Bbl on September 30, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "YES",
-      "edge_pct": "8.56",
-      "implied_prob": "0.89",
-      "true_prob": "0.9756",
+      "timestamp": "2026-09-18T21:23:52.748239Z",
+      "ticker": "KXETHMAXY-27JAN01-5000.00",
+      "title": "Will Ethereum reach above $5000.00 by Jan 1, 2027 at 12:00AM?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-8.49",
+      "implied_prob": "0.09",
+      "true_prob": "0.0051",
+      "confidence": "68",
+      "suggested_live_dollars": "0.92",
+      "suggested_paper_dollars": "19.32",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "92",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-09-18T21:23:52.440649Z",
+      "ticker": "KXETHMAXY-27JAN01-4750.00",
+      "title": "Will Ethereum reach above $4750.00 by Jan 1, 2027 at 12:00AM?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-9.09",
+      "implied_prob": "0.1",
+      "true_prob": "0.0091",
       "confidence": "68",
       "suggested_live_dollars": "0.91",
       "suggested_paper_dollars": "19.11",
@@ -2064,40 +2171,19 @@
       ]
     },
     {
-      "timestamp": "2026-09-17T19:20:33.047182Z",
-      "ticker": "KXH100MS-26SEP-2.750",
-      "title": "Will the monthly average compute price of NVIDIA's H100 be above $2.75 in September 2026?",
+      "timestamp": "2026-09-18T21:23:50.868014Z",
+      "ticker": "KXFSLR-26OCTMWSOLD-3800",
+      "title": "Will First Solar Inc. report Above 3800 mw module volume sold in Q3 2026?",
       "category": "Financials",
-      "direction": "YES",
-      "edge_pct": "19.5",
-      "implied_prob": "0.805",
-      "true_prob": "1.0",
-      "confidence": "75",
-      "suggested_live_dollars": "0.83",
-      "suggested_paper_dollars": "39.84",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "83",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-09-17T19:20:32.366919Z",
-      "ticker": "KXRATECUT-26DEC31",
-      "title": "Will the Federal Reserve cut rates before 2027?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "59.0",
-      "implied_prob": "0.05",
-      "true_prob": "0.64",
-      "confidence": "90",
-      "suggested_live_dollars": "0.55",
+      "direction": "NO",
+      "edge_pct": "-93.0",
+      "implied_prob": "0.93",
+      "true_prob": "0.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.5",
       "suggested_paper_dollars": "50.0",
       "is_paper_bet": "1",
-      "paper_entry_price_cents": "5",
+      "paper_entry_price_cents": "10",
       "outcome": "",
       "resolved_at": "",
       "notes": "",
@@ -2105,50 +2191,6 @@
         ""
       ]
     },
-    {
-      "timestamp": "2026-09-17T19:20:32.010720Z",
-      "ticker": "KXTESLASEMI-27JAN-5000",
-      "title": "Will Tesla Inc report above 5000 Semi Trucks Produced before Jan 2027?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-11.0",
-      "implied_prob": "0.11",
-      "true_prob": "0.0",
-      "confidence": "68",
-      "suggested_live_dollars": "0.9",
-      "suggested_paper_dollars": "19.8",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "90",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-09-17T19:20:31.466979Z",
-      "ticker": "KXFEDHIKE-2-26DEC31",
-      "title": "Will the Federal Reserve hike rates by December 31, 2026?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-20.6",
-      "implied_prob": "0.8",
-      "true_prob": "0.594",
-      "confidence": "75",
-      "suggested_live_dollars": "0.42",
-      "suggested_paper_dollars": "39.9",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "21",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    }
-  ],
-  "recent_alerts": [
     {
       "timestamp": "2026-09-18T18:04:12.116280Z",
       "ticker": "KXBRENTMON-26SEP3017-T87.99",
@@ -3114,90 +3156,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-09-18T02:33:08.249241Z",
-      "ticker": "KXA100MS-26SEP-1.000",
-      "title": "Will the monthly average compute price of NVIDIA's A100 be above $1.00 in September 2026?",
-      "category": "Financials",
-      "direction": "YES",
-      "edge_pct": "42.5",
-      "implied_prob": "0.575",
-      "true_prob": "1.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.61",
-      "suggested_paper_dollars": "49.41",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "61",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-09-18T02:33:08.060605Z",
-      "ticker": "KXBTCMINMON-BTC-26SEP30-7500000",
-      "title": "Will BTC trimmed mean be below $75000.00 by 11:59 PM ET on Sep 30, 2026?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-32.36",
-      "implied_prob": "0.695",
-      "true_prob": "0.3714",
-      "confidence": "85",
-      "suggested_live_dollars": "0.41",
-      "suggested_paper_dollars": "49.61",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "41",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-09-18T02:33:07.885106Z",
-      "ticker": "KXBTCMINMON-BTC-26SEP30-7250000",
-      "title": "Will BTC trimmed mean be below $72500.00 by 11:59 PM ET on Sep 30, 2026?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-16.56",
-      "implied_prob": "0.365",
-      "true_prob": "0.1994",
-      "confidence": "75",
-      "suggested_live_dollars": "0.64",
-      "suggested_paper_dollars": "39.68",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "64",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-09-18T02:33:07.621440Z",
-      "ticker": "KXBTCMINMON-BTC-26SEP30-7000000",
-      "title": "Will BTC trimmed mean be below $70000.00 by 11:59 PM ET on Sep 30, 2026?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-9.08",
-      "implied_prob": "0.175",
-      "true_prob": "0.0842",
-      "confidence": "63",
-      "suggested_live_dollars": "0.83",
-      "suggested_paper_dollars": "19.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "83",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -3223,9 +3181,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 76,
+      "current_cents": 68,
       "dollars_risked": 0,
-      "current_value": 1.52,
+      "current_value": 1.36,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -3259,9 +3217,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 84,
+      "current_cents": 82,
       "dollars_risked": 0,
-      "current_value": 0.84,
+      "current_value": 0.82,
       "pl_dollars": 0.0,
       "timestamp": ""
     }

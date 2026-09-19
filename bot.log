@@ -95327,3 +95327,72 @@ Total modelable markets evaluated: 0
 [2026-09-19 08:23:58 ET] [INFO] Scan complete — 3 alerts sent
 [2026-09-19 08:23:58 ET] [INFO] ============================================================
 [2026-09-19 08:23:58 ET] [INFO] Scan job complete
+[2026-09-19 10:17:55 ET] [INFO] Scan job starting
+[2026-09-19 10:17:55 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-09-19 10:17:55 ET] [INFO] ============================================================
+[2026-09-19 10:17:55 ET] [INFO] Starting market scan
+[2026-09-19 10:17:56 ET] [INFO] Portfolio value: $5.35 cash + $5.25 positions = $10.60
+[2026-09-19 10:17:56 ET] [INFO] Cash: $5.35  |  Positions: $5.25  |  Total: $10.60  |  Peak: $11.46
+[2026-09-19 10:17:56 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-09-19 10:17:57 ET] [WARN] API GET /markets → HTTP 400
+[2026-09-19 10:18:15 ET] [INFO] Fetched 103608 open markets via events endpoint across 50 pages
+[2026-09-19 10:18:15 ET] [INFO] Fetched 103608 open markets
+[2026-09-19 10:18:15 ET] [INFO] Parsed 91206 valid markets
+[2026-09-19 10:18:15 ET] [INFO] Categories: {'Sports': 47347, 'Elections': 18568, 'Entertainment': 7411, 'Financials': 7136, 'Economics': 3841, 'Politics': 2138, 'Climate and Weather': 913, 'Science and Technology': 859}
+[2026-09-19 10:24:49 ET] [INFO]   CPI model: threshold=10.0% TNX=5.00% → P=0.200
+[2026-09-19 10:30:24 ET] [INFO]   fed model: implied_rate=3.747% current≈3.978% diff=-23.1bps → P=0.050
+[2026-09-19 10:57:23 ET] [INFO]   price model: BTC-USD spot=81501.59 target=85000.00 vol=31.5% T=1334.7h → P=0.366
+[2026-09-19 10:57:23 ET] [INFO]   EDGE FOUND: KXBTCPRICE-85000-26NOV13 | implied=74.0% true=36.6% edge=-37.4% dir=NO conf=80
+[2026-09-19 11:03:30 ET] [INFO]   price model: CL=F spot=100.30 target=5.70 vol=40.3% T=4631.7h → P=1.000
+[2026-09-19 11:57:13 ET] [INFO]   price model: TSLA spot=364.27 target=5000.00 vol=44.5% T=2496.7h → P=0.000
+[2026-09-19 11:57:13 ET] [INFO]   EDGE FOUND: KXTESLASEMI-27JAN-5000 | implied=13.5% true=0.0% edge=-13.5% dir=NO conf=68
+[2026-09-19 11:57:40 ET] [INFO]   fed model: implied_rate=3.747% current≈3.978% diff=-23.1bps → P=0.950
+[2026-09-19 11:57:40 ET] [INFO]   EDGE FOUND: KXRATECUT-26DEC31 | implied=5.0% true=95.0% edge=+90.0% dir=YES conf=90
+[2026-09-19 12:00:44 ET] [INFO]   price model: SOL-USD spot=111.59 target=200.00 vol=57.6% T=2486.7h → P=0.029
+[2026-09-19 12:00:44 ET] [INFO]   EDGE FOUND: KXSOLMAXY-27JAN01-200 | implied=15.0% true=2.9% edge=-12.1% dir=NO conf=63
+[2026-09-19 12:00:49 ET] [INFO]   price model: BTC-USD spot=81600.71 target=40000.00 vol=31.5% T=2486.7h → P=0.000
+[2026-09-19 12:01:21 ET] [INFO]   price model: BTC-USD spot=81603.08 target=119999.00 vol=31.5% T=2486.7h → P=0.011
+[2026-09-19 12:01:22 ET] [INFO]   price model: BTC-USD spot=81603.08 target=129999.00 vol=31.5% T=2486.7h → P=0.003
+[2026-09-19 12:01:28 ET] [INFO]   price model: GC=F spot=4424.90 target=4300.00 vol=22.6% T=2479.7h → P=0.594
+[2026-09-19 12:01:28 ET] [INFO]   price model: GC=F spot=4424.90 target=4600.00 vol=22.6% T=2479.7h → P=0.373
+[2026-09-19 12:01:28 ET] [INFO]   price model: GC=F spot=4424.90 target=4800.00 vol=22.6% T=2479.7h → P=0.249
+[2026-09-19 12:03:22 ET] [INFO]   fed model: implied_rate=3.747% current≈3.978% diff=-23.1bps → P=0.950
+[2026-09-19 12:14:43 ET] [INFO]   CPI model: threshold=4.0% TNX=5.00% → P=0.400
+[2026-09-19 12:33:27 ET] [INFO]   price model: DIA spot=515.88 target=6.00 vol=10.0% T=1021.7h → P=1.000
+[2026-09-19 12:41:20 ET] [INFO]   price model: DIA spot=515.88 target=46.00 vol=10.0% T=445.7h → P=1.000
+[2026-09-19 12:49:13 ET] [INFO]   weather model: chicago rain 2026-09-19 forecast=55% → P=0.550
+[2026-09-19 12:49:13 ET] [INFO]   EDGE FOUND: KXRAINCHIM-26SEP-4 | implied=88.5% true=55.0% edge=-33.5% dir=NO conf=85
+[2026-09-19 12:51:45 ET] [INFO]   price model: BTC-USD spot=81817.61 target=72500.00 vol=31.6% T=277.7h → P=0.016
+[2026-09-19 12:51:46 ET] [INFO]   price model: BTC-USD spot=81817.61 target=92500.00 vol=31.6% T=277.7h → P=0.015
+[2026-09-19 12:51:46 ET] [INFO]   price model: BTC-USD spot=81817.61 target=95000.00 vol=31.6% T=277.7h → P=0.004
+[2026-09-19 12:52:52 ET] [INFO]   CPI model: threshold=0.2% TNX=5.00% → P=0.800
+[2026-09-19 13:13:58 ET] [INFO]   weather model: miami rain 2026-09-19 forecast=25% → P=0.250
+[2026-09-19 13:13:58 ET] [INFO]   EDGE FOUND: KXRAIN-26SEP19-MIA | implied=86.0% true=25.0% edge=-61.0% dir=NO conf=80
+[2026-09-19 13:13:59 ET] [INFO]   weather model: denver rain 2026-09-19 forecast=18% → P=0.180
+[2026-09-19 13:13:59 ET] [INFO]   EDGE FOUND: KXRAIN-26SEP19-DEN | implied=74.5% true=18.0% edge=-56.5% dir=NO conf=80
+[2026-09-19 13:14:01 ET] [INFO]   weather model: atlanta rain 2026-09-19 forecast=15% → P=0.150
+[2026-09-19 13:14:01 ET] [INFO]   EDGE FOUND: KXRAIN-26SEP19-ATL | implied=65.0% true=15.0% edge=-50.0% dir=NO conf=80
+[2026-09-19 13:14:02 ET] [INFO]   weather model: columbus rain 2026-09-19 forecast=28% → P=0.280
+[2026-09-19 13:14:02 ET] [INFO]   EDGE FOUND: KXRAIN-26SEP19-CMH | implied=84.0% true=28.0% edge=-56.0% dir=NO conf=80
+[2026-09-19 13:38:02 ET] [INFO] Checked 91108 markets | Modelable: 91108 | Edges found: 9
+[2026-09-19 13:38:03 ET] [INFO] [Discord] Trade alert sent: KXBTCPRICE-85000-26NOV13
+[2026-09-19 13:38:03 ET] [WARN] AUTO-BET SKIP KXBTCPRICE-85000-26NOV13: exposure 39.8% ≥ 25% limit ($7.00 of $17.60 in open positions)
+[2026-09-19 13:38:03 ET] [INFO] [Discord] Trade alert sent: KXTESLASEMI-27JAN-5000
+[2026-09-19 13:38:03 ET] [WARN] AUTO-BET SKIP KXTESLASEMI-27JAN-5000: exposure 39.8% ≥ 25% limit ($7.00 of $17.60 in open positions)
+[2026-09-19 13:38:04 ET] [INFO] [Discord] Trade alert sent: KXRATECUT-26DEC31
+[2026-09-19 13:38:04 ET] [WARN] AUTO-BET SKIP KXRATECUT-26DEC31: exposure 39.8% ≥ 25% limit ($7.00 of $17.60 in open positions)
+[2026-09-19 13:38:04 ET] [INFO] [Discord] Trade alert sent: KXSOLMAXY-27JAN01-200
+[2026-09-19 13:38:04 ET] [WARN] AUTO-BET SKIP KXSOLMAXY-27JAN01-200: exposure 39.8% ≥ 25% limit ($7.00 of $17.60 in open positions)
+[2026-09-19 13:38:04 ET] [INFO] [Discord] Trade alert sent: KXRAINCHIM-26SEP-4
+[2026-09-19 13:38:05 ET] [WARN] AUTO-BET SKIP KXRAINCHIM-26SEP-4: exposure 39.8% ≥ 25% limit ($7.00 of $17.60 in open positions)
+[2026-09-19 13:38:05 ET] [INFO] [Discord] Trade alert sent: KXRAIN-26SEP19-MIA
+[2026-09-19 13:38:05 ET] [WARN] AUTO-BET SKIP KXRAIN-26SEP19-MIA: exposure 39.8% ≥ 25% limit ($7.00 of $17.60 in open positions)
+[2026-09-19 13:38:05 ET] [INFO] [Discord] Trade alert sent: KXRAIN-26SEP19-DEN
+[2026-09-19 13:38:05 ET] [WARN] AUTO-BET SKIP KXRAIN-26SEP19-DEN: exposure 39.8% ≥ 25% limit ($7.00 of $17.60 in open positions)
+[2026-09-19 13:38:05 ET] [INFO] [Discord] Trade alert sent: KXRAIN-26SEP19-ATL
+[2026-09-19 13:38:06 ET] [WARN] AUTO-BET SKIP KXRAIN-26SEP19-ATL: exposure 39.8% ≥ 25% limit ($7.00 of $17.60 in open positions)
+[2026-09-19 13:38:06 ET] [INFO] [Discord] Trade alert sent: KXRAIN-26SEP19-CMH
+[2026-09-19 13:38:06 ET] [WARN] AUTO-BET SKIP KXRAIN-26SEP19-CMH: exposure 39.8% ≥ 25% limit ($7.00 of $17.60 in open positions)
+[2026-09-19 13:38:06 ET] [INFO] Scan complete — 9 alerts sent
+[2026-09-19 13:38:06 ET] [INFO] ============================================================
+[2026-09-19 13:38:06 ET] [INFO] Scan job complete

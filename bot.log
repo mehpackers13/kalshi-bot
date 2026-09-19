@@ -95396,3 +95396,43 @@ Total modelable markets evaluated: 0
 [2026-09-19 13:38:06 ET] [INFO] Scan complete — 9 alerts sent
 [2026-09-19 13:38:06 ET] [INFO] ============================================================
 [2026-09-19 13:38:06 ET] [INFO] Scan job complete
+[2026-09-19 17:00:38 ET] [INFO] Scan job starting
+[2026-09-19 17:00:38 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-09-19 17:00:38 ET] [INFO] ============================================================
+[2026-09-19 17:00:38 ET] [INFO] Starting market scan
+[2026-09-19 17:00:39 ET] [INFO] Portfolio value: $5.35 cash + $5.28 positions = $10.63
+[2026-09-19 17:00:39 ET] [INFO] Cash: $5.35  |  Positions: $5.28  |  Total: $10.63  |  Peak: $11.46
+[2026-09-19 17:00:40 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-09-19 17:00:40 ET] [WARN] API GET /markets → HTTP 400
+[2026-09-19 17:01:01 ET] [INFO] Fetched 100178 open markets via events endpoint across 50 pages
+[2026-09-19 17:01:01 ET] [INFO] Fetched 100178 open markets
+[2026-09-19 17:01:02 ET] [INFO] Parsed 88686 valid markets
+[2026-09-19 17:01:02 ET] [INFO] Categories: {'Sports': 43615, 'Elections': 19524, 'Entertainment': 7759, 'Financials': 7044, 'Economics': 3809, 'Politics': 2150, 'Climate and Weather': 921, 'Science and Technology': 858}
+[2026-09-19 17:07:11 ET] [INFO]   CPI model: threshold=10.0% TNX=5.00% → P=0.200
+[2026-09-19 17:12:28 ET] [INFO]   fed model: implied_rate=3.747% current≈3.978% diff=-23.1bps → P=0.050
+[2026-09-19 17:39:32 ET] [INFO]   price model: BTC-USD spot=81029.36 target=85000.00 vol=31.5% T=2000.0h → P=0.375
+[2026-09-19 17:39:32 ET] [INFO]   EDGE FOUND: KXBTCPRICE-85000-26DEC11 | implied=79.0% true=37.5% edge=-41.5% dir=NO conf=80
+[2026-09-19 17:45:20 ET] [INFO]   price model: CL=F spot=100.30 target=5.70 vol=40.3% T=4625.0h → P=1.000
+[2026-09-19 18:36:44 ET] [INFO]   price model: SOL-USD spot=110.34 target=500.00 vol=57.9% T=2480.0h → P=0.000
+[2026-09-19 18:37:06 ET] [INFO]   price model: BTC-USD spot=81138.63 target=40000.00 vol=31.5% T=2480.0h → P=0.000
+[2026-09-19 18:37:36 ET] [INFO]   price model: BTC-USD spot=81168.32 target=119999.00 vol=31.5% T=2480.0h → P=0.010
+[2026-09-19 18:37:36 ET] [INFO]   price model: BTC-USD spot=81168.32 target=129999.00 vol=31.5% T=2480.0h → P=0.002
+[2026-09-19 18:37:42 ET] [INFO]   price model: GC=F spot=4424.90 target=4300.00 vol=22.6% T=2473.0h → P=0.594
+[2026-09-19 18:37:42 ET] [INFO]   price model: GC=F spot=4424.90 target=4600.00 vol=22.6% T=2473.0h → P=0.373
+[2026-09-19 18:37:43 ET] [INFO]   price model: GC=F spot=4424.90 target=4800.00 vol=22.6% T=2473.0h → P=0.249
+[2026-09-19 18:37:43 ET] [INFO]   EDGE FOUND: KXGOLDDIRY-26DEC31H1700-T4800 | implied=33.0% true=24.9% edge=-8.1% dir=NO conf=68
+[2026-09-19 18:49:34 ET] [INFO]   CPI model: threshold=4.0% TNX=5.00% → P=0.400
+[2026-09-19 19:13:19 ET] [INFO]   price model: DIA spot=515.88 target=46.00 vol=10.0% T=439.0h → P=1.000
+[2026-09-19 19:22:42 ET] [INFO]   price model: BTC-USD spot=81225.01 target=72500.00 vol=31.5% T=271.0h → P=0.020
+[2026-09-19 19:22:43 ET] [INFO]   price model: BTC-USD spot=81225.01 target=92500.00 vol=31.5% T=271.0h → P=0.009
+[2026-09-19 19:22:43 ET] [INFO]   EDGE FOUND: KXBTCMAXMON-BTC-26SEP30-9250000 | implied=9.5% true=0.9% edge=-8.6% dir=NO conf=63
+[2026-09-19 19:56:26 ET] [INFO] Checked 88581 markets | Modelable: 88581 | Edges found: 3
+[2026-09-19 19:56:26 ET] [INFO] [Discord] Trade alert sent: KXBTCPRICE-85000-26DEC11
+[2026-09-19 19:56:26 ET] [WARN] AUTO-BET SKIP KXBTCPRICE-85000-26DEC11: exposure 39.7% ≥ 25% limit ($7.00 of $17.63 in open positions)
+[2026-09-19 19:56:27 ET] [INFO] [Discord] Trade alert sent: KXGOLDDIRY-26DEC31H1700-T4800
+[2026-09-19 19:56:27 ET] [WARN] AUTO-BET SKIP KXGOLDDIRY-26DEC31H1700-T4800: exposure 39.7% ≥ 25% limit ($7.00 of $17.63 in open positions)
+[2026-09-19 19:56:27 ET] [INFO] [Discord] Trade alert sent: KXBTCMAXMON-BTC-26SEP30-9250000
+[2026-09-19 19:56:27 ET] [WARN] AUTO-BET SKIP KXBTCMAXMON-BTC-26SEP30-9250000: exposure 39.7% ≥ 25% limit ($7.00 of $17.63 in open positions)
+[2026-09-19 19:56:27 ET] [INFO] Scan complete — 3 alerts sent
+[2026-09-19 19:56:27 ET] [INFO] ============================================================
+[2026-09-19 19:56:27 ET] [INFO] Scan job complete

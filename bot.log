@@ -95935,3 +95935,57 @@ Total modelable markets evaluated: 0
 [2026-09-20 09:01:59 ET] [INFO] Scan complete — 4 alerts sent
 [2026-09-20 09:01:59 ET] [INFO] ============================================================
 [2026-09-20 09:01:59 ET] [INFO] Scan job complete
+[2026-09-20 10:38:50 ET] [INFO] Scan job starting
+[2026-09-20 10:38:50 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-09-20 10:38:50 ET] [INFO] ============================================================
+[2026-09-20 10:38:50 ET] [INFO] Starting market scan
+[2026-09-20 10:38:51 ET] [INFO] Portfolio value: $5.35 cash + $5.25 positions = $10.60
+[2026-09-20 10:38:51 ET] [INFO] Cash: $5.35  |  Positions: $5.25  |  Total: $10.60  |  Peak: $11.46
+[2026-09-20 10:38:52 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-09-20 10:38:52 ET] [WARN] API GET /markets → HTTP 400
+[2026-09-20 10:39:09 ET] [INFO] Fetched 99825 open markets via events endpoint across 50 pages
+[2026-09-20 10:39:09 ET] [INFO] Fetched 99825 open markets
+[2026-09-20 10:39:10 ET] [INFO] Parsed 87870 valid markets
+[2026-09-20 10:39:10 ET] [INFO] Categories: {'Sports': 42494, 'Elections': 19543, 'Entertainment': 7356, 'Financials': 7011, 'Economics': 4264, 'Politics': 2196, 'Climate and Weather': 1180, 'Science and Technology': 846}
+[2026-09-20 10:45:39 ET] [INFO]   CPI model: threshold=10.0% TNX=5.00% → P=0.200
+[2026-09-20 10:46:09 ET] [INFO]   price model: TSLA spot=364.27 target=1.60 vol=44.5% T=13382.3h → P=1.000
+[2026-09-20 10:46:09 ET] [INFO]   EDGE FOUND: KXTSLAA-28JANDEL-1600000.0 | implied=86.0% true=100.0% edge=+14.0% dir=YES conf=68
+[2026-09-20 10:51:07 ET] [INFO]   fed model: implied_rate=4.025% current≈3.978% diff=4.7bps → P=0.594
+[2026-09-20 10:51:07 ET] [INFO]   EDGE FOUND: KXFEDDECISION-27DEC-H26 | implied=9.5% true=59.4% edge=+49.9% dir=YES conf=85
+[2026-09-20 11:25:19 ET] [INFO]   price model: CL=F spot=96.08 target=5.70 vol=45.6% T=4607.3h → P=1.000
+[2026-09-20 11:43:58 ET] [INFO]   fed model: implied_rate=3.747% current≈3.978% diff=-23.1bps → P=0.050
+[2026-09-20 11:43:58 ET] [INFO]   EDGE FOUND: KXFEDDECISION-27JAN-H0 | implied=60.5% true=5.0% edge=-55.5% dir=NO conf=85
+[2026-09-20 12:15:05 ET] [INFO]   fed model: implied_rate=4.025% current≈3.978% diff=4.7bps → P=0.594
+[2026-09-20 12:20:48 ET] [INFO]   price model: BTC-USD spot=81005.10 target=40000.00 vol=31.1% T=2462.3h → P=0.000
+[2026-09-20 12:20:48 ET] [INFO]   price model: BTC-USD spot=81005.10 target=100000.00 vol=31.1% T=997.3h → P=0.022
+[2026-09-20 12:21:20 ET] [INFO]   price model: BTC-USD spot=81080.99 target=119999.00 vol=31.1% T=2462.3h → P=0.009
+[2026-09-20 12:21:20 ET] [INFO]   price model: BTC-USD spot=81080.99 target=129999.00 vol=31.1% T=2462.3h → P=0.002
+[2026-09-20 12:21:26 ET] [INFO]   price model: GC=F spot=4424.90 target=4300.00 vol=22.9% T=2455.3h → P=0.593
+[2026-09-20 12:21:26 ET] [INFO]   price model: GC=F spot=4424.90 target=4600.00 vol=22.9% T=2455.3h → P=0.374
+[2026-09-20 12:21:26 ET] [INFO]   price model: GC=F spot=4424.90 target=4800.00 vol=22.9% T=2455.3h → P=0.251
+[2026-09-20 12:21:42 ET] [INFO]   price model: CL=F spot=96.08 target=75.00 vol=45.6% T=2452.8h → P=0.848
+[2026-09-20 12:34:28 ET] [INFO]   CPI model: threshold=4.0% TNX=5.00% → P=0.400
+[2026-09-20 12:38:35 ET] [INFO]   fed model: implied_rate=4.025% current≈3.978% diff=4.7bps → P=0.594
+[2026-09-20 12:53:46 ET] [INFO]   fed model: implied_rate=4.025% current≈3.978% diff=4.7bps → P=0.594
+[2026-09-20 13:00:29 ET] [INFO]   price model: DIA spot=515.88 target=46.00 vol=10.0% T=421.3h → P=1.000
+[2026-09-20 13:07:33 ET] [INFO]   price model: DIA spot=515.88 target=2.00 vol=10.0% T=293.3h → P=1.000
+[2026-09-20 13:10:57 ET] [INFO]   price model: BTC-USD spot=81238.50 target=70000.00 vol=31.0% T=253.3h → P=0.002
+[2026-09-20 13:10:58 ET] [INFO]   price model: BTC-USD spot=81238.50 target=92500.00 vol=31.0% T=253.3h → P=0.007
+[2026-09-20 13:11:19 ET] [INFO]   price model: CL=F spot=96.08 target=87.99 vol=45.6% T=246.3h → P=0.875
+[2026-09-20 13:36:23 ET] [INFO]   price model: CL=F spot=96.08 target=96.49 vol=45.6% T=27.8h → P=0.434
+[2026-09-20 13:36:23 ET] [INFO]   EDGE FOUND: KXWTI-26SEP2114-T96.49 | implied=75.5% true=43.4% edge=-32.1% dir=NO conf=85
+[2026-09-20 13:36:24 ET] [INFO]   price model: CL=F spot=96.08 target=98.49 vol=45.6% T=27.8h → P=0.167
+[2026-09-20 13:36:24 ET] [INFO]   EDGE FOUND: KXWTI-26SEP2114-T98.49 | implied=65.0% true=16.7% edge=-48.3% dir=NO conf=85
+[2026-09-20 13:45:53 ET] [INFO] Checked 87778 markets | Modelable: 87778 | Edges found: 5
+[2026-09-20 13:45:53 ET] [INFO]   Skipping KXTSLAA-28JANDEL-1600000.0 — suggested bet too small to be meaningful
+[2026-09-20 13:45:53 ET] [INFO] [Discord] Trade alert sent: KXFEDDECISION-27DEC-H26
+[2026-09-20 13:45:54 ET] [WARN] AUTO-BET SKIP KXFEDDECISION-27DEC-H26: exposure 39.8% ≥ 25% limit ($7.00 of $17.60 in open positions)
+[2026-09-20 13:45:54 ET] [INFO] [Discord] Trade alert sent: KXFEDDECISION-27JAN-H0
+[2026-09-20 13:45:54 ET] [WARN] AUTO-BET SKIP KXFEDDECISION-27JAN-H0: exposure 39.8% ≥ 25% limit ($7.00 of $17.60 in open positions)
+[2026-09-20 13:45:54 ET] [INFO] [Discord] Trade alert sent: KXWTI-26SEP2114-T96.49
+[2026-09-20 13:45:54 ET] [WARN] AUTO-BET SKIP KXWTI-26SEP2114-T96.49: exposure 39.8% ≥ 25% limit ($7.00 of $17.60 in open positions)
+[2026-09-20 13:45:54 ET] [INFO] [Discord] Trade alert sent: KXWTI-26SEP2114-T98.49
+[2026-09-20 13:45:54 ET] [WARN] AUTO-BET SKIP KXWTI-26SEP2114-T98.49: exposure 39.8% ≥ 25% limit ($7.00 of $17.60 in open positions)
+[2026-09-20 13:45:54 ET] [INFO] Scan complete — 4 alerts sent
+[2026-09-20 13:45:54 ET] [INFO] ============================================================
+[2026-09-20 13:45:55 ET] [INFO] Scan job complete

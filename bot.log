@@ -95989,3 +95989,62 @@ Total modelable markets evaluated: 0
 [2026-09-20 13:45:54 ET] [INFO] Scan complete — 4 alerts sent
 [2026-09-20 13:45:54 ET] [INFO] ============================================================
 [2026-09-20 13:45:55 ET] [INFO] Scan job complete
+[2026-09-20 14:10:44 ET] [INFO] Scan job starting
+[2026-09-20 14:10:44 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-09-20 14:10:44 ET] [INFO] ============================================================
+[2026-09-20 14:10:44 ET] [INFO] Starting market scan
+[2026-09-20 14:10:46 ET] [INFO] Portfolio value: $5.35 cash + $5.21 positions = $10.56
+[2026-09-20 14:10:46 ET] [INFO] Cash: $5.35  |  Positions: $5.21  |  Total: $10.56  |  Peak: $11.46
+[2026-09-20 14:10:46 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-09-20 14:10:46 ET] [WARN] API GET /markets → HTTP 400
+[2026-09-20 14:11:04 ET] [INFO] Fetched 99760 open markets via events endpoint across 50 pages
+[2026-09-20 14:11:04 ET] [INFO] Fetched 99760 open markets
+[2026-09-20 14:11:05 ET] [INFO] Parsed 87065 valid markets
+[2026-09-20 14:11:05 ET] [INFO] Categories: {'Sports': 41929, 'Elections': 19543, 'Entertainment': 7288, 'Financials': 6878, 'Economics': 4220, 'Politics': 2205, 'Climate and Weather': 1180, 'Science and Technology': 846}
+[2026-09-20 14:17:56 ET] [INFO]   CPI model: threshold=10.0% TNX=5.00% → P=0.200
+[2026-09-20 14:18:28 ET] [INFO]   price model: TSLA spot=364.27 target=1.60 vol=44.5% T=13378.8h → P=1.000
+[2026-09-20 14:53:59 ET] [INFO]   price model: BTC-USD spot=81060.12 target=85000.00 vol=31.1% T=1306.8h → P=0.346
+[2026-09-20 14:53:59 ET] [INFO]   EDGE FOUND: KXBTCPRICE-85000-26NOV13 | implied=73.0% true=34.6% edge=-38.4% dir=NO conf=80
+[2026-09-20 14:59:56 ET] [INFO]   price model: CL=F spot=96.08 target=5.70 vol=45.6% T=4603.8h → P=1.000
+[2026-09-20 15:52:13 ET] [INFO]   fed model: implied_rate=4.025% current≈3.978% diff=4.7bps → P=0.594
+[2026-09-20 15:57:58 ET] [INFO]   price model: BTC-USD spot=81160.12 target=40000.00 vol=31.0% T=2458.8h → P=0.000
+[2026-09-20 15:57:59 ET] [INFO]   price model: BTC-USD spot=81160.12 target=100000.00 vol=31.0% T=993.8h → P=0.023
+[2026-09-20 15:57:59 ET] [INFO]   EDGE FOUND: KXBTCMAX100-26-OCT | implied=10.5% true=2.3% edge=-8.2% dir=NO conf=63
+[2026-09-20 15:58:31 ET] [INFO]   price model: BTC-USD spot=81154.95 target=119999.00 vol=31.0% T=2458.8h → P=0.009
+[2026-09-20 15:58:31 ET] [INFO]   price model: BTC-USD spot=81154.95 target=129999.00 vol=31.0% T=2458.8h → P=0.002
+[2026-09-20 15:58:37 ET] [INFO]   price model: GC=F spot=4424.90 target=4300.00 vol=22.9% T=2451.8h → P=0.593
+[2026-09-20 15:58:38 ET] [INFO]   price model: GC=F spot=4424.90 target=4600.00 vol=22.9% T=2451.8h → P=0.374
+[2026-09-20 15:58:38 ET] [INFO]   price model: GC=F spot=4424.90 target=4800.00 vol=22.9% T=2451.8h → P=0.251
+[2026-09-20 15:58:54 ET] [INFO]   price model: CL=F spot=96.08 target=75.00 vol=45.6% T=2449.3h → P=0.848
+[2026-09-20 16:11:53 ET] [INFO]   CPI model: threshold=4.0% TNX=5.00% → P=0.400
+[2026-09-20 16:16:06 ET] [INFO]   fed model: implied_rate=4.025% current≈3.978% diff=4.7bps → P=0.594
+[2026-09-20 16:31:27 ET] [INFO]   fed model: implied_rate=4.025% current≈3.978% diff=4.7bps → P=0.594
+[2026-09-20 16:38:35 ET] [INFO]   price model: DIA spot=515.88 target=46.00 vol=10.0% T=417.8h → P=1.000
+[2026-09-20 16:39:42 ET] [INFO]   price model: AMZN spot=253.71 target=104.00 vol=25.6% T=392.3h → P=1.000
+[2026-09-20 16:39:42 ET] [INFO]   EDGE FOUND: KXAMZNCC-26OCT07-T104 | implied=88.5% true=100.0% edge=+11.5% dir=YES conf=68
+[2026-09-20 16:46:17 ET] [INFO]   price model: DIA spot=515.88 target=2.00 vol=10.0% T=289.8h → P=1.000
+[2026-09-20 16:47:19 ET] [INFO]   weather model: chicago rain 2026-09-20 forecast=69% → P=0.690
+[2026-09-20 16:47:19 ET] [INFO]   EDGE FOUND: KXRAINCHIM-26SEP-3 | implied=90.5% true=69.0% edge=-21.5% dir=NO conf=75
+[2026-09-20 16:49:56 ET] [INFO]   price model: BTC-USD spot=81128.57 target=70000.00 vol=31.0% T=249.8h → P=0.002
+[2026-09-20 16:49:56 ET] [INFO]   price model: BTC-USD spot=81128.57 target=92500.00 vol=31.0% T=249.8h → P=0.006
+[2026-09-20 16:50:20 ET] [INFO]   price model: CL=F spot=96.08 target=87.99 vol=45.6% T=242.8h → P=0.877
+[2026-09-20 17:11:09 ET] [INFO]   weather model: oklahoma city rain 2026-09-20 forecast=16% → P=0.160
+[2026-09-20 17:11:09 ET] [INFO]   EDGE FOUND: KXRAIN-26SEP20-OKC | implied=53.0% true=16.0% edge=-37.0% dir=NO conf=80
+[2026-09-20 17:17:30 ET] [INFO]   price model: CL=F spot=96.08 target=97.99 vol=45.6% T=24.3h → P=0.206
+[2026-09-20 17:17:30 ET] [INFO]   EDGE FOUND: KXWTI-26SEP2114-T97.99 | implied=65.0% true=20.6% edge=-44.4% dir=NO conf=85
+[2026-09-20 17:25:58 ET] [INFO] Checked 86969 markets | Modelable: 86969 | Edges found: 6
+[2026-09-20 17:25:58 ET] [INFO] [Discord] Trade alert sent: KXBTCPRICE-85000-26NOV13
+[2026-09-20 17:25:59 ET] [WARN] AUTO-BET SKIP KXBTCPRICE-85000-26NOV13: exposure 39.9% ≥ 25% limit ($7.00 of $17.56 in open positions)
+[2026-09-20 17:25:59 ET] [INFO] [Discord] Trade alert sent: KXBTCMAX100-26-OCT
+[2026-09-20 17:25:59 ET] [WARN] AUTO-BET SKIP KXBTCMAX100-26-OCT: exposure 39.9% ≥ 25% limit ($7.00 of $17.56 in open positions)
+[2026-09-20 17:25:59 ET] [INFO] [Discord] Trade alert sent: KXAMZNCC-26OCT07-T104
+[2026-09-20 17:25:59 ET] [WARN] AUTO-BET SKIP KXAMZNCC-26OCT07-T104: exposure 39.9% ≥ 25% limit ($7.00 of $17.56 in open positions)
+[2026-09-20 17:25:59 ET] [INFO] [Discord] Trade alert sent: KXRAINCHIM-26SEP-3
+[2026-09-20 17:25:59 ET] [WARN] AUTO-BET SKIP KXRAINCHIM-26SEP-3: exposure 39.9% ≥ 25% limit ($7.00 of $17.56 in open positions)
+[2026-09-20 17:26:00 ET] [INFO] [Discord] Trade alert sent: KXRAIN-26SEP20-OKC
+[2026-09-20 17:26:00 ET] [WARN] AUTO-BET SKIP KXRAIN-26SEP20-OKC: exposure 39.9% ≥ 25% limit ($7.00 of $17.56 in open positions)
+[2026-09-20 17:26:00 ET] [INFO] [Discord] Trade alert sent: KXWTI-26SEP2114-T97.99
+[2026-09-20 17:26:00 ET] [WARN] AUTO-BET SKIP KXWTI-26SEP2114-T97.99: exposure 39.9% ≥ 25% limit ($7.00 of $17.56 in open positions)
+[2026-09-20 17:26:00 ET] [INFO] Scan complete — 6 alerts sent
+[2026-09-20 17:26:00 ET] [INFO] ============================================================
+[2026-09-20 17:26:00 ET] [INFO] Scan job complete

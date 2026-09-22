@@ -97254,3 +97254,41 @@ Total modelable markets evaluated: 0
 [2026-09-22 14:34:22 ET] [INFO] Scan complete — 1 alerts sent
 [2026-09-22 14:34:22 ET] [INFO] ============================================================
 [2026-09-22 14:34:22 ET] [INFO] Scan job complete
+[2026-09-22 15:04:57 ET] [INFO] Scan job starting
+[2026-09-22 15:04:57 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-09-22 15:04:57 ET] [INFO] ============================================================
+[2026-09-22 15:04:57 ET] [INFO] Starting market scan
+[2026-09-22 15:04:58 ET] [INFO] Portfolio value: $5.35 cash + $5.29 positions = $10.64
+[2026-09-22 15:04:58 ET] [INFO] Cash: $5.35  |  Positions: $5.29  |  Total: $10.64  |  Peak: $11.46
+[2026-09-22 15:04:58 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-09-22 15:04:59 ET] [WARN] API GET /markets → HTTP 400
+[2026-09-22 15:05:17 ET] [INFO] Fetched 100999 open markets via events endpoint across 50 pages
+[2026-09-22 15:05:18 ET] [INFO] Fetched 100999 open markets
+[2026-09-22 15:05:18 ET] [INFO] Parsed 93520 valid markets
+[2026-09-22 15:05:18 ET] [INFO] Categories: {'Sports': 49297, 'Elections': 20774, 'Entertainment': 7058, 'Financials': 5516, 'Economics': 4096, 'Politics': 2257, 'Climate and Weather': 917, 'Science and Technology': 875}
+[2026-09-22 15:11:20 ET] [INFO]   CPI model: threshold=10.0% TNX=4.97% → P=0.200
+[2026-09-22 15:45:51 ET] [INFO]   price model: BTC-USD spot=86398.32 target=85000.00 vol=36.4% T=1929.9h → P=0.538
+[2026-09-22 15:45:51 ET] [INFO]   EDGE FOUND: KXBTCPRICE-85000-26DEC11 | implied=87.5% true=53.8% edge=-33.7% dir=NO conf=80
+[2026-09-22 16:45:25 ET] [INFO]   price model: ETH-USD spot=2753.38 target=1250.00 vol=39.1% T=2409.9h → P=0.000
+[2026-09-22 16:45:25 ET] [INFO]   price model: ETH-USD spot=2753.38 target=1000.00 vol=39.1% T=2409.9h → P=0.000
+[2026-09-22 16:45:27 ET] [INFO]   price model: BTC-USD spot=86331.06 target=45000.00 vol=36.4% T=2409.9h → P=0.000
+[2026-09-22 16:45:27 ET] [INFO]   price model: BTC-USD spot=86331.06 target=40000.00 vol=36.4% T=2409.9h → P=0.000
+[2026-09-22 16:45:27 ET] [INFO]   price model: BTC-USD spot=86331.06 target=100000.00 vol=36.4% T=200.9h → P=0.004
+[2026-09-22 16:46:09 ET] [INFO]   price model: GC=F spot=4396.10 target=4500.00 vol=22.3% T=2402.9h → P=0.421
+[2026-09-22 16:57:39 ET] [INFO]   CPI model: threshold=4.0% TNX=4.97% → P=0.403
+[2026-09-22 17:24:01 ET] [INFO]   price model: AMZN spot=254.98 target=104.00 vol=25.5% T=343.4h → P=1.000
+[2026-09-22 17:34:21 ET] [INFO]   price model: XRP-USD spot=1.58 target=2.00 vol=62.0% T=200.9h → P=0.006
+[2026-09-22 17:34:21 ET] [INFO]   EDGE FOUND: KXXRPMAXMON-XRP-26SEP30-200 | implied=15.0% true=0.6% edge=-14.4% dir=NO conf=63
+[2026-09-22 17:34:54 ET] [INFO]   price model: BTC-USD spot=86273.48 target=75000.00 vol=36.4% T=200.9h → P=0.006
+[2026-09-22 17:34:55 ET] [INFO]   price model: BTC-USD spot=86273.48 target=95000.00 vol=36.4% T=200.9h → P=0.040
+[2026-09-22 17:34:55 ET] [INFO]   EDGE FOUND: KXBTCMAXMON-BTC-26SEP30-9500000 | implied=14.5% true=4.0% edge=-10.5% dir=NO conf=68
+[2026-09-22 18:08:57 ET] [INFO] Checked 93416 markets | Modelable: 93416 | Edges found: 3
+[2026-09-22 18:08:58 ET] [INFO] [Discord] Trade alert sent: KXBTCPRICE-85000-26DEC11
+[2026-09-22 18:08:58 ET] [WARN] AUTO-BET SKIP KXBTCPRICE-85000-26DEC11: exposure 39.7% ≥ 25% limit ($7.00 of $17.64 in open positions)
+[2026-09-22 18:08:58 ET] [INFO] [Discord] Trade alert sent: KXXRPMAXMON-XRP-26SEP30-200
+[2026-09-22 18:08:58 ET] [WARN] AUTO-BET SKIP KXXRPMAXMON-XRP-26SEP30-200: exposure 39.7% ≥ 25% limit ($7.00 of $17.64 in open positions)
+[2026-09-22 18:08:59 ET] [INFO] [Discord] Trade alert sent: KXBTCMAXMON-BTC-26SEP30-9500000
+[2026-09-22 18:08:59 ET] [WARN] AUTO-BET SKIP KXBTCMAXMON-BTC-26SEP30-9500000: exposure 39.7% ≥ 25% limit ($7.00 of $17.64 in open positions)
+[2026-09-22 18:08:59 ET] [INFO] Scan complete — 3 alerts sent
+[2026-09-22 18:08:59 ET] [INFO] ============================================================
+[2026-09-22 18:08:59 ET] [INFO] Scan job complete

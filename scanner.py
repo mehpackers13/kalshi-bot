@@ -118,7 +118,10 @@ def run_scan(api: KalshiAPI) -> list:
 
     # Sync live balance first so drawdown check uses current portfolio total,
     # not a potentially stale cached value.
-    sync_live_balance(api)
+    current_balance = sync_live_balance(api)
+    if current_balance is None and not config.DRY_RUN:
+        log("Live scan halted: fresh account state is unavailable", "ERROR")
+        return []
 
     # Snapshot open positions for the dashboard
     _write_positions_snapshot(api)

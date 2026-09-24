@@ -179,6 +179,10 @@
 <footer>kalshi-bot · disciplined & selective · auto-refreshes every 5 min</footer>
 
 <script>
+function escapeHtml(value) {
+  return String(value ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+}
+
 const fmt = (n,d=1) => n!=null ? n.toFixed(d) : '—';
 const fmtPct = n => n!=null ? n.toFixed(1)+'%' : '—';
 const fmtDollar = n => n!=null ? '$'+Math.abs(n).toFixed(2) : '—';
@@ -187,6 +191,7 @@ function setStatus(ts) {
   const dot = document.getElementById('sdot');
   const txt = document.getElementById('stxt');
   try {
+    if (!ts || !Number.isFinite(Date.parse(ts)) || Date.parse(ts) > Date.now() + 300000) throw new Error("Unknown scan time");
     const gen = new Date(ts);
     const ageMin = (Date.now() - gen.getTime()) / 60000;
     if (ageMin < 120) { dot.className='dot green'; txt.textContent='Live — '+Math.round(ageMin)+'m ago'; }
@@ -208,7 +213,7 @@ async function load() {
   const gen = new Date(data.generated_at);
   document.getElementById('gen-at').textContent = gen.toLocaleString();
   document.getElementById('last-update').textContent = 'Updated: ' + gen.toLocaleString();
-  setStatus(data.last_scan_ts || data.generated_at);
+  setStatus(('last_scan_ts' in data ? data.last_scan_ts : data.generated_at));
 
   const stats  = data.stats || {};
   const br     = data.bankroll || {};
@@ -270,7 +275,7 @@ async function load() {
       const ticker = r.ticker || '?';
       const title  = (r.title || ticker).substring(0, 60);
       const uStr   = r.units_pl ? (parseFloat(r.units_pl) >= 0 ? '+' : '') + parseFloat(r.units_pl).toFixed(2) + 'u' : '—';
-      return `<div class="today-row">${icon} <code style="font-size:11px">${ticker}</code> <span style="color:var(--text)">${title}</span> <span style="margin-left:auto;font-weight:700;color:${r.outcome==='1'?'var(--green)':'var(--red)'}">${uStr}</span></div>`;
+      return `<div class="today-row">${icon} <code style="font-size:11px">${escapeHtml(ticker)}</code> <span style="color:var(--text)">${escapeHtml(title)}</span> <span style="margin-left:auto;font-weight:700;color:${r.outcome==='1'?'var(--green)':'var(--red)'}">${uStr}</span></div>`;
     }).join('');
   } else {
     todaySec.style.display = 'none';
@@ -292,7 +297,7 @@ async function load() {
         ? '<span class="dir-yes">YES</span>'
         : '<span class="dir-no">NO</span>';
       return `<div class="pos-card">
-        <div><div class="pos-title"><code>${p.ticker}</code> ${dir} · ${p.contracts} contracts</div><div class="pos-meta">${(p.title||'').substring(0,80)}</div></div>
+        <div><div class="pos-title"><code>${escapeHtml(p.ticker)}</code> ${dir} · ${escapeHtml(p.contracts)} contracts</div><div class="pos-meta">${escapeHtml((p.title||'').substring(0,80))}</div></div>
         <div class="pos-stats">
           <div class="pos-stat"><div class="ps-label">Entry</div><div class="ps-val">${entryStr}</div></div>
           <div class="pos-stat"><div class="ps-label">Current</div><div class="ps-val">${currStr}</div></div>
@@ -322,13 +327,13 @@ async function load() {
       const epCls = ep >= 25 ? 'green' : ep >= 15 ? 'yellow' : '';
       const uStr = a.units_pl !== undefined && a.units_pl !== '' ? (parseFloat(a.units_pl) >= 0 ? '+' : '') + parseFloat(a.units_pl||0).toFixed(2) + 'u' : '—';
       alertTbody.innerHTML += `<tr>
-        <td style="font-size:11px;color:var(--muted)">${ts}</td>
-        <td><code>${a.ticker}</code></td>
-        <td>${a.category}</td>
+        <td style="font-size:11px;color:var(--muted)">${escapeHtml(ts)}</td>
+        <td><code>${escapeHtml(a.ticker)}</code></td>
+        <td>${escapeHtml(a.category)}</td>
         <td>${dir}</td>
         <td class="${epCls}">${ep>=0?'+':''}${parseFloat(a.edge_pct||0).toFixed(1)}%</td>
         <td>${(parseFloat(a.true_prob||0)*100).toFixed(1)}%</td>
-        <td>${a.confidence}/100</td>
+        <td>${escapeHtml(a.confidence)}/100</td>
         <td>$${parseFloat(a.suggested_live_dollars||0).toFixed(2)}</td>
         <td>${out}</td>
         <td style="font-weight:700;color:${parseFloat(a.units_pl||0)>0?'var(--green)':parseFloat(a.units_pl||0)<0?'var(--red)':'var(--muted)'}">${uStr}</td>
@@ -342,7 +347,7 @@ async function load() {
   const byCat = stats.by_category || {};
   const cats = Object.entries(byCat).sort((a,b) => (b[1].hit_rate??-1) - (a[1].hit_rate??-1));
   catTbody.innerHTML = cats.length
-    ? cats.map(([cat, d]) => `<tr><td>${cat}</td><td>${d.total}</td><td>${d.rated}</td><td class="${d.hit_rate>=55?'green':d.hit_rate!=null?'red':''}">${fmtPct(d.hit_rate)}</td></tr>`).join('')
+    ? cats.map(([cat, d]) => `<tr><td>${escapeHtml(cat)}</td><td>${escapeHtml(d.total)}</td><td>${escapeHtml(d.rated)}</td><td class="${d.hit_rate>=55?'green':d.hit_rate!=null?'red':''}">${fmtPct(d.hit_rate)}</td></tr>`).join('')
     : '<tr><td colspan="4" class="no-data">No data yet</td></tr>';
 
   // Model confidence table
@@ -351,7 +356,7 @@ async function load() {
   const conf = data.model_confidence || {};
   const confEntries = Object.entries(conf);
   confTbody.innerHTML = confEntries.length
-    ? confEntries.map(([cat, val]) => `<tr><td>${cat}</td><td>${(val*100).toFixed(0)}%</td><td><div class="conf-bar"><div class="conf-bg"><div class="conf-fill" style="width:${Math.round(val*100)}%"></div></div></div></td></tr>`).join('')
+    ? confEntries.map(([cat, val]) => `<tr><td>${escapeHtml(cat)}</td><td>${(val*100).toFixed(0)}%</td><td><div class="conf-bar"><div class="conf-bg"><div class="conf-fill" style="width:${Math.round(val*100)}%"></div></div></div></td></tr>`).join('')
     : '<tr><td colspan="3" class="no-data">Loading…</td></tr>';
 
   // AI suggestions
@@ -366,7 +371,7 @@ async function load() {
   const logEl   = document.getElementById('change-log');
   const changes  = data.model_changes || [];
   logEl.innerHTML = changes.length
-    ? changes.map(l => `<div>${l}</div>`).join('')
+    ? changes.map(l => `<div>${escapeHtml(l)}</div>`).join('')
     : '<div class="no-data">No changes yet.</div>';
   if (changes.length) logEl.scrollTop = logEl.scrollHeight;
 }

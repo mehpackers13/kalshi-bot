@@ -98,8 +98,12 @@ class KalshiAPI:
 
     def _post(self, path: str, payload: dict, timeout: int = 15) -> dict:
         """Authenticated POST — used for order placement."""
+        if config.DRY_RUN:
+            raise RuntimeError("DRY_RUN blocks all authenticated POST operations")
         import json as _json
         headers = self._sign_request("POST", path)
+        if not headers:
+            raise RuntimeError("Missing authentication; POST blocked")
         headers["Content-Type"] = "application/json"
         resp = self._session.post(
             f"{self.BASE}{path}",

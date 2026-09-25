@@ -57,15 +57,22 @@ jobs:
           git config user.name  "kalshi-bot[actions]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           # Stage any newly created untracked files (positions.json, etc.)
-          git add data/positions.json 2>/dev/null || true
-          git status --short
+          for output in data docs/data.json alerts_log.csv bets_log.csv outcomes.csv bets_placed.csv bot.log threshold_changes.log ai_brain.log model_changes.log; do
+            if [ -e "$output" ]; then git add -A -- "$output"; fi
+          done
+          git add -A -- data docs/data.json
+          for output in alerts_log.csv bets_log.csv outcomes.csv bets_placed.csv bot.log threshold_changes.log ai_brain.log model_changes.log; do
+            if [ -f "$output" ]; then git add -- "$output"; fi
+          done
           # -a commits ALL tracked modified files without needing git add
           git diff --quiet HEAD && echo "Nothing to commit." && exit 0
           git commit -a -m "📊 scan $(date -u '+%Y-%m-%d %H:%M UTC')"
           for attempt in 1 2 3; do
             git fetch origin main
-            git rebase -X ours origin/main && git push && echo "Push succeeded on attempt $attempt." && break
+            git rebase origin/main && git push && echo "Push succeeded on attempt $attempt." && exit 0
             echo "Push attempt $attempt failed — retrying in 15s..."
             git rebase --abort 2>/dev/null || true
             sleep 15
           done
+          echo "Push failed after all attempts" >&2
+          exit 1

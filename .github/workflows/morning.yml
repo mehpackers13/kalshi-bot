@@ -88,14 +88,18 @@ jobs:
         run: |
           git config user.name  "kalshi-bot[actions]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add bot.log model_changes.log data/ docs/data.json 2>/dev/null || true
+          for output in data docs/data.json alerts_log.csv bets_log.csv outcomes.csv bets_placed.csv bot.log threshold_changes.log ai_brain.log model_changes.log; do
+            if [ -e "$output" ]; then git add -A -- "$output"; fi
+          done
           git diff --staged --quiet && echo "Nothing to commit." && exit 0
           git commit -m "🧠 morning $(date -u '+%Y-%m-%d %H:%M UTC')"
           for attempt in 1 2 3; do
             git fetch origin main
-            git rebase -X ours origin/main && git push && break
+            git rebase origin/main && git push && exit 0
             echo "Push attempt $attempt failed — retrying in 15s..."
             git rebase --abort 2>/dev/null || true
             git checkout -- . 2>/dev/null || true
             sleep 15
           done
+          echo "Push failed after all attempts" >&2
+          exit 1

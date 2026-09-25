@@ -18,6 +18,8 @@ history is preserved across GitHub Actions runs.
 """
 
 import json
+import math
+from safe_state import atomic_json
 import datetime
 from typing import Optional
 
@@ -49,17 +51,17 @@ def _fresh_bankroll() -> dict:
 def load_bankroll() -> dict:
     config.DATA_DIR.mkdir(exist_ok=True)
     if config.BANKROLL_JSON.exists():
-        try:
-            return json.loads(config.BANKROLL_JSON.read_text())
-        except Exception:
-            pass
+        saved = json.loads(config.BANKROLL_JSON.read_text())
+        if not isinstance(saved, dict) or not isinstance(saved.get("live"), dict):
+            raise ValueError("Invalid bankroll state; refusing to reset risk controls")
+        return saved
     return _fresh_bankroll()
 
 
 def save_bankroll(data: dict) -> None:
     config.DATA_DIR.mkdir(exist_ok=True)
     data["updated_at"] = datetime.datetime.utcnow().isoformat() + "Z"
-    config.BANKROLL_JSON.write_text(json.dumps(data, indent=2))
+    atomic_json(config.BANKROLL_JSON, data)
 
 
 # ── Live balance sync ────────────────────────────────────────────────────────────
@@ -77,9 +79,7 @@ def sync_live_balance(api) -> Optional[float]:
     cash = api.get_account_balance()
     # Total value includes open position market value at current bid prices
     total = api.get_portfolio_total_value()
-    if total is None:
-        total = cash
-    if total is None:
+    if cash is None or total is None or not math.isfinite(cash) or not math.isfinite(total) or cash < 0 or total < 0:
         log("Could not read Kalshi portfolio value — using cached value", "WARN")
         return None
 
@@ -128,7 +128,7 @@ def check_drawdown_stop() -> bool:
     current = br["live"]["balance"]   # always portfolio total, not cash-only
 
     # Wait for at least one real balance reading before enforcing
-    if peak == 0.0 or current == 0.0:
+    if peak == 0.0:
         return False
 
     stop_at = round(peak * (1.0 - config.DRAWDOWN_STOP_PCT), 2)

@@ -99002,3 +99002,60 @@ Total modelable markets evaluated: 0
 [2026-09-25 05:32:10 ET] [INFO] Scan complete — 4 alerts sent
 [2026-09-25 05:32:10 ET] [INFO] ============================================================
 [2026-09-25 05:32:10 ET] [INFO] Scan job complete
+[2026-09-25 05:44:56 ET] [INFO] Scan job starting
+[2026-09-25 05:44:56 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-09-25 05:44:56 ET] [INFO] ============================================================
+[2026-09-25 05:44:56 ET] [INFO] Starting market scan
+[2026-09-25 05:44:58 ET] [INFO] Portfolio value: $5.35 cash + $4.95 positions = $10.30
+[2026-09-25 05:44:58 ET] [INFO] Cash: $5.35  |  Positions: $4.95  |  Total: $10.30  |  Peak: $11.46
+[2026-09-25 05:44:58 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-09-25 05:44:59 ET] [WARN] API GET /markets → HTTP 400
+[2026-09-25 05:45:19 ET] [INFO] Fetched 100637 open markets via events endpoint across 50 pages
+[2026-09-25 05:45:19 ET] [INFO] Fetched 100637 open markets
+[2026-09-25 05:45:19 ET] [INFO] Parsed 82013 valid markets
+[2026-09-25 05:45:19 ET] [INFO] Categories: {'Sports': 47521, 'Elections': 11599, 'Entertainment': 7826, 'Financials': 4887, 'Economics': 4017, 'Politics': 2227, 'Science and Technology': 953, 'Mentions': 819}
+[2026-09-25 05:52:05 ET] [INFO]   CPI model: threshold=10.0% TNX=5.16% → P=0.200
+[2026-09-25 05:52:28 ET] [INFO]   price model: META spot=777.59 target=71000.00 vol=47.3% T=13277.2h → P=0.000
+[2026-09-25 05:52:28 ET] [INFO]   EDGE FOUND: KXMETAA-28JANHEAD-71000 | implied=51.0% true=0.0% edge=-51.0% dir=NO conf=85
+[2026-09-25 05:52:40 ET] [INFO]   price model: TSLA spot=377.94 target=1.60 vol=43.8% T=13267.2h → P=1.000
+[2026-09-25 05:52:40 ET] [INFO]   EDGE FOUND: KXTSLAA-28JANDEL-1600000.0 | implied=79.5% true=100.0% edge=+20.5% dir=YES conf=75
+[2026-09-25 05:52:40 ET] [INFO]   price model: TSLA spot=377.94 target=1.65 vol=43.8% T=13267.2h → P=1.000
+[2026-09-25 06:33:09 ET] [INFO]   fed model: implied_rate=4.055% current≈4.068% diff=-1.3bps → P=0.474
+[2026-09-25 06:33:09 ET] [INFO]   EDGE FOUND: KXFEDDECISION-27MAR-H25 | implied=57.5% true=47.4% edge=-10.1% dir=NO conf=68
+[2026-09-25 06:50:29 ET] [INFO]   fed model: implied_rate=4.055% current≈4.068% diff=-1.3bps → P=0.474
+[2026-09-25 07:09:33 ET] [INFO]   fed model: implied_rate=4.055% current≈4.068% diff=-1.3bps → P=0.474
+[2026-09-25 07:14:54 ET] [INFO]   price model: SOL-USD spot=121.56 target=500.00 vol=56.4% T=2347.2h → P=0.000
+[2026-09-25 07:15:17 ET] [INFO]   price model: ETH-USD spot=2741.70 target=1000.00 vol=39.3% T=2347.2h → P=0.000
+[2026-09-25 07:15:18 ET] [INFO]   price model: ETH-USD spot=2741.70 target=6000.00 vol=39.3% T=2347.2h → P=0.000
+[2026-09-25 07:15:19 ET] [INFO]   price model: BTC-USD spot=85248.66 target=45000.00 vol=36.9% T=2347.2h → P=0.000
+[2026-09-25 07:15:19 ET] [INFO]   price model: BTC-USD spot=85248.66 target=40000.00 vol=36.9% T=2347.2h → P=0.000
+[2026-09-25 07:15:19 ET] [INFO]   price model: BTC-USD spot=85248.66 target=100000.00 vol=36.9% T=882.2h → P=0.086
+[2026-09-25 07:15:53 ET] [INFO]   price model: BTC-USD spot=85219.79 target=129999.00 vol=36.9% T=2347.2h → P=0.014
+[2026-09-25 07:15:53 ET] [INFO]   price model: BTC-USD spot=85219.79 target=139999.00 vol=36.9% T=2347.2h → P=0.005
+[2026-09-25 07:15:59 ET] [INFO]   price model: GC=F spot=4346.60 target=4400.00 vol=18.8% T=2340.2h → P=0.450
+[2026-09-25 07:15:59 ET] [INFO]   price model: GC=F spot=4346.60 target=4500.00 vol=18.8% T=2340.2h → P=0.361
+[2026-09-25 07:16:00 ET] [INFO]   price model: GC=F spot=4346.60 target=4800.00 vol=18.8% T=2340.2h → P=0.154
+[2026-09-25 07:16:00 ET] [INFO]   EDGE FOUND: KXGOLDDIRY-26DEC31H1700-T4800 | implied=24.5% true=15.4% edge=-9.1% dir=NO conf=68
+[2026-09-25 07:16:16 ET] [INFO]   price model: CL=F spot=92.84 target=75.00 vol=45.4% T=2337.7h → P=0.818
+[2026-09-25 07:57:22 ET] [INFO]   price model: DIA spot=512.68 target=122.00 vol=10.8% T=306.2h → P=1.000
+[2026-09-25 07:58:55 ET] [INFO]   price model: AMZN spot=249.38 target=104.00 vol=25.7% T=280.7h → P=1.000
+[2026-09-25 07:58:55 ET] [INFO]   price model: AMZN spot=249.38 target=106.00 vol=25.7% T=280.7h → P=1.000
+[2026-09-25 08:10:26 ET] [INFO]   weather model: nyc rain 2026-09-25 forecast=10% → P=0.100
+[2026-09-25 08:10:26 ET] [INFO]   EDGE FOUND: KXRAINNYCM-26SEP-5 | implied=48.5% true=10.0% edge=-38.5% dir=NO conf=85
+[2026-09-25 08:12:09 ET] [INFO]   price model: ETH-USD spot=2719.32 target=3000.00 vol=39.1% T=138.2h → P=0.023
+[2026-09-25 08:12:16 ET] [INFO]   price model: BTC-USD spot=84594.03 target=75000.00 vol=36.8% T=138.2h → P=0.005
+[2026-09-25 08:12:17 ET] [INFO]   price model: BTC-USD spot=84594.03 target=90000.00 vol=36.8% T=138.2h → P=0.090
+[2026-09-25 08:12:19 ET] [INFO]   price model: DIA spot=512.68 target=1.00 vol=10.8% T=138.2h → P=1.000
+[2026-09-25 08:12:19 ET] [INFO]   EDGE FOUND: KXA100MS-26SEP-1.000 | implied=82.0% true=100.0% edge=+18.0% dir=YES conf=75
+[2026-09-25 08:43:48 ET] [INFO] Checked 81924 markets | Modelable: 81924 | Edges found: 6
+[2026-09-25 08:43:48 ET] [INFO]   Skipping KXMETAA-28JANHEAD-71000 — suggested bet too small to be meaningful
+[2026-09-25 08:43:48 ET] [INFO]   Skipping KXTSLAA-28JANDEL-1600000.0 — suggested bet too small to be meaningful
+[2026-09-25 08:43:48 ET] [INFO]   Skipping KXFEDDECISION-27MAR-H25 — suggested bet too small to be meaningful
+[2026-09-25 08:43:48 ET] [INFO] [Discord] Trade alert sent: KXGOLDDIRY-26DEC31H1700-T4800
+[2026-09-25 08:43:48 ET] [WARN] AUTO-BET SKIP KXGOLDDIRY-26DEC31H1700-T4800: exposure 40.5% ≥ 25% limit ($7.00 of $17.30 in open positions)
+[2026-09-25 08:43:49 ET] [INFO] [Discord] Trade alert sent: KXRAINNYCM-26SEP-5
+[2026-09-25 08:43:49 ET] [WARN] AUTO-BET SKIP KXRAINNYCM-26SEP-5: exposure 40.5% ≥ 25% limit ($7.00 of $17.30 in open positions)
+[2026-09-25 08:43:49 ET] [INFO]   Skipping KXA100MS-26SEP-1.000 — suggested bet too small to be meaningful
+[2026-09-25 08:43:49 ET] [INFO] Scan complete — 2 alerts sent
+[2026-09-25 08:43:49 ET] [INFO] ============================================================
+[2026-09-25 08:43:49 ET] [INFO] Scan job complete

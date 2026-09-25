@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-25T09:32:11.156696Z",
-  "last_scan_ts": "2026-09-25T09:32:11.156696Z",
+  "generated_at": "2026-09-25T12:43:49.549100Z",
+  "last_scan_ts": "2026-09-25T12:43:49.549100Z",
   "stats": {
-    "total_alerts": 15002,
+    "total_alerts": 15004,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -37,7 +37,7 @@
         "hit_rate": null
       },
       "Climate and Weather": {
-        "total": 1374,
+        "total": 1375,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -55,7 +55,7 @@
         "hit_rate": null
       },
       "Commodities": {
-        "total": 1834,
+        "total": 1835,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,7 +69,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 3618,
+        "total": 3619,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -81,7 +81,7 @@
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 8557,
+        "total": 8558,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 10.22,
+      "balance": 10.3,
       "cash": 5.35,
       "peak": 11.46,
       "initial_balance": 10.0
@@ -101,15 +101,57 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-09-25T06:24:15.547307Z"
+    "updated_at": "2026-09-25T09:44:58.085120Z"
   },
   "cash_bal": 5.35,
-  "position_value": 4.87,
-  "account_value": 10.22,
-  "live_pnl": 0.22,
+  "position_value": 4.95,
+  "account_value": 10.3,
+  "live_pnl": 0.3,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-09-25T12:43:49.039032Z",
+      "ticker": "KXRAINNYCM-26SEP-5",
+      "title": "Rain in NYC in Sep 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-38.5",
+      "implied_prob": "0.485",
+      "true_prob": "0.1",
+      "confidence": "85",
+      "suggested_live_dollars": "0.57",
+      "suggested_paper_dollars": "49.59",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "57",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-09-25T12:43:48.632510Z",
+      "ticker": "KXGOLDDIRY-26DEC31H1700-T4800",
+      "title": "Will the price of Gold be above 4800 on December 31, 2026 at 05:00 PM EST?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-9.1",
+      "implied_prob": "0.245",
+      "true_prob": "0.154",
+      "confidence": "68",
+      "suggested_live_dollars": "0.79",
+      "suggested_paper_dollars": "19.75",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "79",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-09-25T09:32:10.688234Z",
       "ticker": "KXRAINSEAM-26SEP-2",
@@ -2318,6 +2360,48 @@
   ],
   "recent_alerts": [
     {
+      "timestamp": "2026-09-25T12:43:49.039032Z",
+      "ticker": "KXRAINNYCM-26SEP-5",
+      "title": "Rain in NYC in Sep 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-38.5",
+      "implied_prob": "0.485",
+      "true_prob": "0.1",
+      "confidence": "85",
+      "suggested_live_dollars": "0.57",
+      "suggested_paper_dollars": "49.59",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "57",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-09-25T12:43:48.632510Z",
+      "ticker": "KXGOLDDIRY-26DEC31H1700-T4800",
+      "title": "Will the price of Gold be above 4800 on December 31, 2026 at 05:00 PM EST?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-9.1",
+      "implied_prob": "0.245",
+      "true_prob": "0.154",
+      "confidence": "68",
+      "suggested_live_dollars": "0.79",
+      "suggested_paper_dollars": "19.75",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "79",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
       "timestamp": "2026-09-25T09:32:10.688234Z",
       "ticker": "KXRAINSEAM-26SEP-2",
       "title": "Rain in Seattle in Sep 2026?",
@@ -2369,493 +2453,8 @@
       "implied_prob": "0.88",
       "true_prob": "0.7762",
       "confidence": "68",
-      "suggested_live_dollars": "0.93",
-      "suggested_paper_dollars": "19.53",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "93",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-09-24T07:54:20.621131Z",
-      "ticker": "KXTXOIL-27MAR31-T5.8",
-      "title": "Will Texas\u2019s annual-average field production of crude oil for 2026 be above 5.8 million barrels/day?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "43.0",
-      "implied_prob": "0.57",
-      "true_prob": "1.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.59",
-      "suggested_paper_dollars": "49.56",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "59",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-09-24T07:54:20.283454Z",
-      "ticker": "KXFEDDECISION-27APR-H0",
-      "title": "Will the Federal Reserve Hike rates by 0bps at their April 2027 meeting?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-57.5",
-      "implied_prob": "0.625",
-      "true_prob": "0.05",
-      "confidence": "85",
-      "suggested_live_dollars": "0.39",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "39",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-09-24T07:54:20.009468Z",
-      "ticker": "KXNVVISIT-27JUN30-T50",
-      "title": "Will Nevada\u2019s statewide visitor volume for 2026 be above 50 million?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-54.5",
-      "implied_prob": "0.545",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.46",
-      "suggested_paper_dollars": "49.68",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "46",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-09-24T07:54:19.580214Z",
-      "ticker": "KXFEDDECISION-27JUL-H0",
-      "title": "Will the Federal Reserve Hike rates by 0bps at their July 2027 meeting?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-71.0",
-      "implied_prob": "0.76",
-      "true_prob": "0.05",
-      "confidence": "85",
-      "suggested_live_dollars": "0.5",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "25",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-09-24T07:54:19.296399Z",
-      "ticker": "KXAMZNA-28JANHEAD-1600000",
-      "title": "Will Amazon.com, Inc. report above 1600000 Employees (full-time and part-time; excludes contractors & temporary personnel) in 2026?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-68.5",
-      "implied_prob": "0.685",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.32",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "32",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-09-24T07:54:19.064735Z",
-      "ticker": "KXAMZNA-28JANHEAD-1575000",
-      "title": "Will Amazon.com, Inc. report above 1575000 Employees (full-time and part-time; excludes contractors & temporary personnel) in 2026?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-88.5",
-      "implied_prob": "0.885",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "12",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-09-24T07:54:18.842690Z",
-      "ticker": "KXAMZNA-28JANHEAD-1550000",
-      "title": "Will Amazon.com, Inc. report above 1550000 Employees (full-time and part-time; excludes contractors & temporary personnel) in 2026?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-92.5",
-      "implied_prob": "0.925",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "8",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-09-24T07:54:18.574867Z",
-      "ticker": "KXAMZNA-28JANHEAD-1525000",
-      "title": "Will Amazon.com, Inc. report above 1525000 Employees (full-time and part-time; excludes contractors & temporary personnel) in 2026?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-92.5",
-      "implied_prob": "0.925",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "50.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "8",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-09-24T07:54:18.320715Z",
-      "ticker": "KXNVDAA-28JANHEAD-46000",
-      "title": "Will NVIDIA Corporation report above 46000 total employees in 2027?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-92.0",
-      "implied_prob": "0.92",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.44",
-      "suggested_paper_dollars": "49.94",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "11",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-09-24T07:54:18.102868Z",
-      "ticker": "KXTSLAA-28JANDEL-1750000.0",
-      "title": "Will Tesla Inc. report Above 1.75 million total deliveries in 2026?",
-      "category": "Companies",
-      "direction": "YES",
-      "edge_pct": "19.0",
-      "implied_prob": "0.81",
-      "true_prob": "1.0",
-      "confidence": "75",
-      "suggested_live_dollars": "0.82",
-      "suggested_paper_dollars": "39.36",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "82",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-09-24T07:54:17.770510Z",
-      "ticker": "KXTSLAA-28JANDEL-1700000.0",
-      "title": "Will Tesla Inc. report Above 1.7 million total deliveries in 2026?",
-      "category": "Companies",
-      "direction": "YES",
-      "edge_pct": "16.5",
-      "implied_prob": "0.835",
-      "true_prob": "1.0",
-      "confidence": "75",
-      "suggested_live_dollars": "0.86",
-      "suggested_paper_dollars": "39.56",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "86",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-09-24T07:54:17.391136Z",
-      "ticker": "KXTSLAA-28JANDEL-1650000.0",
-      "title": "Will Tesla Inc. report Above 1.65 million total deliveries in 2026?",
-      "category": "Companies",
-      "direction": "YES",
-      "edge_pct": "10.5",
-      "implied_prob": "0.895",
-      "true_prob": "1.0",
-      "confidence": "68",
-      "suggested_live_dollars": "0.93",
-      "suggested_paper_dollars": "19.53",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "93",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-09-24T07:54:17.175499Z",
-      "ticker": "KXMETAA-28JANHEAD-68000",
-      "title": "Will Meta Platforms, Inc. report above 68000 Headcount in 2026?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-90.5",
-      "implied_prob": "0.905",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.51",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "17",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-09-24T07:54:16.851968Z",
-      "ticker": "KXFEDHIKE-2-27JUN30",
-      "title": "Will the Federal Reserve hike rates by June 30, 2027?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-38.6",
-      "implied_prob": "0.94",
-      "true_prob": "0.554",
-      "confidence": "85",
-      "suggested_live_dollars": "0.49",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "7",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-09-24T07:54:16.425819Z",
-      "ticker": "KXFEDHIKE-2-26DEC31",
-      "title": "Will the Federal Reserve hike rates by December 31, 2026?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-34.1",
-      "implied_prob": "0.895",
-      "true_prob": "0.554",
-      "confidence": "85",
-      "suggested_live_dollars": "0.44",
-      "suggested_paper_dollars": "49.94",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "11",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    }
-  ],
-  "recent_alerts": [
-    {
-      "timestamp": "2026-09-25T06:23:38.041504Z",
-      "ticker": "KXPCECORE-26AUG-T0.2",
-      "title": "Will the rate of core PCE inflation be above 0.2% in August 2026?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "12.5",
-      "implied_prob": "0.675",
-      "true_prob": "0.8",
-      "confidence": "68",
-      "suggested_live_dollars": "0.71",
-      "suggested_paper_dollars": "19.88",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "71",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-09-25T06:23:37.793728Z",
-      "ticker": "KXBRENTMON-26SEP3017-T103.99",
-      "title": "Will the brent crude oil close price be above 103.99 USD/Bbl on September 30, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "NO",
-      "edge_pct": "-24.55",
-      "implied_prob": "0.265",
-      "true_prob": "0.0195",
-      "confidence": "75",
-      "suggested_live_dollars": "0.74",
-      "suggested_paper_dollars": "39.96",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "74",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-09-25T06:23:37.619010Z",
-      "ticker": "KXBRENTMON-26SEP3017-T101.99",
-      "title": "Will the brent crude oil close price be above 101.99 USD/Bbl on September 30, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "NO",
-      "edge_pct": "-28.77",
-      "implied_prob": "0.33",
-      "true_prob": "0.0423",
-      "confidence": "85",
-      "suggested_live_dollars": "0.7",
-      "suggested_paper_dollars": "49.7",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "70",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-09-25T00:26:18.633248Z",
-      "ticker": "KXSOLMAXMON-SOL-26SEP30-12500",
-      "title": "Will SOL trimmed mean be above $125.00 by 11:59 PM ET on Sep 30, 2026?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-16.22",
-      "implied_prob": "0.36",
-      "true_prob": "0.1978",
-      "confidence": "70",
-      "suggested_live_dollars": "0.66",
-      "suggested_paper_dollars": "39.6",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "66",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-09-25T00:26:18.276930Z",
-      "ticker": "KXRAINNYCM-26SEP-4",
-      "title": "Rain in NYC in Sep 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-56.5",
-      "implied_prob": "0.655",
-      "true_prob": "0.09",
-      "confidence": "85",
-      "suggested_live_dollars": "0.36",
-      "suggested_paper_dollars": "49.68",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "36",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-09-25T00:26:17.930145Z",
-      "ticker": "KXWTIDIRY-26DEC31H1430-T85",
-      "title": "Will the price of WTI oil be above 85 on December 31, 2026 at 02:30 PM EST?",
-      "category": "Commodities",
-      "direction": "YES",
-      "edge_pct": "22.38",
-      "implied_prob": "0.45",
-      "true_prob": "0.6738",
-      "confidence": "75",
-      "suggested_live_dollars": "0.46",
-      "suggested_paper_dollars": "39.56",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "46",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-09-25T00:26:17.591360Z",
-      "ticker": "KXMETAA-28JANHEAD-71000",
-      "title": "Will Meta Platforms, Inc. report above 71000 Headcount in 2026?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-63.5",
-      "implied_prob": "0.635",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.41",
-      "suggested_paper_dollars": "49.61",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "41",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-09-25T00:26:17.152075Z",
-      "ticker": "KXMETAA-28JANHEAD-65000",
-      "title": "Will Meta Platforms, Inc. report above 65000 Headcount in 2026?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-91.0",
-      "implied_prob": "0.91",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.42",
-      "suggested_paper_dollars": "49.98",
+      "suggested_live_dollars": "0.14",
+      "suggested_paper_dollars": "14.56",
       "is_paper_bet": "1",
       "paper_entry_price_cents": "14",
       "outcome": "",
@@ -3001,10 +2600,10 @@
       "implied_prob": "0.735",
       "true_prob": "0.2875",
       "confidence": "85",
-      "suggested_live_dollars": "0.26",
-      "suggested_paper_dollars": "49.92",
+      "suggested_live_dollars": "0.29",
+      "suggested_paper_dollars": "49.88",
       "is_paper_bet": "1",
-      "paper_entry_price_cents": "26",
+      "paper_entry_price_cents": "29",
       "outcome": "",
       "resolved_at": "",
       "notes": "",
@@ -3648,14 +3247,14 @@
       "title": "Will the S&P 500 be above 6845.5 on Dec 31, 2026 at 4pm EST?",
       "category": "Financials",
       "direction": "NO",
-      "edge_pct": "-59.5",
-      "implied_prob": "0.735",
-      "true_prob": "0.14",
-      "confidence": "85",
-      "suggested_live_dollars": "0.27",
-      "suggested_paper_dollars": "49.95",
+      "edge_pct": "-87.5",
+      "implied_prob": "0.875",
+      "true_prob": "0.0",
+      "confidence": "95",
+      "suggested_live_dollars": "0.52",
+      "suggested_paper_dollars": "49.92",
       "is_paper_bet": "1",
-      "paper_entry_price_cents": "27",
+      "paper_entry_price_cents": "13",
       "outcome": "",
       "resolved_at": "",
       "notes": "",
@@ -3809,48 +3408,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-09-25T03:44:16.037117Z",
-      "ticker": "KXBTCMAX100-26-NOV",
-      "title": "Will Bitcoin be above $100000 by December 1, 2026 at 12:00AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-11.2",
-      "implied_prob": "0.265",
-      "true_prob": "0.153",
-      "confidence": "68",
-      "suggested_live_dollars": "0.75",
-      "suggested_paper_dollars": "19.5",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "75",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-09-25T03:44:14.849528Z",
-      "ticker": "KXBTCMINY-27JAN01-50000.00",
-      "title": "Will Bitcoin be below $50000.00 by Jan 1, 2027 at 12:00am ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-10.17",
-      "implied_prob": "0.105",
-      "true_prob": "0.0033",
-      "confidence": "73",
-      "suggested_live_dollars": "0.9",
-      "suggested_paper_dollars": "19.8",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "90",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -3876,9 +3433,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 64,
+      "current_cents": 68,
       "dollars_risked": 0,
-      "current_value": 1.28,
+      "current_value": 1.36,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-30T08:44:36.942577Z",
-  "last_scan_ts": "2026-09-30T08:44:36.942577Z",
+  "generated_at": "2026-09-30T20:42:01.670690Z",
+  "last_scan_ts": "2026-09-30T20:42:01.670690Z",
   "stats": {
-    "total_alerts": 15544,
+    "total_alerts": 15552,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -13,7 +13,7 @@
         "hit_rate": null
       },
       "Economics": {
-        "total": 3532,
+        "total": 3536,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -49,13 +49,13 @@
         "hit_rate": null
       },
       "Financials": {
-        "total": 2229,
+        "total": 2231,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "Commodities": {
-        "total": 1880,
+        "total": 1882,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,19 +69,19 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 3749,
+        "total": 3752,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "medium (15-25%)": {
-        "total": 2941,
+        "total": 2943,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 8854,
+        "total": 8857,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 10.1,
+      "balance": 10.07,
       "cash": 5.35,
       "peak": 11.46,
       "initial_balance": 10.0
@@ -101,15 +101,183 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-09-30T04:56:35.081189Z"
+    "updated_at": "2026-09-30T16:46:20.613120Z"
   },
   "cash_bal": 5.35,
-  "position_value": 4.75,
-  "account_value": 10.1,
-  "live_pnl": 0.1,
+  "position_value": 4.72,
+  "account_value": 10.07,
+  "live_pnl": 0.07,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-09-30T20:42:01.146461Z",
+      "ticker": "KXGRUBHUBAPP-26OCT08-T136",
+      "title": "Will Grubhub App Downloads for September 2026 be above 136 ?",
+      "category": "Financials",
+      "direction": "YES",
+      "edge_pct": "12.0",
+      "implied_prob": "0.88",
+      "true_prob": "1.0",
+      "confidence": "68",
+      "suggested_live_dollars": "0.9",
+      "suggested_paper_dollars": "19.8",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "90",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-09-30T20:42:00.793762Z",
+      "ticker": "KXWTIDIRY-26DEC31H1430-T90",
+      "title": "Will the price of WTI oil be above 90 on December 31, 2026 at 02:30 PM EST?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-18.7",
+      "implied_prob": "0.7",
+      "true_prob": "0.513",
+      "confidence": "75",
+      "suggested_live_dollars": "0.31",
+      "suggested_paper_dollars": "39.99",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "31",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-09-30T20:42:00.439619Z",
+      "ticker": "KXWTIDIRY-26DEC31H1430-T75",
+      "title": "Will the price of WTI oil be above 75 on December 31, 2026 at 02:30 PM EST?",
+      "category": "Commodities",
+      "direction": "YES",
+      "edge_pct": "9.31",
+      "implied_prob": "0.705",
+      "true_prob": "0.7981",
+      "confidence": "68",
+      "suggested_live_dollars": "0.74",
+      "suggested_paper_dollars": "19.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "74",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-09-30T20:41:59.427867Z",
+      "ticker": "KXRATECUT-26DEC31",
+      "title": "Will the Federal Reserve cut rates before 2027?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "56.0",
+      "implied_prob": "0.05",
+      "true_prob": "0.61",
+      "confidence": "90",
+      "suggested_live_dollars": "0.5",
+      "suggested_paper_dollars": "50.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "5",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-09-30T20:41:58.186304Z",
+      "ticker": "KXRATEHIKE-2026-3",
+      "title": "Will there be exactly 3 Fed rate hikes in 2026?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "23.0",
+      "implied_prob": "0.16",
+      "true_prob": "0.39",
+      "confidence": "75",
+      "suggested_live_dollars": "0.34",
+      "suggested_paper_dollars": "39.95",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "17",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-09-30T20:41:57.625665Z",
+      "ticker": "KXCPICOREYOY-26DEC-T2.5",
+      "title": "Will the rate of core CPI inflation be above 2.5% for the year ending in December 2026?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-13.02",
+      "implied_prob": "0.91",
+      "true_prob": "0.7798",
+      "confidence": "68",
+      "suggested_live_dollars": "0.13",
+      "suggested_paper_dollars": "13.91",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "13",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-09-30T20:41:57.278708Z",
+      "ticker": "KXCPIYOY-26DEC-T3.9",
+      "title": "Will the rate of CPI inflation be above 3.9% for the year ending in December 2026?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "47.48",
+      "implied_prob": "0.165",
+      "true_prob": "0.6398",
+      "confidence": "85",
+      "suggested_live_dollars": "0.36",
+      "suggested_paper_dollars": "49.86",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "18",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-09-30T20:41:56.877777Z",
+      "ticker": "KXTSLA-26OCTDELIV-475000",
+      "title": "Will Tesla Inc. report Above 475000 total deliveries in Q3 2026?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-76.5",
+      "implied_prob": "0.765",
+      "true_prob": "0.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.26",
+      "suggested_paper_dollars": "49.92",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "26",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-09-30T08:44:36.432060Z",
       "ticker": "KXFEDDECISION-26OCT-H25",
@@ -1978,198 +2146,177 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-09-29T20:32:06.969628Z",
-      "ticker": "KXRAIN-26SEP29-OKC",
-      "title": "Will it rain in Oklahoma City on Sep 29, 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-29.5",
-      "implied_prob": "0.395",
-      "true_prob": "0.1",
-      "confidence": "85",
-      "suggested_live_dollars": "0.62",
-      "suggested_paper_dollars": "49.6",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "62",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-09-29T20:32:06.633425Z",
-      "ticker": "KXRAIN-26SEP29-HOU",
-      "title": "Will it rain in Houston on Sep 29, 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-37.5",
-      "implied_prob": "0.555",
-      "true_prob": "0.18",
-      "confidence": "80",
-      "suggested_live_dollars": "0.45",
-      "suggested_paper_dollars": "49.95",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "45",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-09-29T20:32:06.308856Z",
-      "ticker": "KXRAIN-26SEP29-SEA",
-      "title": "Will it rain in Seattle on Sep 29, 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-23.5",
-      "implied_prob": "0.645",
-      "true_prob": "0.41",
-      "confidence": "70",
-      "suggested_live_dollars": "0.36",
-      "suggested_paper_dollars": "39.96",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "36",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-09-29T20:32:05.944608Z",
-      "ticker": "KXCPICOREYOY-26NOV-T2.3",
-      "title": "Will the rate of core CPI inflation be above 2.3% for the year ending in November 2026?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-14.95",
-      "implied_prob": "0.945",
-      "true_prob": "0.7955",
-      "confidence": "68",
-      "suggested_live_dollars": "0.16",
-      "suggested_paper_dollars": "20.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "8",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-09-29T20:32:05.595425Z",
-      "ticker": "KXCPIYOY-26NOV-T3.4",
-      "title": "Will the rate of CPI inflation be above 3.4% for the year ending in November 2026?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-26.45",
-      "implied_prob": "0.95",
-      "true_prob": "0.6855",
-      "confidence": "85",
-      "suggested_live_dollars": "0.49",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "7",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-09-29T20:32:05.271342Z",
-      "ticker": "KXRATEHIKE-2026-2",
-      "title": "Will there be exactly 2 Fed rate hikes in 2026?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-12.0",
-      "implied_prob": "0.49",
-      "true_prob": "0.37",
-      "confidence": "68",
-      "suggested_live_dollars": "0.52",
-      "suggested_paper_dollars": "19.76",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "52",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-09-29T20:32:04.920661Z",
-      "ticker": "KXFEDDECISION-27JAN-H25",
-      "title": "Will the Federal Reserve Hike rates by 25bps at their January 2027 meeting?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-12.5",
-      "implied_prob": "0.495",
-      "true_prob": "0.37",
-      "confidence": "73",
-      "suggested_live_dollars": "0.53",
-      "suggested_paper_dollars": "19.61",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "53",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-09-29T20:32:04.525226Z",
-      "ticker": "KXFEDDECISION-27MAR-H25",
-      "title": "Will the Federal Reserve Hike rates by 25bps at their March 2027 meeting?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-13.5",
-      "implied_prob": "0.555",
-      "true_prob": "0.42",
-      "confidence": "68",
-      "suggested_live_dollars": "0.47",
-      "suggested_paper_dollars": "19.74",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "47",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-09-29T20:32:03.838964Z",
-      "ticker": "KXFEDHIKE-2-27JUN30",
-      "title": "Will the Federal Reserve hike rates by June 30, 2027?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-52.0",
-      "implied_prob": "0.94",
-      "true_prob": "0.42",
-      "confidence": "85",
-      "suggested_live_dollars": "0.49",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "7",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "recent_alerts": [
+    {
+      "timestamp": "2026-09-30T20:42:01.146461Z",
+      "ticker": "KXGRUBHUBAPP-26OCT08-T136",
+      "title": "Will Grubhub App Downloads for September 2026 be above 136 ?",
+      "category": "Financials",
+      "direction": "YES",
+      "edge_pct": "12.0",
+      "implied_prob": "0.88",
+      "true_prob": "1.0",
+      "confidence": "68",
+      "suggested_live_dollars": "0.9",
+      "suggested_paper_dollars": "19.8",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "90",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-09-30T20:42:00.793762Z",
+      "ticker": "KXWTIDIRY-26DEC31H1430-T90",
+      "title": "Will the price of WTI oil be above 90 on December 31, 2026 at 02:30 PM EST?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-18.7",
+      "implied_prob": "0.7",
+      "true_prob": "0.513",
+      "confidence": "75",
+      "suggested_live_dollars": "0.31",
+      "suggested_paper_dollars": "39.99",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "31",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-09-30T20:42:00.439619Z",
+      "ticker": "KXWTIDIRY-26DEC31H1430-T75",
+      "title": "Will the price of WTI oil be above 75 on December 31, 2026 at 02:30 PM EST?",
+      "category": "Commodities",
+      "direction": "YES",
+      "edge_pct": "9.31",
+      "implied_prob": "0.705",
+      "true_prob": "0.7981",
+      "confidence": "68",
+      "suggested_live_dollars": "0.74",
+      "suggested_paper_dollars": "19.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "74",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-09-30T20:41:59.427867Z",
+      "ticker": "KXRATECUT-26DEC31",
+      "title": "Will the Federal Reserve cut rates before 2027?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "56.0",
+      "implied_prob": "0.05",
+      "true_prob": "0.61",
+      "confidence": "90",
+      "suggested_live_dollars": "0.5",
+      "suggested_paper_dollars": "50.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "5",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-09-30T20:41:58.186304Z",
+      "ticker": "KXRATEHIKE-2026-3",
+      "title": "Will there be exactly 3 Fed rate hikes in 2026?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "23.0",
+      "implied_prob": "0.16",
+      "true_prob": "0.39",
+      "confidence": "75",
+      "suggested_live_dollars": "0.34",
+      "suggested_paper_dollars": "39.95",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "17",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-09-30T20:41:57.625665Z",
+      "ticker": "KXCPICOREYOY-26DEC-T2.5",
+      "title": "Will the rate of core CPI inflation be above 2.5% for the year ending in December 2026?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-13.02",
+      "implied_prob": "0.91",
+      "true_prob": "0.7798",
+      "confidence": "68",
+      "suggested_live_dollars": "0.13",
+      "suggested_paper_dollars": "13.91",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "13",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-09-30T20:41:57.278708Z",
+      "ticker": "KXCPIYOY-26DEC-T3.9",
+      "title": "Will the rate of CPI inflation be above 3.9% for the year ending in December 2026?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "47.48",
+      "implied_prob": "0.165",
+      "true_prob": "0.6398",
+      "confidence": "85",
+      "suggested_live_dollars": "0.36",
+      "suggested_paper_dollars": "49.86",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "18",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-09-30T20:41:56.877777Z",
+      "ticker": "KXTSLA-26OCTDELIV-475000",
+      "title": "Will Tesla Inc. report Above 475000 total deliveries in Q3 2026?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-76.5",
+      "implied_prob": "0.765",
+      "true_prob": "0.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.26",
+      "suggested_paper_dollars": "49.92",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "26",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-09-30T08:44:36.432060Z",
       "ticker": "KXFEDDECISION-26OCT-H25",
@@ -3051,174 +3198,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-09-30T08:44:28.703544Z",
-      "ticker": "KXSOLMAXY-27JAN01-160",
-      "title": "Will the spot price of Solana be above $160.00 before Jan 1, 2027 at 12:00 AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-20.75",
-      "implied_prob": "0.34",
-      "true_prob": "0.1325",
-      "confidence": "70",
-      "suggested_live_dollars": "0.7",
-      "suggested_paper_dollars": "39.9",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "70",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-09-30T08:44:28.499831Z",
-      "ticker": "KXSOLMAXY-27JAN01-150",
-      "title": "Will the spot price of Solana be above $150.00 before Jan 1, 2027 at 12:00 AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-23.99",
-      "implied_prob": "0.43",
-      "true_prob": "0.1901",
-      "confidence": "75",
-      "suggested_live_dollars": "0.59",
-      "suggested_paper_dollars": "39.53",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "59",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-09-30T08:44:28.091943Z",
-      "ticker": "KXSUSPENDGASTAX-26MAY-JAN01",
-      "title": "Will legislation that would temporarily suspend or reduce the federal excise tax on gasoline become law before Jan 1, 2027?",
-      "category": "Politics",
-      "direction": "YES",
-      "edge_pct": "54.5",
-      "implied_prob": "0.095",
-      "true_prob": "0.64",
-      "confidence": "85",
-      "suggested_live_dollars": "0.44",
-      "suggested_paper_dollars": "49.94",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "11",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-09-30T08:44:27.854162Z",
-      "ticker": "KXTESLASEMI-27JAN-1000",
-      "title": "Will Tesla Inc report above 1000 Semi Trucks Produced before Jan 2027?",
-      "category": "Companies",
-      "direction": "NO",
-      "edge_pct": "-28.5",
-      "implied_prob": "0.285",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.73",
-      "suggested_paper_dollars": "49.64",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "73",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-09-30T08:44:27.497736Z",
-      "ticker": "KXRATEHIKE-2026-2",
-      "title": "Will there be exactly 2 Fed rate hikes in 2026?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-15.5",
-      "implied_prob": "0.515",
-      "true_prob": "0.36",
-      "confidence": "75",
-      "suggested_live_dollars": "0.49",
-      "suggested_paper_dollars": "39.69",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "49",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-09-30T08:44:27.141963Z",
-      "ticker": "KXCPICOREYOY-26DEC-T2.6",
-      "title": "Will the rate of core CPI inflation be above 2.6% for the year ending in December 2026?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-13.95",
-      "implied_prob": "0.905",
-      "true_prob": "0.7655",
-      "confidence": "68",
-      "suggested_live_dollars": "0.11",
-      "suggested_paper_dollars": "19.91",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "11",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-09-30T08:44:26.922314Z",
-      "ticker": "KXCPIYOY-26DEC-T3.8",
-      "title": "Will the rate of CPI inflation be above 3.8% for the year ending in December 2026?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "41.55",
-      "implied_prob": "0.23",
-      "true_prob": "0.6455",
-      "confidence": "85",
-      "suggested_live_dollars": "0.34",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "34",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-09-30T08:44:24.648713Z",
-      "ticker": "KXFEDDECISION-27JAN-H25",
-      "title": "Will the Federal Reserve Hike rates by 25bps at their January 2027 meeting?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-13.0",
-      "implied_prob": "0.49",
-      "true_prob": "0.36",
-      "confidence": "73",
-      "suggested_live_dollars": "0.53",
-      "suggested_paper_dollars": "19.61",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "53",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -3232,9 +3211,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 56,
+      "current_cents": 55,
       "dollars_risked": 0,
-      "current_value": 0.56,
+      "current_value": 0.55,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -3244,9 +3223,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 62,
+      "current_cents": 61,
       "dollars_risked": 0,
-      "current_value": 1.24,
+      "current_value": 1.22,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

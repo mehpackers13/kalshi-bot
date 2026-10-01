@@ -8,6 +8,9 @@ Run manually: python generate_data.py
 """
 
 import csv
+import config
+from safe_state import atomic_json
+from time_utils import last_completed_scan
 import json
 import datetime
 from pathlib import Path
@@ -227,7 +230,7 @@ def main():
 
     data = {
         "generated_at":    generated,
-        "last_scan_ts":    generated,
+        "last_scan_ts":    last_completed_scan(BASE / "bot.log"),
         "stats":           stats,
         "bankroll":        bankroll,
         "cash_bal":        cash_bal,
@@ -243,12 +246,11 @@ def main():
         "model_confidence": models.get("category_confidence", {}),
         "bets_placed":     bets_placed,
         "open_positions":  open_positions,
-        "dry_run":         False,
+        "dry_run":         config.DRY_RUN,
     }
 
     out = DOCS / "data.json"
-    with open(out, "w") as f:
-        json.dump(data, f, indent=2)
+    atomic_json(out, data)
 
     u_sign = "+" if unit_total >= 0 else ""
     print(

@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-03T03:56:55.698360Z",
-  "last_scan_ts": "2026-10-03T03:56:55.698360Z",
+  "generated_at": "2026-10-03T08:32:59.424744Z",
+  "last_scan_ts": "2026-10-03T08:32:59.424744Z",
   "stats": {
-    "total_alerts": 15863,
+    "total_alerts": 15865,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -13,7 +13,7 @@
         "hit_rate": null
       },
       "Economics": {
-        "total": 3669,
+        "total": 3670,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -25,7 +25,7 @@
         "hit_rate": null
       },
       "Crypto": {
-        "total": 4531,
+        "total": 4532,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,13 +69,13 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 3831,
+        "total": 3832,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "medium (15-25%)": {
-        "total": 3014,
+        "total": 3015,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 10.03,
+      "balance": 10.08,
       "cash": 5.35,
       "peak": 11.46,
       "initial_balance": 10.0
@@ -101,15 +101,57 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-10-03T00:40:31.745623Z"
+    "updated_at": "2026-10-03T04:42:52.614156Z"
   },
   "cash_bal": 5.35,
-  "position_value": 4.68,
-  "account_value": 10.03,
-  "live_pnl": 0.03,
+  "position_value": 4.73,
+  "account_value": 10.08,
+  "live_pnl": 0.08,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-10-03T08:32:58.959606Z",
+      "ticker": "KXXRPMAXY-XRP-26DEC31-250",
+      "title": "Will XRP trimmed mean be above $2.50 by 11:59 PM ET on Dec 31, 2026?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-12.93",
+      "implied_prob": "0.275",
+      "true_prob": "0.1457",
+      "confidence": "63",
+      "suggested_live_dollars": "0.78",
+      "suggested_paper_dollars": "19.5",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "78",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-03T08:32:58.591600Z",
+      "ticker": "KXFEDDECISION-27MAR-H0",
+      "title": "Will the Federal Reserve Hike rates by 0bps at their March 2027 meeting?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-18.1",
+      "implied_prob": "0.455",
+      "true_prob": "0.274",
+      "confidence": "75",
+      "suggested_live_dollars": "0.57",
+      "suggested_paper_dollars": "39.9",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "57",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-10-03T03:56:55.173058Z",
       "ticker": "KXAMZNCC-26OCT07-T108",
@@ -3305,6 +3347,48 @@
   ],
   "recent_alerts": [
     {
+      "timestamp": "2026-10-03T08:32:58.959606Z",
+      "ticker": "KXXRPMAXY-XRP-26DEC31-250",
+      "title": "Will XRP trimmed mean be above $2.50 by 11:59 PM ET on Dec 31, 2026?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-12.93",
+      "implied_prob": "0.275",
+      "true_prob": "0.1457",
+      "confidence": "63",
+      "suggested_live_dollars": "0.78",
+      "suggested_paper_dollars": "19.5",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "78",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-03T08:32:58.591600Z",
+      "ticker": "KXFEDDECISION-27MAR-H0",
+      "title": "Will the Federal Reserve Hike rates by 0bps at their March 2027 meeting?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-18.1",
+      "implied_prob": "0.455",
+      "true_prob": "0.274",
+      "confidence": "75",
+      "suggested_live_dollars": "0.57",
+      "suggested_paper_dollars": "39.9",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "57",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
       "timestamp": "2026-10-03T03:56:55.173058Z",
       "ticker": "KXAMZNCC-26OCT07-T108",
       "title": "Will Amazon Credit Card Spend for September 2026 be above 108 ?",
@@ -4311,48 +4395,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-10-03T03:56:41.462367Z",
-      "ticker": "KXETHMINY-27JAN01-1500",
-      "title": "Will Ethereum reach below $1500.00 by Jan 1, 2027 at 12:00AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-12.47",
-      "implied_prob": "0.125",
-      "true_prob": "0.0003",
-      "confidence": "68",
-      "suggested_live_dollars": "0.88",
-      "suggested_paper_dollars": "19.36",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "88",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-10-03T03:56:41.202534Z",
-      "ticker": "KXSOLMAXY-27JAN01-200",
-      "title": "Will the spot price of Solana be above $200.00 before Jan 1, 2027 at 12:00 AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-16.11",
-      "implied_prob": "0.185",
-      "true_prob": "0.0239",
-      "confidence": "70",
-      "suggested_live_dollars": "0.89",
-      "suggested_paper_dollars": "39.16",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "89",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -4390,9 +4432,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 53,
+      "current_cents": 55,
       "dollars_risked": 0,
-      "current_value": 1.06,
+      "current_value": 1.1,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -4402,9 +4444,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 95,
+      "current_cents": 96,
       "dollars_risked": 0,
-      "current_value": 0.95,
+      "current_value": 0.96,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

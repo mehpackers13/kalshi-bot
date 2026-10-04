@@ -104511,3 +104511,77 @@ Total modelable markets evaluated: 0
 [2026-10-04 01:31:49 ET] [INFO] Scan complete — 98 alerts sent
 [2026-10-04 01:31:49 ET] [INFO] ============================================================
 [2026-10-04 01:31:49 ET] [INFO] Scan job complete
+[2026-10-04 11:43:48 ET] [INFO] Scan job starting
+[2026-10-04 11:43:48 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-10-04 11:43:48 ET] [INFO] ============================================================
+[2026-10-04 11:43:48 ET] [INFO] Starting market scan
+[2026-10-04 11:43:49 ET] [INFO] Portfolio value: $5.35 cash + $4.66 positions = $10.01
+[2026-10-04 11:43:49 ET] [INFO] Cash: $5.35  |  Positions: $4.66  |  Total: $10.01  |  Peak: $11.46
+[2026-10-04 11:43:50 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-10-04 11:43:50 ET] [WARN] API GET /markets → HTTP 400
+[2026-10-04 11:44:08 ET] [INFO] Fetched 96091 open markets via events endpoint across 50 pages
+[2026-10-04 11:44:08 ET] [INFO] Fetched 96091 open markets
+[2026-10-04 11:44:09 ET] [INFO] Parsed 88127 valid markets
+[2026-10-04 11:44:09 ET] [INFO] Categories: {'Sports': 41559, 'Elections': 21294, 'Entertainment': 7295, 'Financials': 6128, 'Economics': 4201, 'Politics': 2319, 'Mentions': 1220, 'Climate and Weather': 1086}
+[2026-10-04 11:51:21 ET] [INFO]   CPI model: threshold=10.0% TNX=5.28% → P=0.200
+[2026-10-04 11:52:01 ET] [INFO]   price model: TSLA spot=370.59 target=1.65 vol=43.4% T=13045.3h → P=1.000
+[2026-10-04 12:47:52 ET] [INFO]   price model: AMZN spot=251.52 target=1.56 vol=24.5% T=3444.3h → P=1.000
+[2026-10-04 12:47:52 ET] [INFO]   price model: AMZN spot=251.52 target=1.58 vol=24.5% T=3444.3h → P=1.000
+[2026-10-04 13:00:18 ET] [INFO]   fed model: implied_rate=3.930% current≈3.993% diff=-6.3bps → P=0.374
+[2026-10-04 13:06:36 ET] [INFO]   CPI model: threshold=2.6% TNX=5.28% → P=0.768
+[2026-10-04 13:06:36 ET] [INFO]   CPI model: threshold=2.7% TNX=5.28% → P=0.758
+[2026-10-04 13:37:38 ET] [INFO]   price model: SOL-USD spot=121.64 target=500.00 vol=51.8% T=2125.3h → P=0.000
+[2026-10-04 13:38:01 ET] [INFO]   price model: ETH-USD spot=2702.00 target=1250.00 vol=33.3% T=2125.3h → P=0.000
+[2026-10-04 13:38:01 ET] [INFO]   price model: ETH-USD spot=2702.00 target=1000.00 vol=33.3% T=2125.3h → P=0.000
+[2026-10-04 13:38:02 ET] [INFO]   price model: ETH-USD spot=2702.00 target=5000.00 vol=33.3% T=2125.3h → P=0.000
+[2026-10-04 13:38:03 ET] [INFO]   price model: BTC-USD spot=85359.21 target=50000.00 vol=31.6% T=2125.3h → P=0.000
+[2026-10-04 13:38:03 ET] [INFO]   price model: BTC-USD spot=85359.21 target=45000.00 vol=31.6% T=2125.3h → P=0.000
+[2026-10-04 13:38:33 ET] [INFO]   price model: DIA spot=511.10 target=6.00 vol=10.3% T=2125.3h → P=1.000
+[2026-10-04 13:38:53 ET] [INFO]   price model: BTC-USD spot=85336.79 target=129999.00 vol=31.6% T=2125.2h → P=0.003
+[2026-10-04 13:38:59 ET] [INFO]   price model: GC=F spot=4162.30 target=4500.00 vol=19.9% T=2118.3h → P=0.213
+[2026-10-04 13:38:59 ET] [INFO]   EDGE FOUND: KXGOLDDIRY-26DEC31H1700-T4500 | implied=32.5% true=21.3% edge=-11.2% dir=NO conf=68
+[2026-10-04 13:39:13 ET] [INFO]   price model: CL=F spot=91.11 target=80.00 vol=46.5% T=2115.8h → P=0.715
+[2026-10-04 13:39:13 ET] [INFO]   price model: CL=F spot=91.11 target=85.00 vol=46.5% T=2115.8h → P=0.619
+[2026-10-04 13:39:14 ET] [INFO]   price model: CL=F spot=91.11 target=90.00 vol=46.5% T=2115.8h → P=0.521
+[2026-10-04 13:39:14 ET] [INFO]   EDGE FOUND: KXWTIDIRY-26DEC31H1430-T90 | implied=42.5% true=52.1% edge=+9.6% dir=YES conf=68
+[2026-10-04 13:55:47 ET] [INFO]   CPI model: threshold=3.6% TNX=5.28% → P=0.668
+[2026-10-04 13:55:47 ET] [INFO]   CPI model: threshold=3.7% TNX=5.28% → P=0.658
+[2026-10-04 13:55:50 ET] [INFO]   CPI model: threshold=2.6% TNX=5.28% → P=0.768
+[2026-10-04 14:27:05 ET] [INFO]   price model: NFLX spot=67.06 target=58.00 vol=34.3% T=84.2h → P=1.000
+[2026-10-04 14:27:05 ET] [INFO]   EDGE FOUND: KXNFLXAPP-26OCT08-T58 | implied=63.0% true=100.0% edge=+37.0% dir=YES conf=85
+[2026-10-04 14:27:15 ET] [INFO]   price model: DIA spot=511.10 target=142.00 vol=10.3% T=84.2h → P=1.000
+[2026-10-04 14:27:15 ET] [INFO]   EDGE FOUND: KXGRUBHUBAPP-26OCT08-T142 | implied=91.0% true=100.0% edge=+9.0% dir=YES conf=68
+[2026-10-04 14:27:24 ET] [INFO]   price model: DIA spot=511.10 target=91.00 vol=10.3% T=84.2h → P=1.000
+[2026-10-04 14:27:24 ET] [INFO]   EDGE FOUND: KXDISNEYAPP-26OCT08-T91 | implied=91.0% true=100.0% edge=+9.0% dir=YES conf=68
+[2026-10-04 14:28:07 ET] [INFO]   CPI model: threshold=2.3% TNX=5.28% → P=0.798
+[2026-10-04 14:46:42 ET] [WARN]   weather model: boston no forecast for 2027-10-03
+[2026-10-04 14:46:43 ET] [INFO]   weather model: new york city rain 2026-10-04 forecast=18% → P=0.180
+[2026-10-04 14:46:43 ET] [INFO]   EDGE FOUND: KXRAIN-26OCT04-NYC | implied=89.5% true=18.0% edge=-71.5% dir=NO conf=80
+[2026-10-04 14:46:44 ET] [INFO]   weather model: austin rain 2026-10-04 forecast=24% → P=0.240
+[2026-10-04 14:46:44 ET] [INFO]   EDGE FOUND: KXRAIN-26OCT04-AUS | implied=55.5% true=24.0% edge=-31.5% dir=NO conf=80
+[2026-10-04 14:46:45 ET] [INFO]   weather model: boston rain 2026-10-04 forecast=14% → P=0.140
+[2026-10-04 14:46:45 ET] [INFO]   EDGE FOUND: KXRAIN-26OCT04-BOS | implied=50.0% true=14.0% edge=-36.0% dir=NO conf=80
+[2026-10-04 14:46:46 ET] [INFO]   weather model: atlanta rain 2026-10-04 forecast=61% → P=0.610
+[2026-10-04 14:46:46 ET] [INFO]   EDGE FOUND: KXRAIN-26OCT04-ATL | implied=94.5% true=61.0% edge=-33.5% dir=NO conf=80
+[2026-10-04 14:46:47 ET] [INFO]   weather model: houston rain 2026-10-04 forecast=38% → P=0.380
+[2026-10-04 14:46:47 ET] [INFO]   EDGE FOUND: KXRAIN-26OCT04-HOU | implied=59.5% true=38.0% edge=-21.5% dir=NO conf=70
+[2026-10-04 14:51:31 ET] [INFO] Checked 88029 markets | Modelable: 88029 | Edges found: 10
+[2026-10-04 14:51:31 ET] [INFO]   Skipping KXGOLDDIRY-26DEC31H1700-T4500 — suggested bet too small to be meaningful
+[2026-10-04 14:51:31 ET] [INFO]   Skipping KXWTIDIRY-26DEC31H1430-T90 — suggested bet too small to be meaningful
+[2026-10-04 14:51:31 ET] [INFO]   Skipping KXNFLXAPP-26OCT08-T58 — suggested bet too small to be meaningful
+[2026-10-04 14:51:31 ET] [INFO]   Skipping KXGRUBHUBAPP-26OCT08-T142 — suggested bet too small to be meaningful
+[2026-10-04 14:51:32 ET] [INFO] [Discord] Trade alert sent: KXDISNEYAPP-26OCT08-T91
+[2026-10-04 14:51:32 ET] [WARN] AUTO-BET SKIP KXDISNEYAPP-26OCT08-T91: exposure 41.2% ≥ 25% limit ($7.00 of $17.01 in open positions)
+[2026-10-04 14:51:32 ET] [INFO] [Discord] Trade alert sent: KXRAIN-26OCT04-NYC
+[2026-10-04 14:51:32 ET] [WARN] AUTO-BET SKIP KXRAIN-26OCT04-NYC: exposure 41.2% ≥ 25% limit ($7.00 of $17.01 in open positions)
+[2026-10-04 14:51:33 ET] [INFO] [Discord] Trade alert sent: KXRAIN-26OCT04-AUS
+[2026-10-04 14:51:33 ET] [WARN] AUTO-BET SKIP KXRAIN-26OCT04-AUS: exposure 41.2% ≥ 25% limit ($7.00 of $17.01 in open positions)
+[2026-10-04 14:51:33 ET] [INFO] [Discord] Trade alert sent: KXRAIN-26OCT04-BOS
+[2026-10-04 14:51:33 ET] [WARN] AUTO-BET SKIP KXRAIN-26OCT04-BOS: exposure 41.2% ≥ 25% limit ($7.00 of $17.01 in open positions)
+[2026-10-04 14:51:33 ET] [INFO] [Discord] Trade alert sent: KXRAIN-26OCT04-ATL
+[2026-10-04 14:51:33 ET] [WARN] AUTO-BET SKIP KXRAIN-26OCT04-ATL: exposure 41.2% ≥ 25% limit ($7.00 of $17.01 in open positions)
+[2026-10-04 14:51:34 ET] [INFO] [Discord] Trade alert sent: KXRAIN-26OCT04-HOU
+[2026-10-04 14:51:34 ET] [WARN] AUTO-BET SKIP KXRAIN-26OCT04-HOU: exposure 41.2% ≥ 25% limit ($7.00 of $17.01 in open positions)
+[2026-10-04 14:51:34 ET] [INFO] Scan complete — 6 alerts sent
+[2026-10-04 14:51:34 ET] [INFO] ============================================================
+[2026-10-04 14:51:34 ET] [INFO] Scan job complete

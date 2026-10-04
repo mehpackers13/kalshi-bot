@@ -104585,3 +104585,64 @@ Total modelable markets evaluated: 0
 [2026-10-04 14:51:34 ET] [INFO] Scan complete — 6 alerts sent
 [2026-10-04 14:51:34 ET] [INFO] ============================================================
 [2026-10-04 14:51:34 ET] [INFO] Scan job complete
+[2026-10-04 15:29:36 ET] [INFO] Scan job starting
+[2026-10-04 15:29:37 ET] [INFO] Kalshi API key auth OK ✅  balance: $5.35
+[2026-10-04 15:29:37 ET] [INFO] ============================================================
+[2026-10-04 15:29:37 ET] [INFO] Starting market scan
+[2026-10-04 15:29:38 ET] [INFO] Portfolio value: $5.35 cash + $4.60 positions = $9.95
+[2026-10-04 15:29:38 ET] [INFO] Cash: $5.35  |  Positions: $4.60  |  Total: $9.95  |  Peak: $11.46
+[2026-10-04 15:29:38 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-10-04 15:29:39 ET] [WARN] API GET /markets → HTTP 400
+[2026-10-04 15:29:56 ET] [INFO] Fetched 96572 open markets via events endpoint across 50 pages
+[2026-10-04 15:29:56 ET] [INFO] Fetched 96572 open markets
+[2026-10-04 15:29:57 ET] [INFO] Parsed 88834 valid markets
+[2026-10-04 15:29:57 ET] [INFO] Categories: {'Sports': 42245, 'Elections': 21277, 'Entertainment': 7375, 'Financials': 6032, 'Economics': 4225, 'Politics': 2308, 'Mentions': 1204, 'Climate and Weather': 1074}
+[2026-10-04 15:38:18 ET] [INFO]   CPI model: threshold=10.0% TNX=5.28% → P=0.200
+[2026-10-04 15:39:05 ET] [INFO]   price model: TSLA spot=370.59 target=1.65 vol=43.4% T=13041.5h → P=1.000
+[2026-10-04 16:42:03 ET] [INFO]   price model: AMZN spot=251.52 target=1.56 vol=24.5% T=3440.5h → P=1.000
+[2026-10-04 16:42:03 ET] [INFO]   price model: AMZN spot=251.52 target=1.58 vol=24.5% T=3440.5h → P=1.000
+[2026-10-04 16:55:52 ET] [INFO]   fed model: implied_rate=3.930% current≈3.993% diff=-6.3bps → P=0.374
+[2026-10-04 17:02:42 ET] [INFO]   CPI model: threshold=2.6% TNX=5.28% → P=0.768
+[2026-10-04 17:02:42 ET] [INFO]   CPI model: threshold=2.7% TNX=5.28% → P=0.758
+[2026-10-04 17:34:03 ET] [INFO]   price model: TSLA spot=370.59 target=5000.00 vol=43.4% T=2131.5h → P=0.000
+[2026-10-04 17:34:03 ET] [INFO]   EDGE FOUND: KXTESLASEMI-27JAN-5000 | implied=17.0% true=0.0% edge=-17.0% dir=NO conf=75
+[2026-10-04 17:38:03 ET] [INFO]   price model: ETH-USD spot=2705.86 target=1250.00 vol=33.3% T=2121.5h → P=0.000
+[2026-10-04 17:38:04 ET] [INFO]   price model: ETH-USD spot=2705.86 target=1000.00 vol=33.3% T=2121.5h → P=0.000
+[2026-10-04 17:38:05 ET] [INFO]   price model: ETH-USD spot=2705.86 target=5000.00 vol=33.3% T=2121.5h → P=0.000
+[2026-10-04 17:38:06 ET] [INFO]   price model: BTC-USD spot=85959.44 target=50000.00 vol=31.8% T=2121.5h → P=0.000
+[2026-10-04 17:38:06 ET] [INFO]   price model: BTC-USD spot=85959.44 target=45000.00 vol=31.8% T=2121.5h → P=0.000
+[2026-10-04 17:38:40 ET] [INFO]   price model: DIA spot=511.10 target=6.00 vol=10.3% T=2121.5h → P=1.000
+[2026-10-04 17:39:03 ET] [INFO]   price model: BTC-USD spot=85978.10 target=129999.00 vol=31.8% T=2121.5h → P=0.004
+[2026-10-04 17:39:10 ET] [INFO]   price model: GC=F spot=4162.30 target=4500.00 vol=19.9% T=2114.5h → P=0.212
+[2026-10-04 17:39:10 ET] [INFO]   EDGE FOUND: KXGOLDDIRY-26DEC31H1700-T4500 | implied=34.0% true=21.2% edge=-12.8% dir=NO conf=68
+[2026-10-04 17:39:10 ET] [INFO]   price model: GC=F spot=4162.30 target=4600.00 vol=19.9% T=2114.5h → P=0.153
+[2026-10-04 17:39:27 ET] [INFO]   price model: CL=F spot=91.11 target=80.00 vol=46.5% T=2112.0h → P=0.715
+[2026-10-04 17:39:27 ET] [INFO]   price model: CL=F spot=91.11 target=85.00 vol=46.5% T=2112.0h → P=0.619
+[2026-10-04 17:39:27 ET] [INFO]   price model: CL=F spot=91.11 target=90.00 vol=46.5% T=2112.0h → P=0.521
+[2026-10-04 17:58:31 ET] [INFO]   CPI model: threshold=3.6% TNX=5.28% → P=0.668
+[2026-10-04 17:58:31 ET] [INFO]   EDGE FOUND: KXCPIYOY-26NOV-T3.6 | implied=83.0% true=66.8% edge=-16.2% dir=NO conf=75
+[2026-10-04 17:58:31 ET] [INFO]   CPI model: threshold=3.7% TNX=5.28% → P=0.658
+[2026-10-04 17:58:34 ET] [INFO]   CPI model: threshold=2.6% TNX=5.28% → P=0.768
+[2026-10-04 18:32:48 ET] [INFO]   price model: NFLX spot=67.06 target=58.00 vol=34.3% T=80.5h → P=1.000
+[2026-10-04 18:32:48 ET] [INFO]   EDGE FOUND: KXNFLXAPP-26OCT08-T58 | implied=80.5% true=100.0% edge=+19.5% dir=YES conf=75
+[2026-10-04 18:34:01 ET] [INFO]   CPI model: threshold=2.3% TNX=5.28% → P=0.798
+[2026-10-04 18:34:53 ET] [INFO]   price model: AMZN spot=251.52 target=106.00 vol=24.5% T=55.0h → P=1.000
+[2026-10-04 18:34:53 ET] [INFO]   EDGE FOUND: KXAMZNCC-26OCT07-T106 | implied=86.5% true=100.0% edge=+13.5% dir=YES conf=68
+[2026-10-04 18:34:53 ET] [INFO]   price model: AMZN spot=251.52 target=112.00 vol=24.5% T=55.0h → P=1.000
+[2026-10-04 18:34:53 ET] [INFO]   EDGE FOUND: KXAMZNCC-26OCT07-T112 | implied=91.0% true=100.0% edge=+9.0% dir=YES conf=68
+[2026-10-04 18:34:54 ET] [INFO]   price model: AMZN spot=251.52 target=116.00 vol=24.5% T=55.0h → P=1.000
+[2026-10-04 19:01:37 ET] [INFO] Checked 88734 markets | Modelable: 88734 | Edges found: 6
+[2026-10-04 19:01:38 ET] [INFO] [Discord] Trade alert sent: KXTESLASEMI-27JAN-5000
+[2026-10-04 19:01:38 ET] [WARN] AUTO-BET SKIP KXTESLASEMI-27JAN-5000: exposure 41.3% ≥ 25% limit ($7.00 of $16.95 in open positions)
+[2026-10-04 19:01:38 ET] [INFO] [Discord] Trade alert sent: KXGOLDDIRY-26DEC31H1700-T4500
+[2026-10-04 19:01:38 ET] [WARN] AUTO-BET SKIP KXGOLDDIRY-26DEC31H1700-T4500: exposure 41.3% ≥ 25% limit ($7.00 of $16.95 in open positions)
+[2026-10-04 19:01:38 ET] [INFO] [Discord] Trade alert sent: KXCPIYOY-26NOV-T3.6
+[2026-10-04 19:01:38 ET] [WARN] AUTO-BET SKIP KXCPIYOY-26NOV-T3.6: exposure 41.3% ≥ 25% limit ($7.00 of $16.95 in open positions)
+[2026-10-04 19:01:39 ET] [INFO] [Discord] Trade alert sent: KXNFLXAPP-26OCT08-T58
+[2026-10-04 19:01:39 ET] [WARN] AUTO-BET SKIP KXNFLXAPP-26OCT08-T58: exposure 41.3% ≥ 25% limit ($7.00 of $16.95 in open positions)
+[2026-10-04 19:01:39 ET] [INFO]   Skipping KXAMZNCC-26OCT07-T106 — suggested bet too small to be meaningful
+[2026-10-04 19:01:39 ET] [INFO] [Discord] Trade alert sent: KXAMZNCC-26OCT07-T112
+[2026-10-04 19:01:39 ET] [WARN] AUTO-BET SKIP KXAMZNCC-26OCT07-T112: exposure 41.3% ≥ 25% limit ($7.00 of $16.95 in open positions)
+[2026-10-04 19:01:39 ET] [INFO] Scan complete — 5 alerts sent
+[2026-10-04 19:01:39 ET] [INFO] ============================================================
+[2026-10-04 19:01:39 ET] [INFO] Scan job complete

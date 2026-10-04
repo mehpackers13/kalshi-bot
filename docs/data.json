@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-04T18:51:34.687432Z",
-  "last_scan_ts": "2026-10-04T18:51:34.687432Z",
+  "generated_at": "2026-10-04T23:01:39.875481Z",
+  "last_scan_ts": "2026-10-04T23:01:39.875481Z",
   "stats": {
-    "total_alerts": 15982,
+    "total_alerts": 15987,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -13,7 +13,7 @@
         "hit_rate": null
       },
       "Economics": {
-        "total": 3716,
+        "total": 3717,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -43,19 +43,19 @@
         "hit_rate": null
       },
       "Companies": {
-        "total": 1350,
+        "total": 1351,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "Financials": {
-        "total": 2321,
+        "total": 2323,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "Commodities": {
-        "total": 1895,
+        "total": 1896,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,13 +69,13 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 3856,
+        "total": 3858,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "medium (15-25%)": {
-        "total": 3042,
+        "total": 3045,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 10.01,
+      "balance": 9.95,
       "cash": 5.35,
       "peak": 11.46,
       "initial_balance": 10.0
@@ -101,15 +101,120 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-10-04T15:43:49.797741Z"
+    "updated_at": "2026-10-04T19:29:38.326868Z"
   },
   "cash_bal": 5.35,
-  "position_value": 4.66,
-  "account_value": 10.01,
-  "live_pnl": 0.01,
+  "position_value": 4.6,
+  "account_value": 9.95,
+  "live_pnl": -0.05,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-10-04T23:01:39.411320Z",
+      "ticker": "KXAMZNCC-26OCT07-T112",
+      "title": "Will Amazon Credit Card Spend for September 2026 be above 112 ?",
+      "category": "Financials",
+      "direction": "YES",
+      "edge_pct": "9.0",
+      "implied_prob": "0.91",
+      "true_prob": "1.0",
+      "confidence": "68",
+      "suggested_live_dollars": "0.94",
+      "suggested_paper_dollars": "19.74",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "94",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-04T23:01:39.055799Z",
+      "ticker": "KXNFLXAPP-26OCT08-T58",
+      "title": "Will Netflix App Downloads for September 2026 be above 58 ?",
+      "category": "Financials",
+      "direction": "YES",
+      "edge_pct": "19.5",
+      "implied_prob": "0.805",
+      "true_prob": "1.0",
+      "confidence": "75",
+      "suggested_live_dollars": "0.9",
+      "suggested_paper_dollars": "39.6",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "90",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-04T23:01:38.744735Z",
+      "ticker": "KXCPIYOY-26NOV-T3.6",
+      "title": "Will the rate of CPI inflation be above 3.6% for the year ending in November 2026?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-16.23",
+      "implied_prob": "0.83",
+      "true_prob": "0.6677",
+      "confidence": "75",
+      "suggested_live_dollars": "0.18",
+      "suggested_paper_dollars": "34.02",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "18",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-04T23:01:38.469577Z",
+      "ticker": "KXGOLDDIRY-26DEC31H1700-T4500",
+      "title": "Will the price of Gold be above 4500 on December 31, 2026 at 05:00 PM EST?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-12.75",
+      "implied_prob": "0.34",
+      "true_prob": "0.2125",
+      "confidence": "68",
+      "suggested_live_dollars": "0.74",
+      "suggested_paper_dollars": "5.92",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "74",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-04T23:01:38.134123Z",
+      "ticker": "KXTESLASEMI-27JAN-5000",
+      "title": "Will Tesla Inc report above 5000 Semi Trucks Produced before Jan 2027?",
+      "category": "Companies",
+      "direction": "NO",
+      "edge_pct": "-17.0",
+      "implied_prob": "0.17",
+      "true_prob": "0.0",
+      "confidence": "75",
+      "suggested_live_dollars": "0.85",
+      "suggested_paper_dollars": "39.95",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "85",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-10-04T18:51:34.268490Z",
       "ticker": "KXRAIN-26OCT04-HOU",
@@ -2293,30 +2398,114 @@
       "null": [
         ""
       ]
-    },
+    }
+  ],
+  "recent_alerts": [
     {
-      "timestamp": "2026-10-03T22:49:50.787197Z",
-      "ticker": "KXNDQDIRY-26DEC31H1600-T27000",
-      "title": "Will the Nasdaq-100 be above 27000 on Dec 31, 2026 at 4pm EST?",
+      "timestamp": "2026-10-04T23:01:39.411320Z",
+      "ticker": "KXAMZNCC-26OCT07-T112",
+      "title": "Will Amazon Credit Card Spend for September 2026 be above 112 ?",
       "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-87.5",
-      "implied_prob": "0.875",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "0.39",
-      "suggested_paper_dollars": "49.92",
+      "direction": "YES",
+      "edge_pct": "9.0",
+      "implied_prob": "0.91",
+      "true_prob": "1.0",
+      "confidence": "68",
+      "suggested_live_dollars": "0.94",
+      "suggested_paper_dollars": "19.74",
       "is_paper_bet": "1",
-      "paper_entry_price_cents": "13",
+      "paper_entry_price_cents": "94",
       "outcome": "",
       "resolved_at": "",
       "notes": "",
       "null": [
         ""
       ]
-    }
-  ],
-  "recent_alerts": [
+    },
+    {
+      "timestamp": "2026-10-04T23:01:39.055799Z",
+      "ticker": "KXNFLXAPP-26OCT08-T58",
+      "title": "Will Netflix App Downloads for September 2026 be above 58 ?",
+      "category": "Financials",
+      "direction": "YES",
+      "edge_pct": "19.5",
+      "implied_prob": "0.805",
+      "true_prob": "1.0",
+      "confidence": "75",
+      "suggested_live_dollars": "0.9",
+      "suggested_paper_dollars": "39.6",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "90",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-04T23:01:38.744735Z",
+      "ticker": "KXCPIYOY-26NOV-T3.6",
+      "title": "Will the rate of CPI inflation be above 3.6% for the year ending in November 2026?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-16.23",
+      "implied_prob": "0.83",
+      "true_prob": "0.6677",
+      "confidence": "75",
+      "suggested_live_dollars": "0.18",
+      "suggested_paper_dollars": "34.02",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "18",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-04T23:01:38.469577Z",
+      "ticker": "KXGOLDDIRY-26DEC31H1700-T4500",
+      "title": "Will the price of Gold be above 4500 on December 31, 2026 at 05:00 PM EST?",
+      "category": "Commodities",
+      "direction": "NO",
+      "edge_pct": "-12.75",
+      "implied_prob": "0.34",
+      "true_prob": "0.2125",
+      "confidence": "68",
+      "suggested_live_dollars": "0.74",
+      "suggested_paper_dollars": "5.92",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "74",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-04T23:01:38.134123Z",
+      "ticker": "KXTESLASEMI-27JAN-5000",
+      "title": "Will Tesla Inc report above 5000 Semi Trucks Produced before Jan 2027?",
+      "category": "Companies",
+      "direction": "NO",
+      "edge_pct": "-17.0",
+      "implied_prob": "0.17",
+      "true_prob": "0.0",
+      "confidence": "75",
+      "suggested_live_dollars": "0.85",
+      "suggested_paper_dollars": "39.95",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "85",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-10-04T18:51:34.268490Z",
       "ticker": "KXRAIN-26OCT04-HOU",
@@ -3261,111 +3450,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-10-04T05:31:40.085194Z",
-      "ticker": "KXNASDAQ100POS-26DEC31H1600-T25249.85",
-      "title": "Will the Nasdaq-100 be above 25249.85 at the end of Dec 31, 2026 at 4pm EST?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-86.5",
-      "implied_prob": "0.865",
-      "true_prob": "0.0",
-      "confidence": "95",
-      "suggested_live_dollars": "0.45",
-      "suggested_paper_dollars": "49.95",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "15",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-10-04T05:31:39.832252Z",
-      "ticker": "KXBTCMAXY-26DEC31-119999.99",
-      "title": "Will Bitcoin be above $119,999.99 by Dec 31, 2026 at 11:59 PM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-9.05",
-      "implied_prob": "0.105",
-      "true_prob": "0.0145",
-      "confidence": "68",
-      "suggested_live_dollars": "0.9",
-      "suggested_paper_dollars": "19.8",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "90",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-10-04T05:31:39.378406Z",
-      "ticker": "KXBTCMAXY-26DEC31-109999.99",
-      "title": "Will Bitcoin be above $109,999.99 by Dec 31, 2026 at 11:59 PM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-14.41",
-      "implied_prob": "0.195",
-      "true_prob": "0.0509",
-      "confidence": "73",
-      "suggested_live_dollars": "0.81",
-      "suggested_paper_dollars": "19.44",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "81",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-10-04T05:31:39.047618Z",
-      "ticker": "KXBTCMAXY-26DEC31-99999.99",
-      "title": "Will Bitcoin be above $99,999.99 by Dec 31, 2026 at 11:59 PM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-24.51",
-      "implied_prob": "0.395",
-      "true_prob": "0.1499",
-      "confidence": "80",
-      "suggested_live_dollars": "0.61",
-      "suggested_paper_dollars": "39.65",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "61",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-10-04T05:31:38.820478Z",
-      "ticker": "KXXRPMAXY-XRP-26DEC31-300",
-      "title": "Will XRP trimmed mean be above $3.00 by 11:59 PM ET on Dec 31, 2026?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-16.38",
-      "implied_prob": "0.17",
-      "true_prob": "0.0062",
-      "confidence": "70",
-      "suggested_live_dollars": "0.87",
-      "suggested_paper_dollars": "39.15",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "87",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -3391,9 +3475,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 60,
+      "current_cents": 61,
       "dollars_risked": 0,
-      "current_value": 1.2,
+      "current_value": 1.22,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -3427,9 +3511,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 89,
+      "current_cents": 81,
       "dollars_risked": 0,
-      "current_value": 0.89,
+      "current_value": 0.81,
       "pl_dollars": 0.0,
       "timestamp": ""
     }

@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-10T01:59:30.008938Z",
-  "last_scan_ts": "2026-10-10T01:59:30.008938Z",
+  "generated_at": "2026-10-10T08:40:08.376979Z",
+  "last_scan_ts": "2026-10-10T08:40:08.376979Z",
   "stats": {
-    "total_alerts": 16584,
+    "total_alerts": 16626,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -13,7 +13,7 @@
         "hit_rate": null
       },
       "Economics": {
-        "total": 3966,
+        "total": 3992,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -37,19 +37,19 @@
         "hit_rate": null
       },
       "Climate and Weather": {
-        "total": 1428,
+        "total": 1432,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "Companies": {
-        "total": 1389,
+        "total": 1395,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "Financials": {
-        "total": 2421,
+        "total": 2427,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,19 +69,19 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 4013,
+        "total": 4018,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "medium (15-25%)": {
-        "total": 3155,
+        "total": 3160,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 9416,
+        "total": 9448,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 10.89,
+      "balance": 10.95,
       "cash": 5.35,
       "peak": 11.46,
       "initial_balance": 10.0
@@ -101,15 +101,897 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-10-09T21:51:12.855243Z"
+    "updated_at": "2026-10-10T05:21:51.034665Z"
   },
   "cash_bal": 5.35,
-  "position_value": 5.54,
-  "account_value": 10.89,
-  "live_pnl": 0.89,
+  "position_value": 5.6,
+  "account_value": 10.95,
+  "live_pnl": 0.95,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-10-10T08:40:07.976573Z",
+      "ticker": "KXRAIN-26OCT10-PHX",
+      "title": "Will it rain in Phoenix on Oct 10, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-73.5",
+      "implied_prob": "0.855",
+      "true_prob": "0.12",
+      "confidence": "85",
+      "suggested_live_dollars": "0.45",
+      "suggested_paper_dollars": "49.95",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "15",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:40:07.749742Z",
+      "ticker": "KXRAIN-26OCT10-LV",
+      "title": "Will it rain in Las Vegas on Oct 10, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-34.5",
+      "implied_prob": "0.475",
+      "true_prob": "0.13",
+      "confidence": "85",
+      "suggested_live_dollars": "0.53",
+      "suggested_paper_dollars": "49.82",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "53",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:40:07.361901Z",
+      "ticker": "KXRAIN-26OCT10-LAX",
+      "title": "Will it rain in Los Angeles on Oct 10, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-23.0",
+      "implied_prob": "0.35",
+      "true_prob": "0.12",
+      "confidence": "75",
+      "suggested_live_dollars": "0.66",
+      "suggested_paper_dollars": "39.6",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "66",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:40:07.162169Z",
+      "ticker": "KXRAIN-26OCT10-MIA",
+      "title": "Will it rain in Miami on Oct 10, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-47.0",
+      "implied_prob": "0.6",
+      "true_prob": "0.13",
+      "confidence": "80",
+      "suggested_live_dollars": "0.41",
+      "suggested_paper_dollars": "49.61",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "41",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:40:06.830134Z",
+      "ticker": "KXFEDDECISION-26DEC-H0",
+      "title": "Will the Federal Reserve Hike rates by 0bps at their December 2026 meeting?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-8.9",
+      "implied_prob": "0.245",
+      "true_prob": "0.156",
+      "confidence": "73",
+      "suggested_live_dollars": "0.76",
+      "suggested_paper_dollars": "19.76",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "76",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:40:06.521007Z",
+      "ticker": "KXCPICOREYOY-26DEC-T2.6",
+      "title": "Will the rate of core CPI inflation be above 2.6% for the year ending in December 2026?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "8.94",
+      "implied_prob": "0.675",
+      "true_prob": "0.7644",
+      "confidence": "68",
+      "suggested_live_dollars": "0.68",
+      "suggested_paper_dollars": "19.72",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "68",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:40:06.227033Z",
+      "ticker": "KXCPIYOY-26DEC-T3.9",
+      "title": "Will the rate of CPI inflation be above 3.9% for the year ending in December 2026?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "28.94",
+      "implied_prob": "0.345",
+      "true_prob": "0.6344",
+      "confidence": "85",
+      "suggested_live_dollars": "0.47",
+      "suggested_paper_dollars": "49.82",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "47",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:40:06.023907Z",
+      "ticker": "KXCPIYOY-26DEC-T3.8",
+      "title": "Will the rate of CPI inflation be above 3.8% for the year ending in December 2026?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "28.44",
+      "implied_prob": "0.36",
+      "true_prob": "0.6444",
+      "confidence": "85",
+      "suggested_live_dollars": "0.47",
+      "suggested_paper_dollars": "49.82",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "47",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:40:05.760098Z",
+      "ticker": "KXCPIYOY-26DEC-T3.4",
+      "title": "Will the rate of CPI inflation be above 3.4% for the year ending in December 2026?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-19.06",
+      "implied_prob": "0.875",
+      "true_prob": "0.6844",
+      "confidence": "75",
+      "suggested_live_dollars": "0.3",
+      "suggested_paper_dollars": "34.65",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "15",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:40:05.577997Z",
+      "ticker": "KXCPIYOY-26DEC-T3.3",
+      "title": "Will the rate of CPI inflation be above 3.3% for the year ending in December 2026?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-19.06",
+      "implied_prob": "0.885",
+      "true_prob": "0.6944",
+      "confidence": "75",
+      "suggested_live_dollars": "0.39",
+      "suggested_paper_dollars": "36.66",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "13",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:40:05.298514Z",
+      "ticker": "KXFEDDECISION-27JAN-H25",
+      "title": "Will the Federal Reserve Hike rates by 25bps at their January 2027 meeting?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-16.4",
+      "implied_prob": "0.32",
+      "true_prob": "0.156",
+      "confidence": "75",
+      "suggested_live_dollars": "0.69",
+      "suggested_paper_dollars": "39.33",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "69",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:40:05.003828Z",
+      "ticker": "KXFEDDECISION-27JAN-H0",
+      "title": "Will the Federal Reserve Hike rates by 0bps at their January 2027 meeting?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-47.9",
+      "implied_prob": "0.635",
+      "true_prob": "0.156",
+      "confidence": "90",
+      "suggested_live_dollars": "0.37",
+      "suggested_paper_dollars": "49.95",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "37",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:40:04.532951Z",
+      "ticker": "KXNYCASKRENT-27JAN31-T4100",
+      "title": "Will New York City\u2019s median asking rent for December 2026 be above $4,100?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-18.5",
+      "implied_prob": "0.185",
+      "true_prob": "0.0",
+      "confidence": "75",
+      "suggested_live_dollars": "0.82",
+      "suggested_paper_dollars": "39.36",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "82",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:40:04.207971Z",
+      "ticker": "KXNYCASKRENT-27JAN31-T4000",
+      "title": "Will New York City\u2019s median asking rent for December 2026 be above $4,000?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-41.0",
+      "implied_prob": "0.41",
+      "true_prob": "0.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.61",
+      "suggested_paper_dollars": "49.41",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "61",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:40:03.989780Z",
+      "ticker": "KXNYCASKRENT-27JAN31-T3900",
+      "title": "Will New York City\u2019s median asking rent for December 2026 be above $3,900?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-77.5",
+      "implied_prob": "0.775",
+      "true_prob": "0.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.46",
+      "suggested_paper_dollars": "49.91",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "23",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:40:03.718358Z",
+      "ticker": "KXNYCASKRENT-27JAN31-T3800",
+      "title": "Will New York City\u2019s median asking rent for December 2026 be above $3,800?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-94.5",
+      "implied_prob": "0.945",
+      "true_prob": "0.0",
+      "confidence": "90",
+      "suggested_live_dollars": "0.54",
+      "suggested_paper_dollars": "49.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "6",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:40:03.513959Z",
+      "ticker": "KXSP500WHEN-8000-26NOV01",
+      "title": "Will the S&P 500 Index be above $8,000 before Nov 1, 2026?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-56.5",
+      "implied_prob": "0.565",
+      "true_prob": "0.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.47",
+      "suggested_paper_dollars": "49.82",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "47",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:40:03.235517Z",
+      "ticker": "KXNDKOIL-27FEB26-T421.101",
+      "title": "Will North Dakota\u2019s field production of crude oil for 2026 be above 421.101 million barrels?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-35.5",
+      "implied_prob": "0.355",
+      "true_prob": "0.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.65",
+      "suggested_paper_dollars": "49.4",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "65",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:40:02.952927Z",
+      "ticker": "KXNVHOMEPRICE-27FEB28-T423.62",
+      "title": "Will Nevada\u2019s seasonally adjusted Purchase-Only House Price Index for Q4 2026 be above 423.62?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-84.5",
+      "implied_prob": "0.845",
+      "true_prob": "0.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.48",
+      "suggested_paper_dollars": "49.92",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "16",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:40:02.605884Z",
+      "ticker": "KXAKCRUDEOIL-27MAR01-T153.607",
+      "title": "Will Alaska\u2019s total crude oil field production in 2026 be above 153.607 million barrels?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-77.24",
+      "implied_prob": "0.805",
+      "true_prob": "0.0326",
+      "confidence": "85",
+      "suggested_live_dollars": "0.4",
+      "suggested_paper_dollars": "50.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "20",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:40:02.224504Z",
+      "ticker": "KXFEDDECISION-27MAR-H25",
+      "title": "Will the Federal Reserve Hike rates by 25bps at their March 2027 meeting?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-39.4",
+      "implied_prob": "0.55",
+      "true_prob": "0.156",
+      "confidence": "85",
+      "suggested_live_dollars": "0.47",
+      "suggested_paper_dollars": "49.82",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "47",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:40:01.871663Z",
+      "ticker": "KXFEDDECISION-27MAR-H0",
+      "title": "Will the Federal Reserve Hike rates by 0bps at their March 2027 meeting?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-25.4",
+      "implied_prob": "0.41",
+      "true_prob": "0.156",
+      "confidence": "85",
+      "suggested_live_dollars": "0.6",
+      "suggested_paper_dollars": "49.8",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "60",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:40:01.491832Z",
+      "ticker": "KXTXOIL-27MAR31-T5.8",
+      "title": "Will Texas\u2019s annual-average field production of crude oil for 2026 be above 5.8 million barrels/day?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "64.5",
+      "implied_prob": "0.355",
+      "true_prob": "1.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.36",
+      "suggested_paper_dollars": "49.68",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "36",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:40:01.169314Z",
+      "ticker": "KXFEDDECISION-27APR-H0",
+      "title": "Will the Federal Reserve Hike rates by 0bps at their April 2027 meeting?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-54.9",
+      "implied_prob": "0.705",
+      "true_prob": "0.156",
+      "confidence": "85",
+      "suggested_live_dollars": "0.3",
+      "suggested_paper_dollars": "49.8",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "30",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:40:00.637742Z",
+      "ticker": "KXNVVISIT-27JUN30-T50",
+      "title": "Will Nevada\u2019s statewide visitor volume for 2026 be above 50 million?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-48.5",
+      "implied_prob": "0.485",
+      "true_prob": "0.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.52",
+      "suggested_paper_dollars": "49.92",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "52",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:40:00.376099Z",
+      "ticker": "KXNVVISIT-27JUN30-T49",
+      "title": "Will Nevada\u2019s statewide visitor volume for 2026 be above 49 million?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-79.0",
+      "implied_prob": "0.79",
+      "true_prob": "0.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.44",
+      "suggested_paper_dollars": "49.94",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "22",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:40:00.053951Z",
+      "ticker": "KXFEDDECISION-27JUL-H0",
+      "title": "Will the Federal Reserve Hike rates by 0bps at their July 2027 meeting?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-63.9",
+      "implied_prob": "0.795",
+      "true_prob": "0.156",
+      "confidence": "90",
+      "suggested_live_dollars": "0.42",
+      "suggested_paper_dollars": "49.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "21",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:39:59.784482Z",
+      "ticker": "KXFEDDECISION-27SEP-H0",
+      "title": "Will the Federal Reserve Hike rates by 0bps at their September 2027 meeting?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-59.9",
+      "implied_prob": "0.755",
+      "true_prob": "0.156",
+      "confidence": "85",
+      "suggested_live_dollars": "0.5",
+      "suggested_paper_dollars": "50.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "25",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:39:59.514424Z",
+      "ticker": "KXFEDDECISION-27DEC-H0",
+      "title": "Will the Federal Reserve Hike rates by 0bps at their December 2027 meeting?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-58.4",
+      "implied_prob": "0.74",
+      "true_prob": "0.156",
+      "confidence": "85",
+      "suggested_live_dollars": "0.28",
+      "suggested_paper_dollars": "49.84",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "28",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:39:59.179954Z",
+      "ticker": "KXAMZNA-28JANHEAD-1600000",
+      "title": "Will Amazon.com, Inc. report above 1600000 Employees (full-time and part-time; excludes contractors & temporary personnel) in 2026?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-67.0",
+      "implied_prob": "0.67",
+      "true_prob": "0.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.35",
+      "suggested_paper_dollars": "49.7",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "35",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:39:58.850737Z",
+      "ticker": "KXAMZNA-28JANHEAD-1575000",
+      "title": "Will Amazon.com, Inc. report above 1575000 Employees (full-time and part-time; excludes contractors & temporary personnel) in 2026?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-78.5",
+      "implied_prob": "0.785",
+      "true_prob": "0.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.44",
+      "suggested_paper_dollars": "49.94",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "22",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:39:58.542565Z",
+      "ticker": "KXAMZNA-28JANHEAD-1550000",
+      "title": "Will Amazon.com, Inc. report above 1550000 Employees (full-time and part-time; excludes contractors & temporary personnel) in 2026?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-83.5",
+      "implied_prob": "0.835",
+      "true_prob": "0.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.51",
+      "suggested_paper_dollars": "49.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "17",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:39:58.228972Z",
+      "ticker": "KXAMZNA-28JANHEAD-1525000",
+      "title": "Will Amazon.com, Inc. report above 1525000 Employees (full-time and part-time; excludes contractors & temporary personnel) in 2026?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-87.5",
+      "implied_prob": "0.875",
+      "true_prob": "0.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.52",
+      "suggested_paper_dollars": "49.92",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "13",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:39:57.819190Z",
+      "ticker": "KXAMZNA-28JANHEAD-1500000",
+      "title": "Will Amazon.com, Inc. report above 1500000 Employees (full-time and part-time; excludes contractors & temporary personnel) in 2026?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-94.5",
+      "implied_prob": "0.945",
+      "true_prob": "0.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.54",
+      "suggested_paper_dollars": "49.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "6",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:39:57.527559Z",
+      "ticker": "KXTSLAA-28JANDEL-1750000.0",
+      "title": "Will Tesla Inc. report Above 1.75 million total deliveries in 2026?",
+      "category": "Companies",
+      "direction": "YES",
+      "edge_pct": "12.5",
+      "implied_prob": "0.875",
+      "true_prob": "1.0",
+      "confidence": "68",
+      "suggested_live_dollars": "0.88",
+      "suggested_paper_dollars": "19.36",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "88",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:39:57.194010Z",
+      "ticker": "KXTSLAA-28JANDEL-1700000.0",
+      "title": "Will Tesla Inc. report Above 1.7 million total deliveries in 2026?",
+      "category": "Companies",
+      "direction": "YES",
+      "edge_pct": "12.0",
+      "implied_prob": "0.88",
+      "true_prob": "1.0",
+      "confidence": "68",
+      "suggested_live_dollars": "0.89",
+      "suggested_paper_dollars": "19.58",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "89",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:39:56.779179Z",
+      "ticker": "KXTSLAA-28JANDEL-1650000.0",
+      "title": "Will Tesla Inc. report Above 1.65 million total deliveries in 2026?",
+      "category": "Companies",
+      "direction": "YES",
+      "edge_pct": "8.5",
+      "implied_prob": "0.915",
+      "true_prob": "1.0",
+      "confidence": "68",
+      "suggested_live_dollars": "0.93",
+      "suggested_paper_dollars": "19.53",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "93",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:39:56.487476Z",
+      "ticker": "KXMETAA-28JANHEAD-71000",
+      "title": "Will Meta Platforms, Inc. report above 71000 Headcount in 2026?",
+      "category": "Companies",
+      "direction": "NO",
+      "edge_pct": "-64.0",
+      "implied_prob": "0.64",
+      "true_prob": "0.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.4",
+      "suggested_paper_dollars": "50.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "40",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:39:56.202327Z",
+      "ticker": "KXMETAA-28JANHEAD-68000",
+      "title": "Will Meta Platforms, Inc. report above 68000 Headcount in 2026?",
+      "category": "Companies",
+      "direction": "NO",
+      "edge_pct": "-86.5",
+      "implied_prob": "0.865",
+      "true_prob": "0.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.54",
+      "suggested_paper_dollars": "49.86",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "18",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:39:55.883963Z",
+      "ticker": "KXMETAA-28JANHEAD-65000",
+      "title": "Will Meta Platforms, Inc. report above 65000 Headcount in 2026?",
+      "category": "Companies",
+      "direction": "NO",
+      "edge_pct": "-91.5",
+      "implied_prob": "0.915",
+      "true_prob": "0.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.48",
+      "suggested_paper_dollars": "49.92",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "12",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:39:55.636590Z",
+      "ticker": "KXFEDHIKE-2-27JUN30",
+      "title": "Will the Federal Reserve hike rates by June 30, 2027?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-75.9",
+      "implied_prob": "0.915",
+      "true_prob": "0.156",
+      "confidence": "85",
+      "suggested_live_dollars": "0.5",
+      "suggested_paper_dollars": "50.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "10",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:39:55.172355Z",
+      "ticker": "KXFEDHIKE-2-26DEC31",
+      "title": "Will the Federal Reserve hike rates by December 31, 2026?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-65.4",
+      "implied_prob": "0.81",
+      "true_prob": "0.156",
+      "confidence": "90",
+      "suggested_live_dollars": "0.4",
+      "suggested_paper_dollars": "50.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "20",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-10-10T01:59:29.510599Z",
       "ticker": "KXRAIN-26OCT10-CMH",
@@ -1894,7 +2776,9 @@
       "null": [
         ""
       ]
-    },
+    }
+  ],
+  "recent_alerts": [
     {
       "timestamp": "2026-10-10T05:21:18.583556Z",
       "ticker": "KXCPICOREYOY-26NOV-T2.4",
@@ -3286,24 +4170,379 @@
       "ticker": "KXNVVISIT-27JUN30-T49",
       "title": "Will Nevada\u2019s statewide visitor volume for 2026 be above 49 million?",
       "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "10.9",
-      "implied_prob": "0.07",
-      "true_prob": "0.179",
-      "confidence": "68",
-      "suggested_live_dollars": "0.09",
-      "suggested_paper_dollars": "14.85",
+      "direction": "NO",
+      "edge_pct": "-48.5",
+      "implied_prob": "0.485",
+      "true_prob": "0.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.52",
+      "suggested_paper_dollars": "49.92",
       "is_paper_bet": "1",
-      "paper_entry_price_cents": "9",
+      "paper_entry_price_cents": "52",
       "outcome": "",
       "resolved_at": "",
       "notes": "",
       "null": [
         ""
       ]
-    }
-  ],
-  "recent_alerts": [
+    },
+    {
+      "timestamp": "2026-10-10T08:40:00.376099Z",
+      "ticker": "KXNVVISIT-27JUN30-T49",
+      "title": "Will Nevada\u2019s statewide visitor volume for 2026 be above 49 million?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-79.0",
+      "implied_prob": "0.79",
+      "true_prob": "0.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.44",
+      "suggested_paper_dollars": "49.94",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "22",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:40:00.053951Z",
+      "ticker": "KXFEDDECISION-27JUL-H0",
+      "title": "Will the Federal Reserve Hike rates by 0bps at their July 2027 meeting?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-63.9",
+      "implied_prob": "0.795",
+      "true_prob": "0.156",
+      "confidence": "90",
+      "suggested_live_dollars": "0.42",
+      "suggested_paper_dollars": "49.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "21",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:39:59.784482Z",
+      "ticker": "KXFEDDECISION-27SEP-H0",
+      "title": "Will the Federal Reserve Hike rates by 0bps at their September 2027 meeting?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-59.9",
+      "implied_prob": "0.755",
+      "true_prob": "0.156",
+      "confidence": "85",
+      "suggested_live_dollars": "0.5",
+      "suggested_paper_dollars": "50.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "25",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:39:59.514424Z",
+      "ticker": "KXFEDDECISION-27DEC-H0",
+      "title": "Will the Federal Reserve Hike rates by 0bps at their December 2027 meeting?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-58.4",
+      "implied_prob": "0.74",
+      "true_prob": "0.156",
+      "confidence": "85",
+      "suggested_live_dollars": "0.28",
+      "suggested_paper_dollars": "49.84",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "28",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:39:59.179954Z",
+      "ticker": "KXAMZNA-28JANHEAD-1600000",
+      "title": "Will Amazon.com, Inc. report above 1600000 Employees (full-time and part-time; excludes contractors & temporary personnel) in 2026?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-67.0",
+      "implied_prob": "0.67",
+      "true_prob": "0.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.35",
+      "suggested_paper_dollars": "49.7",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "35",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:39:58.850737Z",
+      "ticker": "KXAMZNA-28JANHEAD-1575000",
+      "title": "Will Amazon.com, Inc. report above 1575000 Employees (full-time and part-time; excludes contractors & temporary personnel) in 2026?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-78.5",
+      "implied_prob": "0.785",
+      "true_prob": "0.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.44",
+      "suggested_paper_dollars": "49.94",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "22",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:39:58.542565Z",
+      "ticker": "KXAMZNA-28JANHEAD-1550000",
+      "title": "Will Amazon.com, Inc. report above 1550000 Employees (full-time and part-time; excludes contractors & temporary personnel) in 2026?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-83.5",
+      "implied_prob": "0.835",
+      "true_prob": "0.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.51",
+      "suggested_paper_dollars": "49.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "17",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:39:58.228972Z",
+      "ticker": "KXAMZNA-28JANHEAD-1525000",
+      "title": "Will Amazon.com, Inc. report above 1525000 Employees (full-time and part-time; excludes contractors & temporary personnel) in 2026?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-87.5",
+      "implied_prob": "0.875",
+      "true_prob": "0.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.52",
+      "suggested_paper_dollars": "49.92",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "13",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:39:57.819190Z",
+      "ticker": "KXAMZNA-28JANHEAD-1500000",
+      "title": "Will Amazon.com, Inc. report above 1500000 Employees (full-time and part-time; excludes contractors & temporary personnel) in 2026?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-94.5",
+      "implied_prob": "0.945",
+      "true_prob": "0.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.54",
+      "suggested_paper_dollars": "49.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "6",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:39:57.527559Z",
+      "ticker": "KXTSLAA-28JANDEL-1750000.0",
+      "title": "Will Tesla Inc. report Above 1.75 million total deliveries in 2026?",
+      "category": "Companies",
+      "direction": "YES",
+      "edge_pct": "12.5",
+      "implied_prob": "0.875",
+      "true_prob": "1.0",
+      "confidence": "68",
+      "suggested_live_dollars": "0.88",
+      "suggested_paper_dollars": "19.36",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "88",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:39:57.194010Z",
+      "ticker": "KXTSLAA-28JANDEL-1700000.0",
+      "title": "Will Tesla Inc. report Above 1.7 million total deliveries in 2026?",
+      "category": "Companies",
+      "direction": "YES",
+      "edge_pct": "12.0",
+      "implied_prob": "0.88",
+      "true_prob": "1.0",
+      "confidence": "68",
+      "suggested_live_dollars": "0.89",
+      "suggested_paper_dollars": "19.58",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "89",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:39:56.779179Z",
+      "ticker": "KXTSLAA-28JANDEL-1650000.0",
+      "title": "Will Tesla Inc. report Above 1.65 million total deliveries in 2026?",
+      "category": "Companies",
+      "direction": "YES",
+      "edge_pct": "8.5",
+      "implied_prob": "0.915",
+      "true_prob": "1.0",
+      "confidence": "68",
+      "suggested_live_dollars": "0.93",
+      "suggested_paper_dollars": "19.53",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "93",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:39:56.487476Z",
+      "ticker": "KXMETAA-28JANHEAD-71000",
+      "title": "Will Meta Platforms, Inc. report above 71000 Headcount in 2026?",
+      "category": "Companies",
+      "direction": "NO",
+      "edge_pct": "-64.0",
+      "implied_prob": "0.64",
+      "true_prob": "0.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.4",
+      "suggested_paper_dollars": "50.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "40",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:39:56.202327Z",
+      "ticker": "KXMETAA-28JANHEAD-68000",
+      "title": "Will Meta Platforms, Inc. report above 68000 Headcount in 2026?",
+      "category": "Companies",
+      "direction": "NO",
+      "edge_pct": "-86.5",
+      "implied_prob": "0.865",
+      "true_prob": "0.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.54",
+      "suggested_paper_dollars": "49.86",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "18",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:39:55.883963Z",
+      "ticker": "KXMETAA-28JANHEAD-65000",
+      "title": "Will Meta Platforms, Inc. report above 65000 Headcount in 2026?",
+      "category": "Companies",
+      "direction": "NO",
+      "edge_pct": "-91.5",
+      "implied_prob": "0.915",
+      "true_prob": "0.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.48",
+      "suggested_paper_dollars": "49.92",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "12",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:39:55.636590Z",
+      "ticker": "KXFEDHIKE-2-27JUN30",
+      "title": "Will the Federal Reserve hike rates by June 30, 2027?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-75.9",
+      "implied_prob": "0.915",
+      "true_prob": "0.156",
+      "confidence": "85",
+      "suggested_live_dollars": "0.5",
+      "suggested_paper_dollars": "50.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "10",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-10T08:39:55.172355Z",
+      "ticker": "KXFEDHIKE-2-26DEC31",
+      "title": "Will the Federal Reserve hike rates by December 31, 2026?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-65.4",
+      "implied_prob": "0.81",
+      "true_prob": "0.156",
+      "confidence": "90",
+      "suggested_live_dollars": "0.4",
+      "suggested_paper_dollars": "50.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "20",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-10-10T01:59:29.510599Z",
       "ticker": "KXRAIN-26OCT10-CMH",
@@ -4861,9 +6100,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 75,
+      "current_cents": 78,
       "dollars_risked": 0,
-      "current_value": 1.5,
+      "current_value": 1.56,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

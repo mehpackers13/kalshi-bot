@@ -108761,3 +108761,60 @@ Total modelable markets evaluated: 0
 [2026-10-11 04:55:38 ET] [INFO] Scan complete — 107 alerts sent
 [2026-10-11 04:55:38 ET] [INFO] ============================================================
 [2026-10-11 04:55:38 ET] [INFO] Scan job complete
+[2026-10-11 12:36:41 ET] [INFO] Scan job starting
+[2026-10-11 12:36:42 ET] [INFO] Kalshi API key auth OK ✅  balance: $54.86
+[2026-10-11 12:36:42 ET] [INFO] ============================================================
+[2026-10-11 12:36:42 ET] [INFO] Starting market scan
+[2026-10-11 12:36:43 ET] [INFO] Portfolio value: $54.86 cash + $5.50 positions = $60.36
+[2026-10-11 12:36:43 ET] [INFO] New peak portfolio value: $60.36  (was $35.38)
+[2026-10-11 12:36:43 ET] [INFO] Cash: $54.86  |  Positions: $5.50  |  Total: $60.36  |  Peak: $60.36
+[2026-10-11 12:36:43 ET] [INFO] Positions snapshot: 6 open position(s)
+[2026-10-11 12:36:43 ET] [WARN] API GET /markets → HTTP 400
+[2026-10-11 12:37:02 ET] [INFO] Fetched 98728 open markets via events endpoint across 50 pages
+[2026-10-11 12:37:02 ET] [INFO] Fetched 98728 open markets
+[2026-10-11 12:37:02 ET] [INFO] Parsed 87842 valid markets
+[2026-10-11 12:37:02 ET] [INFO] Categories: {'Sports': 39842, 'Elections': 23051, 'Entertainment': 8017, 'Financials': 5105, 'Economics': 4241, 'Politics': 2378, 'Mentions': 1176, 'Climate and Weather': 993}
+[2026-10-11 12:45:39 ET] [INFO]   CPI model: threshold=10.0% TNX=5.24% → P=0.200
+[2026-10-11 13:38:31 ET] [INFO]   price model: CL=F spot=91.85 target=7.80 vol=45.3% T=4826.4h → P=1.000
+[2026-10-11 13:46:21 ET] [INFO]   price model: DIA spot=516.11 target=3.00 vol=10.9% T=4115.4h → P=1.000
+[2026-10-11 13:56:12 ET] [INFO]   price model: AMZN spot=262.43 target=1.58 vol=24.8% T=3275.4h → P=1.000
+[2026-10-11 14:16:56 ET] [INFO]   CPI model: threshold=3.5% TNX=5.24% → P=0.674
+[2026-10-11 14:16:56 ET] [INFO]   EDGE FOUND: KXCPIYOY-26DEC-T3.5 | implied=80.0% true=67.4% edge=-12.6% dir=NO conf=68
+[2026-10-11 14:17:00 ET] [INFO]   CPI model: threshold=2.5% TNX=5.24% → P=0.774
+[2026-10-11 14:47:29 ET] [INFO]   fed model: implied_rate=3.925% current≈4.057% diff=-13.2bps → P=0.236
+[2026-10-11 14:55:32 ET] [INFO]   price model: ETH-USD spot=2530.43 target=1250.00 vol=37.0% T=1956.4h → P=0.000
+[2026-10-11 14:55:33 ET] [INFO]   price model: ETH-USD spot=2530.43 target=4250.00 vol=37.0% T=1956.4h → P=0.002
+[2026-10-11 14:55:33 ET] [INFO]   price model: ETH-USD spot=2530.43 target=4500.00 vol=37.0% T=1956.4h → P=0.000
+[2026-10-11 14:55:33 ET] [INFO]   price model: ETH-USD spot=2530.43 target=4750.00 vol=37.0% T=1956.4h → P=0.000
+[2026-10-11 14:55:34 ET] [INFO]   price model: BTC-USD spot=83553.14 target=50000.00 vol=32.7% T=1956.4h → P=0.000
+[2026-10-11 14:55:35 ET] [INFO]   price model: BTC-USD spot=83553.14 target=45000.00 vol=32.7% T=1956.4h → P=0.000
+[2026-10-11 14:55:35 ET] [INFO]   price model: BTC-USD spot=83553.14 target=40000.00 vol=32.7% T=1956.4h → P=0.000
+[2026-10-11 14:56:13 ET] [INFO]   price model: DIA spot=516.11 target=6.00 vol=10.9% T=1956.4h → P=1.000
+[2026-10-11 14:56:13 ET] [INFO]   EDGE FOUND: KXB200MS-26DEC-6.000 | implied=87.0% true=100.0% edge=+13.0% dir=YES conf=68
+[2026-10-11 14:56:37 ET] [INFO]   price model: BTC-USD spot=83566.57 target=119999.00 vol=32.7% T=1956.4h → P=0.010
+[2026-10-11 14:57:02 ET] [INFO]   price model: CL=F spot=91.85 target=75.00 vol=45.3% T=1946.9h → P=0.829
+[2026-10-11 14:57:02 ET] [INFO]   price model: CL=F spot=91.85 target=80.00 vol=45.3% T=1946.9h → P=0.741
+[2026-10-11 14:57:02 ET] [INFO]   price model: CL=F spot=91.85 target=85.00 vol=45.3% T=1946.9h → P=0.642
+[2026-10-11 14:57:02 ET] [INFO]   price model: CL=F spot=91.85 target=90.00 vol=45.3% T=1946.9h → P=0.538
+[2026-10-11 14:58:57 ET] [INFO]   fed model: implied_rate=3.925% current≈4.057% diff=-13.2bps → P=0.764
+[2026-10-11 14:58:57 ET] [INFO]   EDGE FOUND: KXRATECUTCOUNT-26DEC31-T0 | implied=95.0% true=76.4% edge=-18.6% dir=NO conf=85
+[2026-10-11 15:16:31 ET] [INFO]   CPI model: threshold=3.7% TNX=5.24% → P=0.654
+[2026-10-11 15:16:34 ET] [INFO]   CPI model: threshold=2.5% TNX=5.24% → P=0.774
+[2026-10-11 15:16:41 ET] [INFO]   fed model: implied_rate=3.925% current≈4.057% diff=-13.2bps → P=0.236
+[2026-10-11 15:40:12 ET] [INFO]   price model: BTC-USD spot=83658.33 target=95000.00 vol=32.7% T=491.4h → P=0.050
+[2026-10-11 15:40:12 ET] [INFO]   EDGE FOUND: KXBTCMAXMON-BTC-26OCT31-9500000 | implied=13.5% true=5.0% edge=-8.5% dir=NO conf=63
+[2026-10-11 16:09:45 ET] [INFO]   CPI model: threshold=2.3% TNX=5.24% → P=0.794
+[2026-10-11 16:09:45 ET] [INFO]   EDGE FOUND: KXCPICOREYOY-26SEP-T2.3 | implied=90.0% true=79.4% edge=-10.6% dir=NO conf=68
+[2026-10-11 16:13:59 ET] [INFO] Checked 87738 markets | Modelable: 87738 | Edges found: 5
+[2026-10-11 16:13:59 ET] [INFO] [Discord] Trade alert sent: KXCPIYOY-26DEC-T3.5
+[2026-10-11 16:13:59 ET] [ERROR] AUTO-BET ERROR KXCPIYOY-26DEC-T3.5: Kalshi POST /portfolio/orders → HTTP 410: {"error":{"code":"deprecated_v1_order_endpoint","message":"Please switch to the V2 endpoints","details":"https://docs.kalshi.com/api-reference/orders/create-order-v2"}}
+[2026-10-11 16:13:59 ET] [INFO]   Skipping KXB200MS-26DEC-6.000 — suggested bet too small to be meaningful
+[2026-10-11 16:14:00 ET] [INFO] [Discord] Trade alert sent: KXRATECUTCOUNT-26DEC31-T0
+[2026-10-11 16:14:00 ET] [ERROR] AUTO-BET ERROR KXRATECUTCOUNT-26DEC31-T0: Kalshi POST /portfolio/orders → HTTP 410: {"error":{"code":"deprecated_v1_order_endpoint","message":"Please switch to the V2 endpoints","details":"https://docs.kalshi.com/api-reference/orders/create-order-v2"}}
+[2026-10-11 16:14:00 ET] [INFO] [Discord] Trade alert sent: KXBTCMAXMON-BTC-26OCT31-9500000
+[2026-10-11 16:14:00 ET] [ERROR] AUTO-BET ERROR KXBTCMAXMON-BTC-26OCT31-9500000: Kalshi POST /portfolio/orders → HTTP 410: {"error":{"code":"deprecated_v1_order_endpoint","message":"Please switch to the V2 endpoints","details":"https://docs.kalshi.com/api-reference/orders/create-order-v2"}}
+[2026-10-11 16:14:00 ET] [INFO] [Discord] Trade alert sent: KXCPICOREYOY-26SEP-T2.3
+[2026-10-11 16:14:00 ET] [WARN] AUTO-BET RATE LIMIT: 3/3 bets placed this hour — skipping KXCPICOREYOY-26SEP-T2.3
+[2026-10-11 16:14:00 ET] [INFO] Scan complete — 4 alerts sent
+[2026-10-11 16:14:00 ET] [INFO] ============================================================
+[2026-10-11 16:14:00 ET] [INFO] Scan job complete

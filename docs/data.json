@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-11T08:55:38.954088Z",
-  "last_scan_ts": "2026-10-11T08:55:38.954088Z",
+  "generated_at": "2026-10-11T20:14:01.189913Z",
+  "last_scan_ts": "2026-10-11T20:14:01.189913Z",
   "stats": {
-    "total_alerts": 16740,
+    "total_alerts": 16744,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -13,7 +13,7 @@
         "hit_rate": null
       },
       "Economics": {
-        "total": 4039,
+        "total": 4042,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -25,7 +25,7 @@
         "hit_rate": null
       },
       "Crypto": {
-        "total": 4746,
+        "total": 4747,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -69,13 +69,13 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 4044,
+        "total": 4047,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "medium (15-25%)": {
-        "total": 3182,
+        "total": 3183,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -90,9 +90,9 @@
   },
   "bankroll": {
     "live": {
-      "balance": 35.36,
-      "cash": 29.85,
-      "peak": 35.38,
+      "balance": 60.36,
+      "cash": 54.86,
+      "peak": 60.36,
       "initial_balance": 10.0
     },
     "paper": {
@@ -101,15 +101,99 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-10-11T05:04:41.035555Z"
+    "updated_at": "2026-10-11T16:36:43.215920Z"
   },
-  "cash_bal": 29.85,
-  "position_value": 5.51,
-  "account_value": 35.36,
-  "live_pnl": 25.36,
+  "cash_bal": 54.86,
+  "position_value": 5.5,
+  "account_value": 60.36,
+  "live_pnl": 50.36,
   "paper_pnl": 0.0,
   "unit_total": 0.0,
   "today_outcomes": [
+    {
+      "timestamp": "2026-10-11T20:14:00.811213Z",
+      "ticker": "KXCPICOREYOY-26SEP-T2.3",
+      "title": "Will the rate of core CPI inflation be above 2.3% for the year ending in September 2026?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-10.56",
+      "implied_prob": "0.9",
+      "true_prob": "0.7944",
+      "confidence": "68",
+      "suggested_live_dollars": "0.16",
+      "suggested_paper_dollars": "3.36",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "16",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-11T20:14:00.470920Z",
+      "ticker": "KXBTCMAXMON-BTC-26OCT31-9500000",
+      "title": "Will BTC trimmed mean be above $95000.00 by 11:59 PM ET on Oct 31, 2026?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-8.46",
+      "implied_prob": "0.135",
+      "true_prob": "0.0504",
+      "confidence": "63",
+      "suggested_live_dollars": "0.87",
+      "suggested_paper_dollars": "19.14",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "87",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-11T20:14:00.123619Z",
+      "ticker": "KXRATECUTCOUNT-26DEC31-T0",
+      "title": "Will the Fed cut rates 0 times?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-18.6",
+      "implied_prob": "0.95",
+      "true_prob": "0.764",
+      "confidence": "85",
+      "suggested_live_dollars": "2.4",
+      "suggested_paper_dollars": "40.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "5",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-11T20:13:59.673910Z",
+      "ticker": "KXCPIYOY-26DEC-T3.5",
+      "title": "Will the rate of CPI inflation be above 3.5% for the year ending in December 2026?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-12.56",
+      "implied_prob": "0.8",
+      "true_prob": "0.6744",
+      "confidence": "68",
+      "suggested_live_dollars": "0.72",
+      "suggested_paper_dollars": "14.88",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "24",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-10-11T08:55:38.542080Z",
       "ticker": "KXRAIN-26OCT11-CMH",
@@ -2377,135 +2461,93 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-10-10T20:06:16.700335Z",
-      "ticker": "KXRAIN-26OCT10-IND",
-      "title": "Will it rain in Indianapolis on Oct 10, 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-39.0",
-      "implied_prob": "0.55",
-      "true_prob": "0.16",
-      "confidence": "80",
-      "suggested_live_dollars": "1.41",
-      "suggested_paper_dollars": "49.82",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "47",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-10-10T20:06:16.503170Z",
-      "ticker": "KXRAIN-26OCT10-PIT",
-      "title": "Will it rain in Pittsburgh on Oct 10, 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-11.5",
-      "implied_prob": "0.245",
-      "true_prob": "0.13",
-      "confidence": "63",
-      "suggested_live_dollars": "0.76",
-      "suggested_paper_dollars": "19.76",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "76",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-10-10T20:06:15.874457Z",
-      "ticker": "KXRAINLAXM-26OCT-1",
-      "title": "Rain in Los Angeles in Oct 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "edge_pct": "-26.0",
-      "implied_prob": "0.39",
-      "true_prob": "0.13",
-      "confidence": "85",
-      "suggested_live_dollars": "1.34",
-      "suggested_paper_dollars": "49.58",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "67",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-10-10T20:06:15.507527Z",
-      "ticker": "KXGOLDDIRY-26DEC31H1700-T4600",
-      "title": "Will the price of Gold be above 4600 on December 31, 2026 at 05:00 PM EST?",
-      "category": "Commodities",
-      "direction": "NO",
-      "edge_pct": "-14.34",
-      "implied_prob": "0.28",
-      "true_prob": "0.1366",
-      "confidence": "68",
-      "suggested_live_dollars": "0.75",
-      "suggested_paper_dollars": "19.5",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "75",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-10-10T20:06:15.171865Z",
-      "ticker": "KXARBROILER-27APR30-T8.0",
-      "title": "Will Arkansas broiler production for 2026 be above 8.0 billion pounds?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "64.5",
-      "implied_prob": "0.355",
-      "true_prob": "1.0",
-      "confidence": "85",
-      "suggested_live_dollars": "1.52",
-      "suggested_paper_dollars": "49.78",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "38",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-10-10T20:06:14.702625Z",
-      "ticker": "KXFEDDECISION-27OCT-C25",
-      "title": "Will the Federal Reserve Cut rates by 25bps at their October 2027 meeting?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "73.4",
-      "implied_prob": "0.11",
-      "true_prob": "0.844",
-      "confidence": "85",
-      "suggested_live_dollars": "1.68",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "12",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "recent_alerts": [
+    {
+      "timestamp": "2026-10-11T20:14:00.811213Z",
+      "ticker": "KXCPICOREYOY-26SEP-T2.3",
+      "title": "Will the rate of core CPI inflation be above 2.3% for the year ending in September 2026?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-10.56",
+      "implied_prob": "0.9",
+      "true_prob": "0.7944",
+      "confidence": "68",
+      "suggested_live_dollars": "0.16",
+      "suggested_paper_dollars": "3.36",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "16",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-11T20:14:00.470920Z",
+      "ticker": "KXBTCMAXMON-BTC-26OCT31-9500000",
+      "title": "Will BTC trimmed mean be above $95000.00 by 11:59 PM ET on Oct 31, 2026?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-8.46",
+      "implied_prob": "0.135",
+      "true_prob": "0.0504",
+      "confidence": "63",
+      "suggested_live_dollars": "0.87",
+      "suggested_paper_dollars": "19.14",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "87",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-11T20:14:00.123619Z",
+      "ticker": "KXRATECUTCOUNT-26DEC31-T0",
+      "title": "Will the Fed cut rates 0 times?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-18.6",
+      "implied_prob": "0.95",
+      "true_prob": "0.764",
+      "confidence": "85",
+      "suggested_live_dollars": "2.4",
+      "suggested_paper_dollars": "40.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "5",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
+    {
+      "timestamp": "2026-10-11T20:13:59.673910Z",
+      "ticker": "KXCPIYOY-26DEC-T3.5",
+      "title": "Will the rate of CPI inflation be above 3.5% for the year ending in December 2026?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-12.56",
+      "implied_prob": "0.8",
+      "true_prob": "0.6744",
+      "confidence": "68",
+      "suggested_live_dollars": "0.72",
+      "suggested_paper_dollars": "14.88",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "24",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": "",
+      "null": [
+        ""
+      ]
+    },
     {
       "timestamp": "2026-10-11T08:55:38.542080Z",
       "ticker": "KXRAIN-26OCT11-CMH",
@@ -3471,90 +3513,6 @@
       "null": [
         ""
       ]
-    },
-    {
-      "timestamp": "2026-10-11T08:55:29.887031Z",
-      "ticker": "KXBTCMAXY-26DEC31-109999.99",
-      "title": "Will Bitcoin be above $109,999.99 by Dec 31, 2026 at 11:59 PM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-12.06",
-      "implied_prob": "0.155",
-      "true_prob": "0.0344",
-      "confidence": "73",
-      "suggested_live_dollars": "0.85",
-      "suggested_paper_dollars": "19.55",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "85",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-10-11T08:55:27.681868Z",
-      "ticker": "KXBTCMAXY-26DEC31-99999.99",
-      "title": "Will Bitcoin be above $99,999.99 by Dec 31, 2026 at 11:59 PM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-18.07",
-      "implied_prob": "0.295",
-      "true_prob": "0.1143",
-      "confidence": "80",
-      "suggested_live_dollars": "0.71",
-      "suggested_paper_dollars": "39.76",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "71",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-10-11T08:55:27.377381Z",
-      "ticker": "KXXRPMAXY-XRP-26DEC31-300",
-      "title": "Will XRP trimmed mean be above $3.00 by 11:59 PM ET on Dec 31, 2026?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-18.78",
-      "implied_prob": "0.19",
-      "true_prob": "0.0022",
-      "confidence": "70",
-      "suggested_live_dollars": "0.86",
-      "suggested_paper_dollars": "39.56",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "86",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
-    },
-    {
-      "timestamp": "2026-10-11T08:55:27.253394Z",
-      "ticker": "KXXRPMAXY-XRP-26DEC31-250",
-      "title": "Will XRP trimmed mean be above $2.50 by 11:59 PM ET on Dec 31, 2026?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-16.05",
-      "implied_prob": "0.25",
-      "true_prob": "0.0895",
-      "confidence": "70",
-      "suggested_live_dollars": "0.78",
-      "suggested_paper_dollars": "39.78",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "78",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": "",
-      "null": [
-        ""
-      ]
     }
   ],
   "model_changes": [],
@@ -3562,17 +3520,35 @@
   "model_confidence": {},
   "bets_placed": [
     {
-      "timestamp": "2026-10-11T08:55:14.446748",
-      "ticker": "KXMETAA-28JANHEAD-65000",
-      "title": "Will Meta Platforms, Inc. report above 65000 Headcount in 2026?",
-      "category": "Companies",
+      "timestamp": "2026-10-11T20:14:00.592958",
+      "ticker": "KXBTCMAXMON-BTC-26OCT31-9500000",
+      "title": "Will BTC trimmed mean be above $95000.00 by 11:59 PM ET on Oct 31, 2026?",
+      "category": "Crypto",
       "direction": "NO",
-      "contracts": "14",
-      "price_cents": "12",
-      "dollars_risked": "1.68",
-      "edge_pct": "-91.5",
-      "true_prob": "0.0",
-      "implied_prob": "0.915",
+      "contracts": "3",
+      "price_cents": "87",
+      "dollars_risked": "2.61",
+      "edge_pct": "-8.46",
+      "true_prob": "0.0504",
+      "implied_prob": "0.135",
+      "confidence": "63",
+      "kelly_fraction": "0.5",
+      "dry_run": "False",
+      "order_id": "",
+      "status": "error: Kalshi POST /portfolio/orders \u2192 HTTP 410: {\"error\":{\"code\":\"deprecated_v1_order_endpoint\",\"message\":"
+    },
+    {
+      "timestamp": "2026-10-11T20:14:00.250843",
+      "ticker": "KXRATECUTCOUNT-26DEC31-T0",
+      "title": "Will the Fed cut rates 0 times?",
+      "category": "Economics",
+      "direction": "NO",
+      "contracts": "60",
+      "price_cents": "5",
+      "dollars_risked": "3.0",
+      "edge_pct": "-18.6",
+      "true_prob": "0.764",
+      "implied_prob": "0.95",
       "confidence": "85",
       "kelly_fraction": "0.5",
       "dry_run": "False",
@@ -3580,36 +3556,18 @@
       "status": "error: Kalshi POST /portfolio/orders \u2192 HTTP 410: {\"error\":{\"code\":\"deprecated_v1_order_endpoint\",\"message\":"
     },
     {
-      "timestamp": "2026-10-11T08:55:14.000425",
-      "ticker": "KXFEDHIKE-2-27JUN30",
-      "title": "Will the Federal Reserve hike rates by June 30, 2027?",
+      "timestamp": "2026-10-11T20:13:59.903705",
+      "ticker": "KXCPIYOY-26DEC-T3.5",
+      "title": "Will the rate of CPI inflation be above 3.5% for the year ending in December 202",
       "category": "Economics",
       "direction": "NO",
-      "contracts": "17",
-      "price_cents": "10",
-      "dollars_risked": "1.7",
-      "edge_pct": "-67.9",
-      "true_prob": "0.236",
-      "implied_prob": "0.915",
-      "confidence": "85",
-      "kelly_fraction": "0.5",
-      "dry_run": "False",
-      "order_id": "",
-      "status": "error: Kalshi POST /portfolio/orders \u2192 HTTP 410: {\"error\":{\"code\":\"deprecated_v1_order_endpoint\",\"message\":"
-    },
-    {
-      "timestamp": "2026-10-11T08:55:13.623168",
-      "ticker": "KXFEDHIKE-2-26DEC31",
-      "title": "Will the Federal Reserve hike rates by December 31, 2026?",
-      "category": "Economics",
-      "direction": "NO",
-      "contracts": "8",
-      "price_cents": "21",
+      "contracts": "7",
+      "price_cents": "24",
       "dollars_risked": "1.68",
-      "edge_pct": "-56.9",
-      "true_prob": "0.236",
-      "implied_prob": "0.805",
-      "confidence": "90",
+      "edge_pct": "-12.56",
+      "true_prob": "0.6744",
+      "implied_prob": "0.8",
+      "confidence": "68",
       "kelly_fraction": "0.5",
       "dry_run": "False",
       "order_id": "",
@@ -3618,14 +3576,26 @@
   ],
   "open_positions": [
     {
+      "ticker": "KXMVECROSSCATEGORY0-S202697D230CA851-5ADE0035049",
+      "title": "KXMVECROSSCATEGORY0-S202697D230CA851-5ADE0035049",
+      "direction": "YES",
+      "contracts": 232,
+      "entry_cents": 0,
+      "current_cents": 0,
+      "dollars_risked": 0,
+      "current_value": 0.0,
+      "pl_dollars": 0.0,
+      "timestamp": ""
+    },
+    {
       "ticker": "KXSOLMAXY-27JAN01-170",
       "title": "KXSOLMAXY-27JAN01-170",
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 82,
+      "current_cents": 81,
       "dollars_risked": 0,
-      "current_value": 0.82,
+      "current_value": 0.81,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

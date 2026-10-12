@@ -108818,3 +108818,66 @@ Total modelable markets evaluated: 0
 [2026-10-11 16:14:00 ET] [INFO] Scan complete — 4 alerts sent
 [2026-10-11 16:14:00 ET] [INFO] ============================================================
 [2026-10-11 16:14:00 ET] [INFO] Scan job complete
+[2026-10-11 16:53:08 ET] [INFO] Scan job starting
+[2026-10-11 16:53:08 ET] [INFO] Kalshi API key auth OK ✅  balance: $64.40
+[2026-10-11 16:53:08 ET] [INFO] ============================================================
+[2026-10-11 16:53:08 ET] [INFO] Starting market scan
+[2026-10-11 16:53:10 ET] [INFO] Portfolio value: $64.40 cash + $5.48 positions = $69.88
+[2026-10-11 16:53:10 ET] [INFO] New peak portfolio value: $69.88  (was $60.36)
+[2026-10-11 16:53:10 ET] [INFO] Cash: $64.40  |  Positions: $5.48  |  Total: $69.88  |  Peak: $69.88
+[2026-10-11 16:53:10 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-10-11 16:53:11 ET] [WARN] API GET /markets → HTTP 400
+[2026-10-11 16:53:29 ET] [INFO] Fetched 99241 open markets via events endpoint across 50 pages
+[2026-10-11 16:53:29 ET] [INFO] Fetched 99241 open markets
+[2026-10-11 16:53:29 ET] [INFO] Parsed 88284 valid markets
+[2026-10-11 16:53:29 ET] [INFO] Categories: {'Sports': 40516, 'Elections': 23083, 'Entertainment': 8093, 'Financials': 5113, 'Economics': 4241, 'Politics': 2380, 'Mentions': 1157, 'Crypto': 928}
+[2026-10-11 17:02:21 ET] [INFO]   CPI model: threshold=10.0% TNX=5.24% → P=0.200
+[2026-10-11 17:56:26 ET] [INFO]   price model: CL=F spot=91.85 target=7.80 vol=45.3% T=4822.1h → P=1.000
+[2026-10-11 18:04:25 ET] [INFO]   price model: DIA spot=516.11 target=3.00 vol=10.9% T=4111.1h → P=1.000
+[2026-10-11 18:14:31 ET] [INFO]   price model: AMZN spot=262.43 target=1.58 vol=24.8% T=3271.1h → P=1.000
+[2026-10-11 18:34:52 ET] [INFO]   CPI model: threshold=2.5% TNX=5.24% → P=0.774
+[2026-10-11 19:04:59 ET] [INFO]   fed model: implied_rate=3.925% current≈4.057% diff=-13.2bps → P=0.236
+[2026-10-11 19:09:20 ET] [INFO]   fed model: implied_rate=3.925% current≈4.057% diff=-13.2bps → P=0.764
+[2026-10-11 19:09:20 ET] [INFO]   EDGE FOUND: KXRATECUT-26DEC31 | implied=5.0% true=76.4% edge=+71.4% dir=YES conf=90
+[2026-10-11 19:12:36 ET] [INFO]   price model: SOL-USD spot=111.08 target=500.00 vol=53.2% T=1952.1h → P=0.000
+[2026-10-11 19:13:04 ET] [INFO]   price model: ETH-USD spot=2534.34 target=1250.00 vol=37.1% T=1952.1h → P=0.000
+[2026-10-11 19:13:05 ET] [INFO]   price model: ETH-USD spot=2534.34 target=4250.00 vol=37.1% T=1952.1h → P=0.002
+[2026-10-11 19:13:05 ET] [INFO]   price model: ETH-USD spot=2534.34 target=4500.00 vol=37.1% T=1952.1h → P=0.001
+[2026-10-11 19:13:05 ET] [INFO]   price model: ETH-USD spot=2534.34 target=4750.00 vol=37.1% T=1952.1h → P=0.000
+[2026-10-11 19:13:07 ET] [INFO]   price model: BTC-USD spot=83616.79 target=50000.00 vol=32.7% T=1952.1h → P=0.000
+[2026-10-11 19:13:07 ET] [INFO]   price model: BTC-USD spot=83616.79 target=45000.00 vol=32.7% T=1952.1h → P=0.000
+[2026-10-11 19:13:07 ET] [INFO]   price model: BTC-USD spot=83616.79 target=40000.00 vol=32.7% T=1952.1h → P=0.000
+[2026-10-11 19:13:44 ET] [INFO]   price model: DIA spot=516.11 target=6.00 vol=10.9% T=1952.1h → P=1.000
+[2026-10-11 19:13:44 ET] [INFO]   EDGE FOUND: KXB200MS-26DEC-6.000 | implied=87.0% true=100.0% edge=+13.0% dir=YES conf=68
+[2026-10-11 19:14:07 ET] [INFO]   price model: BTC-USD spot=83631.24 target=119999.00 vol=32.7% T=1952.1h → P=0.010
+[2026-10-11 19:14:32 ET] [INFO]   price model: CL=F spot=92.44 target=75.00 vol=44.3% T=1942.6h → P=0.842
+[2026-10-11 19:14:32 ET] [INFO]   price model: CL=F spot=92.44 target=80.00 vol=44.3% T=1942.6h → P=0.756
+[2026-10-11 19:14:32 ET] [INFO]   price model: CL=F spot=92.44 target=85.00 vol=44.3% T=1942.6h → P=0.656
+[2026-10-11 19:14:32 ET] [INFO]   price model: CL=F spot=92.44 target=90.00 vol=44.3% T=1942.6h → P=0.551
+[2026-10-11 19:33:42 ET] [INFO]   CPI model: threshold=3.7% TNX=5.24% → P=0.654
+[2026-10-11 19:33:45 ET] [INFO]   CPI model: threshold=2.5% TNX=5.24% → P=0.774
+[2026-10-11 19:33:52 ET] [INFO]   fed model: implied_rate=3.925% current≈4.057% diff=-13.2bps → P=0.236
+[2026-10-11 20:26:47 ET] [INFO]   CPI model: threshold=3.5% TNX=5.24% → P=0.674
+[2026-10-11 20:26:47 ET] [INFO]   EDGE FOUND: KXCPIYOY-26SEP-T3.5 | implied=86.5% true=67.4% edge=-19.1% dir=NO conf=85
+[2026-10-11 20:26:47 ET] [INFO]   CPI model: threshold=3.6% TNX=5.24% → P=0.664
+[2026-10-11 20:26:47 ET] [INFO]   EDGE FOUND: KXCPIYOY-26SEP-T3.6 | implied=47.5% true=66.4% edge=+18.9% dir=YES conf=85
+[2026-10-11 20:26:48 ET] [INFO]   CPI model: threshold=3.7% TNX=5.24% → P=0.654
+[2026-10-11 20:26:48 ET] [INFO]   EDGE FOUND: KXCPIYOY-26SEP-T3.7 | implied=10.5% true=65.4% edge=+54.9% dir=YES conf=85
+[2026-10-11 20:26:50 ET] [INFO]   CPI model: threshold=2.3% TNX=5.24% → P=0.794
+[2026-10-11 20:26:50 ET] [INFO]   CPI model: threshold=2.4% TNX=5.24% → P=0.784
+[2026-10-11 20:26:50 ET] [INFO]   EDGE FOUND: KXCPICOREYOY-26SEP-T2.4 | implied=47.0% true=78.4% edge=+31.4% dir=YES conf=90
+[2026-10-11 20:30:40 ET] [INFO] Checked 88181 markets | Modelable: 88181 | Edges found: 6
+[2026-10-11 20:30:41 ET] [INFO] [Discord] Trade alert sent: KXRATECUT-26DEC31
+[2026-10-11 20:30:41 ET] [ERROR] AUTO-BET ERROR KXRATECUT-26DEC31: Kalshi POST /portfolio/orders → HTTP 410: {"error":{"code":"deprecated_v1_order_endpoint","message":"Please switch to the V2 endpoints","details":"https://docs.kalshi.com/api-reference/orders/create-order-v2"}}
+[2026-10-11 20:30:41 ET] [INFO]   Skipping KXB200MS-26DEC-6.000 — suggested bet too small to be meaningful
+[2026-10-11 20:30:41 ET] [INFO] [Discord] Trade alert sent: KXCPIYOY-26SEP-T3.5
+[2026-10-11 20:30:41 ET] [ERROR] AUTO-BET ERROR KXCPIYOY-26SEP-T3.5: Kalshi POST /portfolio/orders → HTTP 410: {"error":{"code":"deprecated_v1_order_endpoint","message":"Please switch to the V2 endpoints","details":"https://docs.kalshi.com/api-reference/orders/create-order-v2"}}
+[2026-10-11 20:30:42 ET] [INFO] [Discord] Trade alert sent: KXCPIYOY-26SEP-T3.6
+[2026-10-11 20:30:42 ET] [ERROR] AUTO-BET ERROR KXCPIYOY-26SEP-T3.6: Kalshi POST /portfolio/orders → HTTP 410: {"error":{"code":"deprecated_v1_order_endpoint","message":"Please switch to the V2 endpoints","details":"https://docs.kalshi.com/api-reference/orders/create-order-v2"}}
+[2026-10-11 20:30:42 ET] [INFO] [Discord] Trade alert sent: KXCPIYOY-26SEP-T3.7
+[2026-10-11 20:30:42 ET] [WARN] AUTO-BET RATE LIMIT: 3/3 bets placed this hour — skipping KXCPIYOY-26SEP-T3.7
+[2026-10-11 20:30:42 ET] [INFO] [Discord] Trade alert sent: KXCPICOREYOY-26SEP-T2.4
+[2026-10-11 20:30:42 ET] [WARN] AUTO-BET RATE LIMIT: 3/3 bets placed this hour — skipping KXCPICOREYOY-26SEP-T2.4
+[2026-10-11 20:30:42 ET] [INFO] Scan complete — 5 alerts sent
+[2026-10-11 20:30:42 ET] [INFO] ============================================================
+[2026-10-11 20:30:43 ET] [INFO] Scan job complete

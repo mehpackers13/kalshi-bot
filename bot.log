@@ -109399,3 +109399,96 @@ Total modelable markets evaluated: 0
 [2026-10-12 04:38:01 ET] [INFO] Scan complete — 102 alerts sent
 [2026-10-12 04:38:01 ET] [INFO] ============================================================
 [2026-10-12 04:38:01 ET] [INFO] Scan job complete
+[2026-10-12 16:13:22 ET] [INFO] Scan job starting
+[2026-10-12 16:13:22 ET] [INFO] Kalshi API key auth OK ✅  balance: $54.40
+[2026-10-12 16:13:22 ET] [INFO] ============================================================
+[2026-10-12 16:13:22 ET] [INFO] Starting market scan
+[2026-10-12 16:13:24 ET] [INFO] Portfolio value: $54.40 cash + $5.55 positions = $59.95
+[2026-10-12 16:13:24 ET] [INFO] Cash: $54.40  |  Positions: $5.55  |  Total: $59.95  |  Peak: $69.88
+[2026-10-12 16:13:24 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-10-12 16:13:25 ET] [WARN] API GET /markets → HTTP 400
+[2026-10-12 16:13:53 ET] [INFO] Fetched 102055 open markets via events endpoint across 50 pages
+[2026-10-12 16:13:53 ET] [INFO] Fetched 102055 open markets
+[2026-10-12 16:13:53 ET] [INFO] Parsed 92841 valid markets
+[2026-10-12 16:13:53 ET] [INFO] Categories: {'Sports': 43401, 'Elections': 24156, 'Entertainment': 8220, 'Financials': 5382, 'Economics': 4195, 'Politics': 2493, 'Mentions': 1255, 'Crypto': 994}
+[2026-10-12 16:22:57 ET] [INFO]   CPI model: threshold=10.0% TNX=5.24% → P=0.200
+[2026-10-12 16:25:54 ET] [INFO]   price model: DIA spot=517.91 target=50000.00 vol=10.8% T=12858.8h → P=0.000
+[2026-10-12 16:25:54 ET] [INFO]   EDGE FOUND: KXNVDAA-28JANHEAD-50000 | implied=82.0% true=0.0% edge=-82.0% dir=NO conf=85
+[2026-10-12 16:26:30 ET] [INFO]   price model: AMZN spot=259.53 target=1500000.00 vol=23.9% T=12858.8h → P=0.000
+[2026-10-12 16:26:30 ET] [INFO]   EDGE FOUND: KXAMZNA-28JANHEAD-1500000 | implied=94.5% true=0.0% edge=-94.5% dir=NO conf=85
+[2026-10-12 17:19:17 ET] [INFO]   price model: CL=F spot=93.16 target=7.80 vol=44.5% T=4798.8h → P=1.000
+[2026-10-12 17:30:22 ET] [INFO]   price model: DIA spot=517.91 target=3.00 vol=10.8% T=4087.8h → P=1.000
+[2026-10-12 17:40:56 ET] [INFO]   price model: AMZN spot=259.53 target=1.58 vol=23.9% T=3247.8h → P=1.000
+[2026-10-12 17:56:08 ET] [INFO]   fed model: implied_rate=3.930% current≈4.050% diff=-12.0bps → P=0.260
+[2026-10-12 18:03:03 ET] [INFO]   CPI model: threshold=2.5% TNX=5.24% → P=0.774
+[2026-10-12 18:34:51 ET] [INFO]   fed model: implied_rate=3.930% current≈4.050% diff=-12.0bps → P=0.260
+[2026-10-12 18:34:51 ET] [INFO]   fed model: implied_rate=3.930% current≈4.050% diff=-12.0bps → P=0.260
+[2026-10-12 18:34:51 ET] [INFO]   EDGE FOUND: KXRATEHIKE-2026-3 | implied=8.5% true=26.0% edge=+17.5% dir=YES conf=75
+[2026-10-12 18:43:13 ET] [INFO]   price model: ETH-USD spot=2484.26 target=1250.00 vol=37.1% T=1928.8h → P=0.000
+[2026-10-12 18:43:14 ET] [INFO]   price model: ETH-USD spot=2484.26 target=4250.00 vol=37.1% T=1928.8h → P=0.001
+[2026-10-12 18:43:14 ET] [INFO]   EDGE FOUND: KXETHMAXY-27JAN01-4250.00 | implied=8.5% true=0.1% edge=-8.4% dir=NO conf=63
+[2026-10-12 18:43:14 ET] [INFO]   price model: ETH-USD spot=2484.26 target=4500.00 vol=37.1% T=1928.8h → P=0.000
+[2026-10-12 18:43:14 ET] [INFO]   price model: ETH-USD spot=2484.26 target=4750.00 vol=37.1% T=1928.8h → P=0.000
+[2026-10-12 18:43:15 ET] [INFO]   price model: BTC-USD spot=82465.16 target=50000.00 vol=33.0% T=1928.8h → P=0.001
+[2026-10-12 18:43:16 ET] [INFO]   price model: BTC-USD spot=82465.16 target=45000.00 vol=33.0% T=1928.8h → P=0.000
+[2026-10-12 18:43:56 ET] [INFO]   price model: DIA spot=517.91 target=6.00 vol=10.8% T=1928.8h → P=1.000
+[2026-10-12 18:43:56 ET] [INFO]   EDGE FOUND: KXB200MS-26DEC-6.000 | implied=91.5% true=100.0% edge=+8.5% dir=YES conf=68
+[2026-10-12 18:44:21 ET] [INFO]   price model: BTC-USD spot=82487.42 target=119999.00 vol=33.0% T=1928.8h → P=0.008
+[2026-10-12 18:44:31 ET] [INFO]   price model: QQQ spot=746.04 target=27000.00 vol=14.9% T=1920.8h → P=0.000
+[2026-10-12 18:44:31 ET] [INFO]   EDGE FOUND: KXNDQDIRY-26DEC31H1600-T27000 | implied=89.5% true=0.0% edge=-89.5% dir=NO conf=85
+[2026-10-12 18:44:46 ET] [INFO]   price model: CL=F spot=93.28 target=75.00 vol=44.6% T=1919.3h → P=0.852
+[2026-10-12 18:44:46 ET] [INFO]   EDGE FOUND: KXWTIDIRY-26DEC31H1430-T75 | implied=76.5% true=85.2% edge=+8.7% dir=YES conf=68
+[2026-10-12 18:44:47 ET] [INFO]   price model: CL=F spot=93.28 target=80.00 vol=44.6% T=1919.3h → P=0.769
+[2026-10-12 18:44:47 ET] [INFO]   price model: CL=F spot=93.28 target=85.00 vol=44.6% T=1919.3h → P=0.672
+[2026-10-12 18:44:47 ET] [INFO]   price model: CL=F spot=93.28 target=90.00 vol=44.6% T=1919.3h → P=0.568
+[2026-10-12 18:44:47 ET] [INFO]   EDGE FOUND: KXWTIDIRY-26DEC31H1430-T90 | implied=44.0% true=56.8% edge=+12.8% dir=YES conf=68
+[2026-10-12 19:04:59 ET] [INFO]   CPI model: threshold=3.7% TNX=5.24% → P=0.654
+[2026-10-12 19:05:01 ET] [INFO]   CPI model: threshold=2.3% TNX=5.24% → P=0.794
+[2026-10-12 19:05:01 ET] [INFO]   EDGE FOUND: KXCPICOREYOY-26NOV-T2.3 | implied=95.0% true=79.4% edge=-15.6% dir=NO conf=75
+[2026-10-12 19:05:02 ET] [INFO]   CPI model: threshold=2.5% TNX=5.24% → P=0.774
+[2026-10-12 19:05:02 ET] [INFO]   EDGE FOUND: KXCPICOREYOY-26NOV-T2.5 | implied=86.5% true=77.4% edge=-9.1% dir=NO conf=68
+[2026-10-12 19:05:09 ET] [INFO]   fed model: implied_rate=3.930% current≈4.050% diff=-12.0bps → P=0.260
+[2026-10-12 19:27:37 ET] [INFO]   price model: SOL-USD spot=105.69 target=100.00 vol=54.9% T=463.8h → P=0.331
+[2026-10-12 19:27:37 ET] [INFO]   EDGE FOUND: KXSOLMINMON-SOL-26OCT31-10000 | implied=51.5% true=33.1% edge=-18.4% dir=NO conf=70
+[2026-10-12 19:31:50 ET] [INFO]   price model: CL=F spot=93.34 target=82.99 vol=44.6% T=432.8h → P=0.882
+[2026-10-12 19:31:51 ET] [INFO]   price model: CL=F spot=93.34 target=96.99 vol=44.6% T=432.8h → P=0.349
+[2026-10-12 19:31:51 ET] [INFO]   EDGE FOUND: KXBRENTMON-26OCT3017-T96.99 | implied=71.0% true=34.9% edge=-36.1% dir=NO conf=85
+[2026-10-12 20:04:21 ET] [INFO]   price model: CL=F spot=93.17 target=99.99 vol=44.5% T=96.8h → P=0.066
+[2026-10-12 20:04:21 ET] [INFO]   EDGE FOUND: KXBRENTW-26OCT1617-T99.99 | implied=74.0% true=6.6% edge=-67.5% dir=NO conf=85
+[2026-10-12 20:04:21 ET] [INFO]   price model: CL=F spot=93.17 target=101.99 vol=44.5% T=96.8h → P=0.027
+[2026-10-12 20:04:21 ET] [INFO]   EDGE FOUND: KXBRENTW-26OCT1617-T101.99 | implied=57.5% true=2.7% edge=-54.8% dir=NO conf=85
+[2026-10-12 20:04:22 ET] [INFO]   price model: CL=F spot=93.17 target=103.99 vol=44.5% T=96.8h → P=0.009
+[2026-10-12 20:04:22 ET] [INFO]   EDGE FOUND: KXBRENTW-26OCT1617-T103.99 | implied=37.5% true=0.9% edge=-36.6% dir=NO conf=85
+[2026-10-12 20:08:57 ET] [INFO] Checked 92740 markets | Modelable: 92740 | Edges found: 15
+[2026-10-12 20:08:57 ET] [INFO] [Discord] Trade alert sent: KXNVDAA-28JANHEAD-50000
+[2026-10-12 20:08:57 ET] [ERROR] AUTO-BET ERROR KXNVDAA-28JANHEAD-50000: Kalshi POST /portfolio/orders → HTTP 410: {"error":{"code":"deprecated_v1_order_endpoint","message":"Please switch to the V2 endpoints","details":"https://docs.kalshi.com/api-reference/orders/create-order-v2"}}
+[2026-10-12 20:08:58 ET] [INFO] [Discord] Trade alert sent: KXAMZNA-28JANHEAD-1500000
+[2026-10-12 20:08:58 ET] [ERROR] AUTO-BET ERROR KXAMZNA-28JANHEAD-1500000: Kalshi POST /portfolio/orders → HTTP 410: {"error":{"code":"deprecated_v1_order_endpoint","message":"Please switch to the V2 endpoints","details":"https://docs.kalshi.com/api-reference/orders/create-order-v2"}}
+[2026-10-12 20:08:58 ET] [INFO] [Discord] Trade alert sent: KXRATEHIKE-2026-3
+[2026-10-12 20:08:58 ET] [ERROR] AUTO-BET ERROR KXRATEHIKE-2026-3: Kalshi POST /portfolio/orders → HTTP 410: {"error":{"code":"deprecated_v1_order_endpoint","message":"Please switch to the V2 endpoints","details":"https://docs.kalshi.com/api-reference/orders/create-order-v2"}}
+[2026-10-12 20:08:59 ET] [INFO] [Discord] Trade alert sent: KXETHMAXY-27JAN01-4250.00
+[2026-10-12 20:08:59 ET] [WARN] AUTO-BET RATE LIMIT: 3/3 bets placed this hour — skipping KXETHMAXY-27JAN01-4250.00
+[2026-10-12 20:08:59 ET] [INFO]   Skipping KXB200MS-26DEC-6.000 — suggested bet too small to be meaningful
+[2026-10-12 20:08:59 ET] [INFO] [Discord] Trade alert sent: KXNDQDIRY-26DEC31H1600-T27000
+[2026-10-12 20:08:59 ET] [WARN] AUTO-BET RATE LIMIT: 3/3 bets placed this hour — skipping KXNDQDIRY-26DEC31H1600-T27000
+[2026-10-12 20:08:59 ET] [INFO] [Discord] Trade alert sent: KXWTIDIRY-26DEC31H1430-T75
+[2026-10-12 20:08:59 ET] [WARN] AUTO-BET RATE LIMIT: 3/3 bets placed this hour — skipping KXWTIDIRY-26DEC31H1430-T75
+[2026-10-12 20:08:59 ET] [INFO] [Discord] Trade alert sent: KXWTIDIRY-26DEC31H1430-T90
+[2026-10-12 20:08:59 ET] [WARN] AUTO-BET RATE LIMIT: 3/3 bets placed this hour — skipping KXWTIDIRY-26DEC31H1430-T90
+[2026-10-12 20:08:59 ET] [INFO] [Discord] Trade alert sent: KXCPICOREYOY-26NOV-T2.3
+[2026-10-12 20:08:59 ET] [WARN] AUTO-BET RATE LIMIT: 3/3 bets placed this hour — skipping KXCPICOREYOY-26NOV-T2.3
+[2026-10-12 20:09:00 ET] [INFO] [Discord] Trade alert sent: KXCPICOREYOY-26NOV-T2.5
+[2026-10-12 20:09:00 ET] [WARN] AUTO-BET RATE LIMIT: 3/3 bets placed this hour — skipping KXCPICOREYOY-26NOV-T2.5
+[2026-10-12 20:09:00 ET] [INFO] [Discord] Trade alert sent: KXSOLMINMON-SOL-26OCT31-10000
+[2026-10-12 20:09:00 ET] [WARN] AUTO-BET RATE LIMIT: 3/3 bets placed this hour — skipping KXSOLMINMON-SOL-26OCT31-10000
+[2026-10-12 20:09:00 ET] [INFO] [Discord] Trade alert sent: KXBRENTMON-26OCT3017-T96.99
+[2026-10-12 20:09:00 ET] [WARN] AUTO-BET RATE LIMIT: 3/3 bets placed this hour — skipping KXBRENTMON-26OCT3017-T96.99
+[2026-10-12 20:09:01 ET] [INFO] [Discord] Trade alert sent: KXBRENTW-26OCT1617-T99.99
+[2026-10-12 20:09:01 ET] [WARN] AUTO-BET RATE LIMIT: 3/3 bets placed this hour — skipping KXBRENTW-26OCT1617-T99.99
+[2026-10-12 20:09:01 ET] [INFO] [Discord] Trade alert sent: KXBRENTW-26OCT1617-T101.99
+[2026-10-12 20:09:01 ET] [WARN] AUTO-BET RATE LIMIT: 3/3 bets placed this hour — skipping KXBRENTW-26OCT1617-T101.99
+[2026-10-12 20:09:01 ET] [INFO] [Discord] Trade alert sent: KXBRENTW-26OCT1617-T103.99
+[2026-10-12 20:09:01 ET] [WARN] AUTO-BET RATE LIMIT: 3/3 bets placed this hour — skipping KXBRENTW-26OCT1617-T103.99
+[2026-10-12 20:09:01 ET] [INFO] Scan complete — 14 alerts sent
+[2026-10-12 20:09:01 ET] [INFO] ============================================================
+[2026-10-12 20:09:01 ET] [INFO] Scan job complete

@@ -272,24 +272,41 @@ class KalshiAPI:
         log(f"Fetched {len(all_markets)} open markets via events endpoint across {pages} pages")
         return all_markets
 
-    def get_settled_markets(self, limit: int = 100, pages: int = 1) -> list:
+    def get_settled_markets(self, limit: int = 200, pages: int = 1) -> list:
         """
-        Fetch finalized markets. With pages>1, follows the Kalshi cursor to
-        pull multiple pages (up to pages * limit rows). Useful for catching up
-        on a backlog of unresolved alerts.
+        Fetch finalized markets via the /events endpoint (same source as the
+        main scanner — Kalshi's /markets endpoint only returns parlay junk).
+        Each market dict is flattened to carry `category` from its parent event
+        and `result` ("yes"/"no") from the settlement payload.
+
+        With pages>1, follows the cursor to pull multiple pages. Returns a flat
+        list of market dicts across all finalized events.
         """
         out, cursor = [], None
         for _ in range(max(1, pages)):
-            params = {"status": "finalized", "limit": limit}
+            params = {"status": "settled", "limit": limit, "with_nested_markets": "true"}
             if cursor:
                 params["cursor"] = cursor
-            data = self._get("/markets", params=params)
+            data = self._get("/events", params=params)
+            if not data:
+                # Try alternate status label — Kalshi has used both over time
+                params["status"] = "finalized"
+                data = self._get("/events", params=params)
             if not data:
                 break
-            batch = data.get("markets", []) or []
-            out.extend(batch)
+            events = data.get("events", []) or []
+            for event in events:
+                category = event.get("category", "")
+                for m in event.get("markets", []) or []:
+                    if not m.get("category"):
+                        m["category"] = category
+                    # Normalize settlement result to "yes" / "no" where present
+                    r = (m.get("result") or m.get("settlement_value") or "").lower()
+                    if r in ("yes", "no"):
+                        m["result"] = r
+                    out.append(m)
             cursor = data.get("cursor")
-            if not cursor or not batch:
+            if not cursor or not events:
                 break
             time.sleep(0.2)
         return out

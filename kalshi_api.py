@@ -272,9 +272,27 @@ class KalshiAPI:
         log(f"Fetched {len(all_markets)} open markets via events endpoint across {pages} pages")
         return all_markets
 
-    def get_settled_markets(self, limit: int = 100) -> list:
-        data = self._get("/markets", params={"status": "finalized", "limit": limit})
-        return (data or {}).get("markets", [])
+    def get_settled_markets(self, limit: int = 100, pages: int = 1) -> list:
+        """
+        Fetch finalized markets. With pages>1, follows the Kalshi cursor to
+        pull multiple pages (up to pages * limit rows). Useful for catching up
+        on a backlog of unresolved alerts.
+        """
+        out, cursor = [], None
+        for _ in range(max(1, pages)):
+            params = {"status": "finalized", "limit": limit}
+            if cursor:
+                params["cursor"] = cursor
+            data = self._get("/markets", params=params)
+            if not data:
+                break
+            batch = data.get("markets", []) or []
+            out.extend(batch)
+            cursor = data.get("cursor")
+            if not cursor or not batch:
+                break
+            time.sleep(0.2)
+        return out
 
     # ── Portfolio (authenticated) ─────────────────────────────────────────────────
 

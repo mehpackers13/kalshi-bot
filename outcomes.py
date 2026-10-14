@@ -66,10 +66,14 @@ def read_all() -> list:
         return [r for r in csv.DictReader(f) if r.get("timestamp")]
 
 
-def auto_resolve_outcomes(api) -> int:
+def auto_resolve_outcomes(api, pages: int = 1, limit: int = 200) -> int:
     """
     Check all pending outcomes against finalized Kalshi markets.
     Updates outcomes.csv in place. Returns count of newly resolved rows.
+
+    pages/limit control how many finalized markets to pull from Kalshi.
+    Default 1 page @ 200 catches recent settlements; pages=5 (1000 markets)
+    is useful on scan runs after a backlog has built up.
     """
     rows = read_all()
     pending = [r for r in rows if r.get("outcome") == "" and r.get("ticker")]
@@ -77,7 +81,10 @@ def auto_resolve_outcomes(api) -> int:
         return 0
 
     # Fetch recently finalized markets from Kalshi
-    finalized = api.get_settled_markets(limit=200)
+    try:
+        finalized = api.get_settled_markets(limit=limit, pages=pages)
+    except TypeError:
+        finalized = api.get_settled_markets(limit=limit)
     finalized_map = {}
     for m in finalized:
         ticker = m.get("ticker", "")

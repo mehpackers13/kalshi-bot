@@ -1,9 +1,9 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T23:40:10.354804Z",
+  "updated_at": "2026-10-15T16:48:41.342000Z",
   "category_confidence": {
-    "Crypto": 0.9,
-    "Financials": 0.9,
+    "Crypto": 0.8,
+    "Financials": 0.8,
     "Economics": 1.0,
     "Weather": 0.7
   },
@@ -19,6 +19,13 @@
       "date": "2026-10-15",
       "changes": [
         "jarvis bug reverted: Crypto/Financials 6.0 -> 1.0 (was mistaking multipliers for thresholds)"
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "changes": [
+        "Category Financials: hit rate 0.0% over 26 alerts \u2192 lowering confidence 0.90 \u2192 0.80",
+        "Category Crypto: hit rate 0.0% over 19 alerts \u2192 lowering confidence 0.90 \u2192 0.80"
       ]
     }
   ]

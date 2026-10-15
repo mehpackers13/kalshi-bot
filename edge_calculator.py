@@ -32,6 +32,7 @@ class EdgeResult:
     close_time:    str        = ""
     model_name:    str        = ""
     adjusted_prob: float      = 0.0  # after model confidence adjustment
+    signal:        str        = ""   # tag like "weather_edge", "log5" for parlay grouping
 
 
 def _gate_check(market: dict) -> Optional[str]:
@@ -165,6 +166,18 @@ def calculate_edge(market: dict) -> Optional[EdgeResult]:
     conf_weight   = confidence / 100.0
     adjusted_prob = conf_weight * true_prob + (1 - conf_weight) * implied_prob
 
+    # Infer signal tag so parlay_builder can group weather legs together
+    # (weather-only parlays showed +18-33% ROI in the parlay backtest).
+    signal_tag = ""
+    if category == "Sports":
+        try:
+            import sports_models
+            sr = sports_models.analyze_market(market)
+            if sr:
+                signal_tag = sr.get("signal", "")
+        except Exception:
+            pass
+
     result = EdgeResult(
         ticker        = ticker,
         title         = market["title"],
@@ -181,6 +194,7 @@ def calculate_edge(market: dict) -> Optional[EdgeResult]:
         yes_bid       = market["yes_bid"],
         yes_ask       = market["yes_ask"],
         close_time    = market.get("close_time", ""),
+        signal        = signal_tag,
     )
 
     log(f"  EDGE FOUND: {ticker} | implied={implied_prob:.1%} true={true_prob:.1%} "

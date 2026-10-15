@@ -46,8 +46,14 @@ def _group_candidates(edges: list) -> list:
     Group same-day same-sport edges into candidate parlay bundles.
     Each edge is expected to carry at least `.ticker`, `.direction`,
     `.confidence`, `.edge_pct`, `.true_prob` and (optionally) `.league`.
+
+    Preferred grouping: weather_edge legs together (backtest shows +18.2%
+    ROI on 2-leg weather, +33.3% on 3-leg weather). Fall through to the
+    general same-league same-day grouping for other signal mixes.
     """
-    groups: dict = {}
+    weather_groups: dict = {}
+    general_groups: dict = {}
+
     for e in edges:
         conf  = getattr(e, "confidence", 0) or 0
         edge  = getattr(e, "edge_pct",   0) or 0
@@ -56,12 +62,23 @@ def _group_candidates(edges: list) -> list:
         league = getattr(e, "league", None) or _infer_league(getattr(e, "ticker", ""))
         if not league:
             continue
-        # Group by (league, YYYY-MM-DD-ish component of ticker) — same slate.
-        slate = _slate_key(getattr(e, "ticker", ""))
-        key   = (league, slate)
-        groups.setdefault(key, []).append(e)
-    # Keep groups with 2+ edges
-    return [edges for edges in groups.values() if len(edges) >= 2]
+        slate   = _slate_key(getattr(e, "ticker", ""))
+        signal  = getattr(e, "signal", "") or ""
+
+        # Priority bucket: weather_edge legs always group together across
+        # the day (+33% ROI backtested for weather-only 3-leg parlays)
+        if signal == "weather_edge":
+            weather_groups.setdefault(("weather", slate), []).append(e)
+        general_groups.setdefault((league, slate), []).append(e)
+
+    out = []
+    for g in weather_groups.values():
+        if len(g) >= 2:
+            out.append(g)
+    for g in general_groups.values():
+        if len(g) >= 2 and g not in out:
+            out.append(g)
+    return out
 
 
 def _infer_league(ticker: str) -> Optional[str]:

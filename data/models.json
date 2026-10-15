@@ -2,8 +2,8 @@
   "version": 1,
   "updated_at": "2026-10-14T23:40:10.354804Z",
   "category_confidence": {
-    "Crypto": 6.0,
-    "Financials": 6.0,
+    "Crypto": 1.0,
+    "Financials": 1.0,
     "Economics": 1.0,
     "Weather": 0.7
   },
@@ -13,6 +13,12 @@
       "date": "2026-10-14",
       "changes": [
         "No adjustments needed"
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "changes": [
+        "jarvis bug reverted: Crypto/Financials 6.0 -> 1.0 (was mistaking multipliers for thresholds)"
       ]
     }
   ]

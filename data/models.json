@@ -2,9 +2,9 @@
   "version": 1,
   "updated_at": "2026-10-15T17:38:28.102031Z",
   "category_confidence": {
-    "Crypto": 0.7,
-    "Financials": 0.7,
-    "Economics": 1.0,
+    "Crypto": 1.1,
+    "Financials": 0.8,
+    "Economics": 0.7,
     "Weather": 0.7
   },
   "min_edge_overrides": {},
@@ -33,6 +33,15 @@
       "changes": [
         "Category Crypto: hit rate 0.0% over 19 alerts \u2192 lowering confidence 0.80 \u2192 0.70",
         "Category Financials: hit rate 0.0% over 26 alerts \u2192 lowering confidence 0.80 \u2192 0.70"
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "changes": [
+        "empirical rebalance from 439 resolved outcomes",
+        "Crypto 0.90 -> 1.10 (actual +EV, +592 units)",
+        "Financials 1.00 -> 0.80 (41.5% hit, -62u)",
+        "Economics 1.00 -> 0.70 (25% hit, -70u)"
       ]
     }
   ]

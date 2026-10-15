@@ -603,6 +603,18 @@ def estimate_true_probability(market: dict) -> Optional[float]:
     title_lower = market.get("title", "").lower()
     category    = market.get("category", "")
 
+    # ── Sports (moneyline games via ESPN power ratings + log5) ────────────────
+    if category == "Sports" or (market.get("ticker","") or "").upper().startswith(
+        ("KXNFL","KXNBA","KXMLB","KXNHL","KXUFC","KXMLS","KXEPL","KXENGPL")):
+        try:
+            import sports_models
+            res = sports_models.analyze_market(market)
+            if res is not None:
+                return res["true_prob"] if res["direction"] == "YES" else 1 - res["true_prob"]
+        except Exception as exc:
+            # Never let a sports model error crash the whole scan
+            pass
+
     # ── Fed / FOMC / interest rate ────────────────────────────────────────────
     if any(w in title_lower for w in ("fed", "fomc", "interest rate", "federal funds")):
         prob = model_fed_rate(market)

@@ -131,8 +131,19 @@ def calculate_edge(market: dict) -> Optional[EdgeResult]:
     # Raw edge: positive means we think YES is underpriced (buy YES)
     raw_edge = (true_prob - implied_prob) * 100   # in percentage points
 
+    # Per-category edge override lives in models.json (empty by default).
+    # Lets self_improve raise the bar on noisy categories without touching
+    # the global MIN_EDGE_PCT.
+    min_edge = config.MIN_EDGE_PCT
+    try:
+        import self_improve as _si
+        _overrides = (_si.load_models().get("min_edge_overrides") or {})
+        min_edge = float(_overrides.get(category, min_edge))
+    except Exception:
+        pass
+
     # We can trade either side
-    if abs(raw_edge) < config.MIN_EDGE_PCT:
+    if abs(raw_edge) < min_edge:
         return None   # edge too small — stay silent
 
     direction = "YES" if raw_edge > 0 else "NO"

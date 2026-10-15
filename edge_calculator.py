@@ -143,6 +143,23 @@ def calculate_edge(market: dict) -> Optional[EdgeResult]:
 
     confidence, reasoning = _confidence_score(market, edge_pct, category)
 
+    # Options → Kalshi cross-signal: if this is a stock price-target
+    # market AND the options bot has flagged unusual volume on the same
+    # ticker recently, bump confidence. Options volume_spike predicts
+    # a 3%+ move 62.9% of the time (backtest p=0.002), so when it fires
+    # on a stock Kalshi is pricing a target for, the price has real
+    # directional momentum.
+    if category in ("Financials", "Companies") or ticker.upper().startswith(
+        ("KXTSLA","KXAMZN","KXMETA","KXAAPL","KXNVDA","KXMSFT","KXGOOGL","KXGOOG")):
+        try:
+            import options_signal
+            bump = options_signal.confidence_boost(ticker, market.get("title",""))
+            if bump > 0:
+                confidence = min(100, int(confidence + bump * 100))
+                reasoning = (reasoning + f" | options-flow-boost (+{bump*100:.0f} conf)").strip(" |")
+        except Exception:
+            pass
+
     # Apply confidence discount to probability
     # Blend our estimate toward implied prob based on uncertainty
     conf_weight   = confidence / 100.0

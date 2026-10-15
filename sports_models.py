@@ -49,6 +49,12 @@ HOME_ADV      = 0.03    # +3% log5 bump for home side
 MIN_EDGE_PCT  = 8.0     # minimum model-vs-market gap to call it an edge
 MIN_CONFIDENCE = 70     # 0–100 confidence used by downstream auto-bettor
 
+# After walk-forward on 2023 showed weather_edge at 49.5% hit (vs 53.8%
+# in 2024), we DON'T trust the signal yet. Keep it running but confidence
+# capped at 72 — just above gate — so bets are small until another year
+# of data confirms or denies. See overseer/docs/WALK_FORWARD_RESULTS.md
+WEATHER_EDGE_MAX_CONFIDENCE = 72
+
 
 # ── ESPN plumbing ────────────────────────────────────────────────────────────
 # ESPN's site API returns 403 for generic/bot-looking UAs — this one works.
@@ -276,7 +282,10 @@ def _analyze_total_market(market: dict, ticker: str, title: str,
     if edge_pct < MIN_EDGE_PCT:
         return None
 
-    confidence = min(100, MIN_CONFIDENCE + int(edge["confidence_bump"] * 100))
+    # Weather_edge failed 2023 walk-forward (49.5% hit rate). Cap confidence
+    # low until a second year of data confirms edge. See WALK_FORWARD_RESULTS.md
+    nominal_conf = min(100, MIN_CONFIDENCE + int(edge["confidence_bump"] * 100))
+    confidence   = min(nominal_conf, WEATHER_EDGE_MAX_CONFIDENCE)
 
     return {
         "ticker":       ticker,
@@ -287,7 +296,7 @@ def _analyze_total_market(market: dict, ticker: str, title: str,
         "implied_prob": round(no_cost,  4),
         "edge_pct":     edge_pct,
         "confidence":   confidence,
-        "reasoning":    f"TOTAL/UNDER | {edge['reason']} | city={city}",
+        "reasoning":    f"TOTAL/UNDER | {edge['reason']} | city={city} | wf-capped",
         "league":       league,
         "signal":       "weather_edge",
     }

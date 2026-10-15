@@ -1,0 +1,63 @@
+name: Kalshi One-Shot Backfill
+
+# Manual-trigger only. Hits Kalshi's settled markets endpoint with
+# aggressive pagination to catch up any backlog of unresolved outcomes.
+# Takes 5-15 min depending on how many pages are pulled.
+
+on:
+  workflow_dispatch:
+    inputs:
+      pages:
+        description: 'Pages of settled markets to pull (each = 200)'
+        required: false
+        default: '100'
+
+concurrency:
+  group: kalshi-git
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - name: Install deps
+        run: pip install -r requirements.txt
+
+      - name: Run backfill
+        env:
+          KALSHI_API_KEY_ID:  ${{ secrets.KALSHI_API_KEY_ID }}
+          KALSHI_PRIVATE_KEY: ${{ secrets.KALSHI_PRIVATE_KEY }}
+        run: python backfill_outcomes.py --pages ${{ github.event.inputs.pages }}
+
+      - name: Regenerate dashboard data
+        if: always()
+        run: python generate_data.py
+
+      - name: Commit updated outcomes
+        if: always()
+        run: |
+          git config user.name  "kalshi-bot[backfill]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git diff --quiet HEAD && echo "No new resolutions to commit." && exit 0
+          git commit -a -m "backfill: resolve outcomes catch-up $(date -u '+%Y-%m-%d %H:%M UTC')"
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git rebase -X ours origin/main && git push && echo "Push succeeded on attempt $attempt." && break
+            git rebase --abort 2>/dev/null || true
+            sleep 10
+          done

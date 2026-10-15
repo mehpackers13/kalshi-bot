@@ -22,6 +22,9 @@ jobs:
 
   scan:
     runs-on: ubuntu-latest
+    # Hard cap: a normal scan is 4–7 min. 25 min means something hung — fail
+    # fast so the concurrency lock releases and the next scheduled scan runs.
+    timeout-minutes: 25
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4

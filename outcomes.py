@@ -130,10 +130,19 @@ def auto_resolve_outcomes(api, pages: int = 1, limit: int = 200) -> int:
 
 
 def _rewrite(rows: list) -> None:
+    """
+    Rewrite outcomes.csv. extrasaction="ignore" prevents DictWriter from
+    raising when a row has unknown keys — historical rows sometimes end up
+    with a None key when the source CSV had extra commas (e.g. unescaped
+    quotes in title or notes), which crashed every subsequent resolution.
+    """
     with open(config.OUTCOMES_CSV, "w", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=FIELDNAMES)
+        w = csv.DictWriter(f, fieldnames=FIELDNAMES, extrasaction="ignore")
         w.writeheader()
-        w.writerows(rows)
+        for row in rows:
+            # Strip any None key that may have been introduced by DictReader
+            row.pop(None, None)
+            w.writerow(row)
 
 
 def hit_rate_summary() -> dict:

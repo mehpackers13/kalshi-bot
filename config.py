@@ -54,6 +54,13 @@ CUT_LOSS_MIN_HOURS    = 48.0     # only cut losses when >48h remain (let near-ex
 DRY_RUN               = False
 MAX_AUTO_BETS_PER_HOUR = 3        # rate limit — prevents runaway loops
 
+# ── Multi-leg parlays (Kalshi combo markets) ──────────────────────────────────
+# Default OFF. Enable only after live-testing collection_ticker discovery and
+# confirming the parlay-pairing math produces +EV bundles on real data.
+# When True, parlay_builder.fire_parlay() will attempt real combo orders on
+# bundles that clear MIN_PARLAY_EDGE_PCT (15%) across all legs.
+PARLAY_LIVE           = False
+
 # ── Scanning ────────────────────────────────────────────────────────────────────
 SCAN_INTERVAL_MINUTES = 30
 

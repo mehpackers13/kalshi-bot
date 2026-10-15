@@ -14,6 +14,7 @@ import config
 from kalshi_api import KalshiAPI, parse_market
 from edge_calculator import calculate_edge, EdgeResult
 from kelly import size_bet
+import bankroll
 from bankroll import check_drawdown_stop, sync_live_balance
 from outcomes import log_alert, auto_resolve_outcomes, read_all
 from discord_alerts import send_trade_alert, send_drawdown_stop, send_health_ping
@@ -199,6 +200,23 @@ def run_scan(api: KalshiAPI) -> list:
         log("Scan complete — no qualifying edges found (this is fine)")
     else:
         log(f"Scan complete — {len(alerted)} alerts sent")
+
+    # ── Parlay-pairing pass ──────────────────────────────────────────────────
+    # Off by default; config.PARLAY_LIVE flips it on after validation.
+    try:
+        import parlay_builder
+        bundles = parlay_builder.pick_parlays(alerted)
+        if bundles:
+            br = bankroll.load_bankroll()
+            bankroll_total = br.get("live", {}).get("balance", 0)
+            for bundle in bundles[:1]:   # at most 1 parlay per scan
+                r = parlay_builder.fire_parlay(api, bundle, bankroll_total)
+                if r.get("placed"):
+                    log(f"PARLAY placed: {r}", "INFO")
+                else:
+                    log(f"Parlay candidate skipped — reason={r.get('reason')}", "DEBUG")
+    except Exception as exc:
+        log(f"parlay pass non-fatal: {exc}", "WARN")
 
     log("=" * 60)
     return alerted

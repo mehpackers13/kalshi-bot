@@ -134,6 +134,72 @@ class KalshiAPI:
         }
         return self._post("/portfolio/orders", payload)
 
+    def create_combo_market(self, collection_ticker: str, legs: list) -> dict:
+        """
+        Create a Kalshi multi-leg parlay market inside the given collection.
+        Kalshi charges 10 tokens per creation; limit is 5000/week.
+
+        legs: list of {market_ticker, event_ticker, side}  (side = 'yes' or 'no')
+        Returns the API response — the key field is `market_ticker`, which is
+        the newly-created combo you then place a normal order against.
+        """
+        payload = {
+            "selected_markets":    [
+                {"market_ticker": l["market_ticker"],
+                 "event_ticker":  l["event_ticker"],
+                 "side":          l["side"]}
+                for l in legs
+            ],
+            "with_market_payload": True,
+        }
+        return self._post(f"/multivariate_event_collections/{collection_ticker}", payload)
+
+    def place_parlay(self, collection_ticker: str, legs: list,
+                     count: int, max_price_cents: int = 99) -> dict:
+        """
+        Convenience: create the combo market if it doesn't exist, then place
+        a YES limit order against it at or below max_price_cents.
+
+        Returns {combo_ticker, order_id, status}.
+        """
+        combo = self.create_combo_market(collection_ticker, legs)
+        combo_ticker = combo.get("market_ticker")
+        if not combo_ticker:
+            raise Exception(f"combo creation returned no market_ticker: {combo}")
+        # Buy YES on the combo (hitting the ask up to max_price_cents)
+        order = self.place_order(
+            ticker    = combo_ticker,
+            side      = "yes",
+            count     = count,
+            yes_price = min(max_price_cents, 99),
+        )
+        return {
+            "combo_ticker": combo_ticker,
+            "order_id":     (order.get("order") or {}).get("order_id"),
+            "status":       (order.get("order") or {}).get("status"),
+            "legs":         legs,
+        }
+
+    def list_combo_collections(self, limit: int = 100, pages: int = 1) -> list:
+        """List available multivariate_event_collections so we can discover
+        valid collection_tickers to parlay inside. Needed for the pairing
+        logic to know which legs CAN be combined on Kalshi."""
+        out, cursor = [], None
+        for _ in range(max(1, pages)):
+            params = {"limit": limit}
+            if cursor:
+                params["cursor"] = cursor
+            data = self._get("/multivariate_event_collections", params=params)
+            if not data:
+                break
+            batch = (data.get("collections") or data.get("multivariate_event_collections") or [])
+            out.extend(batch)
+            cursor = data.get("cursor")
+            if not cursor or not batch:
+                break
+            time.sleep(0.2)
+        return out
+
     def _get(self, path: str, params: dict = None, timeout: int = 15) -> Optional[dict]:
         qs = ""
         if params:

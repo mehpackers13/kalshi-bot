@@ -144,6 +144,23 @@ def calculate_edge(market: dict) -> Optional[EdgeResult]:
 
     confidence, reasoning = _confidence_score(market, edge_pct, category)
 
+    # ── Apply the category_confidence multiplier that Jarvis + self_improve
+    # have been tuning. This was the missing link — multipliers were being
+    # written to models.json weekly but never READ when sizing bets.
+    # Economics 0.70 → confidence scales 70%, pushing weak Economics bets
+    # below the gate. Crypto 1.10 → modest boost on confirmed winners.
+    try:
+        import self_improve as _si
+        models = _si.load_models()
+        mult = float((models.get("category_confidence") or {}).get(category, 1.0))
+        # Clamp defensively (multipliers should be 0.5–1.8)
+        mult = max(0.3, min(2.0, mult))
+        if mult != 1.0:
+            confidence = int(round(confidence * mult))
+            reasoning  = (reasoning + f" | cat_mult×{mult:.2f}").strip(" |")
+    except Exception:
+        pass
+
     # Options → Kalshi cross-signal: if this is a stock price-target
     # market AND the options bot has flagged unusual volume on the same
     # ticker recently, bump confidence. Options volume_spike predicts

@@ -55,10 +55,12 @@ DRY_RUN               = False
 MAX_AUTO_BETS_PER_HOUR = 3        # rate limit — prevents runaway loops
 
 # ── Multi-leg parlays (Kalshi combo markets) ──────────────────────────────────
-# Default OFF. Enable only after live-testing collection_ticker discovery and
-# confirming the parlay-pairing math produces +EV bundles on real data.
-# When True, parlay_builder.fire_parlay() will attempt real combo orders on
-# bundles that clear MIN_PARLAY_EDGE_PCT (15%) across all legs.
+# PARLAY_DRY_RUN = True   -> logic runs, candidates logged, no real orders
+# PARLAY_LIVE    = True   -> real combo orders placed via Kalshi API
+# Current state: dry-run ON so we see what WOULD fire. Flip PARLAY_LIVE
+# once a week of dry-run logs confirms the pairing produces +EV bundles
+# AND the collection_ticker API discovery works against real Kalshi.
+PARLAY_DRY_RUN        = True
 PARLAY_LIVE           = False
 
 # ── Scanning ────────────────────────────────────────────────────────────────────

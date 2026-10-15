@@ -28,12 +28,16 @@ from typing import Optional
 import config
 from logger import log
 
-# ── Tunables (safe defaults) ─────────────────────────────────────────────────
+# ── Tunables ─────────────────────────────────────────────────────────────────
+# Target strategy: "compounding boring favorites" — multiple small edges
+# combined into one bet. 2-leg heavy-favorite parlays with 5% edge each
+# compound to ~5-6% combined edge, pay about +120 to +200, and hit ~30-40%
+# of the time. Better than lotto-ticket +1000 parlays which are -EV.
 MIN_LEG_CONFIDENCE   = 70
-MIN_LEG_EDGE_PCT     = 10.0
+MIN_LEG_EDGE_PCT     = 5.0         # per-leg (matches single-bet threshold)
 MAX_LEGS             = 3
-MIN_PARLAY_EDGE_PCT  = 15.0        # combo edge must beat this (singles only need 8%)
-PARLAY_PCT_OF_BANKROLL = 0.015     # 1.5% max per parlay (half single-bet cap)
+MIN_PARLAY_EDGE_PCT  = 6.0         # combined edge (sized conservatively)
+PARLAY_PCT_OF_BANKROLL = 0.015     # 1.5% max per parlay
 
 
 # ── Compatibility: find legs that CAN be parlayed on Kalshi ─────────────────
@@ -113,8 +117,12 @@ def pick_parlays(edges: list) -> list:
     Returns a list of {legs, combo_prob, combo_price, edge_pct, bundle_key}
     for the top MAX_LEGS-sized bundles that pass every rule. Empty list
     means no parlay should fire this scan.
+
+    Runs if EITHER PARLAY_LIVE or PARLAY_DRY_RUN is enabled, so we can
+    see candidates logged without placing real orders.
     """
-    if not getattr(config, "PARLAY_LIVE", False):
+    enabled = getattr(config, "PARLAY_LIVE", False) or getattr(config, "PARLAY_DRY_RUN", False)
+    if not enabled:
         return []
     if not edges:
         return []
@@ -156,13 +164,20 @@ def fire_parlay(api, bundle: dict, bankroll_total: float) -> dict:
     testing — this function queries list_combo_collections and
     picks the first that references all legs' event_tickers.
     """
-    if not getattr(config, "PARLAY_LIVE", False):
-        return {"placed": False, "reason": "parlay_live_off"}
-    if config.DRY_RUN:
-        log(f"PARLAY DRY RUN 🔵 bundle_key={bundle['bundle_key']} legs={len(bundle['legs'])} "
-            f"combo={bundle['combo_price']:.2%} model={bundle['combo_prob']:.2%} edge={bundle['edge_pct']:+.1f}%",
-            "INFO")
-        return {"placed": False, "reason": "dry_run", "dry_run": True}
+    # Dry-run: log what WOULD fire, don't place real orders. Flip the
+    # PARLAY_DRY_RUN flag off (and PARLAY_LIVE on) to actually execute.
+    dry = (not getattr(config, "PARLAY_LIVE", False)) or config.DRY_RUN
+    if dry:
+        leg_summary = ", ".join(
+            f"{getattr(l,'ticker','?')}[{getattr(l,'direction','?')}]@{getattr(l,'edge_pct',0):+.1f}%"
+            for l in bundle["legs"]
+        )
+        log(f"PARLAY {('DRY-RUN' if not getattr(config,'PARLAY_LIVE',False) else 'DRY (config.DRY_RUN)')} 🔵 "
+            f"bundle={bundle['bundle_key']} legs={len(bundle['legs'])}  "
+            f"model={bundle['combo_prob']:.1%} market={bundle['combo_price']:.1%} edge={bundle['edge_pct']:+.1f}% | "
+            f"{leg_summary}", "INFO")
+        return {"placed": False, "reason": "dry_run", "dry_run": True,
+                "bundle": bundle}
 
     # Find a collection that contains every leg's event_ticker
     legs_meta = [{"event_ticker": getattr(e, "event_ticker", None) or _event_from_ticker(e.ticker),

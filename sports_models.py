@@ -128,6 +128,45 @@ def _parse_game_title(title: str) -> Optional[tuple]:
     return None
 
 
+# Totals-market title patterns (over/under on a game total):
+#   "Will there be over 8.5 total runs/goals/points in...?"
+#   "Over 48.5 points?" / "Under 48.5 points?"
+#   "Will Team X score over 4.5?"  (team total — treated like a side-bias total)
+_TOTAL_PATTERNS = [
+    re.compile(r"\b(?:over|under)\s+(?P<line>\d{1,3}(?:\.\d)?)\s+(?:total\s+)?"
+               r"(?P<unit>runs?|goals?|points?)\b", re.IGNORECASE),
+    re.compile(r"will\s+there\s+be\s+(?:over|more\s+than)\s+(?P<line>\d{1,3}(?:\.\d)?)"
+               r"\s+(?:total\s+)?(?P<unit>runs?|goals?|points?)", re.IGNORECASE),
+    re.compile(r"will\s+(?P<team>[A-Za-z ]+?)\s+score\s+(?:over|more\s+than)\s+"
+               r"(?P<line>\d{1,3}(?:\.\d)?)", re.IGNORECASE),
+]
+
+
+def _parse_total_title(title: str) -> Optional[dict]:
+    """
+    Returns {line: float, unit: str, direction: 'over', team: Optional[str]}
+    for a totals/team-total market, else None.
+    Kalshi titles always ask the YES side; direction is always 'over'
+    (NO on the market = under).
+    """
+    if not title:
+        return None
+    for pat in _TOTAL_PATTERNS:
+        m = pat.search(title.strip())
+        if m:
+            try:
+                line = float(m.group("line"))
+            except Exception:
+                continue
+            d = {"line": line, "direction": "over"}
+            try:    d["unit"] = m.group("unit").lower()
+            except: d["unit"] = ""
+            try:    d["team"] = m.group("team").strip()
+            except: d["team"] = None
+            return d
+    return None
+
+
 # ── Ticker → league detection ────────────────────────────────────────────────
 _TICKER_LEAGUE_RE = {
     "nfl":  re.compile(r"^KXNFL", re.I),
@@ -172,6 +211,108 @@ def _match_team(bet_name: str, team_pcts: dict) -> Optional[str]:
     return None
 
 
+# ── Totals model (weather-driven, the proven +EV signal) ───────────────────
+def _analyze_total_market(market: dict, ticker: str, title: str,
+                          league: str) -> Optional[dict]:
+    """
+    Weather-driven adjustment for outdoor NFL/MLB totals markets.
+    Only fires on markets whose title is a totals question AND whose venue
+    is likely outdoor. Uses wttr.in (free) for the forecast.
+
+    Edge direction: we always BUY NO (under) when weather points under —
+    i.e. we take the opposite of the YES ("Will there be over N?") side.
+    """
+    import weather as _wx
+
+    parsed = _parse_total_title(title)
+    if not parsed:
+        return None
+    # Weather only applies to outdoor sports
+    if league not in ("nfl", "mlb"):
+        return None
+
+    # Try to pull a city from the title or event context (naïve: look for
+    # city tokens). If we don't know the city, we can't fetch weather.
+    city = _extract_city(title, market)
+    if not city or not _wx.is_outdoor(league, city):
+        return None
+
+    wx   = _wx.get_weather(city)
+    edge = _wx.total_direction_edge(wx, league)
+    if not edge:
+        return None
+
+    # Market pricing
+    def _px(fc, fd):
+        v = market.get(fc)
+        if v is not None:
+            try: return int(v) / 100
+            except: pass
+        v = market.get(fd)
+        if v is not None:
+            try:
+                v = float(v)
+                return v / 100 if v > 1 else v
+            except: pass
+        return None
+
+    yes_ask = _px("yes_ask", "yes_ask_dollars")
+    yes_bid = _px("yes_bid", "yes_bid_dollars")
+    if yes_ask is None or yes_ask <= 0 or yes_ask >= 1:
+        return None
+
+    # Baseline: assume market is fair (implied YES/NO roughly 50/50).
+    # Weather pushes probability down by confidence_bump on the YES (over) side.
+    baseline_over = yes_ask            # take ask as market's over implied
+    adj_over      = max(0.05, baseline_over - edge["confidence_bump"])
+    adj_under     = 1 - adj_over
+
+    # We bet NO (under). Market price for NO = 1 - yes_bid (if liquid) or 1 - yes_ask.
+    no_cost = 1 - (yes_bid if yes_bid is not None else yes_ask)
+    if no_cost <= 0 or no_cost >= 1:
+        return None
+
+    edge_pct = round((adj_under - no_cost) * 100, 1)
+    if edge_pct < MIN_EDGE_PCT:
+        return None
+
+    confidence = min(100, MIN_CONFIDENCE + int(edge["confidence_bump"] * 100))
+
+    return {
+        "ticker":       ticker,
+        "title":        title,
+        "category":     "Sports",
+        "direction":    "NO",
+        "true_prob":    round(adj_under, 4),
+        "implied_prob": round(no_cost,  4),
+        "edge_pct":     edge_pct,
+        "confidence":   confidence,
+        "reasoning":    f"TOTAL/UNDER | {edge['reason']} | city={city}",
+        "league":       league,
+        "signal":       "weather_edge",
+    }
+
+
+# City extraction — looks for known OUTDOOR_NFL_CITIES / major MLB cities
+# in the title or any nested event info the scanner may have attached.
+def _extract_city(title: str, market: dict) -> Optional[str]:
+    import weather as _wx
+    hay = " ".join(filter(None, [
+        title,
+        (market.get("subtitle") or ""),
+        (market.get("event_title") or ""),
+    ])).lower()
+    for city in list(_wx.OUTDOOR_NFL_CITIES) + list(_wx.INDOOR_MLB_STADIUMS) + [
+        "atlanta","detroit","chicago","boston","new york","los angeles","oakland",
+        "san francisco","san diego","phoenix","dallas","houston","seattle","portland",
+        "minneapolis","st. louis","kansas city","cincinnati","cleveland","pittsburgh",
+        "philadelphia","washington","baltimore","denver","las vegas","milwaukee",
+    ]:
+        if city in hay:
+            return city
+    return None
+
+
 # ── Entry point used by scanner / probability_models.py ─────────────────────
 def analyze_market(market: dict) -> Optional[dict]:
     """
@@ -189,6 +330,13 @@ def analyze_market(market: dict) -> Optional[dict]:
     league = _detect_league(ticker)
     if not league:
         return None
+
+    # ── Totals market? (weather_edge is the only proven +EV sports signal)
+    if "TOTAL" in ticker or _parse_total_title(title):
+        res = _analyze_total_market(market, ticker, title, league)
+        if res is not None:
+            return res
+        # fall through — maybe this title also matches a moneyline pattern
 
     parsed = _parse_game_title(title)
     if not parsed:

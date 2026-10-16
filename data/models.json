@@ -1,11 +1,12 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T17:38:28.102031Z",
+  "updated_at": "2026-10-16T16:30:40.654034Z",
   "category_confidence": {
     "Crypto": 1.1,
-    "Financials": 0.8,
-    "Economics": 0.7,
-    "Weather": 0.7
+    "Financials": 0.7,
+    "Economics": 0.6,
+    "Weather": 0.7,
+    "Climate and Weather": 0.9
   },
   "min_edge_overrides": {},
   "notes": [
@@ -42,6 +43,14 @@
         "Crypto 0.90 -> 1.10 (actual +EV, +592 units)",
         "Financials 1.00 -> 0.80 (41.5% hit, -62u)",
         "Economics 1.00 -> 0.70 (25% hit, -70u)"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "changes": [
+        "Category Financials: hit rate 41.5% over 142 alerts \u2192 lowering confidence 0.80 \u2192 0.70",
+        "Category Economics: hit rate 25.0% over 188 alerts \u2192 lowering confidence 0.70 \u2192 0.60",
+        "Category Climate and Weather: hit rate 23.5% over 17 alerts \u2192 lowering confidence 1.00 \u2192 0.90"
       ]
     }
   ]

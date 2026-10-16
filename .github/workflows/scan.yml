@@ -22,9 +22,9 @@ jobs:
 
   scan:
     runs-on: ubuntu-latest
-    # Hard cap: a normal scan is 4–7 min. 25 min means something hung — fail
-    # fast so the concurrency lock releases and the next scheduled scan runs.
-    timeout-minutes: 25
+    # Hard cap. Base scan is ~5 min; auto-resolve + sports weather calls
+    # can push to ~15-25 min on big days. 40 gives headroom before cancel.
+    timeout-minutes: 40
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4

@@ -43,19 +43,32 @@ def is_outdoor(sport: str, city: str) -> bool:
     return False
 
 
+import time as _time
+_WX_CACHE: dict = {}        # {city: (ts, data)}
+_WX_TTL_SEC = 60 * 60       # 1 hour — forecasts don't swing that fast
+
+
 def get_weather(city: str) -> dict:
-    """Fetch current weather for a city (wttr.in)."""
+    """
+    Fetch current weather for a city (wttr.in), cached per-city for 1 hour.
+    Previously called per-market, meaning a 50-game MLB slate = 50 API calls
+    even though they only had 15 distinct venues. Now 15 calls max per scan.
+    """
     if not city:
         return {}
+    now = _time.time()
+    cached = _WX_CACHE.get(city)
+    if cached and (now - cached[0]) < _WX_TTL_SEC:
+        return cached[1]
     try:
         r = requests.get(
             f"https://wttr.in/{city.replace(' ', '+')}?format=j1",
-            timeout=8,
+            timeout=5,     # was 8 — fail faster so scan doesn't hang
         )
         if r.status_code == 200:
             data    = r.json()
             current = (data.get("current_condition") or [{}])[0]
-            return {
+            result  = {
                 "wind_mph":  int(current.get("windspeedMiles", 0) or 0),
                 "precip_mm": float(current.get("precipMM", 0) or 0),
                 "temp_f":    int(current.get("temp_F", 70) or 70),
@@ -63,8 +76,11 @@ def get_weather(city: str) -> dict:
                 "condition": (current.get("weatherDesc", [{}])[0] or {}).get("value", ""),
                 "city":      city,
             }
+            _WX_CACHE[city] = (now, result)
+            return result
     except Exception as exc:
         log(f"weather: fetch failed for {city}: {exc}", "WARN")
+    _WX_CACHE[city] = (now, {})   # cache the empty too — avoid retrying hangs
     return {}
 
 

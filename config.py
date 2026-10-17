@@ -30,6 +30,14 @@ DISCOVERY_VOLUME_DOLLARS = 500   # diagnostic scan floor — surfaces markets ap
 MIN_IMPLIED_PROB      = 0.05     # skip YES probability below 5% (allow long-shots with real volume)
 MAX_IMPLIED_PROB      = 0.95     # skip YES probability above 95% (near-certain = no edge)
 MIN_HOURS_TO_CLOSE    = 2.0      # skip markets closing in under 2 hours
+MAX_HOURS_TO_CLOSE    = 60 * 24  # skip markets > 60 days out (bad capital use)
+
+# ── Stale-position cleanup ────────────────────────────────────────────────────
+# Positions held with >STALE_DAYS until expiry are selling targets — their
+# money is locked unproductively. Default OFF (dry-run); flip to True to
+# actually dump at bid.
+STALE_POSITION_SELL_LIVE = False
+STALE_DAYS            = 90       # sell positions whose close_time is this far out
 
 # ── Kelly Bet Sizing ────────────────────────────────────────────────────────────
 # Fractional Kelly — keeps sizing conservative. Never bet the full Kelly amount.

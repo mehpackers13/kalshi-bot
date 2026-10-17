@@ -525,3 +525,82 @@ def place_auto_bet(api, edge: EdgeResult) -> dict:
         "order_id":  order_id,
         "status":    status,
     }
+
+
+# ── Stale-position cleanup (free up capital locked on far-dated bets) ──────
+def cleanup_stale_positions(api) -> list:
+    """
+    Walk open positions. If `close_time` is more than config.STALE_DAYS
+    away (default 90), sell the position at current bid so the capital
+    can be redeployed into near-dated +EV opportunities.
+
+    Dry-run by default (config.STALE_POSITION_SELL_LIVE = False) — logs
+    what WOULD be sold without placing orders. Flip to True to execute.
+    """
+    try:
+        positions = api.get_portfolio_positions() or []
+    except Exception as exc:
+        log(f"cleanup_stale: couldn't list positions: {exc}", "WARN")
+        return []
+    stale = []
+    now_utc = datetime.datetime.now(datetime.timezone.utc)
+
+    for pos in positions:
+        ticker   = pos.get("ticker", "")
+        count_fp = float(pos.get("position_fp") or pos.get("position") or 0)
+        if not ticker or count_fp == 0:
+            continue
+        try:
+            market = api.get_market(ticker)
+        except Exception:
+            continue
+        if not market:
+            continue
+        close_str = market.get("close_time") or market.get("expiration_time", "")
+        if not close_str:
+            continue
+        try:
+            close_dt   = datetime.datetime.fromisoformat(close_str.replace("Z", "+00:00"))
+            days_left = (close_dt - now_utc).total_seconds() / 86400
+        except Exception:
+            continue
+
+        if days_left < config.STALE_DAYS:
+            continue   # not stale enough
+
+        # Determine sell side (we hold YES or NO)
+        direction = "YES" if count_fp > 0 else "NO"
+        if direction == "YES":
+            bid_raw = float(market.get("yes_bid_dollars") or market.get("yes_bid", 0) or 0)
+            current_cents = int(round(bid_raw * 100 if bid_raw <= 1 else bid_raw))
+            sell_side = "yes"
+            sell_yes_price = current_cents
+        else:
+            ask_raw = float(market.get("yes_ask_dollars") or market.get("yes_ask", 0) or 0)
+            yes_ask_cents = int(round(ask_raw * 100 if ask_raw <= 1 else ask_raw))
+            current_cents = max(0, 100 - yes_ask_cents)
+            sell_side = "no"
+            sell_yes_price = yes_ask_cents
+
+        n = max(1, int(abs(count_fp)))
+        est_proceeds = round(n * current_cents / 100, 2)
+
+        if not config.STALE_POSITION_SELL_LIVE:
+            log(f"STALE-DRY 🔵 {ticker} {direction} {n}ct — would sell @ {current_cents}¢ "
+                f"≈ ${est_proceeds:.2f} (expires in {days_left:.0f}d)", "INFO")
+            stale.append({"ticker": ticker, "action": "dry_run",
+                          "days_left": round(days_left, 1), "proceeds": est_proceeds})
+            continue
+
+        try:
+            result = api.sell_position(ticker=ticker, side=sell_side,
+                                        count=n, yes_price=sell_yes_price)
+            order_id = (result.get("order") or {}).get("order_id", "?")
+            log(f"STALE SOLD ✅ {ticker} {direction} {n}ct @ {current_cents}¢ "
+                f"≈ ${est_proceeds:.2f} freed (expires in {days_left:.0f}d) | order={order_id}")
+            stale.append({"ticker": ticker, "action": "sold",
+                          "proceeds": est_proceeds, "order_id": order_id})
+        except Exception as exc:
+            log(f"STALE SELL ERROR {ticker}: {exc}", "ERROR")
+
+    return stale

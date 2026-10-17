@@ -48,6 +48,13 @@ def _gate_check(market: dict) -> Optional[str]:
         return f"implied prob {market['implied_prob']:.1%} > {config.MAX_IMPLIED_PROB:.0%}"
     if market["hours_to_close"] < config.MIN_HOURS_TO_CLOSE:
         return f"closes in {market['hours_to_close']:.1f}h < {config.MIN_HOURS_TO_CLOSE}h"
+    # NEW: reject long-dated positions. Money locked for 60+ days hurts
+    # capital efficiency on a small algo-trading bankroll. 60 days = ~2
+    # months, enough to capture quarterly events (Fed, CPI, earnings)
+    # without parking $ on year-out "lottery ticket" markets.
+    max_hours = config.MAX_HOURS_TO_CLOSE if hasattr(config, "MAX_HOURS_TO_CLOSE") else 60 * 24
+    if market["hours_to_close"] > max_hours:
+        return f"too far out: {market['hours_to_close']/24:.0f}d > {max_hours/24:.0f}d"
     if market["status"] not in ("open", "active"):
         return f"status={market['status']}"
     return None

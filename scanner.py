@@ -137,6 +137,11 @@ def run_scan(api: KalshiAPI) -> list:
     if cut:
         log(f"Cut {len(cut)} losing position(s): {cut}")
 
+    # Free up capital locked on far-dated positions (>90 days to expiry)
+    stale = auto_bettor.cleanup_stale_positions(api)
+    if stale:
+        log(f"Stale-position pass: {len(stale)} position(s) flagged: {stale}")
+
     # Auto-resolve any pending outcomes
     resolved = auto_resolve_outcomes(api)
     if resolved:

@@ -10,8 +10,42 @@ from dataclasses import dataclass, field
 from typing import Optional
 
 import config
+import time as _time
 from probability_models import estimate_true_probability
 from logger import log
+
+
+# ── Model-tuning cache (big perf fix — was 90k file reads/scan) ──────────────
+_MODELS_CACHE: dict = {"ts": 0.0, "models": {}}
+_MODELS_TTL = 5 * 60   # 5 min; weekly tuner updates don't need faster refresh
+
+
+def _models() -> dict:
+    now = _time.time()
+    if now - _MODELS_CACHE["ts"] > _MODELS_TTL:
+        try:
+            import self_improve as _si
+            _MODELS_CACHE["models"] = _si.load_models()
+        except Exception:
+            _MODELS_CACHE["models"] = {}
+        _MODELS_CACHE["ts"] = now
+    return _MODELS_CACHE["models"]
+
+
+def _cat_mult(category: str) -> float:
+    try:
+        m = float((_models().get("category_confidence") or {}).get(category, 1.0))
+        return max(0.3, min(2.0, m))
+    except Exception:
+        return 1.0
+
+
+def _cat_min_edge(category: str) -> float:
+    try:
+        overrides = _models().get("min_edge_overrides") or {}
+        return float(overrides.get(category, config.MIN_EDGE_PCT))
+    except Exception:
+        return config.MIN_EDGE_PCT
 
 
 @dataclass
@@ -138,16 +172,8 @@ def calculate_edge(market: dict) -> Optional[EdgeResult]:
     # Raw edge: positive means we think YES is underpriced (buy YES)
     raw_edge = (true_prob - implied_prob) * 100   # in percentage points
 
-    # Per-category edge override lives in models.json (empty by default).
-    # Lets self_improve raise the bar on noisy categories without touching
-    # the global MIN_EDGE_PCT.
-    min_edge = config.MIN_EDGE_PCT
-    try:
-        import self_improve as _si
-        _overrides = (_si.load_models().get("min_edge_overrides") or {})
-        min_edge = float(_overrides.get(category, min_edge))
-    except Exception:
-        pass
+    # Per-category edge override (CACHED at module level — same perf bug fix)
+    min_edge = _cat_min_edge(category)
 
     # We can trade either side
     if abs(raw_edge) < min_edge:
@@ -163,21 +189,12 @@ def calculate_edge(market: dict) -> Optional[EdgeResult]:
     confidence, reasoning = _confidence_score(market, edge_pct, category)
 
     # ── Apply the category_confidence multiplier that Jarvis + self_improve
-    # have been tuning. This was the missing link — multipliers were being
-    # written to models.json weekly but never READ when sizing bets.
-    # Economics 0.70 → confidence scales 70%, pushing weak Economics bets
-    # below the gate. Crypto 1.10 → modest boost on confirmed winners.
-    try:
-        import self_improve as _si
-        models = _si.load_models()
-        mult = float((models.get("category_confidence") or {}).get(category, 1.0))
-        # Clamp defensively (multipliers should be 0.5–1.8)
-        mult = max(0.3, min(2.0, mult))
-        if mult != 1.0:
-            confidence = int(round(confidence * mult))
-            reasoning  = (reasoning + f" | cat_mult×{mult:.2f}").strip(" |")
-    except Exception:
-        pass
+    # have been tuning. CACHED at module level — previously opened models.json
+    # once per market = 90k+ file reads per scan = scan hitting the timeout.
+    mult = _cat_mult(category)
+    if mult != 1.0:
+        confidence = int(round(confidence * mult))
+        reasoning  = (reasoning + f" | cat_mult×{mult:.2f}").strip(" |")
 
     # Options → Kalshi cross-signal: if this is a stock price-target
     # market AND the options bot has flagged unusual volume on the same

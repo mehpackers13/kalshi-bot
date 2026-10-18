@@ -36,7 +36,7 @@ MAX_HOURS_TO_CLOSE    = 60 * 24  # skip markets > 60 days out (bad capital use)
 # Positions held with >STALE_DAYS until expiry are selling targets — their
 # money is locked unproductively. Default OFF (dry-run); flip to True to
 # actually dump at bid.
-STALE_POSITION_SELL_LIVE = False
+STALE_POSITION_SELL_LIVE = True
 STALE_DAYS            = 90       # sell positions whose close_time is this far out
 
 # ── Kelly Bet Sizing ────────────────────────────────────────────────────────────

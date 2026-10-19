@@ -137,10 +137,9 @@ def run_scan(api: KalshiAPI) -> list:
     if cut:
         log(f"Cut {len(cut)} losing position(s): {cut}")
 
-    # Free up capital locked on far-dated positions (>90 days to expiry)
-    stale = auto_bettor.cleanup_stale_positions(api)
-    if stale:
-        log(f"Stale-position pass: {len(stale)} position(s) flagged: {stale}")
+    # Stale-position cleanup only runs from morning_report (not every scan)
+    # — each sell order can take 10-30s; running on every 30-min scan was
+    # pushing scans into the 40-min timeout. Daily is plenty for a cleanup.
 
     # Auto-resolve any pending outcomes
     resolved = auto_resolve_outcomes(api)

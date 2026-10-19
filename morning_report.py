@@ -20,6 +20,16 @@ def run(api) -> None:
     log("=" * 60)
     log("Morning report starting")
 
+    # Daily stale-position cleanup — moved here from every-scan to keep
+    # the frequent 30-min scans from timing out on per-position sell calls.
+    try:
+        import auto_bettor
+        stale = auto_bettor.cleanup_stale_positions(api)
+        if stale:
+            log(f"Morning stale-cleanup: {len(stale)} position(s) processed: {stale}")
+    except Exception as exc:
+        log(f"Morning stale-cleanup failed (non-fatal): {exc}", "WARN")
+
     # Self-improvement analysis (stats + model adjustments + AI)
     analysis = run_morning_analysis()
 

@@ -37,7 +37,10 @@ MAX_HOURS_TO_CLOSE    = 60 * 24  # skip markets > 60 days out (bad capital use)
 # money is locked unproductively. Default OFF (dry-run); flip to True to
 # actually dump at bid.
 STALE_POSITION_SELL_LIVE = True
-STALE_DAYS            = 90       # sell positions whose close_time is this far out
+STALE_DAYS            = 30       # sell positions whose close_time is this far out
+# 30 matches the preference for same-month resolution; aligns with the
+# 60-day MAX_HOURS_TO_CLOSE scanner gate so the policy is end-to-end:
+# "don't take positions >60d out; dump existing ones >30d out."
 
 # ── Kelly Bet Sizing ────────────────────────────────────────────────────────────
 # Fractional Kelly — keeps sizing conservative. Never bet the full Kelly amount.

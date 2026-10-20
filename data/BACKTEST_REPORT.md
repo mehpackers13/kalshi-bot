@@ -1,3 +1,11 @@
+> **⚠️ SUPERSEDED (2026-10-20).** Several conclusions in this document did not
+> survive an audit — the Kalshi Crypto "+590 units" was row duplication plus a
+> payout bug (real: 2/12 markets, ROI −85%), the log5 "edge" was the home-team
+> win rate against a backtest market that ignored home advantage, and the
+> weather/parlay results did not validate. See
+> [overseer/docs/SIGNAL_EVIDENCE.md](https://github.com/mehpackers13/overseer/blob/main/docs/SIGNAL_EVIDENCE.md)
+> for the audited numbers.
+
 # Backtest Report — 2024 historical games (4,710 total)
 
 **Generated:** 2026-10-15 after merging two backtest passes.

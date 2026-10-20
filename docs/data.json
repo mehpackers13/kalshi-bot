@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-20T23:44:05.427767Z",
-  "last_scan_ts": "2026-10-20T23:44:05.427767Z",
+  "generated_at": "2026-10-20T23:51:56.869050Z",
+  "last_scan_ts": "2026-10-20T23:51:56.869050Z",
   "stats": {
-    "total_alerts": 17068,
+    "total_alerts": 17069,
     "rated": 72,
     "hit_rate": 33.3,
     "by_category": {
@@ -25,7 +25,7 @@
         "hit_rate": null
       },
       "Crypto": {
-        "total": 4817,
+        "total": 4818,
         "rated": 12,
         "hits": 2,
         "hit_rate": 16.7
@@ -69,7 +69,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 4136,
+        "total": 4137,
         "rated": 15,
         "hits": 11,
         "hit_rate": 73.3
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 41.2,
+      "balance": 40.84,
       "cash": 35.26,
       "peak": 41.23,
       "initial_balance": 10.0
@@ -101,16 +101,55 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-10-20T23:07:21.741360Z"
+    "updated_at": "2026-10-20T23:51:31.534528Z"
   },
   "cash_bal": 35.26,
-  "position_value": 5.95,
-  "account_value": 41.21,
-  "live_pnl": 31.21,
+  "position_value": 5.58,
+  "account_value": 40.84,
+  "live_pnl": 30.84,
   "paper_pnl": 0.0,
   "unit_total": -36.079,
-  "today_outcomes": [],
+  "today_outcomes": [
+    {
+      "timestamp": "2026-10-20T23:51:56.204958Z",
+      "ticker": "KXBTCMAXMON-BTC-26OCT31-8750000",
+      "title": "Will BTC trimmed mean be above $87500.00 by 11:59 PM ET on Oct 31, 2026?",
+      "category": "Crypto",
+      "direction": "YES",
+      "edge_pct": "8.0",
+      "implied_prob": "0.365",
+      "true_prob": "0.445",
+      "confidence": "73",
+      "suggested_live_dollars": "0.38",
+      "suggested_paper_dollars": "17.48",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "38",
+      "outcome": "",
+      "units_pl": "",
+      "resolved_at": "",
+      "notes": ""
+    }
+  ],
   "recent_alerts": [
+    {
+      "timestamp": "2026-10-20T23:51:56.204958Z",
+      "ticker": "KXBTCMAXMON-BTC-26OCT31-8750000",
+      "title": "Will BTC trimmed mean be above $87500.00 by 11:59 PM ET on Oct 31, 2026?",
+      "category": "Crypto",
+      "direction": "YES",
+      "edge_pct": "8.0",
+      "implied_prob": "0.365",
+      "true_prob": "0.445",
+      "confidence": "73",
+      "suggested_live_dollars": "0.38",
+      "suggested_paper_dollars": "17.48",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "38",
+      "outcome": "",
+      "units_pl": "",
+      "resolved_at": "",
+      "notes": ""
+    },
     {
       "timestamp": "2026-10-15T00:09:28.173475Z",
       "ticker": "KXNFLSPREAD-26OCT18TENIND-IND7",
@@ -1041,25 +1080,6 @@
       "units_pl": "",
       "resolved_at": "",
       "notes": ""
-    },
-    {
-      "timestamp": "2026-10-15T00:09:17.572881Z",
-      "ticker": "KXETHMAXY-27JAN01-3750.00",
-      "title": "Will Ethereum reach above $3750.00 by Jan 1, 2027 at 12:00AM?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-10.9",
-      "implied_prob": "0.115",
-      "true_prob": "0.006",
-      "confidence": "68",
-      "suggested_live_dollars": "0.89",
-      "suggested_paper_dollars": "19.58",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "89",
-      "outcome": "",
-      "units_pl": "",
-      "resolved_at": "",
-      "notes": ""
     }
   ],
   "model_changes": [
@@ -1082,17 +1102,37 @@
     "[2026-10-20T16:47:01.814873Z] Category Financials: hit rate 41.5% over 142 alerts \u2192 lowering confidence 0.40 \u2192 0.30",
     "[2026-10-20T16:47:01.815004Z] Category Climate and Weather: hit rate 23.5% over 17 alerts \u2192 lowering confidence 0.55 \u2192 0.45",
     "[2026-10-20T17:48:02.188975Z] Category Climate and Weather: hit rate 23.5% over 17 alerts \u2192 lowering confidence 0.45 \u2192 0.35",
-    "[2026-10-20T23:47:26.789055Z] Category Climate and Weather: hit rate 23.5% over 17 alerts \u2192 lowering confidence 0.35 \u2192 0.30"
+    "[2026-10-20T23:44:06.702851Z] Category Crypto: ROI -85.0% over 12 distinct markets \u2192 confidence 1.10 \u2192 1.00",
+    "[2026-10-20T23:44:10.766322Z] Category Climate and Weather: ROI -16.8% over 15 distinct markets \u2192 confidence 0.35 \u2192 0.30"
   ],
   "ai_suggestions": {},
   "model_confidence": {
-    "Crypto": 1.1,
+    "Crypto": 1.0,
     "Financials": 0.3,
     "Economics": 0.3,
     "Weather": 0.7,
     "Climate and Weather": 0.3
   },
-  "bets_placed": [],
+  "bets_placed": [
+    {
+      "timestamp": "2026-10-20T23:51:56.205257",
+      "ticker": "KXBTCMAXMON-BTC-26OCT31-8750000",
+      "title": "Will BTC trimmed mean be above $87500.00 by 11:59 PM ET on Oct 31, 2026?",
+      "category": "Crypto",
+      "direction": "YES",
+      "contracts": "3",
+      "price_cents": "38",
+      "dollars_risked": "1.14",
+      "edge_pct": "8.0",
+      "true_prob": "0.445",
+      "implied_prob": "0.365",
+      "confidence": "73",
+      "kelly_fraction": "0.5",
+      "dry_run": "True",
+      "order_id": "",
+      "status": "dry_run"
+    }
+  ],
   "open_positions": [
     {
       "ticker": "KXSOLMAXY-27JAN01-170",
@@ -1100,9 +1140,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 86,
+      "current_cents": 83,
       "dollars_risked": 0,
-      "current_value": 0.86,
+      "current_value": 0.83,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -1112,9 +1152,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 84,
+      "current_cents": 67,
       "dollars_risked": 0,
-      "current_value": 1.68,
+      "current_value": 1.34,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

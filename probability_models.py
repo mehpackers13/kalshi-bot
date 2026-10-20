@@ -21,6 +21,8 @@ Models we intentionally skip (insufficient data without paid APIs):
 import math
 import datetime
 import re
+
+import config
 from typing import Optional
 
 import yfinance as yf
@@ -167,38 +169,123 @@ def _find_asset_ticker(title: str, category: str = "") -> Optional[str]:
     return None
 
 
+# Kalshi price-series markets we can model, keyed by series-ticker prefix.
+# Routing on the series ticker (not loose title keywords) is what keeps
+# "Meta headcount above 76,000" from being modeled as META stock at $76k.
+# (prefix, yfinance symbol, asset class, annualisation days, vol floor)
+_PRICE_SERIES = [
+    ("KXNASDAQ100", "^NDX",    "index",     252, 0.12),
+    ("KXNASDAQ",    "^NDX",    "index",     252, 0.12),
+    ("KXINX",       "^GSPC",   "index",     252, 0.10),
+    ("KXDOW",       "^DJI",    "index",     252, 0.10),
+    ("KXBRENT",     "BZ=F",    "commodity", 252, 0.20),
+    ("KXWTI",       "CL=F",    "commodity", 252, 0.20),
+    ("KXGOLD",      "GC=F",    "commodity", 252, 0.12),
+    ("KXSILVER",    "SI=F",    "commodity", 252, 0.20),
+    ("KXBTC",       "BTC-USD", "crypto",    365, 0.40),
+    ("KXETH",       "ETH-USD", "crypto",    365, 0.50),
+    ("KXSOL",       "SOL-USD", "crypto",    365, 0.60),
+    ("KXXRP",       "XRP-USD", "crypto",    365, 0.60),
+    ("KXDOGE",      "DOGE-USD","crypto",    365, 0.70),
+    ("KXBNB",       "BNB-USD", "crypto",    365, 0.50),
+]
+
+_VOL_CACHE: dict = {}   # {symbol: annual vol} — one fetch per scan, not per market
+
+
+def _price_series(ticker: str) -> Optional[tuple]:
+    """Return (series_suffix, symbol, asset_class, ann_days, vol_floor) or None."""
+    head = (ticker or "").upper().split("-", 1)[0]
+    for prefix, sym, cls, days, floor in _PRICE_SERIES:     # longest prefixes listed first
+        if head.startswith(prefix):
+            return head[len(prefix):], sym, cls, days, floor
+    return None
+
+
+def _robust_vol(symbol: str, ann_days: int, floor: float) -> float:
+    """
+    Annualised vol = max(30d realised, 90d realised, floor).
+
+    The old version used 30 calendar days annualised with sqrt(252) for
+    everything — crypto trades 365 days, so that alone understated crypto
+    vol ~17%, and one quiet month dragged BTC to 19% (implied is usually
+    40-60%). Underestimated vol makes every 'will it touch X' market look
+    like a free NO bet. Taking the max of two windows plus a floor keeps
+    the model from betting against tails the market correctly prices.
+    """
+    if symbol in _VOL_CACHE:
+        return _VOL_CACHE[symbol]
+    vols = [floor]
+    try:
+        closes = yf.Ticker(symbol).history(period="120d")["Close"].dropna()
+        rets = (closes / closes.shift(1)).apply(math.log).dropna()
+        for window in (30, 90):
+            if len(rets) >= window // 2:
+                vols.append(float(rets.tail(window).std()) * math.sqrt(ann_days))
+    except Exception:
+        pass
+    _VOL_CACHE[symbol] = max(vols)
+    return _VOL_CACHE[symbol]
+
+
+def _touch_prob(spot: float, strike: float, vol: float, years: float, direction: str) -> float:
+    """
+    P(price touches the strike at ANY time before expiry), driftless GBM,
+    reflection principle: 2 * P(finishing beyond the strike).
+    """
+    if direction == "above" and spot >= strike:
+        return 0.99
+    if direction == "below" and spot <= strike:
+        return 0.99
+    dist = abs(math.log(strike / spot))
+    return min(0.99, 2 * _norm_cdf(-dist / (vol * math.sqrt(years))))
+
+
+def _terminal_prob(spot: float, strike: float, vol: float, years: float, direction: str) -> float:
+    """P(price is beyond the strike AT expiry), risk-neutral log-normal, r~0."""
+    sig = vol * math.sqrt(years)
+    d2 = (math.log(spot / strike) - 0.5 * sig * sig) / sig
+    above = _norm_cdf(d2)
+    return above if direction == "above" else 1.0 - above
+
+
 def model_price_target(market: dict) -> Optional[float]:
     """
-    Model probability for crypto/stock price target markets.
-    Returns estimated true probability of YES, or None if unmodelable.
+    Probability of YES for Kalshi crypto / index / commodity price markets.
+    Returns None for anything that isn't a recognised price series —
+    company KPI markets (headcount, deliveries, subscribers) are skipped.
     """
-    title    = market["title"]
-    category = market["category"]
-    hours    = market["hours_to_close"]
+    series = _price_series(market.get("ticker", ""))
+    if series is None:
+        return None
+    suffix, symbol, asset_class, ann_days, vol_floor = series
 
-    parsed = _extract_price_target(title)
+    parsed = _extract_price_target(market["title"])
     if parsed is None:
         return None
-
     target, direction = parsed
-    yf_ticker = _find_asset_ticker(title, category)
-    if yf_ticker is None:
+
+    spot = _get_current_price(symbol)
+    if spot is None or spot <= 0 or target <= 0:
+        return None
+    # Guard against unit mismatches (e.g. an index quoted in different units)
+    if not (0.2 < target / spot < 5):
+        log(f"  price model: {symbol} spot={spot:.2f} vs target={target:.2f} — "
+            f"scale mismatch, skipping", "DEBUG")
         return None
 
-    spot = _get_current_price(yf_ticker)
-    if spot is None or spot <= 0:
-        return None
+    vol   = _robust_vol(symbol, ann_days, vol_floor)
+    years = max(market["hours_to_close"] / 8760, 1 / 8760)
 
-    annual_vol = _get_historical_vol(yf_ticker, days=30)
-    if annual_vol is None or annual_vol <= 0:
-        annual_vol = 0.80 if category == "Crypto" else 0.25  # conservative defaults
+    # MAX / MIN series ("will BTC reach above X by ...") resolve on a touch;
+    # everything else ("close price above X on <date>") resolves at expiry.
+    is_touch = "MAX" in suffix or "MIN" in suffix
+    prob = (_touch_prob if is_touch else _terminal_prob)(spot, target, vol, years, direction)
 
-    years = max(hours / 8760, 1 / 8760)  # at least 1 hour
-
-    prob = _lognormal_prob(spot, target, annual_vol, years, direction)
-    log(f"  price model: {yf_ticker} spot={spot:.2f} target={target:.2f} "
-        f"vol={annual_vol:.1%} T={hours:.1f}h → P={prob:.3f}")
-    return round(prob, 4)
+    log(f"  price model: {symbol} spot={spot:.2f} target={target:.2f} "
+        f"{'touch' if is_touch else 'expiry'} vol={vol:.0%} T={market['hours_to_close']:.0f}h "
+        f"→ P={prob:.3f}")
+    return round(max(0.01, min(0.99, prob)), 4)
 
 
 # ── Economics: Fed Rate ──────────────────────────────────────────────────────────
@@ -516,6 +603,14 @@ def model_weather(market: dict) -> Optional[float]:
     """
     title_lower = market["title"].lower()
 
+    # Monthly/seasonal totals ("Rain in Chicago in Mar 2026?", "more than 200
+    # tornadoes in March") can't be priced from a 3-day forecast — the date
+    # parser found no day and fell back to TODAY's forecast, which is how a
+    # 4% chance of rain today priced a whole month's rainfall at 4%.
+    if re.search(r"\bin (jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\.?(\s+\d{4})?\s*\??$",
+                 title_lower) or "tornado" in title_lower or "hurricane" in title_lower:
+        return None
+
     # ── Find city (longest match wins) ───────────────────────────────────────
     city_query = None
     for keyword in sorted(_WEATHER_CITIES, key=len, reverse=True):
@@ -615,17 +710,22 @@ def estimate_true_probability(market: dict) -> Optional[float]:
             # Never let a sports model error crash the whole scan
             pass
 
-    # ── Fed / FOMC / interest rate ────────────────────────────────────────────
-    if any(w in title_lower for w in ("fed", "fomc", "interest rate", "federal funds")):
-        prob = model_fed_rate(market)
-        if prob is not None:
-            return prob
-
-    # ── CPI / inflation ───────────────────────────────────────────────────────
-    if "cpi" in title_lower or "inflation" in title_lower:
-        prob = model_cpi(market)
-        if prob is not None:
-            return prob
+    # ── Fed / CPI — disabled until rebuilt (config.ECON_MODELS_ENABLED) ───────
+    # Audit 2026-10-20: 23-25% hit rate over 13 distinct markets. The Fed model
+    # reads the front-month futures contract regardless of which meeting the
+    # market asks about and keyword-matches "hike" vs "hold" (so "hike 0bps"
+    # = a hold scored as a hike); the CPI model forecasts from bond breakevens.
+    # A proper rebuild needs per-meeting fed funds futures + the Cleveland Fed
+    # CPI nowcast.
+    if getattr(config, "ECON_MODELS_ENABLED", False):
+        if any(w in title_lower for w in ("fed", "fomc", "interest rate", "federal funds")):
+            prob = model_fed_rate(market)
+            if prob is not None:
+                return prob
+        if "cpi" in title_lower or "inflation" in title_lower:
+            prob = model_cpi(market)
+            if prob is not None:
+                return prob
 
     # ── Weather ───────────────────────────────────────────────────────────────
     if any(w in title_lower for w in (
@@ -637,15 +737,11 @@ def estimate_true_probability(market: dict) -> Optional[float]:
         if prob is not None:
             return prob
 
-    # ── Price target (crypto + stocks/indices) ────────────────────────────────
-    # Try this for any market with a price target pattern — regardless of category
-    if any(w in title_lower for w in ("above", "below", "over", "under",
-                                       "exceed", "higher than", "lower than",
-                                       "at or above", "at or below")):
-        # Check if any known asset is mentioned
-        if _find_asset_ticker(title_lower, category):
-            prob = model_price_target(market)
-            if prob is not None:
-                return prob
+    # ── Price target (crypto / indices / commodities) ─────────────────────────
+    # Routed by Kalshi series ticker — returns None for non-price series.
+    if _price_series(market.get("ticker", "")):
+        prob = model_price_target(market)
+        if prob is not None:
+            return prob
 
     return None   # unmodelable — bot stays silent

@@ -75,38 +75,41 @@ def run_statistical_improvement() -> dict:
     models  = load_models()
     changes = []
 
-    by_cat = summary.get("by_category", {})
-    for cat, stats in by_cat.items():
-        count    = stats.get("count", 0)
-        hit_rate = stats.get("hit_rate")  # None or float
+    # Judge each category by realized ROI per DISTINCT market, priced on the
+    # side actually bet. Raw hit rate was misleading twice over: duplicate
+    # daily re-alerts inflated samples ~6x, and a NO bet at 90c needs a 90%+
+    # hit rate just to break even, so "hit rate >= 65% = good" was meaningless.
+    from outcomes import read_all, realized_return
+    first = {}
+    for r in read_all():
+        if (r.get("outcome") or "").strip() in ("0", "1"):
+            first.setdefault(r.get("ticker"), r)
+    by_cat: dict = {}
+    for r in first.values():
+        c = (r.get("category") or "Unknown").strip() or "Unknown"
+        d = by_cat.setdefault(c, {"n": 0, "ret": 0.0})
+        d["n"]   += 1
+        d["ret"] += realized_return(r.get("direction"), r.get("implied_prob"), r["outcome"] == "1")
 
-        if count < MIN_SAMPLE or hit_rate is None:
+    for cat, d in by_cat.items():
+        count = d["n"]
+        if count < MIN_SAMPLE:
             continue
-
+        roi = d["ret"] / count * 100            # % return per $1 staked
         current_conf = models["category_confidence"].get(cat, 1.0)
 
-        # Adjust confidence based on actual hit rate vs expectation
-        # We expect at minimum a 55% hit rate to be profitable
-        # (since we're only taking 8%+ edges, our base should be higher)
-        if hit_rate >= 65:
-            # Model performing well — increase confidence slightly
+        if roi >= 5:
             new_conf = min(1.2, current_conf + 0.05)
-            if abs(new_conf - current_conf) > 0.01:
-                reason = (f"Category {cat}: hit rate {hit_rate}% over {count} alerts "
-                          f"→ raising confidence {current_conf:.2f} → {new_conf:.2f}")
-                _log_change(reason)
-                models["category_confidence"][cat] = round(new_conf, 3)
-                changes.append(reason)
-
-        elif hit_rate <= 45:
-            # Model underperforming — reduce confidence
+        elif roi <= -5:
             new_conf = max(0.3, current_conf - 0.10)
-            if abs(new_conf - current_conf) > 0.01:
-                reason = (f"Category {cat}: hit rate {hit_rate}% over {count} alerts "
-                          f"→ lowering confidence {current_conf:.2f} → {new_conf:.2f}")
-                _log_change(reason)
-                models["category_confidence"][cat] = round(new_conf, 3)
-                changes.append(reason)
+        else:
+            continue
+        if abs(new_conf - current_conf) > 0.01:
+            reason = (f"Category {cat}: ROI {roi:+.1f}% over {count} distinct markets "
+                      f"→ confidence {current_conf:.2f} → {new_conf:.2f}")
+            _log_change(reason)
+            models["category_confidence"][cat] = round(new_conf, 3)
+            changes.append(reason)
 
     models["updated_at"] = datetime.datetime.utcnow().isoformat() + "Z"
     models["notes"].append({

@@ -21,10 +21,37 @@ FIELDNAMES = [
     "suggested_live_dollars", "suggested_paper_dollars",
     "is_paper_bet", "paper_entry_price_cents",
     "outcome",       # 1 = correct, 0 = wrong, "" = pending
-    "units_pl",      # unit P&L at resolve time (1u = STARTING_BANKROLL * 0.01)
+    "units_pl",      # unit P&L at resolve time (1u = 1% of peak balance)
     "resolved_at",
     "notes",
 ]
+
+
+def kalshi_fee(price: float) -> float:
+    """Kalshi taker fee per $1 contract: 0.07 * P * (1-P), rounded up to the cent."""
+    import math
+    return math.ceil(0.07 * price * (1 - price) * 100) / 100
+
+
+def realized_return(direction: str, implied_prob: float, won: bool) -> float:
+    """
+    Return per $1 staked on a binary contract, priced on the side ACTUALLY bet.
+
+    implied_prob is the YES-side price (0-1). Buying YES costs p; buying NO
+    costs 1-p. A win pays $1 per contract. Fees are charged per contract.
+
+    The previous formula used 1/p - 1 for every win — it credited a NO bet
+    on a 10% market (cost 90¢, wins 10¢) as a 9-to-1 payout, overstating
+    NO-side wins by up to ~80x.
+    """
+    p = float(implied_prob or 0)
+    cost = p if (direction or "YES").upper() == "YES" else 1 - p
+    if cost <= 0 or cost >= 1:
+        return 0.0
+    fee = kalshi_fee(cost)
+    if won:
+        return (1 - cost - fee) / cost
+    return (-cost - fee) / cost
 
 
 def _ensure_csv():
@@ -105,17 +132,12 @@ def auto_resolve_outcomes(api, pages: int = 1, limit: int = 200) -> int:
                         (direction == "NO"  and result == "no")
             row["outcome"]     = "1" if correct else "0"
             row["resolved_at"] = datetime.datetime.utcnow().isoformat() + "Z"
-            # Calculate unit P&L
+            # Calculate unit P&L — priced on the side actually bet, net of fees
             try:
-                dollars = float(row.get("suggested_live_dollars") or 0)
+                dollars  = float(row.get("suggested_live_dollars") or 0)
                 imp_prob = float(row.get("implied_prob") or 0)
-                if correct and dollars > 0 and imp_prob > 0:
-                    payout = dollars * (1.0 / imp_prob - 1.0)
-                    row["units_pl"] = round(payout / unit_size, 3)
-                elif not correct and dollars > 0:
-                    row["units_pl"] = round(-dollars / unit_size, 3)
-                else:
-                    row["units_pl"] = 0
+                ret = realized_return(direction, imp_prob, correct)
+                row["units_pl"] = round(dollars * ret / unit_size, 3) if dollars > 0 else 0
             except Exception:
                 row["units_pl"] = ""
             resolved_count += 1

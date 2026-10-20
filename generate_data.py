@@ -76,15 +76,18 @@ def calculate_stats(outcomes):
             "live_pnl": 0.0, "paper_pnl": 0.0,
         }
 
-    rated = [r for r in outcomes if r.get("outcome") in ("0", "1")]
+    # Hit rates count each MARKET once — duplicate daily re-alerts on the same
+    # open market would otherwise inflate the sample ~6x.
+    rated = distinct_resolved(outcomes)
     hits  = [r for r in rated if r.get("outcome") == "1"]
     hr    = round(len(hits) / len(rated) * 100, 1) if rated else None
+    rated_ids = {id(r) for r in rated}
 
     by_cat = defaultdict(lambda: {"total": 0, "rated": 0, "hits": 0})
     for r in outcomes:
         c = r.get("category", "Unknown")
         by_cat[c]["total"] += 1
-        if r.get("outcome") in ("0", "1"):
+        if id(r) in rated_ids:
             by_cat[c]["rated"] += 1
             if r["outcome"] == "1":
                 by_cat[c]["hits"] += 1
@@ -102,7 +105,7 @@ def calculate_stats(outcomes):
     for r in outcomes:
         b = _bucket(r)
         by_bucket[b]["total"] += 1
-        if r.get("outcome") in ("0", "1"):
+        if id(r) in rated_ids:
             by_bucket[b]["rated"] += 1
             if r["outcome"] == "1":
                 by_bucket[b]["hits"] += 1
@@ -147,33 +150,28 @@ def read_open_positions():
         return []
 
 
-def calc_unit_total(outcomes):
-    """Sum units from resolved outcomes. Uses units_pl if present, otherwise calculates on-the-fly.
-    Unit size = 1% of peak balance (auto-scales as account grows; no hardcoded constant)."""
-    br = read_bankroll()
-    live_peak = br.get("live", {}).get("peak", 0) or 1.0
-    unit_size = live_peak * 0.01
-    total = 0.0
+def distinct_resolved(outcomes):
+    """
+    One row per market (its first alert). The scanner re-logs an open market
+    once per day, so raw rows overcount — 456 resolved rows were 72 markets.
+    """
+    first = {}
     for r in outcomes:
-        if r.get("outcome") not in ("0", "1"):
-            continue
-        try:
-            stored = r.get("units_pl", "")
-            if stored not in (None, ""):
-                total += float(stored)
-            else:
-                # Fall back: calculate from dollars and implied_prob
-                dollars  = float(r.get("suggested_live_dollars") or 0)
-                imp_prob = float(r.get("implied_prob") or 0)
-                if dollars <= 0 or imp_prob <= 0:
-                    continue
-                if r["outcome"] == "1":
-                    payout = dollars * (1.0 / imp_prob - 1.0)
-                    total += payout / unit_size
-                else:
-                    total -= dollars / unit_size
-        except Exception:
-            pass
+        if r.get("outcome") in ("0", "1"):
+            first.setdefault(r.get("ticker"), r)
+    return list(first.values())
+
+
+def calc_unit_total(outcomes):
+    """
+    Units won/lost, one 1-unit stake per distinct resolved market, priced on
+    the side actually bet and net of Kalshi fees. Always recomputed — stored
+    units_pl values on older rows came from the buggy YES-side formula.
+    """
+    from outcomes import realized_return
+    total = 0.0
+    for r in distinct_resolved(outcomes):
+        total += realized_return(r.get("direction"), r.get("implied_prob"), r["outcome"] == "1")
     return round(total, 3)
 
 

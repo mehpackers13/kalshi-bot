@@ -145,6 +145,56 @@ def _send_drawdown_alert(br: dict) -> None:
         log(f"Drawdown alert failed: {exc}", "WARN")
 
 
+# ── Correlation grouping ──────────────────────────────────────────────────────
+
+_ASSET_TOKENS = (
+    "BTC", "ETH", "SOL", "XRP", "DOGE",           # crypto
+    "FED", "CPI", "PCE", "GDP", "JOBS", "NFP",    # macro
+    "BRENT", "WTI", "OIL", "GOLD",                # commodities
+    "INX", "NASDAQ", "SPX", "DOW",                # indices
+    "TSLA", "AMZN", "META", "AAPL", "NVDA", "MSFT", "GOOGL",
+)
+
+
+def underlying_group(ticker: str) -> str:
+    """
+    Bucket a Kalshi ticker by what actually drives its outcome, so that
+    'BTC max > 87.5k' and 'BTC min < 77.5k' and 'BTC > 100k by Nov' count
+    as ONE BTC exposure. Falls back to the event ticker (ticker minus its
+    last segment), which groups strike ladders inside one event.
+    """
+    t = (ticker or "").upper()
+    head = t.split("-", 1)[0]
+    for tok in _ASSET_TOKENS:
+        if tok in head:
+            return tok
+    return t.rsplit("-", 1)[0] if "-" in t else t
+
+
+def _exposure_by_group(api) -> dict:
+    """
+    {underlying_group: current market value} across open positions.
+
+    Reads data/positions.json, which scanner.run_scan rewrites from live
+    prices at the start of every scan — validated values, no extra API
+    call per bet. Falls back to the cost-basis total if the file is missing.
+    """
+    import json
+    out: dict = {}
+    path = config.DATA_DIR / "positions.json"
+    try:
+        for pos in json.loads(path.read_text()):
+            v = float(pos.get("current_value") or 0)
+            if v > 0:
+                g = underlying_group(pos.get("ticker", ""))
+                out[g] = out.get(g, 0.0) + v
+        return out
+    except Exception as exc:
+        log(f"positions.json unavailable ({exc}) — using total position value", "WARN")
+        total = _get_open_position_value(api)
+        return {"_unknown": total} if total > 0 else {}
+
+
 # ── Open position value ───────────────────────────────────────────────────────
 
 def _get_open_position_value(api) -> float:
@@ -284,9 +334,16 @@ def cut_losing_positions(api) -> list:
         if current_cents <= 0 or entry_cents <= 0:
             continue
 
+        # Take profit once most of the max possible gain is captured. On a
+        # binary contract the last few cents of upside carry the full
+        # resolution risk — selling at 85c instead of riding to 100c trades
+        # 15c of upside for removing the chance of going to 0.
+        tp_target   = entry_cents + config.TAKE_PROFIT_FRACTION * (100 - entry_cents)
+        take_profit = current_cents >= tp_target
+
         loss_pct = (entry_cents - current_cents) / entry_cents
-        if loss_pct < config.CUT_LOSS_PCT:
-            continue   # loss not large enough
+        if not take_profit and loss_pct < config.CUT_LOSS_PCT:
+            continue   # neither a big enough win nor a big enough loss
 
         # Check hours remaining until expiry
         close_str = market.get("close_time") or market.get("expiration_time", "")
@@ -299,7 +356,9 @@ def cut_losing_positions(api) -> list:
             except Exception:
                 pass
 
-        if hours_left <= config.CUT_LOSS_MIN_HOURS:
+        # Near-expiry losers ride (selling into thin end-of-life books locks in
+        # the max loss). Take-profits sell regardless of time left.
+        if not take_profit and hours_left <= config.CUT_LOSS_MIN_HOURS:
             log(
                 f"CUT LOSS SKIP {ticker}: {loss_pct:.0%} loss but only "
                 f"{hours_left:.0f}h left — letting it ride",
@@ -309,9 +368,10 @@ def cut_losing_positions(api) -> list:
 
         # Sell
         n = max(1, int(abs(count_fp)))
+        label = "TAKE PROFIT" if take_profit else "CUT LOSS"
         log(
-            f"CUT LOSS: {ticker} {direction} {n}ct — entry {entry_cents}¢ → "
-            f"current {current_cents}¢ = {loss_pct:.0%} loss, {hours_left:.0f}h to expiry",
+            f"{label}: {ticker} {direction} {n}ct — entry {entry_cents}¢ → "
+            f"current {current_cents}¢ ({-loss_pct:+.0%}), {hours_left:.0f}h to expiry",
             "WARN",
         )
         try:
@@ -319,13 +379,14 @@ def cut_losing_positions(api) -> list:
                 ticker=ticker, side=sell_side, count=n, yes_price=sell_yes_price
             )
             order_id = result.get("order", {}).get("order_id", "?")
-            log(f"CUT LOSS ✅ {ticker}: sold {n}ct @ {current_cents}¢ | order={order_id}")
-            _send_cut_loss_notification(
-                ticker, direction, n, entry_cents, current_cents, loss_pct, order_id
-            )
+            log(f"{label} ✅ {ticker}: sold {n}ct @ {current_cents}¢ | order={order_id}")
+            if not take_profit:
+                _send_cut_loss_notification(
+                    ticker, direction, n, entry_cents, current_cents, loss_pct, order_id
+                )
             cut.append(ticker)
         except Exception as exc:
-            log(f"CUT LOSS ERROR {ticker}: {exc}", "ERROR")
+            log(f"{label} ERROR {ticker}: {exc}", "ERROR")
 
     return cut
 
@@ -382,7 +443,9 @@ def place_auto_bet(api, edge: EdgeResult) -> dict:
     Performs all safety checks before submitting.
     Returns result dict: {placed, reason, dry_run, ...}
     """
-    dry_run  = config.DRY_RUN
+    # Paper-trade any category that hasn't been promoted to live betting.
+    live_ok  = edge.category in getattr(config, "LIVE_CATEGORIES", set())
+    dry_run  = config.DRY_RUN or not live_ok
     br       = load_bankroll()
 
     # ── Safety check 1: drawdown stop ──────────────────────────────────────
@@ -416,10 +479,13 @@ def place_auto_bet(api, edge: EdgeResult) -> dict:
             )
             return {"placed": False, "reason": "rate_limit"}
 
-    # ── Safety check 3: maximum exposure (25% of total account) ────────────
+    # ── Safety check 3: total + per-underlying exposure ─────────────────────
+    # live_balance is already cash + positions (see bankroll.sync_live_balance),
+    # so it IS the account total — the old code added positions a second time.
     if not dry_run:
-        position_value = _get_open_position_value(api)
-        total_value    = live_balance + position_value
+        by_group       = _exposure_by_group(api)
+        position_value = sum(by_group.values())
+        total_value    = live_balance if live_balance > 0 else position_value
         if total_value > 0:
             exposure_pct = position_value / total_value
             if exposure_pct >= config.MAX_EXPOSURE_PCT:
@@ -430,6 +496,17 @@ def place_auto_bet(api, edge: EdgeResult) -> dict:
                     "WARN",
                 )
                 return {"placed": False, "reason": "max_exposure"}
+            # Correlated positions (same underlying) fail together — cap them
+            # as one bet, not N independent ones.
+            group     = underlying_group(edge.ticker)
+            group_pct = by_group.get(group, 0.0) / total_value
+            if group_pct >= config.MAX_GROUP_EXPOSURE_PCT:
+                log(
+                    f"AUTO-BET SKIP {edge.ticker}: {group} exposure {group_pct:.1%} ≥ "
+                    f"{config.MAX_GROUP_EXPOSURE_PCT:.0%} per-underlying limit",
+                    "WARN",
+                )
+                return {"placed": False, "reason": "max_group_exposure"}
 
     # ── Sizing ──────────────────────────────────────────────────────────────
     sizing = _size_auto_bet(edge, live_balance if live_balance > 0 else 10.0)

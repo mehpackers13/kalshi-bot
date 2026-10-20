@@ -62,6 +62,31 @@ CUT_LOSS_MIN_HOURS    = 48.0     # only cut losses when >48h remain (let near-ex
 DRY_RUN               = False
 MAX_AUTO_BETS_PER_HOUR = 3        # rate limit — prevents runaway loops
 
+# ── Live-betting whitelist ────────────────────────────────────────────────────
+# Only categories listed here place REAL orders. Everything else is paper-
+# traded: logged to outcomes.csv + bets_placed.csv (dry_run=True), graded
+# when it settles, but no money moves.
+#
+# Empty as of 2026-10-20: an audit of 72 distinct resolved markets showed
+# every category with negative realized ROI, and the crypto model was using
+# ~19% BTC volatility (real: 40-60%). Promote a category only after its
+# paper record shows positive ROI over >= PROMOTE_MIN_MARKETS distinct
+# markets AND positive closing-line value (see clv.py).
+LIVE_CATEGORIES: set = set()
+PROMOTE_MIN_MARKETS   = 30
+
+# Fed + CPI probability models are off until rebuilt (see probability_models).
+ECON_MODELS_ENABLED   = False
+
+# Per-underlying cap: all positions sharing an underlying (BTC, FED, one event's
+# strike ladder...) move together, so they share one exposure budget.
+MAX_GROUP_EXPOSURE_PCT = 0.10
+
+# Take profit on binary contracts once this fraction of the max possible gain
+# is captured (e.g. bought YES at 30c, max gain 70c -> sell at bid >= 82.5c).
+# Locks in most of the win and removes last-mile resolution risk.
+TAKE_PROFIT_FRACTION   = 0.75
+
 # ── Multi-leg parlays (Kalshi combo markets) ──────────────────────────────────
 # PARLAY_DRY_RUN = True   -> logic runs, candidates logged, no real orders
 # PARLAY_LIVE    = True   -> real combo orders placed via Kalshi API

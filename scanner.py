@@ -8,6 +8,7 @@ Silent by design — no alerts = good discipline.
 
 import datetime
 import json
+import time
 from typing import Optional
 
 import config
@@ -100,14 +101,20 @@ def _write_positions_snapshot(api: KalshiAPI) -> None:
         log(f"Positions snapshot failed: {exc}", "WARN")
 
 
-def _already_alerted_today(ticker: str) -> bool:
-    """Don't fire duplicate alerts for the same market in the same day."""
+def _alerted_today_set() -> set:
+    """
+    Tickers already alerted today, built in ONE pass over outcomes.csv.
+
+    Previously _already_alerted_today() re-parsed the whole CSV once per
+    market — 92k markets x 17k rows = ~1.6B row reads per scan, which hung
+    every scan past the job timeout. Build the set once, look up in O(1).
+    """
     today = datetime.datetime.utcnow().strftime("%Y-%m-%d")
-    rows  = read_all()
-    for row in rows:
-        if row.get("ticker") == ticker and row.get("timestamp", "").startswith(today):
-            return True
-    return False
+    return {
+        row.get("ticker")
+        for row in read_all()
+        if row.get("timestamp", "").startswith(today)
+    }
 
 
 def run_scan(api: KalshiAPI) -> list:
@@ -173,10 +180,12 @@ def run_scan(api: KalshiAPI) -> list:
     edges_found = []
     unmodelable = 0
     checked = 0
+    alerted_today = _alerted_today_set()
+    loop_start = time.time()
 
     for market in markets:
         # Skip if already alerted for this market today
-        if _already_alerted_today(market["ticker"]):
+        if market["ticker"] in alerted_today:
             continue
 
         checked += 1
@@ -184,7 +193,8 @@ def run_scan(api: KalshiAPI) -> list:
         if edge is not None:
             edges_found.append(edge)
 
-    log(f"Checked {checked} markets | Modelable: {checked - unmodelable} | Edges found: {len(edges_found)}")
+    log(f"Checked {checked} markets in {time.time() - loop_start:.1f}s | "
+        f"Edges found: {len(edges_found)}")
 
     # Alert and log
     alerted = []

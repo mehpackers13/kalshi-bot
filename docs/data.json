@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-21T17:55:47.181960Z",
-  "last_scan_ts": "2026-10-21T17:55:47.181960Z",
+  "generated_at": "2026-10-21T20:03:26.113979Z",
+  "last_scan_ts": "2026-10-21T20:03:26.113979Z",
   "stats": {
-    "total_alerts": 17072,
+    "total_alerts": 17073,
     "rated": 72,
     "hit_rate": 33.3,
     "by_category": {
@@ -25,7 +25,7 @@
         "hit_rate": null
       },
       "Crypto": {
-        "total": 4819,
+        "total": 4820,
         "rated": 12,
         "hits": 2,
         "hit_rate": 16.7
@@ -69,7 +69,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 4140,
+        "total": 4141,
         "rated": 15,
         "hits": 11,
         "hit_rate": 73.3
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 41.18,
+      "balance": 41.09,
       "cash": 35.26,
       "peak": 41.23,
       "initial_balance": 10.0
@@ -101,15 +101,34 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-10-21T15:54:35.846995Z"
+    "updated_at": "2026-10-21T20:02:54.277493Z"
   },
   "cash_bal": 35.26,
-  "position_value": 5.92,
-  "account_value": 41.18,
-  "live_pnl": 31.18,
+  "position_value": 5.83,
+  "account_value": 41.09,
+  "live_pnl": 31.09,
   "paper_pnl": 0.0,
   "unit_total": -36.079,
   "today_outcomes": [
+    {
+      "timestamp": "2026-10-21T20:03:25.298802Z",
+      "ticker": "KXBTCMAXMON-BTC-26OCT31-9000000",
+      "title": "Will BTC trimmed mean be above $90000.00 by 11:59 PM ET on Oct 31, 2026?",
+      "category": "Crypto",
+      "direction": "YES",
+      "edge_pct": "8.05",
+      "implied_prob": "0.265",
+      "true_prob": "0.3455",
+      "confidence": "58",
+      "suggested_live_dollars": "0.54",
+      "suggested_paper_dollars": "14.04",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "27",
+      "outcome": "",
+      "units_pl": "",
+      "resolved_at": "",
+      "notes": ""
+    },
     {
       "timestamp": "2026-10-21T04:04:58.376173Z",
       "ticker": "KXBRENTMON-26OCT3017-T100.99",
@@ -188,6 +207,25 @@
     }
   ],
   "recent_alerts": [
+    {
+      "timestamp": "2026-10-21T20:03:25.298802Z",
+      "ticker": "KXBTCMAXMON-BTC-26OCT31-9000000",
+      "title": "Will BTC trimmed mean be above $90000.00 by 11:59 PM ET on Oct 31, 2026?",
+      "category": "Crypto",
+      "direction": "YES",
+      "edge_pct": "8.05",
+      "implied_prob": "0.265",
+      "true_prob": "0.3455",
+      "confidence": "58",
+      "suggested_live_dollars": "0.54",
+      "suggested_paper_dollars": "14.04",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "27",
+      "outcome": "",
+      "units_pl": "",
+      "resolved_at": "",
+      "notes": ""
+    },
     {
       "timestamp": "2026-10-21T04:04:58.376173Z",
       "ticker": "KXBRENTMON-26OCT3017-T100.99",
@@ -1118,25 +1156,6 @@
       "units_pl": "",
       "resolved_at": "",
       "notes": ""
-    },
-    {
-      "timestamp": "2026-10-15T00:09:18.327061Z",
-      "ticker": "KXXRPMAXY-XRP-26DEC31-200",
-      "title": "Will XRP trimmed mean be above $2.00 by 11:59 PM ET on Dec 31, 2026?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-18.26",
-      "implied_prob": "0.22",
-      "true_prob": "0.0374",
-      "confidence": "70",
-      "suggested_live_dollars": "0.83",
-      "suggested_paper_dollars": "39.84",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "83",
-      "outcome": "",
-      "units_pl": "",
-      "resolved_at": "",
-      "notes": ""
     }
   ],
   "model_changes": [
@@ -1172,7 +1191,26 @@
     "Weather": 0.7,
     "Climate and Weather": 0.3
   },
-  "bets_placed": [],
+  "bets_placed": [
+    {
+      "timestamp": "2026-10-21T20:03:25.299149",
+      "ticker": "KXBTCMAXMON-BTC-26OCT31-9000000",
+      "title": "Will BTC trimmed mean be above $90000.00 by 11:59 PM ET on Oct 31, 2026?",
+      "category": "Crypto",
+      "direction": "YES",
+      "contracts": "4",
+      "price_cents": "27",
+      "dollars_risked": "1.08",
+      "edge_pct": "8.05",
+      "true_prob": "0.3455",
+      "implied_prob": "0.265",
+      "confidence": "58",
+      "kelly_fraction": "0.5",
+      "dry_run": "True",
+      "order_id": "",
+      "status": "dry_run"
+    }
+  ],
   "open_positions": [
     {
       "ticker": "KXSOLMAXY-27JAN01-170",
@@ -1180,9 +1218,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 82,
+      "current_cents": 84,
       "dollars_risked": 0,
-      "current_value": 0.82,
+      "current_value": 0.84,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -1192,9 +1230,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 84,
+      "current_cents": 82,
       "dollars_risked": 0,
-      "current_value": 1.68,
+      "current_value": 1.64,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -1204,9 +1242,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 79,
+      "current_cents": 74,
       "dollars_risked": 0,
-      "current_value": 1.58,
+      "current_value": 1.48,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -1228,9 +1266,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 87,
+      "current_cents": 90,
       "dollars_risked": 0,
-      "current_value": 0.87,
+      "current_value": 0.9,
       "pl_dollars": 0.0,
       "timestamp": ""
     }

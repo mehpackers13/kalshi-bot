@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-20T23:51:56.869050Z",
-  "last_scan_ts": "2026-10-20T23:51:56.869050Z",
+  "generated_at": "2026-10-21T01:55:24.001421Z",
+  "last_scan_ts": "2026-10-21T01:55:24.001421Z",
   "stats": {
-    "total_alerts": 17069,
+    "total_alerts": 17070,
     "rated": 72,
     "hit_rate": 33.3,
     "by_category": {
@@ -25,7 +25,7 @@
         "hit_rate": null
       },
       "Crypto": {
-        "total": 4818,
+        "total": 4819,
         "rated": 12,
         "hits": 2,
         "hit_rate": 16.7
@@ -69,7 +69,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 4137,
+        "total": 4138,
         "rated": 15,
         "hits": 11,
         "hit_rate": 73.3
@@ -90,7 +90,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 40.84,
+      "balance": 41.17,
       "cash": 35.26,
       "peak": 41.23,
       "initial_balance": 10.0
@@ -101,15 +101,34 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-10-20T23:51:31.534528Z"
+    "updated_at": "2026-10-21T01:54:58.931923Z"
   },
   "cash_bal": 35.26,
-  "position_value": 5.58,
-  "account_value": 40.84,
-  "live_pnl": 30.84,
+  "position_value": 5.67,
+  "account_value": 40.93,
+  "live_pnl": 30.93,
   "paper_pnl": 0.0,
   "unit_total": -36.079,
   "today_outcomes": [
+    {
+      "timestamp": "2026-10-21T01:55:23.301934Z",
+      "ticker": "KXBTCMAXMON-BTC-26OCT31-8750000",
+      "title": "Will BTC trimmed mean be above $87500.00 by 11:59 PM ET on Oct 31, 2026?",
+      "category": "Crypto",
+      "direction": "YES",
+      "edge_pct": "8.78",
+      "implied_prob": "0.36",
+      "true_prob": "0.4478",
+      "confidence": "73",
+      "suggested_live_dollars": "0.74",
+      "suggested_paper_dollars": "19.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "37",
+      "outcome": "",
+      "units_pl": "",
+      "resolved_at": "",
+      "notes": ""
+    },
     {
       "timestamp": "2026-10-20T23:51:56.204958Z",
       "ticker": "KXBTCMAXMON-BTC-26OCT31-8750000",
@@ -131,6 +150,25 @@
     }
   ],
   "recent_alerts": [
+    {
+      "timestamp": "2026-10-21T01:55:23.301934Z",
+      "ticker": "KXBTCMAXMON-BTC-26OCT31-8750000",
+      "title": "Will BTC trimmed mean be above $87500.00 by 11:59 PM ET on Oct 31, 2026?",
+      "category": "Crypto",
+      "direction": "YES",
+      "edge_pct": "8.78",
+      "implied_prob": "0.36",
+      "true_prob": "0.4478",
+      "confidence": "73",
+      "suggested_live_dollars": "0.74",
+      "suggested_paper_dollars": "19.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "37",
+      "outcome": "",
+      "units_pl": "",
+      "resolved_at": "",
+      "notes": ""
+    },
     {
       "timestamp": "2026-10-20T23:51:56.204958Z",
       "ticker": "KXBTCMAXMON-BTC-26OCT31-8750000",
@@ -1061,25 +1099,6 @@
       "units_pl": "",
       "resolved_at": "",
       "notes": ""
-    },
-    {
-      "timestamp": "2026-10-15T00:09:17.750471Z",
-      "ticker": "KXBTCMINY-27JAN01-55000.00",
-      "title": "Will Bitcoin be below $55000.00 by Jan 1, 2027 at 12:00am ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-12.03",
-      "implied_prob": "0.125",
-      "true_prob": "0.0047",
-      "confidence": "73",
-      "suggested_live_dollars": "0.88",
-      "suggested_paper_dollars": "19.36",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "88",
-      "outcome": "",
-      "units_pl": "",
-      "resolved_at": "",
-      "notes": ""
     }
   ],
   "model_changes": [
@@ -1115,17 +1134,17 @@
   },
   "bets_placed": [
     {
-      "timestamp": "2026-10-20T23:51:56.205257",
+      "timestamp": "2026-10-21T01:55:23.302137",
       "ticker": "KXBTCMAXMON-BTC-26OCT31-8750000",
       "title": "Will BTC trimmed mean be above $87500.00 by 11:59 PM ET on Oct 31, 2026?",
       "category": "Crypto",
       "direction": "YES",
-      "contracts": "3",
-      "price_cents": "38",
-      "dollars_risked": "1.14",
-      "edge_pct": "8.0",
-      "true_prob": "0.445",
-      "implied_prob": "0.365",
+      "contracts": "4",
+      "price_cents": "37",
+      "dollars_risked": "1.48",
+      "edge_pct": "8.78",
+      "true_prob": "0.4478",
+      "implied_prob": "0.36",
       "confidence": "73",
       "kelly_fraction": "0.5",
       "dry_run": "True",
@@ -1140,9 +1159,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 83,
+      "current_cents": 62,
       "dollars_risked": 0,
-      "current_value": 0.83,
+      "current_value": 0.62,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -1152,9 +1171,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 67,
+      "current_cents": 82,
       "dollars_risked": 0,
-      "current_value": 1.34,
+      "current_value": 1.64,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

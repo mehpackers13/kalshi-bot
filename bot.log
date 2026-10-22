@@ -113405,3 +113405,32 @@ Total modelable markets evaluated: 0
 [2026-10-22 11:51:30 ET] [INFO] Scan complete — no qualifying edges found (this is fine)
 [2026-10-22 11:51:30 ET] [INFO] ============================================================
 [2026-10-22 11:51:31 ET] [INFO] Scan job complete
+[2026-10-22 13:02:24 ET] [INFO] Morning report job starting
+[2026-10-22 13:02:25 ET] [INFO] Kalshi API key auth OK ✅  balance: $35.26
+[2026-10-22 13:02:25 ET] [INFO] ============================================================
+[2026-10-22 13:02:25 ET] [INFO] Morning report starting
+[2026-10-22 13:02:25 ET] [ERROR] STALE SELL ERROR KXSOLMAXY-27JAN01-170: Kalshi POST /portfolio/orders → HTTP 410: {"error":{"code":"deprecated_v1_order_endpoint","message":"Please switch to the V2 endpoints","details":"https://docs.kalshi.com/api-reference/orders/create-order-v2"}}
+[2026-10-22 13:02:25 ET] [ERROR] STALE SELL ERROR KXSOLMAXY-27JAN01-160: Kalshi POST /portfolio/orders → HTTP 410: {"error":{"code":"deprecated_v1_order_endpoint","message":"Please switch to the V2 endpoints","details":"https://docs.kalshi.com/api-reference/orders/create-order-v2"}}
+[2026-10-22 13:02:25 ET] [ERROR] STALE SELL ERROR KXSOLMAXY-27JAN01-150: Kalshi POST /portfolio/orders → HTTP 410: {"error":{"code":"deprecated_v1_order_endpoint","message":"Please switch to the V2 endpoints","details":"https://docs.kalshi.com/api-reference/orders/create-order-v2"}}
+[2026-10-22 13:02:26 ET] [ERROR] STALE SELL ERROR KXBTCMAXY-26DEC31-149999.99: Kalshi POST /portfolio/orders → HTTP 410: {"error":{"code":"deprecated_v1_order_endpoint","message":"Please switch to the V2 endpoints","details":"https://docs.kalshi.com/api-reference/orders/create-order-v2"}}
+[2026-10-22 13:02:26 ET] [ERROR] STALE SELL ERROR KXTESLASEMI-27JAN-5000: Kalshi POST /portfolio/orders → HTTP 410: {"error":{"code":"deprecated_v1_order_endpoint","message":"Please switch to the V2 endpoints","details":"https://docs.kalshi.com/api-reference/orders/create-order-v2"}}
+[2026-10-22 13:02:26 ET] [INFO] Running morning self-improvement analysis
+[2026-10-22 13:02:26 ET] [INFO] MODEL CHANGE: Category Crypto: ROI -85.0% over 12 distinct markets → confidence 0.80 → 0.70
+[2026-10-22 13:02:26 ET] [INFO] Self-improvement: 1 model adjustments made
+[2026-10-22 13:02:26 ET] [INFO] No ANTHROPIC_API_KEY — skipping AI brain
+[2026-10-22 13:02:26 ET] [INFO] Scanning for pre-market opportunities...
+[2026-10-22 13:02:47 ET] [INFO] Fetched 116857 open markets via events endpoint across 50 pages
+[2026-10-22 13:02:48 ET] [INFO]   price model: BTC-USD spot=81142.65 target=100000.00 touch vol=40% T=948h → P=0.112
+[2026-10-22 13:02:49 ET] [INFO]   price model: SOL-USD spot=103.54 target=100.00 touch vol=60% T=227h → P=0.719
+[2026-10-22 13:02:49 ET] [INFO]   price model: BTC-USD spot=81142.65 target=77500.00 touch vol=40% T=227h → P=0.476
+[2026-10-22 13:02:49 ET] [INFO]   EDGE FOUND: KXBTCMINMON-BTC-26OCT31-7750000 | implied=39.5% true=47.6% edge=+8.1% dir=YES conf=48
+[2026-10-22 13:02:49 ET] [INFO]   price model: BTC-USD spot=81142.65 target=75000.00 touch vol=40% T=227h → P=0.221
+[2026-10-22 13:02:49 ET] [INFO]   price model: BTC-USD spot=81142.65 target=72500.00 touch vol=40% T=227h → P=0.080
+[2026-10-22 13:02:49 ET] [INFO]   price model: BTC-USD spot=81142.65 target=87500.00 touch vol=40% T=227h → P=0.241
+[2026-10-22 13:02:49 ET] [INFO]   price model: BTC-USD spot=81142.65 target=90000.00 touch vol=40% T=227h → P=0.108
+[2026-10-22 13:02:49 ET] [INFO]   price model: BTC-USD spot=81142.65 target=92500.00 touch vol=40% T=227h → P=0.042
+[2026-10-22 13:02:49 ET] [INFO] Pre-market watch: 1 markets flagged
+[2026-10-22 13:02:49 ET] [INFO] [Discord] Morning report sent
+[2026-10-22 13:02:49 ET] [INFO] Morning report complete
+[2026-10-22 13:02:49 ET] [INFO] ============================================================
+[2026-10-22 13:02:49 ET] [INFO] Morning report job complete

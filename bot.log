@@ -113462,3 +113462,30 @@ Total modelable markets evaluated: 0
 [2026-10-22 13:52:03 ET] [INFO] Morning report complete
 [2026-10-22 13:52:03 ET] [INFO] ============================================================
 [2026-10-22 13:52:03 ET] [INFO] Morning report job complete
+[2026-10-22 15:56:44 ET] [INFO] Scan job starting
+[2026-10-22 15:56:44 ET] [INFO] Kalshi API key auth OK ✅  balance: $35.26
+[2026-10-22 15:56:46 ET] [INFO] ============================================================
+[2026-10-22 15:56:46 ET] [INFO] Starting market scan
+[2026-10-22 15:56:46 ET] [WARN] API GET /portfolio/balance → HTTP 429
+[2026-10-22 15:56:46 ET] [INFO] Cash: $35.26  |  Positions: $0.00  |  Total: $35.26  |  Peak: $41.23
+[2026-10-22 15:56:47 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-10-22 15:57:06 ET] [INFO] Fetched 117225 open markets via events endpoint across 50 pages
+[2026-10-22 15:57:06 ET] [INFO] Fetched 117225 open markets
+[2026-10-22 15:57:06 ET] [INFO] Parsed 101991 valid markets
+[2026-10-22 15:57:06 ET] [INFO] Categories: {'Sports': 52294, 'Elections': 24519, 'Entertainment': 8338, 'Financials': 5223, 'Economics': 4175, 'Politics': 2434, 'Mentions': 1846, 'Science and Technology': 867}
+[2026-10-22 15:57:07 ET] [INFO]   price model: BTC-USD spot=81391.34 target=100000.00 touch vol=40% T=945h → P=0.117
+[2026-10-22 15:57:07 ET] [INFO]   price model: ETH-USD spot=2383.47 target=2250.00 touch vol=53% T=224h → P=0.493
+[2026-10-22 15:57:07 ET] [INFO]   EDGE FOUND: KXETHMINMON-ETH-26OCT31-225000 | implied=41.0% true=49.3% edge=+8.3% dir=YES conf=38
+[2026-10-22 15:57:07 ET] [INFO]   price model: BTC-USD spot=81391.34 target=75000.00 touch vol=40% T=224h → P=0.201
+[2026-10-22 15:57:07 ET] [INFO]   price model: BTC-USD spot=81391.34 target=72500.00 touch vol=40% T=224h → P=0.071
+[2026-10-22 15:57:07 ET] [INFO]   price model: BTC-USD spot=81391.34 target=90000.00 touch vol=40% T=224h → P=0.116
+[2026-10-22 15:57:08 ET] [INFO]   price model: BZ=F spot=113.14 target=102.99 expiry vol=49% T=193h → P=0.895
+[2026-10-22 15:57:08 ET] [INFO]   EDGE FOUND: KXBRENTMON-26OCT3017-T102.99 | implied=78.5% true=89.5% edge=+11.0% dir=YES conf=68
+[2026-10-22 15:57:12 ET] [INFO] Checked 101985 markets in 5.9s | Edges found: 2
+[2026-10-22 15:57:12 ET] [INFO] [Discord] Trade alert sent: KXETHMINMON-ETH-26OCT31-225000
+[2026-10-22 15:57:12 ET] [DEBUG] AUTO-BET SKIP KXETHMINMON-ETH-26OCT31-225000: bet too small (<$0.50)
+[2026-10-22 15:57:13 ET] [INFO] [Discord] Trade alert sent: KXBRENTMON-26OCT3017-T102.99
+[2026-10-22 15:57:13 ET] [INFO] DRY RUN 🔵 KXBRENTMON-26OCT3017-T102.99 YES 2ct @ 80¢ = $1.60 | edge=+11.0% conf=68 | would_use 50%Kelly
+[2026-10-22 15:57:13 ET] [INFO] Scan complete — 2 alerts sent
+[2026-10-22 15:57:13 ET] [INFO] ============================================================
+[2026-10-22 15:57:13 ET] [INFO] Scan job complete

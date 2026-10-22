@@ -113359,3 +113359,30 @@ Total modelable markets evaluated: 0
 [2026-10-22 00:05:56 ET] [INFO] Scan complete — 4 alerts sent
 [2026-10-22 00:05:56 ET] [INFO] ============================================================
 [2026-10-22 00:05:56 ET] [INFO] Scan job complete
+[2026-10-22 05:33:46 ET] [INFO] Scan job starting
+[2026-10-22 05:33:46 ET] [INFO] Kalshi API key auth OK ✅  balance: $35.26
+[2026-10-22 05:33:48 ET] [INFO] ============================================================
+[2026-10-22 05:33:48 ET] [INFO] Starting market scan
+[2026-10-22 05:33:48 ET] [WARN] API GET /portfolio/balance → HTTP 429
+[2026-10-22 05:33:48 ET] [INFO] Cash: $35.26  |  Positions: $0.00  |  Total: $35.26  |  Peak: $41.23
+[2026-10-22 05:33:48 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-10-22 05:34:07 ET] [INFO] Fetched 117287 open markets via events endpoint across 50 pages
+[2026-10-22 05:34:07 ET] [INFO] Fetched 117287 open markets
+[2026-10-22 05:34:07 ET] [INFO] Parsed 101962 valid markets
+[2026-10-22 05:34:07 ET] [INFO] Categories: {'Sports': 52609, 'Elections': 24377, 'Entertainment': 8192, 'Financials': 5269, 'Economics': 4182, 'Politics': 2434, 'Mentions': 1802, 'Science and Technology': 807}
+[2026-10-22 05:34:08 ET] [INFO]   price model: BTC-USD spot=81697.52 target=100000.00 touch vol=40% T=955h → P=0.126
+[2026-10-22 05:34:08 ET] [INFO]   price model: SOL-USD spot=103.68 target=100.00 touch vol=60% T=234h → P=0.713
+[2026-10-22 05:34:08 ET] [INFO]   EDGE FOUND: KXSOLMINMON-SOL-26OCT31-10000 | implied=59.0% true=71.3% edge=+12.3% dir=YES conf=50
+[2026-10-22 05:34:08 ET] [INFO]   price model: BTC-USD spot=81697.52 target=77500.00 touch vol=40% T=234h → P=0.420
+[2026-10-22 05:34:08 ET] [INFO]   EDGE FOUND: KXBTCMINMON-BTC-26OCT31-7750000 | implied=34.0% true=42.0% edge=+8.0% dir=YES conf=54
+[2026-10-22 05:34:08 ET] [INFO]   price model: BTC-USD spot=81697.52 target=75000.00 touch vol=40% T=234h → P=0.191
+[2026-10-22 05:34:08 ET] [INFO]   price model: BTC-USD spot=81697.52 target=90000.00 touch vol=40% T=234h → P=0.139
+[2026-10-22 05:34:08 ET] [INFO]   price model: BTC-USD spot=81697.52 target=92500.00 touch vol=40% T=234h → P=0.058
+[2026-10-22 05:34:11 ET] [INFO] Checked 101958 markets in 4.1s | Edges found: 2
+[2026-10-22 05:34:12 ET] [INFO] [Discord] Trade alert sent: KXSOLMINMON-SOL-26OCT31-10000
+[2026-10-22 05:34:12 ET] [INFO] DRY RUN 🔵 KXSOLMINMON-SOL-26OCT31-10000 YES 2ct @ 61¢ = $1.22 | edge=+12.3% conf=50 | would_use 50%Kelly
+[2026-10-22 05:34:13 ET] [INFO] [Discord] Trade alert sent: KXBTCMINMON-BTC-26OCT31-7750000
+[2026-10-22 05:34:13 ET] [DEBUG] AUTO-BET SKIP KXBTCMINMON-BTC-26OCT31-7750000: bet too small (<$0.50)
+[2026-10-22 05:34:13 ET] [INFO] Scan complete — 2 alerts sent
+[2026-10-22 05:34:13 ET] [INFO] ============================================================
+[2026-10-22 05:34:13 ET] [INFO] Scan job complete

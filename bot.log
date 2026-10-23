@@ -113507,3 +113507,39 @@ Total modelable markets evaluated: 0
 [2026-10-22 19:13:22 ET] [INFO] Scan complete — no qualifying edges found (this is fine)
 [2026-10-22 19:13:22 ET] [INFO] ============================================================
 [2026-10-22 19:13:23 ET] [INFO] Scan job complete
+[2026-10-22 21:49:27 ET] [INFO] Scan job starting
+[2026-10-22 21:49:27 ET] [INFO] Kalshi API key auth OK ✅  balance: $35.26
+[2026-10-22 21:49:29 ET] [INFO] ============================================================
+[2026-10-22 21:49:29 ET] [INFO] Starting market scan
+[2026-10-22 21:49:29 ET] [WARN] API GET /portfolio/balance → HTTP 429
+[2026-10-22 21:49:29 ET] [INFO] Cash: $35.26  |  Positions: $0.00  |  Total: $35.26  |  Peak: $41.23
+[2026-10-22 21:49:29 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-10-22 21:49:49 ET] [INFO] Fetched 115139 open markets via events endpoint across 50 pages
+[2026-10-22 21:49:49 ET] [INFO] Fetched 115139 open markets
+[2026-10-22 21:49:49 ET] [INFO] Parsed 99715 valid markets
+[2026-10-22 21:49:49 ET] [INFO] Categories: {'Sports': 49897, 'Elections': 24603, 'Entertainment': 8414, 'Financials': 5154, 'Economics': 4179, 'Politics': 2500, 'Mentions': 1806, 'Science and Technology': 841}
+[2026-10-22 21:49:50 ET] [INFO]   price model: BTC-USD spot=81498.16 target=100000.00 touch vol=40% T=939h → P=0.118
+[2026-10-22 21:49:50 ET] [INFO]   price model: SOL-USD spot=104.28 target=100.00 touch vol=60% T=218h → P=0.658
+[2026-10-22 21:49:50 ET] [INFO]   price model: BTC-USD spot=81498.16 target=77500.00 touch vol=40% T=218h → P=0.426
+[2026-10-22 21:49:50 ET] [INFO]   EDGE FOUND: KXBTCMINMON-BTC-26OCT31-7750000 | implied=34.0% true=42.5% edge=+8.5% dir=YES conf=41
+[2026-10-22 21:49:50 ET] [INFO]   price model: BTC-USD spot=81498.16 target=75000.00 touch vol=40% T=218h → P=0.188
+[2026-10-22 21:49:50 ET] [INFO]   price model: BTC-USD spot=81498.16 target=87500.00 touch vol=40% T=218h → P=0.260
+[2026-10-22 21:49:50 ET] [INFO]   price model: BTC-USD spot=81498.16 target=90000.00 touch vol=40% T=218h → P=0.116
+[2026-10-22 21:49:50 ET] [INFO]   price model: BTC-USD spot=81498.16 target=92500.00 touch vol=40% T=218h → P=0.045
+[2026-10-22 21:49:50 ET] [INFO]   price model: BZ=F spot=113.70 target=96.99 expiry vol=49% T=187h → P=0.985
+[2026-10-22 21:49:50 ET] [INFO]   price model: BZ=F spot=113.70 target=98.99 expiry vol=49% T=187h → P=0.971
+[2026-10-22 21:49:50 ET] [INFO]   price model: BZ=F spot=113.70 target=100.99 expiry vol=49% T=187h → P=0.947
+[2026-10-22 21:49:50 ET] [INFO]   price model: BZ=F spot=113.70 target=102.99 expiry vol=49% T=187h → P=0.910
+[2026-10-22 21:49:50 ET] [INFO]   EDGE FOUND: KXBRENTMON-26OCT3017-T102.99 | implied=79.5% true=91.0% edge=+11.5% dir=YES conf=68
+[2026-10-22 21:49:50 ET] [INFO]   price model: BZ=F spot=113.70 target=108.99 expiry vol=49% T=187h → P=0.710
+[2026-10-22 21:49:50 ET] [INFO]   EDGE FOUND: KXBRENTMON-26OCT3017-T108.99 | implied=53.5% true=71.0% edge=+17.5% dir=YES conf=75
+[2026-10-22 21:49:51 ET] [INFO] Checked 99715 markets in 2.0s | Edges found: 3
+[2026-10-22 21:49:51 ET] [INFO] [Discord] Trade alert sent: KXBTCMINMON-BTC-26OCT31-7750000
+[2026-10-22 21:49:51 ET] [DEBUG] AUTO-BET SKIP KXBTCMINMON-BTC-26OCT31-7750000: bet too small (<$0.50)
+[2026-10-22 21:49:52 ET] [INFO] [Discord] Trade alert sent: KXBRENTMON-26OCT3017-T102.99
+[2026-10-22 21:49:52 ET] [INFO] DRY RUN 🔵 KXBRENTMON-26OCT3017-T102.99 YES 2ct @ 80¢ = $1.60 | edge=+11.5% conf=68 | would_use 50%Kelly
+[2026-10-22 21:49:52 ET] [INFO] [Discord] Trade alert sent: KXBRENTMON-26OCT3017-T108.99
+[2026-10-22 21:49:52 ET] [INFO] DRY RUN 🔵 KXBRENTMON-26OCT3017-T108.99 YES 3ct @ 54¢ = $1.62 | edge=+17.5% conf=75 | would_use 50%Kelly
+[2026-10-22 21:49:52 ET] [INFO] Scan complete — 3 alerts sent
+[2026-10-22 21:49:52 ET] [INFO] ============================================================
+[2026-10-22 21:49:52 ET] [INFO] Scan job complete

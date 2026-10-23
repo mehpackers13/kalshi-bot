@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-22T23:13:23.409015Z",
-  "last_scan_ts": "2026-10-22T23:13:23.409015Z",
+  "generated_at": "2026-10-23T01:49:53.146634Z",
+  "last_scan_ts": "2026-10-23T01:49:53.146634Z",
   "stats": {
-    "total_alerts": 17081,
+    "total_alerts": 17084,
     "rated": 72,
     "hit_rate": 33.3,
     "by_category": {
@@ -25,7 +25,7 @@
         "hit_rate": null
       },
       "Crypto": {
-        "total": 4824,
+        "total": 4825,
         "rated": 12,
         "hits": 2,
         "hit_rate": 16.7
@@ -55,7 +55,7 @@
         "hit_rate": 53.6
       },
       "Commodities": {
-        "total": 1968,
+        "total": 1970,
         "rated": 2,
         "hits": 0,
         "hit_rate": 0.0
@@ -69,13 +69,13 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 4149,
+        "total": 4151,
         "rated": 15,
         "hits": 11,
         "hit_rate": 73.3
       },
       "medium (15-25%)": {
-        "total": 3241,
+        "total": 3242,
         "rated": 13,
         "hits": 7,
         "hit_rate": 53.8
@@ -101,15 +101,72 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-10-22T23:12:59.650931Z"
+    "updated_at": "2026-10-23T01:49:29.330840Z"
   },
   "cash_bal": 35.26,
-  "position_value": 5.84,
-  "account_value": 41.1,
-  "live_pnl": 31.1,
+  "position_value": 5.88,
+  "account_value": 41.14,
+  "live_pnl": 31.14,
   "paper_pnl": 0.0,
   "unit_total": -36.079,
   "today_outcomes": [
+    {
+      "timestamp": "2026-10-23T01:49:52.495494Z",
+      "ticker": "KXBRENTMON-26OCT3017-T108.99",
+      "title": "Will the brent crude oil close price be above 108.99 USD/Bbl on October 30, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "YES",
+      "edge_pct": "17.48",
+      "implied_prob": "0.535",
+      "true_prob": "0.7098",
+      "confidence": "75",
+      "suggested_live_dollars": "1.08",
+      "suggested_paper_dollars": "39.96",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "54",
+      "outcome": "",
+      "units_pl": "",
+      "resolved_at": "",
+      "notes": ""
+    },
+    {
+      "timestamp": "2026-10-23T01:49:52.189923Z",
+      "ticker": "KXBRENTMON-26OCT3017-T102.99",
+      "title": "Will the brent crude oil close price be above 102.99 USD/Bbl on October 30, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "YES",
+      "edge_pct": "11.5",
+      "implied_prob": "0.795",
+      "true_prob": "0.91",
+      "confidence": "68",
+      "suggested_live_dollars": "0.8",
+      "suggested_paper_dollars": "20.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "80",
+      "outcome": "",
+      "units_pl": "",
+      "resolved_at": "",
+      "notes": ""
+    },
+    {
+      "timestamp": "2026-10-23T01:49:51.994084Z",
+      "ticker": "KXBTCMINMON-BTC-26OCT31-7750000",
+      "title": "Will BTC trimmed mean be below $77500.00 by 11:59 PM ET on Oct 31, 2026?",
+      "category": "Crypto",
+      "direction": "YES",
+      "edge_pct": "8.55",
+      "implied_prob": "0.34",
+      "true_prob": "0.4255",
+      "confidence": "41",
+      "suggested_live_dollars": "0.35",
+      "suggested_paper_dollars": "9.45",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "35",
+      "outcome": "",
+      "units_pl": "",
+      "resolved_at": "",
+      "notes": ""
+    },
     {
       "timestamp": "2026-10-22T19:57:13.179512Z",
       "ticker": "KXBRENTMON-26OCT3017-T102.99",
@@ -264,6 +321,63 @@
     }
   ],
   "recent_alerts": [
+    {
+      "timestamp": "2026-10-23T01:49:52.495494Z",
+      "ticker": "KXBRENTMON-26OCT3017-T108.99",
+      "title": "Will the brent crude oil close price be above 108.99 USD/Bbl on October 30, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "YES",
+      "edge_pct": "17.48",
+      "implied_prob": "0.535",
+      "true_prob": "0.7098",
+      "confidence": "75",
+      "suggested_live_dollars": "1.08",
+      "suggested_paper_dollars": "39.96",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "54",
+      "outcome": "",
+      "units_pl": "",
+      "resolved_at": "",
+      "notes": ""
+    },
+    {
+      "timestamp": "2026-10-23T01:49:52.189923Z",
+      "ticker": "KXBRENTMON-26OCT3017-T102.99",
+      "title": "Will the brent crude oil close price be above 102.99 USD/Bbl on October 30, 2026 at 5:00 PM EDT?",
+      "category": "Commodities",
+      "direction": "YES",
+      "edge_pct": "11.5",
+      "implied_prob": "0.795",
+      "true_prob": "0.91",
+      "confidence": "68",
+      "suggested_live_dollars": "0.8",
+      "suggested_paper_dollars": "20.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "80",
+      "outcome": "",
+      "units_pl": "",
+      "resolved_at": "",
+      "notes": ""
+    },
+    {
+      "timestamp": "2026-10-23T01:49:51.994084Z",
+      "ticker": "KXBTCMINMON-BTC-26OCT31-7750000",
+      "title": "Will BTC trimmed mean be below $77500.00 by 11:59 PM ET on Oct 31, 2026?",
+      "category": "Crypto",
+      "direction": "YES",
+      "edge_pct": "8.55",
+      "implied_prob": "0.34",
+      "true_prob": "0.4255",
+      "confidence": "41",
+      "suggested_live_dollars": "0.35",
+      "suggested_paper_dollars": "9.45",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "35",
+      "outcome": "",
+      "units_pl": "",
+      "resolved_at": "",
+      "notes": ""
+    },
     {
       "timestamp": "2026-10-22T19:57:13.179512Z",
       "ticker": "KXBRENTMON-26OCT3017-T102.99",
@@ -1156,63 +1270,6 @@
       "units_pl": "",
       "resolved_at": "",
       "notes": ""
-    },
-    {
-      "timestamp": "2026-10-15T00:09:20.102537Z",
-      "ticker": "KXNASDAQ100Y-26DEC31H1600-T33000",
-      "title": "Will the Nasdaq-100 be above 33000 at the end of Dec 31, 2026 at 4pm EST?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-15.5",
-      "implied_prob": "0.155",
-      "true_prob": "0.0",
-      "confidence": "80",
-      "suggested_live_dollars": "0.85",
-      "suggested_paper_dollars": "39.95",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "85",
-      "outcome": "",
-      "units_pl": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-10-15T00:09:19.911945Z",
-      "ticker": "KXNDQDIRY-26DEC31H1600-T28000",
-      "title": "Will the Nasdaq-100 be above 28000 on Dec 31, 2026 at 4pm EST?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-85.5",
-      "implied_prob": "0.855",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "1.92",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "16",
-      "outcome": "",
-      "units_pl": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-10-15T00:09:19.785338Z",
-      "ticker": "KXNDQDIRY-26DEC31H1600-T27000",
-      "title": "Will the Nasdaq-100 be above 27000 on Dec 31, 2026 at 4pm EST?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-86.5",
-      "implied_prob": "0.865",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "2.04",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "17",
-      "outcome": "",
-      "units_pl": "",
-      "resolved_at": "",
-      "notes": ""
     }
   ],
   "model_changes": [
@@ -1250,7 +1307,44 @@
     "Weather": 0.7,
     "Climate and Weather": 0.3
   },
-  "bets_placed": [],
+  "bets_placed": [
+    {
+      "timestamp": "2026-10-23T01:49:52.495772",
+      "ticker": "KXBRENTMON-26OCT3017-T108.99",
+      "title": "Will the brent crude oil close price be above 108.99 USD/Bbl on October 30, 2026",
+      "category": "Commodities",
+      "direction": "YES",
+      "contracts": "3",
+      "price_cents": "54",
+      "dollars_risked": "1.62",
+      "edge_pct": "17.48",
+      "true_prob": "0.7098",
+      "implied_prob": "0.535",
+      "confidence": "75",
+      "kelly_fraction": "0.5",
+      "dry_run": "True",
+      "order_id": "",
+      "status": "dry_run"
+    },
+    {
+      "timestamp": "2026-10-23T01:49:52.190194",
+      "ticker": "KXBRENTMON-26OCT3017-T102.99",
+      "title": "Will the brent crude oil close price be above 102.99 USD/Bbl on October 30, 2026",
+      "category": "Commodities",
+      "direction": "YES",
+      "contracts": "2",
+      "price_cents": "80",
+      "dollars_risked": "1.6",
+      "edge_pct": "11.5",
+      "true_prob": "0.91",
+      "implied_prob": "0.795",
+      "confidence": "68",
+      "kelly_fraction": "0.5",
+      "dry_run": "True",
+      "order_id": "",
+      "status": "dry_run"
+    }
+  ],
   "open_positions": [
     {
       "ticker": "KXSOLMAXY-27JAN01-170",
@@ -1282,9 +1376,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 75,
+      "current_cents": 77,
       "dollars_risked": 0,
-      "current_value": 1.5,
+      "current_value": 1.54,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

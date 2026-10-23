@@ -113566,3 +113566,29 @@ Total modelable markets evaluated: 0
 [2026-10-23 00:09:33 ET] [INFO] Scan complete — no qualifying edges found (this is fine)
 [2026-10-23 00:09:33 ET] [INFO] ============================================================
 [2026-10-23 00:09:33 ET] [INFO] Scan job complete
+[2026-10-23 05:29:28 ET] [INFO] Scan job starting
+[2026-10-23 05:29:29 ET] [INFO] Kalshi API key auth OK ✅  balance: $35.26
+[2026-10-23 05:29:30 ET] [INFO] ============================================================
+[2026-10-23 05:29:30 ET] [INFO] Starting market scan
+[2026-10-23 05:29:31 ET] [WARN] API GET /portfolio/balance → HTTP 429
+[2026-10-23 05:29:31 ET] [INFO] Cash: $35.26  |  Positions: $0.00  |  Total: $35.26  |  Peak: $41.23
+[2026-10-23 05:29:31 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-10-23 05:29:51 ET] [INFO] Fetched 115900 open markets via events endpoint across 50 pages
+[2026-10-23 05:29:51 ET] [INFO] Fetched 115900 open markets
+[2026-10-23 05:29:52 ET] [INFO] Parsed 108177 valid markets
+[2026-10-23 05:29:52 ET] [INFO] Categories: {'Sports': 57745, 'Elections': 24739, 'Entertainment': 8470, 'Financials': 5309, 'Economics': 4186, 'Politics': 2542, 'Mentions': 1784, 'Science and Technology': 840}
+[2026-10-23 05:29:53 ET] [INFO]   price model: BTC-USD spot=81526.24 target=100000.00 touch vol=40% T=932h → P=0.117
+[2026-10-23 05:29:53 ET] [INFO]   price model: SOL-USD spot=104.00 target=100.00 touch vol=60% T=211h → P=0.673
+[2026-10-23 05:29:53 ET] [INFO]   EDGE FOUND: KXSOLMINMON-SOL-26OCT31-10000 | implied=55.0% true=67.3% edge=+12.3% dir=YES conf=38
+[2026-10-23 05:29:53 ET] [INFO]   price model: BTC-USD spot=81526.24 target=75000.00 touch vol=40% T=211h → P=0.178
+[2026-10-23 05:29:53 ET] [INFO]   price model: BTC-USD spot=81526.24 target=87500.00 touch vol=40% T=211h → P=0.254
+[2026-10-23 05:29:53 ET] [INFO]   price model: BTC-USD spot=81526.24 target=90000.00 touch vol=40% T=211h → P=0.111
+[2026-10-23 05:29:53 ET] [INFO]   price model: BZ=F spot=109.42 target=96.99 expiry vol=49% T=180h → P=0.955
+[2026-10-23 05:29:53 ET] [INFO]   price model: BZ=F spot=109.42 target=98.99 expiry vol=49% T=180h → P=0.920
+[2026-10-23 05:29:53 ET] [INFO]   price model: BZ=F spot=109.42 target=100.99 expiry vol=49% T=180h → P=0.868
+[2026-10-23 05:29:56 ET] [INFO] Checked 108174 markets in 4.0s | Edges found: 1
+[2026-10-23 05:29:56 ET] [INFO] [Discord] Trade alert sent: KXSOLMINMON-SOL-26OCT31-10000
+[2026-10-23 05:29:56 ET] [INFO] DRY RUN 🔵 KXSOLMINMON-SOL-26OCT31-10000 YES 1ct @ 57¢ = $0.57 | edge=+12.3% conf=38 | would_use 50%Kelly
+[2026-10-23 05:29:57 ET] [INFO] Scan complete — 1 alerts sent
+[2026-10-23 05:29:57 ET] [INFO] ============================================================
+[2026-10-23 05:29:57 ET] [INFO] Scan job complete

@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-23T04:09:33.591761Z",
-  "last_scan_ts": "2026-10-23T04:09:33.591761Z",
+  "generated_at": "2026-10-23T09:29:57.736164Z",
+  "last_scan_ts": "2026-10-23T09:29:57.736164Z",
   "stats": {
-    "total_alerts": 17084,
+    "total_alerts": 17085,
     "rated": 72,
     "hit_rate": 33.3,
     "by_category": {
@@ -25,7 +25,7 @@
         "hit_rate": null
       },
       "Crypto": {
-        "total": 4825,
+        "total": 4826,
         "rated": 12,
         "hits": 2,
         "hit_rate": 16.7
@@ -69,7 +69,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 4151,
+        "total": 4152,
         "rated": 15,
         "hits": 11,
         "hit_rate": 73.3
@@ -101,15 +101,34 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-10-23T04:09:09.576084Z"
+    "updated_at": "2026-10-23T09:29:31.144361Z"
   },
   "cash_bal": 35.26,
-  "position_value": 5.85,
-  "account_value": 41.11,
-  "live_pnl": 31.11,
+  "position_value": 5.86,
+  "account_value": 41.12,
+  "live_pnl": 31.12,
   "paper_pnl": 0.0,
   "unit_total": -36.079,
   "today_outcomes": [
+    {
+      "timestamp": "2026-10-23T09:29:56.993388Z",
+      "ticker": "KXSOLMINMON-SOL-26OCT31-10000",
+      "title": "Will SOL trimmed mean be below $100.00 by 11:59 PM ET on Oct 31, 2026?",
+      "category": "Crypto",
+      "direction": "YES",
+      "edge_pct": "12.33",
+      "implied_prob": "0.55",
+      "true_prob": "0.6733",
+      "confidence": "38",
+      "suggested_live_dollars": "0.57",
+      "suggested_paper_dollars": "15.39",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "57",
+      "outcome": "",
+      "units_pl": "",
+      "resolved_at": "",
+      "notes": ""
+    },
     {
       "timestamp": "2026-10-23T01:49:52.495494Z",
       "ticker": "KXBRENTMON-26OCT3017-T108.99",
@@ -245,6 +264,25 @@
     }
   ],
   "recent_alerts": [
+    {
+      "timestamp": "2026-10-23T09:29:56.993388Z",
+      "ticker": "KXSOLMINMON-SOL-26OCT31-10000",
+      "title": "Will SOL trimmed mean be below $100.00 by 11:59 PM ET on Oct 31, 2026?",
+      "category": "Crypto",
+      "direction": "YES",
+      "edge_pct": "12.33",
+      "implied_prob": "0.55",
+      "true_prob": "0.6733",
+      "confidence": "38",
+      "suggested_live_dollars": "0.57",
+      "suggested_paper_dollars": "15.39",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "57",
+      "outcome": "",
+      "units_pl": "",
+      "resolved_at": "",
+      "notes": ""
+    },
     {
       "timestamp": "2026-10-23T01:49:52.495494Z",
       "ticker": "KXBRENTMON-26OCT3017-T108.99",
@@ -1175,25 +1213,6 @@
       "units_pl": "",
       "resolved_at": "",
       "notes": ""
-    },
-    {
-      "timestamp": "2026-10-15T00:09:20.233329Z",
-      "ticker": "KXNASDAQ100MAXY-26DEC31H1600-T31399.99",
-      "title": "Will the Nasdaq-100 be above 31399.99 at the end of Dec 31, 2026 at 4pm EST?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-65.0",
-      "implied_prob": "0.65",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "1.9",
-      "suggested_paper_dollars": "49.78",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "38",
-      "outcome": "",
-      "units_pl": "",
-      "resolved_at": "",
-      "notes": ""
     }
   ],
   "model_changes": [
@@ -1231,7 +1250,26 @@
     "Weather": 0.7,
     "Climate and Weather": 0.3
   },
-  "bets_placed": [],
+  "bets_placed": [
+    {
+      "timestamp": "2026-10-23T09:29:56.993616",
+      "ticker": "KXSOLMINMON-SOL-26OCT31-10000",
+      "title": "Will SOL trimmed mean be below $100.00 by 11:59 PM ET on Oct 31, 2026?",
+      "category": "Crypto",
+      "direction": "YES",
+      "contracts": "1",
+      "price_cents": "57",
+      "dollars_risked": "0.57",
+      "edge_pct": "12.33",
+      "true_prob": "0.6733",
+      "implied_prob": "0.55",
+      "confidence": "38",
+      "kelly_fraction": "0.5",
+      "dry_run": "True",
+      "order_id": "",
+      "status": "dry_run"
+    }
+  ],
   "open_positions": [
     {
       "ticker": "KXSOLMAXY-27JAN01-170",
@@ -1239,9 +1277,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 86,
+      "current_cents": 87,
       "dollars_risked": 0,
-      "current_value": 0.86,
+      "current_value": 0.87,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

@@ -113835,3 +113835,26 @@ Total modelable markets evaluated: 0
 [2026-10-24 10:25:06 ET] [INFO] Scan complete — no qualifying edges found (this is fine)
 [2026-10-24 10:25:06 ET] [INFO] ============================================================
 [2026-10-24 10:25:06 ET] [INFO] Scan job complete
+[2026-10-24 13:32:29 ET] [INFO] Scan job starting
+[2026-10-24 13:32:29 ET] [INFO] Kalshi API key auth OK ✅  balance: $35.26
+[2026-10-24 13:32:31 ET] [INFO] ============================================================
+[2026-10-24 13:32:31 ET] [INFO] Starting market scan
+[2026-10-24 13:32:32 ET] [WARN] API GET /portfolio/balance → HTTP 429
+[2026-10-24 13:32:32 ET] [INFO] Cash: $35.26  |  Positions: $0.00  |  Total: $35.26  |  Peak: $41.23
+[2026-10-24 13:32:32 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-10-24 13:33:00 ET] [INFO] Fetched 114035 open markets via events endpoint across 50 pages
+[2026-10-24 13:33:00 ET] [INFO] Fetched 114035 open markets
+[2026-10-24 13:33:01 ET] [INFO] Parsed 98608 valid markets
+[2026-10-24 13:33:01 ET] [INFO] Categories: {'Sports': 46274, 'Elections': 24959, 'Entertainment': 8363, 'Financials': 5516, 'Economics': 4149, 'Mentions': 2635, 'Politics': 2610, 'Crypto': 1173}
+[2026-10-24 13:33:01 ET] [INFO]   price model: BTC-USD spot=80068.06 target=100000.00 touch vol=40% T=899h → P=0.083
+[2026-10-24 13:33:01 ET] [INFO]   price model: ETH-USD spot=2313.21 target=2250.00 touch vol=52% T=178h → P=0.710
+[2026-10-24 13:33:01 ET] [INFO]   EDGE FOUND: KXETHMINMON-ETH-26OCT31-225000 | implied=61.5% true=71.0% edge=+9.5% dir=YES conf=25
+[2026-10-24 13:33:01 ET] [INFO]   price model: BTC-USD spot=80068.06 target=75000.00 touch vol=40% T=178h → P=0.252
+[2026-10-24 13:33:01 ET] [INFO]   price model: BTC-USD spot=80068.06 target=72500.00 touch vol=40% T=178h → P=0.082
+[2026-10-24 13:33:01 ET] [INFO]   price model: BTC-USD spot=80068.06 target=87500.00 touch vol=40% T=178h → P=0.120
+[2026-10-24 13:33:01 ET] [INFO]   price model: BZ=F spot=116.72 target=100.99 expiry vol=48% T=147h → P=0.989
+[2026-10-24 13:33:01 ET] [INFO] Checked 98603 markets in 0.8s | Edges found: 1
+[2026-10-24 13:33:01 ET] [INFO]   Skipping KXETHMINMON-ETH-26OCT31-225000 — suggested bet too small to be meaningful
+[2026-10-24 13:33:01 ET] [INFO] Scan complete — no qualifying edges found (this is fine)
+[2026-10-24 13:33:01 ET] [INFO] ============================================================
+[2026-10-24 13:33:02 ET] [INFO] Scan job complete

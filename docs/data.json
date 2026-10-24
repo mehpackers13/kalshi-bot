@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-23T23:02:15.373733Z",
-  "last_scan_ts": "2026-10-23T23:02:15.373733Z",
+  "generated_at": "2026-10-24T01:54:14.119172Z",
+  "last_scan_ts": "2026-10-24T01:54:14.119172Z",
   "stats": {
-    "total_alerts": 17085,
+    "total_alerts": 17086,
     "rated": 72,
     "hit_rate": 33.3,
     "by_category": {
@@ -25,7 +25,7 @@
         "hit_rate": null
       },
       "Crypto": {
-        "total": 4826,
+        "total": 4827,
         "rated": 12,
         "hits": 2,
         "hit_rate": 16.7
@@ -69,7 +69,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 4152,
+        "total": 4153,
         "rated": 15,
         "hits": 11,
         "hit_rate": 73.3
@@ -101,15 +101,34 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-10-23T23:01:50.835321Z"
+    "updated_at": "2026-10-24T01:53:51.309393Z"
   },
   "cash_bal": 35.26,
-  "position_value": 5.95,
-  "account_value": 41.21,
-  "live_pnl": 31.21,
+  "position_value": 5.85,
+  "account_value": 41.11,
+  "live_pnl": 31.11,
   "paper_pnl": 0.0,
   "unit_total": -36.079,
   "today_outcomes": [
+    {
+      "timestamp": "2026-10-24T01:54:13.642181Z",
+      "ticker": "KXBTCMINMON-BTC-26OCT31-7750000",
+      "title": "Will BTC trimmed mean be below $77500.00 by 11:59 PM ET on Oct 31, 2026?",
+      "category": "Crypto",
+      "direction": "YES",
+      "edge_pct": "10.82",
+      "implied_prob": "0.37",
+      "true_prob": "0.4782",
+      "confidence": "27",
+      "suggested_live_dollars": "0.38",
+      "suggested_paper_dollars": "7.6",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "38",
+      "outcome": "",
+      "units_pl": "",
+      "resolved_at": "",
+      "notes": ""
+    },
     {
       "timestamp": "2026-10-23T09:29:56.993388Z",
       "ticker": "KXSOLMINMON-SOL-26OCT31-10000",
@@ -128,66 +147,28 @@
       "units_pl": "",
       "resolved_at": "",
       "notes": ""
-    },
+    }
+  ],
+  "recent_alerts": [
     {
-      "timestamp": "2026-10-23T01:49:52.495494Z",
-      "ticker": "KXBRENTMON-26OCT3017-T108.99",
-      "title": "Will the brent crude oil close price be above 108.99 USD/Bbl on October 30, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "YES",
-      "edge_pct": "17.48",
-      "implied_prob": "0.535",
-      "true_prob": "0.7098",
-      "confidence": "75",
-      "suggested_live_dollars": "1.08",
-      "suggested_paper_dollars": "39.96",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "54",
-      "outcome": "",
-      "units_pl": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-10-23T01:49:52.189923Z",
-      "ticker": "KXBRENTMON-26OCT3017-T102.99",
-      "title": "Will the brent crude oil close price be above 102.99 USD/Bbl on October 30, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "YES",
-      "edge_pct": "11.5",
-      "implied_prob": "0.795",
-      "true_prob": "0.91",
-      "confidence": "68",
-      "suggested_live_dollars": "0.8",
-      "suggested_paper_dollars": "20.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "80",
-      "outcome": "",
-      "units_pl": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-10-23T01:49:51.994084Z",
+      "timestamp": "2026-10-24T01:54:13.642181Z",
       "ticker": "KXBTCMINMON-BTC-26OCT31-7750000",
       "title": "Will BTC trimmed mean be below $77500.00 by 11:59 PM ET on Oct 31, 2026?",
       "category": "Crypto",
       "direction": "YES",
-      "edge_pct": "8.55",
-      "implied_prob": "0.34",
-      "true_prob": "0.4255",
-      "confidence": "41",
-      "suggested_live_dollars": "0.35",
-      "suggested_paper_dollars": "9.45",
+      "edge_pct": "10.82",
+      "implied_prob": "0.37",
+      "true_prob": "0.4782",
+      "confidence": "27",
+      "suggested_live_dollars": "0.38",
+      "suggested_paper_dollars": "7.6",
       "is_paper_bet": "1",
-      "paper_entry_price_cents": "35",
+      "paper_entry_price_cents": "38",
       "outcome": "",
       "units_pl": "",
       "resolved_at": "",
       "notes": ""
-    }
-  ],
-  "recent_alerts": [
+    },
     {
       "timestamp": "2026-10-23T09:29:56.993388Z",
       "ticker": "KXSOLMINMON-SOL-26OCT31-10000",
@@ -1118,25 +1099,6 @@
       "units_pl": "",
       "resolved_at": "",
       "notes": ""
-    },
-    {
-      "timestamp": "2026-10-15T00:09:20.364617Z",
-      "ticker": "KXNASDAQ100MAXY-26DEC31H1600-T31599.99",
-      "title": "Will the Nasdaq-100 be above 31599.99 at the end of Dec 31, 2026 at 4pm EST?",
-      "category": "Financials",
-      "direction": "NO",
-      "edge_pct": "-65.5",
-      "implied_prob": "0.655",
-      "true_prob": "0.0",
-      "confidence": "85",
-      "suggested_live_dollars": "1.75",
-      "suggested_paper_dollars": "49.7",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "35",
-      "outcome": "",
-      "units_pl": "",
-      "resolved_at": "",
-      "notes": ""
     }
   ],
   "model_changes": [
@@ -1184,9 +1146,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 86,
+      "current_cents": 82,
       "dollars_risked": 0,
-      "current_value": 0.86,
+      "current_value": 0.82,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -1196,9 +1158,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 82,
+      "current_cents": 81,
       "dollars_risked": 0,
-      "current_value": 1.64,
+      "current_value": 1.62,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -1208,9 +1170,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 80,
+      "current_cents": 78,
       "dollars_risked": 0,
-      "current_value": 1.6,
+      "current_value": 1.56,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

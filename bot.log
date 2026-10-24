@@ -113858,3 +113858,28 @@ Total modelable markets evaluated: 0
 [2026-10-24 13:33:01 ET] [INFO] Scan complete — no qualifying edges found (this is fine)
 [2026-10-24 13:33:01 ET] [INFO] ============================================================
 [2026-10-24 13:33:02 ET] [INFO] Scan job complete
+[2026-10-24 16:35:58 ET] [INFO] Scan job starting
+[2026-10-24 16:35:58 ET] [INFO] Kalshi API key auth OK ✅  balance: $35.26
+[2026-10-24 16:36:00 ET] [INFO] ============================================================
+[2026-10-24 16:36:00 ET] [INFO] Starting market scan
+[2026-10-24 16:36:01 ET] [WARN] API GET /portfolio/balance → HTTP 429
+[2026-10-24 16:36:01 ET] [INFO] Cash: $35.26  |  Positions: $0.00  |  Total: $35.26  |  Peak: $41.23
+[2026-10-24 16:36:01 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-10-24 16:36:20 ET] [INFO] Fetched 112771 open markets via events endpoint across 50 pages
+[2026-10-24 16:36:20 ET] [INFO] Fetched 112771 open markets
+[2026-10-24 16:36:20 ET] [INFO] Parsed 96064 valid markets
+[2026-10-24 16:36:20 ET] [INFO] Categories: {'Sports': 43758, 'Elections': 24956, 'Entertainment': 8404, 'Financials': 5508, 'Economics': 4143, 'Mentions': 2624, 'Politics': 2604, 'Crypto': 1207}
+[2026-10-24 16:36:21 ET] [INFO]   price model: BTC-USD spot=80463.70 target=100000.00 touch vol=40% T=896h → P=0.089
+[2026-10-24 16:36:21 ET] [INFO]   price model: ETH-USD spot=2342.01 target=2250.00 touch vol=52% T=175h → P=0.586
+[2026-10-24 16:36:21 ET] [INFO]   price model: BTC-USD spot=80463.70 target=75000.00 touch vol=40% T=175h → P=0.214
+[2026-10-24 16:36:21 ET] [INFO]   price model: BTC-USD spot=80463.70 target=87500.00 touch vol=40% T=175h → P=0.139
+[2026-10-24 16:36:21 ET] [INFO]   price model: BTC-USD spot=80463.70 target=90000.00 touch vol=40% T=175h → P=0.048
+[2026-10-24 16:36:21 ET] [INFO]   price model: BZ=F spot=116.72 target=100.99 expiry vol=48% T=144h → P=0.989
+[2026-10-24 16:36:21 ET] [INFO]   price model: BZ=F spot=116.72 target=110.99 expiry vol=48% T=144h → P=0.782
+[2026-10-24 16:36:21 ET] [INFO]   EDGE FOUND: KXBRENTMON-26OCT3017-T110.99 | implied=52.5% true=78.2% edge=+25.7% dir=YES conf=85
+[2026-10-24 16:36:21 ET] [INFO] Checked 96059 markets in 0.9s | Edges found: 1
+[2026-10-24 16:36:21 ET] [INFO] [Discord] Trade alert sent: KXBRENTMON-26OCT3017-T110.99
+[2026-10-24 16:36:21 ET] [INFO] DRY RUN 🔵 KXBRENTMON-26OCT3017-T110.99 YES 3ct @ 53¢ = $1.59 | edge=+25.7% conf=85 | would_use 50%Kelly
+[2026-10-24 16:36:22 ET] [INFO] Scan complete — 1 alerts sent
+[2026-10-24 16:36:22 ET] [INFO] ============================================================
+[2026-10-24 16:36:22 ET] [INFO] Scan job complete

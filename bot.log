@@ -113904,3 +113904,49 @@ Total modelable markets evaluated: 0
 [2026-10-24 19:04:40 ET] [INFO] Scan complete — no qualifying edges found (this is fine)
 [2026-10-24 19:04:40 ET] [INFO] ============================================================
 [2026-10-24 19:04:40 ET] [INFO] Scan job complete
+[2026-10-24 21:30:35 ET] [INFO] Scan job starting
+[2026-10-24 21:30:36 ET] [INFO] Kalshi API key auth OK ✅  balance: $35.26
+[2026-10-24 21:30:38 ET] [INFO] ============================================================
+[2026-10-24 21:30:38 ET] [INFO] Starting market scan
+[2026-10-24 21:30:38 ET] [WARN] API GET /portfolio/balance → HTTP 429
+[2026-10-24 21:30:38 ET] [INFO] Cash: $35.26  |  Positions: $0.00  |  Total: $35.26  |  Peak: $41.23
+[2026-10-24 21:30:39 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-10-24 21:31:11 ET] [INFO] Fetched 112113 open markets via events endpoint across 50 pages
+[2026-10-24 21:31:11 ET] [INFO] Fetched 112113 open markets
+[2026-10-24 21:31:12 ET] [INFO] Parsed 96386 valid markets
+[2026-10-24 21:31:12 ET] [INFO] Categories: {'Sports': 44629, 'Elections': 24879, 'Entertainment': 8242, 'Financials': 5467, 'Economics': 4072, 'Mentions': 2594, 'Politics': 2548, 'Crypto': 1198}
+[2026-10-24 21:31:13 ET] [INFO]   price model: BTC-USD spot=80667.77 target=100000.00 touch vol=40% T=891h → P=0.092
+[2026-10-24 21:31:13 ET] [INFO]   price model: ETH-USD spot=2353.55 target=2250.00 touch vol=52% T=170h → P=0.535
+[2026-10-24 21:31:13 ET] [INFO]   price model: BTC-USD spot=80667.77 target=77500.00 touch vol=40% T=170h → P=0.473
+[2026-10-24 21:31:13 ET] [INFO]   EDGE FOUND: KXBTCMINMON-BTC-26OCT31-7750000 | implied=38.5% true=47.3% edge=+8.8% dir=YES conf=27
+[2026-10-24 21:31:13 ET] [INFO]   price model: BTC-USD spot=80667.77 target=75000.00 touch vol=40% T=170h → P=0.192
+[2026-10-24 21:31:13 ET] [INFO]   price model: BTC-USD spot=80667.77 target=87500.00 touch vol=40% T=170h → P=0.145
+[2026-10-24 21:31:13 ET] [INFO]   price model: BTC-USD spot=80667.77 target=90000.00 touch vol=40% T=170h → P=0.050
+[2026-10-24 21:31:13 ET] [INFO]   price model: BZ=F spot=116.72 target=98.99 expiry vol=48% T=139h → P=0.996
+[2026-10-24 21:31:13 ET] [INFO]   price model: BZ=F spot=116.72 target=100.99 expiry vol=48% T=139h → P=0.990
+[2026-10-24 21:31:13 ET] [INFO]   price model: BZ=F spot=116.72 target=102.99 expiry vol=48% T=139h → P=0.978
+[2026-10-24 21:31:13 ET] [INFO]   EDGE FOUND: KXBRENTMON-26OCT3017-T102.99 | implied=88.0% true=97.8% edge=+9.8% dir=YES conf=68
+[2026-10-24 21:31:13 ET] [INFO]   price model: BZ=F spot=116.72 target=104.99 expiry vol=48% T=139h → P=0.956
+[2026-10-24 21:31:13 ET] [INFO]   EDGE FOUND: KXBRENTMON-26OCT3017-T104.99 | implied=79.5% true=95.6% edge=+16.1% dir=YES conf=75
+[2026-10-24 21:31:13 ET] [INFO]   price model: BZ=F spot=116.72 target=106.99 expiry vol=48% T=139h → P=0.919
+[2026-10-24 21:31:13 ET] [INFO]   EDGE FOUND: KXBRENTMON-26OCT3017-T106.99 | implied=73.0% true=91.9% edge=+18.9% dir=YES conf=75
+[2026-10-24 21:31:13 ET] [INFO]   price model: BZ=F spot=116.72 target=108.99 expiry vol=48% T=139h → P=0.863
+[2026-10-24 21:31:13 ET] [INFO]   EDGE FOUND: KXBRENTMON-26OCT3017-T108.99 | implied=63.5% true=86.3% edge=+22.8% dir=YES conf=75
+[2026-10-24 21:31:13 ET] [INFO]   price model: BZ=F spot=116.72 target=110.99 expiry vol=48% T=139h → P=0.786
+[2026-10-24 21:31:13 ET] [INFO]   EDGE FOUND: KXBRENTMON-26OCT3017-T110.99 | implied=51.5% true=78.6% edge=+27.1% dir=YES conf=85
+[2026-10-24 21:31:13 ET] [INFO] Checked 96386 markets in 1.5s | Edges found: 6
+[2026-10-24 21:31:14 ET] [INFO] [Discord] Trade alert sent: KXBTCMINMON-BTC-26OCT31-7750000
+[2026-10-24 21:31:14 ET] [DEBUG] AUTO-BET SKIP KXBTCMINMON-BTC-26OCT31-7750000: bet too small (<$0.50)
+[2026-10-24 21:31:14 ET] [INFO] [Discord] Trade alert sent: KXBRENTMON-26OCT3017-T102.99
+[2026-10-24 21:31:14 ET] [INFO] DRY RUN 🔵 KXBRENTMON-26OCT3017-T102.99 YES 1ct @ 90¢ = $0.90 | edge=+9.8% conf=68 | would_use 50%Kelly
+[2026-10-24 21:31:15 ET] [INFO] [Discord] Trade alert sent: KXBRENTMON-26OCT3017-T104.99
+[2026-10-24 21:31:15 ET] [INFO] DRY RUN 🔵 KXBRENTMON-26OCT3017-T104.99 YES 2ct @ 83¢ = $1.66 | edge=+16.1% conf=75 | would_use 50%Kelly
+[2026-10-24 21:31:15 ET] [INFO] [Discord] Trade alert sent: KXBRENTMON-26OCT3017-T106.99
+[2026-10-24 21:31:15 ET] [INFO] DRY RUN 🔵 KXBRENTMON-26OCT3017-T106.99 YES 2ct @ 75¢ = $1.50 | edge=+18.9% conf=75 | would_use 50%Kelly
+[2026-10-24 21:31:16 ET] [INFO] [Discord] Trade alert sent: KXBRENTMON-26OCT3017-T108.99
+[2026-10-24 21:31:16 ET] [INFO] DRY RUN 🔵 KXBRENTMON-26OCT3017-T108.99 YES 2ct @ 65¢ = $1.30 | edge=+22.8% conf=75 | would_use 50%Kelly
+[2026-10-24 21:31:16 ET] [INFO] [Discord] Trade alert sent: KXBRENTMON-26OCT3017-T110.99
+[2026-10-24 21:31:16 ET] [INFO] DRY RUN 🔵 KXBRENTMON-26OCT3017-T110.99 YES 3ct @ 52¢ = $1.56 | edge=+27.1% conf=85 | would_use 50%Kelly
+[2026-10-24 21:31:16 ET] [INFO] Scan complete — 6 alerts sent
+[2026-10-24 21:31:16 ET] [INFO] ============================================================
+[2026-10-24 21:31:17 ET] [INFO] Scan job complete

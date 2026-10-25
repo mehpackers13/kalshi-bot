@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-25T21:09:57.391143Z",
-  "last_scan_ts": "2026-10-25T21:09:57.391143Z",
+  "generated_at": "2026-10-25T23:30:19.769244Z",
+  "last_scan_ts": "2026-10-25T23:30:19.769244Z",
   "stats": {
-    "total_alerts": 17098,
+    "total_alerts": 17099,
     "rated": 72,
     "hit_rate": 33.3,
     "by_category": {
@@ -25,7 +25,7 @@
         "hit_rate": null
       },
       "Crypto": {
-        "total": 4829,
+        "total": 4830,
         "rated": 12,
         "hits": 2,
         "hit_rate": 16.7
@@ -69,7 +69,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 4158,
+        "total": 4159,
         "rated": 15,
         "hits": 11,
         "hit_rate": 73.3
@@ -101,15 +101,34 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-10-25T21:09:34.510068Z"
+    "updated_at": "2026-10-25T23:29:53.136443Z"
   },
   "cash_bal": 35.26,
-  "position_value": 5.91,
-  "account_value": 41.17,
-  "live_pnl": 31.17,
+  "position_value": 5.88,
+  "account_value": 41.14,
+  "live_pnl": 31.14,
   "paper_pnl": 0.0,
   "unit_total": -36.079,
   "today_outcomes": [
+    {
+      "timestamp": "2026-10-25T23:30:16.699195Z",
+      "ticker": "KXETHMINMON-ETH-26OCT31-225000",
+      "title": "Will ETH trimmed mean be below $2250.00 by 11:59 PM ET on Oct 31, 2026?",
+      "category": "Crypto",
+      "direction": "YES",
+      "edge_pct": "10.25",
+      "implied_prob": "0.535",
+      "true_prob": "0.6375",
+      "confidence": "25",
+      "suggested_live_dollars": "0.55",
+      "suggested_paper_dollars": "5.5",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "55",
+      "outcome": "",
+      "units_pl": "",
+      "resolved_at": "",
+      "notes": ""
+    },
     {
       "timestamp": "2026-10-25T09:19:18.462065Z",
       "ticker": "KXBTCMINMON-BTC-26OCT31-7500000",
@@ -245,6 +264,25 @@
     }
   ],
   "recent_alerts": [
+    {
+      "timestamp": "2026-10-25T23:30:16.699195Z",
+      "ticker": "KXETHMINMON-ETH-26OCT31-225000",
+      "title": "Will ETH trimmed mean be below $2250.00 by 11:59 PM ET on Oct 31, 2026?",
+      "category": "Crypto",
+      "direction": "YES",
+      "edge_pct": "10.25",
+      "implied_prob": "0.535",
+      "true_prob": "0.6375",
+      "confidence": "25",
+      "suggested_live_dollars": "0.55",
+      "suggested_paper_dollars": "5.5",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "55",
+      "outcome": "",
+      "units_pl": "",
+      "resolved_at": "",
+      "notes": ""
+    },
     {
       "timestamp": "2026-10-25T09:19:18.462065Z",
       "ticker": "KXBTCMINMON-BTC-26OCT31-7500000",
@@ -1175,25 +1213,6 @@
       "units_pl": "",
       "resolved_at": "",
       "notes": ""
-    },
-    {
-      "timestamp": "2026-10-15T00:09:24.635177Z",
-      "ticker": "KXCPIYOY-26NOV-T3.9",
-      "title": "Will the rate of CPI inflation be above 3.9% for the year ending in November 2026?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "31.9",
-      "implied_prob": "0.31",
-      "true_prob": "0.629",
-      "confidence": "90",
-      "suggested_live_dollars": "1.98",
-      "suggested_paper_dollars": "49.83",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "33",
-      "outcome": "",
-      "units_pl": "",
-      "resolved_at": "",
-      "notes": ""
     }
   ],
   "model_changes": [
@@ -1233,7 +1252,26 @@
     "Weather": 0.7,
     "Climate and Weather": 0.3
   },
-  "bets_placed": [],
+  "bets_placed": [
+    {
+      "timestamp": "2026-10-25T23:30:16.699447",
+      "ticker": "KXETHMINMON-ETH-26OCT31-225000",
+      "title": "Will ETH trimmed mean be below $2250.00 by 11:59 PM ET on Oct 31, 2026?",
+      "category": "Crypto",
+      "direction": "YES",
+      "contracts": "1",
+      "price_cents": "55",
+      "dollars_risked": "0.55",
+      "edge_pct": "10.25",
+      "true_prob": "0.6375",
+      "implied_prob": "0.535",
+      "confidence": "25",
+      "kelly_fraction": "0.5",
+      "dry_run": "True",
+      "order_id": "",
+      "status": "dry_run"
+    }
+  ],
   "open_positions": [
     {
       "ticker": "KXSOLMAXY-27JAN01-170",
@@ -1241,9 +1279,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 83,
+      "current_cents": 80,
       "dollars_risked": 0,
-      "current_value": 0.83,
+      "current_value": 0.8,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

@@ -114095,3 +114095,26 @@ Total modelable markets evaluated: 0
 [2026-10-25 21:01:51 ET] [INFO] [Discord] Weekly report sent
 [2026-10-25 21:01:51 ET] [INFO] Weekly review sent
 [2026-10-25 21:01:51 ET] [INFO] Weekly review job complete
+[2026-10-25 21:37:44 ET] [INFO] Scan job starting
+[2026-10-25 21:37:45 ET] [INFO] Kalshi API key auth OK ✅  balance: $35.26
+[2026-10-25 21:37:47 ET] [INFO] ============================================================
+[2026-10-25 21:37:47 ET] [INFO] Starting market scan
+[2026-10-25 21:37:47 ET] [WARN] API GET /portfolio/balance → HTTP 429
+[2026-10-25 21:37:47 ET] [INFO] Cash: $35.26  |  Positions: $0.00  |  Total: $35.26  |  Peak: $41.23
+[2026-10-25 21:37:48 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-10-25 21:38:09 ET] [INFO] Fetched 113274 open markets via events endpoint across 50 pages
+[2026-10-25 21:38:09 ET] [INFO] Fetched 113274 open markets
+[2026-10-25 21:38:10 ET] [INFO] Parsed 97946 valid markets
+[2026-10-25 21:38:10 ET] [INFO] Categories: {'Sports': 47913, 'Elections': 24810, 'Entertainment': 8331, 'Financials': 4945, 'Economics': 4048, 'Politics': 2559, 'Mentions': 2554, 'Science and Technology': 720}
+[2026-10-25 21:38:10 ET] [INFO]   price model: BTC-USD spot=79745.05 target=100000.00 touch vol=40% T=867h → P=0.072
+[2026-10-25 21:38:11 ET] [INFO]   price model: ETH-USD spot=2312.26 target=2250.00 touch vol=52% T=146h → P=0.683
+[2026-10-25 21:38:11 ET] [INFO]   EDGE FOUND: KXETHMINMON-ETH-26OCT31-225000 | implied=55.5% true=68.3% edge=+12.8% dir=YES conf=25
+[2026-10-25 21:38:11 ET] [INFO]   price model: BTC-USD spot=79745.05 target=77500.00 touch vol=40% T=146h → P=0.581
+[2026-10-25 21:38:11 ET] [INFO]   price model: BTC-USD spot=79745.05 target=75000.00 touch vol=40% T=146h → P=0.235
+[2026-10-25 21:38:11 ET] [INFO]   price model: BTC-USD spot=79745.05 target=87500.00 touch vol=40% T=146h → P=0.073
+[2026-10-25 21:38:11 ET] [INFO] Checked 97946 markets in 0.8s | Edges found: 1
+[2026-10-25 21:38:11 ET] [INFO] [Discord] Trade alert sent: KXETHMINMON-ETH-26OCT31-225000
+[2026-10-25 21:38:11 ET] [INFO] DRY RUN 🔵 KXETHMINMON-ETH-26OCT31-225000 YES 1ct @ 56¢ = $0.56 | edge=+12.8% conf=25 | would_use 50%Kelly
+[2026-10-25 21:38:12 ET] [INFO] Scan complete — 1 alerts sent
+[2026-10-25 21:38:12 ET] [INFO] ============================================================
+[2026-10-25 21:38:12 ET] [INFO] Scan job complete

@@ -114138,3 +114138,26 @@ Total modelable markets evaluated: 0
 [2026-10-26 00:07:12 ET] [INFO] Scan complete — no qualifying edges found (this is fine)
 [2026-10-26 00:07:12 ET] [INFO] ============================================================
 [2026-10-26 00:07:13 ET] [INFO] Scan job complete
+[2026-10-26 06:24:35 ET] [INFO] Scan job starting
+[2026-10-26 06:24:35 ET] [INFO] Kalshi API key auth OK ✅  balance: $35.26
+[2026-10-26 06:24:38 ET] [INFO] ============================================================
+[2026-10-26 06:24:38 ET] [INFO] Starting market scan
+[2026-10-26 06:24:38 ET] [WARN] API GET /portfolio/balance → HTTP 429
+[2026-10-26 06:24:38 ET] [INFO] Cash: $35.26  |  Positions: $0.00  |  Total: $35.26  |  Peak: $41.23
+[2026-10-26 06:24:39 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-10-26 06:25:03 ET] [INFO] Fetched 113102 open markets via events endpoint across 50 pages
+[2026-10-26 06:25:03 ET] [INFO] Fetched 113102 open markets
+[2026-10-26 06:25:04 ET] [INFO] Parsed 99427 valid markets
+[2026-10-26 06:25:04 ET] [INFO] Categories: {'Sports': 49017, 'Elections': 24741, 'Entertainment': 8291, 'Financials': 5176, 'Economics': 4118, 'Mentions': 2572, 'Politics': 2558, 'Climate and Weather': 874}
+[2026-10-26 06:25:04 ET] [INFO]   price model: BTC-USD spot=80304.87 target=100000.00 touch vol=40% T=859h → P=0.080
+[2026-10-26 06:25:04 ET] [INFO]   price model: BTC-USD spot=80304.87 target=77500.00 touch vol=40% T=138h → P=0.478
+[2026-10-26 06:25:04 ET] [INFO]   price model: BTC-USD spot=80304.87 target=75000.00 touch vol=40% T=138h → P=0.173
+[2026-10-26 06:25:04 ET] [INFO]   price model: BTC-USD spot=80304.87 target=87500.00 touch vol=40% T=138h → P=0.087
+[2026-10-26 06:25:05 ET] [INFO]   price model: BNB-USD spot=737.40 target=810.00 touch vol=50% T=138h → P=0.134
+[2026-10-26 06:25:05 ET] [INFO]   EDGE FOUND: KXBNBMAXMON-BNB-26OCT31-81000 | implied=53.5% true=13.4% edge=-40.1% dir=NO conf=32
+[2026-10-26 06:25:05 ET] [INFO] Checked 99426 markets in 1.0s | Edges found: 1
+[2026-10-26 06:25:05 ET] [INFO] [Discord] Trade alert sent: KXBNBMAXMON-BNB-26OCT31-81000
+[2026-10-26 06:25:05 ET] [INFO] DRY RUN 🔵 KXBNBMAXMON-BNB-26OCT31-81000 NO 3ct @ 50¢ = $1.50 | edge=-40.1% conf=32 | would_use 50%Kelly
+[2026-10-26 06:25:05 ET] [INFO] Scan complete — 1 alerts sent
+[2026-10-26 06:25:05 ET] [INFO] ============================================================
+[2026-10-26 06:25:05 ET] [INFO] Scan job complete

@@ -114391,3 +114391,28 @@ Total modelable markets evaluated: 0
 [2026-10-27 14:34:28 ET] [INFO] Morning report complete
 [2026-10-27 14:34:28 ET] [INFO] ============================================================
 [2026-10-27 14:34:28 ET] [INFO] Morning report job complete
+[2026-10-27 16:54:11 ET] [INFO] Scan job starting
+[2026-10-27 16:54:11 ET] [INFO] Kalshi API key auth OK ✅  balance: $35.26
+[2026-10-27 16:54:13 ET] [INFO] ============================================================
+[2026-10-27 16:54:13 ET] [INFO] Starting market scan
+[2026-10-27 16:54:13 ET] [WARN] API GET /portfolio/balance → HTTP 429
+[2026-10-27 16:54:13 ET] [INFO] Cash: $35.26  |  Positions: $0.00  |  Total: $35.26  |  Peak: $41.23
+[2026-10-27 16:54:14 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-10-27 16:54:33 ET] [INFO] Fetched 114768 open markets via events endpoint across 50 pages
+[2026-10-27 16:54:33 ET] [INFO] Fetched 114768 open markets
+[2026-10-27 16:54:33 ET] [INFO] Parsed 99988 valid markets
+[2026-10-27 16:54:33 ET] [INFO] Categories: {'Sports': 49272, 'Elections': 24733, 'Entertainment': 8393, 'Financials': 5260, 'Economics': 4137, 'Politics': 2601, 'Mentions': 2547, 'Climate and Weather': 903}
+[2026-10-27 16:54:34 ET] [INFO]   price model: BTC-USD spot=80639.63 target=100000.00 touch vol=40% T=824h → P=0.079
+[2026-10-27 16:54:35 ET] [INFO]   EDGE FOUND: KXNFLSPREAD-26NOV01INDJAC-JAC8 | implied=54.5% true=46.0% edge=-8.5% dir=NO conf=68
+[2026-10-27 16:54:37 ET] [INFO]   price model: ETH-USD spot=2340.46 target=2250.00 touch vol=51% T=103h → P=0.480
+[2026-10-27 16:54:37 ET] [INFO]   price model: BTC-USD spot=80639.63 target=75000.00 touch vol=40% T=103h → P=0.095
+[2026-10-27 16:54:37 ET] [INFO]   price model: BTC-USD spot=80639.63 target=87500.00 touch vol=40% T=103h → P=0.060
+[2026-10-27 16:54:37 ET] [INFO]   price model: BNB-USD spot=746.50 target=810.00 touch vol=50% T=103h → P=0.132
+[2026-10-27 16:54:37 ET] [INFO]   EDGE FOUND: KXBNBMAXMON-BNB-26OCT31-81000 | implied=32.0% true=13.2% edge=-18.8% dir=NO conf=21
+[2026-10-27 16:54:37 ET] [INFO] Checked 99987 markets in 3.9s | Edges found: 2
+[2026-10-27 16:54:38 ET] [INFO] [Discord] Trade alert sent: KXNFLSPREAD-26NOV01INDJAC-JAC8
+[2026-10-27 16:54:38 ET] [INFO] DRY RUN 🔵 KXNFLSPREAD-26NOV01INDJAC-JAC8 NO 3ct @ 46¢ = $1.38 | edge=-8.5% conf=68 | would_use 50%Kelly
+[2026-10-27 16:54:38 ET] [INFO]   Skipping KXBNBMAXMON-BNB-26OCT31-81000 — suggested bet too small to be meaningful
+[2026-10-27 16:54:38 ET] [INFO] Scan complete — 1 alerts sent
+[2026-10-27 16:54:38 ET] [INFO] ============================================================
+[2026-10-27 16:54:38 ET] [INFO] Scan job complete

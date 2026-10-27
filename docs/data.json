@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-26T21:48:35.505129Z",
-  "last_scan_ts": "2026-10-26T21:48:35.505129Z",
+  "generated_at": "2026-10-27T01:22:57.609613Z",
+  "last_scan_ts": "2026-10-27T01:22:57.609613Z",
   "stats": {
-    "total_alerts": 17101,
+    "total_alerts": 17102,
     "rated": 72,
     "hit_rate": 33.3,
     "by_category": {
@@ -25,7 +25,7 @@
         "hit_rate": null
       },
       "Crypto": {
-        "total": 4832,
+        "total": 4833,
         "rated": 12,
         "hits": 2,
         "hit_rate": 16.7
@@ -69,7 +69,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 4160,
+        "total": 4161,
         "rated": 15,
         "hits": 11,
         "hit_rate": 73.3
@@ -101,15 +101,34 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-10-26T21:48:15.116638Z"
+    "updated_at": "2026-10-27T01:22:35.654110Z"
   },
   "cash_bal": 35.26,
-  "position_value": 5.86,
-  "account_value": 41.12,
-  "live_pnl": 31.12,
+  "position_value": 5.8,
+  "account_value": 41.06,
+  "live_pnl": 31.06,
   "paper_pnl": 0.0,
   "unit_total": -36.079,
   "today_outcomes": [
+    {
+      "timestamp": "2026-10-27T01:22:57.132718Z",
+      "ticker": "KXBTCMINMON-BTC-26OCT31-7750000",
+      "title": "Will BTC trimmed mean be below $77500.00 by 11:59 PM ET on Oct 31, 2026?",
+      "category": "Crypto",
+      "direction": "YES",
+      "edge_pct": "10.59",
+      "implied_prob": "0.405",
+      "true_prob": "0.5109",
+      "confidence": "20",
+      "suggested_live_dollars": "0.42",
+      "suggested_paper_dollars": "2.52",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "42",
+      "outcome": "",
+      "units_pl": "",
+      "resolved_at": "",
+      "notes": ""
+    },
     {
       "timestamp": "2026-10-26T10:25:05.425103Z",
       "ticker": "KXBNBMAXMON-BNB-26OCT31-81000",
@@ -147,28 +166,28 @@
       "units_pl": "",
       "resolved_at": "",
       "notes": ""
-    },
+    }
+  ],
+  "recent_alerts": [
     {
-      "timestamp": "2026-10-25T23:30:16.699195Z",
-      "ticker": "KXETHMINMON-ETH-26OCT31-225000",
-      "title": "Will ETH trimmed mean be below $2250.00 by 11:59 PM ET on Oct 31, 2026?",
+      "timestamp": "2026-10-27T01:22:57.132718Z",
+      "ticker": "KXBTCMINMON-BTC-26OCT31-7750000",
+      "title": "Will BTC trimmed mean be below $77500.00 by 11:59 PM ET on Oct 31, 2026?",
       "category": "Crypto",
       "direction": "YES",
-      "edge_pct": "10.25",
-      "implied_prob": "0.535",
-      "true_prob": "0.6375",
-      "confidence": "25",
-      "suggested_live_dollars": "0.55",
-      "suggested_paper_dollars": "5.5",
+      "edge_pct": "10.59",
+      "implied_prob": "0.405",
+      "true_prob": "0.5109",
+      "confidence": "20",
+      "suggested_live_dollars": "0.42",
+      "suggested_paper_dollars": "2.52",
       "is_paper_bet": "1",
-      "paper_entry_price_cents": "55",
+      "paper_entry_price_cents": "42",
       "outcome": "",
       "units_pl": "",
       "resolved_at": "",
       "notes": ""
-    }
-  ],
-  "recent_alerts": [
+    },
     {
       "timestamp": "2026-10-26T10:25:05.425103Z",
       "ticker": "KXBNBMAXMON-BNB-26OCT31-81000",
@@ -1099,25 +1118,6 @@
       "units_pl": "",
       "resolved_at": "",
       "notes": ""
-    },
-    {
-      "timestamp": "2026-10-15T00:09:25.433560Z",
-      "ticker": "KXCPICOREYOY-26NOV-T2.4",
-      "title": "Will the rate of core CPI inflation be above 2.4% for the year ending in November 2026?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-16.6",
-      "implied_prob": "0.945",
-      "true_prob": "0.779",
-      "confidence": "75",
-      "suggested_live_dollars": "1.19",
-      "suggested_paper_dollars": "29.4",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "7",
-      "outcome": "",
-      "units_pl": "",
-      "resolved_at": "",
-      "notes": ""
     }
   ],
   "model_changes": [
@@ -1166,9 +1166,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 84,
+      "current_cents": 82,
       "dollars_risked": 0,
-      "current_value": 0.84,
+      "current_value": 0.82,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -1178,9 +1178,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 83,
+      "current_cents": 81,
       "dollars_risked": 0,
-      "current_value": 1.66,
+      "current_value": 1.62,
       "pl_dollars": 0.0,
       "timestamp": ""
     },

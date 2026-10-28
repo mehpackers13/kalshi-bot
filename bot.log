@@ -114448,3 +114448,22 @@ Total modelable markets evaluated: 0
 [2026-10-28 00:58:19 ET] [INFO] Scan complete — no qualifying edges found (this is fine)
 [2026-10-28 00:58:19 ET] [INFO] ============================================================
 [2026-10-28 00:58:19 ET] [INFO] Scan job complete
+[2026-10-28 13:05:19 ET] [INFO] Scan job starting
+[2026-10-28 13:05:19 ET] [INFO] Kalshi API key auth OK ✅  balance: $35.26
+[2026-10-28 13:05:21 ET] [INFO] ============================================================
+[2026-10-28 13:05:21 ET] [INFO] Starting market scan
+[2026-10-28 13:05:21 ET] [WARN] API GET /portfolio/balance → HTTP 429
+[2026-10-28 13:05:21 ET] [INFO] Cash: $35.26  |  Positions: $0.00  |  Total: $35.26  |  Peak: $41.23
+[2026-10-28 13:05:22 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-10-28 13:05:44 ET] [INFO] Fetched 115870 open markets via events endpoint across 50 pages
+[2026-10-28 13:05:44 ET] [INFO] Fetched 115870 open markets
+[2026-10-28 13:05:44 ET] [INFO] Parsed 101355 valid markets
+[2026-10-28 13:05:44 ET] [INFO] Categories: {'Sports': 51108, 'Elections': 24715, 'Entertainment': 8547, 'Financials': 5224, 'Economics': 4139, 'Politics': 2527, 'Mentions': 2388, 'Climate and Weather': 887}
+[2026-10-28 13:05:45 ET] [INFO]   price model: BTC-USD spot=80416.49 target=100000.00 touch vol=40% T=804h → P=0.072
+[2026-10-28 13:05:48 ET] [INFO]   EDGE FOUND: KXNFLSPREAD-26NOV01INDJAC-JAC8 | implied=54.5% true=46.0% edge=-8.5% dir=NO conf=68
+[2026-10-28 13:05:50 ET] [INFO] Checked 101355 markets in 5.1s | Edges found: 1
+[2026-10-28 13:05:50 ET] [INFO] [Discord] Trade alert sent: KXNFLSPREAD-26NOV01INDJAC-JAC8
+[2026-10-28 13:05:50 ET] [INFO] DRY RUN 🔵 KXNFLSPREAD-26NOV01INDJAC-JAC8 NO 3ct @ 46¢ = $1.38 | edge=-8.5% conf=68 | would_use 50%Kelly
+[2026-10-28 13:05:50 ET] [INFO] Scan complete — 1 alerts sent
+[2026-10-28 13:05:50 ET] [INFO] ============================================================
+[2026-10-28 13:05:50 ET] [INFO] Scan job complete

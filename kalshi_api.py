@@ -205,18 +205,29 @@ class KalshiAPI:
         if params:
             from urllib.parse import urlencode
             qs = "?" + urlencode(params)
-        headers = self._sign_request("GET", path)
-        try:
-            resp = self._session.get(
-                f"{self.BASE}{path}{qs}",
-                headers=headers,
-                timeout=timeout,
-            )
-            if resp.status_code == 200:
-                return resp.json()
-            log(f"API GET {path} → HTTP {resp.status_code}", "WARN")
-        except Exception as exc:
-            log(f"API GET {path} error: {exc}", "WARN")
+        # Kalshi rate-limits bursts (HTTP 429). Back off and retry rather than
+        # treating the failure as "no data", which once made open positions
+        # look worth $0 for a scan.
+        for wait in (0, 2, 4, 8):
+            if wait:
+                time.sleep(wait)
+            headers = self._sign_request("GET", path)
+            try:
+                resp = self._session.get(
+                    f"{self.BASE}{path}{qs}",
+                    headers=headers,
+                    timeout=timeout,
+                )
+                if resp.status_code == 200:
+                    return resp.json()
+                if resp.status_code == 429:
+                    continue
+                log(f"API GET {path} → HTTP {resp.status_code}", "WARN")
+                return None
+            except Exception as exc:
+                log(f"API GET {path} error: {exc}", "WARN")
+                return None
+        log(f"API GET {path} → still rate-limited after retries", "WARN")
         return None
 
     # ── Authentication check ──────────────────────────────────────────────────────
@@ -403,7 +414,12 @@ class KalshiAPI:
         if cash is None:
             return None
 
-        positions = self.get_portfolio_positions()
+        # Call the endpoint directly: get_portfolio_positions() turns a failed
+        # call into [], which would silently value the open positions at $0.
+        data = self._get("/portfolio/positions", params={"limit": 200})
+        if data is None:
+            return None
+        positions = data.get("market_positions", [])
         if not positions:
             return cash
 

@@ -78,9 +78,9 @@ def sync_live_balance(api) -> Optional[float]:
     # Total value includes open position market value at current bid prices
     total = api.get_portfolio_total_value()
     if total is None:
-        total = cash
-    if total is None:
-        log("Could not read Kalshi portfolio value — using cached value", "WARN")
+        # Never fall back to cash alone: that understates the account whenever
+        # positions are open and would distort the drawdown stop.
+        log("Could not read Kalshi portfolio value — keeping cached value", "WARN")
         return None
 
     br = load_bankroll()

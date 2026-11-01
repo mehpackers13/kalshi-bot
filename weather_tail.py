@@ -24,11 +24,14 @@ import kalshi_api
 from logger import log
 
 LOG = config.DATA_DIR / "weather_tail_log.csv"
-FIELDS = ["ticker", "event", "entered_at", "hours_to_close", "yes_bid", "yes_ask", "no_cost",
+FIELDS = ["rule", "category", "ticker", "event", "entered_at", "hours_to_close", "yes_bid", "yes_ask", "no_cost",
           "status", "result", "fee", "pnl", "resolved_at"]
 PREFIX = "KXHIGH"
 MIN_H, MAX_H = 6.0, 36.0
 MIN_YES, MAX_YES = 0.02, 0.30
+# Second rule, from the strategy lab (data/LAB_REPORT.md): YES contracts priced 10-30c are
+# overpriced across categories, so buy NO. Paper only; capped per scan to keep the log small.
+LS_MIN, LS_MAX, LS_CAP = 0.10, 0.30, 40
 
 
 def _fee(p: float) -> float:
@@ -43,7 +46,10 @@ def _load() -> list:
     if not LOG.exists():
         return []
     with open(LOG, newline="") as f:
-        return list(csv.DictReader(f))
+        rows = list(csv.DictReader(f))
+    for r in rows:                                    # rows written before rules existed
+        r.setdefault("rule", "") ; r["rule"] = r["rule"] or "weather_tail"
+    return rows
 
 
 def _save(rows: list) -> None:
@@ -69,9 +75,33 @@ def record_entries(rows: list, markets: list) -> int:
         mid = (yes_bid + yes_ask) / 2
         if yes_bid < 0.01 or not (MIN_YES <= mid <= MAX_YES):
             continue
-        rows.append({"ticker": t, "event": _event(t), "entered_at": now,
+        rows.append({"rule": "weather_tail", "category": "Climate and Weather", "ticker": t,
+                     "event": _event(t), "entered_at": now,
                      "hours_to_close": round(m["hours_to_close"], 1), "yes_bid": yes_bid,
                      "yes_ask": yes_ask, "no_cost": round(1 - yes_bid, 2), "status": "open"})
+        added += 1
+    return added
+
+
+def record_longshot(rows: list, markets: list) -> int:
+    """Rule 2: buy NO when a liquid, non-weather, non-combo market has YES at 10-30c."""
+    seen = {r["ticker"] for r in rows}
+    now = datetime.datetime.utcnow().isoformat(timespec="seconds") + "Z"
+    added = 0
+    for m in sorted(markets, key=lambda x: -x.get("dollar_volume", 0)):
+        t = m["ticker"]
+        if added >= LS_CAP:
+            break
+        if t in seen or t.startswith(("KXMVE", PREFIX)) or m.get("dollar_volume", 0) < config.MIN_VOLUME_DOLLARS:
+            continue
+        if not (MIN_H <= m["hours_to_close"] <= MAX_H):
+            continue
+        yes_bid, yes_ask = m["yes_bid"] / 100.0, m["yes_ask"] / 100.0
+        if yes_bid < 0.01 or not (LS_MIN <= (yes_bid + yes_ask) / 2 < LS_MAX):
+            continue
+        rows.append({"rule": "longshot_no_10_30", "category": m.get("category") or "unknown", "ticker": t,
+                     "event": _event(t), "entered_at": now, "hours_to_close": round(m["hours_to_close"], 1),
+                     "yes_bid": yes_bid, "yes_ask": yes_ask, "no_cost": round(1 - yes_bid, 2), "status": "open"})
         added += 1
     return added
 
@@ -98,9 +128,14 @@ def resolve(rows: list, api) -> int:
 
 
 def summarize(rows: list) -> str:
+    rules = sorted({r["rule"] for r in rows}) or ["weather_tail"]
+    return " | ".join(_summarize_rule([r for r in rows if r["rule"] == rule], rule) for rule in rules)
+
+
+def _summarize_rule(rows: list, rule: str) -> str:
     settled = [r for r in rows if r.get("status") == "settled"]
     if not settled:
-        return f"weather-tail: {sum(1 for r in rows if r.get('status') == 'open')} open, none settled yet"
+        return f"{rule}: {sum(1 for r in rows if r.get('status') == 'open')} open, none settled yet"
     ev = collections.defaultdict(list)
     for r in settled:
         ev[r["event"]].append(float(r["pnl"]))
@@ -111,7 +146,7 @@ def summarize(rows: list) -> str:
     if len(em) >= 3:
         se = statistics.stdev(em) / math.sqrt(len(em))
         ci = f", 95% CI [{(mean - 2 * se) * 100:+.1f}, {(mean + 2 * se) * 100:+.1f}]c"
-    return (f"weather-tail: {len(settled)} settled across {len(ev)} city-days, YES hit {hits}x, "
+    return (f"{rule}: {len(settled)} settled across {len(ev)} events, YES hit {hits}x, "
             f"net {mean * 100:+.1f}c/contract{ci}; {sum(1 for r in rows if r.get('status') == 'open')} open")
 
 
@@ -130,8 +165,8 @@ def fetch_weather_markets(api) -> list:
 
 def run(api, markets: list = None) -> None:
     rows = _load()
-    markets = fetch_weather_markets(api)
-    added = record_entries(rows, markets)
+    added = record_entries(rows, fetch_weather_markets(api))
+    added += record_longshot(rows, markets or [])
     done = resolve(rows, api)
     _save(rows)
     log(f"{summarize(rows)} (+{added} new, {done} resolved)")

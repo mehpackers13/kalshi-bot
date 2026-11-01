@@ -1,0 +1,47 @@
+name: Strategy Lab (weekly)
+
+# Runs the same honest backtest on every Kalshi category and records which rules pass the gate.
+# Paper/analysis only — it never places an order. See strategy_lab.py.
+
+on:
+  schedule:
+    - cron: "0 9 * * 0"      # Sundays 09:00 UTC
+  workflow_dispatch:
+
+concurrency:
+  group: kalshi-lab
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  lab:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Run strategy lab
+        run: python strategy_lab.py --new 1500
+      - name: Commit and push
+        run: |
+          git config user.name  "kalshi-bot[actions]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for f in data/lab_cache.json data/lab_results.json data/LAB_REPORT.md; do
+            if [ -f "$f" ]; then git add "$f"; fi
+          done
+          git diff --staged --quiet && echo "Nothing to commit." && exit 0
+          git commit -m "🔬 strategy lab $(date -u '+%Y-%m-%d')"
+          for attempt in 1 2 3 4 5; do
+            git pull --rebase origin main && git push && exit 0
+            git rebase --abort 2>/dev/null || true
+            sleep 15
+          done
+          exit 1

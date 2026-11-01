@@ -232,6 +232,13 @@ def run_scan(api: KalshiAPI) -> list:
     except Exception as exc:
         log(f"parlay pass non-fatal: {exc}", "WARN")
 
+    # ── Weather-tail paper test (never trades; see weather_tail.py) ───────────
+    try:
+        import weather_tail
+        weather_tail.run(api, markets)
+    except Exception as exc:
+        log(f"weather-tail pass non-fatal: {exc}", "WARN")
+
     log("=" * 60)
     return alerted
 

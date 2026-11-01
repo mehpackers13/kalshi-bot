@@ -17,7 +17,10 @@ Promotion to real money is a human decision: >= 30 settled city-days, positive n
 95% interval above 0, and no YES hit that wipes out the gains. Nothing here trades.
 """
 import csv, datetime, math, statistics, collections
+import time
+
 import config
+import kalshi_api
 from logger import log
 
 LOG = config.DATA_DIR / "weather_tail_log.csv"
@@ -112,8 +115,22 @@ def summarize(rows: list) -> str:
             f"net {mean * 100:+.1f}c/contract{ci}; {sum(1 for r in rows if r.get('status') == 'open')} open")
 
 
-def run(api, markets: list) -> None:
+def fetch_weather_markets(api) -> list:
+    """Open daily-high markets, fetched by series. The scanner's general fetch is
+    capped at 50 event pages and never returns these, so ask for them directly."""
+    data = api._get("/series", params={"category": "Climate and Weather"}) or {}
+    series = sorted({x["ticker"] for x in data.get("series", []) if x.get("ticker", "").startswith(PREFIX)})
+    out = []
+    for s in series:
+        d = api._get("/markets", params={"series_ticker": s, "status": "open", "limit": 1000}) or {}
+        out += [m for m in (kalshi_api.parse_market(r) for r in d.get("markets", [])) if m]
+        time.sleep(0.1)
+    return out
+
+
+def run(api, markets: list = None) -> None:
     rows = _load()
+    markets = fetch_weather_markets(api)
     added = record_entries(rows, markets)
     done = resolve(rows, api)
     _save(rows)

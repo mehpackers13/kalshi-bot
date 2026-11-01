@@ -349,6 +349,36 @@ class KalshiAPI:
         log(f"Fetched {len(all_markets)} open markets via events endpoint across {pages} pages")
         return all_markets
 
+    def get_closing_soon(self, min_hours: float = 2, max_hours: float = 72, max_pages: int = 30) -> list:
+        """
+        Open markets closing within a window, parsed. The events fetch above is
+        capped at 50 pages and returns almost only long-dated markets (65,117 of
+        65,284 closed in 10+ days), so the fast, liquid ones — daily crypto/index
+        ladders, game-day markets, weather — never reached the scanner. Asking for
+        a close-time window returns them. Combo (KXMVE) markets are skipped.
+        """
+        now = int(time.time())
+        out, cursor = [], None
+        for _ in range(max_pages):
+            params = {"status": "open", "limit": 1000,
+                      "min_close_ts": now + int(min_hours * 3600), "max_close_ts": now + int(max_hours * 3600)}
+            if cursor:
+                params["cursor"] = cursor
+            data = self._get("/markets", params=params)
+            if not data:
+                break
+            for raw in data.get("markets", []):
+                if raw.get("ticker", "").startswith("KXMVE"):
+                    continue
+                m = parse_market(raw)
+                if m:
+                    out.append(m)
+            cursor = data.get("cursor")
+            if not cursor:
+                break
+            time.sleep(0.2)
+        return out
+
     def get_settled_markets(self, limit: int = 200, pages: int = 1) -> list:
         """
         Fetch finalized markets via the /events endpoint (same source as the

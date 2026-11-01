@@ -32,6 +32,7 @@ MIN_YES, MAX_YES = 0.02, 0.30
 # Second rule, from the strategy lab (data/LAB_REPORT.md): YES contracts priced 10-30c are
 # overpriced across categories, so buy NO. Paper only; capped per scan to keep the log small.
 LS_MIN, LS_MAX, LS_CAP = 0.10, 0.30, 40
+LS_MIN_CONTRACTS = 200        # same liquidity bar as strategy_lab.MIN_VOL
 
 
 def _fee(p: float) -> float:
@@ -88,11 +89,11 @@ def record_longshot(rows: list, markets: list) -> int:
     seen = {r["ticker"] for r in rows}
     now = datetime.datetime.utcnow().isoformat(timespec="seconds") + "Z"
     added = 0
-    for m in sorted(markets, key=lambda x: -x.get("dollar_volume", 0)):
+    for m in sorted(markets, key=lambda x: -x.get("volume", 0)):
         t = m["ticker"]
         if added >= LS_CAP:
             break
-        if t in seen or t.startswith(("KXMVE", PREFIX)) or m.get("dollar_volume", 0) < config.MIN_VOLUME_DOLLARS:
+        if t in seen or t.startswith(("KXMVE", PREFIX)) or m.get("volume", 0) < LS_MIN_CONTRACTS:
             continue
         if not (MIN_H <= m["hours_to_close"] <= MAX_H):
             continue
@@ -166,7 +167,8 @@ def fetch_weather_markets(api) -> list:
 def run(api, markets: list = None) -> None:
     rows = _load()
     added = record_entries(rows, fetch_weather_markets(api))
-    added += record_longshot(rows, markets or [])
+    # The scanner's own list is almost all long-dated, so ask for the fast markets directly.
+    added += record_longshot(rows, api.get_closing_soon(MIN_H, MAX_H))
     done = resolve(rows, api)
     _save(rows)
     log(f"{summarize(rows)} (+{added} new, {done} resolved)")

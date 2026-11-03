@@ -115127,3 +115127,22 @@ Total modelable markets evaluated: 0
 [2026-11-03 14:22:19 ET] [INFO] longshot_no_10_30: 192 settled across 106 events, YES hit 19x, net +2.8c/contract, 95% CI [-1.8, +7.4]c; 106 open | weather_tail: 150 settled across 48 events, YES hit 19x, net -1.7c/contract, 95% CI [-5.4, +2.1]c; 99 open (+49 new, 149 resolved)
 [2026-11-03 14:22:19 ET] [INFO] ============================================================
 [2026-11-03 14:22:19 ET] [INFO] Scan job complete
+[2026-11-03 15:24:31 ET] [INFO] Morning report job starting
+[2026-11-03 15:24:31 ET] [INFO] Kalshi API key auth OK ✅  balance: $35.26
+[2026-11-03 15:24:31 ET] [INFO] ============================================================
+[2026-11-03 15:24:31 ET] [INFO] Morning report starting
+[2026-11-03 15:24:32 ET] [ERROR] STALE SELL ERROR KXSOLMAXY-27JAN01-170: Kalshi POST /portfolio/orders → HTTP 410: {"error":{"code":"deprecated_v1_order_endpoint","message":"Please switch to the V2 endpoints","details":"https://docs.kalshi.com/api-reference/orders/create-order-v2"}}
+[2026-11-03 15:24:32 ET] [ERROR] STALE SELL ERROR KXSOLMAXY-27JAN01-160: Kalshi POST /portfolio/orders → HTTP 410: {"error":{"code":"deprecated_v1_order_endpoint","message":"Please switch to the V2 endpoints","details":"https://docs.kalshi.com/api-reference/orders/create-order-v2"}}
+[2026-11-03 15:24:32 ET] [ERROR] STALE SELL ERROR KXSOLMAXY-27JAN01-150: Kalshi POST /portfolio/orders → HTTP 410: {"error":{"code":"deprecated_v1_order_endpoint","message":"Please switch to the V2 endpoints","details":"https://docs.kalshi.com/api-reference/orders/create-order-v2"}}
+[2026-11-03 15:24:32 ET] [ERROR] STALE SELL ERROR KXBTCMAXY-26DEC31-149999.99: Kalshi POST /portfolio/orders → HTTP 410: {"error":{"code":"deprecated_v1_order_endpoint","message":"Please switch to the V2 endpoints","details":"https://docs.kalshi.com/api-reference/orders/create-order-v2"}}
+[2026-11-03 15:24:32 ET] [ERROR] STALE SELL ERROR KXTESLASEMI-27JAN-5000: Kalshi POST /portfolio/orders → HTTP 410: {"error":{"code":"deprecated_v1_order_endpoint","message":"Please switch to the V2 endpoints","details":"https://docs.kalshi.com/api-reference/orders/create-order-v2"}}
+[2026-11-03 15:24:32 ET] [INFO] Running morning self-improvement analysis
+[2026-11-03 15:24:32 ET] [INFO] Self-improvement: 0 model adjustments made
+[2026-11-03 15:24:32 ET] [INFO] No ANTHROPIC_API_KEY — skipping AI brain
+[2026-11-03 15:24:32 ET] [INFO] Scanning for pre-market opportunities...
+[2026-11-03 15:24:52 ET] [INFO] Fetched 73098 open markets via events endpoint across 50 pages
+[2026-11-03 15:24:53 ET] [INFO] Pre-market watch: nothing qualifying found (fine)
+[2026-11-03 15:24:53 ET] [INFO] [Discord] Morning report sent
+[2026-11-03 15:24:53 ET] [INFO] Morning report complete
+[2026-11-03 15:24:53 ET] [INFO] ============================================================
+[2026-11-03 15:24:53 ET] [INFO] Morning report job complete

@@ -46,6 +46,7 @@ WORKLIST = config.DATA_DIR / "harvest_worklist.json"
 STATE = config.DATA_DIR / "harvest_state.json"
 
 MIN_VOL = 200          # same liquidity floor as strategy_lab
+MIN_LIFETIME = 5 * 3600  # a market must outlive the lab's 3h-before-close entry edge to have a candle
 WINDOW_DAYS = 7        # close-time slice width for discovery
 PAGE_LIMIT = 200
 RATE_START = 4.0       # requests/sec, adapts down on 429 and back up on success
@@ -178,7 +179,7 @@ def discover(years, cats_by_series):
             mk = d.get("markets", [])
             for m in mk:
                 tk = m.get("ticker")
-                if not tk or tk in cache or tk in work:
+                if not tk or tk in cache:
                     skipped += 1
                     continue
                 if m.get("result") not in ("yes", "no") or not m.get("close_time"):
@@ -186,10 +187,27 @@ def discover(years, cats_by_series):
                 vol = float(m.get("volume_fp") or m.get("volume") or 0)
                 if vol < MIN_VOL:
                     continue
+                close = int(ts(m["close_time"]))
+                # Market lifetime. The lab's entry is 3-36h before close, so a market that
+                # existed for only minutes or a couple of hours (KXDOGE15M and friends) has
+                # no candle in that window at all. Measured: quoting them blind gave only a
+                # ~25% candle hit rate, i.e. 4 API calls per usable row against a global
+                # ~5 req/s limit. Recording the lifetime lets quoting skip them for free.
+                dur = None
+                if m.get("open_time") or m.get("created_time"):
+                    try:
+                        dur = int(close - ts(m.get("open_time") or m["created_time"]))
+                    except Exception:
+                        dur = None
+                if tk in work:
+                    if dur is not None and work[tk].get("dur") is None:
+                        work[tk]["dur"] = dur       # backfill for an earlier discovery pass
+                    skipped += 1
+                    continue
                 s = series_of(tk)
                 work[tk] = {"series": s, "cat": cats_by_series.get(s, "Unknown"),
                             "yes": 1 if m["result"] == "yes" else 0,
-                            "close": int(ts(m["close_time"])), "vol": int(vol)}
+                            "close": close, "vol": int(vol), "dur": dur}
                 added += 1
             cursor, pages = d.get("cursor"), pages + 1
             if not cursor or not mk:
@@ -258,7 +276,15 @@ def quote_all(minutes):
     have = set(load_json(CACHE, {})) | set(load_history())
     work = load_json(WORKLIST, {})
     state = load_json(STATE, {})
-    todo = [tk for tk in work if tk not in have]
+    # A market must have lived long enough to have a candle in the 36h->3h pre-close window.
+    # dur is None for rows discovered before lifetimes were recorded: quote those anyway.
+    todo = [tk for tk in work if tk not in have
+            and (work[tk].get("dur") is None or work[tk]["dur"] >= MIN_LIFETIME)]
+    n_short = sum(1 for tk in work if tk not in have
+                  and work[tk].get("dur") is not None and work[tk]["dur"] < MIN_LIFETIME)
+    if n_short:
+        print(f"quote: skipping {n_short} markets that lived < {MIN_LIFETIME // 3600}h "
+              f"(no candle possible in the 3-36h pre-close entry window)")
     # newest close first: best candle coverage, and most relevant to today's markets
     todo.sort(key=lambda tk: -work[tk]["close"])
     deadline = time.time() + minutes * 60 if minutes else float("inf")

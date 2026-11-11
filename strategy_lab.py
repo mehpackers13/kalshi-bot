@@ -238,21 +238,66 @@ def evaluate(rows, side, fn=None):
     if len(em) < 5:
         return None
     m = statistics.mean(em)
-    se = statistics.stdev(em) / math.sqrt(len(em))
+    sd = statistics.stdev(em)
+    se = sd / math.sqrt(len(em))
+    # Two-sided p-value for mean > 0, normal approximation. Fine at the >=30 events the
+    # PASS gate requires; only used for the relative FDR ranking, never as the sole gate.
+    if se > 0:
+        t = m / se
+        p = 2 * (1 - statistics.NormalDist().cdf(abs(t)))
+    else:
+        t, p = (float("inf") if m > 0 else 0.0), (0.0 if m > 0 else 1.0)
     return {"events": len(em), "trades": sum(len(v) for v in ev.values()),
-            "net_c": round(m * 100, 2), "lo_c": round((m - 2 * se) * 100, 2), "hi_c": round((m + 2 * se) * 100, 2)}
+            "net_c": round(m * 100, 2), "lo_c": round((m - 2 * se) * 100, 2),
+            "hi_c": round((m + 2 * se) * 100, 2), "t": round(t, 3), "p": p}
+
+
+FDR_Q = 0.10        # Benjamini-Hochberg target false-discovery rate across all tested rules
+HOLDOUT_FRAC = 0.30  # newest share of history held out of discovery entirely
+
+
+def bh_threshold(pvals, q=FDR_Q):
+    """Largest Benjamini-Hochberg cutoff controlling FDR at q over m simultaneous tests.
+
+    The lab tests ~500 rules at once. At a flat 95% CI roughly 1 in 20 clears by chance,
+    so a few dozen 'edges' would be pure noise -- and a bigger history produces MORE of
+    them, not fewer. BH keeps the expected share of false passes among passes at <= q.
+    Returns 0.0 when nothing survives (i.e. pass nothing)."""
+    m = len(pvals)
+    if not m:
+        return 0.0
+    ordered = sorted(pvals)
+    thr = 0.0
+    for i, p in enumerate(ordered, start=1):
+        if p <= q * i / m:
+            thr = p
+    return thr
 
 
 def analyse():
     cache = load_cache()
     items = sorted(cache.items(), key=lambda kv: kv[1]["close"])
-    mid = items[len(items) // 2][1]["close"] if items else 0
     n_exec_all = sum(1 for _, r in items if exec_row(r))
+    # True out-of-sample holdout: the newest HOLDOUT_FRAC of history is excluded from
+    # discovery entirely. gate1's older/newer split is in-sample on both sides, so it
+    # cannot catch a rule that was selected by looking at the whole period.
+    cut_i = int(len(items) * (1 - HOLDOUT_FRAC))
+    cut_ts = items[cut_i][1]["close"] if items else 0
+    insample = items[:cut_i]
+    holdout = items[cut_i:]
+    # older/newer halves must split WITHIN the in-sample period; using the midpoint of all
+    # history would put the whole "newer" half inside the holdout, leaving it always empty
+    mid = insample[len(insample) // 2][1]["close"] if insample else 0
     groups = collections.defaultdict(list)
-    for tk, r in items:
+    for tk, r in insample:
         groups[("category", r["cat"])].append((tk, r))
         groups[("series", r["series"])].append((tk, r))
-    groups[("category", "ALL")] = items
+    groups[("category", "ALL")] = insample
+    hgroups = collections.defaultdict(list)
+    for tk, r in holdout:
+        hgroups[("category", r["cat"])].append((tk, r))
+        hgroups[("series", r["series"])].append((tk, r))
+    hgroups[("category", "ALL")] = holdout
     out, passed, legacy_passed = [], [], []
     for (kind, name), rows in groups.items():
         for lo, hi in BUCKETS:
@@ -280,40 +325,71 @@ def analyse():
                          side=side, n_exec=n_exec, n_approx=n_approx,
                          net_all_c=allx["net_c"] if allx else None,
                          old_c=old["net_c"] if old else None, new_c=new["net_c"] if new else None)
+                # out-of-sample confirmation on the held-out newest slice
+                hrows = [(tk, r) for tk, r in hgroups.get((kind, name), [])
+                         if lo <= yes_price(side, r) < top and exec_row(r)]
+                h = evaluate(hrows, side)
+                e["hold_events"] = h["events"] if h else 0
+                e["hold_c"] = h["net_c"] if h else None
                 gate1 = (e["events"] >= 30 and e["net_c"] >= 1.0 and e["lo_c"] > 0
                          and old and new and old["net_c"] > 0 and new["net_c"] > 0)
                 gate2 = e["net_c"] - ADVERSE_C >= 0 and e["lo_c"] - ADVERSE_C > 0
-                e["gate1"], e["gate2"] = bool(gate1), bool(gate2)
-                e["passed"] = bool(gate1 and gate2)
+                # gate4: must still be profitable on data never used to pick it
+                gate4 = bool(h and h["events"] >= 10 and h["net_c"] >= 1.0)
+                e["gate1"], e["gate2"], e["gate4"] = bool(gate1), bool(gate2), gate4
                 out.append(e)
-                if e["passed"]:
-                    e["paper_rule"] = f"lab:{kind}:{name}:{e['bucket']}:{side}"
-                    e.update(min_vol=MIN_VOL, hours_min=6, hours_max=36)
-                    passed.append(e)
+
+    # gate3: Benjamini-Hochberg across every rule tested in this run, applied only to
+    # rules that already cleared the economic gates, so the correction is not diluted.
+    cands = [e for e in out if e["gate1"] and e["gate2"] and e["gate4"]]
+    thr = bh_threshold([e["p"] for e in out], FDR_Q)
+    for e in out:
+        e["bh_thresh"] = round(thr, 6)
+        e["gate3"] = bool(e["p"] <= thr) if thr > 0 else False
+        e["passed"] = bool(e["gate1"] and e["gate2"] and e["gate3"] and e["gate4"])
+        if e["passed"]:
+            e["paper_rule"] = f"lab:{e['kind']}:{e['name']}:{e['bucket']}:{e['side']}"
+            e.update(min_vol=MIN_VOL, hours_min=6, hours_max=36)
+            passed.append(e)
     out.sort(key=lambda e: -e["lo_c"])
     res = {"generated": datetime.datetime.utcnow().isoformat(timespec="seconds") + "Z",
            "markets": len(cache), "markets_executable": n_exec_all, "rules_tested": len(out),
+           "insample_markets": len(insample), "holdout_markets": len(holdout),
+           "holdout_from": int(cut_ts), "fdr_q": FDR_Q, "bh_threshold": round(thr, 6),
+           "economic_candidates": len(cands),
            "legacy_vwap_passes": len(legacy_passed), "passed": passed, "top_by_lower_bound": out[:25]}
     RESULTS.write_text(json.dumps(res, indent=1))
     lines = [f"# Strategy Lab — {res['generated']}", "",
              f"{len(cache)} settled markets ({n_exec_all} with executable candle quotes), {len(out)} rules tested "
              f"(group x YES-price bucket x side, taker fees included, entry = first traded hourly candle ask/bid).",
-             f"**Rules passing both gates: {len(passed)}** (executable rows only; >=30 events, >=+1c, CI above 0, "
-             f"positive in both halves, AND still positive after 1c extra adverse selection). "
-             f"Old VWAP method would have passed {len(legacy_passed)}.",
-             "These are in-sample candidates for paper testing, not proven edges.", "",
-             "| Rule | Events | n_exec/n_approx | Net c | 95% range | Older | Newer | Net c -1c | Pass |",
-             "|---|---|---|---|---|---|---|---|---|"]
+             f"Discovery used the oldest {len(insample)} markets; the newest {len(holdout)} were held out "
+             f"and never used to pick a rule.", "",
+             f"**Rules passing all four gates: {len(passed)}.** A rule must clear:", "",
+             "1. **economic** — >=30 events, >=+1c/contract, 95% CI above 0, positive in both halves;",
+             "2. **adverse selection** — still positive after 1c extra slippage;",
+             f"3. **multiple comparisons** — Benjamini-Hochberg at q={FDR_Q:.2f} over all {len(out)} rules "
+             f"tested together (cutoff p<={thr:.5f}). Without this, ~1 rule in 20 clears a 95% CI by pure "
+             f"chance, so a larger history yields MORE fake edges, not fewer;",
+             "4. **out of sample** — >=10 events in the held-out newest slice and >=+1c there too.", "",
+             f"{len(cands)} rules cleared gates 1, 2 and 4; {len(passed)} of those survived the FDR correction. "
+             f"The old VWAP method, with no fees, spread, FDR or holdout, would have passed {len(legacy_passed)}.",
+             "A pass is a candidate for forward paper testing, not a proven edge, and never a live bet.", "",
+             "| Rule | Events | Net c | 95% range | Older | Newer | Holdout (n) | p | Gates 1/2/3/4 | Pass |",
+             "|---|---|---|---|---|---|---|---|---|---|"]
     for e in out[:25]:
+        g = "".join("Y" if e.get(f"gate{i}") else "·" for i in (1, 2, 3, 4))
+        hc = f"{e['hold_c']:+.1f} ({e['hold_events']})" if e["hold_c"] is not None else f"— ({e['hold_events']})"
         lines.append(f"| {e['kind']}:{e['name']} YES-price {e['bucket']} buy {e['side']} | {e['events']} | "
-                     f"{e['n_exec']}/{e['n_approx']} | {e['net_c']:+.1f} | [{e['lo_c']:+.1f}, {e['hi_c']:+.1f}] | "
-                     f"{e['old_c']} | {e['new_c']} | {e['net_c'] - ADVERSE_C:+.1f} | {'YES' if e['passed'] else ''} |")
+                     f"{e['net_c']:+.1f} | [{e['lo_c']:+.1f}, {e['hi_c']:+.1f}] | "
+                     f"{e['old_c']} | {e['new_c']} | {hc} | {e['p']:.2g} | {g} | {'YES' if e['passed'] else ''} |")
     REPORT.write_text("\n".join(lines) + "\n")
     print("\n".join(lines[:5]))
     for e in out[:12]:
         print(f"  {e['kind']}:{e['name'][:26]:26s} {e['bucket']:>8s} buy {e['side']:3s} events {e['events']:4d} "
               f"exec/approx {e['n_exec']}/{e['n_approx']} net {e['net_c']:+5.1f}c [{e['lo_c']:+.1f},{e['hi_c']:+.1f}] "
-              f"halves {e['old_c']}/{e['new_c']} {'PASS' if e['passed'] else ''}")
+              f"halves {e['old_c']}/{e['new_c']} hold {e['hold_c']}({e['hold_events']}) p={e['p']:.2g} "
+              f"gates {''.join('Y' if e.get(f'gate{i}') else '.' for i in (1, 2, 3, 4))} "
+              f"{'PASS' if e['passed'] else ''}")
     return res
 
 

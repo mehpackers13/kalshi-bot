@@ -28,6 +28,19 @@ jobs:
           python-version: "3.11"
           cache: pip
       - run: pip install -r requirements.txt
+      # Restore the harvested history (data/history.jsonl.gz, written by harvest.yml and
+      # gitignored). Without it this job's analyse() would see only lab_cache.json's few
+      # thousand markets and overwrite lab_results.json with a small-sample verdict,
+      # silently discarding any rule the full history had confirmed.
+      - name: Restore harvest history
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            data/history.jsonl.gz
+            data/harvest_worklist.json
+          key: kalshi-harvest-unused     # never matches; always falls through to restore-keys
+          restore-keys: |
+            kalshi-harvest-
       - name: Run strategy lab
         run: python strategy_lab.py --new 1200 --requote 1500
       - name: Commit and push

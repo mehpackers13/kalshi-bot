@@ -1,6 +1,7 @@
 """Paper rule: trade whatever the strategy lab currently lists as 'passed'.
 
-Reads data/lab_results.json['passed'] (executable-price, two-gate candidates). For each passed rule it
+Reads data/lab_results.json['passed'] — executable-price candidates that cleared all four lab gates
+(economics, adverse selection, Benjamini-Hochberg FDR, out-of-sample holdout). For each passed rule it
 picks open markets whose series/category matches, whose executable YES-scale price (ask for a YES
 entry, bid for a NO entry) lies in [lo, hi), 6-36h from close, volume >= 200. Entries are tagged
 notes='lab:<rule_key>' so the paper engine's per-rule stats and kill switch can judge them.

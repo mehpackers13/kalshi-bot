@@ -1,0 +1,85 @@
+name: History Harvest
+
+# Builds the large executable-price history the strategy lab needs to reach its
+# 30-independent-event PASS gate (see history_harvest.py).
+#
+# Kalshi's rate limit is global (~5 req/s), so this is slow by nature: each run
+# quotes for 45 minutes and stops cleanly, and the next run resumes where it left off.
+# The harvest file is NOT committed (it is gitignored and would bloat the repo); it is
+# carried between runs by actions/cache, and only the small lab results are committed.
+
+on:
+  schedule:
+    - cron: "17 */3 * * *"    # every 3 hours
+  workflow_dispatch:
+    inputs:
+      years:
+        description: "How far back to discover"
+        default: "3"
+      minutes:
+        description: "Quoting time budget"
+        default: "45"
+
+concurrency:
+  group: kalshi-harvest        # separate from kalshi-git: harvesting pushes nothing
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 70
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      # Restore the growing harvest file + worklist. restore-keys makes each run pick up
+      # the most recent previous cache, since the primary key is unique per run.
+      - name: Restore harvest cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            data/history.jsonl.gz
+            data/harvest_worklist.json
+          key: kalshi-harvest-${{ github.run_id }}
+          restore-keys: |
+            kalshi-harvest-
+
+      - name: Harvest
+        run: |
+          python history_harvest.py \
+            --years "${{ github.event.inputs.years || '3' }}" \
+            --minutes "${{ github.event.inputs.minutes || '45' }}"
+
+      - name: Re-analyse with the larger history
+        run: python strategy_lab.py --analyse-only
+
+      - name: Commit lab results only
+        if: always()
+        run: |
+          git config user.name  "kalshi-bot[actions]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for f in data/lab_results.json data/LAB_REPORT.md data/harvest_state.json; do
+            if [ -f "$f" ]; then git add "$f"; fi
+          done
+          git status --short
+          git diff --cached --quiet && echo "Nothing to commit." && exit 0
+          git commit -m "🔬 harvest + lab re-analyse $(date -u '+%Y-%m-%d %H:%M UTC')"
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git rebase -X ours origin/main && git push && echo "Pushed on attempt $attempt." && break
+            echo "Push attempt $attempt failed — retrying in 15s..."
+            git rebase --abort 2>/dev/null || true
+            sleep 15
+          done

@@ -62,12 +62,42 @@ def event_of(ticker):
     return "-".join(ticker.split("-")[:2])
 
 
-def load_cache():
-    return json.loads(CACHE.read_text()) if CACHE.exists() else {}
+HISTORY = config.DATA_DIR / "history.jsonl.gz"
+
+
+def load_history():
+    """Rows harvested by history_harvest.py (append-only gzipped JSONL, same row schema).
+    Kept out of lab_cache.json because it is far larger and append-only."""
+    rows = {}
+    if not HISTORY.exists():
+        return rows
+    import gzip
+    with gzip.open(HISTORY, "rt") as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                r = json.loads(line)
+                rows[r.pop("t")] = r
+            except Exception:
+                continue        # tolerate a torn final line from an interrupted harvest
+    return rows
+
+
+def load_cache(merge_history=True):
+    """Lab cache, merged with the harvested history. Harvested rows win on conflict: they
+    always carry an executable candle quote, whereas older cache rows may be VWAP-only.
+    Rows with no usable price are dropped — they would break bucketing in analyse()."""
+    cache = json.loads(CACHE.read_text()) if CACHE.exists() else {}
+    if merge_history:
+        cache.update(load_history())
+    return {k: v for k, v in cache.items()
+            if v.get("px") is not None or v.get("px_src") == "candle"}
 
 
 def fetch_new(budget):
-    cache = load_cache()
+    cache = load_cache(merge_history=False)      # this function writes CACHE back
     since = int(time.time()) - SINCE_DAYS * 86400
     plan = []
     for cat in CATEGORIES:
@@ -143,7 +173,7 @@ def candle_quote(series, ticker, close):
 
 def requote(budget):
     """Backfill executable quotes for up to `budget` cached markets, oldest first."""
-    cache = load_cache()
+    cache = load_cache(merge_history=False)      # this function writes CACHE back
     todo = sorted((k for k, v in cache.items() if "px_src" not in v and v.get("rq_fail", 0) < 2),
                   key=lambda k: cache[k]["close"])[:budget]
     ok = nocandle = fail = 0

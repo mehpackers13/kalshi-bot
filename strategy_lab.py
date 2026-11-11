@@ -72,16 +72,23 @@ def load_history():
     if not HISTORY.exists():
         return rows
     import gzip
-    with gzip.open(HISTORY, "rt") as f:
-        for line in f:
-            line = line.strip()
-            if not line:
-                continue
-            try:
-                r = json.loads(line)
-                rows[r.pop("t")] = r
-            except Exception:
-                continue        # tolerate a torn final line from an interrupted harvest
+    try:
+        with gzip.open(HISTORY, "rt") as f:
+            for line in f:
+                line = line.strip()
+                if not line:
+                    continue
+                try:
+                    r = json.loads(line)
+                    rows[r.pop("t")] = r
+                except Exception:
+                    continue            # a single malformed row
+    except (EOFError, OSError, gzip.BadGzipFile) as exc:
+        # The harvester appends, so an interrupted run leaves a torn final gzip member.
+        # EOFError comes from the line ITERATOR, so it must be caught around the loop;
+        # catching per line would make the whole harvested history unreadable.
+        print(f"warn: {HISTORY.name} truncated ({type(exc).__name__}); "
+              f"analysing the {len(rows)} rows read before the tear")
     return rows
 
 

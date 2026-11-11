@@ -251,19 +251,34 @@ def candle_quote(series, ticker, close):
 
 def load_history():
     """{ticker: row} from the append-only harvest file."""
+    return read_history(HISTORY)
+
+
+def read_history(path):
+    """Read gzipped JSONL, tolerating a truncated tail.
+
+    The file is opened in append mode, so an interrupted run (kill, crash, cancelled CI
+    job) leaves a torn final gzip member. That raises EOFError/BadGzipFile from the line
+    ITERATOR, not from json.loads, so the exception has to be caught around the loop --
+    catching it per line leaves the file permanently unreadable and silently discards
+    every row already harvested."""
     rows = {}
-    if not HISTORY.exists():
+    if not path.exists():
         return rows
-    with gzip.open(HISTORY, "rt") as f:
-        for line in f:
-            line = line.strip()
-            if not line:
-                continue
-            try:
-                r = json.loads(line)
-                rows[r.pop("t")] = r
-            except Exception:
-                continue        # tolerate a torn final line from a killed run
+    try:
+        with gzip.open(path, "rt") as f:
+            for line in f:
+                line = line.strip()
+                if not line:
+                    continue
+                try:
+                    r = json.loads(line)
+                    rows[r.pop("t")] = r
+                except Exception:
+                    continue            # a single malformed row
+    except (EOFError, OSError, gzip.BadGzipFile) as exc:
+        print(f"warn: {path.name} truncated ({type(exc).__name__}); "
+              f"kept the {len(rows)} rows read before the tear", flush=True)
     return rows
 
 

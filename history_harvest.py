@@ -35,7 +35,7 @@ Usage
     python history_harvest.py --minutes 90          # quote for 90 minutes, then stop (resumable)
     python history_harvest.py --status              # show progress, make no API calls
 """
-import argparse, collections, datetime, gzip, json, os, threading, time
+import argparse, collections, datetime, gzip, json, os, threading, time, zlib
 import requests
 import config
 
@@ -154,7 +154,7 @@ def series_categories():
 
 def discover(years, cats_by_series):
     """Page settled markets in close-time slices; return {ticker: row-stub} for liquid, resolved ones."""
-    cache = set(load_json(CACHE, {})) | set(load_history())
+    cache = set(load_json(CACHE, {})) | set(load_history())   # discovery only reads
     work = load_json(WORKLIST, {})
     now = int(time.time())
     start = now - int(years * 365.25 * 86400)
@@ -251,20 +251,49 @@ def candle_quote(series, ticker, close):
 
 def load_history():
     """{ticker: row} from the append-only harvest file."""
-    return read_history(HISTORY)
+    return read_history(HISTORY)[0]
+
+
+def repair_history():
+    """Rewrite the harvest file from its readable prefix if it is torn.
+
+    This matters more than it looks. A gzip stream cannot resync after a damaged member,
+    so a tear in the MIDDLE of the file makes every row appended after it unreachable --
+    the reader stops at the tear. Since the harvester appends, an interrupted run would
+    otherwise leave it writing hours of rate-limited work into dead space behind the tear.
+    Repairing on startup keeps the file append-only in the normal case and self-healing
+    after a kill, crash, OOM or cancelled CI job."""
+    rows, torn = read_history(HISTORY)
+    if not torn:
+        return rows
+    tmp = str(HISTORY) + ".repair"
+    with gzip.open(tmp, "wt") as f:
+        for tk, r in rows.items():
+            out = {"t": tk}
+            out.update(r)
+            f.write(json.dumps(out) + "\n")
+    os.replace(tmp, HISTORY)
+    print(f"repair: rewrote {HISTORY.name} with its {len(rows)} readable rows; "
+          f"anything lost after the tear will simply be re-quoted", flush=True)
+    return rows
 
 
 def read_history(path):
     """Read gzipped JSONL, tolerating a truncated tail.
 
     The file is opened in append mode, so an interrupted run (kill, crash, cancelled CI
-    job) leaves a torn final gzip member. That raises EOFError/BadGzipFile from the line
-    ITERATOR, not from json.loads, so the exception has to be caught around the loop --
-    catching it per line leaves the file permanently unreadable and silently discards
-    every row already harvested."""
-    rows = {}
+    job) leaves a torn final gzip member, and reading it WHILE a harvest is appending hits
+    a half-written member. Both raise from the line ITERATOR, not from json.loads, so the
+    exception has to be caught around the loop -- catching it per line leaves the file
+    unreadable and silently discards every row already harvested.
+
+    zlib.error ('invalid block type') is a plain Exception, not an OSError, so it has to
+    be named explicitly; it is what a concurrent read actually raises.
+
+    Returns (rows, torn)."""
+    rows, torn = {}, False
     if not path.exists():
-        return rows
+        return rows, torn
     try:
         with gzip.open(path, "rt") as f:
             for line in f:
@@ -276,10 +305,11 @@ def read_history(path):
                     rows[r.pop("t")] = r
                 except Exception:
                     continue            # a single malformed row
-    except (EOFError, OSError, gzip.BadGzipFile) as exc:
-        print(f"warn: {path.name} truncated ({type(exc).__name__}); "
-              f"kept the {len(rows)} rows read before the tear", flush=True)
-    return rows
+    except (EOFError, OSError, zlib.error, gzip.BadGzipFile) as exc:
+        torn = True
+        print(f"warn: {path.name} torn ({type(exc).__name__}); readable rows: {len(rows)}. "
+              f"Rows written after the tear are unreachable until repaired.", flush=True)
+    return rows, torn
 
 
 def quote_all(minutes):
@@ -288,7 +318,7 @@ def quote_all(minutes):
     Rows are APPENDED to data/history.jsonl.gz. Appending matters: rewriting a whole
     200k-row JSON every few hundred markets would be quadratic and would also make the
     file unusable in git. Already-quoted tickers are skipped on the next run."""
-    have = set(load_json(CACHE, {})) | set(load_history())
+    have = set(load_json(CACHE, {})) | set(repair_history())
     work = load_json(WORKLIST, {})
     state = load_json(STATE, {})
     # A market must have lived long enough to have a candle in the 36h->3h pre-close window.

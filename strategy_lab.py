@@ -71,7 +71,7 @@ def load_history():
     rows = {}
     if not HISTORY.exists():
         return rows
-    import gzip
+    import gzip, zlib
     try:
         with gzip.open(HISTORY, "rt") as f:
             for line in f:
@@ -83,10 +83,12 @@ def load_history():
                     rows[r.pop("t")] = r
                 except Exception:
                     continue            # a single malformed row
-    except (EOFError, OSError, gzip.BadGzipFile) as exc:
+    except (EOFError, OSError, zlib.error, gzip.BadGzipFile) as exc:
         # The harvester appends, so an interrupted run leaves a torn final gzip member.
         # EOFError comes from the line ITERATOR, so it must be caught around the loop;
-        # catching per line would make the whole harvested history unreadable.
+        # catching per line would make the whole harvested history unreadable. zlib.error
+        # ('invalid block type') is what reading DURING an active harvest raises, and it is
+        # a plain Exception rather than an OSError, so it must be named explicitly.
         print(f"warn: {HISTORY.name} truncated ({type(exc).__name__}); "
               f"analysing the {len(rows)} rows read before the tear")
     return rows

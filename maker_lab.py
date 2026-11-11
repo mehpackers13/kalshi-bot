@@ -58,9 +58,13 @@ RESULTS = config.DATA_DIR / "maker_results.json"
 REPORT = config.DATA_DIR / "MAKER_REPORT.md"
 
 TAKER_MULT = 0.07
-MAKER_MULT = 0.0175      # Kalshi's maker multiplier. It is 0 on most series (maker fees
-                         # apply only to a listed subset), so charging it everywhere is
-                         # the conservative choice until the live schedule is confirmed.
+# Confirmed against kalshi.com/fee-schedule (read 2026-11-11): under "Standard fees",
+# most markets list taker fees only ($0.07-$1.75 per 100 contracts) with no maker fee at
+# all. Only 160 series of ~16,000 appear under "Non-standard fees" with maker fees, and
+# those are about a quarter of the taker fee ($0.02-$0.44 vs $0.07-$1.75). A few series
+# (KXBTCY, KXCITRINI) charge nobody. So 0.0 is the right default and 0.0175 is the
+# worst case for a listed series; --maker-mult runs the pessimistic version.
+MAKER_MULT = 0.0
 BUCKETS = [(0.0, 0.10), (0.10, 0.30), (0.30, 0.50), (0.50, 0.70), (0.70, 0.90), (0.90, 1.0)]
 MIN_EVENTS = 30
 MIN_NET_C = 1.0
@@ -286,10 +290,14 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--adverse", type=float, default=1.0,
                     help="cents of adverse selection charged to every maker entry")
+    ap.add_argument("--maker-mult", type=float, default=0.0,
+                    help="maker fee multiplier; 0 matches most series, 0.0175 the 160 "
+                         "listed ones (kalshi.com/fee-schedule)")
     ap.add_argument("--max-spread", type=float, default=0.02,
                     help="reject quotes wider than this; posting at the touch in a wide "
                          "market is not a real trade (see tradeable())")
     a = ap.parse_args()
+    globals()["MAKER_MULT"] = a.maker_mult
     run(a.adverse, a.max_spread)
 
 

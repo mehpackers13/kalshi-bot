@@ -1,0 +1,49 @@
+{
+  "updated": "2026-11-11T16:21:52Z",
+  "strategies": {
+    "screened_boosted": {
+      "n_closed": 0,
+      "open": 5,
+      "n_delisted": 0,
+      "win_rate": null,
+      "mean_pnl_pct": null,
+      "median_pnl_pct": null,
+      "ci95_lo": null,
+      "ci95_hi": null,
+      "worst_pnl_pct": null,
+      "best_pnl_pct": null,
+      "verdict": "inconclusive: 0 closed, need 30 before anything is called proven"
+    },
+    "unscreened_control": {
+      "n_closed": 0,
+      "open": 5,
+      "n_delisted": 0,
+      "win_rate": null,
+      "mean_pnl_pct": null,
+      "median_pnl_pct": null,
+      "ci95_lo": null,
+      "ci95_hi": null,
+      "worst_pnl_pct": null,
+      "best_pnl_pct": null,
+      "verdict": "inconclusive: 0 closed, need 30 before anything is called proven"
+    },
+    "momentum_1h": {
+      "n_closed": 0,
+      "open": 1,
+      "n_delisted": 0,
+      "win_rate": null,
+      "mean_pnl_pct": null,
+      "median_pnl_pct": null,
+      "ci95_lo": null,
+      "ci95_hi": null,
+      "worst_pnl_pct": null,
+      "best_pnl_pct": null,
+      "verdict": "inconclusive: 0 closed, need 30 before anything is called proven"
+    }
+  },
+  "notes": [
+    "PAPER ONLY - no money moved, no wallets.",
+    "Nothing is 'proven' under 30 closed trades per strategy.",
+    "unscreened_control exists to show whether the rug screener adds anything: compare screened_boosted vs unscreened_control."
+  ]
+}

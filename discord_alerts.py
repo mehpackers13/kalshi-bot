@@ -137,76 +137,84 @@ def send_drawdown_stop(live_balance: float, peak_balance: float) -> None:
 # ── Morning report ───────────────────────────────────────────────────────────────
 
 def send_morning_report(report: dict) -> None:
-    """Send the daily morning briefing to #bot-health."""
+    """Send the daily morning briefing to #bot-health (audited numbers only)."""
 
-    stats   = report.get("hit_rate_summary", {})
-    br      = report.get("bankroll", {})
-    ai      = report.get("ai_summary", "")
+    stats     = report.get("hit_rate_summary", {})
+    aud       = report.get("audited") or stats.get("audited") or {}
+    acct      = report.get("account") or {}
+    ai        = report.get("ai_summary", "")
     premarket = report.get("premarket_watch", [])
+    positions = report.get("open_positions", [])
+    diag_line = report.get("diag_line", "")
 
-    hit_str = f"{stats.get('hit_rate', '—')}%" if stats.get("hit_rate") else "Not enough data yet"
-    live_bal  = br.get("live",  {}).get("balance", 0.0)
-    paper_bal = br.get("paper", {}).get("balance", config.PAPER_BANKROLL_START)
+    # Audited alert record (each market counted once, never raw-row sums)
+    if aud:
+        net = aud.get("net_units", 0.0)
+        icon = "🟢" if net > 0 else "🔴" if net < 0 else "⚪"
+        hr = aud.get("hit_rate")
+        record = (
+            f"{aud.get('markets_alerted', 0)} distinct markets alerted\n"
+            f"{aud.get('resolved_markets', 0)} resolved, {aud.get('wins', 0)} wins"
+            f" ({hr if hr is not None else '—'}% hit rate)\n"
+            f"{icon} **{net:+.1f} units** (per distinct market, net of fees)"
+        )
+    else:
+        record = "No audited record yet."
 
-    # Category breakdown
-    by_cat = stats.get("by_category", {})
+    # Real account
+    if acct:
+        chg = acct.get("change")
+        acct_str = (f"Cash ${acct.get('cash', 0):.2f} | Positions ${acct.get('positions', 0):.2f}\n"
+                    f"**Total ${acct.get('total', 0):.2f}**"
+                    + (f" ({chg:+.2f} since ${acct.get('initial', 0):.2f} start)" if chg is not None else ""))
+    else:
+        acct_str = "Account not synced."
+
+    # Category breakdown (distinct markets)
     cat_lines = []
-    for cat, d in sorted(by_cat.items(), key=lambda x: -(x[1].get("hit_rate") or 0)):
-        hr = d.get("hit_rate")
-        cat_lines.append(f"• **{cat}**: {d['count']} alerts, {hr}% hit rate" if hr else
-                         f"• **{cat}**: {d['count']} alerts, pending")
-    cat_str = "\n".join(cat_lines) if cat_lines else "No rated alerts yet."
+    for cat, d in sorted((aud.get("by_category") or {}).items(), key=lambda x: -x[1]["markets"]):
+        cat_lines.append(f"• **{cat}**: {d['markets']} markets, {d['wins']} wins, {d['net_units']:+.1f}u")
+    cat_str = "\n".join(cat_lines) or "No resolved markets yet."
 
-    # Premarket watch
     premarket_str = ""
     if premarket:
-        lines = [f"• [{m['ticker']}] {m['title']} — edge {m['edge_pct']:+.1f}%" for m in premarket[:5]]
-        premarket_str = "\n".join(lines)
+        premarket_str = "\n".join(
+            f"• [{m['ticker']}] {m['title']} — edge {m['edge_pct']:+.1f}%" for m in premarket[:5])
 
-    # Unit P&L
-    unit_total = report.get("unit_total", None)
-    if unit_total is not None:
-        u_sign = "+" if unit_total >= 0 else ""
-        unit_str = f"{u_sign}{unit_total:.2f}u"
-        unit_color = "🟢" if unit_total > 0 else "🔴" if unit_total < 0 else "⚪"
-    else:
-        unit_str = "—"
-        unit_color = "⚪"
-
-    # Resolved overnight
     overnight = report.get("resolved_overnight", [])
     if overnight:
-        o_lines = []
-        for r in overnight[:5]:
-            outcome_icon = "✅" if r.get("outcome") == "1" else "❌"
-            o_lines.append(f"{outcome_icon} [{r.get('ticker','')}] {r.get('title','')[:60]}")
-        overnight_str = "\n".join(o_lines)
+        overnight_str = "\n".join(
+            f"{'✅' if r.get('outcome') == '1' else '❌'} [{r.get('ticker','')}] {r.get('title','')[:60]}"
+            for r in overnight[:5])
     else:
         overnight_str = "No markets resolved overnight."
 
     fields = [
-        {"name": f"{unit_color} Kalshi Units",  "value": unit_str,                            "inline": True},
-        {"name": "Overall Hit Rate",            "value": hit_str,                             "inline": True},
-        {"name": "Live Bankroll",               "value": f"${live_bal:.2f}",                  "inline": True},
-        {"name": "Total Alerts",                "value": str(stats.get("total_alerts", 0)),   "inline": True},
-        {"name": "Rated",                       "value": str(stats.get("rated", 0)),          "inline": True},
-        {"name": "Paper Bankroll",              "value": f"${paper_bal:.2f}",                 "inline": True},
-        {"name": "🌙 Resolved Overnight",       "value": overnight_str,                       "inline": False},
-        {"name": "Performance by Category",     "value": cat_str or "—",                      "inline": False},
+        {"name": "💰 Your Kalshi account (real)", "value": acct_str[:1000], "inline": False},
+        {"name": "📋 Alert record (audited)",     "value": record[:1000],   "inline": False},
     ]
-
+    if diag_line:
+        fields.append({"name": "🔎 Why no alerts", "value": diag_line[:1000], "inline": False})
+    if positions:
+        plines = [f"• `{p.get('ticker','')}` {p.get('direction','')} x{p.get('contracts','?')} "
+                  f"— ${float(p.get('current_value', 0) or 0):.2f}" for p in positions[:5]]
+        fields.append({"name": "📌 Open positions — held in your account (not placed by this bot's auto-bettor)",
+                       "value": "\n".join(plines)[:1000], "inline": False})
+    fields += [
+        {"name": "🌙 Resolved Overnight",   "value": overnight_str[:1000], "inline": False},
+        {"name": "Performance by Category", "value": cat_str[:1000],       "inline": False},
+    ]
     if ai:
         fields.append({"name": "🧠 AI Brain — What I Learned", "value": ai[:1000], "inline": False})
-
     if premarket_str:
-        fields.append({"name": "👀 Pre-Market Watch",          "value": premarket_str, "inline": False})
+        fields.append({"name": "👀 Pre-Market Watch", "value": premarket_str[:1000], "inline": False})
 
     embed = {
         "title":       "☀️ Good Morning — Kalshi Bot Daily Briefing",
         "description": f"*{datetime.datetime.utcnow().strftime('%A, %B %d %Y')} UTC*",
         "color":       0x4A90D9,
         "fields":      fields,
-        "footer":      {"text": "kalshi-bot • a week with zero alerts is a success"},
+        "footer":      {"text": "paper = pretend bets, no money moved • a week with zero alerts is a success"},
         "timestamp":   datetime.datetime.utcnow().isoformat() + "Z",
     }
 
@@ -233,6 +241,8 @@ def send_weekly_report(report: dict) -> None:
             {"name": "Paper P&L",       "value": f"${gains.get('paper_pnl', 0):+.2f}", "inline": True},
             {"name": "Best Category",   "value": stats.get("best_category", "—"),  "inline": True},
             {"name": "Worst Category",  "value": stats.get("worst_category", "—"), "inline": True},
+            {"name": "Audited record", "value": (report.get("audited_line") or "—")[:1000], "inline": False},
+            {"name": "Paper rules (week-over-week)", "value": (report.get("paper_delta") or "No paper data yet.")[:1000], "inline": False},
             {"name": "What I Learned",  "value": report.get("learned", "More data needed."), "inline": False},
             {"name": "Next Week Focus", "value": report.get("next_focus", "Continue current approach."), "inline": False},
         ],

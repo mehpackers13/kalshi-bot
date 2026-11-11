@@ -165,6 +165,7 @@ def run_scan(api: KalshiAPI) -> list:
             markets.append(parsed)
 
     log(f"Parsed {len(markets)} valid markets")
+    within_60d = sum(1 for m in markets if m["hours_to_close"] <= config.MAX_HOURS_TO_CLOSE)
 
     # Category breakdown
     cat_counts = {}
@@ -183,7 +184,34 @@ def run_scan(api: KalshiAPI) -> list:
     alerted_today = _alerted_today_set()
     loop_start = time.time()
 
+    # Count modelable markets by wrapping the model call calculate_edge already makes
+    # (avoids a second round of forecast/price network calls).
+    import edge_calculator as _ec
+    _orig_est = _ec.estimate_true_probability
+    _model_hits = {"n": 0}
+
+    def _counting_est(m):
+        p = _orig_est(m)
+        if p is not None:
+            _model_hits["n"] += 1
+        return p
+    _ec.estimate_true_probability = _counting_est
+    gate_fail = {"volume": 0, "prob": 0, "hours": 0, "status": 0}
+    gate_pass = 0
+    modelable = 0
     for market in markets:
+        # Count gate outcomes (same order as edge_calculator._gate_check)
+        if market["dollar_volume"] < config.MIN_VOLUME_DOLLARS:
+            gate_fail["volume"] += 1
+        elif not (config.MIN_IMPLIED_PROB <= market["implied_prob"] <= config.MAX_IMPLIED_PROB):
+            gate_fail["prob"] += 1
+        elif not (config.MIN_HOURS_TO_CLOSE <= market["hours_to_close"] <= config.MAX_HOURS_TO_CLOSE):
+            gate_fail["hours"] += 1
+        elif market["status"] not in ("open", "active"):
+            gate_fail["status"] += 1
+        else:
+            gate_pass += 1
+
         # Skip if already alerted for this market today
         if market["ticker"] in alerted_today:
             continue
@@ -195,6 +223,40 @@ def run_scan(api: KalshiAPI) -> list:
 
     log(f"Checked {checked} markets in {time.time() - loop_start:.1f}s | "
         f"Edges found: {len(edges_found)}")
+
+    _ec.estimate_true_probability = _orig_est
+    modelable = _model_hits["n"]
+
+    # Diagnostics: why (not) alerts
+    try:
+        cat_all = {}
+        for m in markets:
+            c = m.get("category") or "Unknown"
+            cat_all[c] = cat_all.get(c, 0) + 1
+        diag = {"fetched": len(raw_markets), "parsed": len(markets), "by_category": cat_all,
+                "closing_within_60d": within_60d, "gate_fail": gate_fail,
+                "gate_pass": gate_pass, "modelable": modelable, "edges": len(edges_found),
+                "ts": datetime.datetime.utcnow().isoformat()}
+        config.DATA_DIR.mkdir(exist_ok=True)
+        (config.DATA_DIR / "scan_diag.json").write_text(json.dumps(diag, indent=2))
+        top = dict(sorted(cat_all.items(), key=lambda x: -x[1])[:8])
+        log(f"Scan feed: fetched {len(raw_markets)} | parsed {len(markets)} | "
+            f"\u226460d {within_60d} | categories {top} | gate pass {gate_pass} | "
+            f"modelable {modelable} | edges {len(edges_found)}")
+    except Exception as exc:
+        log(f"scan_diag failed: {exc}", "WARN")
+
+    # Paper lab (written by another module; must never break the scan)
+    try:
+        import paper_lab
+        entries = [{"ticker": e.ticker, "side": e.direction, "category": e.category,
+                    "model_prob": e.true_prob,
+                    "notes": f"edge {e.edge_pct:+.1f} conf {e.confidence}"}
+                   for e in edges_found]
+        paper_lab.record_external("model_edge", entries)
+        paper_lab.run(api, markets)
+    except Exception as exc:
+        log(f"paper_lab non-fatal: {exc}", "WARN")
 
     # Alert and log
     alerted = []
@@ -231,13 +293,6 @@ def run_scan(api: KalshiAPI) -> list:
                     log(f"Parlay candidate skipped — reason={r.get('reason')}", "DEBUG")
     except Exception as exc:
         log(f"parlay pass non-fatal: {exc}", "WARN")
-
-    # ── Weather-tail paper test (never trades; see weather_tail.py) ───────────
-    try:
-        import weather_tail
-        weather_tail.run(api, markets)
-    except Exception as exc:
-        log(f"weather-tail pass non-fatal: {exc}", "WARN")
 
     log("=" * 60)
     return alerted

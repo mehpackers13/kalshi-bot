@@ -167,16 +167,59 @@ def _rewrite(rows: list) -> None:
             w.writerow(row)
 
 
+def distinct_resolved(rows: list) -> list:
+    """One rated row per ticker (the first alert). The scanner re-logs an open
+    market daily, so raw rows overcount."""
+    first = {}
+    for r in rows:
+        if r.get("outcome") in ("0", "1"):
+            first.setdefault(r.get("ticker"), r)
+    return list(first.values())
+
+
+def _row_return(r: dict) -> float:
+    return realized_return(r.get("direction"), r.get("implied_prob"), r.get("outcome") == "1")
+
+
+def unit_total_distinct(rows: list) -> float:
+    """Net units: 1-unit stake per distinct resolved market, priced on the side
+    bet, net of Kalshi taker fees. Recomputed (stored units_pl is not used)."""
+    return round(sum(_row_return(r) for r in distinct_resolved(rows)), 3)
+
+
+def audited_record(rows: list) -> dict:
+    """Honest record: every market counted once."""
+    resolved = distinct_resolved(rows)
+    wins = sum(1 for r in resolved if r.get("outcome") == "1")
+    by_cat = {}
+    for r in resolved:
+        c = r.get("category") or "Unknown"
+        d = by_cat.setdefault(c, {"markets": 0, "wins": 0, "net_units": 0.0})
+        d["markets"] += 1
+        d["wins"] += 1 if r.get("outcome") == "1" else 0
+        d["net_units"] += _row_return(r)
+    for d in by_cat.values():
+        d["net_units"] = round(d["net_units"], 3)
+    return {
+        "markets_alerted": len({r.get("ticker") for r in rows if r.get("ticker")}),
+        "raw_rows": len(rows),
+        "resolved_markets": len(resolved),
+        "wins": wins,
+        "hit_rate": round(wins / len(resolved) * 100, 1) if resolved else None,
+        "net_units": unit_total_distinct(rows),
+        "by_category": by_cat,
+    }
+
+
 def hit_rate_summary() -> dict:
-    """
-    Calculate hit rate overall and by category/edge bucket.
-    Returns a summary dict for the morning report.
-    """
+    """Hit rate overall and by category/edge bucket, counting each market once."""
     rows = read_all()
-    rated = [r for r in rows if r.get("outcome") in ("0", "1")]
+    rated = distinct_resolved(rows)
+    audited = audited_record(rows)
+    total = audited["markets_alerted"]
     if not rated:
-        return {"total_alerts": len(rows), "rated": 0, "hit_rate": None,
-                "by_category": {}, "by_edge_bucket": {}}
+        return {"total_alerts": total, "rated": 0, "hit_rate": None,
+                "by_category": {}, "by_edge_bucket": {}, "audited": audited}
 
     def _rate(subset):
         if not subset:
@@ -184,14 +227,11 @@ def hit_rate_summary() -> dict:
         hits = sum(1 for r in subset if r.get("outcome") == "1")
         return round(hits / len(subset) * 100, 1)
 
-    # By category
-    categories = set(r.get("category", "") for r in rated)
     by_cat = {}
-    for cat in categories:
+    for cat in set(r.get("category", "") for r in rated):
         sub = [r for r in rated if r.get("category") == cat]
         by_cat[cat] = {"count": len(sub), "hit_rate": _rate(sub)}
 
-    # By edge bucket
     def _bucket(r):
         try:
             e = abs(float(r.get("edge_pct", 0)))
@@ -203,15 +243,14 @@ def hit_rate_summary() -> dict:
 
     buckets = {}
     for r in rated:
-        b = _bucket(r)
-        buckets.setdefault(b, []).append(r)
-    by_bucket = {b: {"count": len(sub), "hit_rate": _rate(sub)}
-                 for b, sub in buckets.items()}
+        buckets.setdefault(_bucket(r), []).append(r)
+    by_bucket = {b: {"count": len(sub), "hit_rate": _rate(sub)} for b, sub in buckets.items()}
 
     return {
-        "total_alerts": len(rows),
+        "total_alerts": total,
         "rated":        len(rated),
         "hit_rate":     _rate(rated),
         "by_category":  by_cat,
         "by_edge_bucket": by_bucket,
+        "audited":      audited,
     }

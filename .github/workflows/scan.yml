@@ -59,8 +59,8 @@ jobs:
         run: |
           git config user.name  "kalshi-bot[actions]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          # Stage any newly created untracked files (positions.json, etc.)
-          for f in data/positions.json data/weather_tail_log.csv; do
+          # Stage every data file, including newly created untracked ones
+          for f in data/*.csv data/*.json data/*.log docs/data.json; do
             if [ -f "$f" ]; then git add "$f"; fi
           done
           git status --short

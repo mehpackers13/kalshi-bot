@@ -16,6 +16,26 @@ from discord_alerts import send_morning_report
 from logger import log
 
 
+def _account_snapshot(bankroll: dict) -> tuple:
+    """(account dict, open positions list) from data/bankroll.json + data/positions.json."""
+    import json
+    live = (bankroll or {}).get("live", {})
+    positions = []
+    try:
+        p = config.BASE_DIR / "data" / "positions.json"
+        if p.exists():
+            positions = json.loads(p.read_text())
+    except Exception:
+        positions = []
+    pos_val = round(sum(float(x.get("current_value", 0) or 0) for x in positions), 2)
+    cash = float(live.get("cash", live.get("balance", 0)) or 0)
+    total = round(cash + pos_val, 2) if (cash or pos_val) else round(float(live.get("balance", 0) or 0), 2)
+    initial = live.get("initial_balance")
+    change = round(total - float(initial), 2) if initial else None
+    return ({"cash": cash, "positions": pos_val, "total": total,
+             "initial": float(initial) if initial else None, "change": change}, positions)
+
+
 def run(api) -> None:
     log("=" * 60)
     log("Morning report starting")
@@ -44,15 +64,18 @@ def run(api) -> None:
     # Bankroll
     bankroll = load_bankroll()
 
-    # Calculate unit total
-    from outcomes import read_all as _read_all
+    # Audited numbers: each market counted once, net of fees (never raw-row sums)
+    from outcomes import read_all as _read_all, audited_record
     all_outcomes = _read_all()
-    unit_size = load_bankroll()["live"].get("peak", 10.0) * 0.01
-    unit_total = sum(
-        float(r.get("units_pl") or 0)
-        for r in all_outcomes if r.get("outcome") in ("0", "1")
-    )
-    unit_total = round(unit_total, 3)
+    audited = audited_record(all_outcomes)
+    unit_total = audited["net_units"]
+
+    # Real account: cash / positions / total vs initial_balance
+    account, open_positions = _account_snapshot(bankroll)
+
+    # Why-no-alerts line from scanner diagnostics
+    import scoreboard
+    diag_line = scoreboard.diag_line(scoreboard._load("scan_diag.json", {}))
 
     # Count what resolved overnight (last 8h)
     from datetime import timezone as _tz
@@ -92,11 +115,19 @@ def run(api) -> None:
         "premarket_watch":    premarket,
         "bankroll":           bankroll,
         "unit_total":         unit_total,
+        "audited":            audited,
+        "account":            account,
+        "open_positions":     open_positions,
+        "diag_line":          diag_line,
         "resolved_overnight": resolved_overnight,
         "bets_today":         bets_today,
     }
 
     send_morning_report(report)
+    try:
+        scoreboard.post_daily()
+    except Exception as exc:
+        log(f"Scoreboard post failed (non-fatal): {exc}", "WARN")
     log("Morning report complete")
     log("=" * 60)
 
@@ -109,10 +140,12 @@ def run_weekly_review(api) -> None:
     log("Running weekly review")
     rows   = read_all()
     stats  = hit_rate_summary()
+    aud    = stats.get("audited", {})
 
     # Filter to this week
     week_start = (datetime.datetime.utcnow() - datetime.timedelta(days=7)).isoformat()
     this_week  = [r for r in rows if r.get("timestamp", "") >= week_start]
+    new_markets = len({r.get("ticker") for r in this_week})
 
     # Best/worst category
     by_cat = stats.get("by_category", {})
@@ -126,7 +159,8 @@ def run_weekly_review(api) -> None:
 
     learned = (
         "Still accumulating data." if len(rows) < 20 else
-        f"Hit rate is {stats.get('hit_rate','?')}% across {stats['rated']} rated alerts. "
+        f"Hit rate is {stats.get('hit_rate','?')}% across {stats['rated']} resolved markets "
+        f"({aud.get('net_units', 0):+.1f} units net of fees). "
         f"Best performing category: {best_cat}. "
         f"{'Models appear well-calibrated.' if (stats.get('hit_rate') or 0) >= 55 else 'Models need recalibration — reviewing confidence multipliers.'}"
     )
@@ -134,7 +168,7 @@ def run_weekly_review(api) -> None:
     report = {
         "stats": {
             "hit_rate":         stats.get("hit_rate"),
-            "alerts_this_week": len(this_week),
+            "alerts_this_week": new_markets,
             "best_category":    best_cat,
             "worst_category":   worst_cat,
         },
@@ -144,8 +178,11 @@ def run_weekly_review(api) -> None:
         },
         "summary": (
             f"Week ending {datetime.datetime.utcnow().strftime('%B %d, %Y')}. "
-            f"{len(this_week)} alerts fired this week."
+            f"{new_markets} distinct markets alerted this week ({len(this_week)} raw rows)."
         ),
+        "audited_line": (f"{aud.get('markets_alerted', 0)} markets alerted, {aud.get('resolved_markets', 0)} resolved, "
+                         f"{aud.get('wins', 0)} wins, {aud.get('net_units', 0):+.1f}u (per distinct market, net of fees)"),
+        "paper_delta":  _paper_delta(),
         "learned":     learned,
         "next_focus":  (
             f"Continue monitoring {best_cat} markets. "
@@ -157,3 +194,33 @@ def run_weekly_review(api) -> None:
 
     send_weekly_report(report)
     log("Weekly review sent")
+
+
+def _paper_delta() -> str:
+    """Week-over-week change per paper rule, from paper_summary.json (old_c/new_c are
+    the net cents in the older vs newer half; prev snapshot kept in data/paper_week_prev.json)."""
+    import json
+    import scoreboard
+    cur = scoreboard._load("paper_summary.json", {})
+    prev_path = config.BASE_DIR / "data" / "paper_week_prev.json"
+    try:
+        prev = json.loads(prev_path.read_text()) if prev_path.exists() else {}
+    except Exception:
+        prev = {}
+    if not cur:
+        return "No paper data yet."
+    lines = []
+    for name, d in sorted(cur.items()):
+        p = prev.get(name, {})
+        de = (d.get("events") or 0) - (p.get("events") or 0)
+        dn = None
+        if d.get("net_c") is not None and p.get("net_c") is not None:
+            dn = d["net_c"] - p["net_c"]
+        lines.append(f"{name} [{d.get('status')}]: {d.get('events', 0)} events ({de:+d}), net "
+                     f"{scoreboard._fmt(d.get('net_c'))}c" + (f" ({dn:+.1f}c vs last week)" if dn is not None else ""))
+    try:
+        prev_path.write_text(json.dumps({k: {"events": v.get("events"), "net_c": v.get("net_c")}
+                                         for k, v in cur.items()}))
+    except Exception:
+        pass
+    return "\n".join(lines)

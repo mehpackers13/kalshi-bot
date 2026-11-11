@@ -276,6 +276,9 @@ def cut_losing_positions(api) -> list:
     """
     if config.DRY_RUN:
         return []
+    if not getattr(config, "ORDERS_ENABLED", False):
+        log("cut_losing_positions disabled (ORDERS_ENABLED=False)")
+        return []
 
     # Build lookup: ticker → {price_cents, direction} from bets_placed.csv
     entry_info: dict = {}
@@ -375,10 +378,11 @@ def cut_losing_positions(api) -> list:
             "WARN",
         )
         try:
-            result   = api.sell_position(
-                ticker=ticker, side=sell_side, count=n, yes_price=sell_yes_price
+            result   = api.place_order_v2(
+                ticker, "sell", sell_side, n,
+                sell_yes_price if sell_side == "yes" else 100 - sell_yes_price,
             )
-            order_id = result.get("order", {}).get("order_id", "?")
+            order_id = (result.get("order") or result).get("order_id", "?")
             log(f"{label} ✅ {ticker}: sold {n}ct @ {current_cents}¢ | order={order_id}")
             if not take_profit:
                 _send_cut_loss_notification(
@@ -526,13 +530,11 @@ def place_auto_bet(api, edge: EdgeResult) -> dict:
 
     if not dry_run:
         try:
-            result   = api.place_order(
-                ticker    = edge.ticker,
-                side      = side,
-                count     = contracts,
-                yes_price = yes_price,
+            result   = api.place_order_v2(
+                edge.ticker, "buy", side, contracts,
+                yes_price if side == "yes" else 100 - yes_price,
             )
-            order    = result.get("order", {})
+            order    = result.get("order") or result
             order_id = order.get("order_id", "")
             status   = order.get("status", "submitted")
             log(
@@ -614,6 +616,9 @@ def cleanup_stale_positions(api) -> list:
     Dry-run by default (config.STALE_POSITION_SELL_LIVE = False) — logs
     what WOULD be sold without placing orders. Flip to True to execute.
     """
+    if not getattr(config, "ORDERS_ENABLED", False):
+        log("cleanup_stale_positions disabled (ORDERS_ENABLED=False)")
+        return []
     try:
         positions = api.get_portfolio_positions() or []
     except Exception as exc:
@@ -670,9 +675,10 @@ def cleanup_stale_positions(api) -> list:
             continue
 
         try:
-            result = api.sell_position(ticker=ticker, side=sell_side,
-                                        count=n, yes_price=sell_yes_price)
-            order_id = (result.get("order") or {}).get("order_id", "?")
+            result = api.place_order_v2(
+                ticker, "sell", sell_side, n,
+                sell_yes_price if sell_side == "yes" else 100 - sell_yes_price)
+            order_id = (result.get("order") or result).get("order_id", "?")
             log(f"STALE SOLD ✅ {ticker} {direction} {n}ct @ {current_cents}¢ "
                 f"≈ ${est_proceeds:.2f} freed (expires in {days_left:.0f}d) | order={order_id}")
             stale.append({"ticker": ticker, "action": "sold",

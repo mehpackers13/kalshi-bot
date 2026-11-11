@@ -23,6 +23,7 @@ jobs:
   # ── Job 1: Run weekly review. No git operations here. ─────────────────────
   weekly:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -65,6 +66,7 @@ jobs:
   commit:
     needs: weekly
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -87,7 +89,12 @@ jobs:
         run: |
           git config user.name  "kalshi-bot[actions]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add bot.log data/ docs/data.json 2>/dev/null || true
+          for f in bot.log ; do
+            if [ -f "$f" ]; then git add "$f"; fi
+          done
+          for f in data/*.csv data/*.json data/*.log docs/data.json; do
+            if [ -f "$f" ]; then git add "$f"; fi
+          done
           git diff --staged --quiet && echo "Nothing to commit." && exit 0
           git commit -m "📅 weekly-review $(date -u '+%Y-%m-%d')"
           for attempt in 1 2 3; do

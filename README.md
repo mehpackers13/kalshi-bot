@@ -14,6 +14,44 @@ A self-improving Kalshi prediction market trading bot. Disciplined, selective, a
 - Optional Claude AI brain for pattern analysis (needs ANTHROPIC_API_KEY)
 - Weekly Sunday review sent to Discord
 
+## What this bot does right now
+
+**Short version: it is paper-trading only. No money moves.** The bot watches Kalshi, writes down
+"pretend bets" under several different rules, and tracks how each rule would have done. Your real
+Kalshi account (cash plus the 5 long-dated positions) is not touched by any of this.
+
+- **Alerts** are model-based suggestions sent to `#kalshi-signals`. They are dry-run: nothing is placed.
+  The morning report counts each market once (not once per daily re-alert), net of Kalshi fees.
+  The audited record is 26 wins out of 76 resolved markets, roughly -38 units.
+- **Paper rules** each pick markets by a simple idea (for example weather tails, sportsbook-vs-Kalshi gaps).
+  Every pretend entry pays the real ask (or 1 minus the bid for NO) plus the taker fee, so the results
+  include the cost of the spread.
+- **Crypto paper** runs the same idea on on-chain/DEX data, also pretend only.
+- **Lab candidates** come from the weekly backtest. They are in-sample only: they looked good on past
+  data and have not been tested going forward, so they are not proof of anything.
+
+### How to read the scoreboard (daily, in `#bot-health`)
+
+| Column | Meaning |
+|---|---|
+| status | `active` = still being tested, `candidate` = passed the gate, `killed` = switched off |
+| ev (settled/events) | settled pretend bets / distinct events. Several strikes on one event count as one |
+| net¢ | average profit per event in cents, after fees. Positive is good |
+| 95% CI | the plausible range for that average. If it is entirely above 0, the result is unlikely to be luck |
+| CLV¢ | closing-line value: did we buy at a better price than where the market ended up? Positive means a real edge in timing |
+| open | pretend bets not yet settled |
+
+**Candidate** means: at least 30 events, average at least +1¢, the confidence interval's low end above 0,
+and both halves of the history positive. **Killed** means the rule lost too convincingly to keep
+(30+ events with the interval's top below 0, or 60+ events with negative net and negative CLV).
+Nothing is called proven with fewer than 30 events.
+
+### How a rule would reach real money
+
+1. 30 or more events, net at least +1¢, 95% interval above 0, and both halves of the history positive.
+2. It shows up as a **candidate** on the scoreboard and in `#kalshi-signals`.
+3. Then it is Mike's decision. The bot never promotes a rule to real money on its own.
+
 ## Quick Start
 
 ### 1. Add GitHub Secrets

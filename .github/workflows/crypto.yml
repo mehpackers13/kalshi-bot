@@ -1,0 +1,58 @@
+name: Crypto Paper Lab
+
+# Hourly PAPER-ONLY memecoin lab (DexScreener + RugCheck, no keys, no wallets).
+# Own concurrency group so it never blocks the 30-minute Kalshi scans.
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: kalshi-crypto
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  crypto:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run crypto paper lab
+        run: python crypto_lab.py
+
+      - name: Commit and push
+        if: always()
+        run: |
+          git config user.name  "kalshi-bot[actions]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for f in data/crypto_paper.csv data/crypto_summary.json; do
+            if [ -f "$f" ]; then git add "$f"; fi
+          done
+          git status --short
+          git diff --cached --quiet && echo "Nothing to commit." && exit 0
+          git commit -m "crypto paper lab $(date -u '+%Y-%m-%d %H:%M UTC')"
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git rebase -X ours origin/main && git push && echo "Push succeeded on attempt $attempt." && break
+            echo "Push attempt $attempt failed — retrying in 15s..."
+            git rebase --abort 2>/dev/null || true
+            sleep 15
+          done

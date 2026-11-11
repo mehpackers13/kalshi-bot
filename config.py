@@ -36,7 +36,10 @@ MAX_HOURS_TO_CLOSE    = 60 * 24  # skip markets > 60 days out (bad capital use)
 # Positions held with >STALE_DAYS until expiry are selling targets — their
 # money is locked unproductively. Default OFF (dry-run); flip to True to
 # actually dump at bid.
-STALE_POSITION_SELL_LIVE = True
+# OFF (2026-11-11): the 5 open positions (KXSOLMAXY, KXBTCMAXY, KXTESLASEMI...)
+# are Mike's own bets, not the bot's to sell; the daily sell attempt only
+# stopped because Kalshi returned HTTP 410 on the deprecated v1 endpoint.
+STALE_POSITION_SELL_LIVE = False
 STALE_DAYS            = 30       # sell positions whose close_time is this far out
 # 30 matches the preference for same-month resolution; aligns with the
 # 60-day MAX_HOURS_TO_CLOSE scanner gate so the policy is end-to-end:
@@ -62,7 +65,10 @@ CUT_LOSS_MIN_HOURS    = 48.0     # only cut losses when >48h remain (let near-ex
 # ── Auto-Betting Engine ─────────────────────────────────────────────────────────
 # Set DRY_RUN = True to log what the bot WOULD bet without placing real orders.
 # Flip to False to go live.  Default: True (safe first-run mode).
-DRY_RUN               = False
+DRY_RUN               = True   # forced True 2026-11-11: no real money moves in this build
+# MASTER SWITCH: while False, no HTTP order call may be sent (place_order_v2
+# raises before touching the network). v1 /portfolio/orders returns 410.
+ORDERS_ENABLED        = False
 MAX_AUTO_BETS_PER_HOUR = 3        # rate limit — prevents runaway loops
 
 # ── Live-betting whitelist ────────────────────────────────────────────────────
@@ -116,6 +122,12 @@ MODELABLE_CATEGORIES = {
     "Economics",       # CPI, Fed rate, unemployment, GDP
     "Weather",         # temperature / precipitation (climatological base rates)
 }
+
+# Scan feed window (close-time query on /markets). The old /events feed
+# returned almost nothing closing within 60 days -> 0 edges since 2026-10-28.
+SCAN_MIN_HOURS = 2     # skip markets closing sooner than this (matches MIN_HOURS_TO_CLOSE)
+SCAN_MAX_DAYS  = 60    # skip markets closing later than this (matches MAX_HOURS_TO_CLOSE)
+SCAN_MAX_PAGES = 80    # 1000 markets/page; 40k+ markets seen in window, cap runaway paging
 
 # ── Kalshi API ──────────────────────────────────────────────────────────────────
 KALSHI_BASE_URL = "https://api.elections.kalshi.com/trade-api/v2"

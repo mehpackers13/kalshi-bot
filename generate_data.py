@@ -151,28 +151,32 @@ def read_open_positions():
 
 
 def distinct_resolved(outcomes):
-    """
-    One row per market (its first alert). The scanner re-logs an open market
-    once per day, so raw rows overcount — 456 resolved rows were 72 markets.
-    """
-    first = {}
-    for r in outcomes:
-        if r.get("outcome") in ("0", "1"):
-            first.setdefault(r.get("ticker"), r)
-    return list(first.values())
+    """One row per market (its first alert) - see outcomes.distinct_resolved."""
+    from outcomes import distinct_resolved as _d
+    return _d(outcomes)
 
 
 def calc_unit_total(outcomes):
-    """
-    Units won/lost, one 1-unit stake per distinct resolved market, priced on
-    the side actually bet and net of Kalshi fees. Always recomputed — stored
-    units_pl values on older rows came from the buggy YES-side formula.
-    """
-    from outcomes import realized_return
-    total = 0.0
-    for r in distinct_resolved(outcomes):
-        total += realized_return(r.get("direction"), r.get("implied_prob"), r["outcome"] == "1")
-    return round(total, 3)
+    """Net units, 1-unit stake per distinct resolved market, net of fees."""
+    from outcomes import unit_total_distinct
+    return unit_total_distinct(outcomes)
+
+
+def read_json(name, default):
+    path = DATA / name
+    if not path.exists():
+        return default
+    try:
+        return json.loads(path.read_text())
+    except Exception:
+        return default
+
+
+def read_paper_events(n=20):
+    path = DATA / "paper_events.log"
+    if not path.exists():
+        return []
+    return [l for l in path.read_text().splitlines() if l.strip()][-n:]
 
 
 def read_today_outcomes(outcomes):
@@ -188,6 +192,9 @@ def read_today_outcomes(outcomes):
         except Exception:
             pass
     return list(reversed(today))
+
+
+from outcomes import audited_record  # noqa: E402
 
 
 def main():
@@ -241,6 +248,11 @@ def main():
         "model_confidence": models.get("category_confidence", {}),
         "bets_placed":     bets_placed,
         "open_positions":  open_positions,
+        "audited":         audited_record(outcomes),
+        "paper_rules":     read_json("paper_summary.json", {}),
+        "crypto":          read_json("crypto_summary.json", {}),
+        "scan_diag":       read_json("scan_diag.json", {}),
+        "paper_events":    read_paper_events(20),
         "dry_run":         False,
     }
 

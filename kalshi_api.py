@@ -18,6 +18,8 @@ Docs: https://docs.kalshi.com/getting_started/api_keys
 """
 
 import base64
+import json
+import os
 import time
 import datetime
 from typing import Optional
@@ -113,26 +115,56 @@ class KalshiAPI:
             )
         return resp.json()
 
-    def place_order(self, ticker: str, side: str, count: int,
-                    yes_price: int) -> dict:
-        """
-        Place a limit order on Kalshi.
-          side:      "yes" or "no"
-          yes_price: price of the YES side in cents (1–99)
-          count:     number of contracts to buy
-        Returns the full API response dict including order_id.
+    @staticmethod
+    def build_order_v2_payload(ticker: str, action: str, side: str, count: int,
+                               price_cents: int, time_in_force: str = "immediate_or_cancel",
+                               post_only: bool = False, client_order_id: str = None) -> dict:
+        """Pure mapping to the V2 body (no network). Book is YES-only:
+          (buy,yes,p)->bid@p  (buy,no,q)->ask@1-q  (sell,yes,p)->ask@p  (sell,no,q)->bid@1-q
         """
         import uuid
-        payload = {
-            "ticker":          ticker,
-            "side":            side,
-            "action":          "buy",
-            "count":           count,
-            "type":            "limit",
-            "yes_price":       yes_price,
-            "client_order_id": str(uuid.uuid4()),
+        action, side = action.lower(), side.lower()
+        if action not in ("buy", "sell") or side not in ("yes", "no"):
+            raise ValueError(f"bad action/side: {action}/{side}")
+        price_cents = int(price_cents)
+        if not 1 <= price_cents <= 99:
+            raise ValueError(f"price_cents out of range: {price_cents}")
+        if int(count) < 1:
+            raise ValueError("count must be >= 1")
+        if (action, side) in (("buy", "yes"), ("sell", "no")):
+            book_side = "bid"
+        else:
+            book_side = "ask"
+        yes_cents = price_cents if side == "yes" else 100 - price_cents
+        body = {
+            "ticker":        ticker,
+            "side":          book_side,
+            "count":         str(int(count)),
+            "price":         "%.2f" % (yes_cents / 100.0),
+            "time_in_force": time_in_force,
+            "self_trade_prevention_type": "taker_at_cross",
+            "client_order_id": client_order_id or str(uuid.uuid4()),
         }
-        return self._post("/portfolio/orders", payload)
+        if post_only:
+            body["post_only"] = True
+        return body
+
+    def place_order_v2(self, ticker: str, action: str, side: str, count: int,
+                       price_cents: int, time_in_force: str = "immediate_or_cancel",
+                       post_only: bool = False) -> dict:
+        """V2 order (POST /portfolio/events/orders). price_cents is the price of
+        the leg being traded (the NO price for side='no')."""
+        if not getattr(config, "ORDERS_ENABLED", False):
+            raise RuntimeError("orders disabled by config.ORDERS_ENABLED")
+        payload = self.build_order_v2_payload(ticker, action, side, count,
+                                              price_cents, time_in_force, post_only)
+        return self._post("/portfolio/events/orders", payload)
+
+    def place_order(self, ticker: str, side: str, count: int,
+                    yes_price: int) -> dict:
+        """Legacy signature: buy `side`; yes_price is the YES-side price in cents."""
+        px = yes_price if side.lower() == "yes" else 100 - yes_price
+        return self.place_order_v2(ticker, "buy", side, count, px)
 
     def create_combo_market(self, collection_ticker: str, legs: list) -> dict:
         """
@@ -222,13 +254,27 @@ class KalshiAPI:
                     return resp.json()
                 if resp.status_code == 429:
                     continue
-                log(f"API GET {path} → HTTP {resp.status_code}", "WARN")
+                self._warn_once(path, f"API GET {path} → HTTP {resp.status_code}")
                 return None
             except Exception as exc:
-                log(f"API GET {path} error: {exc}", "WARN")
+                self._warn_once(path, f"API GET {path} error: {exc}")
                 return None
-        log(f"API GET {path} → still rate-limited after retries", "WARN")
+        self._warn_once(path, f"API GET {path} → still rate-limited after retries")
         return None
+
+    _warned_paths: set = set()
+
+    @classmethod
+    def _warn_once(cls, path: str, msg: str) -> None:
+        """Log a repeated GET failure at most once per path per scan."""
+        if path in cls._warned_paths:
+            return
+        cls._warned_paths.add(path)
+        log(msg, "WARN")
+
+    @classmethod
+    def reset_warnings(cls) -> None:
+        cls._warned_paths.clear()
 
     # ── Authentication check ──────────────────────────────────────────────────────
 
@@ -312,7 +358,105 @@ class KalshiAPI:
         data = self._get("/markets", params=params)
         return data or {"markets": [], "cursor": None}
 
+    # ── Series -> category map ───────────────────────────────────────────────────
+
+    _SERIES_CATS_FILE = config.DATA_DIR / "series_categories.json"
+    _SERIES_TTL = 24 * 3600
+    _series_cat_cache: dict = {}
+    CATEGORY_LIST = ["Sports", "Crypto", "Financials", "Climate and Weather",
+                     "Economics", "Commodities", "Companies", "Politics",
+                     "Entertainment", "Elections", "Science and Technology",
+                     "Health", "World", "Mentions"]
+
+    def get_series_categories(self) -> dict:
+        """series_ticker -> category. GET /series (no params) returns every
+        series in one page (~16k, ~20MB); falls back to per-category calls.
+        Cached in-process and in data/series_categories.json for 24h."""
+        cls = KalshiAPI
+        if cls._series_cat_cache:
+            return cls._series_cat_cache
+        try:
+            if cls._SERIES_CATS_FILE.exists():
+                blob = json.loads(cls._SERIES_CATS_FILE.read_text())
+                if time.time() - float(blob.get("ts", 0)) < cls._SERIES_TTL and blob.get("map"):
+                    cls._series_cat_cache = blob["map"]
+                    return cls._series_cat_cache
+        except Exception as exc:
+            log(f"series_categories cache read failed: {exc}", "WARN")
+
+        mapping = {}
+        data = self._get("/series", timeout=60)
+        rows = (data or {}).get("series") or []
+        for r in rows:
+            if r.get("ticker") and r.get("category"):
+                mapping[r["ticker"]] = r["category"]
+        if len(mapping) < 500:   # unfiltered call did not return the universe
+            log("GET /series (no params) gave %d rows; falling back to per-category" % len(mapping), "WARN")
+            for cat in cls.CATEGORY_LIST:
+                d = self._get("/series", params={"category": cat}, timeout=60)
+                for r in (d or {}).get("series") or []:
+                    if r.get("ticker"):
+                        mapping[r["ticker"]] = r.get("category") or cat
+                time.sleep(0.2)
+        if mapping:
+            cls._series_cat_cache = mapping
+            try:
+                cls._SERIES_CATS_FILE.parent.mkdir(exist_ok=True)
+                cls._SERIES_CATS_FILE.write_text(json.dumps({"ts": time.time(), "map": mapping},
+                                                            separators=(",", ":")))
+            except Exception as exc:
+                log(f"series_categories cache write failed: {exc}", "WARN")
+        return mapping
+
     def get_all_open_markets(self) -> list:
+        """Open markets closing between SCAN_MIN_HOURS and SCAN_MAX_DAYS, via the
+        /markets close-time window. Skips KXMVE combos, attaches category from the
+        series map. Falls back to the events feed if fewer than 500 come back."""
+        KalshiAPI.reset_warnings()
+        cats = self.get_series_categories()
+        now = int(time.time())
+        lo = now + int(config.SCAN_MIN_HOURS * 3600)
+        hi = now + int(config.SCAN_MAX_DAYS * 86400)
+        # /markets pages come back newest-close-first, so one big window hits the
+        # page cap before reaching the near-dated (liquid) markets. Slice the
+        # window and fetch near slices first; the far end is what gets truncated.
+        edges = [lo] + [now + int(h * 3600) for h in (24, 72, 168, 336, 720)] + [hi]
+        edges = sorted(set(e for e in edges if lo <= e <= hi))
+        out, pages, seen = [], 0, set()
+        for i in range(len(edges) - 1):
+            cursor = None
+            while pages < config.SCAN_MAX_PAGES:
+                params = {"status": "open", "limit": 1000,
+                          "min_close_ts": edges[i], "max_close_ts": edges[i + 1],
+                          "mve_filter": "exclude"}
+                if cursor:
+                    params["cursor"] = cursor
+                data = self._get("/markets", params=params, timeout=60)
+                if not data:
+                    break
+                pages += 1
+                for m in data.get("markets", []) or []:
+                    t = m.get("ticker", "")
+                    if t.startswith("KXMVE") or t in seen:
+                        continue
+                    seen.add(t)
+                    if not m.get("category"):
+                        m["category"] = cats.get(t.split("-")[0], "")
+                    out.append(m)
+                cursor = data.get("cursor")
+                if not cursor:
+                    break
+                time.sleep(0.3)
+            if pages >= config.SCAN_MAX_PAGES:
+                log("SCAN_MAX_PAGES reached; far-dated markets truncated", "WARN")
+                break
+        log(f"Fetched {len(out)} open markets via close-window feed across {pages} pages")
+        if len(out) < 500:
+            log(f"close-window feed returned only {len(out)} markets; falling back to events feed", "WARN")
+            return self.get_all_open_markets_events()
+        return out
+
+    def get_all_open_markets_events(self) -> list:
         """
         Fetch all real prediction markets via the /events endpoint.
         The /markets endpoint returns only KXMVE parlay markets (zero liquidity).
@@ -496,23 +640,9 @@ class KalshiAPI:
 
     def sell_position(self, ticker: str, side: str, count: int,
                       yes_price: int) -> dict:
-        """
-        Sell an open position via a limit order.
-          side:      "yes" or "no" (the side you hold)
-          yes_price: limit price expressed as the YES side price (1–99 cents)
-          count:     number of contracts to sell
-        """
-        import uuid
-        payload = {
-            "ticker":          ticker,
-            "side":            side,
-            "action":          "sell",
-            "count":           count,
-            "type":            "limit",
-            "yes_price":       yes_price,
-            "client_order_id": str(uuid.uuid4()),
-        }
-        return self._post("/portfolio/orders", payload)
+        """Legacy signature: sell held `side`; yes_price is the YES-side price in cents."""
+        px = yes_price if side.lower() == "yes" else 100 - yes_price
+        return self.place_order_v2(ticker, "sell", side, count, px)
 
 
 # ── Market parser ─────────────────────────────────────────────────────────────────
@@ -590,7 +720,21 @@ def parse_market(raw: dict) -> Optional[dict]:
         if hours_to_close < 0:
             return None
 
+        last_price = 0
+        try:
+            if raw.get("last_price_dollars") not in (None, ""):
+                last_price = int(round(float(raw["last_price_dollars"]) * 100))
+            elif raw.get("last_price") not in (None, ""):
+                last_price = int(round(float(raw["last_price"])))
+        except Exception:
+            last_price = 0
+        segs = ticker.split("-")
+        event = raw.get("event_ticker") or "-".join(segs[:2])
+
         return {
+            "series":          segs[0],
+            "event":           event,
+            "last_price":      last_price,
             "ticker":          ticker,
             "title":           title,
             "subtitle":        subtitle,

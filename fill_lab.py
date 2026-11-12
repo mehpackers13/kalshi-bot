@@ -48,6 +48,7 @@ import strategy_lab as lab
 
 RESULTS = config.DATA_DIR / "fill_results.json"
 REPORT = config.DATA_DIR / "FILL_REPORT.md"
+PARTIAL = config.DATA_DIR / "fill_partial.json"   # rewritten every 100 markets, see run()
 
 WINDOW_START_H = 36      # same entry window as the lab
 WINDOW_END_H = 3
@@ -145,6 +146,17 @@ def run(limit, side, maker_mult):
             el = time.time() - t0
             print(f"  {i}/{len(items)}  filled {len(filled)} unfilled {len(unfilled)} "
                   f"no-trades {nodata} err {err}  {i/el:.1f}/s", flush=True)
+            # Checkpoint. Kalshi throttles /markets/trades hard enough that 3000 markets
+            # can take hours, and a run that only writes its answer at the end throws
+            # away everything if it is interrupted. Partial numbers are still usable.
+            s = summarise(filled, "would have filled")
+            a = summarise(allm, "all markets (maker_lab's assumption)")
+            PARTIAL.write_text(json.dumps(
+                {"progress": f"{i}/{len(items)}", "side": side,
+                 "fill_rate": round(len(filled) / max(1, len(filled) + len(unfilled)), 3),
+                 "all": a, "filled": s, "unfilled": summarise(unfilled, "would NOT have filled"),
+                 "adverse_selection_c": (round(a["net_c"] - s["net_c"], 2) if a and s else None)},
+                indent=1))
 
     s_all = summarise(allm, "all markets (maker_lab's assumption)")
     s_fill = summarise(filled, "would have filled")

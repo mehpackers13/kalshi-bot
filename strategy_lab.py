@@ -22,7 +22,7 @@ PASS also needs to survive an extra 1c of adverse selection. See docs/LAB_METHOD
     python strategy_lab.py [--new 1200] [--requote 1500]   # fetch new, backfill quotes, analyse
     python strategy_lab.py --analyse-only
 """
-import argparse, collections, datetime, json, math, random, statistics, sys, time
+import argparse, collections, datetime, json, math, pathlib, random, statistics, sys, time
 import requests
 import config
 
@@ -60,6 +60,38 @@ def fee(p):
 
 def event_of(ticker):
     return "-".join(ticker.split("-")[:2])
+
+
+def game_of(ticker):
+    """The underlying real-world event, ignoring which series quotes it.
+
+    A Kalshi ticker is SERIES-EVENT-STRIKE, so event_of() keeps the series in the key.
+    That is right when testing one series, but wrong when pooling siblings: KXNCAAF1Q and
+    KXNCAAF1QTOTAL on the same Saturday game are two tickers on ONE football game, and
+    counting them as two independent events would shrink the error bars by sqrt(2) for
+    free. This key collapses them."""
+    parts = ticker.split("-")
+    return parts[1] if len(parts) > 1 else ticker
+
+
+# Suffixes that mark a derivative OF a game rather than a different sport. Stripping them
+# repeatedly maps KXNCAAF1QTOTAL / KXNCAAFTEAMTOTAL / KXNCAAFSPREAD all to KXNCAAF.
+FAMILY_SUFFIXES = ("TEAMTOTAL", "MONEYLINE", "SPREAD", "TOTALS", "TOTAL", "GAME", "BTTS",
+                   "WINNER", "MARGIN", "ROUNDS", "MAPS", "RFI", "DRAW", "PTS",
+                   "F3", "F5", "F7", "1H", "2H", "1Q", "2Q", "3Q", "4Q", "1P", "2P", "3P", "OT")
+
+
+def family_of(series):
+    """Collapse a series ticker to its sport/league. Returns None if nothing was stripped."""
+    s, changed = series, False
+    for _ in range(4):
+        for suf in FAMILY_SUFFIXES:
+            if s.endswith(suf) and len(s) - len(suf) >= 5:
+                s, changed = s[: -len(suf)], True
+                break
+        else:
+            break
+    return s if changed else None
 
 
 HISTORY = config.DATA_DIR / "history.jsonl.gz"
@@ -153,6 +185,7 @@ def fetch_new(budget):
 
 
 SPREAD_PENALTY = 0.02      # documented haircut when only a VWAP is known (px_src='vwap+2c')
+DUMP_PATH = None           # --dump <path>: write every well-sampled rule for inspection
 ADVERSE_C = 1.0            # extra adverse selection assumed for the second PASS gate (cents)
 
 
@@ -238,11 +271,12 @@ def legacy_pnl(side, r):
     return win - p - fee(p)
 
 
-def evaluate(rows, side, fn=None):
+def evaluate(rows, side, fn=None, key=None):
     fn = fn or pnl
+    key = key or event_of
     ev = collections.defaultdict(list)
     for tk, r in rows:
-        ev[event_of(tk)].append(fn(side, r))
+        ev[key(tk)].append(fn(side, r))
     em = [statistics.mean(v) for v in ev.values()]
     if len(em) < 5:
         return None
@@ -298,25 +332,41 @@ def analyse():
     # history would put the whole "newer" half inside the holdout, leaving it always empty
     mid = insample[len(insample) // 2][1]["close"] if insample else 0
     groups = collections.defaultdict(list)
+    fam_series = collections.defaultdict(set)
     for tk, r in insample:
         groups[("category", r["cat"])].append((tk, r))
         groups[("series", r["series"])].append((tk, r))
+        fam = family_of(r["series"])
+        if fam:
+            groups[("family", fam)].append((tk, r))
+            fam_series[fam].add(r["series"])
     groups[("category", "ALL")] = insample
+    # A family holding one series is just that series under another name: it would double
+    # the multiple-comparison count without testing anything new.
+    for fam, ss in fam_series.items():
+        if len(ss) < 2:
+            groups.pop(("family", fam), None)
     hgroups = collections.defaultdict(list)
     for tk, r in holdout:
         hgroups[("category", r["cat"])].append((tk, r))
         hgroups[("series", r["series"])].append((tk, r))
+        fam = family_of(r["series"])
+        if fam:
+            hgroups[("family", fam)].append((tk, r))
     hgroups[("category", "ALL")] = holdout
     out, passed, legacy_passed = [], [], []
     for (kind, name), rows in groups.items():
+        # Pooled families must cluster on the real-world game, not the ticker's series,
+        # or two quotes on one Saturday game would count as two independent outcomes.
+        ckey = game_of if kind == "family" else event_of
         for lo, hi in BUCKETS:
             top = hi + (0.0001 if hi == 1.0 else 0)
             for side in ("YES", "NO"):
                 # legacy (VWAP, no spread) verdict, kept only to show how much the old method overstated
                 lb = [(tk, r) for tk, r in rows if lo <= r["px"] < top]
-                le = evaluate(lb, side, legacy_pnl)
-                lo_old = evaluate([x for x in lb if x[1]["close"] < mid], side, legacy_pnl)
-                lo_new = evaluate([x for x in lb if x[1]["close"] >= mid], side, legacy_pnl)
+                le = evaluate(lb, side, legacy_pnl, ckey)
+                lo_old = evaluate([x for x in lb if x[1]["close"] < mid], side, legacy_pnl, ckey)
+                lo_new = evaluate([x for x in lb if x[1]["close"] >= mid], side, legacy_pnl, ckey)
                 if (le and le["events"] >= 30 and le["net_c"] >= 1.0 and le["lo_c"] > 0
                         and lo_old and lo_new and lo_old["net_c"] > 0 and lo_new["net_c"] > 0):
                     legacy_passed.append((kind, name, f"{lo:.0%}-{min(hi, 1):.0%}", side))
@@ -324,12 +374,12 @@ def analyse():
                 b = [(tk, r) for tk, r in rows if lo <= yes_price(side, r) < top]
                 bx = [x for x in b if exec_row(x[1])]
                 n_exec, n_approx = len(bx), len(b) - len(bx)
-                e = evaluate(bx, side)
+                e = evaluate(bx, side, None, ckey)
                 if not e:
                     continue
-                old = evaluate([x for x in bx if x[1]["close"] < mid], side)
-                new = evaluate([x for x in bx if x[1]["close"] >= mid], side)
-                allx = evaluate(b, side)
+                old = evaluate([x for x in bx if x[1]["close"] < mid], side, None, ckey)
+                new = evaluate([x for x in bx if x[1]["close"] >= mid], side, None, ckey)
+                allx = evaluate(b, side, None, ckey)
                 e.update(kind=kind, name=name, bucket=f"{lo:.0%}-{min(hi, 1):.0%}", lo=lo, hi=min(hi, 1.0),
                          side=side, n_exec=n_exec, n_approx=n_approx,
                          net_all_c=allx["net_c"] if allx else None,
@@ -337,7 +387,7 @@ def analyse():
                 # out-of-sample confirmation on the held-out newest slice
                 hrows = [(tk, r) for tk, r in hgroups.get((kind, name), [])
                          if lo <= yes_price(side, r) < top and exec_row(r)]
-                h = evaluate(hrows, side)
+                h = evaluate(hrows, side, None, ckey)
                 e["hold_events"] = h["events"] if h else 0
                 e["hold_c"] = h["net_c"] if h else None
                 gate1 = (e["events"] >= 30 and e["net_c"] >= 1.0 and e["lo_c"] > 0
@@ -351,6 +401,11 @@ def analyse():
     # gate3: Benjamini-Hochberg across every rule tested in this run, applied only to
     # rules that already cleared the economic gates, so the correction is not diluted.
     cands = [e for e in out if e["gate1"] and e["gate2"] and e["gate4"]]
+    # Which gate is actually binding? "0 passed" means something very different when 400
+    # rules clear the sample-size gate than when none do: the first says no edge survives
+    # testing, the second says we still cannot test. Record it rather than guess later.
+    gate_counts = {g: sum(1 for e in out if e[g]) for g in ("gate1", "gate2", "gate4")}
+    gate_counts["sample_only"] = sum(1 for e in out if e["events"] >= 30)
     thr = bh_threshold([e["p"] for e in out], FDR_Q)
     for e in out:
         e["bh_thresh"] = round(thr, 6)
@@ -365,8 +420,20 @@ def analyse():
            "markets": len(cache), "markets_executable": n_exec_all, "rules_tested": len(out),
            "insample_markets": len(insample), "holdout_markets": len(holdout),
            "holdout_from": int(cut_ts), "fdr_q": FDR_Q, "bh_threshold": round(thr, 6),
-           "economic_candidates": len(cands),
-           "legacy_vwap_passes": len(legacy_passed), "passed": passed, "top_by_lower_bound": out[:25]}
+           "economic_candidates": len(cands), "gate_counts": gate_counts,
+           "legacy_vwap_passes": len(legacy_passed), "passed": passed, "top_by_lower_bound": out[:25],
+           # The honest leaderboard. out[:25] is sorted by lower bound, so it fills with
+           # 5-event flukes whose CI is narrow by accident; these are the rules we can
+           # actually draw a conclusion about.
+           "top_by_sample": sorted([e for e in out if e["events"] >= 30],
+                                   key=lambda e: -e["net_c"])[:15]}
+    if DUMP_PATH:
+        # Every rule we can actually draw a conclusion about, for ad-hoc inspection.
+        # Written outside the repo on purpose: 180 rows of churn per run is not history
+        # worth committing, but it is what you want in front of you while deciding.
+        full = sorted([e for e in out if e["events"] >= 30], key=lambda e: -e["net_c"])
+        pathlib.Path(DUMP_PATH).write_text(json.dumps(full, indent=1))
+        print(f"dumped {len(full)} well-sampled rules to {DUMP_PATH}", flush=True)
     RESULTS.write_text(json.dumps(res, indent=1))
     lines = [f"# Strategy Lab — {res['generated']}", "",
              f"{len(cache)} settled markets ({n_exec_all} with executable candle quotes), {len(out)} rules tested "
@@ -407,7 +474,10 @@ if __name__ == "__main__":
     ap.add_argument("--new", type=int, default=1200)
     ap.add_argument("--requote", type=int, default=0, help="backfill executable quotes for up to N cached markets")
     ap.add_argument("--analyse-only", action="store_true")
+    ap.add_argument("--dump", default=None,
+                    help="write all rules with >=30 events to this path (use the scratchpad, not the repo)")
     a = ap.parse_args()
+    globals()["DUMP_PATH"] = a.dump
     config.DATA_DIR.mkdir(exist_ok=True)
     if not a.analyse_only:
         if a.new > 0:

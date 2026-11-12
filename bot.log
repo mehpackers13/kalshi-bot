@@ -116045,3 +116045,44 @@ Total modelable markets evaluated: 0
 [2026-11-11 16:02:05 ET] [INFO] Morning report complete
 [2026-11-11 16:02:05 ET] [INFO] ============================================================
 [2026-11-11 16:02:05 ET] [INFO] Morning report job complete
+[2026-11-11 21:26:48 ET] [INFO] Scan job starting
+[2026-11-11 21:26:48 ET] [INFO] Kalshi API key auth OK ✅  balance: $35.26
+[2026-11-11 21:26:50 ET] [INFO] ============================================================
+[2026-11-11 21:26:50 ET] [INFO] Starting market scan
+[2026-11-11 21:26:53 ET] [INFO] Portfolio value: $35.26 cash + $6.62 positions = $41.88
+[2026-11-11 21:26:53 ET] [INFO] New peak portfolio value: $41.88  (was $41.85)
+[2026-11-11 21:26:53 ET] [INFO] Cash: $35.26  |  Positions: $6.62  |  Total: $41.88  |  Peak: $41.88
+[2026-11-11 21:26:54 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-11-11 21:27:29 ET] [WARN] SCAN_MAX_PAGES reached; far-dated markets truncated
+[2026-11-11 21:27:29 ET] [INFO] Fetched 77542 open markets via close-window feed across 80 pages
+[2026-11-11 21:27:29 ET] [INFO] Fetched 77542 open markets
+[2026-11-11 21:27:29 ET] [INFO] Parsed 72155 valid markets
+[2026-11-11 21:27:29 ET] [INFO] Categories: {'Sports': 54349, 'Financials': 7752, 'Entertainment': 2074, 'Economics': 2033, 'Commodities': 1775, 'Crypto': 1363, 'Climate and Weather': 1157, 'Science and Technology': 546}
+[2026-11-11 21:27:30 ET] [INFO]   price model: GC=F spot=4003.30 target=3922.00 expiry vol=22% T=21h → P=0.972
+[2026-11-11 21:27:31 ET] [WARN]   weather model: columbus no forecast for 2027-11-11
+[2026-11-11 21:27:32 ET] [INFO]   weather model: chicago rain 2026-11-12 forecast=28% → P=0.280
+[2026-11-11 21:27:32 ET] [INFO]   EDGE FOUND: KXRAIN-26NOV12-CHI | implied=48.5% true=28.0% edge=-20.5% dir=NO conf=22
+[2026-11-11 21:27:36 ET] [INFO]   price model: ETH-USD spot=2047.68 target=2000.00 touch vol=57% T=460h → P=0.857
+[2026-11-11 21:27:36 ET] [INFO]   price model: BTC-USD spot=73574.60 target=72500.00 touch vol=41% T=460h → P=0.877
+[2026-11-11 21:27:36 ET] [INFO]   price model: BTC-USD spot=73574.60 target=70000.00 touch vol=41% T=460h → P=0.599
+[2026-11-11 21:27:36 ET] [INFO]   price model: BTC-USD spot=73574.60 target=67500.00 touch vol=41% T=460h → P=0.363
+[2026-11-11 21:27:37 ET] [INFO]   price model: BTC-USD spot=73574.60 target=65000.00 touch vol=41% T=460h → P=0.191
+[2026-11-11 21:27:37 ET] [INFO]   price model: BTC-USD spot=73574.60 target=62500.00 touch vol=41% T=460h → P=0.085
+[2026-11-11 21:27:37 ET] [INFO]   price model: BTC-USD spot=73574.60 target=87500.00 touch vol=41% T=460h → P=0.067
+[2026-11-11 21:27:37 ET] [INFO]   price model: BTC-USD spot=73574.60 target=85000.00 touch vol=41% T=460h → P=0.128
+[2026-11-11 21:27:37 ET] [INFO]   price model: BTC-USD spot=73574.60 target=82500.00 touch vol=41% T=460h → P=0.227
+[2026-11-11 21:27:37 ET] [INFO] Checked 72155 markets in 7.5s | Edges found: 1
+[2026-11-11 21:27:37 ET] [INFO] Scan feed: fetched 77542 | parsed 72155 | ≤60d 72155 | categories {'Sports': 54349, 'Financials': 7752, 'Entertainment': 2074, 'Economics': 2033, 'Commodities': 1775, 'Crypto': 1363, 'Climate and Weather': 1157, 'Science and Technology': 546} | gate pass 1005 | modelable 11 | edges 1
+[2026-11-11 21:28:37 ET] [WARN] weather_forecast: ensemble fetch failed for MIN: HTTPSConnectionPool(host='ensemble-api.open-meteo.com', port=443): Read timed out. (read timeout=20)
+[2026-11-11 21:28:57 ET] [WARN] weather_forecast: ensemble fetch failed for HOU: HTTPSConnectionPool(host='ensemble-api.open-meteo.com', port=443): Read timed out. (read timeout=20)
+[2026-11-11 21:29:17 ET] [WARN] weather_forecast: ensemble fetch failed for DAL: HTTPSConnectionPool(host='ensemble-api.open-meteo.com', port=443): Read timed out. (read timeout=20)
+[2026-11-11 21:29:38 ET] [WARN] weather_forecast: ensemble fetch failed for CHI: HTTPSConnectionPool(host='ensemble-api.open-meteo.com', port=443): Read timed out. (read timeout=20)
+[2026-11-11 21:29:58 ET] [WARN] weather_forecast: ensemble fetch failed for AUS: HTTPSConnectionPool(host='ensemble-api.open-meteo.com', port=443): Read timed out. (read timeout=20)
+[2026-11-11 21:30:18 ET] [WARN] weather_forecast: ensemble fetch failed for TTN: HTTPSConnectionPool(host='ensemble-api.open-meteo.com', port=443): Read timed out. (read timeout=20)
+[2026-11-11 21:30:24 ET] [INFO] weather_tail_forecast: 33 markets not modellable (unknown city/format/forecast)
+[2026-11-11 21:30:41 ET] [INFO] paper_lab: longshot_no_10_30 [killed]: 919 settled / 452 events, net -3.7c, 95% CI [-6.6, -0.7]c, CLV -1.1c; 108 open | prop_projection [active]: 31 open, none settled yet | sports_gap [active]: 6 open, none settled yet | weather_tail [active]: 733 settled / 240 events, net -1.5c, 95% CI [-3.5, +0.4]c; 137 open | weather_tail_forecast [active]: 102 open, none settled yet (migrated 0, new {'lab_rules': 0, 'prop_projection': 10, 'sports_gap': 0, 'weather_tail_forecast': 43, 'weather_tail': 38}, quotes 273, resolved 11, 184s)
+[2026-11-11 21:30:41 ET] [INFO] [Discord] Trade alert sent: KXRAIN-26NOV12-CHI
+[2026-11-11 21:30:41 ET] [INFO] DRY RUN 🔵 KXRAIN-26NOV12-CHI NO 3ct @ 52¢ = $1.56 | edge=-20.5% conf=22 | would_use 50%Kelly
+[2026-11-11 21:30:42 ET] [INFO] Scan complete — 1 alerts sent
+[2026-11-11 21:30:42 ET] [INFO] ============================================================
+[2026-11-11 21:30:42 ET] [INFO] Scan job complete

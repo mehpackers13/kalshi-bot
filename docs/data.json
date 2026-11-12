@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-11T20:02:05.667874Z",
-  "last_scan_ts": "2026-11-11T20:02:05.667874Z",
+  "generated_at": "2026-11-12T01:30:42.717751Z",
+  "last_scan_ts": "2026-11-12T01:30:42.717751Z",
   "stats": {
-    "total_alerts": 17114,
+    "total_alerts": 17115,
     "rated": 76,
     "hit_rate": 34.2,
     "by_category": {
@@ -37,7 +37,7 @@
         "hit_rate": 0.0
       },
       "Climate and Weather": {
-        "total": 1446,
+        "total": 1447,
         "rated": 15,
         "hits": 4,
         "hit_rate": 26.7
@@ -75,7 +75,7 @@
         "hit_rate": 75.0
       },
       "medium (15-25%)": {
-        "total": 3249,
+        "total": 3250,
         "rated": 13,
         "hits": 7,
         "hit_rate": 53.8
@@ -90,9 +90,9 @@
   },
   "bankroll": {
     "live": {
-      "balance": 41.83,
+      "balance": 41.88,
       "cash": 35.26,
-      "peak": 41.85,
+      "peak": 41.88,
       "initial_balance": 10.0
     },
     "paper": {
@@ -101,15 +101,34 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-11-11T18:33:27.951206Z"
+    "updated_at": "2026-11-12T01:26:53.715133Z"
   },
   "cash_bal": 35.26,
-  "position_value": 6.57,
-  "account_value": 41.83,
-  "live_pnl": 31.83,
+  "position_value": 6.62,
+  "account_value": 41.88,
+  "live_pnl": 31.88,
   "paper_pnl": 0.0,
   "unit_total": -37.55,
   "today_outcomes": [
+    {
+      "timestamp": "2026-11-12T01:30:41.819313Z",
+      "ticker": "KXRAIN-26NOV12-CHI",
+      "title": "Will it rain in Chicago on Nov 12, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-20.5",
+      "implied_prob": "0.485",
+      "true_prob": "0.28",
+      "confidence": "22",
+      "suggested_live_dollars": "0.52",
+      "suggested_paper_dollars": "20.8",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "52",
+      "outcome": "",
+      "units_pl": "",
+      "resolved_at": "",
+      "notes": ""
+    },
     {
       "timestamp": "2026-11-11T18:37:16.580089Z",
       "ticker": "KXGOLDDIRY-26DEC31H1700-T4000",
@@ -302,6 +321,25 @@
     }
   ],
   "recent_alerts": [
+    {
+      "timestamp": "2026-11-12T01:30:41.819313Z",
+      "ticker": "KXRAIN-26NOV12-CHI",
+      "title": "Will it rain in Chicago on Nov 12, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-20.5",
+      "implied_prob": "0.485",
+      "true_prob": "0.28",
+      "confidence": "22",
+      "suggested_live_dollars": "0.52",
+      "suggested_paper_dollars": "20.8",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "52",
+      "outcome": "",
+      "units_pl": "",
+      "resolved_at": "",
+      "notes": ""
+    },
     {
       "timestamp": "2026-11-11T18:37:16.580089Z",
       "ticker": "KXGOLDDIRY-26DEC31H1700-T4000",
@@ -1232,25 +1270,6 @@
       "units_pl": "",
       "resolved_at": "",
       "notes": ""
-    },
-    {
-      "timestamp": "2026-10-15T00:09:27.751616Z",
-      "ticker": "KXBRENTMON-26OCT3017-T96.99",
-      "title": "Will the brent crude oil close price be above 96.99 USD/Bbl on October 30, 2026 at 5:00 PM EDT?",
-      "category": "Commodities",
-      "direction": "NO",
-      "edge_pct": "-34.29",
-      "implied_prob": "0.725",
-      "true_prob": "0.3821",
-      "confidence": "85",
-      "suggested_live_dollars": "1.8",
-      "suggested_paper_dollars": "49.8",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "30",
-      "outcome": "",
-      "units_pl": "",
-      "resolved_at": "",
-      "notes": ""
     }
   ],
   "model_changes": [
@@ -1291,7 +1310,26 @@
     "Weather": 0.7,
     "Climate and Weather": 0.3
   },
-  "bets_placed": [],
+  "bets_placed": [
+    {
+      "timestamp": "2026-11-12T01:30:41.819498",
+      "ticker": "KXRAIN-26NOV12-CHI",
+      "title": "Will it rain in Chicago on Nov 12, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "contracts": "3",
+      "price_cents": "52",
+      "dollars_risked": "1.56",
+      "edge_pct": "-20.5",
+      "true_prob": "0.28",
+      "implied_prob": "0.485",
+      "confidence": "22",
+      "kelly_fraction": "0.5",
+      "dry_run": "True",
+      "order_id": "",
+      "status": "dry_run"
+    }
+  ],
   "open_positions": [
     {
       "ticker": "KXSOLMAXY-27JAN01-170",
@@ -1299,9 +1337,9 @@
       "direction": "NO",
       "contracts": 1,
       "entry_cents": 0,
-      "current_cents": 93,
+      "current_cents": 94,
       "dollars_risked": 0,
-      "current_value": 0.93,
+      "current_value": 0.94,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -1311,9 +1349,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 93,
+      "current_cents": 95,
       "dollars_risked": 0,
-      "current_value": 1.86,
+      "current_value": 1.9,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -1355,8 +1393,8 @@
     }
   ],
   "audited": {
-    "markets_alerted": 3135,
-    "raw_rows": 17114,
+    "markets_alerted": 3136,
+    "raw_rows": 17115,
     "resolved_markets": 76,
     "wins": 26,
     "hit_rate": 34.2,
@@ -1412,16 +1450,16 @@
     },
     "longshot_no_10_30": {
       "status": "killed",
-      "settled": 908,
-      "events": 446,
-      "hit_rate": 0.8601,
-      "net_c": -3.49,
-      "lo_c": -6.43,
-      "hi_c": -0.55,
-      "clv_c": null,
-      "open": 119,
-      "old_c": -5.32,
-      "new_c": -1.66,
+      "settled": 919,
+      "events": 452,
+      "hit_rate": 0.8596,
+      "net_c": -3.66,
+      "lo_c": -6.61,
+      "hi_c": -0.7,
+      "clv_c": -1.1,
+      "open": 108,
+      "old_c": -5.49,
+      "new_c": -1.82,
       "since": "2026-11-11T16:32:38Z",
       "reason": "forward test -3.9c CI [-7.0,-0.9] over 429 events"
     },
@@ -1449,7 +1487,7 @@
       "lo_c": null,
       "hi_c": null,
       "clv_c": null,
-      "open": 21,
+      "open": 31,
       "old_c": null,
       "new_c": null,
       "since": "2026-11-11T16:52:54Z",
@@ -1479,7 +1517,7 @@
       "lo_c": -3.53,
       "hi_c": 0.44,
       "clv_c": null,
-      "open": 99,
+      "open": 137,
       "old_c": -1.03,
       "new_c": -2.06,
       "since": "2026-11-11T16:33:01Z",
@@ -1494,7 +1532,7 @@
       "lo_c": null,
       "hi_c": null,
       "clv_c": null,
-      "open": 59,
+      "open": 102,
       "old_c": null,
       "new_c": null,
       "since": "2026-11-11T16:32:38Z",
@@ -1551,35 +1589,34 @@
     ]
   },
   "scan_diag": {
-    "fetched": 78074,
-    "parsed": 72935,
+    "fetched": 77542,
+    "parsed": 72155,
     "by_category": {
-      "Commodities": 1895,
-      "Financials": 6294,
-      "Politics": 1460,
-      "Economics": 2348,
-      "Science and Technology": 919,
-      "Climate and Weather": 1316,
-      "Entertainment": 4060,
-      "Crypto": 1608,
-      "Sports": 52217,
-      "Elections": 372,
-      "Unknown": 33,
-      "Mentions": 402,
-      "Companies": 10,
-      "Social": 1
+      "Climate and Weather": 1157,
+      "Crypto": 1363,
+      "Commodities": 1775,
+      "Financials": 7752,
+      "Economics": 2033,
+      "Politics": 333,
+      "Science and Technology": 546,
+      "Unknown": 262,
+      "Entertainment": 2074,
+      "Sports": 54349,
+      "Elections": 95,
+      "Mentions": 412,
+      "Companies": 4
     },
-    "closing_within_60d": 72935,
+    "closing_within_60d": 72155,
     "gate_fail": {
-      "volume": 71616,
-      "prob": 325,
+      "volume": 70981,
+      "prob": 169,
       "hours": 0,
       "status": 0
     },
-    "gate_pass": 994,
-    "modelable": 38,
-    "edges": 4,
-    "ts": "2026-11-11T18:34:08.214531"
+    "gate_pass": 1005,
+    "modelable": 11,
+    "edges": 1,
+    "ts": "2026-11-12T01:27:37.159883"
   },
   "paper_events": [
     "2026-11-11T16:31:26Z KILLED longshot_no_10_30: forward test -3.9c CI [-7.0,-0.9] over 429 events",

@@ -46,9 +46,13 @@ import config
 import history_harvest as hh
 import strategy_lab as lab
 
-RESULTS = config.DATA_DIR / "fill_results.json"
-REPORT = config.DATA_DIR / "FILL_REPORT.md"
-PARTIAL = config.DATA_DIR / "fill_partial.json"   # rewritten every 100 markets, see run()
+# Side-scoped so a --side NO run cannot silently overwrite the YES answer, and the two
+# can be compared afterwards instead of one replacing the other.
+def paths(side):
+    s = side.lower()
+    return (config.DATA_DIR / f"fill_results_{s}.json",
+            config.DATA_DIR / f"FILL_REPORT_{s}.md",
+            config.DATA_DIR / f"fill_partial_{s}.json")   # partial rewritten every 100, see run()
 
 WINDOW_START_H = 36      # same entry window as the lab
 WINDOW_END_H = 3
@@ -114,6 +118,7 @@ def summarise(vals, label):
 
 
 def run(limit, side, maker_mult):
+    RESULTS, REPORT, PARTIAL = paths(side)
     rows = {k: v for k, v in lab.load_cache().items()
             if v.get("px_src") == "candle"
             and (v["px_yes_ask"] - v["px_yes_bid"]) <= MAX_SPREAD}

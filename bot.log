@@ -116086,3 +116086,85 @@ Total modelable markets evaluated: 0
 [2026-11-11 21:30:42 ET] [INFO] Scan complete — 1 alerts sent
 [2026-11-11 21:30:42 ET] [INFO] ============================================================
 [2026-11-11 21:30:42 ET] [INFO] Scan job complete
+[2026-11-12 02:38:55 ET] [INFO] Scan job starting
+[2026-11-12 02:38:55 ET] [INFO] Kalshi API key auth OK ✅  balance: $35.26
+[2026-11-12 02:38:57 ET] [INFO] ============================================================
+[2026-11-12 02:38:57 ET] [INFO] Starting market scan
+[2026-11-12 02:39:00 ET] [INFO] Portfolio value: $35.26 cash + $6.63 positions = $41.89
+[2026-11-12 02:39:00 ET] [INFO] New peak portfolio value: $41.89  (was $41.88)
+[2026-11-12 02:39:00 ET] [INFO] Cash: $35.26  |  Positions: $6.63  |  Total: $41.89  |  Peak: $41.89
+[2026-11-12 02:39:00 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-11-12 02:39:34 ET] [WARN] SCAN_MAX_PAGES reached; far-dated markets truncated
+[2026-11-12 02:39:34 ET] [INFO] Fetched 76989 open markets via close-window feed across 80 pages
+[2026-11-12 02:39:34 ET] [INFO] Fetched 76989 open markets
+[2026-11-12 02:39:34 ET] [INFO] Parsed 71810 valid markets
+[2026-11-12 02:39:34 ET] [INFO] Categories: {'Sports': 50993, 'Financials': 8396, 'Entertainment': 3150, 'Commodities': 1803, 'Crypto': 1693, 'Politics': 1440, 'Economics': 1409, 'Climate and Weather': 1055}
+[2026-11-12 02:39:35 ET] [INFO]   weather model: miami rain 2026-11-12 forecast=29% → P=0.290
+[2026-11-12 02:39:35 ET] [INFO]   EDGE FOUND: KXRAIN-26NOV12-MIA | implied=58.5% true=29.0% edge=-29.5% dir=NO conf=24
+[2026-11-12 02:39:35 ET] [INFO]   weather model: columbus rain 2026-11-12 forecast=29% → P=0.290
+[2026-11-12 02:39:35 ET] [INFO]   EDGE FOUND: KXRAIN-26NOV12-CMH | implied=87.5% true=29.0% edge=-58.5% dir=NO conf=24
+[2026-11-12 02:39:36 ET] [INFO]   weather model: boston rain 2026-11-12 forecast=40% → P=0.400
+[2026-11-12 02:39:36 ET] [INFO]   EDGE FOUND: KXRAIN-26NOV12-BOS | implied=91.5% true=40.0% edge=-51.5% dir=NO conf=24
+[2026-11-12 02:39:37 ET] [INFO]   price model: GC=F spot=3983.30 target=3922.00 expiry vol=22% T=15h → P=0.955
+[2026-11-12 02:39:37 ET] [INFO]   EDGE FOUND: KXGOLDD-26NOV1217-T3922 | implied=86.5% true=95.5% edge=+9.0% dir=YES conf=63
+[2026-11-12 02:39:37 ET] [INFO]   price model: CL=F spot=86.18 target=86.49 expiry vol=50% T=13h → P=0.422
+[2026-11-12 02:39:40 ET] [INFO]   price model: ETH-USD spot=2046.85 target=2000.00 touch vol=57% T=454h → P=0.859
+[2026-11-12 02:39:40 ET] [INFO]   price model: BTC-USD spot=73546.20 target=72500.00 touch vol=41% T=454h → P=0.879
+[2026-11-12 02:39:40 ET] [INFO]   price model: BTC-USD spot=73546.20 target=70000.00 touch vol=41% T=454h → P=0.600
+[2026-11-12 02:39:40 ET] [INFO]   price model: BTC-USD spot=73546.20 target=67500.00 touch vol=41% T=454h → P=0.363
+[2026-11-12 02:39:40 ET] [INFO]   price model: BTC-USD spot=73546.20 target=65000.00 touch vol=41% T=454h → P=0.190
+[2026-11-12 02:39:40 ET] [INFO]   price model: BTC-USD spot=73546.20 target=62500.00 touch vol=41% T=454h → P=0.084
+[2026-11-12 02:39:40 ET] [INFO]   price model: BTC-USD spot=73546.20 target=87500.00 touch vol=41% T=454h → P=0.065
+[2026-11-12 02:39:40 ET] [INFO]   price model: BTC-USD spot=73546.20 target=85000.00 touch vol=41% T=454h → P=0.125
+[2026-11-12 02:39:40 ET] [INFO]   price model: BTC-USD spot=73546.20 target=82500.00 touch vol=41% T=454h → P=0.223
+[2026-11-12 02:39:40 ET] [INFO]   price model: ^GSPC spot=7619.38 target=6300.01 touch vol=19% T=1204h → P=0.007
+[2026-11-12 02:39:40 ET] [INFO]   price model: ^GSPC spot=7619.38 target=6200.01 touch vol=19% T=1204h → P=0.003
+[2026-11-12 02:39:41 ET] [INFO]   price model: SOL-USD spot=82.83 target=150.00 touch vol=60% T=1198h → P=0.007
+[2026-11-12 02:39:41 ET] [INFO]   price model: ETH-USD spot=2046.85 target=1500.00 touch vol=57% T=1198h → P=0.142
+[2026-11-12 02:39:41 ET] [INFO]   price model: ETH-USD spot=2046.85 target=1250.00 touch vol=57% T=1198h → P=0.020
+[2026-11-12 02:39:41 ET] [INFO]   price model: BTC-USD spot=73546.20 target=55000.00 touch vol=41% T=1198h → P=0.058
+[2026-11-12 02:39:41 ET] [INFO]   price model: BTC-USD spot=73546.20 target=50000.00 touch vol=41% T=1198h → P=0.012
+[2026-11-12 02:39:41 ET] [INFO]   price model: BTC-USD spot=73546.20 target=100000.00 touch vol=41% T=1198h → P=0.045
+[2026-11-12 02:39:41 ET] [INFO]   price model: XRP-USD spot=1.04 target=2.00 touch vol=72% T=1198h → P=0.014
+[2026-11-12 02:39:41 ET] [INFO]   EDGE FOUND: KXXRPMAXY-XRP-26DEC31-200 | implied=13.0% true=1.4% edge=-11.6% dir=NO conf=19
+[2026-11-12 02:39:41 ET] [INFO]   price model: BTC-USD spot=73546.20 target=99999.00 touch vol=41% T=1198h → P=0.045
+[2026-11-12 02:39:41 ET] [INFO]   price model: ^GSPC spot=7619.38 target=6845.50 expiry vol=19% T=1193h → P=0.933
+[2026-11-12 02:39:41 ET] [INFO]   price model: GC=F spot=3983.30 target=4500.00 expiry vol=22% T=1191h → P=0.060
+[2026-11-12 02:39:41 ET] [INFO]   price model: GC=F spot=3983.30 target=4400.00 expiry vol=22% T=1191h → P=0.101
+[2026-11-12 02:39:41 ET] [INFO]   price model: GC=F spot=3983.30 target=4300.00 expiry vol=22% T=1191h → P=0.161
+[2026-11-12 02:39:41 ET] [INFO]   price model: ^NDX spot=28374.25 target=33000.00 expiry vol=31% T=1190h → P=0.081
+[2026-11-12 02:39:41 ET] [INFO]   price model: ^NDX spot=28374.25 target=25249.85 expiry vol=31% T=1190h → P=0.836
+[2026-11-12 02:39:41 ET] [INFO]   price model: ^GSPC spot=7619.38 target=7600.00 expiry vol=19% T=1190h → P=0.501
+[2026-11-12 02:39:41 ET] [INFO]   EDGE FOUND: KXINXDIRY-26DEC31H1600-T7600 | implied=59.5% true=50.1% edge=-9.4% dir=NO conf=20
+[2026-11-12 02:39:41 ET] [INFO]   price model: CL=F spot=86.18 target=95.00 expiry vol=50% T=1189h → P=0.268
+[2026-11-12 02:39:41 ET] [INFO]   EDGE FOUND: KXWTIDIRY-26DEC31H1430-T95 | implied=41.5% true=26.8% edge=-14.7% dir=NO conf=68
+[2026-11-12 02:39:41 ET] [INFO]   price model: CL=F spot=86.18 target=90.00 expiry vol=50% T=1189h → P=0.372
+[2026-11-12 02:39:41 ET] [INFO]   price model: CL=F spot=86.18 target=85.00 expiry vol=50% T=1189h → P=0.493
+[2026-11-12 02:39:41 ET] [INFO]   price model: CL=F spot=86.18 target=80.00 expiry vol=50% T=1189h → P=0.622
+[2026-11-12 02:39:41 ET] [INFO]   price model: CL=F spot=86.18 target=75.00 expiry vol=50% T=1189h → P=0.745
+[2026-11-12 02:39:41 ET] [INFO] Checked 71809 markets in 7.3s | Edges found: 7
+[2026-11-12 02:39:41 ET] [INFO] Scan feed: fetched 76989 | parsed 71810 | ≤60d 71810 | categories {'Sports': 50993, 'Financials': 8396, 'Entertainment': 3150, 'Commodities': 1803, 'Crypto': 1693, 'Politics': 1440, 'Economics': 1409, 'Climate and Weather': 1055} | gate pass 841 | modelable 36 | edges 7
+[2026-11-12 02:40:47 ET] [WARN] weather_forecast: ensemble fetch failed for SAN: HTTPSConnectionPool(host='ensemble-api.open-meteo.com', port=443): Read timed out. (read timeout=20)
+[2026-11-12 02:41:07 ET] [WARN] weather_forecast: ensemble fetch failed for LV: HTTPSConnectionPool(host='ensemble-api.open-meteo.com', port=443): Read timed out. (read timeout=20)
+[2026-11-12 02:41:27 ET] [WARN] weather_forecast: ensemble fetch failed for LAX: HTTPSConnectionPool(host='ensemble-api.open-meteo.com', port=443): Read timed out. (read timeout=20)
+[2026-11-12 02:41:48 ET] [WARN] weather_forecast: ensemble fetch failed for DEN: HTTPSConnectionPool(host='ensemble-api.open-meteo.com', port=443): Read timed out. (read timeout=20)
+[2026-11-12 02:42:08 ET] [WARN] weather_forecast: ensemble fetch failed for SATX: HTTPSConnectionPool(host='ensemble-api.open-meteo.com', port=443): Read timed out. (read timeout=20)
+[2026-11-12 02:42:28 ET] [WARN] weather_forecast: ensemble fetch failed for PHX: HTTPSConnectionPool(host='ensemble-api.open-meteo.com', port=443): Read timed out. (read timeout=20)
+[2026-11-12 02:42:32 ET] [INFO] weather_tail_forecast: 30 markets not modellable (unknown city/format/forecast)
+[2026-11-12 02:42:56 ET] [INFO] paper_lab: longshot_no_10_30 [killed]: 921 settled / 454 events, net -3.6c, 95% CI [-6.6, -0.7]c, CLV -0.2c; 106 open | prop_projection [active]: 37 open, none settled yet | sports_gap [active]: 7 open, none settled yet | weather_tail [active]: 733 settled / 240 events, net -1.5c, 95% CI [-3.5, +0.4]c; 142 open | weather_tail_forecast [active]: 122 open, none settled yet (migrated 0, new {'lab_rules': 0, 'prop_projection': 6, 'sports_gap': 1, 'weather_tail_forecast': 20, 'weather_tail': 5}, quotes 178, resolved 2, 195s)
+[2026-11-12 02:42:56 ET] [INFO] [Discord] Trade alert sent: KXRAIN-26NOV12-MIA
+[2026-11-12 02:42:56 ET] [INFO] DRY RUN 🔵 KXRAIN-26NOV12-MIA NO 4ct @ 42¢ = $1.68 | edge=-29.5% conf=24 | would_use 50%Kelly
+[2026-11-12 02:42:57 ET] [INFO] [Discord] Trade alert sent: KXRAIN-26NOV12-CMH
+[2026-11-12 02:42:57 ET] [INFO] DRY RUN 🔵 KXRAIN-26NOV12-CMH NO 16ct @ 13¢ = $2.08 | edge=-58.5% conf=24 | would_use 50%Kelly
+[2026-11-12 02:42:57 ET] [INFO] [Discord] Trade alert sent: KXRAIN-26NOV12-BOS
+[2026-11-12 02:42:57 ET] [INFO] DRY RUN 🔵 KXRAIN-26NOV12-BOS NO 23ct @ 9¢ = $2.07 | edge=-51.5% conf=24 | would_use 50%Kelly
+[2026-11-12 02:42:58 ET] [INFO] [Discord] Trade alert sent: KXGOLDD-26NOV1217-T3922
+[2026-11-12 02:42:58 ET] [INFO] DRY RUN 🔵 KXGOLDD-26NOV1217-T3922 YES 2ct @ 88¢ = $1.76 | edge=+9.0% conf=63 | would_use 50%Kelly
+[2026-11-12 02:43:02 ET] [INFO] [Discord] Trade alert sent: KXXRPMAXY-XRP-26DEC31-200
+[2026-11-12 02:43:02 ET] [INFO] DRY RUN 🔵 KXXRPMAXY-XRP-26DEC31-200 NO 2ct @ 88¢ = $1.76 | edge=-11.6% conf=19 | would_use 50%Kelly
+[2026-11-12 02:43:03 ET] [INFO]   Skipping KXINXDIRY-26DEC31H1600-T7600 — suggested bet too small to be meaningful
+[2026-11-12 02:43:03 ET] [INFO] [Discord] Trade alert sent: KXWTIDIRY-26DEC31H1430-T95
+[2026-11-12 02:43:03 ET] [INFO] DRY RUN 🔵 KXWTIDIRY-26DEC31H1430-T95 NO 2ct @ 66¢ = $1.32 | edge=-14.7% conf=68 | would_use 50%Kelly
+[2026-11-12 02:43:03 ET] [INFO] Scan complete — 6 alerts sent
+[2026-11-12 02:43:03 ET] [INFO] ============================================================
+[2026-11-12 02:43:03 ET] [INFO] Scan job complete

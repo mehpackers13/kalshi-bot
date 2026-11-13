@@ -116357,3 +116357,36 @@ Total modelable markets evaluated: 0
 [2026-11-13 02:00:53 ET] [INFO] Scan complete — 4 alerts sent
 [2026-11-13 02:00:53 ET] [INFO] ============================================================
 [2026-11-13 02:00:53 ET] [INFO] Scan job complete
+[2026-11-13 14:28:03 ET] [INFO] Scan job starting
+[2026-11-13 14:28:04 ET] [INFO] Kalshi API key auth OK ✅  balance: $35.26
+[2026-11-13 14:28:05 ET] [INFO] ============================================================
+[2026-11-13 14:28:05 ET] [INFO] Starting market scan
+[2026-11-13 14:28:08 ET] [INFO] Portfolio value: $35.26 cash + $6.73 positions = $41.99
+[2026-11-13 14:28:08 ET] [INFO] New peak portfolio value: $41.99  (was $41.96)
+[2026-11-13 14:28:08 ET] [INFO] Cash: $35.26  |  Positions: $6.73  |  Total: $41.99  |  Peak: $41.99
+[2026-11-13 14:28:09 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-11-13 14:28:43 ET] [WARN] SCAN_MAX_PAGES reached; far-dated markets truncated
+[2026-11-13 14:28:43 ET] [INFO] Fetched 77851 open markets via close-window feed across 80 pages
+[2026-11-13 14:28:43 ET] [INFO] Fetched 77851 open markets
+[2026-11-13 14:28:43 ET] [INFO] Parsed 75435 valid markets
+[2026-11-13 14:28:43 ET] [INFO] Categories: {'Sports': 67753, 'Financials': 2428, 'Entertainment': 1347, 'Economics': 857, 'Commodities': 846, 'Crypto': 821, 'Climate and Weather': 710, 'Science and Technology': 393}
+[2026-11-13 14:28:44 ET] [INFO]   weather model: detroit rain 2026-11-13 forecast=21% → P=0.210
+[2026-11-13 14:28:44 ET] [INFO]   price model: GC=F spot=3888.70 target=3888.99 expiry vol=23% T=4h → P=0.493
+[2026-11-13 14:28:44 ET] [INFO]   EDGE FOUND: KXGOLDW-26NOV1317-T3888.99 | implied=38.5% true=49.2% edge=+10.7% dir=YES conf=53
+[2026-11-13 14:28:44 ET] [INFO]   price model: GC=F spot=3888.70 target=3868.99 expiry vol=23% T=4h → P=0.868
+[2026-11-13 14:28:45 ET] [INFO]   price model: ^GSPC spot=7544.85 target=7510.00 expiry vol=19% T=3h → P=0.926
+[2026-11-13 14:28:45 ET] [INFO]   price model: ^GSPC spot=7544.85 target=7500.00 expiry vol=19% T=3h → P=0.969
+[2026-11-13 14:28:48 ET] [INFO] Checked 75432 markets in 5.2s | Edges found: 1
+[2026-11-13 14:28:48 ET] [INFO] Scan feed: fetched 77851 | parsed 75435 | ≤60d 75435 | categories {'Sports': 67753, 'Financials': 2428, 'Entertainment': 1347, 'Economics': 857, 'Commodities': 846, 'Crypto': 821, 'Climate and Weather': 710, 'Science and Technology': 393} | gate pass 571 | modelable 5 | edges 1
+[2026-11-13 14:29:58 ET] [WARN] weather_forecast: ensemble fetch failed for SATX: HTTPSConnectionPool(host='ensemble-api.open-meteo.com', port=443): Read timed out. (read timeout=20)
+[2026-11-13 14:30:18 ET] [WARN] weather_forecast: ensemble fetch failed for MIN: HTTPSConnectionPool(host='ensemble-api.open-meteo.com', port=443): Read timed out. (read timeout=20)
+[2026-11-13 14:30:39 ET] [WARN] weather_forecast: ensemble fetch failed for HOU: HTTPSConnectionPool(host='ensemble-api.open-meteo.com', port=443): Read timed out. (read timeout=20)
+[2026-11-13 14:30:59 ET] [WARN] weather_forecast: ensemble fetch failed for DAL: HTTPSConnectionPool(host='ensemble-api.open-meteo.com', port=443): Read timed out. (read timeout=20)
+[2026-11-13 14:31:19 ET] [WARN] weather_forecast: ensemble fetch failed for AUS: HTTPSConnectionPool(host='ensemble-api.open-meteo.com', port=443): Read timed out. (read timeout=20)
+[2026-11-13 14:31:26 ET] [INFO] weather_tail_forecast: 8 markets not modellable (unknown city/format/forecast)
+[2026-11-13 14:31:50 ET] [INFO] paper_lab: longshot_no_10_30 [killed]: 946 settled / 465 events, net -3.8c, 95% CI [-6.8, -0.9]c, CLV -0.9c; 81 open | prop_projection [active]: 62 open, none settled yet | sports_gap [active]: 12 open, none settled yet | weather_tail [killed]: 844 settled / 282 events, net -2.2c, 95% CI [-4.1, -0.3]c, CLV +1.0c; 107 open | weather_tail_forecast [active]: 104 settled / 69 events, net -6.2c, 95% CI [-13.0, +0.6]c, CLV +0.9c; 120 open (migrated 0, new {'lab_rules': 0, 'prop_projection': 9, 'sports_gap': 4, 'weather_tail_forecast': 19}, quotes 180, resolved 88, 182s)
+[2026-11-13 14:31:51 ET] [INFO] [Discord] Trade alert sent: KXGOLDW-26NOV1317-T3888.99
+[2026-11-13 14:31:51 ET] [INFO] DRY RUN 🔵 KXGOLDW-26NOV1317-T3888.99 YES 3ct @ 40¢ = $1.20 | edge=+10.7% conf=53 | would_use 50%Kelly
+[2026-11-13 14:31:51 ET] [INFO] Scan complete — 1 alerts sent
+[2026-11-13 14:31:51 ET] [INFO] ============================================================
+[2026-11-13 14:31:51 ET] [INFO] Scan job complete

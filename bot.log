@@ -116309,3 +116309,51 @@ Total modelable markets evaluated: 0
 [2026-11-12 20:06:52 ET] [INFO] Scan complete — 1 alerts sent
 [2026-11-12 20:06:52 ET] [INFO] ============================================================
 [2026-11-12 20:06:52 ET] [INFO] Scan job complete
+[2026-11-13 01:56:24 ET] [INFO] Scan job starting
+[2026-11-13 01:56:24 ET] [INFO] Kalshi API key auth OK ✅  balance: $35.26
+[2026-11-13 01:56:26 ET] [INFO] ============================================================
+[2026-11-13 01:56:26 ET] [INFO] Starting market scan
+[2026-11-13 01:56:30 ET] [INFO] Portfolio value: $35.26 cash + $6.70 positions = $41.96
+[2026-11-13 01:56:30 ET] [INFO] New peak portfolio value: $41.96  (was $41.94)
+[2026-11-13 01:56:30 ET] [INFO] Cash: $35.26  |  Positions: $6.70  |  Total: $41.96  |  Peak: $41.96
+[2026-11-13 01:56:30 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-11-13 01:57:07 ET] [WARN] SCAN_MAX_PAGES reached; far-dated markets truncated
+[2026-11-13 01:57:07 ET] [INFO] Fetched 78387 open markets via close-window feed across 80 pages
+[2026-11-13 01:57:07 ET] [INFO] Fetched 78387 open markets
+[2026-11-13 01:57:08 ET] [INFO] Parsed 75691 valid markets
+[2026-11-13 01:57:08 ET] [INFO] Categories: {'Sports': 65434, 'Financials': 5269, 'Entertainment': 1478, 'Commodities': 891, 'Crypto': 837, 'Economics': 663, 'Climate and Weather': 501, 'Science and Technology': 398}
+[2026-11-13 01:57:09 ET] [INFO]   weather model: columbus rain 2026-11-13 forecast=31% → P=0.310
+[2026-11-13 01:57:09 ET] [INFO]   EDGE FOUND: KXRAIN-26NOV13-CMH | implied=81.5% true=31.0% edge=-50.5% dir=NO conf=24
+[2026-11-13 01:57:10 ET] [INFO]   price model: ^NDX spot=28289.19 target=27999.99 expiry vol=31% T=15h → P=0.790
+[2026-11-13 01:57:10 ET] [INFO]   EDGE FOUND: KXNASDAQ100-26NOV13H1600-T27999.9900 | implied=87.0% true=79.0% edge=-8.0% dir=NO conf=19
+[2026-11-13 01:57:11 ET] [INFO]   price model: CL=F spot=88.38 target=88.49 expiry vol=50% T=14h → P=0.471
+[2026-11-13 01:57:11 ET] [INFO]   price model: CL=F spot=88.38 target=87.99 expiry vol=50% T=14h → P=0.585
+[2026-11-13 01:57:11 ET] [INFO]   price model: CL=F spot=88.38 target=87.49 expiry vol=50% T=14h → P=0.692
+[2026-11-13 01:57:12 ET] [INFO]   weather model: los angeles rain 2026-11-13 forecast=30% → P=0.300
+[2026-11-13 01:57:12 ET] [INFO]   EDGE FOUND: KXRAIN-26NOV13-LAX | implied=93.5% true=30.0% edge=-63.5% dir=NO conf=26
+[2026-11-13 01:57:13 ET] [INFO]   weather model: albuquerque rain 2026-11-13 forecast=20% → P=0.200
+[2026-11-13 01:57:13 ET] [INFO]   EDGE FOUND: KXRAIN-26NOV13-ABQ | implied=51.5% true=20.0% edge=-31.5% dir=NO conf=26
+[2026-11-13 01:57:14 ET] [INFO]   weather model: chicago rain 2026-11-13 forecast=23% → P=0.230
+[2026-11-13 01:57:14 ET] [INFO]   EDGE FOUND: KXRAIN-26NOV13-CHI | implied=44.5% true=23.0% edge=-21.5% dir=NO conf=22
+[2026-11-13 01:57:18 ET] [INFO] Checked 75690 markets in 10.4s | Edges found: 5
+[2026-11-13 01:57:18 ET] [INFO] Scan feed: fetched 78387 | parsed 75691 | ≤60d 75691 | categories {'Sports': 65434, 'Financials': 5269, 'Entertainment': 1478, 'Commodities': 891, 'Crypto': 837, 'Economics': 663, 'Climate and Weather': 501, 'Science and Technology': 398} | gate pass 441 | modelable 8 | edges 5
+[2026-11-13 01:58:43 ET] [WARN] weather_forecast: ensemble fetch failed for MIN: HTTPSConnectionPool(host='ensemble-api.open-meteo.com', port=443): Read timed out. (read timeout=20)
+[2026-11-13 01:59:03 ET] [WARN] weather_forecast: ensemble fetch failed for HOU: HTTPSConnectionPool(host='ensemble-api.open-meteo.com', port=443): Read timed out. (read timeout=20)
+[2026-11-13 01:59:24 ET] [WARN] weather_forecast: ensemble fetch failed for DAL: HTTPSConnectionPool(host='ensemble-api.open-meteo.com', port=443): Read timed out. (read timeout=20)
+[2026-11-13 01:59:44 ET] [WARN] weather_forecast: ensemble fetch failed for CHI: HTTPSConnectionPool(host='ensemble-api.open-meteo.com', port=443): Read timed out. (read timeout=20)
+[2026-11-13 02:00:04 ET] [WARN] weather_forecast: ensemble fetch failed for AUS: HTTPSConnectionPool(host='ensemble-api.open-meteo.com', port=443): Read timed out. (read timeout=20)
+[2026-11-13 02:00:25 ET] [WARN] weather_forecast: ensemble fetch failed for TTN: HTTPSConnectionPool(host='ensemble-api.open-meteo.com', port=443): Read timed out. (read timeout=20)
+[2026-11-13 02:00:31 ET] [INFO] weather_tail_forecast: 34 markets not modellable (unknown city/format/forecast)
+[2026-11-13 02:00:51 ET] [INFO] paper_lab: longshot_no_10_30 [killed]: 946 settled / 465 events, net -3.8c, 95% CI [-6.8, -0.9]c, CLV -0.9c; 81 open | prop_projection [active]: 53 open, none settled yet | sports_gap [active]: 8 open, none settled yet | weather_tail [killed]: 811 settled / 264 events, net -2.0c, 95% CI [-3.9, -0.1]c, CLV +1.8c; 140 open | weather_tail_forecast [active]: 49 settled / 35 events, net -6.0c, 95% CI [-14.7, +2.6]c, CLV +2.2c; 156 open (migrated 0, new {'lab_rules': 0, 'prop_projection': 3, 'sports_gap': 0, 'weather_tail_forecast': 11}, quotes 186, resolved 0, 213s)
+[2026-11-13 02:00:51 ET] [INFO] [Discord] Trade alert sent: KXRAIN-26NOV13-CMH
+[2026-11-13 02:00:51 ET] [INFO] DRY RUN 🔵 KXRAIN-26NOV13-CMH NO 11ct @ 19¢ = $2.09 | edge=-50.5% conf=24 | would_use 50%Kelly
+[2026-11-13 02:00:51 ET] [INFO]   Skipping KXNASDAQ100-26NOV13H1600-T27999.9900 — suggested bet too small to be meaningful
+[2026-11-13 02:00:52 ET] [INFO] [Discord] Trade alert sent: KXRAIN-26NOV13-LAX
+[2026-11-13 02:00:52 ET] [INFO] DRY RUN 🔵 KXRAIN-26NOV13-LAX NO 30ct @ 7¢ = $2.10 | edge=-63.5% conf=26 | would_use 50%Kelly
+[2026-11-13 02:00:52 ET] [INFO] [Discord] Trade alert sent: KXRAIN-26NOV13-ABQ
+[2026-11-13 02:00:52 ET] [INFO] DRY RUN 🔵 KXRAIN-26NOV13-ABQ NO 4ct @ 49¢ = $1.96 | edge=-31.5% conf=26 | would_use 50%Kelly
+[2026-11-13 02:00:53 ET] [INFO] [Discord] Trade alert sent: KXRAIN-26NOV13-CHI
+[2026-11-13 02:00:53 ET] [INFO] DRY RUN 🔵 KXRAIN-26NOV13-CHI NO 2ct @ 57¢ = $1.14 | edge=-21.5% conf=22 | would_use 50%Kelly
+[2026-11-13 02:00:53 ET] [INFO] Scan complete — 4 alerts sent
+[2026-11-13 02:00:53 ET] [INFO] ============================================================
+[2026-11-13 02:00:53 ET] [INFO] Scan job complete

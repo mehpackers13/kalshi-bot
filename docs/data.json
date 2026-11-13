@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-12T20:40:38.233684Z",
-  "last_scan_ts": "2026-11-12T20:40:38.233684Z",
+  "generated_at": "2026-11-13T00:06:53.223707Z",
+  "last_scan_ts": "2026-11-13T00:06:53.223707Z",
   "stats": {
-    "total_alerts": 17128,
+    "total_alerts": 17129,
     "rated": 76,
     "hit_rate": 34.2,
     "by_category": {
@@ -37,7 +37,7 @@
         "hit_rate": 0.0
       },
       "Climate and Weather": {
-        "total": 1450,
+        "total": 1451,
         "rated": 15,
         "hits": 4,
         "hit_rate": 26.7
@@ -81,7 +81,7 @@
         "hit_rate": 53.8
       },
       "strong (25%+)": {
-        "total": 9699,
+        "total": 9700,
         "rated": 47,
         "hits": 7,
         "hit_rate": 14.9
@@ -90,9 +90,9 @@
   },
   "bankroll": {
     "live": {
-      "balance": 41.92,
+      "balance": 41.94,
       "cash": 35.26,
-      "peak": 41.92,
+      "peak": 41.94,
       "initial_balance": 10.0
     },
     "paper": {
@@ -101,15 +101,34 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-11-12T18:46:43.473402Z"
+    "updated_at": "2026-11-13T00:04:38.989529Z"
   },
   "cash_bal": 35.26,
-  "position_value": 6.66,
-  "account_value": 41.92,
-  "live_pnl": 31.92,
+  "position_value": 6.68,
+  "account_value": 41.94,
+  "live_pnl": 31.94,
   "paper_pnl": 0.0,
   "unit_total": -37.55,
   "today_outcomes": [
+    {
+      "timestamp": "2026-11-13T00:06:52.476399Z",
+      "ticker": "KXRAINWKND-26NOV14-LAX",
+      "title": "Will it rain in Los Angeles between Nov 14 and Nov 15, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-54.5",
+      "implied_prob": "0.775",
+      "true_prob": "0.23",
+      "confidence": "26",
+      "suggested_live_dollars": "1.68",
+      "suggested_paper_dollars": "41.52",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "24",
+      "outcome": "",
+      "units_pl": "",
+      "resolved_at": "",
+      "notes": ""
+    },
     {
       "timestamp": "2026-11-12T18:50:49.322097Z",
       "ticker": "KXBTCMINMON-BTC-26NOV30-7000000",
@@ -378,6 +397,25 @@
     }
   ],
   "recent_alerts": [
+    {
+      "timestamp": "2026-11-13T00:06:52.476399Z",
+      "ticker": "KXRAINWKND-26NOV14-LAX",
+      "title": "Will it rain in Los Angeles between Nov 14 and Nov 15, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-54.5",
+      "implied_prob": "0.775",
+      "true_prob": "0.23",
+      "confidence": "26",
+      "suggested_live_dollars": "1.68",
+      "suggested_paper_dollars": "41.52",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "24",
+      "outcome": "",
+      "units_pl": "",
+      "resolved_at": "",
+      "notes": ""
+    },
     {
       "timestamp": "2026-11-12T18:50:49.322097Z",
       "ticker": "KXBTCMINMON-BTC-26NOV30-7000000",
@@ -1308,25 +1346,6 @@
       "units_pl": "",
       "resolved_at": "",
       "notes": ""
-    },
-    {
-      "timestamp": "2026-10-22T09:34:13.187600Z",
-      "ticker": "KXBTCMINMON-BTC-26OCT31-7750000",
-      "title": "Will BTC trimmed mean be below $77500.00 by 11:59 PM ET on Oct 31, 2026?",
-      "category": "Crypto",
-      "direction": "YES",
-      "edge_pct": "8.02",
-      "implied_prob": "0.34",
-      "true_prob": "0.4202",
-      "confidence": "54",
-      "suggested_live_dollars": "0.36",
-      "suggested_paper_dollars": "9.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "36",
-      "outcome": "",
-      "units_pl": "",
-      "resolved_at": "",
-      "notes": ""
     }
   ],
   "model_changes": [
@@ -1367,7 +1386,26 @@
     "Weather": 0.7,
     "Climate and Weather": 0.3
   },
-  "bets_placed": [],
+  "bets_placed": [
+    {
+      "timestamp": "2026-11-13T00:06:52.476664",
+      "ticker": "KXRAINWKND-26NOV14-LAX",
+      "title": "Will it rain in Los Angeles between Nov 14 and Nov 15, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "contracts": "8",
+      "price_cents": "24",
+      "dollars_risked": "1.92",
+      "edge_pct": "-54.5",
+      "true_prob": "0.23",
+      "implied_prob": "0.775",
+      "confidence": "26",
+      "kelly_fraction": "0.5",
+      "dry_run": "True",
+      "order_id": "",
+      "status": "dry_run"
+    }
+  ],
   "open_positions": [
     {
       "ticker": "KXSOLMAXY-27JAN01-170",
@@ -1399,9 +1437,9 @@
       "direction": "NO",
       "contracts": 2,
       "entry_cents": 0,
-      "current_cents": 94,
+      "current_cents": 95,
       "dollars_risked": 0,
-      "current_value": 1.88,
+      "current_value": 1.9,
       "pl_dollars": 0.0,
       "timestamp": ""
     },
@@ -1431,8 +1469,8 @@
     }
   ],
   "audited": {
-    "markets_alerted": 3148,
-    "raw_rows": 17128,
+    "markets_alerted": 3149,
+    "raw_rows": 17129,
     "resolved_markets": 76,
     "wins": 26,
     "hit_rate": 34.2,
@@ -1488,16 +1526,16 @@
     },
     "longshot_no_10_30": {
       "status": "killed",
-      "settled": 932,
-      "events": 457,
-      "hit_rate": 0.8552,
-      "net_c": -3.76,
-      "lo_c": -6.71,
-      "hi_c": -0.81,
-      "clv_c": 3.56,
-      "open": 95,
-      "old_c": -5.38,
-      "new_c": -2.14,
+      "settled": 946,
+      "events": 465,
+      "hit_rate": 0.8531,
+      "net_c": -3.83,
+      "lo_c": -6.76,
+      "hi_c": -0.91,
+      "clv_c": -0.85,
+      "open": 81,
+      "old_c": -5.27,
+      "new_c": -2.4,
       "since": "2026-11-11T16:32:38Z",
       "reason": "forward test -3.9c CI [-7.0,-0.9] over 429 events"
     },
@@ -1525,7 +1563,7 @@
       "lo_c": null,
       "hi_c": null,
       "clv_c": null,
-      "open": 47,
+      "open": 50,
       "old_c": null,
       "new_c": null,
       "since": "2026-11-11T16:52:54Z",
@@ -1547,32 +1585,32 @@
       "reason": ""
     },
     "weather_tail": {
-      "status": "active",
-      "settled": 791,
+      "status": "killed",
+      "settled": 811,
       "events": 264,
-      "hit_rate": 0.8799,
-      "net_c": -2.01,
-      "lo_c": -4.06,
-      "hi_c": 0.03,
-      "clv_c": 2.16,
-      "open": 111,
+      "hit_rate": 0.8767,
+      "net_c": -2.03,
+      "lo_c": -3.95,
+      "hi_c": -0.11,
+      "clv_c": 1.77,
+      "open": 140,
       "old_c": -1.61,
-      "new_c": -2.41,
-      "since": "2026-11-11T16:33:01Z",
-      "reason": ""
+      "new_c": -2.45,
+      "since": "2026-11-13T00:06:52Z",
+      "reason": "264 events, net -2.0c, CI upper -0.1c < 0"
     },
     "weather_tail_forecast": {
       "status": "active",
-      "settled": 18,
-      "events": 16,
-      "hit_rate": 0.8889,
-      "net_c": -7.19,
-      "lo_c": -23.31,
-      "hi_c": 8.94,
-      "clv_c": 5.06,
-      "open": 124,
-      "old_c": -4.13,
-      "new_c": -10.25,
+      "settled": 49,
+      "events": 35,
+      "hit_rate": 0.898,
+      "net_c": -6.04,
+      "lo_c": -14.71,
+      "hi_c": 2.62,
+      "clv_c": 2.19,
+      "open": 145,
+      "old_c": -9.82,
+      "new_c": -2.47,
       "since": "2026-11-11T16:32:38Z",
       "reason": ""
     }
@@ -1627,37 +1665,37 @@
     ]
   },
   "scan_diag": {
-    "fetched": 77677,
-    "parsed": 72837,
+    "fetched": 78842,
+    "parsed": 65539,
     "by_category": {
-      "Sports": 57447,
-      "Politics": 343,
-      "Science and Technology": 611,
-      "Financials": 5675,
-      "Crypto": 1546,
-      "Commodities": 1587,
-      "Economics": 1923,
-      "Climate and Weather": 1189,
-      "Elections": 95,
-      "Entertainment": 2027,
-      "Mentions": 390,
-      "Companies": 4
+      "Climate and Weather": 692,
+      "Economics": 1196,
+      "Crypto": 818,
+      "Financials": 4731,
+      "Commodities": 666,
+      "Sports": 55300,
+      "Politics": 133,
+      "Science and Technology": 456,
+      "Elections": 8,
+      "Entertainment": 1453,
+      "Mentions": 86
     },
-    "closing_within_60d": 72837,
+    "closing_within_60d": 65539,
     "gate_fail": {
-      "volume": 72019,
-      "prob": 157,
+      "volume": 64762,
+      "prob": 58,
       "hours": 0,
       "status": 0
     },
-    "gate_pass": 661,
-    "modelable": 21,
-    "edges": 8,
-    "ts": "2026-11-12T18:47:26.850141"
+    "gate_pass": 719,
+    "modelable": 2,
+    "edges": 2,
+    "ts": "2026-11-13T00:05:27.482634"
   },
   "paper_events": [
     "2026-11-11T16:31:26Z KILLED longshot_no_10_30: forward test -3.9c CI [-7.0,-0.9] over 429 events",
-    "2026-11-11T16:32:38Z KILLED longshot_no_10_30: forward test -3.9c CI [-7.0,-0.9] over 429 events"
+    "2026-11-11T16:32:38Z KILLED longshot_no_10_30: forward test -3.9c CI [-7.0,-0.9] over 429 events",
+    "2026-11-13T00:06:52Z KILLED weather_tail: 264 events, net -2.0c, CI upper -0.1c < 0 (was active)"
   ],
   "dry_run": false
 }

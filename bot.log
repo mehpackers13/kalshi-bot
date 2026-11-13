@@ -116280,3 +116280,32 @@ Total modelable markets evaluated: 0
 [2026-11-12 16:40:37 ET] [INFO] Morning report complete
 [2026-11-12 16:40:37 ET] [INFO] ============================================================
 [2026-11-12 16:40:37 ET] [INFO] Morning report job complete
+[2026-11-12 20:04:33 ET] [INFO] Scan job starting
+[2026-11-12 20:04:33 ET] [INFO] Kalshi API key auth OK ✅  balance: $35.26
+[2026-11-12 20:04:35 ET] [INFO] ============================================================
+[2026-11-12 20:04:35 ET] [INFO] Starting market scan
+[2026-11-12 20:04:38 ET] [INFO] Portfolio value: $35.26 cash + $6.68 positions = $41.94
+[2026-11-12 20:04:38 ET] [INFO] New peak portfolio value: $41.94  (was $41.92)
+[2026-11-12 20:04:38 ET] [INFO] Cash: $35.26  |  Positions: $6.68  |  Total: $41.94  |  Peak: $41.94
+[2026-11-12 20:04:39 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-11-12 20:05:19 ET] [WARN] SCAN_MAX_PAGES reached; far-dated markets truncated
+[2026-11-12 20:05:19 ET] [INFO] Fetched 78842 open markets via close-window feed across 80 pages
+[2026-11-12 20:05:19 ET] [INFO] Fetched 78842 open markets
+[2026-11-12 20:05:19 ET] [INFO] Parsed 65539 valid markets
+[2026-11-12 20:05:19 ET] [INFO] Categories: {'Sports': 55300, 'Financials': 4731, 'Entertainment': 1453, 'Economics': 1196, 'Crypto': 818, 'Climate and Weather': 692, 'Commodities': 666, 'Science and Technology': 456}
+[2026-11-12 20:05:19 ET] [INFO]   price model: ^NDX spot=28289.19 target=27999.99 expiry vol=31% T=21h → P=0.752
+[2026-11-12 20:05:20 ET] [INFO]   EDGE FOUND: KXNASDAQ100-26NOV13H1600-T27999.9900 | implied=86.5% true=75.2% edge=-11.3% dir=NO conf=19
+[2026-11-12 20:05:21 ET] [WARN]   weather model: chicago no forecast for 2027-11-12
+[2026-11-12 20:05:21 ET] [WARN]   weather model: boston no forecast for 2027-11-12
+[2026-11-12 20:05:27 ET] [INFO]   weather model: los angeles rain 2026-11-14 forecast=23% → P=0.230
+[2026-11-12 20:05:27 ET] [INFO]   EDGE FOUND: KXRAINWKND-26NOV14-LAX | implied=77.5% true=23.0% edge=-54.5% dir=NO conf=26
+[2026-11-12 20:05:27 ET] [INFO] Checked 65539 markets in 7.9s | Edges found: 2
+[2026-11-12 20:05:27 ET] [INFO] Scan feed: fetched 78842 | parsed 65539 | ≤60d 65539 | categories {'Sports': 55300, 'Financials': 4731, 'Entertainment': 1453, 'Economics': 1196, 'Crypto': 818, 'Climate and Weather': 692, 'Commodities': 666, 'Science and Technology': 456} | gate pass 719 | modelable 2 | edges 2
+[2026-11-12 20:06:52 ET] [INFO] paper_lab: KILLED weather_tail: 264 events, net -2.0c, CI upper -0.1c < 0 (was active)
+[2026-11-12 20:06:52 ET] [INFO] paper_lab: longshot_no_10_30 [killed]: 946 settled / 465 events, net -3.8c, 95% CI [-6.8, -0.9]c, CLV -0.9c; 81 open | prop_projection [active]: 50 open, none settled yet | sports_gap [active]: 8 open, none settled yet | weather_tail [killed]: 811 settled / 264 events, net -2.0c, 95% CI [-3.9, -0.1]c, CLV +1.8c; 140 open | weather_tail_forecast [active]: 49 settled / 35 events, net -6.0c, 95% CI [-14.7, +2.6]c, CLV +2.2c; 145 open (migrated 0, new {'lab_rules': 0, 'prop_projection': 3, 'sports_gap': 0, 'weather_tail_forecast': 52, 'weather_tail': 49}, quotes 295, resolved 65, 85s)
+[2026-11-12 20:06:52 ET] [INFO]   Skipping KXNASDAQ100-26NOV13H1600-T27999.9900 — suggested bet too small to be meaningful
+[2026-11-12 20:06:52 ET] [INFO] [Discord] Trade alert sent: KXRAINWKND-26NOV14-LAX
+[2026-11-12 20:06:52 ET] [INFO] DRY RUN 🔵 KXRAINWKND-26NOV14-LAX NO 8ct @ 24¢ = $1.92 | edge=-54.5% conf=26 | would_use 50%Kelly
+[2026-11-12 20:06:52 ET] [INFO] Scan complete — 1 alerts sent
+[2026-11-12 20:06:52 ET] [INFO] ============================================================
+[2026-11-12 20:06:52 ET] [INFO] Scan job complete

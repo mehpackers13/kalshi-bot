@@ -10,16 +10,16 @@
   "reason": "forward test -3.9c CI [-7.0,-0.9] over 429 events",
   "since": "2026-11-11T16:32:38Z",
   "stats": {
-   "clv": 0.0356,
-   "events": 457,
-   "hi": -0.0081,
-   "hit_rate": 0.8552,
-   "lo": -0.0671,
-   "net": -0.0376,
-   "new": -0.0214,
-   "old": -0.0538,
-   "open": 95,
-   "settled": 932
+   "clv": -0.0085,
+   "events": 465,
+   "hi": -0.0091,
+   "hit_rate": 0.8531,
+   "lo": -0.0676,
+   "net": -0.0383,
+   "new": -0.024,
+   "old": -0.0527,
+   "open": 81,
+   "settled": 946
   },
   "status": "killed"
  },
@@ -42,7 +42,7 @@
    "net": null,
    "new": null,
    "old": null,
-   "open": 47,
+   "open": 50,
    "settled": 0
   },
   "status": "active"
@@ -66,38 +66,39 @@
   "status": "active"
  },
  "weather_tail": {
-  "reason": "",
+  "killed_by_gate": true,
+  "reason": "264 events, net -2.0c, CI upper -0.1c < 0",
   "rule_state": {},
-  "since": "2026-11-11T16:33:01Z",
+  "since": "2026-11-13T00:06:52Z",
   "stats": {
-   "clv": 0.0216,
+   "clv": 0.0177,
    "events": 264,
-   "hi": 0.0003,
-   "hit_rate": 0.8799,
-   "lo": -0.0406,
-   "net": -0.0201,
-   "new": -0.0241,
+   "hi": -0.0011,
+   "hit_rate": 0.8767,
+   "lo": -0.0395,
+   "net": -0.0203,
+   "new": -0.0245,
    "old": -0.0161,
-   "open": 111,
-   "settled": 791
+   "open": 140,
+   "settled": 811
   },
-  "status": "active"
+  "status": "killed"
  },
  "weather_tail_forecast": {
   "reason": "",
   "rule_state": {},
   "since": "2026-11-11T16:32:38Z",
   "stats": {
-   "clv": 0.0506,
-   "events": 16,
-   "hi": 0.0894,
-   "hit_rate": 0.8889,
-   "lo": -0.2331,
-   "net": -0.0719,
-   "new": -0.1025,
-   "old": -0.0413,
-   "open": 124,
-   "settled": 18
+   "clv": 0.0219,
+   "events": 35,
+   "hi": 0.0262,
+   "hit_rate": 0.898,
+   "lo": -0.1471,
+   "net": -0.0604,
+   "new": -0.0247,
+   "old": -0.0982,
+   "open": 145,
+   "settled": 49
   },
   "status": "active"
  }

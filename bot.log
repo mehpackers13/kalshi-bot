@@ -116422,3 +116422,42 @@ Total modelable markets evaluated: 0
 [2026-11-13 16:21:47 ET] [INFO] Morning report complete
 [2026-11-13 16:21:47 ET] [INFO] ============================================================
 [2026-11-13 16:21:47 ET] [INFO] Morning report job complete
+[2026-11-13 19:49:07 ET] [INFO] Scan job starting
+[2026-11-13 19:49:07 ET] [INFO] Kalshi API key auth OK ✅  balance: $35.26
+[2026-11-13 19:49:09 ET] [INFO] ============================================================
+[2026-11-13 19:49:09 ET] [INFO] Starting market scan
+[2026-11-13 19:49:13 ET] [INFO] Portfolio value: $35.26 cash + $6.73 positions = $41.99
+[2026-11-13 19:49:13 ET] [INFO] Cash: $35.26  |  Positions: $6.73  |  Total: $41.99  |  Peak: $41.99
+[2026-11-13 19:49:13 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-11-13 19:49:53 ET] [WARN] SCAN_MAX_PAGES reached; far-dated markets truncated
+[2026-11-13 19:49:53 ET] [INFO] Fetched 79093 open markets via close-window feed across 80 pages
+[2026-11-13 19:49:53 ET] [INFO] Fetched 79093 open markets
+[2026-11-13 19:49:53 ET] [INFO] Parsed 77442 valid markets
+[2026-11-13 19:49:53 ET] [INFO] Categories: {'Sports': 67866, 'Financials': 4328, 'Crypto': 1274, 'Entertainment': 1213, 'Commodities': 757, 'Economics': 754, 'Climate and Weather': 680, 'Science and Technology': 379}
+[2026-11-13 19:49:54 ET] [INFO]   weather model: las vegas rain 2026-11-13 forecast=5% → P=0.050
+[2026-11-13 19:49:54 ET] [INFO]   EDGE FOUND: KXRAIN-26NOV13-LV | implied=18.0% true=5.0% edge=-13.0% dir=NO conf=19
+[2026-11-13 19:49:55 ET] [INFO]   price model: ^GSPC spot=7561.67 target=7435.00 expiry vol=19% T=69h → P=0.842
+[2026-11-13 19:49:56 ET] [INFO]   weather model: denver rain 2026-11-14 forecast=13% → P=0.130
+[2026-11-13 19:49:56 ET] [INFO]   EDGE FOUND: KXRAIN-26NOV14-DEN | implied=33.5% true=13.0% edge=-20.5% dir=NO conf=22
+[2026-11-13 19:49:56 ET] [INFO]   weather model: pittsburgh rain 2026-11-14 forecast=29% → P=0.290
+[2026-11-13 19:49:56 ET] [INFO]   EDGE FOUND: KXRAIN-26NOV14-PIT | implied=71.5% true=29.0% edge=-42.5% dir=NO conf=26
+[2026-11-13 19:50:00 ET] [INFO] Checked 77439 markets in 6.4s | Edges found: 3
+[2026-11-13 19:50:00 ET] [INFO] Scan feed: fetched 79093 | parsed 77442 | ≤60d 77442 | categories {'Sports': 67866, 'Financials': 4328, 'Crypto': 1274, 'Entertainment': 1213, 'Commodities': 757, 'Economics': 754, 'Climate and Weather': 680, 'Science and Technology': 379} | gate pass 748 | modelable 4 | edges 3
+[2026-11-13 19:51:11 ET] [WARN] weather_forecast: ensemble fetch failed for HOU: HTTPSConnectionPool(host='ensemble-api.open-meteo.com', port=443): Read timed out. (read timeout=20)
+[2026-11-13 19:51:32 ET] [WARN] weather_forecast: ensemble fetch failed for DAL: HTTPSConnectionPool(host='ensemble-api.open-meteo.com', port=443): Read timed out. (read timeout=20)
+[2026-11-13 19:51:53 ET] [WARN] weather_forecast: ensemble fetch failed for CHI: HTTPSConnectionPool(host='ensemble-api.open-meteo.com', port=443): Read timed out. (read timeout=20)
+[2026-11-13 19:52:13 ET] [WARN] weather_forecast: ensemble fetch failed for TTN: HTTPSConnectionPool(host='ensemble-api.open-meteo.com', port=443): Read timed out. (read timeout=20)
+[2026-11-13 19:52:33 ET] [WARN] weather_forecast: ensemble fetch failed for PHIL: HTTPSConnectionPool(host='ensemble-api.open-meteo.com', port=443): Read timed out. (read timeout=20)
+[2026-11-13 19:52:54 ET] [WARN] weather_forecast: ensemble fetch failed for NYC: HTTPSConnectionPool(host='ensemble-api.open-meteo.com', port=443): Read timed out. (read timeout=20)
+[2026-11-13 19:53:01 ET] [INFO] weather_tail_forecast: 29 markets not modellable (unknown city/format/forecast)
+[2026-11-13 19:53:32 ET] [INFO] paper_lab: KILLED weather_tail_forecast: 78 events, net -5.1c, CI upper -0.1c < 0 (was active)
+[2026-11-13 19:53:32 ET] [INFO] paper_lab: longshot_no_10_30 [killed]: 946 settled / 465 events, net -3.8c, 95% CI [-6.8, -0.9]c, CLV -0.9c; 81 open | prop_projection [active]: 71 open, none settled yet | sports_gap [active]: 16 open, none settled yet | weather_tail [killed]: 883 settled / 288 events, net -2.3c, 95% CI [-4.2, -0.5]c, CLV +1.9c; 68 open | weather_tail_forecast [killed]: 136 settled / 78 events, net -5.1c, 95% CI [-10.1, -0.1]c, CLV -0.9c; 141 open (migrated 0, new {'lab_rules': 0, 'prop_projection': 9, 'sports_gap': 4, 'weather_tail_forecast': 53}, quotes 240, resolved 71, 212s)
+[2026-11-13 19:53:32 ET] [INFO] [Discord] Trade alert sent: KXRAIN-26NOV13-LV
+[2026-11-13 19:53:32 ET] [INFO] DRY RUN 🔵 KXRAIN-26NOV13-LV NO 2ct @ 83¢ = $1.66 | edge=-13.0% conf=19 | would_use 50%Kelly
+[2026-11-13 19:53:33 ET] [INFO] [Discord] Trade alert sent: KXRAIN-26NOV14-DEN
+[2026-11-13 19:53:33 ET] [INFO] DRY RUN 🔵 KXRAIN-26NOV14-DEN NO 3ct @ 67¢ = $2.01 | edge=-20.5% conf=22 | would_use 50%Kelly
+[2026-11-13 19:53:36 ET] [INFO] [Discord] Trade alert sent: KXRAIN-26NOV14-PIT
+[2026-11-13 19:53:36 ET] [INFO] DRY RUN 🔵 KXRAIN-26NOV14-PIT NO 7ct @ 29¢ = $2.03 | edge=-42.5% conf=26 | would_use 50%Kelly
+[2026-11-13 19:53:36 ET] [INFO] Scan complete — 3 alerts sent
+[2026-11-13 19:53:36 ET] [INFO] ============================================================
+[2026-11-13 19:53:36 ET] [INFO] Scan job complete

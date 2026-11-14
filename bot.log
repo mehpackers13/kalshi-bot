@@ -116501,3 +116501,32 @@ Total modelable markets evaluated: 0
 [2026-11-14 01:46:57 ET] [INFO] Scan complete — 5 alerts sent
 [2026-11-14 01:46:57 ET] [INFO] ============================================================
 [2026-11-14 01:46:57 ET] [INFO] Scan job complete
+[2026-11-14 12:57:04 ET] [INFO] Scan job starting
+[2026-11-14 12:57:04 ET] [INFO] Kalshi API key auth OK ✅  balance: $35.26
+[2026-11-14 12:57:06 ET] [INFO] ============================================================
+[2026-11-14 12:57:06 ET] [INFO] Starting market scan
+[2026-11-14 12:57:09 ET] [INFO] Portfolio value: $35.26 cash + $6.65 positions = $41.91
+[2026-11-14 12:57:09 ET] [INFO] Cash: $35.26  |  Positions: $6.65  |  Total: $41.91  |  Peak: $41.99
+[2026-11-14 12:57:09 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-11-14 12:57:42 ET] [WARN] SCAN_MAX_PAGES reached; far-dated markets truncated
+[2026-11-14 12:57:42 ET] [INFO] Fetched 79188 open markets via close-window feed across 80 pages
+[2026-11-14 12:57:42 ET] [INFO] Fetched 79188 open markets
+[2026-11-14 12:57:43 ET] [INFO] Parsed 77565 valid markets
+[2026-11-14 12:57:43 ET] [INFO] Categories: {'Sports': 66378, 'Financials': 5246, 'Entertainment': 1451, 'Crypto': 1407, 'Commodities': 990, 'Climate and Weather': 806, 'Economics': 665, 'Science and Technology': 360}
+[2026-11-14 12:57:43 ET] [INFO]   weather model: austin rain 2026-11-14 forecast=18% → P=0.180
+[2026-11-14 12:57:43 ET] [INFO]   EDGE FOUND: KXRAIN-26NOV14-AUS | implied=83.5% true=18.0% edge=-65.5% dir=NO conf=24
+[2026-11-14 12:57:44 ET] [INFO]   price model: ^GSPC spot=7561.67 target=7435.00 expiry vol=19% T=52h → P=0.876
+[2026-11-14 12:57:44 ET] [INFO]   EDGE FOUND: KXINXU-26NOV16H1600-T7434.9999 | implied=72.0% true=87.6% edge=+15.6% dir=YES conf=22
+[2026-11-14 12:57:45 ET] [INFO]   weather model: phoenix rain 2026-11-14 forecast=22% → P=0.220
+[2026-11-14 12:57:45 ET] [INFO]   EDGE FOUND: KXRAINWKND-26NOV14-PHX | implied=67.5% true=22.0% edge=-45.5% dir=NO conf=26
+[2026-11-14 12:57:48 ET] [INFO] Checked 77562 markets in 5.6s | Edges found: 3
+[2026-11-14 12:57:48 ET] [INFO] Scan feed: fetched 79188 | parsed 77565 | ≤60d 77565 | categories {'Sports': 66378, 'Financials': 5246, 'Entertainment': 1451, 'Crypto': 1407, 'Commodities': 990, 'Climate and Weather': 806, 'Economics': 665, 'Science and Technology': 360} | gate pass 826 | modelable 3 | edges 3
+[2026-11-14 12:58:53 ET] [INFO] paper_lab: longshot_no_10_30 [killed]: 946 settled / 465 events, net -3.8c, 95% CI [-6.8, -0.9]c, CLV -0.9c; 81 open | prop_projection [active]: 23 settled / 20 events, net -13.3c, 95% CI [-34.9, +8.3]c, CLV -4.7c; 59 open | sports_gap [active]: 6 settled / 5 events, net -49.1c, 95% CI [-63.2, -35.0]c, CLV -3.8c; 12 open | weather_tail [killed]: 911 settled / 303 events, net -1.9c, 95% CI [-3.7, -0.1]c, CLV +2.9c; 40 open | weather_tail_forecast [killed]: 191 settled / 113 events, net -3.7c, 95% CI [-7.7, +0.3]c, CLV -1.0c; 86 open (migrated 0, new {'lab_rules': 0, 'prop_projection': 6, 'sports_gap': 2}, quotes 78, resolved 83, 65s)
+[2026-11-14 12:58:54 ET] [INFO] [Discord] Trade alert sent: KXRAIN-26NOV14-AUS
+[2026-11-14 12:58:54 ET] [INFO] DRY RUN 🔵 KXRAIN-26NOV14-AUS NO 12ct @ 17¢ = $2.04 | edge=-65.5% conf=24 | would_use 50%Kelly
+[2026-11-14 12:58:54 ET] [INFO]   Skipping KXINXU-26NOV16H1600-T7434.9999 — suggested bet too small to be meaningful
+[2026-11-14 12:58:54 ET] [INFO] [Discord] Trade alert sent: KXRAINWKND-26NOV14-PHX
+[2026-11-14 12:58:54 ET] [INFO] DRY RUN 🔵 KXRAINWKND-26NOV14-PHX NO 6ct @ 33¢ = $1.98 | edge=-45.5% conf=26 | would_use 50%Kelly
+[2026-11-14 12:58:54 ET] [INFO] Scan complete — 2 alerts sent
+[2026-11-14 12:58:54 ET] [INFO] ============================================================
+[2026-11-14 12:58:55 ET] [INFO] Scan job complete

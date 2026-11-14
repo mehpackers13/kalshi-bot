@@ -116530,3 +116530,24 @@ Total modelable markets evaluated: 0
 [2026-11-14 12:58:54 ET] [INFO] Scan complete — 2 alerts sent
 [2026-11-14 12:58:54 ET] [INFO] ============================================================
 [2026-11-14 12:58:55 ET] [INFO] Scan job complete
+[2026-11-14 17:20:04 ET] [INFO] Scan job starting
+[2026-11-14 17:20:05 ET] [INFO] Kalshi API key auth OK ✅  balance: $35.26
+[2026-11-14 17:20:06 ET] [INFO] ============================================================
+[2026-11-14 17:20:06 ET] [INFO] Starting market scan
+[2026-11-14 17:20:10 ET] [INFO] Portfolio value: $35.26 cash + $6.64 positions = $41.90
+[2026-11-14 17:20:10 ET] [INFO] Cash: $35.26  |  Positions: $6.64  |  Total: $41.90  |  Peak: $41.99
+[2026-11-14 17:20:10 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-11-14 17:20:52 ET] [WARN] SCAN_MAX_PAGES reached; far-dated markets truncated
+[2026-11-14 17:20:52 ET] [INFO] Fetched 78392 open markets via close-window feed across 80 pages
+[2026-11-14 17:20:52 ET] [INFO] Fetched 78392 open markets
+[2026-11-14 17:20:52 ET] [INFO] Parsed 75714 valid markets
+[2026-11-14 17:20:52 ET] [INFO] Categories: {'Sports': 63750, 'Financials': 5539, 'Entertainment': 1592, 'Crypto': 1476, 'Commodities': 1037, 'Climate and Weather': 821, 'Economics': 772, 'Science and Technology': 458}
+[2026-11-14 17:20:56 ET] [INFO]   price model: ^GSPC spot=7561.67 target=7435.00 expiry vol=19% T=48h → P=0.887
+[2026-11-14 17:20:56 ET] [INFO]   EDGE FOUND: KXINXU-26NOV16H1600-T7434.9999 | implied=73.0% true=88.7% edge=+15.7% dir=YES conf=22
+[2026-11-14 17:20:57 ET] [INFO] Checked 75709 markets in 4.3s | Edges found: 1
+[2026-11-14 17:20:57 ET] [INFO] Scan feed: fetched 78392 | parsed 75714 | ≤60d 75714 | categories {'Sports': 63750, 'Financials': 5539, 'Entertainment': 1592, 'Crypto': 1476, 'Commodities': 1037, 'Climate and Weather': 821, 'Economics': 772, 'Science and Technology': 458} | gate pass 935 | modelable 1 | edges 1
+[2026-11-14 17:22:02 ET] [INFO] paper_lab: longshot_no_10_30 [killed]: 946 settled / 465 events, net -3.8c, 95% CI [-6.8, -0.9]c, CLV -0.9c; 81 open | prop_projection [active]: 23 settled / 20 events, net -13.3c, 95% CI [-34.9, +8.3]c, CLV -4.7c; 64 open | sports_gap [active]: 6 settled / 5 events, net -49.1c, 95% CI [-63.2, -35.0]c, CLV -3.8c; 14 open | weather_tail [killed]: 949 settled / 311 events, net -2.1c, 95% CI [-3.9, -0.4]c, CLV +2.5c; 2 open | weather_tail_forecast [killed]: 220 settled / 118 events, net -4.0c, 95% CI [-7.6, -0.3]c, CLV -1.8c; 57 open (migrated 0, new {'lab_rules': 0, 'prop_projection': 5, 'sports_gap': 2}, quotes 83, resolved 67, 65s)
+[2026-11-14 17:22:02 ET] [INFO]   Skipping KXINXU-26NOV16H1600-T7434.9999 — suggested bet too small to be meaningful
+[2026-11-14 17:22:02 ET] [INFO] Scan complete — no qualifying edges found (this is fine)
+[2026-11-14 17:22:02 ET] [INFO] ============================================================
+[2026-11-14 17:22:02 ET] [INFO] Scan job complete

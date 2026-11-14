@@ -116461,3 +116461,43 @@ Total modelable markets evaluated: 0
 [2026-11-13 19:53:36 ET] [INFO] Scan complete — 3 alerts sent
 [2026-11-13 19:53:36 ET] [INFO] ============================================================
 [2026-11-13 19:53:36 ET] [INFO] Scan job complete
+[2026-11-14 01:45:16 ET] [INFO] Scan job starting
+[2026-11-14 01:45:16 ET] [INFO] Kalshi API key auth OK ✅  balance: $35.26
+[2026-11-14 01:45:17 ET] [INFO] ============================================================
+[2026-11-14 01:45:17 ET] [INFO] Starting market scan
+[2026-11-14 01:45:20 ET] [INFO] Portfolio value: $35.26 cash + $6.71 positions = $41.97
+[2026-11-14 01:45:20 ET] [INFO] Cash: $35.26  |  Positions: $6.71  |  Total: $41.97  |  Peak: $41.99
+[2026-11-14 01:45:21 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-11-14 01:45:54 ET] [WARN] SCAN_MAX_PAGES reached; far-dated markets truncated
+[2026-11-14 01:45:54 ET] [INFO] Fetched 76875 open markets via close-window feed across 80 pages
+[2026-11-14 01:45:54 ET] [INFO] Fetched 76875 open markets
+[2026-11-14 01:45:54 ET] [INFO] Parsed 75052 valid markets
+[2026-11-14 01:45:54 ET] [INFO] Categories: {'Sports': 63293, 'Financials': 5669, 'Crypto': 1510, 'Entertainment': 1507, 'Commodities': 1085, 'Economics': 760, 'Climate and Weather': 564, 'Science and Technology': 385}
+[2026-11-14 01:45:54 ET] [INFO]   weather model: pittsburgh rain 2026-11-14 forecast=31% → P=0.310
+[2026-11-14 01:45:54 ET] [INFO]   EDGE FOUND: KXRAIN-26NOV14-PIT | implied=82.5% true=31.0% edge=-51.5% dir=NO conf=24
+[2026-11-14 01:45:55 ET] [WARN]   weather model: las vegas no forecast for 2027-11-13
+[2026-11-14 01:45:55 ET] [INFO]   price model: ^GSPC spot=7561.67 target=7435.00 expiry vol=19% T=63h → P=0.853
+[2026-11-14 01:45:56 ET] [INFO]   weather model: los angeles rain 2026-11-14 forecast=21% → P=0.210
+[2026-11-14 01:45:56 ET] [INFO]   EDGE FOUND: KXRAINWKND-26NOV14-LAX | implied=80.5% true=21.0% edge=-59.5% dir=NO conf=26
+[2026-11-14 01:45:56 ET] [INFO]   weather model: los angeles rain 2026-11-14 forecast=21% → P=0.210
+[2026-11-14 01:45:56 ET] [INFO]   EDGE FOUND: KXRAIN-26NOV14-LAX | implied=45.0% true=21.0% edge=-24.0% dir=NO conf=22
+[2026-11-14 01:45:56 ET] [INFO]   weather model: oklahoma city rain 2026-11-14 forecast=20% → P=0.200
+[2026-11-14 01:45:56 ET] [INFO]   EDGE FOUND: KXRAIN-26NOV14-OKC | implied=83.5% true=20.0% edge=-63.5% dir=NO conf=26
+[2026-11-14 01:45:57 ET] [INFO]   weather model: dallas rain 2026-11-14 forecast=14% → P=0.140
+[2026-11-14 01:45:57 ET] [INFO]   EDGE FOUND: KXRAIN-26NOV14-DAL | implied=83.0% true=14.0% edge=-69.0% dir=NO conf=26
+[2026-11-14 01:45:59 ET] [INFO] Checked 75052 markets in 4.7s | Edges found: 5
+[2026-11-14 01:45:59 ET] [INFO] Scan feed: fetched 76875 | parsed 75052 | ≤60d 75052 | categories {'Sports': 63293, 'Financials': 5669, 'Crypto': 1510, 'Entertainment': 1507, 'Commodities': 1085, 'Economics': 760, 'Climate and Weather': 564, 'Science and Technology': 385} | gate pass 627 | modelable 6 | edges 5
+[2026-11-14 01:46:52 ET] [INFO] paper_lab: longshot_no_10_30 [killed]: 946 settled / 465 events, net -3.8c, 95% CI [-6.8, -0.9]c, CLV -0.9c; 81 open | prop_projection [active]: 23 settled / 20 events, net -13.3c, 95% CI [-34.9, +8.3]c, CLV -4.7c; 53 open | sports_gap [active]: 6 settled / 5 events, net -49.1c, 95% CI [-63.2, -35.0]c, CLV -3.8c; 10 open | weather_tail [killed]: 883 settled / 288 events, net -2.3c, 95% CI [-4.2, -0.5]c, CLV +1.9c; 68 open | weather_tail_forecast [killed]: 136 settled / 78 events, net -5.1c, 95% CI [-10.1, -0.1]c, CLV -0.9c; 141 open (migrated 0, new {'lab_rules': 0, 'prop_projection': 5, 'sports_gap': 0}, quotes 110, resolved 29, 54s)
+[2026-11-14 01:46:53 ET] [INFO] [Discord] Trade alert sent: KXRAIN-26NOV14-PIT
+[2026-11-14 01:46:53 ET] [INFO] DRY RUN 🔵 KXRAIN-26NOV14-PIT NO 11ct @ 18¢ = $1.98 | edge=-51.5% conf=24 | would_use 50%Kelly
+[2026-11-14 01:46:56 ET] [INFO] [Discord] Trade alert sent: KXRAINWKND-26NOV14-LAX
+[2026-11-14 01:46:56 ET] [INFO] DRY RUN 🔵 KXRAINWKND-26NOV14-LAX NO 10ct @ 21¢ = $2.10 | edge=-59.5% conf=26 | would_use 50%Kelly
+[2026-11-14 01:46:56 ET] [INFO] [Discord] Trade alert sent: KXRAIN-26NOV14-LAX
+[2026-11-14 01:46:56 ET] [INFO] DRY RUN 🔵 KXRAIN-26NOV14-LAX NO 3ct @ 56¢ = $1.68 | edge=-24.0% conf=22 | would_use 50%Kelly
+[2026-11-14 01:46:57 ET] [INFO] [Discord] Trade alert sent: KXRAIN-26NOV14-OKC
+[2026-11-14 01:46:57 ET] [INFO] DRY RUN 🔵 KXRAIN-26NOV14-OKC NO 12ct @ 17¢ = $2.04 | edge=-63.5% conf=26 | would_use 50%Kelly
+[2026-11-14 01:46:57 ET] [INFO] [Discord] Trade alert sent: KXRAIN-26NOV14-DAL
+[2026-11-14 01:46:57 ET] [INFO] DRY RUN 🔵 KXRAIN-26NOV14-DAL NO 11ct @ 18¢ = $1.98 | edge=-69.0% conf=26 | would_use 50%Kelly
+[2026-11-14 01:46:57 ET] [INFO] Scan complete — 5 alerts sent
+[2026-11-14 01:46:57 ET] [INFO] ============================================================
+[2026-11-14 01:46:57 ET] [INFO] Scan job complete

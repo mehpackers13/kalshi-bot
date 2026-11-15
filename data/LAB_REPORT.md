@@ -1,13 +1,13 @@
-# Strategy Lab — 2026-11-15T07:30:36Z
+# Strategy Lab — 2026-11-15T16:16:43Z
 
-75558 settled markets (75499 with executable candle quotes), 3419 rules tested (group x YES-price bucket x side, taker fees included, entry = first traded hourly candle ask/bid).
-Discovery used the oldest 52890 markets; the newest 22668 were held out and never used to pick a rule.
+76578 settled markets (76495 with executable candle quotes), 3503 rules tested (group x YES-price bucket x side, taker fees included, entry = first traded hourly candle ask/bid).
+Discovery used the oldest 53604 markets; the newest 22974 were held out and never used to pick a rule.
 
 **Rules passing all four gates: 0.** A rule must clear:
 
 1. **economic** — >=30 events, >=+1c/contract, 95% CI above 0, positive in both halves;
 2. **adverse selection** — still positive after 1c extra slippage;
-3. **multiple comparisons** — Benjamini-Hochberg at q=0.10 over all 3419 rules tested together (cutoff p<=0.02386). Without this, ~1 rule in 20 clears a 95% CI by pure chance, so a larger history yields MORE fake edges, not fewer;
+3. **multiple comparisons** — Benjamini-Hochberg at q=0.10 over all 3503 rules tested together (cutoff p<=0.02429). Without this, ~1 rule in 20 clears a 95% CI by pure chance, so a larger history yields MORE fake edges, not fewer;
 4. **out of sample** — >=10 events in the held-out newest slice and >=+1c there too.
 
 0 rules cleared gates 1, 2 and 4; 0 of those survived the FDR correction. The old VWAP method, with no fees, spread, FDR or holdout, would have passed 14.
@@ -37,6 +37,6 @@ A pass is a candidate for forward paper testing, not a proven edge, and never a 
 | family:KXELITESERIEN YES-price 70%-90% buy YES | 7 | +19.6 | [+15.5, +23.8] | None | None | — (0) | 0 | ·YY· |  |
 | series:KXNWSLTOTAL YES-price 70%-90% buy YES | 5 | +17.2 | [+15.5, +18.9] | None | None | — (0) | 0 | ·YY· |  |
 | series:KXELITESERIENTOTAL YES-price 70%-90% buy YES | 7 | +20.0 | [+15.4, +24.6] | None | None | — (0) | 0 | ·YY· |  |
+| series:KXISRNLTOTAL YES-price 70%-90% buy YES | 5 | +16.0 | [+15.4, +16.6] | None | None | — (0) | 0 | ·YY· |  |
 | series:KXEUROLEAGUEGAME YES-price 70%-90% buy YES | 5 | +19.2 | [+14.7, +23.7] | None | None | — (0) | 0 | ·YY· |  |
 | series:KXLALIGA1HBTTS YES-price 10%-30% buy NO | 5 | +18.6 | [+14.6, +22.6] | None | None | — (0) | 0 | ·YY· |  |
-| series:KXEUROLEAGUEGAME YES-price 10%-30% buy NO | 5 | +18.6 | [+14.4, +22.8] | None | None | — (0) | 0 | ·YY· |  |

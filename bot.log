@@ -116573,3 +116573,40 @@ Total modelable markets evaluated: 0
 [2026-11-14 21:16:38 ET] [INFO] Scan complete — no qualifying edges found (this is fine)
 [2026-11-14 21:16:38 ET] [INFO] ============================================================
 [2026-11-14 21:16:38 ET] [INFO] Scan job complete
+[2026-11-15 01:45:14 ET] [INFO] Scan job starting
+[2026-11-15 01:45:15 ET] [INFO] Kalshi API key auth OK ✅  balance: $35.26
+[2026-11-15 01:45:16 ET] [INFO] ============================================================
+[2026-11-15 01:45:16 ET] [INFO] Starting market scan
+[2026-11-15 01:45:20 ET] [INFO] Portfolio value: $35.26 cash + $6.74 positions = $42.00
+[2026-11-15 01:45:20 ET] [INFO] New peak portfolio value: $42.00  (was $41.99)
+[2026-11-15 01:45:20 ET] [INFO] Cash: $35.26  |  Positions: $6.74  |  Total: $42.00  |  Peak: $42.00
+[2026-11-15 01:45:20 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-11-15 01:45:54 ET] [WARN] SCAN_MAX_PAGES reached; far-dated markets truncated
+[2026-11-15 01:45:54 ET] [INFO] Fetched 77393 open markets via close-window feed across 80 pages
+[2026-11-15 01:45:54 ET] [INFO] Fetched 77393 open markets
+[2026-11-15 01:45:55 ET] [INFO] Parsed 73144 valid markets
+[2026-11-15 01:45:55 ET] [INFO] Categories: {'Sports': 55886, 'Financials': 8243, 'Entertainment': 1968, 'Crypto': 1807, 'Commodities': 1618, 'Economics': 1376, 'Climate and Weather': 982, 'Science and Technology': 474}
+[2026-11-15 01:45:55 ET] [INFO]   weather model: pittsburgh rain 2026-11-15 forecast=27% → P=0.270
+[2026-11-15 01:45:55 ET] [INFO]   EDGE FOUND: KXRAIN-26NOV15-PIT | implied=77.0% true=27.0% edge=-50.0% dir=NO conf=24
+[2026-11-15 01:45:59 ET] [INFO]   price model: ^GSPC spot=7561.67 target=7435.00 expiry vol=19% T=39h → P=0.909
+[2026-11-15 01:46:00 ET] [INFO]   weather model: new orleans rain 2026-11-15 forecast=17% → P=0.170
+[2026-11-15 01:46:00 ET] [INFO]   EDGE FOUND: KXRAIN-26NOV15-NOLA | implied=53.0% true=17.0% edge=-36.0% dir=NO conf=26
+[2026-11-15 01:46:01 ET] [INFO]   price model: BTC-USD spot=64753.31 target=62500.00 touch vol=44% T=383h → P=0.703
+[2026-11-15 01:46:01 ET] [INFO]   EDGE FOUND: KXBTCMINMON-BTC-26NOV30-6250000 | implied=93.5% true=70.3% edge=-23.2% dir=NO conf=24
+[2026-11-15 01:46:01 ET] [INFO]   price model: BTC-USD spot=64753.31 target=60000.00 touch vol=44% T=383h → P=0.411
+[2026-11-15 01:46:01 ET] [INFO]   price model: BTC-USD spot=64753.31 target=57500.00 touch vol=44% T=383h → P=0.200
+[2026-11-15 01:46:01 ET] [INFO]   price model: BTC-USD spot=64753.31 target=85000.00 touch vol=44% T=383h → P=0.003
+[2026-11-15 01:46:01 ET] [INFO]   price model: BTC-USD spot=64753.31 target=82500.00 touch vol=44% T=383h → P=0.009
+[2026-11-15 01:46:01 ET] [INFO]   price model: BZ=F spot=95.84 target=91.99 expiry vol=56% T=376h → P=0.617
+[2026-11-15 01:46:01 ET] [INFO] Checked 73144 markets in 6.5s | Edges found: 3
+[2026-11-15 01:46:01 ET] [INFO] Scan feed: fetched 77393 | parsed 73144 | ≤60d 73144 | categories {'Sports': 55886, 'Financials': 8243, 'Entertainment': 1968, 'Crypto': 1807, 'Commodities': 1618, 'Economics': 1376, 'Climate and Weather': 982, 'Science and Technology': 474} | gate pass 647 | modelable 9 | edges 3
+[2026-11-15 01:46:38 ET] [INFO] paper_lab: longshot_no_10_30 [killed]: 946 settled / 465 events, net -3.8c, 95% CI [-6.8, -0.9]c, CLV -0.9c; 81 open | prop_projection [active]: 39 settled / 30 events, net -4.3c, 95% CI [-22.1, +13.5]c, CLV -2.7c; 57 open | sports_gap [active]: 8 settled / 7 events, net -46.6c, 95% CI [-59.4, -33.9]c, CLV -2.1c; 12 open | weather_tail [killed]: 949 settled / 311 events, net -2.1c, 95% CI [-3.9, -0.4]c, CLV +2.5c; 2 open | weather_tail_forecast [killed]: 220 settled / 118 events, net -4.0c, 95% CI [-7.6, -0.3]c, CLV -1.8c; 57 open (migrated 0, new {'lab_rules': 0, 'prop_projection': 3, 'sports_gap': 0}, quotes 43, resolved 4, 37s)
+[2026-11-15 01:46:38 ET] [INFO] [Discord] Trade alert sent: KXRAIN-26NOV15-PIT
+[2026-11-15 01:46:38 ET] [INFO] DRY RUN 🔵 KXRAIN-26NOV15-PIT NO 8ct @ 24¢ = $1.92 | edge=-50.0% conf=24 | would_use 50%Kelly
+[2026-11-15 01:46:39 ET] [INFO] [Discord] Trade alert sent: KXRAIN-26NOV15-NOLA
+[2026-11-15 01:46:39 ET] [INFO] DRY RUN 🔵 KXRAIN-26NOV15-NOLA NO 4ct @ 48¢ = $1.92 | edge=-36.0% conf=26 | would_use 50%Kelly
+[2026-11-15 01:46:39 ET] [INFO] [Discord] Trade alert sent: KXBTCMINMON-BTC-26NOV30-6250000
+[2026-11-15 01:46:39 ET] [DEBUG] AUTO-BET SKIP KXBTCMINMON-BTC-26NOV30-6250000: bet too small (<$0.50)
+[2026-11-15 01:46:39 ET] [INFO] Scan complete — 3 alerts sent
+[2026-11-15 01:46:39 ET] [INFO] ============================================================
+[2026-11-15 01:46:40 ET] [INFO] Scan job complete

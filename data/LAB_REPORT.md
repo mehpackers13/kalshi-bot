@@ -1,16 +1,16 @@
-# Strategy Lab — 2026-11-16T07:27:46Z
+# Strategy Lab — 2026-11-16T20:29:24Z
 
-96216 settled markets (96133 with executable candle quotes), 4022 rules tested (group x YES-price bucket x side, taker fees included, entry = first traded hourly candle ask/bid).
-Discovery used the oldest 67351 markets; the newest 28865 were held out and never used to pick a rule.
+102230 settled markets (102147 with executable candle quotes), 4135 rules tested (group x YES-price bucket x side, taker fees included, entry = first traded hourly candle ask/bid).
+Discovery used the oldest 71561 markets; the newest 30669 were held out and never used to pick a rule.
 
 **Rules passing all four gates: 1.** A rule must clear:
 
 1. **economic** — >=30 events, >=+1c/contract, 95% CI above 0, positive in both halves;
 2. **adverse selection** — still positive after 1c extra slippage;
-3. **multiple comparisons** — Benjamini-Hochberg at q=0.10 over all 4022 rules tested together (cutoff p<=0.02374). Without this, ~1 rule in 20 clears a 95% CI by pure chance, so a larger history yields MORE fake edges, not fewer;
+3. **multiple comparisons** — Benjamini-Hochberg at q=0.10 over all 4135 rules tested together (cutoff p<=0.02386). Without this, ~1 rule in 20 clears a 95% CI by pure chance, so a larger history yields MORE fake edges, not fewer;
 4. **out of sample** — >=10 events in the held-out newest slice and >=+1c there too.
 
-1 rules cleared gates 1, 2 and 4; 1 of those survived the FDR correction. The old VWAP method, with no fees, spread, FDR or holdout, would have passed 18.
+1 rules cleared gates 1, 2 and 4; 1 of those survived the FDR correction. The old VWAP method, with no fees, spread, FDR or holdout, would have passed 20.
 A pass is a candidate for forward paper testing, not a proven edge, and never a live bet.
 
 | Rule | Events | Net c | 95% range | Older | Newer | Holdout (n) | p | Gates 1/2/3/4 | Pass |
@@ -19,14 +19,14 @@ A pass is a candidate for forward paper testing, not a proven edge, and never a 
 | series:KXKLEAGUEBTTS YES-price 30%-70% buy YES | 5 | +42.4 | [+39.8, +45.0] | None | None | — (0) | 0 | ·YY· |  |
 | series:KXTFF1LIGBTTS YES-price 30%-70% buy YES | 6 | +41.0 | [+38.4, +43.6] | None | None | — (0) | 0 | ·YY· |  |
 | series:KXTACAPORTSPREAD YES-price 30%-70% buy NO | 6 | +40.9 | [+36.2, +45.6] | 40.92 | None | — (0) | 0 | ·YY· |  |
-| series:KXNBAPTSLEADER YES-price 10%-30% buy YES | 10 | +50.3 | [+22.1, +78.6] | None | 50.33 | +6.5 (5) | 0.00037 | ·YY· |  |
+| series:KXNBAPTSLEADER YES-price 10%-30% buy YES | 12 | +47.4 | [+22.8, +72.0] | None | 51.39 | +19.2 (6) | 0.00012 | ·YY· |  |
 | series:KXWNBATOTAL YES-price 10%-30% buy NO | 5 | +23.0 | [+21.9, +24.1] | None | None | — (0) | 0 | ·YY· |  |
-| series:KXLIGAMX1HTOTAL YES-price 70%-90% buy YES | 7 | +22.4 | [+21.2, +23.6] | None | 22.2 | — (0) | 0 | ·YY· |  |
+| series:KXLIGAMX1HTOTAL YES-price 70%-90% buy YES | 8 | +22.9 | [+21.5, +24.3] | None | 22.2 | — (0) | 0 | ·YY· |  |
 | series:KXNFL4QTOTAL YES-price 70%-90% buy YES | 7 | +23.7 | [+20.6, +26.9] | 25.0 | None | — (0) | 0 | ·YY· |  |
 | series:KXEFLCUP1HTOTAL YES-price 70%-90% buy YES | 7 | +21.1 | [+18.9, +23.4] | None | 21.14 | — (0) | 0 | ·YY· |  |
 | family:KXKLEAGUE YES-price 70%-90% buy YES | 5 | +21.6 | [+18.1, +25.1] | None | None | — (0) | 0 | ·YY· |  |
 | series:KXATPGSPREAD YES-price 70%-90% buy YES | 6 | +20.3 | [+18.0, +22.7] | None | None | — (0) | 0 | ·YY· |  |
-| series:KXNBA2D YES-price 70%-90% buy YES | 7 | +21.7 | [+17.6, +25.9] | None | 21.71 | — (0) | 0 | ·YY· |  |
+| series:KXNBA2D YES-price 70%-90% buy YES | 7 | +22.1 | [+17.7, +26.6] | None | 21.17 | — (0) | 0 | ·YY· |  |
 | series:KXEPL2HTOTAL YES-price 10%-30% buy NO | 6 | +19.8 | [+17.4, +22.3] | None | None | — (0) | 0 | ·YY· |  |
 | series:KXBSLGAME YES-price 70%-90% buy YES | 5 | +20.2 | [+17.1, +23.3] | None | None | — (0) | 0 | ·YY· |  |
 | family:KXBSL YES-price 70%-90% buy YES | 6 | +19.7 | [+16.9, +22.4] | 18.6 | None | — (0) | 0 | ·YY· |  |

@@ -117183,3 +117183,62 @@ Total modelable markets evaluated: 0
 [2026-11-17 17:32:00 ET] [INFO] Morning report complete
 [2026-11-17 17:32:00 ET] [INFO] ============================================================
 [2026-11-17 17:32:00 ET] [INFO] Morning report job complete
+[2026-11-17 22:18:24 ET] [INFO] Scan job starting
+[2026-11-17 22:18:24 ET] [INFO] Kalshi API key auth OK ✅  balance: $35.26
+[2026-11-17 22:18:26 ET] [INFO] ============================================================
+[2026-11-17 22:18:26 ET] [INFO] Starting market scan
+[2026-11-17 22:18:29 ET] [INFO] Portfolio value: $35.26 cash + $6.76 positions = $42.02
+[2026-11-17 22:18:29 ET] [INFO] Cash: $35.26  |  Positions: $6.76  |  Total: $42.02  |  Peak: $42.02
+[2026-11-17 22:18:30 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-11-17 22:19:04 ET] [WARN] SCAN_MAX_PAGES reached; far-dated markets truncated
+[2026-11-17 22:19:04 ET] [INFO] Fetched 78670 open markets via close-window feed across 80 pages
+[2026-11-17 22:19:04 ET] [INFO] Fetched 78670 open markets
+[2026-11-17 22:19:05 ET] [INFO] Parsed 70720 valid markets
+[2026-11-17 22:19:05 ET] [INFO] Categories: {'Sports': 50717, 'Financials': 8764, 'Entertainment': 2463, 'Economics': 1776, 'Commodities': 1705, 'Crypto': 1617, 'Climate and Weather': 1229, 'Politics': 1140}
+[2026-11-17 22:19:05 ET] [INFO]   price model: BZ=F spot=92.62 target=89.00 expiry vol=56% T=20h → P=0.931
+[2026-11-17 22:19:05 ET] [INFO]   EDGE FOUND: KXBRENTD-26NOV1817-T89 | implied=70.5% true=93.1% edge=+22.6% dir=YES conf=70
+[2026-11-17 22:19:05 ET] [INFO]   price model: BZ=F spot=92.62 target=88.50 expiry vol=56% T=20h → P=0.955
+[2026-11-17 22:19:05 ET] [INFO]   EDGE FOUND: KXBRENTD-26NOV1817-T88.50 | implied=77.5% true=95.5% edge=+18.0% dir=YES conf=70
+[2026-11-17 22:19:05 ET] [INFO]   price model: BZ=F spot=92.62 target=88.00 expiry vol=56% T=20h → P=0.972
+[2026-11-17 22:19:05 ET] [INFO]   EDGE FOUND: KXBRENTD-26NOV1817-T88 | implied=82.5% true=97.2% edge=+14.7% dir=YES conf=63
+[2026-11-17 22:19:05 ET] [INFO]   price model: BZ=F spot=92.62 target=87.50 expiry vol=56% T=20h → P=0.983
+[2026-11-17 22:19:05 ET] [INFO]   EDGE FOUND: KXBRENTD-26NOV1817-T87.50 | implied=86.5% true=98.3% edge=+11.8% dir=YES conf=63
+[2026-11-17 22:19:06 ET] [WARN]   weather model: albuquerque no forecast for 2027-11-17
+[2026-11-17 22:19:06 ET] [INFO]   weather model: albuquerque rain 2026-11-18 forecast=8% → P=0.080
+[2026-11-17 22:19:06 ET] [INFO]   EDGE FOUND: KXRAIN-26NOV18-ABQ | implied=39.0% true=8.0% edge=-31.0% dir=NO conf=26
+[2026-11-17 22:19:08 ET] [INFO]   price model: BTC-USD spot=64197.24 target=60000.00 touch vol=44% T=315h → P=0.417
+[2026-11-17 22:19:08 ET] [INFO]   price model: BTC-USD spot=64197.24 target=57500.00 touch vol=44% T=315h → P=0.186
+[2026-11-17 22:19:09 ET] [INFO]   price model: ^GSPC spot=7340.53 target=6300.01 touch vol=19% T=1065h → P=0.024
+[2026-11-17 22:19:09 ET] [INFO]   price model: ^GSPC spot=7340.53 target=6200.01 touch vol=19% T=1065h → P=0.013
+[2026-11-17 22:19:09 ET] [INFO]   price model: ETH-USD spot=1797.81 target=1500.00 touch vol=59% T=1059h → P=0.381
+[2026-11-17 22:19:09 ET] [INFO]   price model: ETH-USD spot=1797.81 target=1250.00 touch vol=59% T=1059h → P=0.078
+[2026-11-17 22:19:09 ET] [INFO]   EDGE FOUND: KXETHMINY-27JAN01-1250 | implied=17.0% true=7.8% edge=-9.2% dir=NO conf=20
+[2026-11-17 22:19:09 ET] [INFO]   price model: ETH-USD spot=1797.81 target=1000.00 touch vol=59% T=1059h → P=0.005
+[2026-11-17 22:19:09 ET] [INFO]   price model: BTC-USD spot=64197.24 target=55000.00 touch vol=44% T=1059h → P=0.312
+[2026-11-17 22:19:09 ET] [INFO]   price model: BTC-USD spot=64197.24 target=50000.00 touch vol=44% T=1059h → P=0.102
+[2026-11-17 22:19:09 ET] [INFO]   EDGE FOUND: KXBTCMINY-27JAN01-50000.00 | implied=18.5% true=10.2% edge=-8.3% dir=NO conf=22
+[2026-11-17 22:19:09 ET] [INFO]   price model: BTC-USD spot=64197.24 target=45000.00 touch vol=44% T=1059h → P=0.020
+[2026-11-17 22:19:09 ET] [INFO]   price model: BTC-USD spot=64197.24 target=40000.00 touch vol=44% T=1059h → P=0.002
+[2026-11-17 22:19:09 ET] [INFO]   price model: XRP-USD spot=0.97 target=2.00 touch vol=73% T=1059h → P=0.005
+[2026-11-17 22:19:09 ET] [INFO] Checked 70720 markets in 4.4s | Edges found: 7
+[2026-11-17 22:19:09 ET] [INFO] Scan feed: fetched 78670 | parsed 70720 | ≤60d 70720 | categories {'Sports': 50717, 'Financials': 8764, 'Entertainment': 2463, 'Economics': 1776, 'Commodities': 1705, 'Crypto': 1617, 'Climate and Weather': 1229, 'Politics': 1140} | gate pass 962 | modelable 17 | edges 7
+[2026-11-17 22:20:05 ET] [INFO] paper_lab: longshot_no_10_30 [killed]: 947 settled / 466 events, net -3.8c, 95% CI [-6.7, -0.9]c, CLV -0.9c; 80 open | prop_projection [killed]: 117 settled / 77 events, net -1.5c, 95% CI [-12.4, +9.4]c, CLV +1.0c; 52 open | sports_gap [active]: 25 settled / 22 events, net -7.1c, 95% CI [-29.0, +14.8]c, CLV -1.5c; 12 open | weather_tail [killed]: 949 settled / 311 events, net -2.1c, 95% CI [-3.9, -0.4]c, CLV +2.5c; 2 open | weather_tail_forecast [killed]: 276 settled / 148 events, net -4.4c, 95% CI [-7.9, -1.0]c, CLV -2.2c; 1 open (migrated 0, new {'lab_rules': 0, 'sports_gap': 0}, quotes 24, resolved 22, 56s)
+[2026-11-17 22:20:05 ET] [INFO] [Discord] Trade alert sent: KXBRENTD-26NOV1817-T89
+[2026-11-17 22:20:05 ET] [INFO] DRY RUN 🔵 KXBRENTD-26NOV1817-T89 YES 2ct @ 71¢ = $1.42 | edge=+22.6% conf=70 | would_use 50%Kelly
+[2026-11-17 22:20:06 ET] [INFO] [Discord] Trade alert sent: KXBRENTD-26NOV1817-T88.50
+[2026-11-17 22:20:06 ET] [INFO] DRY RUN 🔵 KXBRENTD-26NOV1817-T88.50 YES 2ct @ 78¢ = $1.56 | edge=+18.0% conf=70 | would_use 50%Kelly
+[2026-11-17 22:20:06 ET] [INFO] [Discord] Trade alert sent: KXBRENTD-26NOV1817-T88
+[2026-11-17 22:20:06 ET] [INFO] DRY RUN 🔵 KXBRENTD-26NOV1817-T88 YES 2ct @ 83¢ = $1.66 | edge=+14.7% conf=63 | would_use 50%Kelly
+[2026-11-17 22:20:07 ET] [INFO] [Discord] Trade alert sent: KXBRENTD-26NOV1817-T87.50
+[2026-11-17 22:20:07 ET] [INFO] DRY RUN 🔵 KXBRENTD-26NOV1817-T87.50 YES 2ct @ 87¢ = $1.74 | edge=+11.8% conf=63 | would_use 50%Kelly
+[2026-11-17 22:20:07 ET] [INFO] [Discord] Trade alert sent: KXRAIN-26NOV18-ABQ
+[2026-11-17 22:20:07 ET] [INFO] DRY RUN 🔵 KXRAIN-26NOV18-ABQ NO 3ct @ 62¢ = $1.86 | edge=-31.0% conf=26 | would_use 50%Kelly
+[2026-11-17 22:20:07 ET] [WARN] [Discord] HTTP 429: {"message": "You are being rate limited.", "retry_after": 0.3, "global": false}
+[2026-11-17 22:20:07 ET] [INFO] [Discord] Trade alert sent: KXETHMINY-27JAN01-1250
+[2026-11-17 22:20:07 ET] [INFO] DRY RUN 🔵 KXETHMINY-27JAN01-1250 NO 1ct @ 84¢ = $0.84 | edge=-9.2% conf=20 | would_use 50%Kelly
+[2026-11-17 22:20:07 ET] [WARN] [Discord] HTTP 429: {"message": "You are being rate limited.", "retry_after": 0.3, "global": false}
+[2026-11-17 22:20:07 ET] [INFO] [Discord] Trade alert sent: KXBTCMINY-27JAN01-50000.00
+[2026-11-17 22:20:07 ET] [INFO] DRY RUN 🔵 KXBTCMINY-27JAN01-50000.00 NO 1ct @ 82¢ = $0.82 | edge=-8.3% conf=22 | would_use 50%Kelly
+[2026-11-17 22:20:07 ET] [INFO] Scan complete — 7 alerts sent
+[2026-11-17 22:20:07 ET] [INFO] ============================================================
+[2026-11-17 22:20:07 ET] [INFO] Scan job complete

@@ -117391,3 +117391,37 @@ Total modelable markets evaluated: 0
 [2026-11-18 21:27:01 ET] [INFO] Scan complete — no qualifying edges found (this is fine)
 [2026-11-18 21:27:01 ET] [INFO] ============================================================
 [2026-11-18 21:27:01 ET] [INFO] Scan job complete
+[2026-11-19 02:48:31 ET] [INFO] Scan job starting
+[2026-11-19 02:48:31 ET] [INFO] Kalshi API key auth OK ✅  balance: $35.26
+[2026-11-19 02:48:33 ET] [INFO] ============================================================
+[2026-11-19 02:48:33 ET] [INFO] Starting market scan
+[2026-11-19 02:48:36 ET] [INFO] Portfolio value: $35.26 cash + $6.72 positions = $41.98
+[2026-11-19 02:48:36 ET] [INFO] Cash: $35.26  |  Positions: $6.72  |  Total: $41.98  |  Peak: $42.02
+[2026-11-19 02:48:36 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-11-19 02:49:10 ET] [WARN] SCAN_MAX_PAGES reached; far-dated markets truncated
+[2026-11-19 02:49:10 ET] [INFO] Fetched 78161 open markets via close-window feed across 80 pages
+[2026-11-19 02:49:10 ET] [INFO] Fetched 78161 open markets
+[2026-11-19 02:49:10 ET] [INFO] Parsed 71707 valid markets
+[2026-11-19 02:49:10 ET] [INFO] Categories: {'Sports': 53491, 'Financials': 9342, 'Economics': 1736, 'Entertainment': 1674, 'Commodities': 1626, 'Crypto': 1407, 'Climate and Weather': 957, 'Politics': 581}
+[2026-11-19 02:49:11 ET] [INFO]   price model: ^NDX spot=27116.26 target=26899.99 expiry vol=31% T=14h → P=0.738
+[2026-11-19 02:49:11 ET] [INFO]   EDGE FOUND: KXNASDAQ100U-26NOV19H1600-T26899.99 | implied=88.5% true=73.8% edge=-14.7% dir=NO conf=19
+[2026-11-19 02:49:11 ET] [INFO]   price model: CL=F spot=82.47 target=81.99 expiry vol=49% T=13h → P=0.618
+[2026-11-19 02:49:12 ET] [INFO]   price model: ^GSPC spot=7323.63 target=7380.00 expiry vol=19% T=8h → P=0.098
+[2026-11-19 02:49:12 ET] [INFO]   EDGE FOUND: KXINXU-26NOV19H1000-T7379.9999 | implied=54.0% true=9.8% edge=-44.2% dir=NO conf=24
+[2026-11-19 02:49:12 ET] [INFO]   price model: BZ=F spot=89.55 target=88.99 expiry vol=55% T=39h → P=0.560
+[2026-11-19 02:49:12 ET] [INFO]   weather model: las vegas rain 2026-11-19 forecast=15% → P=0.150
+[2026-11-19 02:49:12 ET] [INFO]   EDGE FOUND: KXRAIN-26NOV19-LV | implied=65.5% true=15.0% edge=-50.5% dir=NO conf=26
+[2026-11-19 02:49:16 ET] [INFO]   price model: BTC-USD spot=63453.82 target=60000.00 touch vol=44% T=286h → P=0.485
+[2026-11-19 02:49:16 ET] [INFO]   price model: BTC-USD spot=63453.82 target=57500.00 touch vol=44% T=286h → P=0.219
+[2026-11-19 02:49:16 ET] [INFO] Checked 71707 markets in 5.7s | Edges found: 3
+[2026-11-19 02:49:16 ET] [INFO] Scan feed: fetched 78161 | parsed 71707 | ≤60d 71707 | categories {'Sports': 53491, 'Financials': 9342, 'Economics': 1736, 'Entertainment': 1674, 'Commodities': 1626, 'Crypto': 1407, 'Climate and Weather': 957, 'Politics': 581} | gate pass 696 | modelable 7 | edges 3
+[2026-11-19 02:50:00 ET] [INFO] paper_lab: longshot_no_10_30 [killed]: 947 settled / 466 events, net -3.8c, 95% CI [-6.7, -0.9]c, CLV -0.9c; 80 open | prop_projection [killed]: 138 settled / 92 events, net -2.1c, 95% CI [-11.8, +7.7]c, CLV +1.5c; 31 open | sports_gap [active]: 29 settled / 26 events, net -6.3c, 95% CI [-25.4, +12.8]c, CLV -1.2c; 9 open | weather_tail [killed]: 949 settled / 311 events, net -2.1c, 95% CI [-3.9, -0.4]c, CLV +2.5c; 2 open | weather_tail_forecast [killed]: 276 settled / 148 events, net -4.4c, 95% CI [-7.9, -1.0]c, CLV -2.2c; 1 open (migrated 0, new {'lab_rules': 0, 'sports_gap': 0}, quotes 8, resolved 2, 44s)
+[2026-11-19 02:50:01 ET] [INFO] [Discord] Trade alert sent: KXNASDAQ100U-26NOV19H1600-T26899.99
+[2026-11-19 02:50:01 ET] [DEBUG] AUTO-BET SKIP KXNASDAQ100U-26NOV19H1600-T26899.99: bet too small (<$0.50)
+[2026-11-19 02:50:01 ET] [INFO] [Discord] Trade alert sent: KXINXU-26NOV19H1000-T7379.9999
+[2026-11-19 02:50:01 ET] [INFO] DRY RUN 🔵 KXINXU-26NOV19H1000-T7379.9999 NO 4ct @ 47¢ = $1.88 | edge=-44.2% conf=24 | would_use 50%Kelly
+[2026-11-19 02:50:01 ET] [INFO] [Discord] Trade alert sent: KXRAIN-26NOV19-LV
+[2026-11-19 02:50:01 ET] [INFO] DRY RUN 🔵 KXRAIN-26NOV19-LV NO 5ct @ 36¢ = $1.80 | edge=-50.5% conf=26 | would_use 50%Kelly
+[2026-11-19 02:50:02 ET] [INFO] Scan complete — 3 alerts sent
+[2026-11-19 02:50:02 ET] [INFO] ============================================================
+[2026-11-19 02:50:02 ET] [INFO] Scan job complete

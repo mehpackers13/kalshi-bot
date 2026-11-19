@@ -117425,3 +117425,24 @@ Total modelable markets evaluated: 0
 [2026-11-19 02:50:02 ET] [INFO] Scan complete — 3 alerts sent
 [2026-11-19 02:50:02 ET] [INFO] ============================================================
 [2026-11-19 02:50:02 ET] [INFO] Scan job complete
+[2026-11-19 15:26:52 ET] [INFO] Scan job starting
+[2026-11-19 15:26:52 ET] [INFO] Kalshi API key auth OK ✅  balance: $35.26
+[2026-11-19 15:26:54 ET] [INFO] ============================================================
+[2026-11-19 15:26:54 ET] [INFO] Starting market scan
+[2026-11-19 15:26:57 ET] [INFO] Portfolio value: $35.26 cash + $6.72 positions = $41.98
+[2026-11-19 15:26:57 ET] [INFO] Cash: $35.26  |  Positions: $6.72  |  Total: $41.98  |  Peak: $42.02
+[2026-11-19 15:26:57 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-11-19 15:27:31 ET] [WARN] SCAN_MAX_PAGES reached; far-dated markets truncated
+[2026-11-19 15:27:31 ET] [INFO] Fetched 77582 open markets via close-window feed across 80 pages
+[2026-11-19 15:27:31 ET] [INFO] Fetched 77582 open markets
+[2026-11-19 15:27:32 ET] [INFO] Parsed 75584 valid markets
+[2026-11-19 15:27:32 ET] [INFO] Categories: {'Sports': 65240, 'Financials': 3688, 'Crypto': 1385, 'Economics': 1368, 'Climate and Weather': 1098, 'Commodities': 1001, 'Entertainment': 944, 'Science and Technology': 471}
+[2026-11-19 15:27:33 ET] [INFO]   price model: BZ=F spot=89.59 target=88.99 expiry vol=55% T=27h → P=0.582
+[2026-11-19 15:27:38 ET] [INFO]   price model: BTC-USD spot=62807.65 target=60000.00 touch vol=44% T=274h → P=0.557
+[2026-11-19 15:27:38 ET] [INFO]   price model: BTC-USD spot=62807.65 target=57500.00 touch vol=44% T=274h → P=0.257
+[2026-11-19 15:27:38 ET] [INFO] Checked 75584 markets in 5.8s | Edges found: 0
+[2026-11-19 15:27:38 ET] [INFO] Scan feed: fetched 77582 | parsed 75584 | ≤60d 75584 | categories {'Sports': 65240, 'Financials': 3688, 'Crypto': 1385, 'Economics': 1368, 'Climate and Weather': 1098, 'Commodities': 1001, 'Entertainment': 944, 'Science and Technology': 471} | gate pass 578 | modelable 3 | edges 0
+[2026-11-19 15:28:22 ET] [INFO] paper_lab: longshot_no_10_30 [killed]: 947 settled / 466 events, net -3.8c, 95% CI [-6.7, -0.9]c, CLV -0.9c; 80 open | prop_projection [killed]: 138 settled / 92 events, net -2.1c, 95% CI [-11.8, +7.7]c, CLV +1.5c; 31 open | sports_gap [active]: 29 settled / 26 events, net -6.3c, 95% CI [-25.4, +12.8]c, CLV -1.2c; 9 open | weather_tail [killed]: 949 settled / 311 events, net -2.1c, 95% CI [-3.9, -0.4]c, CLV +2.5c; 2 open | weather_tail_forecast [killed]: 276 settled / 148 events, net -4.4c, 95% CI [-7.9, -1.0]c, CLV -2.2c; 1 open (migrated 0, new {'lab_rules': 0, 'sports_gap': 0}, quotes 8, resolved 0, 44s)
+[2026-11-19 15:28:22 ET] [INFO] Scan complete — no qualifying edges found (this is fine)
+[2026-11-19 15:28:22 ET] [INFO] ============================================================
+[2026-11-19 15:28:22 ET] [INFO] Scan job complete

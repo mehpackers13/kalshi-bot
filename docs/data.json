@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-19T06:50:02.610567Z",
-  "last_scan_ts": "2026-11-19T06:50:02.610567Z",
+  "generated_at": "2026-11-19T19:28:22.550214Z",
+  "last_scan_ts": "2026-11-19T19:28:22.550214Z",
   "stats": {
     "total_alerts": 17199,
     "rated": 76,
@@ -101,7 +101,7 @@
       "initial_balance": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-11-19T06:48:36.409223Z"
+    "updated_at": "2026-11-19T19:26:57.511819Z"
   },
   "cash_bal": 35.26,
   "position_value": 6.72,
@@ -1158,44 +1158,7 @@
     "Weather": 0.7,
     "Climate and Weather": 0.3
   },
-  "bets_placed": [
-    {
-      "timestamp": "2026-11-19T06:50:01.734588",
-      "ticker": "KXRAIN-26NOV19-LV",
-      "title": "Will it rain in Las Vegas on Nov 19, 2026?",
-      "category": "Climate and Weather",
-      "direction": "NO",
-      "contracts": "5",
-      "price_cents": "36",
-      "dollars_risked": "1.8",
-      "edge_pct": "-50.5",
-      "true_prob": "0.15",
-      "implied_prob": "0.655",
-      "confidence": "26",
-      "kelly_fraction": "0.5",
-      "dry_run": "True",
-      "order_id": "",
-      "status": "dry_run"
-    },
-    {
-      "timestamp": "2026-11-19T06:50:01.344564",
-      "ticker": "KXINXU-26NOV19H1000-T7379.9999",
-      "title": "Will the S&P 500 be above 7379.9999 on Nov 19, 2026 at 10am EST?",
-      "category": "Financials",
-      "direction": "NO",
-      "contracts": "4",
-      "price_cents": "47",
-      "dollars_risked": "1.88",
-      "edge_pct": "-44.17",
-      "true_prob": "0.0983",
-      "implied_prob": "0.54",
-      "confidence": "24",
-      "kelly_fraction": "0.5",
-      "dry_run": "True",
-      "order_id": "",
-      "status": "dry_run"
-    }
-  ],
+  "bets_placed": [],
   "open_positions": [
     {
       "ticker": "KXSOLMAXY-27JAN01-170",
@@ -1455,33 +1418,34 @@
     ]
   },
   "scan_diag": {
-    "fetched": 78161,
-    "parsed": 71707,
+    "fetched": 77582,
+    "parsed": 75584,
     "by_category": {
-      "Climate and Weather": 957,
-      "Economics": 1736,
-      "Entertainment": 1674,
-      "Politics": 581,
-      "Financials": 9342,
-      "Crypto": 1407,
-      "Commodities": 1626,
-      "Sports": 53491,
-      "Science and Technology": 515,
-      "Mentions": 129,
-      "Elections": 245,
-      "Companies": 4
+      "Sports": 65240,
+      "Politics": 345,
+      "Financials": 3688,
+      "Commodities": 1001,
+      "Science and Technology": 471,
+      "Entertainment": 944,
+      "Economics": 1368,
+      "Climate and Weather": 1098,
+      "Crypto": 1385,
+      "Mentions": 15,
+      "Elections": 27,
+      "Unknown": 1,
+      "Companies": 1
     },
-    "closing_within_60d": 71707,
+    "closing_within_60d": 75584,
     "gate_fail": {
-      "volume": 70827,
-      "prob": 184,
+      "volume": 74920,
+      "prob": 86,
       "hours": 0,
       "status": 0
     },
-    "gate_pass": 696,
-    "modelable": 7,
-    "edges": 3,
-    "ts": "2026-11-19T06:49:16.685779"
+    "gate_pass": 578,
+    "modelable": 3,
+    "edges": 0,
+    "ts": "2026-11-19T19:27:38.074488"
   },
   "paper_events": [
     "2026-11-11T16:31:26Z KILLED longshot_no_10_30: forward test -3.9c CI [-7.0,-0.9] over 429 events",

@@ -1,0 +1,43 @@
+name: Picks Snapshot (paper)
+# Closing line value is the whole point of picks_lab, and it can only be captured
+# BEFORE a game starts: ESPN deletes a game's odds block the moment it ends, so a
+# closing price missed is gone forever. Hence a frequent snapshot, then grading.
+on:
+  schedule:
+    - cron: "*/30 16-23 * * *"   # every 30 min through the US afternoon/evening slate
+    - cron: "*/30 0-4 * * *"     # late games (UTC is already the next day)
+    - cron: "30 14 * * *"        # morning sweep: settle anything that finished overnight
+  workflow_dispatch:
+
+concurrency:
+  group: picks-snapshot
+  cancel-in-progress: false
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install deps
+        run: pip install -q requests
+      - name: Capture pre-game closing lines
+        run: python picks_lab.py snapshot
+      - name: Settle finished games
+        run: python picks_lab.py grade
+      - name: Report
+        run: python picks_lab.py report
+      - name: Commit
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/picks_log.csv data/PICKS_REPORT.md || true
+          git diff --staged --quiet && echo "no change" && exit 0
+          git commit -m "🎯 picks snapshot $(date -u '+%Y-%m-%d %H:%M') UTC"
+          for i in 1 2 3; do
+            git pull --rebase -X ours origin main && git push origin HEAD:main && exit 0
+            sleep 5
+          done
+          exit 1

@@ -337,7 +337,11 @@ def _team_block(c):
     t = c.get("team", {})
     return {"id": str(t.get("id", "")), "abbr": t.get("abbreviation", ""),
             "name": t.get("displayName", ""), "short": t.get("shortDisplayName", ""),
-            "loc": t.get("location", ""), "nick": t.get("name", "")}
+            "loc": t.get("location", ""), "nick": t.get("name", ""),
+            # Live/final score, so a finished game can be graded without a second fetch.
+            # Absent until the game starts; "" rather than 0, so a missing score can
+            # never be mistaken for a shutout.
+            "score": c.get("score", "")}
 
 
 def get_scoreboard(league, day: datetime.date):

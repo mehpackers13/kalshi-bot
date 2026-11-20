@@ -117526,3 +117526,58 @@ Total modelable markets evaluated: 0
 [2026-11-20 02:38:16 ET] [INFO] Scan complete — 1 alerts sent
 [2026-11-20 02:38:16 ET] [INFO] ============================================================
 [2026-11-20 02:38:16 ET] [INFO] Scan job complete
+[2026-11-20 15:01:41 ET] [INFO] Scan job starting
+[2026-11-20 15:01:42 ET] [INFO] Kalshi API key auth OK ✅  balance: $35.26
+[2026-11-20 15:01:43 ET] [INFO] ============================================================
+[2026-11-20 15:01:43 ET] [INFO] Starting market scan
+[2026-11-20 15:01:47 ET] [INFO] Portfolio value: $35.26 cash + $6.77 positions = $42.03
+[2026-11-20 15:01:47 ET] [INFO] New peak portfolio value: $42.03  (was $42.02)
+[2026-11-20 15:01:47 ET] [INFO] Cash: $35.26  |  Positions: $6.77  |  Total: $42.03  |  Peak: $42.03
+[2026-11-20 15:01:47 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-11-20 15:02:22 ET] [WARN] SCAN_MAX_PAGES reached; far-dated markets truncated
+[2026-11-20 15:02:22 ET] [INFO] Fetched 79065 open markets via close-window feed across 80 pages
+[2026-11-20 15:02:22 ET] [INFO] Fetched 79065 open markets
+[2026-11-20 15:02:23 ET] [INFO] Parsed 76898 valid markets
+[2026-11-20 15:02:23 ET] [INFO] Categories: {'Sports': 68145, 'Financials': 3784, 'Climate and Weather': 1117, 'Entertainment': 883, 'Crypto': 826, 'Commodities': 798, 'Economics': 625, 'Science and Technology': 466}
+[2026-11-20 15:02:23 ET] [INFO]   price model: SI=F spot=40.97 target=40.99 expiry vol=47% T=3h → P=0.476
+[2026-11-20 15:02:23 ET] [INFO]   EDGE FOUND: KXSILVERW-26NOV2017-T40.99 | implied=86.5% true=47.6% edge=-38.9% dir=NO conf=70
+[2026-11-20 15:02:24 ET] [INFO]   price model: GC=F spot=3513.60 target=3545.99 expiry vol=27% T=3h → P=0.030
+[2026-11-20 15:02:24 ET] [INFO]   EDGE FOUND: KXGOLDW-26NOV2017-T3545.99 | implied=27.5% true=3.0% edge=-24.5% dir=NO conf=60
+[2026-11-20 15:02:24 ET] [INFO]   price model: GC=F spot=3513.60 target=3525.99 expiry vol=27% T=3h → P=0.235
+[2026-11-20 15:02:24 ET] [INFO]   EDGE FOUND: KXGOLDW-26NOV2017-T3525.99 | implied=62.0% true=23.5% edge=-38.5% dir=NO conf=70
+[2026-11-20 15:02:24 ET] [INFO]   price model: GC=F spot=3513.60 target=3505.99 expiry vol=27% T=3h → P=0.670
+[2026-11-20 15:02:24 ET] [INFO]   EDGE FOUND: KXGOLDW-26NOV2017-T3505.99 | implied=86.5% true=67.0% edge=-19.5% dir=NO conf=60
+[2026-11-20 15:02:24 ET] [INFO]   price model: GC=F spot=3513.60 target=3485.99 expiry vol=27% T=3h → P=0.946
+[2026-11-20 15:02:24 ET] [INFO]   price model: BZ=F spot=89.58 target=88.99 expiry vol=55% T=3h → P=0.741
+[2026-11-20 15:02:25 ET] [INFO]   weather model: boston rain 2026-11-21 forecast=13% → P=0.130
+[2026-11-20 15:02:25 ET] [INFO]   EDGE FOUND: KXRAINWKND-26NOV21-BOS | implied=88.5% true=13.0% edge=-75.5% dir=NO conf=26
+[2026-11-20 15:02:25 ET] [INFO]   weather model: atlanta rain 2026-11-21 forecast=28% → P=0.280
+[2026-11-20 15:02:25 ET] [INFO]   EDGE FOUND: KXRAINWKND-26NOV21-ATL | implied=84.5% true=28.0% edge=-56.5% dir=NO conf=26
+[2026-11-20 15:02:26 ET] [INFO]   weather model: minneapolis rain 2026-11-21 forecast=30% → P=0.300
+[2026-11-20 15:02:26 ET] [INFO]   EDGE FOUND: KXRAIN-26NOV21-MIN | implied=85.5% true=30.0% edge=-55.5% dir=NO conf=26
+[2026-11-20 15:02:26 ET] [INFO]   weather model: atlanta rain 2026-11-21 forecast=28% → P=0.280
+[2026-11-20 15:02:26 ET] [INFO]   EDGE FOUND: KXRAIN-26NOV21-ATL | implied=63.5% true=28.0% edge=-35.5% dir=NO conf=26
+[2026-11-20 15:02:30 ET] [INFO]   price model: SOL-USD spot=68.69 target=65.00 touch vol=63% T=250h → P=0.603
+[2026-11-20 15:02:30 ET] [INFO]   price model: ETH-USD spot=1609.00 target=1500.00 touch vol=64% T=250h → P=0.517
+[2026-11-20 15:02:30 ET] [INFO] Checked 76898 markets in 7.2s | Edges found: 8
+[2026-11-20 15:02:30 ET] [INFO] Scan feed: fetched 79065 | parsed 76898 | ≤60d 76898 | categories {'Sports': 68145, 'Financials': 3784, 'Climate and Weather': 1117, 'Entertainment': 883, 'Crypto': 826, 'Commodities': 798, 'Economics': 625, 'Science and Technology': 466} | gate pass 633 | modelable 12 | edges 8
+[2026-11-20 15:03:26 ET] [INFO] paper_lab: longshot_no_10_30 [killed]: 947 settled / 466 events, net -3.8c, 95% CI [-6.7, -0.9]c, CLV -0.9c; 80 open | prop_projection [killed]: 157 settled / 105 events, net -1.2c, 95% CI [-10.3, +7.9]c, CLV +2.7c; 12 open | sports_gap [active]: 34 settled / 29 events, net -1.3c, 95% CI [-20.1, +17.4]c, CLV -1.3c; 4 open | weather_tail [killed]: 951 settled / 312 events, net -2.1c, 95% CI [-3.9, -0.3]c, CLV +2.2c; 0 open | weather_tail_forecast [killed]: 277 settled / 149 events, net -4.3c, 95% CI [-7.8, -0.8]c, CLV -2.5c; 0 open (migrated 0, new {'lab_rules': 0, 'sports_gap': 0}, quotes 2, resolved 3, 56s)
+[2026-11-20 15:03:27 ET] [INFO] [Discord] Trade alert sent: KXSILVERW-26NOV2017-T40.99
+[2026-11-20 15:03:27 ET] [INFO] DRY RUN 🔵 KXSILVERW-26NOV2017-T40.99 NO 15ct @ 14¢ = $2.10 | edge=-38.9% conf=70 | would_use 50%Kelly
+[2026-11-20 15:03:27 ET] [INFO] [Discord] Trade alert sent: KXGOLDW-26NOV2017-T3545.99
+[2026-11-20 15:03:27 ET] [INFO] DRY RUN 🔵 KXGOLDW-26NOV2017-T3545.99 NO 2ct @ 73¢ = $1.46 | edge=-24.5% conf=60 | would_use 50%Kelly
+[2026-11-20 15:03:27 ET] [INFO] [Discord] Trade alert sent: KXGOLDW-26NOV2017-T3525.99
+[2026-11-20 15:03:27 ET] [INFO] DRY RUN 🔵 KXGOLDW-26NOV2017-T3525.99 NO 5ct @ 39¢ = $1.95 | edge=-38.5% conf=70 | would_use 50%Kelly
+[2026-11-20 15:03:28 ET] [INFO] [Discord] Trade alert sent: KXGOLDW-26NOV2017-T3505.99
+[2026-11-20 15:03:28 ET] [INFO] DRY RUN 🔵 KXGOLDW-26NOV2017-T3505.99 NO 15ct @ 14¢ = $2.10 | edge=-19.5% conf=60 | would_use 50%Kelly
+[2026-11-20 15:03:29 ET] [INFO] [Discord] Trade alert sent: KXRAINWKND-26NOV21-BOS
+[2026-11-20 15:03:29 ET] [INFO] DRY RUN 🔵 KXRAINWKND-26NOV21-BOS NO 17ct @ 12¢ = $2.04 | edge=-75.5% conf=26 | would_use 50%Kelly
+[2026-11-20 15:03:30 ET] [INFO] [Discord] Trade alert sent: KXRAINWKND-26NOV21-ATL
+[2026-11-20 15:03:30 ET] [INFO] DRY RUN 🔵 KXRAINWKND-26NOV21-ATL NO 13ct @ 16¢ = $2.08 | edge=-56.5% conf=26 | would_use 50%Kelly
+[2026-11-20 15:03:31 ET] [INFO] [Discord] Trade alert sent: KXRAIN-26NOV21-MIN
+[2026-11-20 15:03:31 ET] [INFO] DRY RUN 🔵 KXRAIN-26NOV21-MIN NO 14ct @ 15¢ = $2.10 | edge=-55.5% conf=26 | would_use 50%Kelly
+[2026-11-20 15:03:31 ET] [INFO] [Discord] Trade alert sent: KXRAIN-26NOV21-ATL
+[2026-11-20 15:03:31 ET] [INFO] DRY RUN 🔵 KXRAIN-26NOV21-ATL NO 5ct @ 37¢ = $1.85 | edge=-35.5% conf=26 | would_use 50%Kelly
+[2026-11-20 15:03:32 ET] [INFO] Scan complete — 8 alerts sent
+[2026-11-20 15:03:32 ET] [INFO] ============================================================
+[2026-11-20 15:03:32 ET] [INFO] Scan job complete

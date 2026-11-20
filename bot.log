@@ -117482,3 +117482,22 @@ Total modelable markets evaluated: 0
 [2026-11-19 17:13:10 ET] [INFO] Morning report complete
 [2026-11-19 17:13:10 ET] [INFO] ============================================================
 [2026-11-19 17:13:10 ET] [INFO] Morning report job complete
+[2026-11-19 21:25:23 ET] [INFO] Scan job starting
+[2026-11-19 21:25:24 ET] [INFO] Kalshi API key auth OK ✅  balance: $35.26
+[2026-11-19 21:25:25 ET] [INFO] ============================================================
+[2026-11-19 21:25:25 ET] [INFO] Starting market scan
+[2026-11-19 21:25:29 ET] [INFO] Portfolio value: $35.26 cash + $6.72 positions = $41.98
+[2026-11-19 21:25:29 ET] [INFO] Cash: $35.26  |  Positions: $6.72  |  Total: $41.98  |  Peak: $42.02
+[2026-11-19 21:25:29 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-11-19 21:26:04 ET] [WARN] SCAN_MAX_PAGES reached; far-dated markets truncated
+[2026-11-19 21:26:04 ET] [INFO] Fetched 78866 open markets via close-window feed across 80 pages
+[2026-11-19 21:26:04 ET] [INFO] Fetched 78866 open markets
+[2026-11-19 21:26:04 ET] [INFO] Parsed 76640 valid markets
+[2026-11-19 21:26:04 ET] [INFO] Categories: {'Sports': 66744, 'Financials': 6119, 'Entertainment': 794, 'Climate and Weather': 768, 'Crypto': 700, 'Commodities': 500, 'Economics': 469, 'Science and Technology': 375}
+[2026-11-19 21:26:05 ET] [INFO]   price model: BZ=F spot=89.74 target=88.99 expiry vol=55% T=21h → P=0.618
+[2026-11-19 21:26:09 ET] [INFO] Checked 76640 markets in 5.4s | Edges found: 0
+[2026-11-19 21:26:09 ET] [INFO] Scan feed: fetched 78866 | parsed 76640 | ≤60d 76640 | categories {'Sports': 66744, 'Financials': 6119, 'Entertainment': 794, 'Climate and Weather': 768, 'Crypto': 700, 'Commodities': 500, 'Economics': 469, 'Science and Technology': 375} | gate pass 817 | modelable 1 | edges 0
+[2026-11-19 21:26:55 ET] [INFO] paper_lab: longshot_no_10_30 [killed]: 947 settled / 466 events, net -3.8c, 95% CI [-6.7, -0.9]c, CLV -0.9c; 80 open | prop_projection [killed]: 144 settled / 97 events, net -1.2c, 95% CI [-10.7, +8.3]c, CLV +1.8c; 25 open | sports_gap [active]: 33 settled / 28 events, net -0.8c, 95% CI [-20.2, +18.6]c, CLV -1.2c; 5 open | weather_tail [killed]: 949 settled / 311 events, net -2.1c, 95% CI [-3.9, -0.4]c, CLV +2.5c; 2 open | weather_tail_forecast [killed]: 276 settled / 148 events, net -4.4c, 95% CI [-7.9, -1.0]c, CLV -2.2c; 1 open (migrated 0, new {'lab_rules': 0, 'sports_gap': 0}, quotes 8, resolved 10, 46s)
+[2026-11-19 21:26:55 ET] [INFO] Scan complete — no qualifying edges found (this is fine)
+[2026-11-19 21:26:55 ET] [INFO] ============================================================
+[2026-11-19 21:26:56 ET] [INFO] Scan job complete

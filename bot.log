@@ -117732,3 +117732,49 @@ Total modelable markets evaluated: 0
 [2026-11-21 13:57:47 ET] [INFO] Scan complete — 4 alerts sent
 [2026-11-21 13:57:47 ET] [INFO] ============================================================
 [2026-11-21 13:57:47 ET] [INFO] Scan job complete
+[2026-11-21 19:01:08 ET] [INFO] Scan job starting
+[2026-11-21 19:01:08 ET] [INFO] Kalshi API key auth OK ✅  balance: $35.26
+[2026-11-21 19:01:10 ET] [INFO] ============================================================
+[2026-11-21 19:01:10 ET] [INFO] Starting market scan
+[2026-11-21 19:01:13 ET] [INFO] Portfolio value: $35.26 cash + $6.74 positions = $42.00
+[2026-11-21 19:01:13 ET] [INFO] Cash: $35.26  |  Positions: $6.74  |  Total: $42.00  |  Peak: $42.03
+[2026-11-21 19:01:13 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-11-21 19:01:47 ET] [WARN] SCAN_MAX_PAGES reached; far-dated markets truncated
+[2026-11-21 19:01:47 ET] [INFO] Fetched 77749 open markets via close-window feed across 80 pages
+[2026-11-21 19:01:47 ET] [INFO] Fetched 77749 open markets
+[2026-11-21 19:01:48 ET] [INFO] Parsed 69959 valid markets
+[2026-11-21 19:01:48 ET] [INFO] Categories: {'Sports': 57699, 'Financials': 5704, 'Crypto': 1467, 'Climate and Weather': 1154, 'Commodities': 1137, 'Entertainment': 977, 'Economics': 940, 'Science and Technology': 453}
+[2026-11-21 19:01:48 ET] [INFO]   weather model: dallas rain 2026-11-21 forecast=14% → P=0.140
+[2026-11-21 19:01:48 ET] [INFO]   EDGE FOUND: KXRAIN-26NOV21-DAL | implied=22.5% true=14.0% edge=-8.5% dir=NO conf=19
+[2026-11-21 19:01:53 ET] [INFO]   weather model: detroit rain 2026-11-21 forecast=6% → P=0.060
+[2026-11-21 19:01:53 ET] [INFO]   EDGE FOUND: KXRAINWKND-26NOV21-DTW | implied=71.5% true=6.0% edge=-65.5% dir=NO conf=26
+[2026-11-21 19:01:53 ET] [INFO]   weather model: philadelphia rain 2026-11-22 forecast=32% → P=0.320
+[2026-11-21 19:01:53 ET] [INFO]   EDGE FOUND: KXRAIN-26NOV22-PHIL | implied=80.0% true=32.0% edge=-48.0% dir=NO conf=26
+[2026-11-21 19:01:54 ET] [INFO]   weather model: boston rain 2026-11-22 forecast=38% → P=0.380
+[2026-11-21 19:01:54 ET] [INFO]   EDGE FOUND: KXRAIN-26NOV22-BOS | implied=94.0% true=38.0% edge=-56.0% dir=NO conf=26
+[2026-11-21 19:01:54 ET] [INFO]   weather model: atlanta rain 2026-11-22 forecast=26% → P=0.260
+[2026-11-21 19:01:54 ET] [INFO]   EDGE FOUND: KXRAIN-26NOV22-ATL | implied=58.0% true=26.0% edge=-32.0% dir=NO conf=26
+[2026-11-21 19:01:55 ET] [INFO]   price model: SOL-USD spot=70.02 target=65.00 touch vol=63% T=222h → P=0.462
+[2026-11-21 19:01:55 ET] [INFO]   EDGE FOUND: KXSOLMINMON-SOL-26NOV30-6500 | implied=58.5% true=46.2% edge=-12.3% dir=NO conf=19
+[2026-11-21 19:01:55 ET] [INFO]   price model: ETH-USD spot=1675.23 target=1500.00 touch vol=65% T=222h → P=0.285
+[2026-11-21 19:01:56 ET] [INFO]   price model: BTC-USD spot=59970.05 target=55000.00 touch vol=46% T=222h → P=0.240
+[2026-11-21 19:01:56 ET] [INFO]   EDGE FOUND: KXBTCMINMON-BTC-26NOV30-5500000 | implied=35.5% true=24.0% edge=-11.5% dir=NO conf=19
+[2026-11-21 19:01:56 ET] [INFO] Checked 69949 markets in 7.6s | Edges found: 7
+[2026-11-21 19:01:56 ET] [INFO] Scan feed: fetched 77749 | parsed 69959 | ≤60d 69959 | categories {'Sports': 57699, 'Financials': 5704, 'Crypto': 1467, 'Climate and Weather': 1154, 'Commodities': 1137, 'Entertainment': 977, 'Economics': 940, 'Science and Technology': 453} | gate pass 881 | modelable 8 | edges 7
+[2026-11-21 19:02:43 ET] [INFO] paper_lab: longshot_no_10_30 [killed]: 947 settled / 466 events, net -3.8c, 95% CI [-6.7, -0.9]c, CLV -0.9c; 80 open | prop_projection [killed]: 157 settled / 105 events, net -1.2c, 95% CI [-10.3, +7.9]c, CLV +2.7c; 12 open | sports_gap [active]: 34 settled / 29 events, net -1.3c, 95% CI [-20.1, +17.4]c, CLV -1.3c; 5 open | weather_tail [killed]: 951 settled / 312 events, net -2.1c, 95% CI [-3.9, -0.3]c, CLV +2.2c; 0 open | weather_tail_forecast [killed]: 277 settled / 149 events, net -4.3c, 95% CI [-7.8, -0.8]c, CLV -2.5c; 0 open (migrated 0, new {'lab_rules': 0, 'sports_gap': 1}, quotes 1, resolved 0, 47s)
+[2026-11-21 19:02:43 ET] [INFO] [Discord] Trade alert sent: KXRAIN-26NOV21-DAL
+[2026-11-21 19:02:43 ET] [INFO] DRY RUN 🔵 KXRAIN-26NOV21-DAL NO 1ct @ 78¢ = $0.78 | edge=-8.5% conf=19 | would_use 50%Kelly
+[2026-11-21 19:02:43 ET] [INFO] [Discord] Trade alert sent: KXRAINWKND-26NOV21-DTW
+[2026-11-21 19:02:43 ET] [INFO] DRY RUN 🔵 KXRAINWKND-26NOV21-DTW NO 6ct @ 31¢ = $1.86 | edge=-65.5% conf=26 | would_use 50%Kelly
+[2026-11-21 19:02:44 ET] [INFO] [Discord] Trade alert sent: KXRAIN-26NOV22-PHIL
+[2026-11-21 19:02:44 ET] [INFO] DRY RUN 🔵 KXRAIN-26NOV22-PHIL NO 10ct @ 21¢ = $2.10 | edge=-48.0% conf=26 | would_use 50%Kelly
+[2026-11-21 19:02:44 ET] [INFO] [Discord] Trade alert sent: KXRAIN-26NOV22-BOS
+[2026-11-21 19:02:44 ET] [INFO] DRY RUN 🔵 KXRAIN-26NOV22-BOS NO 30ct @ 7¢ = $2.10 | edge=-56.0% conf=26 | would_use 50%Kelly
+[2026-11-21 19:02:45 ET] [INFO] [Discord] Trade alert sent: KXRAIN-26NOV22-ATL
+[2026-11-21 19:02:45 ET] [INFO] DRY RUN 🔵 KXRAIN-26NOV22-ATL NO 4ct @ 43¢ = $1.72 | edge=-32.0% conf=26 | would_use 50%Kelly
+[2026-11-21 19:02:45 ET] [INFO]   Skipping KXSOLMINMON-SOL-26NOV30-6500 — suggested bet too small to be meaningful
+[2026-11-21 19:02:45 ET] [INFO] [Discord] Trade alert sent: KXBTCMINMON-BTC-26NOV30-5500000
+[2026-11-21 19:02:45 ET] [INFO] DRY RUN 🔵 KXBTCMINMON-BTC-26NOV30-5500000 NO 1ct @ 65¢ = $0.65 | edge=-11.5% conf=19 | would_use 50%Kelly
+[2026-11-21 19:02:45 ET] [INFO] Scan complete — 6 alerts sent
+[2026-11-21 19:02:45 ET] [INFO] ============================================================
+[2026-11-21 19:02:45 ET] [INFO] Scan job complete

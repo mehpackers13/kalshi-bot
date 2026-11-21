@@ -117698,3 +117698,37 @@ Total modelable markets evaluated: 0
 [2026-11-21 02:31:05 ET] [INFO] Scan complete — 4 alerts sent
 [2026-11-21 02:31:05 ET] [INFO] ============================================================
 [2026-11-21 02:31:05 ET] [INFO] Scan job complete
+[2026-11-21 13:55:58 ET] [INFO] Scan job starting
+[2026-11-21 13:55:58 ET] [INFO] Kalshi API key auth OK ✅  balance: $35.26
+[2026-11-21 13:56:00 ET] [INFO] ============================================================
+[2026-11-21 13:56:00 ET] [INFO] Starting market scan
+[2026-11-21 13:56:03 ET] [INFO] Portfolio value: $35.26 cash + $6.74 positions = $42.00
+[2026-11-21 13:56:03 ET] [INFO] Cash: $35.26  |  Positions: $6.74  |  Total: $42.00  |  Peak: $42.03
+[2026-11-21 13:56:03 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-11-21 13:56:38 ET] [WARN] SCAN_MAX_PAGES reached; far-dated markets truncated
+[2026-11-21 13:56:38 ET] [INFO] Fetched 78319 open markets via close-window feed across 80 pages
+[2026-11-21 13:56:38 ET] [INFO] Fetched 78319 open markets
+[2026-11-21 13:56:38 ET] [INFO] Parsed 71280 valid markets
+[2026-11-21 13:56:38 ET] [INFO] Categories: {'Sports': 61739, 'Financials': 4916, 'Crypto': 1341, 'Commodities': 801, 'Climate and Weather': 782, 'Entertainment': 754, 'Economics': 412, 'Science and Technology': 371}
+[2026-11-21 13:56:39 ET] [INFO]   weather model: san francisco rain 2026-11-21 forecast=33% → P=0.330
+[2026-11-21 13:56:39 ET] [INFO]   EDGE FOUND: KXRAIN-26NOV21-SFO | implied=86.5% true=33.0% edge=-53.5% dir=NO conf=24
+[2026-11-21 13:56:39 ET] [INFO]   weather model: seattle rain 2026-11-21 forecast=20% → P=0.200
+[2026-11-21 13:56:39 ET] [INFO]   EDGE FOUND: KXRAIN-26NOV21-SEA | implied=49.0% true=20.0% edge=-29.0% dir=NO conf=24
+[2026-11-21 13:56:40 ET] [INFO]   weather model: new york city rain 2026-11-21 forecast=16% → P=0.160
+[2026-11-21 13:56:40 ET] [INFO]   EDGE FOUND: KXRAINWKND-26NOV21-NYC | implied=93.5% true=16.0% edge=-77.5% dir=NO conf=26
+[2026-11-21 13:56:40 ET] [INFO]   weather model: new york city rain 2026-11-22 forecast=47% → P=0.470
+[2026-11-21 13:56:40 ET] [INFO]   EDGE FOUND: KXRAIN-26NOV22-NYC | implied=90.5% true=47.0% edge=-43.5% dir=NO conf=26
+[2026-11-21 13:56:43 ET] [INFO] Checked 71275 markets in 5.0s | Edges found: 4
+[2026-11-21 13:56:43 ET] [INFO] Scan feed: fetched 78319 | parsed 71280 | ≤60d 71280 | categories {'Sports': 61739, 'Financials': 4916, 'Crypto': 1341, 'Commodities': 801, 'Climate and Weather': 782, 'Entertainment': 754, 'Economics': 412, 'Science and Technology': 371} | gate pass 963 | modelable 4 | edges 4
+[2026-11-21 13:57:45 ET] [INFO] paper_lab: longshot_no_10_30 [killed]: 947 settled / 466 events, net -3.8c, 95% CI [-6.7, -0.9]c, CLV -0.9c; 80 open | prop_projection [killed]: 157 settled / 105 events, net -1.2c, 95% CI [-10.3, +7.9]c, CLV +2.7c; 12 open | sports_gap [active]: 34 settled / 29 events, net -1.3c, 95% CI [-20.1, +17.4]c, CLV -1.3c; 4 open | weather_tail [killed]: 951 settled / 312 events, net -2.1c, 95% CI [-3.9, -0.3]c, CLV +2.2c; 0 open | weather_tail_forecast [killed]: 277 settled / 149 events, net -4.3c, 95% CI [-7.8, -0.8]c, CLV -2.5c; 0 open (migrated 0, new {'lab_rules': 0, 'sports_gap': 0}, quotes 1, resolved 0, 61s)
+[2026-11-21 13:57:45 ET] [INFO] [Discord] Trade alert sent: KXRAIN-26NOV21-SFO
+[2026-11-21 13:57:45 ET] [INFO] DRY RUN 🔵 KXRAIN-26NOV21-SFO NO 15ct @ 14¢ = $2.10 | edge=-53.5% conf=24 | would_use 50%Kelly
+[2026-11-21 13:57:46 ET] [INFO] [Discord] Trade alert sent: KXRAIN-26NOV21-SEA
+[2026-11-21 13:57:46 ET] [INFO] DRY RUN 🔵 KXRAIN-26NOV21-SEA NO 4ct @ 52¢ = $2.08 | edge=-29.0% conf=24 | would_use 50%Kelly
+[2026-11-21 13:57:46 ET] [INFO] [Discord] Trade alert sent: KXRAINWKND-26NOV21-NYC
+[2026-11-21 13:57:46 ET] [INFO] DRY RUN 🔵 KXRAINWKND-26NOV21-NYC NO 30ct @ 7¢ = $2.10 | edge=-77.5% conf=26 | would_use 50%Kelly
+[2026-11-21 13:57:46 ET] [INFO] [Discord] Trade alert sent: KXRAIN-26NOV22-NYC
+[2026-11-21 13:57:46 ET] [INFO] DRY RUN 🔵 KXRAIN-26NOV22-NYC NO 21ct @ 10¢ = $2.10 | edge=-43.5% conf=26 | would_use 50%Kelly
+[2026-11-21 13:57:47 ET] [INFO] Scan complete — 4 alerts sent
+[2026-11-21 13:57:47 ET] [INFO] ============================================================
+[2026-11-21 13:57:47 ET] [INFO] Scan job complete

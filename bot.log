@@ -117616,3 +117616,45 @@ Total modelable markets evaluated: 0
 [2026-11-20 16:57:08 ET] [INFO] Morning report complete
 [2026-11-20 16:57:08 ET] [INFO] ============================================================
 [2026-11-20 16:57:08 ET] [INFO] Morning report job complete
+[2026-11-20 20:55:30 ET] [INFO] Scan job starting
+[2026-11-20 20:55:31 ET] [INFO] Kalshi API key auth OK ✅  balance: $35.26
+[2026-11-20 20:55:32 ET] [INFO] ============================================================
+[2026-11-20 20:55:32 ET] [INFO] Starting market scan
+[2026-11-20 20:55:36 ET] [INFO] Portfolio value: $35.26 cash + $6.71 positions = $41.97
+[2026-11-20 20:55:36 ET] [INFO] Cash: $35.26  |  Positions: $6.71  |  Total: $41.97  |  Peak: $42.03
+[2026-11-20 20:55:36 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-11-20 20:56:11 ET] [WARN] SCAN_MAX_PAGES reached; far-dated markets truncated
+[2026-11-20 20:56:11 ET] [INFO] Fetched 78673 open markets via close-window feed across 80 pages
+[2026-11-20 20:56:11 ET] [INFO] Fetched 78673 open markets
+[2026-11-20 20:56:12 ET] [INFO] Parsed 75749 valid markets
+[2026-11-20 20:56:12 ET] [INFO] Categories: {'Sports': 66619, 'Financials': 4816, 'Crypto': 1360, 'Climate and Weather': 739, 'Commodities': 696, 'Entertainment': 622, 'Science and Technology': 418, 'Economics': 324}
+[2026-11-20 20:56:13 ET] [WARN]   weather model: minneapolis no forecast for 2027-11-20
+[2026-11-20 20:56:14 ET] [INFO]   weather model: boston rain 2026-11-21 forecast=13% → P=0.130
+[2026-11-20 20:56:14 ET] [INFO]   EDGE FOUND: KXRAINWKND-26NOV21-BOS | implied=81.5% true=13.0% edge=-68.5% dir=NO conf=26
+[2026-11-20 20:56:15 ET] [INFO]   weather model: atlanta rain 2026-11-21 forecast=45% → P=0.450
+[2026-11-20 20:56:15 ET] [INFO]   EDGE FOUND: KXRAINWKND-26NOV21-ATL | implied=92.5% true=45.0% edge=-47.5% dir=NO conf=26
+[2026-11-20 20:56:15 ET] [INFO]   weather model: minneapolis rain 2026-11-21 forecast=29% → P=0.290
+[2026-11-20 20:56:15 ET] [INFO]   EDGE FOUND: KXRAIN-26NOV21-MIN | implied=87.5% true=29.0% edge=-58.5% dir=NO conf=26
+[2026-11-20 20:56:15 ET] [INFO]   weather model: atlanta rain 2026-11-21 forecast=45% → P=0.450
+[2026-11-20 20:56:15 ET] [INFO]   EDGE FOUND: KXRAIN-26NOV21-ATL | implied=86.5% true=45.0% edge=-41.5% dir=NO conf=26
+[2026-11-20 20:56:16 ET] [INFO]   EDGE FOUND: KXNFLSPREAD-26NOV22JACNYG-JAC7 | implied=46.5% true=38.0% edge=-8.5% dir=NO conf=73
+[2026-11-20 20:56:16 ET] [INFO]   EDGE FOUND: KXNFLSPREAD-26NOV22JACNYG-JAC6 | implied=51.5% true=43.0% edge=-8.5% dir=NO conf=68
+[2026-11-20 20:56:18 ET] [INFO] Checked 75749 markets in 6.2s | Edges found: 6
+[2026-11-20 20:56:18 ET] [INFO] Scan feed: fetched 78673 | parsed 75749 | ≤60d 75749 | categories {'Sports': 66619, 'Financials': 4816, 'Crypto': 1360, 'Climate and Weather': 739, 'Commodities': 696, 'Entertainment': 622, 'Science and Technology': 418, 'Economics': 324} | gate pass 838 | modelable 6 | edges 6
+[2026-11-20 20:57:12 ET] [INFO] paper_lab: longshot_no_10_30 [killed]: 947 settled / 466 events, net -3.8c, 95% CI [-6.7, -0.9]c, CLV -0.9c; 80 open | prop_projection [killed]: 157 settled / 105 events, net -1.2c, 95% CI [-10.3, +7.9]c, CLV +2.7c; 12 open | sports_gap [active]: 34 settled / 29 events, net -1.3c, 95% CI [-20.1, +17.4]c, CLV -1.3c; 4 open | weather_tail [killed]: 951 settled / 312 events, net -2.1c, 95% CI [-3.9, -0.3]c, CLV +2.2c; 0 open | weather_tail_forecast [killed]: 277 settled / 149 events, net -4.3c, 95% CI [-7.8, -0.8]c, CLV -2.5c; 0 open (migrated 0, new {'lab_rules': 0, 'sports_gap': 0}, quotes 1, resolved 0, 54s)
+[2026-11-20 20:57:12 ET] [INFO] [Discord] Trade alert sent: KXRAINWKND-26NOV21-BOS
+[2026-11-20 20:57:12 ET] [INFO] DRY RUN 🔵 KXRAINWKND-26NOV21-BOS NO 11ct @ 19¢ = $2.09 | edge=-68.5% conf=26 | would_use 50%Kelly
+[2026-11-20 20:57:12 ET] [INFO] [Discord] Trade alert sent: KXRAINWKND-26NOV21-ATL
+[2026-11-20 20:57:12 ET] [INFO] DRY RUN 🔵 KXRAINWKND-26NOV21-ATL NO 26ct @ 8¢ = $2.08 | edge=-47.5% conf=26 | would_use 50%Kelly
+[2026-11-20 20:57:13 ET] [INFO] [Discord] Trade alert sent: KXRAIN-26NOV21-MIN
+[2026-11-20 20:57:13 ET] [INFO] DRY RUN 🔵 KXRAIN-26NOV21-MIN NO 16ct @ 13¢ = $2.08 | edge=-58.5% conf=26 | would_use 50%Kelly
+[2026-11-20 20:57:13 ET] [INFO] [Discord] Trade alert sent: KXRAIN-26NOV21-ATL
+[2026-11-20 20:57:13 ET] [INFO] DRY RUN 🔵 KXRAIN-26NOV21-ATL NO 15ct @ 14¢ = $2.10 | edge=-41.5% conf=26 | would_use 50%Kelly
+[2026-11-20 20:57:13 ET] [WARN] [Discord] HTTP 429: {"message": "You are being rate limited.", "retry_after": 0.3, "global": false}
+[2026-11-20 20:57:13 ET] [INFO] [Discord] Trade alert sent: KXNFLSPREAD-26NOV22JACNYG-JAC7
+[2026-11-20 20:57:13 ET] [INFO] DRY RUN 🔵 KXNFLSPREAD-26NOV22JACNYG-JAC7 NO 3ct @ 54¢ = $1.62 | edge=-8.5% conf=73 | would_use 50%Kelly
+[2026-11-20 20:57:15 ET] [INFO] [Discord] Trade alert sent: KXNFLSPREAD-26NOV22JACNYG-JAC6
+[2026-11-20 20:57:15 ET] [INFO] DRY RUN 🔵 KXNFLSPREAD-26NOV22JACNYG-JAC6 NO 4ct @ 49¢ = $1.96 | edge=-8.5% conf=68 | would_use 50%Kelly
+[2026-11-20 20:57:15 ET] [INFO] Scan complete — 6 alerts sent
+[2026-11-20 20:57:15 ET] [INFO] ============================================================
+[2026-11-20 20:57:15 ET] [INFO] Scan job complete

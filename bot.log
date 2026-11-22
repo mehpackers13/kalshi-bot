@@ -117834,3 +117834,28 @@ Total modelable markets evaluated: 0
 [2026-11-21 23:26:00 ET] [INFO] Scan complete — 7 alerts sent
 [2026-11-21 23:26:00 ET] [INFO] ============================================================
 [2026-11-21 23:26:00 ET] [INFO] Scan job complete
+[2026-11-22 01:58:12 ET] [INFO] Scan job starting
+[2026-11-22 01:58:12 ET] [INFO] Kalshi API key auth OK ✅  balance: $35.26
+[2026-11-22 01:58:14 ET] [INFO] ============================================================
+[2026-11-22 01:58:14 ET] [INFO] Starting market scan
+[2026-11-22 01:58:17 ET] [INFO] Portfolio value: $35.26 cash + $6.66 positions = $41.92
+[2026-11-22 01:58:17 ET] [INFO] Cash: $35.26  |  Positions: $6.66  |  Total: $41.92  |  Peak: $42.03
+[2026-11-22 01:58:17 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-11-22 01:58:51 ET] [WARN] SCAN_MAX_PAGES reached; far-dated markets truncated
+[2026-11-22 01:58:51 ET] [INFO] Fetched 77406 open markets via close-window feed across 80 pages
+[2026-11-22 01:58:51 ET] [INFO] Fetched 77406 open markets
+[2026-11-22 01:58:51 ET] [INFO] Parsed 66216 valid markets
+[2026-11-22 01:58:51 ET] [INFO] Categories: {'Sports': 50824, 'Financials': 7650, 'Commodities': 1495, 'Crypto': 1475, 'Economics': 1465, 'Entertainment': 1298, 'Climate and Weather': 961, 'Science and Technology': 452}
+[2026-11-22 01:58:52 ET] [WARN]   weather model: philadelphia no forecast for 2027-11-21
+[2026-11-22 01:58:52 ET] [WARN]   weather model: new york city no forecast for 2027-11-21
+[2026-11-22 01:58:53 ET] [WARN]   weather model: detroit no forecast for 2027-11-21
+[2026-11-22 01:58:57 ET] [INFO]   price model: SOL-USD spot=68.80 target=65.00 touch vol=63% T=215h → P=0.563
+[2026-11-22 01:58:57 ET] [INFO]   EDGE FOUND: KXSOLMINMON-SOL-26NOV30-6500 | implied=69.5% true=56.3% edge=-13.2% dir=NO conf=19
+[2026-11-22 01:58:57 ET] [INFO]   price model: ETH-USD spot=1653.17 target=1500.00 touch vol=64% T=215h → P=0.331
+[2026-11-22 01:58:57 ET] [INFO] Checked 66209 markets in 6.3s | Edges found: 1
+[2026-11-22 01:58:57 ET] [INFO] Scan feed: fetched 77406 | parsed 66216 | ≤60d 66216 | categories {'Sports': 50824, 'Financials': 7650, 'Commodities': 1495, 'Crypto': 1475, 'Economics': 1465, 'Entertainment': 1298, 'Climate and Weather': 961, 'Science and Technology': 452} | gate pass 629 | modelable 2 | edges 1
+[2026-11-22 01:59:36 ET] [INFO] paper_lab: lab_rules [active]: 1 open, none settled yet | longshot_no_10_30 [killed]: 947 settled / 466 events, net -3.8c, 95% CI [-6.7, -0.9]c, CLV -0.9c; 80 open | prop_projection [killed]: 162 settled / 108 events, net -1.1c, 95% CI [-10.0, +7.8]c, CLV +2.7c; 7 open | sports_gap [active]: 34 settled / 29 events, net -1.3c, 95% CI [-20.1, +17.4]c, CLV -1.3c; 5 open | weather_tail [killed]: 951 settled / 312 events, net -2.1c, 95% CI [-3.9, -0.3]c, CLV +2.2c; 0 open | weather_tail_forecast [killed]: 277 settled / 149 events, net -4.3c, 95% CI [-7.8, -0.8]c, CLV -2.5c; 0 open (migrated 0, new {'lab_rules': 1, 'sports_gap': 0}, quotes 1, resolved 0, 38s)
+[2026-11-22 01:59:36 ET] [INFO]   Skipping KXSOLMINMON-SOL-26NOV30-6500 — suggested bet too small to be meaningful
+[2026-11-22 01:59:36 ET] [INFO] Scan complete — no qualifying edges found (this is fine)
+[2026-11-22 01:59:36 ET] [INFO] ============================================================
+[2026-11-22 01:59:36 ET] [INFO] Scan job complete

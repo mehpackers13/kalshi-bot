@@ -117778,3 +117778,59 @@ Total modelable markets evaluated: 0
 [2026-11-21 19:02:45 ET] [INFO] Scan complete — 6 alerts sent
 [2026-11-21 19:02:45 ET] [INFO] ============================================================
 [2026-11-21 19:02:45 ET] [INFO] Scan job complete
+[2026-11-21 23:24:23 ET] [INFO] Scan job starting
+[2026-11-21 23:24:23 ET] [INFO] Kalshi API key auth OK ✅  balance: $35.26
+[2026-11-21 23:24:25 ET] [INFO] ============================================================
+[2026-11-21 23:24:25 ET] [INFO] Starting market scan
+[2026-11-21 23:24:29 ET] [INFO] Portfolio value: $35.26 cash + $6.70 positions = $41.96
+[2026-11-21 23:24:29 ET] [INFO] Cash: $35.26  |  Positions: $6.70  |  Total: $41.96  |  Peak: $42.03
+[2026-11-21 23:24:29 ET] [INFO] Positions snapshot: 5 open position(s)
+[2026-11-21 23:25:08 ET] [WARN] SCAN_MAX_PAGES reached; far-dated markets truncated
+[2026-11-21 23:25:08 ET] [INFO] Fetched 77853 open markets via close-window feed across 80 pages
+[2026-11-21 23:25:08 ET] [INFO] Fetched 77853 open markets
+[2026-11-21 23:25:08 ET] [INFO] Parsed 66760 valid markets
+[2026-11-21 23:25:08 ET] [INFO] Categories: {'Sports': 52642, 'Financials': 6307, 'Crypto': 1468, 'Commodities': 1456, 'Economics': 1450, 'Entertainment': 1306, 'Climate and Weather': 1153, 'Science and Technology': 455}
+[2026-11-21 23:25:09 ET] [WARN]   weather model: san francisco no forecast for 2027-11-21
+[2026-11-21 23:25:15 ET] [WARN]   weather model: philadelphia no forecast for 2027-11-21
+[2026-11-21 23:25:16 ET] [WARN]   weather model: new york city no forecast for 2027-11-21
+[2026-11-21 23:25:17 ET] [WARN]   weather model: detroit no forecast for 2027-11-21
+[2026-11-21 23:25:17 ET] [WARN]   weather model: boston no forecast for 2027-11-21
+[2026-11-21 23:25:17 ET] [INFO]   weather model: philadelphia rain 2026-11-22 forecast=31% → P=0.310
+[2026-11-21 23:25:17 ET] [INFO]   EDGE FOUND: KXRAIN-26NOV22-PHIL | implied=71.5% true=31.0% edge=-40.5% dir=NO conf=26
+[2026-11-21 23:25:17 ET] [INFO]   weather model: new york city rain 2026-11-22 forecast=32% → P=0.320
+[2026-11-21 23:25:17 ET] [INFO]   EDGE FOUND: KXRAIN-26NOV22-NYC | implied=89.5% true=32.0% edge=-57.5% dir=NO conf=26
+[2026-11-21 23:25:17 ET] [INFO]   weather model: boston rain 2026-11-22 forecast=34% → P=0.340
+[2026-11-21 23:25:17 ET] [INFO]   EDGE FOUND: KXRAIN-26NOV22-BOS | implied=92.5% true=34.0% edge=-58.5% dir=NO conf=26
+[2026-11-21 23:25:18 ET] [INFO]   weather model: atlanta rain 2026-11-22 forecast=30% → P=0.300
+[2026-11-21 23:25:18 ET] [INFO]   EDGE FOUND: KXRAIN-26NOV22-ATL | implied=65.5% true=30.0% edge=-35.5% dir=NO conf=26
+[2026-11-21 23:25:19 ET] [INFO]   price model: SOL-USD spot=69.48 target=65.00 touch vol=63% T=218h → P=0.502
+[2026-11-21 23:25:19 ET] [INFO]   EDGE FOUND: KXSOLMINMON-SOL-26NOV30-6500 | implied=58.5% true=50.2% edge=-8.3% dir=NO conf=19
+[2026-11-21 23:25:19 ET] [INFO]   price model: SOL-USD spot=69.48 target=60.00 touch vol=63% T=218h → P=0.140
+[2026-11-21 23:25:19 ET] [INFO]   EDGE FOUND: KXSOLMINMON-SOL-26NOV30-6000 | implied=31.5% true=14.0% edge=-17.5% dir=NO conf=21
+[2026-11-21 23:25:19 ET] [INFO]   price model: ETH-USD spot=1660.60 target=1500.00 touch vol=64% T=218h → P=0.315
+[2026-11-21 23:25:19 ET] [INFO]   price model: BTC-USD spot=59306.56 target=55000.00 touch vol=46% T=218h → P=0.293
+[2026-11-21 23:25:19 ET] [INFO]   EDGE FOUND: KXBTCMINMON-BTC-26NOV30-5500000 | implied=43.0% true=29.3% edge=-13.7% dir=NO conf=19
+[2026-11-21 23:25:19 ET] [INFO]   price model: BTC-USD spot=59306.56 target=50000.00 touch vol=46% T=218h → P=0.017
+[2026-11-21 23:25:19 ET] [INFO]   EDGE FOUND: KXBTCMINMON-BTC-26NOV30-5000000 | implied=15.5% true=1.7% edge=-13.8% dir=NO conf=19
+[2026-11-21 23:25:19 ET] [INFO] Checked 66760 markets in 10.6s | Edges found: 8
+[2026-11-21 23:25:19 ET] [INFO] Scan feed: fetched 77853 | parsed 66760 | ≤60d 66760 | categories {'Sports': 52642, 'Financials': 6307, 'Crypto': 1468, 'Commodities': 1456, 'Economics': 1450, 'Entertainment': 1306, 'Climate and Weather': 1153, 'Science and Technology': 455} | gate pass 783 | modelable 9 | edges 8
+[2026-11-21 23:25:57 ET] [INFO] paper_lab: longshot_no_10_30 [killed]: 947 settled / 466 events, net -3.8c, 95% CI [-6.7, -0.9]c, CLV -0.9c; 80 open | prop_projection [killed]: 162 settled / 108 events, net -1.1c, 95% CI [-10.0, +7.8]c, CLV +2.7c; 7 open | sports_gap [active]: 34 settled / 29 events, net -1.3c, 95% CI [-20.1, +17.4]c, CLV -1.3c; 5 open | weather_tail [killed]: 951 settled / 312 events, net -2.1c, 95% CI [-3.9, -0.3]c, CLV +2.2c; 0 open | weather_tail_forecast [killed]: 277 settled / 149 events, net -4.3c, 95% CI [-7.8, -0.8]c, CLV -2.5c; 0 open (migrated 0, new {'lab_rules': 0, 'sports_gap': 0}, quotes 0, resolved 5, 38s)
+[2026-11-21 23:25:57 ET] [INFO] [Discord] Trade alert sent: KXRAIN-26NOV22-PHIL
+[2026-11-21 23:25:57 ET] [INFO] DRY RUN 🔵 KXRAIN-26NOV22-PHIL NO 7ct @ 29¢ = $2.03 | edge=-40.5% conf=26 | would_use 50%Kelly
+[2026-11-21 23:25:58 ET] [INFO] [Discord] Trade alert sent: KXRAIN-26NOV22-NYC
+[2026-11-21 23:25:58 ET] [INFO] DRY RUN 🔵 KXRAIN-26NOV22-NYC NO 17ct @ 12¢ = $2.04 | edge=-57.5% conf=26 | would_use 50%Kelly
+[2026-11-21 23:25:58 ET] [INFO] [Discord] Trade alert sent: KXRAIN-26NOV22-BOS
+[2026-11-21 23:25:58 ET] [INFO] DRY RUN 🔵 KXRAIN-26NOV22-BOS NO 26ct @ 8¢ = $2.08 | edge=-58.5% conf=26 | would_use 50%Kelly
+[2026-11-21 23:25:59 ET] [INFO] [Discord] Trade alert sent: KXRAIN-26NOV22-ATL
+[2026-11-21 23:25:59 ET] [INFO] DRY RUN 🔵 KXRAIN-26NOV22-ATL NO 5ct @ 36¢ = $1.80 | edge=-35.5% conf=26 | would_use 50%Kelly
+[2026-11-21 23:25:59 ET] [INFO]   Skipping KXSOLMINMON-SOL-26NOV30-6500 — suggested bet too small to be meaningful
+[2026-11-21 23:25:59 ET] [INFO] [Discord] Trade alert sent: KXSOLMINMON-SOL-26NOV30-6000
+[2026-11-21 23:25:59 ET] [INFO] DRY RUN 🔵 KXSOLMINMON-SOL-26NOV30-6000 NO 3ct @ 69¢ = $2.07 | edge=-17.5% conf=21 | would_use 50%Kelly
+[2026-11-21 23:26:00 ET] [INFO] [Discord] Trade alert sent: KXBTCMINMON-BTC-26NOV30-5500000
+[2026-11-21 23:26:00 ET] [INFO] DRY RUN 🔵 KXBTCMINMON-BTC-26NOV30-5500000 NO 1ct @ 58¢ = $0.58 | edge=-13.7% conf=19 | would_use 50%Kelly
+[2026-11-21 23:26:00 ET] [WARN] [Discord] HTTP 429: {"message": "You are being rate limited.", "retry_after": 0.3, "global": false}
+[2026-11-21 23:26:00 ET] [INFO] [Discord] Trade alert sent: KXBTCMINMON-BTC-26NOV30-5000000
+[2026-11-21 23:26:00 ET] [INFO] DRY RUN 🔵 KXBTCMINMON-BTC-26NOV30-5000000 NO 2ct @ 85¢ = $1.70 | edge=-13.8% conf=19 | would_use 50%Kelly
+[2026-11-21 23:26:00 ET] [INFO] Scan complete — 7 alerts sent
+[2026-11-21 23:26:00 ET] [INFO] ============================================================
+[2026-11-21 23:26:00 ET] [INFO] Scan job complete
